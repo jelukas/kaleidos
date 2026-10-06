@@ -1,0 +1,236 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;inset:0}
+#__ID__ .dots{position:absolute;left:-60px;top:-60px;width:2040px;height:1200px;background-image:radial-gradient(rgba(255,255,255,.10) 2px,transparent 2.5px);background-size:56px 56px}
+#__ID__ .glow{position:absolute;border-radius:50%}
+#__ID__ .glow.g1{left:-300px;top:560px;width:1100px;height:1100px;background:radial-gradient(closest-side,rgba(255,1,162,.30),rgba(255,1,162,0))}
+#__ID__ .glow.g2{left:1000px;top:-260px;width:1200px;height:1200px;background:radial-gradient(closest-side,rgba(125,41,224,.65),rgba(125,41,224,0))}
+#__ID__ .lbl{position:absolute;left:100px;top:140px;height:48px;display:flex;align-items:center;gap:18px;white-space:nowrap}
+#__ID__ .lbl .tag{color:#FF6FC9}
+#__ID__ .lbl .bar{display:block;width:8px;height:34px;border-radius:4px;background:#E6008E}
+#__ID__ .w1{left:100px;top:232px;width:1000px;height:620px}
+#__ID__ .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#__ID__ .ra{position:absolute;left:1160px;top:232px;width:660px;height:760px}
+#__ID__ .ra .mask{padding:0 .04em .1em;margin:0 -.04em;position:absolute;left:0;width:660px}
+#__ID__ .ra .sk{top:0;font-size:84px;color:#E2CCFF}
+#__ID__ .ra .g1{top:104px;font-size:146px;color:#fff}
+#__ID__ .ra .g2{top:256px;font-size:146px;color:#fff}
+#__ID__ .ra .g3{top:408px;font-size:146px;color:#FF6FC9}
+#__ID__ .ra .y26{position:absolute;left:0;top:600px;width:330px;height:124px;border-radius:62px;background:linear-gradient(135deg,#7D29E0,#FF01A2);color:#fff;font-weight:800;font-size:100px;letter-spacing:-.03em;line-height:124px;text-align:center;display:block;box-shadow:0 20px 60px rgba(255,1,162,.35)}
+#__ID__ .stk{position:absolute;left:100px;top:884px;font-size:36px;white-space:nowrap}
+#__ID__ .stk b{color:#FF6FC9;font-weight:800;letter-spacing:.1em;margin-right:12px}
+/* gráfico de ejes */
+#__ID__ .chart{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .cv{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ svg.ax{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible}
+#__ID__ .lx{position:absolute;left:1000px;width:780px;top:932px;text-align:right;font-weight:700;font-size:38px;letter-spacing:.14em;color:#B88BFF;white-space:nowrap}
+#__ID__ .ly{position:absolute;left:910px;top:236px;font-weight:700;font-size:38px;letter-spacing:.14em;color:#FF6FC9;white-space:nowrap}
+#__ID__ .dot{position:absolute;border-radius:50%;display:block}
+#__ID__ .idx{position:absolute;left:1280px;top:700px;width:500px;height:190px;padding:26px 32px;box-sizing:border-box}
+#__ID__ .idx .eye{color:#E2CCFF;font-size:24px}
+#__ID__ .idx .nm{font-weight:800;font-size:44px;line-height:1.08;letter-spacing:-.02em;margin-top:10px;color:#fff}
+#__ID__ .syn{position:absolute;left:1480px;top:228px;font-size:34px}
+#__ID__ .org{position:absolute;left:860px;top:900px;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;border:5px solid #fff;display:block}
+/* globo */
+#__ID__ .gwrap{position:absolute;left:960px;top:220px;width:760px;height:760px}
+#__ID__ .gwrap canvas{position:absolute;left:0;top:0;width:760px;height:760px}
+#__ID__ .gwrap .halo{position:absolute;left:-60px;top:-60px;width:880px;height:880px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.28),rgba(125,41,224,.22) 55%,rgba(125,41,224,0))}
+#__ID__ .n98{position:absolute;left:100px;top:214px;font-size:268px;color:#fff;display:inline-block;line-height:1;letter-spacing:-.05em}
+#__ID__ .n98 .u{color:#FF6FC9}
+#__ID__ .pais{position:absolute;left:100px;top:496px;font-size:100px;color:#fff}
+#__ID__ .pais .r{color:#fff}
+#__ID__ .cidx{position:absolute;left:100px;top:640px;font-size:34px}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0"></div>
+  <div class="world">
+    <div class="glow g1"></div><div class="glow g2"></div><div class="dots"></div>
+    <div class="lbl"><i class="bar"></i><span class="tag">Plataformas y contenidos</span><span class="badge week">Esta semana</span><span class="badge dk">28 sep 2026</span><span class="badge srcdk">blog.coursera.org</span></div>
+
+    <div class="chart">
+      <svg class="ax" viewBox="0 0 1920 1080">
+        <defs><linearGradient id="dg___ID__" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#9B61F6"/><stop offset="1" stop-color="#FF6FC9"/></linearGradient></defs>
+        <g class="gridl" stroke="rgba(255,255,255,.14)" stroke-width="2" stroke-dasharray="4 12" fill="none">
+          <path d="M1090 900V300M1320 900V300M1550 900V300M1780 900V300"/>
+          <path d="M860 745H1780M860 590H1780M860 435H1780M860 280H1780"/>
+        </g>
+        <path class="axx" d="M860 900H1750" pathLength="1" stroke="#9B61F6" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path class="axxh" d="M1722 872L1772 900L1722 928" stroke="#9B61F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path class="axy" d="M860 900V310" pathLength="1" stroke="#FF6FC9" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path class="axyh" d="M832 338L860 288L888 338" stroke="#FF6FC9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path class="diagg" d="M900 862L1700 330" pathLength="1" stroke="rgba(255,1,162,.35)" stroke-width="34" stroke-linecap="round" fill="none"/>
+        <path class="diag" d="M900 862L1700 330" pathLength="1" stroke="url(#dg___ID__)" stroke-width="12" stroke-linecap="round" fill="none"/>
+      </svg>
+      <div class="lx">HABILIDADES DE IA</div>
+      <div class="ly">HABILIDADES HUMANAS</div>
+      <div class="org"></div>
+      <div class="dtz"></div>
+      <div class="panel dark idx"><div class="eye">Índice nuevo</div><div class="nm">AI-Human Skills Synergy Index</div></div>
+      <div class="chip dark syn">sinergia</div>
+    </div>
+
+    <div class="gwrap"><div class="halo"></div><canvas class="gl"></canvas></div>
+    <div class="h n98"><span class="nv">0</span></div>
+    <div class="mask pais"><div class="r h">PAÍSES</div></div>
+    <div class="chip dark cidx">AI-Human Skills Synergy Index</div>
+
+    <div class="shotwin dark w1">
+      <div class="sbar"><i></i><i></i><i></i><div class="url">blog.coursera.org · Global Skills Report 2026</div></div>
+      <div class="view"><img src="assets/captures/coursera-gsr.png" alt="" data-layout-allow-overflow>
+        <div class="hlbox hA"></div><div class="hlbox hB"></div><div class="hlbox hC"></div><div class="flash"></div>
+      </div>
+    </div>
+
+    <div class="ra">
+      <div class="mask sk"><div class="r h">COURSERA</div></div>
+      <div class="mask g1"><div class="r h">GLOBAL</div></div>
+      <div class="mask g2"><div class="r h">SKILLS</div></div>
+      <div class="mask g3"><div class="r h">REPORT</div></div>
+      <div class="y26">2026</div>
+    </div>
+    <div class="chip dark stk"><b>NUEVO</b>AI-Human Skills Synergy Index</div>
+  </div>
+  <div class="strip dk"></div>
+</div>
+<!--JS-->
+const CW = 1440, CH = 900;
+function hlAt(box, win, fx, fy, s, px, py, pw, ph, at, d = 0.5) {
+  const p = shotPos(win, CW, CH, fx, fy, s);
+  hl(box, p.x + px * s, p.y + py * s, pw * s, ph * s, at, d);
+}
+let sd = 23; const rnd = () => (sd = (sd * 1664525 + 1013904223) % 4294967296) / 4294967296;
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 0.3, 0.9, 0.8);
+
+/* fondo vivo */
+tl.fromTo(Q(".glow.g1"), { x: 0, y: 0 }, { x: 200, y: -90, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".glow.g2"), { x: 0, y: 0 }, { x: -240, y: 110, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".dots"), { x: 0, y: 0 }, { x: -56, y: -56, duration: DUR, ease: "none" }, 0);
+BEATS.forEach((b) => tl.fromTo(Q(".glow.g2"), { scale: 1 }, { scale: 1.07, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, b));
+up(".lbl", 0.15, { d: 0.6, y: 18 });
+
+/* ---------- ventana: captura real ---------- */
+shotSet(".w1", CW, CH, 720, 393, 0.7);
+tl.fromTo(Q(".w1"), { opacity: 0, y: 46, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: E }, 0.04);
+tl.fromTo(Q(".flash"), { opacity: 0.85 }, { opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+shotCam(".w1", CW, CH, 696, 290, 1.2, 0.75, 0.8);                    // titular completo
+shotCam(".w1", CW, CH, 940, 600, 1.55, cue("Global") - 0.1, 0.85);  // cartel «Global Skills Report 2026»
+hlAt(".hA", ".w1", 940, 600, 1.55, 720, 538, 332, 118, cue("Report") + 0.1);
+tl.to(Q(".hA"), { opacity: 0, duration: 0.25 }, 3.0);
+shotCam(".w1", CW, CH, 696, 290, 1.2, 3.05, 0.8);                    // vuelve al titular: «AI-Human Skills Synergy Index»
+hlAt(".hB", ".w1", 696, 290, 1.2, 640, 266, 432, 44, cue("índice") + 0.35);
+hlAt(".hC", ".w1", 696, 290, 1.2, 318, 316, 110, 44, cue("índice") + 0.55);
+
+/* ---------- columna A: título cinético ---------- */
+rise(".ra .sk .r", cue("Coursera"), 0.8);
+rise(".ra .g1 .r", cue("Global"), 0.8);
+rise(".ra .g2 .r", cue("Skills"), 0.8);
+rise(".ra .g3 .r", cue("Report"), 0.8);
+pop(".ra .y26", cue("Report") + 0.35, 0.6);
+pop(".stk", cue("índice") + 0.1, 0.6);
+tl.fromTo(Q(".stk"), { rotation: -4 }, { rotation: -2, duration: 0.6 }, cue("índice") + 0.1);
+// la ventana se hace miniatura; la columna A sale
+const TS = 4.15;
+tl.to(Q(".ra"), { x: 140, opacity: 0, filter: "blur(14px)", duration: 0.4, ease: "power3.in" }, TS);
+tl.to(Q(".stk"), { x: -60, opacity: 0, duration: 0.3, ease: "power3.in" }, TS);
+tl.to(Q(".w1"), { x: 0, y: 488, scale: 0.5, duration: 0.8, ease: IO, transformOrigin: "0 0" }, TS + 0.05);
+
+/* ---------- ejes: IA × humanas = índice ---------- */
+tl.set(Q(".axx"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".axy"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".diag"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".diagg"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.fromTo(Q(".gridl"), { opacity: 0 }, { opacity: 1, duration: 0.6 }, TS + 0.4);
+const TX = cue("habilidades");           // 1.ª: de IA
+tl.to(Q(".axx"), { strokeDashoffset: 0, duration: 0.8, ease: "power3.inOut" }, TX);
+tl.fromTo(Q(".axxh"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, TX + 0.7);
+up(".lx", TX + 0.25, { d: 0.6, y: 18 });
+const TY = cue("habilidades", 1);        // 2.ª: humanas
+tl.to(Q(".axy"), { strokeDashoffset: 0, duration: 0.8, ease: "power3.inOut" }, TY);
+tl.fromTo(Q(".axyh"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, TY + 0.7);
+up(".ly", TY + 0.25, { d: 0.6, y: 18 });
+tl.set(Q(".axxh"), { opacity: 0 }, 0); tl.set(Q(".axyh"), { opacity: 0 }, 0);
+// nube de puntos (semilla fija) a lo largo de la diagonal
+const dtz = $q(".dtz");
+const D = [];
+for (let i = 0; i < 46; i++) {
+  const t = 0.04 + 0.96 * ((i + rnd() * 0.8) / 46), r = 7 + rnd() * 9;
+  const x = 930 + 770 * t + (rnd() - 0.5) * 120, y = 850 - 520 * t + (rnd() - 0.5) * 120;
+  const c = document.createElement("i"); c.className = "dot";
+  const mix = (a, b, k) => Math.round(a + (b - a) * k);
+  c.style.cssText = "left:" + (x - r) + "px;top:" + (y - r) + "px;width:" + 2 * r + "px;height:" + 2 * r + "px;background:rgb(" + mix(155, 255, t) + "," + mix(97, 111, t) + "," + mix(246, 201, t) + ");box-shadow:0 0 18px rgba(255,111,201," + (0.25 + 0.4 * t) + ")";
+  dtz.appendChild(c); D.push({ c, t });
+}
+D.forEach((o, i) => tl.fromTo(o.c, { opacity: 0, scale: 0 }, { opacity: 0.95, scale: 1, duration: 0.45, ease: SPR }, TY + 0.55 + i * 0.022));
+const TH = cue("humanas");
+tl.fromTo(Q(".org"), { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.5, ease: SPR }, TH - 0.1);
+tl.fromTo(Q(".org"), { scale: 1 }, { scale: 2.6, opacity: 0, duration: 0.7, ease: "power2.out" }, TH + 0.45);
+tl.to(Q(".diag"), { strokeDashoffset: 0, duration: 0.7, ease: "power3.inOut" }, TH);
+tl.to(Q(".diagg"), { strokeDashoffset: 0, duration: 0.7, ease: "power3.inOut" }, TH);
+const TI = Math.max(cue("índice") + 0.7, TS + 0.5);
+fade(".idx", TI, 0.5);
+tl.fromTo(Q(".idx"), { y: 30 }, { y: 0, duration: 0.6, ease: E }, TI);
+pop(".syn", TH + 0.5, 0.5);
+// el gráfico se va
+const TG = cue("noventa") - 0.1;
+tl.to(Q(".chart"), { opacity: 0, scale: 0.92, filter: "blur(10px)", duration: 0.42, ease: "power3.in", transformOrigin: "50% 50%" }, TG - 0.15);
+
+/* ---------- globo de puntos: 98 países ---------- */
+const cvs = $q(".gl"), ctx = cvs.getContext("2d");
+const SZ = 760, SC = 2; cvs.width = SZ * SC; cvs.height = SZ * SC;
+const pts = [];
+const NP = 1700;
+for (let i = 0; i < NP; i++) {
+  const lat = Math.asin(1 - 2 * (i + 0.5) / NP), lon = i * 2.399963;
+  const v = Math.sin(2.1 * lon + 1.3 * Math.sin(lat * 2)) + 1.2 * Math.sin(3.3 * lat + 0.8) + 0.8 * Math.cos(1.7 * lon - lat * 2.2);
+  pts.push({ lat, lon, land: v > 0.55, rank: -1 });
+}
+const landIdx = pts.map((p, i) => (p.land ? i : -1)).filter((i) => i >= 0);
+for (let i = landIdx.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [landIdx[i], landIdx[j]] = [landIdx[j], landIdx[i]]; }
+landIdx.slice(0, 98).forEach((pi, k) => (pts[pi].rank = k));
+const G = { rot: 0.4, lit: 0 }, TILT = 0.38, ct = Math.cos(TILT), st = Math.sin(TILT), CX = SZ / 2, R = 340;
+function draw() {
+  ctx.setTransform(SC, 0, 0, SC, 0, 0);
+  ctx.clearRect(0, 0, SZ, SZ);
+  const g = ctx.createRadialGradient(CX - 90, CX - 110, 40, CX, CX, R);
+  g.addColorStop(0, "rgba(155,97,246,.32)"); g.addColorStop(1, "rgba(47,18,94,.55)");
+  ctx.beginPath(); ctx.arc(CX, CX, R, 0, 7); ctx.fillStyle = g; ctx.fill();
+  ctx.lineWidth = 3; ctx.strokeStyle = "rgba(226,204,255,.5)"; ctx.stroke();
+  const front = [];
+  for (const p of pts) {
+    const lam = p.lon + G.rot, cl = Math.cos(p.lat);
+    const x = cl * Math.sin(lam), z0 = cl * Math.cos(lam), y0 = Math.sin(p.lat);
+    const y = y0 * ct - z0 * st, z = y0 * st + z0 * ct;
+    const X = CX + R * x, Y = CX - R * y;
+    if (z < 0) {
+      if (p.land) { ctx.fillStyle = "rgba(200,170,255,.14)"; ctx.fillRect(X - 1.5, Y - 1.5, 3, 3); }
+    } else front.push({ X, Y, z, p });
+  }
+  for (const f of front) {
+    if (f.p.rank >= 0 && f.p.rank < G.lit) continue;
+    ctx.fillStyle = f.p.land ? "rgba(226,204,255," + (0.35 + 0.5 * f.z) + ")" : "rgba(226,204,255,.10)";
+    const s = f.p.land ? 2.4 + 1.6 * f.z : 1.5;
+    ctx.beginPath(); ctx.arc(f.X, f.Y, s, 0, 7); ctx.fill();
+  }
+  for (const f of front) {
+    if (!(f.p.rank >= 0 && f.p.rank < G.lit)) continue;
+    const age = G.lit - f.p.rank;                         // recién encendidos: anillo
+    if (age < 6) { ctx.strokeStyle = "rgba(255,255,255," + (0.9 - age * 0.15) + ")"; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(f.X, f.Y, 10 + age * 5, 0, 7); ctx.stroke(); }
+    ctx.fillStyle = "rgba(255,111,201,.35)"; ctx.beginPath(); ctx.arc(f.X, f.Y, 13, 0, 7); ctx.fill();
+    ctx.fillStyle = "#FF6FC9"; ctx.beginPath(); ctx.arc(f.X, f.Y, 6.5 + 2 * f.z, 0, 7); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(f.X - 1.5, f.Y - 1.5, 2.2, 0, 7); ctx.fill();
+  }
+}
+draw();
+const TL0 = TG + 0.1;
+tl.fromTo(Q(".gwrap"), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.7, ease: SPR }, TL0 - 0.1);
+tl.to(G, { rot: 0.4 + 2.6, duration: DUR - TL0, ease: "none", onUpdate: draw }, TL0 - 0.1);
+tl.to(G, { lit: 98, duration: 1.35, ease: "power2.out", onUpdate: draw }, cue("noventa"));
+pop(".n98", cue("noventa") - 0.06, 0.5);
+count(".n98 .nv", 98, cue("noventa"), 1.35);
+tl.fromTo(Q(".pais"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, cue("países") - 0.1);
+rise(".pais .r", cue("países") - 0.1, 0.8);
+pop(".cidx", cue("países") + 0.15, 0.55);
+
+sceneOut("whip");
+<!--SFX-->
+[{"k":"shutter","t":0.3,"v":0.45},{"k":"impact","t":1.5,"v":0.5},{"k":"pop","t":3.4,"v":0.35},{"k":"swipe","t":4.2,"v":0.4},{"k":"ping","t":4.65,"v":0.4},{"k":"ping","t":5.95,"v":0.4},{"k":"stamp","t":6.75,"v":0.45},{"k":"counter","t":7.4,"v":0.4},{"k":"ding","t":8.8,"v":0.4}]

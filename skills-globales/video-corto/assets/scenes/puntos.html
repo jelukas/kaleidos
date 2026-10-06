@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3.4vmin;
+          background: var(--vox-ink);
+          padding: 8vmin 6vmin;
+        }
+        .ptitle {
+          font: 900 7vmin/1 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.2vmin;
+          color: var(--vox-white);
+          text-align: center;
+        }
+        .ptitle em {
+          font-style: normal;
+          color: var(--vox-yellow);
+        }
+        .field {
+          width: 100%;
+          max-width: 150vmin;
+          height: 54vmin;
+        }
+        .plegend {
+          font: 700 2.7vmin/1.2 var(--vox-font);
+          color: #8a8a92;
+          text-transform: uppercase;
+          letter-spacing: 0.18vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="puntos">
+        <div class="ptitle" id="p-title">Cincuenta mil <em>en 24 horas</em></div>
+        <svg class="field" viewBox="0 0 104 84" preserveAspectRatio="xMidYMid meet">
+          <clipPath id="p-clip">
+            <!-- La altura de este rect es lo único que se anima: el campo se
+                 "llena" con una sola propiedad, en vez de animar 2.000 nodos. -->
+            <rect id="p-mask" x="0" y="0" width="104" height="0" />
+          </clipPath>
+          <g id="p-dots" clip-path="url(#p-clip)"></g>
+        </svg>
+        <div class="plegend" id="p-legend">Cada punto = 25 personas</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+
+        // 50 x 40 = 2.000 puntos x 25 personas = 50.000. Generación determinista:
+        // sin Math.random(), el mismo DOM en cada seek del render.
+        const COLS = 50;
+        const ROWS = 40;
+        const g = document.getElementById("p-dots");
+        let svg = "";
+        for (let r = 0; r < ROWS; r++) {
+          for (let c = 0; c < COLS; c++) {
+            const x = 2 + c * 2;
+            const y = 2 + r * 2;
+            svg += `<circle cx="${x}" cy="${y}" r="0.62" fill="#ffe500" opacity="0.88"/>`;
+          }
+        }
+        g.innerHTML = svg;
+
+        const tl = gsap.timeline({ paused: true });
+        tl.fromTo("#p-title", { opacity: 0, y: "2vmin" }, { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 0)
+          .fromTo(
+            "#p-mask",
+            { attr: { height: 0 } },
+            { attr: { height: 84 }, duration: 2.6, ease: "power1.inOut" },
+            0.24,
+          )
+          .fromTo("#p-legend", { opacity: 0 }, { opacity: 1, duration: 0.34 }, 2.5);
+
+        window.__timelines["puntos"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+{
+ "voz": {},
+ "pausaEntreBloques": 0.35,
+ "bloques": [
+  {
+   "id": "b01",
+   "texto": "Ayer, veintinueve de septiembre, OpenAI celebró en San Francisco su DevDay. El más grande hasta ahora: más de veinte anuncios entre ChatGPT, Codex y sus modelos. Te contamos lo importante en menos de cuatro minutos.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b02",
+   "texto": "Empezamos por la estrella del día: los dots. Son agentes siempre encendidos. No esperan a que les escribas: trabajan por ti las veinticuatro horas, hacia los objetivos que tú les marques."
+  },
+  {
+   "id": "b03",
+   "texto": "Cada dot funciona con GPT seis Astra, tiene su propio ordenador en la nube y su propio navegador, y se conecta a más de cuatro mil aplicaciones a través de los plugins. Puedes escribirle desde ChatGPT, desde Slack o desde Teams, e incluso hablar con él por voz."
+  },
+  {
+   "id": "b04",
+   "texto": "¿Y el control? Tú decides a qué aplicaciones accede, qué puede hacer solo y qué necesita tu aprobación. Algunas tareas sensibles, como cambiar una contraseña, siempre se quedan contigo."
+  },
+  {
+   "id": "b05",
+   "texto": "Ojo con la disponibilidad. Llegan a los planes Pro y Business Premium. Pero en el plan Pro, de momento, no llegan al Espacio Económico Europeo, ni a Suiza, ni al Reino Unido. Business Premium sí los tiene en todas las regiones compatibles.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b06",
+   "texto": "Segundo bloque: modelos y velocidad. Llega GPT seis punto uno Sol. Según OpenAI, se acerca a la inteligencia de Astra por una quinta parte de su precio."
+  },
+  {
+   "id": "b07",
+   "texto": "En la API cuesta dos dólares por millón de tokens de entrada y diez por millón de salida, y la entrada en caché, diez céntimos por millón. Ya está en ChatGPT Work y en Codex para Plus, Pro, Business, Enterprise y Edu. En el chat, todavía no."
+  },
+  {
+   "id": "b08",
+   "texto": "Y para quien tenga prisa, Ultrafast: un nuevo nivel de velocidad premium. Hasta ocho veces más rápido en Codex, trescientos tokens por segundo, y hasta seis veces más en la API. Hoy funciona con Astra; con Sol, muy pronto.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b09",
+   "texto": "Tercer bloque, para desarrolladores. Codex sale del portátil: ahora trabaja también en la nube, y puedes lanzar tareas desde cualquier dispositivo, incluso desde el móvil."
+  },
+  {
+   "id": "b10",
+   "texto": "La terminal de Codex se renueva: diriges las tareas con la voz y sigues varios agentes a la vez en la nueva vista de agentes. Llega una revisión de código en la app de escritorio. Y Codex Security Cloud analiza repositorios de GitHub, investiga lo que encuentra y prepara las correcciones."
+  },
+  {
+   "id": "b11",
+   "texto": "En la API, Agents API ya puede usar el ordenador: sus agentes manejan software para completar tareas. La nueva Decisions API, en vista previa, responde preguntas cerradas en tiempo real para clasificar o enrutar. Y con Amazon, Bedrock Managed Agents ejecuta agentes de OpenAI por completo dentro de AWS.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b12",
+   "texto": "Cuarto bloque: ChatGPT quiere ser tu oficina. OpenAI lo abre como espacio compartido, con mil doscientos millones de usuarios semanales. Los desarrolladores pueden crear extensiones de plugins, con su sitio en la barra lateral y paneles interactivos."
+  },
+  {
+   "id": "b13",
+   "texto": "Llega ChatGPT Space, un lugar común para el equipo, ChatGPT y tu dot. Pages, un nuevo tipo de documento para personas y agentes. Diapositivas colaborativas, en las próximas semanas. Y en Business y Enterprise ya puedes mencionar a ChatGPT en Slack y en Microsoft Teams.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b14",
+   "texto": "Y por último, los planes. Nace Pro 500: veinticinco veces el uso de Plus, con acceso a Ultrafast. Con Sign in with ChatGPT, quien tenga Plus o Pro podrá usar su plan en dieciséis herramientas de socios. Y OpenAI Marketplace permitirá a las empresas dedicar parte de su compromiso a software de treinta y dos socios.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b15",
+   "texto": "En resumen: agentes que no paran, modelos más baratos y más rápidos, y un ChatGPT que quiere ser tu espacio de trabajo. Muchas novedades llegan poco a poco, así que revisa qué aparece en tu cuenta. ¡Nos vemos en el próximo vídeo!"
+  }
+ ]
+}

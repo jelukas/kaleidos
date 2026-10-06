@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "preferences": {
+    "aspect": {
+      "value": "1920x1080",
+      "confirmed_in": [
+        "hyperframes-test"
+      ],
+      "updated_at": "2026-09-28T22:12:02.920Z"
+    }
+  },
+  "sightings": {}
+}

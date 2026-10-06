@@ -1,0 +1,15 @@
+{
+  "name": "hyperframes-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.86 preview",
+    "check": "npx --yes hyperframes@0.8.86 check",
+    "render": "npx --yes hyperframes@0.8.86 render",
+    "publish": "npx --yes hyperframes@0.8.86 publish"
+  },
+  "devDependencies": {
+    "@hyperframes/aws-lambda": "0.8.86",
+    "hyperframes": "0.8.86"
+  }
+}

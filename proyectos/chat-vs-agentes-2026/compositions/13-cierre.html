@@ -1,0 +1,257 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+/* KIT COMPARTIDO v2 — se inyecta en cada escena (build2.mjs). Prefijo: #s13 */
+#s13{position:absolute;inset:0;font-family:Inter,sans-serif;color:#0D1320;overflow:hidden;
+  --ink:#0D1320;--soft:#667085;--acc:#7D29E0;--pink:#FF01A2;--deep:#2F125E;--indigo:#5E3DE6;--lav:#9B61F6;
+  --bg:#FAFBFC;--lila:#F2E7FC;--line:#E4E7EC;--warn:#B54708}
+#s13 .stage{position:absolute;inset:0}
+#s13 .bg{position:absolute;inset:0}
+#s13 .bg-violet{background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%)}
+#s13 .bg-deep{background:radial-gradient(1200px 800px at 70% 20%,#4A1D96 0%,#2F125E 55%,#1A0836 100%)}
+#s13 .bg-light{background:#FAFBFC}
+#s13 .h{font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap}
+#s13 .mask{display:block;overflow:hidden;padding:0.08em 0.04em 0.16em;margin:-0.08em -0.04em -0.16em}
+#s13 .mask>.r{display:block}
+#s13 .eye{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:28px;color:var(--soft)}
+#s13 .acc{color:var(--acc)} #s13 .pink{color:var(--pink)} #s13 .soft{color:var(--soft)} #s13 .white{color:#fff}
+#s13 .panel{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(13,19,32,.12);border-radius:32px;box-sizing:border-box}
+#s13 .panel.dark{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(10,0,30,.45);color:#fff;backdrop-filter:blur(8px)}
+#s13 .chip{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:.32em .85em;font-weight:600;font-size:40px;line-height:1.1;background:#fff;white-space:nowrap}
+#s13 .chip.dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
+#s13 .chip.acc{background:var(--lila);border-color:var(--acc);color:var(--acc)}
+/* ventana de app / navegador simulada */
+#s13 .win{position:absolute;background:#fff;border-radius:22px;box-shadow:0 40px 100px rgba(10,0,30,.35);overflow:hidden;box-sizing:border-box;border:1px solid rgba(13,19,32,.12)}
+#s13 .win.dark{background:#14091F;border-color:rgba(255,255,255,.14)}
+#s13 .win .bar{height:56px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line)}
+#s13 .win.dark .bar{background:#1E0F33;border-bottom-color:rgba(255,255,255,.1)}
+#s13 .win .bar i{display:block;width:16px;height:16px;border-radius:50%;background:#FF5F57}
+#s13 .win .bar i:nth-child(2){background:#FEBC2E} #s13 .win .bar i:nth-child(3){background:#28C840}
+#s13 .win .bar .url{margin-left:18px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;max-width:620px}
+#s13 .win.dark .bar .url{background:rgba(255,255,255,.08);color:#B9A7D6}
+/* el orbe del agente (espina del vídeo) */
+#s13 .orb{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff 0 7%,#E2CCFF 8% 24%,#9B61F6 48%,#7D29E0 66%,#FF01A2 135%);
+  box-shadow:0 0 36px rgba(125,41,224,.7),0 0 96px rgba(255,1,162,.4);z-index:50}
+#s13 .orb::before{content:"";position:absolute;inset:-16px;border-radius:50%;border:2px solid rgba(125,41,224,.4)}
+#s13 .ripple{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:4px solid var(--acc);opacity:0;z-index:49;visibility:visible}
+/* etiqueta de simulación */
+#s13 .simlabel{position:absolute;right:56px;top:44px;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:1.5px solid currentColor;opacity:.75;z-index:60}
+#s13 .simlabel.on-dark{color:#fff} #s13 .simlabel.on-light{color:var(--soft)}
+
+#s13 .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 470px}
+#s13 .halo{position:absolute;left:260px;top:120px;width:1400px;height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(125,41,224,.20),rgba(255,1,162,.10) 58%,rgba(255,1,162,0));opacity:0}
+#s13 .halo2{position:absolute;left:760px;top:520px;width:640px;height:340px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.22),rgba(125,41,224,.10) 60%,rgba(125,41,224,0));opacity:0}
+#s13 .txt{position:absolute;left:0;top:170px;width:1920px;text-align:center;transform-origin:960px 346px}
+#s13 .ln{display:block;white-space:nowrap;text-align:center}
+#s13 .chatl{display:flex;align-items:center;justify-content:center;gap:26px;font-weight:800;letter-spacing:-.04em;font-size:92px;line-height:1.1;color:#667085;height:120px;transform-origin:50% 50%}
+#s13 .chatl svg{width:96px;height:96px;overflow:visible;flex:none}
+#s13 .big{font-weight:800;letter-spacing:-.045em;font-size:176px;line-height:1.0;color:#0D1320;height:176px}
+#s13 .big.g1{margin-top:44px}
+#s13 .wm{display:inline-block;overflow:hidden;padding:.1em .06em .2em;margin:-.1em -.06em -.2em;vertical-align:top;position:relative}
+#s13 .wm>.r{display:inline-block}
+#s13 .sp{display:inline-block;width:.26em}
+#s13 .chatl .sp{width:.24em}
+#s13 .hecho{color:#7D29E0}
+#s13 .hw{display:inline-block;position:relative;vertical-align:top;margin:0 -0.06em;padding:0 0.06em}
+#s13 .ul{position:absolute;left:0.04em;right:0.12em;bottom:-0.02em;height:16px;border-radius:8px;background:linear-gradient(90deg,#7D29E0,#FF01A2);transform-origin:0 50%;opacity:0}
+#s13 .ring{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible;z-index:20}
+#s13 .pt{position:absolute;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;opacity:0;z-index:40}
+#s13 .og{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:radial-gradient(circle at 40% 36%,#E2CCFF 0 20%,#9B61F6 55%,#FF01A2 140%);z-index:45;filter:blur(2px)}</style>
+<div id="s13" data-composition-id="s13" data-width="1920" data-height="1080">
+<div class="stage">
+  <div class="bg clip" data-start="0" data-duration="9" data-track-index="0"><div class="halo"></div><div class="halo2"></div></div>
+  <div class="world">
+    <div class="txt">
+      <div class="ln chatl">
+        <svg viewBox="0 0 96 96"><path class="bub" d="M14 22 Q14 12 24 12 H72 Q82 12 82 22 V56 Q82 66 72 66 H44 L26 82 V66 H24 Q14 66 14 56 Z" fill="none" stroke="#667085" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/><circle class="bd" cx="34" cy="39" r="4.5" fill="#667085"/><circle class="bd" cx="48" cy="39" r="4.5" fill="#667085"/><circle class="bd" cx="62" cy="39" r="4.5" fill="#667085"/></svg>
+        <div class="cw"><span class="wm"><span class="r c0">Chat</span></span><span class="sp"></span><span class="wm"><span class="r c1">para</span></span><span class="sp"></span><span class="wm"><span class="r c2">preguntar.</span></span></div>
+      </div>
+      <div class="ln big g1"><span class="wm"><span class="r a0">Agente</span></span><span class="sp"></span><span class="wm"><span class="r a1">para</span></span><span class="sp"></span><span class="wm"><span class="r a2">que</span></span></div>
+      <div class="ln big g2"><span class="wm"><span class="r a3">te</span></span><span class="sp"></span><span class="wm"><span class="r a4">entregue</span></span></div>
+      <div class="ln big g3"><span class="wm"><span class="r a5">el</span></span><span class="sp"></span><span class="wm"><span class="r a6">trabajo</span></span><span class="sp"></span><span class="hw"><span class="wm"><span class="r a7 hecho">hecho.</span></span><span class="ul"></span></span></div>
+    </div>
+    <div class="og og3"></div><div class="og og2"></div><div class="og og1"></div>
+    <div class="orb"></div>
+    <div class="pts"></div>
+  </div>
+  <svg class="ring" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="rg_s13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7D29E0"/><stop offset="1" stop-color="#FF01A2"/></linearGradient></defs>
+    <circle class="rc" cx="960" cy="470" r="86" fill="none" stroke="url(#rg_s13)" stroke-width="14" opacity="0"/>
+  </svg>
+</div>
+</div>
+<script>
+/* KIT COMPARTIDO v2 (JS) — dentro del <script> de cada escena. Disponibles: ID, DUR, CUES, BEATS, tl y los helpers. */
+const ID = "s13";
+const DUR = 9;
+const CUES = {"words":[{"t":"Chat","s":0.43,"e":0.69},{"t":"para","s":0.69,"e":0.96},{"t":"preguntar.","s":0.96,"e":1.6},{"t":"Agente","s":2.12,"e":2.15},{"t":"para","s":2.15,"e":2.41},{"t":"que","s":2.41,"e":2.63},{"t":"te","s":2.63,"e":2.79},{"t":"entregue","s":2.79,"e":3.3},{"t":"el","s":3.3,"e":3.83},{"t":"trabajo","s":3.83,"e":3.86},{"t":"hecho.","s":3.86,"e":4.26},{"t":"Empieza","s":4.9,"e":4.93},{"t":"por","s":4.93,"e":5.1},{"t":"una","s":5.1,"e":5.35},{"t":"tarea","s":5.35,"e":5.77},{"t":"pequeña","s":5.77,"e":6.49},{"t":"de","s":6.49,"e":6.58},{"t":"tu","s":6.58,"e":6.61},{"t":"semana.","s":6.61,"e":7.04}],"voiceStart":0.4};      // { words:[{t,s,e}], voiceStart } — tiempos relativos a la escena (s). Vacío si el plano no lleva voz
+const BEATS = [0.082,0.627,1.173,1.718,2.264,2.809,3.355,3.9,4.445,4.991,5.536,6.082,6.627,7.173,7.718,8.264,8.809];    // pulsos de la música (110 BPM) relativos a la escena (s), solo los que caen dentro
+const tl = gsap.timeline({ paused: true });
+const E = "expo.out", SPR = "back.out(1.7)", SOFTSPR = "back.out(1.2)", IO = "power3.inOut";
+const Q = (s) => "#" + ID + " " + s;
+const $q = (s) => document.querySelector(Q(s));
+const $$q = (s) => [...document.querySelectorAll(Q(s))];
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ]/g, "");
+/* tiempo de inicio de una palabra de la locución: cue("texto") | cue("el", 1) (n-ésima coincidencia por prefijo) | cue(7) por índice */
+function cue(w, nth = 0) {
+  if (typeof w === "number") return CUES.words[w].s;
+  const hits = CUES.words.filter((x) => norm(x.t).startsWith(norm(w)));
+  if (!hits[nth]) throw new Error("cue no encontrado: " + w + " #" + nth);
+  return Math.max(0, hits[nth].s - 0.05);
+}
+/* siguiente pulso de la música a partir de t (para clavar golpes al ritmo) */
+function beat(t) { const b = BEATS.find((x) => x >= t - 0.02); return b === undefined ? t : b; }
+
+/* ---- entradas de texto y elementos ---- */
+function rise(sel, at, d = 1.0) { return tl.fromTo(Q(sel), { yPercent: 110 }, { yPercent: 0, duration: d, ease: E }, at); }   // titular dentro de .mask>.r
+function up(sel, at, o = {}) { return tl.fromTo(Q(sel), { opacity: 0, y: o.y ?? 28 }, { opacity: o.to ?? 1, y: 0, duration: o.d ?? 0.8, ease: o.ease ?? E }, at); }
+function pop(sel, at, d = 0.6) { return tl.fromTo(Q(sel), { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at); }
+function fade(sel, at, d = 0.4, to = 1) { return tl.fromTo(Q(sel), { opacity: 0 }, { opacity: to, duration: d, ease: "power2.out" }, at); }
+/* golpe: escala grande + desenfoque que aterriza con sacudida */
+function slam(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 1.7, filter: "blur(26px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.42, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 14, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + 0.38);
+  tl.set(Q(sel), { x: 0 }, at + 0.74);
+}
+/* texto que se escribe carácter a carácter en el elemento sel; devuelve la duración */
+function typeText(sel, text, at, cps = 30) {
+  const el = $q(sel), o = { n: 0 };
+  el.textContent = "";
+  tl.to(o, { n: text.length, duration: text.length / cps, ease: "none", onUpdate: () => { el.textContent = text.slice(0, Math.round(o.n)); } }, at);
+  return text.length / cps;
+}
+/* contador numérico 0→valor en sel */
+function count(sel, to, at, d = 1.2, fmt = (v) => String(Math.round(v))) {
+  const el = $q(sel), o = { v: 0 };
+  tl.to(o, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(o.v); } }, at);
+}
+/* ---- el orbe del agente ---- */
+function orbSet(x, y, at = 0) { tl.set(Q(".orb"), { x, y }, at); }
+function orbTo(x, y, at, d = 0.7, ease = IO) { return tl.to(Q(".orb"), { x, y, duration: d, ease }, at); }
+function orbSquash(at) {   // estira y encoge con humor (al terminar una tarea)
+  tl.to(Q(".orb"), { scaleX: 1.35, scaleY: 0.72, duration: 0.11, ease: "power2.out" }, at);
+  tl.to(Q(".orb"), { scaleX: 0.85, scaleY: 1.2, duration: 0.14, ease: "power2.inOut" }, at + 0.11);
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.35, ease: "elastic.out(1,0.5)" }, at + 0.25);
+}
+function orbPulse(at, d = 0.5) { tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 1.3, duration: d / 2, yoyo: true, repeat: 1, ease: "sine.inOut" }, at); }
+/* clic: anillo que se expande en (x,y). Requiere <div class="ripple"> en el HTML (uno por clic: .ripple.r1, .r2…) */
+function clickAt(sel, x, y, at) {
+  tl.set(Q(sel), { x, y, opacity: 0 }, 0);
+  tl.fromTo(Q(sel), { opacity: 0.9, scale: 0.2 }, { opacity: 0, scale: 2.2, duration: 0.6, ease: "power2.out" }, at);
+  tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, at - 0.02);
+}
+/* ---- entrada / salida de escena sobre .stage ---- */
+function sceneIn(kind = "fade") {
+  if (kind === "cut") return;
+  if (kind === "whip") tl.fromTo(Q(".stage"), { x: 260, opacity: 0, filter: "blur(22px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else if (kind === "zoom") tl.fromTo(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else tl.fromTo(Q(".stage"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+}
+function sceneOut(kind = "fade") {
+  const t = DUR - 0.42;
+  if (kind === "cut") return;
+  if (kind === "whip") tl.to(Q(".stage"), { x: -260, opacity: 0, filter: "blur(22px)", duration: 0.42, ease: "power3.in" }, t);
+  else if (kind === "zoom") tl.to(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)", duration: 0.42, ease: "power3.in" }, t);
+  else tl.to(Q(".stage"), { opacity: 0, duration: 0.4, ease: "power2.inOut" }, t);
+}
+
+const GH = [".og1", ".og2", ".og3"];
+const GS = [0.86, 0.72, 0.58], GO = [0.42, 0.26, 0.14];
+function go(x, y, at, d = 0.6, ease = IO) {
+  tl.to(Q(".orb"), { x, y, duration: d, ease }, at);
+  GH.forEach((g, i) => tl.to(Q(g), { x, y, duration: d, ease }, at + 0.05 * (i + 1)));
+}
+function trailInit(x, y) { orbSet(x, y, 0); GH.forEach((g, i) => tl.set(Q(g), { x, y, scale: GS[i], opacity: GO[i] }, 0)); }
+const ptsEl = $q(".pts");
+function burst(x, y, at, n = 16, rad = 220, rot = 0) {
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement("div"); el.className = "pt";
+    el.style.background = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6"][i % 4];
+    const sz = 9 + (i % 3) * 6; el.style.width = el.style.height = sz + "px"; el.style.margin = `${-sz / 2}px 0 0 ${-sz / 2}px`;
+    ptsEl.appendChild(el);
+    const ang = rot + i * (Math.PI * 2 / n), r = rad * (0.6 + 0.6 * ((i * 7) % 5) / 4);
+    tl.fromTo(el, { x, y, opacity: 0, scale: 0.3 }, { x, y, opacity: 1, scale: 1, duration: 0.06, ease: "none" }, at);
+    tl.to(el, { x: x + Math.cos(ang) * r, y: y + Math.sin(ang) * r, opacity: 0, scale: 0.2, duration: 0.8, ease: "power3.out" }, at + 0.06);
+  }
+}
+
+sceneIn("fade");
+
+/* cámara: empieza algo cerca y se asienta */
+tl.fromTo(Q(".world"), { scale: 1.07 }, { scale: 1, duration: 4.2, ease: "power2.out" }, 0);
+
+/* resplandor de fondo (lo único vivo durante la pieza sostenida) */
+tl.fromTo(Q(".halo"), { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1.4, ease: "power2.out" }, 0);
+
+/* «Chat para preguntar.» — suave, con rebote */
+const rb = "back.out(1.5)";
+["c0", "c1", "c2"].forEach((c, i) => {
+  const t = [Math.max(0.15, cue("chat") - 0.25), cue("para") - 0.12, cue("preguntar") - 0.1][i];
+  tl.fromTo(Q("." + c), { yPercent: 115 }, { yPercent: 0, duration: 0.7, ease: rb }, t);
+});
+tl.fromTo(Q(".bub"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 0.05);
+tl.fromTo(Q(".bd"), { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.35, ease: "back.out(3)", stagger: 0.1 }, 0.4);
+/* el chat cede protagonismo cuando entra el agente */
+const A0 = cue("agente");
+tl.to(Q(".chatl"), { scale: 0.78, y: -8, opacity: 0.55, duration: 0.6, ease: "power3.inOut" }, A0 - 0.1);
+
+/* el orbe entra y escribe el agente */
+trailInit(150, 880);
+go(300, 600, 0.9, 0.9, "power2.out");
+go(215, 470, A0 - 0.25, 0.5, "power3.inOut");
+
+/* «Agente para que te entregue el trabajo hecho.» — por palabras, con rebote y solape */
+const rbk = "back.out(1.7)";
+const WORDS = [
+  ["a0", A0], ["a1", A0 + 0.14], ["a2", cue("que") - 0.02],
+  ["a3", cue("te") - 0.02], ["a4", cue("entregue") - 0.05],
+  ["a5", cue("el") - 0.02], ["a6", cue("el") + 0.18]
+];
+WORDS.forEach(([c, t]) => tl.fromTo(Q("." + c), { yPercent: 118, rotation: 4 }, { yPercent: 0, rotation: 0, duration: 0.75, ease: rbk }, t));
+/* el orbe acompaña la línea que se escribe */
+go(235, 650, cue("te") - 0.1, 0.4, "power3.inOut");
+go(235, 840, cue("el") - 0.2, 0.45, "power3.inOut");
+
+/* «hecho.» — golpe en violeta con subrayado trazado por el orbe */
+const H = cue("hecho");
+tl.fromTo(Q(".a7"), { yPercent: 130, scale: 1.5, filter: "blur(18px)" }, { yPercent: 0, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" }, H);
+tl.fromTo(Q(".hw"), { x: 0 }, { x: 10, duration: 0.045, repeat: 5, yoyo: true, ease: "none" }, H + 0.42);
+tl.set(Q(".hw"), { x: 0 }, H + 0.72);
+tl.fromTo(Q(".halo2"), { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1.1, duration: 0.5, ease: "power3.out" }, H);
+tl.to(Q(".halo2"), { opacity: 0.75, scale: 1, duration: 1.0, ease: "power2.out" }, H + 0.5);
+tl.fromTo(Q(".halo"), { scale: 1 }, { scale: 1.12, duration: 0.5, ease: "power3.out" }, H);
+tl.to(Q(".halo"), { scale: 1, duration: 1.2, ease: "power2.inOut" }, H + 0.5);
+tl.fromTo(Q(".ul"), { opacity: 1, scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.inOut" }, H + 0.22);
+/* orbe: baja a la palabra, recorre el subrayado y se queda al final */
+go(1140, 880, H - 0.2, 0.4, "power3.inOut");
+go(1642, 884, H + 0.22, 0.5, "power3.inOut");
+orbSquash(H + 0.75);
+burst(1350, 790, H + 0.05, 18, 230);
+
+/* pieza sostenida: ~3 s sin más movimiento que el resplandor */
+tl.to(Q(".halo"), { opacity: 0.7, scale: 1.08, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.6);
+tl.to(Q(".halo2"), { opacity: 0.45, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.6);
+
+/* última fase (últimos 0,9 s): todo se contrae a un aro que se convierte en el logo */
+const X = DUR - 0.95;
+tl.to(Q(".txt"), { scale: 1.035, duration: 0.25, ease: "power2.out" }, X - 0.02);
+go(533, 538, X + 0.05, 0.42, "power3.inOut");
+tl.to(Q(".txt"), { scale: 0.03, x: 533 - 960, y: 22, rotation: -8, opacity: 0, duration: 0.42, ease: "power3.in" }, X + 0.22);
+tl.to(Q(".halo, .halo2"), { opacity: 0, duration: 0.45, ease: "power2.in" }, X + 0.2);
+tl.to(Q(".og"), { opacity: 0, duration: 0.2 }, X + 0.3);
+tl.to(Q(".orb"), { scale: 1.7, duration: 0.2, ease: "power2.in" }, X + 0.4);
+tl.to(Q(".orb"), { scale: 0.05, opacity: 0, duration: 0.3, ease: "power3.in" }, X + 0.6);
+/* el aro nace donde se contrae todo y queda donde el logo dibuja el suyo (533,538), ø final 185 */
+tl.fromTo(Q(".rc"), { attr: { cx: 533, cy: 538, r: 2 }, opacity: 0 }, { attr: { cx: 533, cy: 538, r: 85.5 }, opacity: 1, duration: 0.5, ease: "expo.out" }, X + 0.45);
+window.__timelines["s13"] = tl;
+</script>
+</template>

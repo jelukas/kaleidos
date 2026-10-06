@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3vmin;
+          background: var(--vox-ink);
+          padding: 8vmin 6vmin;
+          overflow: hidden;
+        }
+        /* Destello que barre el cuadro en el golpe final. */
+        .zflash {
+          position: absolute;
+          inset: 0;
+          background: var(--vox-yellow);
+          mix-blend-mode: screen;
+          opacity: 0;
+          pointer-events: none;
+        }
+        .zlogo { width: 13vmin; height: 13vmin; }
+        .zlogo path { fill: var(--vox-white); }
+        .zno {
+          position: relative;
+          font: 900 5.6vmin/1.05 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.16vmin;
+          color: #6a6a76;
+          text-align: center;
+        }
+        .zstrike {
+          position: absolute;
+          left: -2%;
+          right: -2%;
+          top: 52%;
+          height: 0.6vmin;
+          background: #ff4d4d;
+          transform-origin: left center;
+        }
+        .zbig {
+          font: 900 15vmin/0.9 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.8vmin;
+          color: var(--vox-yellow);
+          text-align: center;
+        }
+        .zprices { display: flex; gap: 4vmin; flex-wrap: wrap; justify-content: center; }
+        .zp {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0.7vmin;
+          border-top: 0.5vmin solid var(--vox-yellow);
+          padding-top: 1.4vmin;
+          min-width: 22vmin;
+        }
+        .zpname {
+          font: 900 3.2vmin/1 var(--vox-font);
+          text-transform: uppercase;
+          color: #9a9aa2;
+          letter-spacing: 0.2vmin;
+        }
+        .zpval {
+          font: 900 4.6vmin/1 var(--vox-font);
+          color: var(--vox-white);
+          font-variant-numeric: tabular-nums;
+          white-space: nowrap;
+        }
+        .zfoot {
+          font: 700 2.5vmin/1.2 var(--vox-font);
+          color: #8a8a92;
+          text-transform: uppercase;
+          letter-spacing: 0.22vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="cierre">
+        <svg class="zlogo" id="z-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z" />
+        </svg>
+
+        <div class="zno" id="z-no">La noticia no es el modelo<span class="zstrike" id="z-strike"></span></div>
+        <div class="zbig" id="z-big">Es el precio</div>
+
+        <div class="zprices">
+          <div class="zp" id="z-p1"><div class="zpname">Sol</div><div class="zpval">$5 / $30</div></div>
+          <div class="zp" id="z-p2"><div class="zpname">Terra −20%</div><div class="zpval">$2 / $12</div></div>
+          <div class="zp" id="z-p3"><div class="zpname">Luna −80%</div><div class="zpval">$0,20 / $1,20</div></div>
+        </div>
+
+        <div class="zfoot" id="z-foot">GPT-5.6 · 30 de julio de 2026</div>
+        <div class="zflash" id="z-flash"></div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#z-logo", { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.44, ease: "back.out(2.2)" }, 0)
+          .fromTo("#z-no", { opacity: 0, y: "2vmin" }, { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 0.22)
+          .fromTo("#z-strike", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power2.in" }, 0.7)
+          // El golpe: destello + la frase clave entrando a escala.
+          .fromTo("#z-flash", { opacity: 0.5 }, { opacity: 0, duration: 0.36, ease: "power2.out" }, 1.05
+          )
+          .fromTo("#z-big", { opacity: 0, scale: 0.62 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.8)" }, 1.05)
+          .fromTo("#z-p1", { opacity: 0, y: "2.4vmin" }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.5)
+          .fromTo("#z-p2", { opacity: 0, y: "2.4vmin" }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.62)
+          .fromTo("#z-p3", { opacity: 0, y: "2.4vmin" }, { opacity: 1, y: 0, duration: 0.3, ease: "power3.out" }, 1.74)
+          .fromTo("#z-foot", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 2.0);
+
+        window.__timelines["cierre"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

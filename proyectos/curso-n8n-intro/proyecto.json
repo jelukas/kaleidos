@@ -1,0 +1,86 @@
+{
+ "slug": "curso-n8n-intro",
+ "titulo": "Introducción a n8n",
+ "narracion": true,
+ "metodo": "corto-ilustrado",
+ "estilo": "lanzamiento-dinamico",
+ "idioma": "es",
+ "salida": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25
+ },
+ "ponente": {
+  "recorte": false
+ },
+ "whisper": {
+  "modelo": "large-v3-turbo",
+  "prompt": "n8n, Zapier, Make, Google Sheets, Gmail, Slack, HubSpot, Notion, Airtable, Telegram, OpenAI, ChatGPT, webhook, API, JSON, Cloud, AI Agent, workflow, trigger"
+ },
+ "lambda": {
+  "region": "eu-west-1",
+  "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+  "framesPorLambda": 100,
+  "crf": 20,
+  "conservarSalida": false,
+  "concurrencia": "max"
+ },
+ "escenario": true,
+ "audio": {
+  "origen": "estilos/milikito/audio",
+  "musica": {
+   "sintonia": {
+    "archivo": "sintonia",
+    "volumen": 0.5,
+    "fundidoEntrada": 0,
+    "fundidoSalida": 1.5,
+    "hasta": "voz"
+   },
+   "base": {
+    "archivo": "base",
+    "lufs": -27.0,
+    "volumen": 0.15,
+    "bucle": true,
+    "fundidoEntrada": 2,
+    "fundidoSalida": 2,
+    "nota": "curso de 30 min: base más baja que en noticias (≈ -27 LUFS) para no cansar"
+   },
+   "cierre": {
+    "archivo": "cierre",
+    "volumen": 0.5,
+    "fundidoEntrada": 1,
+    "fundidoSalida": 2
+   }
+  },
+  "sfx": {
+   "titulo": {
+    "archivo": "sfx-destello",
+    "volumen": 0.5
+   },
+   "bocadillo": {
+    "archivo": "sfx-pop",
+    "volumen": 0.45
+   },
+   "reaccion": {
+    "archivo": "sfx-pop",
+    "volumen": 0.35
+   },
+   "disposicion": {
+    "archivo": "sfx-whoosh",
+    "volumen": 0.35
+   },
+   "sello": {
+    "archivo": "sfx-golpe",
+    "volumen": 0.6
+   },
+   "capitulo": {
+    "archivo": "sfx-ficha",
+    "volumen": 0.5
+   },
+   "veredicto": {
+    "archivo": "sfx-sello",
+    "volumen": 0.5
+   }
+  }
+ }
+}

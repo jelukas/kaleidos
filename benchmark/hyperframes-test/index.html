@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="es" data-resolution="landscape">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Intro de curso</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      @font-face {
+        font-family: "Montserrat";
+        src: url("assets/fonts/montserrat-latin-400-normal.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("assets/fonts/montserrat-latin-700-normal.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: block;
+      }
+      @font-face {
+        font-family: "Montserrat";
+        src: url("assets/fonts/montserrat-latin-900-normal.woff2") format("woff2");
+        font-weight: 900;
+        font-style: normal;
+        font-display: block;
+      }
+
+      :root {
+        --bg: #071631;
+        --panel: #0d2552;
+        --line: #1f3f7a;
+        --accent: #4c8dff;
+        --mid: #2f6be0;
+        --deep: #040c1f;
+        --fg: #f3f7ff;
+        --muted: #a8bce3;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--bg);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "Montserrat", sans-serif;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      #s2,
+      #s3,
+      #s4 {
+        opacity: 0;
+      }
+
+      /* Fondo persistente */
+      #bg-glow {
+        position: absolute;
+        left: 800px;
+        top: -500px;
+        width: 1400px;
+        height: 1400px;
+        border-radius: 50%;
+        background: radial-gradient(circle closest-side, #4c8dff 0%, rgba(76, 141, 255, 0) 100%);
+        opacity: 0.22;
+      }
+
+      /* Piezas compartidas */
+      .kicker {
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        color: var(--accent);
+        white-space: nowrap;
+      }
+
+      /* Escena 1 */
+      #s1-ghost {
+        position: absolute;
+        right: -80px;
+        bottom: -90px;
+        font-size: 460px;
+        font-weight: 900;
+        line-height: 1;
+        color: var(--fg);
+        white-space: nowrap;
+        opacity: 0;
+      }
+      .ring {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid rgba(76, 141, 255, 0.3);
+      }
+      #s1-ring-a {
+        left: 1200px;
+        top: 260px;
+        width: 560px;
+        height: 560px;
+      }
+      #s1-ring-b {
+        left: 1090px;
+        top: 150px;
+        width: 780px;
+        height: 780px;
+        border-style: dashed;
+      }
+      .s1-col {
+        position: absolute;
+        left: 140px;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #s1-bar {
+        width: 120px;
+        height: 6px;
+        margin: 28px 0 36px;
+        background: var(--accent);
+        transform-origin: left center;
+      }
+      .mask {
+        overflow: hidden;
+        line-height: 1.2;
+      }
+      .line {
+        display: block;
+        font-size: 176px;
+        font-weight: 900;
+        line-height: 1.2;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+      .line.accent {
+        color: var(--accent);
+      }
+      #s1-sub {
+        max-width: 1000px;
+        margin-top: 40px;
+        font-size: 44px;
+        font-weight: 400;
+        line-height: 1.3;
+        color: var(--muted);
+        text-wrap: balance;
+      }
+
+      /* Escena 2 */
+      #s2-glow {
+        position: absolute;
+        left: 920px;
+        top: 90px;
+        width: 900px;
+        height: 900px;
+        border-radius: 50%;
+        background: radial-gradient(circle closest-side, #4c8dff 0%, rgba(76, 141, 255, 0) 100%);
+        opacity: 0;
+      }
+      #three-layer {
+        position: absolute;
+        left: 820px;
+        top: 0;
+        width: 1100px;
+        height: 1080px;
+        display: block;
+      }
+      .s2-col {
+        position: absolute;
+        left: 140px;
+        top: 0;
+        bottom: 0;
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #s2-title {
+        margin-top: 24px;
+        font-size: 88px;
+        font-weight: 900;
+        line-height: 1.05;
+        color: var(--fg);
+        text-wrap: balance;
+      }
+      #s2-body {
+        max-width: 600px;
+        margin-top: 32px;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 1.35;
+        color: var(--muted);
+        text-wrap: balance;
+      }
+
+      /* Escena 3 */
+      .s3-head {
+        position: absolute;
+        left: 140px;
+        top: 120px;
+      }
+      #s3-title {
+        margin-top: 20px;
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1.1;
+        color: var(--fg);
+        white-space: nowrap;
+      }
+      .chart {
+        position: absolute;
+        left: 140px;
+        bottom: 170px;
+        width: 1640px;
+        height: 520px;
+      }
+      .grid {
+        position: absolute;
+        left: 0;
+        width: 1640px;
+        height: 2px;
+        background: var(--line);
+        transform-origin: left center;
+      }
+      #s3-base {
+        bottom: 0;
+        height: 3px;
+        background: var(--muted);
+      }
+      .bar-fill {
+        position: absolute;
+        bottom: 0;
+        width: 200px;
+        border-radius: 8px 8px 0 0;
+        background: var(--accent);
+        transform-origin: center bottom;
+      }
+      .bar-fill.hi {
+        background: var(--fg);
+      }
+      .val {
+        position: absolute;
+        width: 200px;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1;
+        text-align: center;
+        color: var(--fg);
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+        opacity: 0;
+      }
+      .xlab {
+        position: absolute;
+        top: 548px;
+        width: 200px;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+
+      /* Escena 4 */
+      #s4-glow {
+        position: absolute;
+        left: 360px;
+        top: -60px;
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        background: radial-gradient(circle closest-side, #4c8dff 0%, rgba(76, 141, 255, 0) 100%);
+        opacity: 0;
+      }
+      .s4-center {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      #s4-logo {
+        display: flex;
+        font-size: 200px;
+        font-weight: 900;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: var(--fg);
+      }
+      #s4-logo .ch {
+        display: inline-block;
+      }
+      #s4-logo .dot {
+        color: var(--accent);
+        transform-origin: 50% 80%;
+      }
+      #s4-bar {
+        width: 160px;
+        height: 6px;
+        margin: 36px 0;
+        background: var(--accent);
+        transform-origin: center center;
+      }
+      #s4-tag {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 1.2;
+        color: var(--muted);
+      }
+      #s4-foot {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 110px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        color: var(--accent);
+      }
+
+      /* Transición 3→4 */
+      #wipes {
+        position: absolute;
+        inset: 0;
+        z-index: 10;
+        overflow: hidden;
+        pointer-events: none;
+      }
+      .wipe {
+        position: absolute;
+        top: 0;
+        left: -200px;
+        width: 2320px;
+        height: 1080px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="30"
+      data-width="1920"
+      data-height="1080"
+    >
+      <div id="bg-glow" data-layout-allow-overflow></div>
+
+      <!-- Escena 1: título -->
+      <div id="s1" class="scene">
+        <div id="s1-ghost" data-layout-allow-overflow>CÓDIGO</div>
+        <div id="s1-ring-a" class="ring" data-layout-allow-overflow></div>
+        <div id="s1-ring-b" class="ring" data-layout-allow-overflow></div>
+        <div class="s1-col">
+          <div id="s1-kicker" class="kicker">NUEVO CURSO · MÓDULO 1</div>
+          <div id="s1-bar"></div>
+          <div class="mask"><div id="s1-line1" class="line">Vídeo con</div></div>
+          <div class="mask"><div id="s1-line2" class="line accent">código</div></div>
+          <p id="s1-sub">Aprende a animar y renderizar vídeo desde el código</p>
+        </div>
+      </div>
+
+      <!-- Escena 2: objeto 3D -->
+      <div id="s2" class="scene">
+        <div id="s2-glow" data-layout-allow-overflow></div>
+        <canvas id="three-layer" width="1100" height="1080"></canvas>
+        <div class="s2-col">
+          <div id="s2-kicker" class="kicker">01 · ESCENAS 3D</div>
+          <h2 id="s2-title">Luces, materiales y sombras</h2>
+          <p id="s2-body">Un objeto real, renderizado fotograma a fotograma</p>
+        </div>
+      </div>
+
+      <!-- Escena 3: gráfica de barras -->
+      <div id="s3" class="scene">
+        <div class="s3-head">
+          <div id="s3-kicker" class="kicker">02 · DATOS EN MOVIMIENTO</div>
+          <h2 id="s3-title">Minutos de vídeo por módulo</h2>
+        </div>
+        <div class="chart">
+          <div id="s3-base" class="grid"></div>
+          <div id="s3-grid-1" class="grid" style="bottom: 160px"></div>
+          <div id="s3-grid-2" class="grid" style="bottom: 320px"></div>
+          <div id="s3-grid-3" class="grid" style="bottom: 480px"></div>
+
+          <div id="s3-bar-0" class="bar-fill" style="left: 0px; height: 280px"></div>
+          <div id="s3-bar-1" class="bar-fill" style="left: 360px; height: 400px"></div>
+          <div id="s3-bar-2" class="bar-fill" style="left: 720px; height: 336px"></div>
+          <div id="s3-bar-3" class="bar-fill hi" style="left: 1080px; height: 520px"></div>
+          <div id="s3-bar-4" class="bar-fill" style="left: 1440px; height: 384px"></div>
+
+          <div id="s3-val-0" class="val" style="left: 0px; bottom: 296px">0 min</div>
+          <div id="s3-val-1" class="val" style="left: 360px; bottom: 416px">0 min</div>
+          <div id="s3-val-2" class="val" style="left: 720px; bottom: 352px">0 min</div>
+          <div id="s3-val-3" class="val" style="left: 1080px; bottom: 536px">0 min</div>
+          <div id="s3-val-4" class="val" style="left: 1440px; bottom: 400px">0 min</div>
+
+          <div id="s3-lab-0" class="xlab" style="left: 0px">Módulo 1</div>
+          <div id="s3-lab-1" class="xlab" style="left: 360px">Módulo 2</div>
+          <div id="s3-lab-2" class="xlab" style="left: 720px">Módulo 3</div>
+          <div id="s3-lab-3" class="xlab" style="left: 1080px">Módulo 4</div>
+          <div id="s3-lab-4" class="xlab" style="left: 1440px">Módulo 5</div>
+        </div>
+      </div>
+
+      <!-- Escena 4: rótulo final -->
+      <div id="s4" class="scene">
+        <div id="s4-glow" data-layout-allow-overflow></div>
+        <div class="s4-center">
+          <div id="s4-logo">
+            <span class="ch">k</span><span class="ch">a</span><span class="ch">l</span><span class="ch">e</span><span class="ch">i</span><span class="ch">d</span><span class="ch">o</span><span class="ch">s</span><span class="ch dot">.</span>
+          </div>
+          <div id="s4-bar"></div>
+          <p id="s4-tag">Academia de vídeo programático</p>
+        </div>
+        <div id="s4-foot">EMPIEZA HOY · MÓDULO 1 DISPONIBLE</div>
+      </div>
+
+      <!-- Bloques diagonales de la transición 3→4 -->
+      <div id="wipes">
+        <div id="wipe-0" class="wipe" data-layout-allow-overflow style="background: #4c8dff"></div>
+        <div id="wipe-1" class="wipe" data-layout-allow-overflow style="background: #f3f7ff"></div>
+        <div id="wipe-2" class="wipe" data-layout-allow-overflow style="background: #2f6be0"></div>
+        <div id="wipe-3" class="wipe" data-layout-allow-overflow style="background: #0d2552"></div>
+        <div id="wipe-4" class="wipe" data-layout-allow-overflow style="background: #040c1f"></div>
+      </div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+
+      // Fondo persistente: deriva lenta durante todo el vídeo.
+      tl.fromTo("#bg-glow", { x: 0, y: 0 }, { x: -300, y: 120, duration: 30, ease: "none" }, 0);
+
+      // ── Escena 1: título ─────────────────────────────────────────────
+      tl.fromTo(
+        ["#s1-ring-a", "#s1-ring-b"],
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 1.2, ease: "power2.out" },
+        0.2,
+      );
+      tl.fromTo("#s1-ring-b", { rotation: 0 }, { rotation: 45, duration: 5.6, ease: "none" }, 0);
+      tl.set("#s1-ghost", { opacity: 0, x: 0 }, 0);
+      tl.fromTo(
+        "#s1-ghost",
+        { opacity: 0 },
+        { opacity: 0.07, duration: 1.0, ease: "power2.out", immediateRender: false },
+        0,
+      );
+      tl.fromTo("#s1-ghost", { x: 0 }, { x: -140, duration: 5.6, ease: "none", immediateRender: false }, 0);
+      tl.fromTo("#s1-kicker", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 0.3);
+      tl.fromTo("#s1-bar", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 0.45);
+      tl.fromTo("#s1-line1", { yPercent: 110 }, { yPercent: 0, duration: 0.8, ease: "expo.out" }, 0.6);
+      tl.fromTo("#s1-line2", { yPercent: 110 }, { yPercent: 0, duration: 0.8, ease: "expo.out" }, 0.75);
+      tl.fromTo("#s1-sub", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 1.3);
+
+      // ── Transición 1→2: push slide ──────────────────────────────────
+      tl.fromTo("#s1", { x: 0 }, { x: -1920, duration: 0.6, ease: "power3.inOut" }, 5.0);
+      tl.fromTo("#s2", { x: 1920, opacity: 1 }, { x: 0, opacity: 1, duration: 0.6, ease: "power3.inOut" }, 5.0);
+
+      // ── Escena 2: objeto 3D (el lienzo lo pinta el módulo Three.js) ──
+      tl.fromTo("#s2-glow", { opacity: 0, scale: 0.8 }, { opacity: 0.4, scale: 1, duration: 1.0, ease: "power2.out" }, 5.6);
+      const s2Glow = document.getElementById("s2-glow");
+      const s2Phase = { p: 0 };
+      tl.to(
+        s2Phase,
+        {
+          p: Math.PI * 6,
+          duration: 9.0,
+          ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(s2Phase.p);
+            s2Glow.style.opacity = String(0.4 + s * 0.05);
+            s2Glow.style.transform = `scale(${1 + s * 0.04})`;
+          },
+        },
+        6.6,
+      );
+      tl.fromTo("#s2-kicker", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 5.7);
+      tl.fromTo("#s2-title", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 5.85);
+      tl.fromTo("#s2-body", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 6.1);
+
+      // ── Transición 2→3: push slide ──────────────────────────────────
+      tl.fromTo(
+        "#s2",
+        { x: 0 },
+        { x: -1920, duration: 0.6, ease: "power3.inOut", immediateRender: false },
+        15.0,
+      );
+      tl.fromTo("#s3", { x: 1920, opacity: 1 }, { x: 0, opacity: 1, duration: 0.6, ease: "power3.inOut" }, 15.0);
+
+      // ── Escena 3: gráfica de barras ─────────────────────────────────
+      tl.fromTo("#s3-kicker", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: "power3.out" }, 15.7);
+      tl.fromTo("#s3-title", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 15.85);
+      ["#s3-base", "#s3-grid-1", "#s3-grid-2", "#s3-grid-3"].forEach((sel, i) => {
+        tl.fromTo(sel, { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.out" }, 15.9 + i * 0.06);
+      });
+      const VALUES = [35, 50, 42, 65, 48];
+      VALUES.forEach((value, i) => {
+        const at = 16.3 + i * 0.12;
+        const valEl = document.getElementById(`s3-val-${i}`);
+        const counter = { n: 0 };
+        tl.fromTo(`#s3-bar-${i}`, { scaleY: 0 }, { scaleY: 1, duration: 0.9, ease: "power3.out" }, at);
+        tl.fromTo(
+          counter,
+          { n: 0 },
+          {
+            n: value,
+            duration: 0.9,
+            ease: "power3.out",
+            onUpdate: () => {
+              valEl.textContent = `${Math.round(counter.n)} min`;
+            },
+          },
+          at,
+        );
+        tl.fromTo(valEl, { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power3.out" }, at);
+        tl.fromTo(`#s3-lab-${i}`, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: "power2.out" }, at);
+      });
+
+      // ── Transición 3→4: bloques diagonales ──────────────────────────
+      for (let k = 0; k < 5; k++) {
+        const sel = `#wipe-${k}`;
+        tl.fromTo(
+          sel,
+          { x: -2700, skewX: -18 },
+          { x: 0, skewX: -18, duration: 0.45, ease: "power3.inOut" },
+          22.0 + k * 0.06,
+        );
+        tl.fromTo(
+          sel,
+          { x: 0, skewX: -18 },
+          { x: 2700, skewX: -18, duration: 0.45, ease: "power3.inOut", immediateRender: false },
+          22.8 + (4 - k) * 0.06,
+        );
+      }
+      tl.set("#s3", { opacity: 0 }, 22.75);
+      tl.set("#s4", { opacity: 1 }, 22.75);
+
+      // ── Escena 4: rótulo final ──────────────────────────────────────
+      tl.fromTo("#s4-glow", { opacity: 0, scale: 0.7 }, { opacity: 0.45, scale: 1, duration: 1.2, ease: "power2.out" }, 23.0);
+      const s4Glow = document.getElementById("s4-glow");
+      const s4Phase = { p: 0 };
+      tl.to(
+        s4Phase,
+        {
+          p: Math.PI * 4,
+          duration: 5.8,
+          ease: "none",
+          onUpdate: () => {
+            const s = Math.sin(s4Phase.p);
+            s4Glow.style.opacity = String(0.45 + s * 0.05);
+            s4Glow.style.transform = `scale(${1 + s * 0.04})`;
+          },
+        },
+        24.2,
+      );
+      gsap.utils.toArray("#s4-logo .ch:not(.dot)").forEach((el, i) => {
+        tl.fromTo(el, { opacity: 0, y: 80 }, { opacity: 1, y: 0, duration: 0.5, ease: "power4.out" }, 23.2 + i * 0.05);
+      });
+      tl.fromTo("#s4-logo .dot", { scale: 0 }, { scale: 1, duration: 0.5, ease: "power3.out" }, 23.75);
+      tl.fromTo("#s4-logo", { scale: 1 }, { scale: 1.04, duration: 6.0, ease: "none" }, 24.0);
+      tl.fromTo("#s4-bar", { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power2.out" }, 23.9);
+      tl.fromTo("#s4-tag", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: "power2.out" }, 24.0);
+      tl.fromTo("#s4-foot", { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" }, 24.4);
+
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+
+    <script type="module">
+      import * as THREE from "./vendor/three/three.module.js";
+
+      const W = 1100;
+      const H = 1080;
+      const SCENE_START = 5.0;
+      const SCENE_END = 15.6;
+
+      const canvas = document.getElementById("three-layer");
+      // Mismos parámetros que el <Canvas> de React Three Fiber en Remotion.
+      const renderer = new THREE.WebGLRenderer({
+        canvas,
+        alpha: true,
+        antialias: true,
+        powerPreference: "high-performance",
+      });
+      renderer.setPixelRatio(1);
+      renderer.setSize(W, H, false);
+      renderer.setClearColor(0x000000, 0);
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(35, W / H, 0.1, 100);
+
+      const knot = new THREE.Mesh(
+        new THREE.TorusKnotGeometry(1, 0.32, 256, 40),
+        new THREE.MeshStandardMaterial({ color: "#4C8DFF", roughness: 0.28, metalness: 0.1 }),
+      );
+      knot.castShadow = true;
+      scene.add(knot);
+
+      const ground = new THREE.Mesh(
+        new THREE.PlaneGeometry(20, 20),
+        new THREE.ShadowMaterial({ opacity: 0.35 }),
+      );
+      ground.rotation.x = -Math.PI / 2;
+      ground.position.y = -1.6;
+      ground.receiveShadow = true;
+      scene.add(ground);
+
+      scene.add(new THREE.AmbientLight("#9FB8FF", 0.4));
+
+      const sun = new THREE.DirectionalLight("#FFFFFF", 2.5);
+      sun.position.set(4, 7, 5);
+      sun.castShadow = true;
+      sun.shadow.mapSize.set(2048, 2048);
+      sun.shadow.camera.left = -4;
+      sun.shadow.camera.right = 4;
+      sun.shadow.camera.top = 4;
+      sun.shadow.camera.bottom = -4;
+      sun.shadow.camera.near = 0.5;
+      sun.shadow.camera.far = 30;
+      sun.shadow.normalBias = 0.02;
+      sun.shadow.camera.updateProjectionMatrix();
+      scene.add(sun);
+
+      const rim = new THREE.PointLight("#6FA8FF", 40);
+      rim.position.set(-3, 2, -3);
+      scene.add(rim);
+
+      const clamp01 = (v) => Math.min(1, Math.max(0, v));
+      const quartOut = (p) => 1 - Math.pow(1 - p, 4); // GSAP power3.out
+
+      function renderAt(time) {
+        // Solo se pinta mientras la escena 2 está en pantalla.
+        if (time < SCENE_START || time >= SCENE_END) return;
+        const u = time - SCENE_START;
+
+        const z = 8.2 + (7.2 - 8.2) * clamp01((time - SCENE_START) / (SCENE_END - SCENE_START));
+        camera.position.set(0, 0.8, z);
+        camera.lookAt(0, -0.1, 0);
+
+        const s = 0.001 + (1 - 0.001) * quartOut(clamp01((time - 5.2) / 1.2));
+        knot.scale.setScalar(s);
+        knot.rotation.set(0.4 + Math.sin(u * 0.7) * 0.2, u * 0.9, 0);
+        knot.position.y = Math.sin(u * 1.3) * 0.12;
+
+        renderer.render(scene, camera);
+      }
+
+      window.addEventListener("hf-seek", (event) => renderAt(event.detail.time));
+      renderAt(window.__hfThreeTime || 0);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+{
+ "_plantilla": "noticias-narracion (modelo: proyectos/devday-2026). Cues = frases literales de locucion.json; los segundos los pone plantillas/herramientas/cues.py desde work/transcripcion.json. Textos entre <> y cifras de ejemplo: sustituir por los reales con su fuente en fuentes.md. Claves de imagen = ids de images.json y captures.json.",
+ "fixes": {"eme ce pe": "MCP"},
+ "cortes": [],
+ "intro": {"estilo": "marca", "previo": 4.0,
+           "palabras": ["NOTI", "CIAS"], "etiquetas": ["<Sección>", "<DD · MM · AAAA>"], "lema": "Lo importante en cuatro minutos",
+           "kicker": "<Evento o tema>", "titulo": "<Titular corto>", "subtitulo": "<Qué ha pasado, en una línea>", "disposicion": "completa"},
+ "capitulos": [
+  {"cue": [11.61, "Empezamos por la noticia principal"], "n": 1, "sigla": "1", "registro": "show", "kicker": "Bloque 1", "titulo": "<Noticia principal>", "subtitulo": "<En una línea>", "acento": 0, "objeto3d": null},
+  {"cue": [48.63, "Segundo bloque"], "n": 2, "sigla": "2", "registro": "show", "kicker": "Bloque 2", "titulo": "<Segunda noticia>", "subtitulo": "<En una línea>", "acento": 1, "objeto3d": null},
+  {"cue": [75.12, "Tercer bloque"], "n": 3, "sigla": "3", "registro": "show", "kicker": "Bloque 3", "titulo": "<Para quién>", "subtitulo": "<En una línea>", "acento": 2, "objeto3d": null},
+  {"cue": [100.16, "Cuarto bloque"], "n": 4, "sigla": "4", "registro": "show", "kicker": "Bloque 4", "titulo": "<El cambio de fondo>", "subtitulo": "<En una línea>", "acento": 3, "objeto3d": null},
+  {"cue": [120.48, "Y por último, el quinto bloque"], "n": 5, "sigla": "5", "registro": "show", "kicker": "Bloque 5", "titulo": "<Planes y precios>", "subtitulo": "<En una línea>", "acento": 0, "objeto3d": null}
+ ],
+ "eventos": [
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-apertura", "cue": [0, "Esto es el gancho de la noticia"], "hasta": [4.73, "Por qué te importa"], "zoom": [1.0, 1.08],
+   "bocadillos": [{"cue": [2.55, "qué ha pasado, cuándo y dónde"], "texto": "¡Última hora!", "x": 0.22, "y": 0.16, "forma": "grito", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "cifra", "registro": "show", "cue": [4.73, "Por qué te importa"], "hasta": [7.64, "Te contamos lo importante"], "kicker": "<Contexto de la cifra>", "titulo": "Más de", "valor": 20, "valorInicial": 0, "etiqueta": "<qué mide, según la fuente>"},
+  {"tipo": "lamina", "registro": "lamina", "imagen": "captura-fuente", "cue": [7.64, "Te contamos lo importante"], "hasta": [11.61, "Empezamos por la noticia principal"], "zoom": [1.0, 1.1], "bocadillos": []},
+
+  {"tipo": "escena3d", "registro": "show", "disposicion": "voz", "objeto": "letras", "texto": "IDEA", "cue": [15.61, "Aquí va qué es"], "hasta": [22.14, "Cómo funciona por dentro"], "kicker": "Qué es", "titulo": "<La idea en cuatro palabras>",
+   "etiquetas": [{"cue": [15.61, "Aquí va qué es"], "texto": "<Qué es>"}, {"cue": [18.88, "Y a quién afecta"], "texto": "<A quién afecta>"}]},
+  {"tipo": "panel", "kind": "lista", "registro": "editorial", "cue": [22.14, "Cómo funciona por dentro"], "hasta": [31.95, "Y quién tiene el control"], "kicker": "Bloque 1 · Cómo funciona", "titulo": "<Las tres piezas>",
+   "items": [{"texto": "<Primera pieza>", "icono": "bombilla"}, {"cue": [24.69, "la segunda pieza"], "texto": "<Segunda pieza>", "icono": "nube"}, {"cue": [25.78, "y la tercera pieza"], "texto": "<Tercera pieza>", "icono": "red"}]},
+  {"tipo": "reaccion", "cue": [31.95, "Y quién tiene el control"], "icono": "pregunta"},
+  {"tipo": "panel", "kind": "checklist", "registro": "editorial", "cue": [31.95, "Y quién tiene el control"], "hasta": [40.66, "Ojo con la disponibilidad"], "kicker": "Bloque 1 · Control", "titulo": "Tú pones las reglas",
+   "items": [{"cue": [33.76, "Lo que decide cada usuario"], "texto": "<Lo que decides tú>", "icono": "candado"}, {"cue": [35.58, "lo que hace el sistema solo"], "texto": "<Lo que hace solo>", "icono": "check"}, {"cue": [38.85, "siempre necesita tu aprobación"], "texto": "<Lo que necesita tu aprobación>", "icono": "llave"}]},
+  {"tipo": "reaccion", "cue": [40.66, "Ojo con la disponibilidad"], "icono": "alerta"},
+  {"tipo": "panel", "kind": "comparativa", "registro": "editorial", "cue": [40.66, "Ojo con la disponibilidad"], "hasta": [48.63, "Segundo bloque"], "kicker": "Bloque 1 · Disponibilidad", "titulo": "¿Dónde llega?",
+   "izq": {"cue": [42.11, "Dónde llega ya"], "titulo": "Ya disponible", "items": ["<Dónde y para qué planes>"], "tono": "ok"},
+   "der": {"cue": [44.66, "Y dónde todavía no llega"], "titulo": "Todavía no", "items": ["<Dónde no, según la fuente>"], "tono": "bad"}},
+
+  {"tipo": "titulo", "registro": "show", "cue": [53.36, "Lo nuevo de verdad"], "hasta": [57.71, "Los números de esta noticia"], "antetitulo": "Novedad", "texto": "<Producto>", "subtitulo": "<Qué es, en una línea>", "destellos": true},
+  {"tipo": "panel", "kind": "lista", "registro": "editorial", "cue": [57.71, "Los números de esta noticia"], "hasta": [66.06, "Y un dato que llama la atención"], "kicker": "Bloque 2 · Precios", "titulo": "<Lo que cuesta>",
+   "items": [{"texto": "<Primer precio>", "icono": "entrada"}, {"cue": [60.62, "el segundo precio"], "texto": "<Segundo precio>", "icono": "salida"}, {"cue": [61.71, "y el tercer precio"], "texto": "<Tercer precio>", "icono": "dinero"}]},
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-dato", "cue": [66.06, "Y un dato que llama la atención"], "hasta": [68.6, "hasta tantas veces más"], "zoom": [1.0, 1.1],
+   "bocadillos": [{"cue": [66.06, "Y un dato que llama la atención"], "texto": "¡Atención!", "x": 0.2, "y": 0.16, "forma": "grito", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "cifra", "registro": "show", "cue": [68.6, "hasta tantas veces más"], "hasta": [71.51, "Hoy funciona así"], "kicker": "<Según la propia empresa>", "titulo": "Hasta", "valor": 8, "valorInicial": 1, "unidad": "×", "etiqueta": "<qué mide y frente a qué>"},
+  {"tipo": "sello", "cue": [71.51, "Hoy funciona así"], "hasta": [75.12, "Tercer bloque"], "texto": "MUY PRONTO", "tono": "ok"},
+
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-uso", "cue": [79.12, "Lo que cambia desde hoy"], "hasta": [83.11, "Tres novedades rápidas"], "zoom": [1.0, 1.08],
+   "bocadillos": [{"cue": [80.94, "contado con un ejemplo concreto"], "texto": "<¡Así se usa!>", "x": 0.24, "y": 0.17, "forma": "globo", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "pasos", "registro": "editorial", "cue": [83.11, "Tres novedades rápidas"], "hasta": [91.82, "Cómo encaja todo"], "kicker": "Bloque 3 · Novedades", "titulo": "<Tres novedades>",
+   "items": [{"cue": [85.29, "La primera novedad"], "texto": "<Primera novedad>", "icono": "mensaje"}, {"cue": [87.47, "La segunda novedad"], "texto": "<Segunda novedad>", "icono": "personas"}, {"cue": [89.29, "Y la tercera novedad"], "texto": "<Tercera novedad>", "icono": "codigo"}]},
+  {"tipo": "panel", "kind": "mapa", "registro": "editorial", "cue": [91.82, "Cómo encaja todo"], "hasta": [100.16, "Cuarto bloque"], "kicker": "Bloque 3 · El conjunto", "titulo": "<Cómo encaja>", "centro": "<Plataforma>",
+   "nodos": [{"cue": [95.82, "la primera herramienta"], "texto": "<Herramienta 1: para qué>"}, {"cue": [96.91, "la segunda herramienta"], "texto": "<Herramienta 2: para qué>"}, {"cue": [98, "y la tercera herramienta"], "texto": "<Herramienta 3: para qué>"}]},
+
+  {"tipo": "panel", "kind": "cifra", "registro": "show", "cue": [105.25, "Una cifra de contexto"], "hasta": [108.16, "Y lo que quiere conseguir"], "kicker": "Bloque 4 · Contexto", "titulo": "<Un público de>", "valor": 1200, "valorInicial": 0, "etiqueta": "<millones de qué, según la fuente>"},
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-contexto", "cue": [108.16, "Y lo que quiere conseguir"], "hasta": [111.42, "Lo que llega en las próximas semanas"], "zoom": [1.0, 1.06],
+   "bocadillos": [{"cue": [108.16, "Y lo que quiere conseguir"], "texto": "<¡El objetivo!>", "x": 0.22, "y": 0.17, "forma": "globo", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "lista", "registro": "editorial", "cue": [111.42, "Lo que llega en las próximas semanas"], "hasta": [120.48, "Y por último, el quinto bloque"], "kicker": "Bloque 4 · Próximamente", "titulo": "<Lo que llega>",
+   "items": [{"cue": [113.96, "primero una cosa"], "texto": "<Primero>", "icono": "calendario"}, {"cue": [115.05, "después otra"], "texto": "<Después>", "icono": "documento"}, {"cue": [115.78, "y al final la tercera"], "texto": "<Al final>", "icono": "carpeta"}]},
+
+  {"tipo": "escena3d", "registro": "show", "disposicion": "voz", "objeto": "llave", "cue": [126.3, "Lo que cambia para quien paga"], "hasta": [129.21, "Y lo que cambia para las empresas"], "kicker": "Bloque 5 · Planes", "titulo": "<Lo que cambia si pagas>",
+   "etiquetas": [{"cue": [127.75, "quien paga cada mes"], "texto": "<Planes de pago>"}]},
+  {"tipo": "panel", "kind": "cifra", "registro": "show", "cue": [129.21, "Y lo que cambia para las empresas"], "hasta": [132.45, "En resumen"], "kicker": "Bloque 5 · Empresas", "titulo": "<Para empresas>", "valor": 32, "valorInicial": 0, "etiqueta": "<qué mide>"}
+ ],
+ "outro": {"coda": 5.0, "cue": [132.45, "En resumen"], "kicker": "En resumen", "titulo": "<Titular corto>",
+           "puntos": ["<Primera idea>", "<Segunda idea>", "<Tercera idea>"],
+           "cta": "<Llamada a la acción: revisa las fuentes, suscríbete…>", "objeto3d": "trofeo", "disposicion": "completa"}
+}

@@ -1,0 +1,286 @@
+[
+ {
+  "id": "s01",
+  "file": "01-apertura",
+  "line": "c01",
+  "lead": 0.5,
+  "tail": 0.6,
+  "theme": "dark",
+  "name": "Apertura",
+  "block": "Apertura",
+  "color": "#7D29E0",
+  "dates": [],
+  "dur": 12.14
+ },
+ {
+  "id": "s02",
+  "file": "02-logo",
+  "kind": "logo",
+  "logo": "open",
+  "dur": 3.6,
+  "theme": "light",
+  "name": "Logo sting",
+  "block": "Apertura",
+  "color": "#7D29E0",
+  "dates": [],
+  "noWhoosh": true
+ },
+ {
+  "id": "s03",
+  "file": "03-mapa",
+  "line": "c02",
+  "lead": 0.4,
+  "tail": 0.7,
+  "theme": "light",
+  "name": "Mapa del mes",
+  "block": "Apertura",
+  "color": "#7D29E0",
+  "dates": [],
+  "dur": 9.66
+ },
+ {
+  "id": "s04",
+  "file": "04-openai-academy",
+  "line": "c03",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "OpenAI Academy",
+  "block": "IA",
+  "color": "#7D29E0",
+  "dates": [
+   "2026-09-21"
+  ],
+  "dur": 15.2
+ },
+ {
+  "id": "s05",
+  "file": "05-microsoft-copilot",
+  "line": "c04",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Microsoft Copilot",
+  "block": "IA",
+  "color": "#7D29E0",
+  "dates": [
+   "2026-09-25"
+  ],
+  "dur": 10.8
+ },
+ {
+  "id": "s06",
+  "file": "06-openai-dots",
+  "line": "c05",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "OpenAI dots",
+  "block": "IA",
+  "color": "#7D29E0",
+  "dates": [
+   "2026-09-29"
+  ],
+  "week": true,
+  "dur": 13.44
+ },
+ {
+  "id": "s07",
+  "file": "07-anthropic-academy",
+  "line": "c06",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Anthropic Frontier Academy",
+  "block": "IA",
+  "color": "#7D29E0",
+  "dates": [
+   "2026-10-02"
+  ],
+  "week": true,
+  "dur": 11.52
+ },
+ {
+  "id": "s08",
+  "file": "08-gartner",
+  "line": "c07",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "Gartner",
+  "block": "IA",
+  "color": "#7D29E0",
+  "dates": [
+   "2026-09-09",
+   "2026-09-29"
+  ],
+  "week": true,
+  "dur": 17.84
+ },
+ {
+  "id": "s09",
+  "file": "09-coursera-helix",
+  "line": "c08",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Project Helix",
+  "block": "Plataformas",
+  "color": "#E6008E",
+  "dates": [
+   "2026-09-09"
+  ],
+  "dur": 17.44
+ },
+ {
+  "id": "s10",
+  "file": "10-articulate",
+  "line": "c09",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "Articulate",
+  "block": "Plataformas",
+  "color": "#E6008E",
+  "dates": [
+   "2026-09-10"
+  ],
+  "dur": 11.44
+ },
+ {
+  "id": "s11",
+  "file": "11-skillsoft",
+  "line": "c10",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Skillsoft",
+  "block": "Plataformas",
+  "color": "#E6008E",
+  "dates": [
+   "2026-09-10"
+  ],
+  "dur": 11.28
+ },
+ {
+  "id": "s12",
+  "file": "12-coursera-informe",
+  "line": "c11",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "Global Skills Report",
+  "block": "Plataformas",
+  "color": "#E6008E",
+  "dates": [
+   "2026-09-28"
+  ],
+  "week": true,
+  "dur": 9.44
+ },
+ {
+  "id": "s13",
+  "file": "13-pearson",
+  "line": "c12",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Pearson",
+  "block": "Mercado",
+  "color": "#9B61F6",
+  "dates": [
+   "2026-09-18",
+   "2026-09-29"
+  ],
+  "week": true,
+  "dur": 16.24
+ },
+ {
+  "id": "s14",
+  "file": "14-espana-dinero",
+  "line": "c13",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "Dinero para formar",
+  "block": "España y UE",
+  "color": "#5E3DE6",
+  "dates": [
+   "2026-09-22",
+   "2026-09-29"
+  ],
+  "week": true,
+  "dur": 18.48
+ },
+ {
+  "id": "s15",
+  "file": "15-boe-fp",
+  "line": "c14",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "BOE Formación Profesional",
+  "block": "España y UE",
+  "color": "#5E3DE6",
+  "dates": [
+   "2026-09-30"
+  ],
+  "week": true,
+  "dur": 9.2
+ },
+ {
+  "id": "s16",
+  "file": "16-europa",
+  "line": "c15",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "dark",
+  "name": "Comisión y Eurostat",
+  "block": "España y UE",
+  "color": "#5E3DE6",
+  "dates": [
+   "2026-09-14",
+   "2026-09-15"
+  ],
+  "dur": 16.72
+ },
+ {
+  "id": "s17",
+  "file": "17-agenda",
+  "line": "c16",
+  "lead": 0.4,
+  "tail": 0.64,
+  "theme": "light",
+  "name": "Agenda",
+  "block": "Agenda",
+  "color": "#7D29E0",
+  "dates": [],
+  "dur": 11.68
+ },
+ {
+  "id": "s18",
+  "file": "18-cierre",
+  "line": "c17",
+  "lead": 0.4,
+  "tail": 1.6,
+  "theme": "dark",
+  "name": "Cierre",
+  "block": "Cierre",
+  "color": "#7D29E0",
+  "dates": [],
+  "dur": 13.44
+ },
+ {
+  "id": "s19",
+  "file": "19-logo-cierre",
+  "kind": "logo",
+  "logo": "close",
+  "dur": 4.8,
+  "theme": "light",
+  "name": "Logo de cierre",
+  "block": "Cierre",
+  "color": "#7D29E0",
+  "dates": [],
+  "noWhoosh": true
+ }
+]

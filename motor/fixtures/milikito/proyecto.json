@@ -1,0 +1,22 @@
+{
+  "slug": "milikito",
+  "titulo": "Fixture del estilo milikito (modo escenario)",
+  "metodo": "clase-larga",
+  "estilo": "milikito-escenario",
+  "salida": {
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": 25
+  },
+  "ponente": {
+    "recorte": true
+  },
+  "escenario": true,
+  "lambda": {
+    "region": "eu-west-1",
+    "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+    "framesPorLambda": 100,
+    "crf": 20,
+    "conservarSalida": false
+  }
+}

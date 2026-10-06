@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          background: #060a12;
+          overflow: hidden;
+        }
+        .sea {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .otext {
+          position: absolute;
+          left: 7vmin;
+          right: 7vmin;
+          bottom: 11vmin;
+        }
+        .oheadline {
+          font: 900 8.4vmin/0.98 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.26vmin;
+          color: var(--vox-white);
+        }
+        .oheadline em {
+          font-style: normal;
+          color: var(--vox-yellow);
+        }
+        .odeck {
+          font: 700 4vmin/1.24 var(--vox-font);
+          color: #d7d7dc;
+          margin-top: 2.2vmin;
+        }
+        /* El espigón: la única línea recta en un cuadro de curvas. */
+        .spur {
+          position: absolute;
+          left: 50%;
+          top: 34%;
+          width: 1.6vmin;
+          height: 30vmin;
+          background: #4a4a56;
+          transform-origin: top center;
+        }
+      </style>
+
+      <div id="root" data-composition-id="olas">
+        <svg class="sea" viewBox="0 0 200 120" preserveAspectRatio="xMidYMid slice">
+          <!-- Cuatro bandas de ola a distinta velocidad: el desfase da sensación
+               de profundidad sin vídeo ni imagen. Cada path es el doble de ancho
+               que el viewBox para poder desplazarse sin dejar hueco. -->
+          <path id="w1" d="M0,56 q25,-7 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 V120 H0 Z" fill="#0d1a2e" opacity="0.95" />
+          <path id="w2" d="M0,66 q25,-8 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 V120 H0 Z" fill="#112742" opacity="0.9" />
+          <path id="w3" d="M0,78 q25,-9 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 V120 H0 Z" fill="#16365c" opacity="0.85" />
+          <path id="w4" d="M0,92 q25,-7 50,0 t50,0 t50,0 t50,0 t50,0 t50,0 V120 H0 Z" fill="#1d4675" opacity="0.8" />
+        </svg>
+
+        <div class="spur" id="o-spur"></div>
+
+        <div class="otext">
+          <div class="oheadline" id="o-headline">La frontera termina <em>en el mar</em></div>
+          <div class="odeck" id="o-deck">En un espigón que se adentra en el agua: El Tarajal.</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Desplazamiento horizontal continuo, cada banda a su ritmo. fromTo con
+        // ease "none": el estado depende solo de la posición del playhead, así
+        // que el seek del render siempre reconstruye el mismo fotograma.
+        const capas = [
+          ["#w1", -100, 9],
+          ["#w2", -100, 7],
+          ["#w3", -100, 5.4],
+          ["#w4", -100, 4.2],
+        ];
+        capas.forEach(([sel, dx, dur]) => {
+          tl.fromTo(sel, { x: 0 }, { x: dx, duration: dur, ease: "none" }, 0);
+        });
+
+        // Balanceo vertical suave, desfasado respecto al arrastre.
+        tl.fromTo("#w3", { y: 0 }, { y: -2.4, duration: 3, ease: "sine.inOut", yoyo: true, repeat: 2 }, 0)
+          .fromTo("#w4", { y: 0 }, { y: 2, duration: 3.6, ease: "sine.inOut", yoyo: true, repeat: 2 }, 0)
+          .fromTo("#o-spur", { scaleY: 0, opacity: 0 }, { scaleY: 1, opacity: 1, duration: 0.6, ease: "power3.out" }, 0.35)
+          .fromTo("#o-headline", { opacity: 0, y: "2.6vmin" }, { opacity: 1, y: 0, duration: 0.42, ease: "power3.out" }, 0.15)
+          .fromTo("#o-deck", { opacity: 0, y: "1.8vmin" }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 0.3);
+
+        window.__timelines["olas"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

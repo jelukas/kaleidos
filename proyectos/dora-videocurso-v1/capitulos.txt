@@ -1,0 +1,17 @@
+0:00 Introducción · DORA en la práctica
+0:08 Caso 1 · El proveedor que ya conocemos
+0:51 Caso 1 · Opción A · Pack acelerado
+1:42 Caso 1 · Opción B · Reutilización interna
+2:37 Caso 1 · Opción C · Marco completo
+3:11 Caso 1 · Opción D · Estrategia conservadora
+3:59 Caso 2 · La señal débil de las 9:15
+4:37 Caso 2 · Opción A · Confirmación primero
+5:30 Caso 2 · Opción B · Activación preliminar
+6:19 Caso 2 · Opción C · Aislar y comunicar después
+7:19 Caso 2 · Opción D · Decisión de las áreas afectadas
+8:14 Caso 3 · Viernes por la tarde
+8:50 Caso 3 · Opción A · Equipo del compañero
+9:59 Caso 3 · Opción B · VDI desde dispositivo personal
+11:05 Caso 3 · Opción C · Activación del protocolo
+11:51 Caso 3 · Opción D · Decisión del responsable
+12:53 Resumen y cierre

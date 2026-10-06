@@ -1,0 +1,226 @@
+[
+ {
+  "id": "oa-academy",
+  "url": "https://openai.com/index/expanding-openai-academy-with-new-learning-paths/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ms-copilot",
+  "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ms-skills",
+  "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/ai-at-work-learn-build-and-grow-with-microsoft-copilot-and-agents/4494140",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "oa-dots",
+  "url": "https://openai.com/index/introducing-dots/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "an-frontier",
+  "url": "https://www.anthropic.com/news/claude-frontier-academy",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "gartner-shifts",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-09-gartner-identifies-four-shifts-shaping-the-future-of-work",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "gartner-marketing",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-ai-will-allow-the-majority-of-high-performing-marketing-teams-to-eliminate-traditional-bottom-rungs-of-the-corporate-ladder-by-2030",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "gartner-fde",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "coursera-helix",
+  "url": "https://investor.coursera.com/news/news-details/2026/Coursera-Announces-Project-Helix-a-New-AI-Native-Platform-Connecting-Skills-Discovery-and-Personalized-Learning-to-Verified-Capability-and-Business-Outcomes/default.aspx",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "articulate",
+  "url": "https://www.articulate.com/blog/articulate-announces-major-platform-evolution-at-articuland-2026/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "skillsoft-lx",
+  "url": "https://investor.skillsoft.com/news-events/press-releases/detail/463/skillsoft-lx-design-studio-reduces-custom-learning-content-development-from-weeks-to-days",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "coursera-gsr",
+  "url": "https://blog.coursera.org/global-skills-report-2026/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "pearson-workera",
+  "url": "https://plc.pearson.com/en-GB/news-and-insights/news/pearson-acquires-workera-pioneer-ai-native-enterprise-assessment-and-skills",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "pearson-its",
+  "url": "https://plc.pearson.com/en-GB/news-and-insights/news/pearson-acquires-assessment-technology-provider-its",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "moncloa-29",
+  "url": "https://www.lamoncloa.gob.es/consejodeministros/referencias/Paginas/2026/20260929-referencia-rueda-de-prensa-ministros.aspx",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "moncloa-22",
+  "url": "https://www.lamoncloa.gob.es/consejodeministros/resumenes/paginas/2026/220926-rueda-prensa-ministros.aspx",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "boe-35",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-31649",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "boe-467",
+  "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-B-2026-31652",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ec-skills",
+  "url": "https://employment-social-affairs.ec.europa.eu/news/commission-proposes-ambitious-measures-strengthen-fair-labour-mobility-2026-09-15_en",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "eurostat",
+  "url": "https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260914-1",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ev-talentday",
+  "url": "https://www.equiposytalentoeventos.com/talentday/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ev-wol",
+  "url": "https://www.thenec.co.uk/events/world-of-learning/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ev-devlearn",
+  "url": "https://devlearn.com/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "ev-rising",
+  "url": "https://newsroom.workday.com/2026-07-21-Workday-Announces-Rising-2026-Where-Agentic-HR-and-Agentic-Finance-Take-Center-Stage-October-12-15-in-Las-Vegas",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "360-companion",
+  "url": "https://360learning.com/blog/product-update-ai-companion/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "coursera-helix-blog",
+  "url": "https://blog.coursera.org/announcing-project-helix/",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 0
+ },
+ {
+  "id": "skillsoft-lx-title",
+  "url": "https://investor.skillsoft.com/news-events/press-releases/detail/463/skillsoft-lx-design-studio-reduces-custom-learning-content-development-from-weeks-to-days",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 520
+ },
+ {
+  "id": "gartner-fde-body",
+  "url": "https://www.gartner.com/en/newsroom/press-releases/2026-09-29-gartner-predicts-70-percent-of-enterprises-will-abandon-agentic-ai-built-by-vendor-forward-deployed-engineering-by-2028",
+  "width": 1440,
+  "height": 900,
+  "fullPage": false,
+  "scrollY": 420
+ }
+]

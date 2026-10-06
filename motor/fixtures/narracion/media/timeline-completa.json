@@ -1,0 +1,1072 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 1150,
+ "narracion": true,
+ "recorte": false,
+ "escenario": true,
+ "segmentos": [],
+ "capitulos": [
+  {
+   "desde": 0,
+   "hasta": 575,
+   "rotuloHasta": 0,
+   "n": 1,
+   "titulo": "La noticia",
+   "sigla": "1",
+   "acento": 0
+  },
+  {
+   "desde": 575,
+   "hasta": 1150,
+   "rotuloHasta": 650,
+   "n": 2,
+   "titulo": "Qué cambia",
+   "sigla": "2",
+   "acento": 1,
+   "registro": "show"
+  }
+ ],
+ "eventos": [
+  {
+   "id": "n01",
+   "tipo": "titulo",
+   "desde": 0,
+   "hasta": 150,
+   "antetitulo": "Última hora",
+   "texto": "Novedades",
+   "subtitulo": "El resumen del día",
+   "registro": "show",
+   "disposicion": "completa"
+  },
+  {
+   "id": "n02",
+   "tipo": "panel",
+   "kind": "lista",
+   "desde": 165,
+   "hasta": 430,
+   "disposicion": "completa",
+   "kicker": "Claves",
+   "titulo": "Lo que hay que saber",
+   "items": [
+    {
+     "en": 190,
+     "texto": "Se anuncia una versión nueva",
+     "icono": "rayo"
+    },
+    {
+     "en": 260,
+     "texto": "Llega a más equipos",
+     "icono": "personas"
+    },
+    {
+     "en": 330,
+     "texto": "Con un calendario por fases",
+     "icono": "calendario"
+    }
+   ]
+  },
+  {
+   "id": "n03",
+   "tipo": "reaccion",
+   "desde": 300,
+   "hasta": 335,
+   "icono": "idea"
+  },
+  {
+   "id": "n04",
+   "tipo": "lamina",
+   "desde": 445,
+   "hasta": 565,
+   "imagen": "lamina-reunion",
+   "disposicion": "voz",
+   "pie": "Ilustración de archivo",
+   "bocadillos": [
+    {
+     "en": 470,
+     "texto": "¿Y ahora qué?",
+     "x": 0.66,
+     "y": 0.22,
+     "forma": "globo",
+     "cola": "izq"
+    }
+   ]
+  },
+  {
+   "id": "n05",
+   "tipo": "sello",
+   "desde": 665,
+   "hasta": 800,
+   "texto": "Confirmado",
+   "tono": "ok",
+   "disposicion": "completa"
+  },
+  {
+   "id": "n06",
+   "tipo": "bocadillo",
+   "desde": 690,
+   "hasta": 790,
+   "texto": "¡Por fin!",
+   "forma": "grito",
+   "lado": "izq"
+  },
+  {
+   "id": "n07",
+   "tipo": "reaccion",
+   "desde": 705,
+   "hasta": 740,
+   "icono": "ok"
+  },
+  {
+   "id": "n08",
+   "tipo": "panel",
+   "kind": "cifra",
+   "desde": 815,
+   "hasta": 960,
+   "disposicion": "voz",
+   "valor": 29,
+   "unidad": "%",
+   "etiqueta": "más rápido",
+   "registro": "show"
+  },
+  {
+   "id": "n10",
+   "tipo": "bocadillo",
+   "desde": 840,
+   "hasta": 945,
+   "texto": "¡Casi un tercio!",
+   "forma": "nube",
+   "lado": "izq"
+  },
+  {
+   "id": "n09",
+   "tipo": "escena3d",
+   "objeto": "trofeo",
+   "desde": 975,
+   "hasta": 1110,
+   "disposicion": "voz",
+   "kicker": "Balance",
+   "titulo": "Un buen día",
+   "etiquetas": [
+    {
+     "en": 1000,
+     "texto": "Objetivo cumplido"
+    }
+   ]
+  }
+ ],
+ "subtitulos": [
+  {
+   "desde": 9,
+   "hasta": 30,
+   "palabras": [
+    {
+     "t": "¿Con",
+     "desde": 9,
+     "hasta": 19
+    },
+    {
+     "t": "quién?",
+     "desde": 19,
+     "hasta": 24
+    }
+   ]
+  },
+  {
+   "desde": 30,
+   "hasta": 49,
+   "palabras": [
+    {
+     "t": "¿Para",
+     "desde": 30,
+     "hasta": 40
+    },
+    {
+     "t": "qué?",
+     "desde": 40,
+     "hasta": 45
+    }
+   ]
+  },
+  {
+   "desde": 49,
+   "hasta": 80,
+   "palabras": [
+    {
+     "t": "¿Bajo",
+     "desde": 49,
+     "hasta": 58
+    },
+    {
+     "t": "qué",
+     "desde": 58,
+     "hasta": 70
+    },
+    {
+     "t": "condiciones?",
+     "desde": 70,
+     "hasta": 75
+    }
+   ]
+  },
+  {
+   "desde": 80,
+   "hasta": 120,
+   "palabras": [
+    {
+     "t": "¿Y",
+     "desde": 80,
+     "hasta": 86
+    },
+    {
+     "t": "cómo",
+     "desde": 86,
+     "hasta": 91
+    },
+    {
+     "t": "saldrías",
+     "desde": 91,
+     "hasta": 102
+    },
+    {
+     "t": "del",
+     "desde": 102,
+     "hasta": 108
+    },
+    {
+     "t": "contrato",
+     "desde": 108,
+     "hasta": 113
+    }
+   ]
+  },
+  {
+   "desde": 126,
+   "hasta": 163,
+   "palabras": [
+    {
+     "t": "si",
+     "desde": 126,
+     "hasta": 130
+    },
+    {
+     "t": "el",
+     "desde": 130,
+     "hasta": 134
+    },
+    {
+     "t": "proveedor",
+     "desde": 134,
+     "hasta": 148
+    },
+    {
+     "t": "desapareciera",
+     "desde": 148,
+     "hasta": 162
+    },
+    {
+     "t": "de",
+     "desde": 162,
+     "hasta": 167
+    }
+   ]
+  },
+  {
+   "desde": 163,
+   "hasta": 176,
+   "palabras": [
+    {
+     "t": "un",
+     "desde": 163,
+     "hasta": 166
+    },
+    {
+     "t": "día",
+     "desde": 166,
+     "hasta": 168
+    },
+    {
+     "t": "otro?",
+     "desde": 168,
+     "hasta": 173
+    }
+   ]
+  },
+  {
+   "desde": 176,
+   "hasta": 211,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 176,
+     "hasta": 180
+    },
+    {
+     "t": "esa",
+     "desde": 180,
+     "hasta": 184
+    },
+    {
+     "t": "es",
+     "desde": 184,
+     "hasta": 186
+    },
+    {
+     "t": "la",
+     "desde": 186,
+     "hasta": 194
+    },
+    {
+     "t": "pregunta",
+     "desde": 194,
+     "hasta": 198
+    },
+    {
+     "t": "que",
+     "desde": 198,
+     "hasta": 200
+    },
+    {
+     "t": "el",
+     "desde": 200,
+     "hasta": 205
+    }
+   ]
+  },
+  {
+   "desde": 212,
+   "hasta": 238,
+   "palabras": [
+    {
+     "t": "supervisor",
+     "desde": 212,
+     "hasta": 217
+    },
+    {
+     "t": "te",
+     "desde": 217,
+     "hasta": 220
+    },
+    {
+     "t": "va",
+     "desde": 220,
+     "hasta": 222
+    },
+    {
+     "t": "a",
+     "desde": 222,
+     "hasta": 227
+    },
+    {
+     "t": "hacer.",
+     "desde": 227,
+     "hasta": 232
+    }
+   ]
+  },
+  {
+   "desde": 238,
+   "hasta": 257,
+   "palabras": [
+    {
+     "t": "Opción",
+     "desde": 238,
+     "hasta": 246
+    },
+    {
+     "t": "D.",
+     "desde": 246,
+     "hasta": 251
+    }
+   ]
+  },
+  {
+   "desde": 260,
+   "hasta": 288,
+   "palabras": [
+    {
+     "t": "Estrategia",
+     "desde": 260,
+     "hasta": 272
+    },
+    {
+     "t": "conservadora.",
+     "desde": 272,
+     "hasta": 280
+    }
+   ]
+  },
+  {
+   "desde": 298,
+   "hasta": 316,
+   "palabras": [
+    {
+     "t": "Esta",
+     "desde": 298,
+     "hasta": 300
+    },
+    {
+     "t": "es",
+     "desde": 300,
+     "hasta": 302
+    },
+    {
+     "t": "la",
+     "desde": 302,
+     "hasta": 306
+    },
+    {
+     "t": "más",
+     "desde": 306,
+     "hasta": 311
+    },
+    {
+     "t": "sutil.",
+     "desde": 311,
+     "hasta": 316
+    }
+   ]
+  },
+  {
+   "desde": 316,
+   "hasta": 334,
+   "palabras": [
+    {
+     "t": "El",
+     "desde": 316,
+     "hasta": 320
+    },
+    {
+     "t": "razonamiento",
+     "desde": 320,
+     "hasta": 325
+    }
+   ]
+  },
+  {
+   "desde": 338,
+   "hasta": 369,
+   "palabras": [
+    {
+     "t": "contiene",
+     "desde": 338,
+     "hasta": 344
+    },
+    {
+     "t": "una",
+     "desde": 344,
+     "hasta": 348
+    },
+    {
+     "t": "verdad",
+     "desde": 348,
+     "hasta": 358
+    },
+    {
+     "t": "importante.",
+     "desde": 358,
+     "hasta": 363
+    }
+   ]
+  },
+  {
+   "desde": 371,
+   "hasta": 400,
+   "palabras": [
+    {
+     "t": "El",
+     "desde": 371,
+     "hasta": 376
+    },
+    {
+     "t": "riesgo",
+     "desde": 376,
+     "hasta": 380
+    },
+    {
+     "t": "de",
+     "desde": 380,
+     "hasta": 386
+    },
+    {
+     "t": "concentración",
+     "desde": 386,
+     "hasta": 392
+    }
+   ]
+  },
+  {
+   "desde": 404,
+   "hasta": 444,
+   "palabras": [
+    {
+     "t": "con",
+     "desde": 404,
+     "hasta": 410
+    },
+    {
+     "t": "un",
+     "desde": 410,
+     "hasta": 417
+    },
+    {
+     "t": "único",
+     "desde": 417,
+     "hasta": 423
+    },
+    {
+     "t": "proveedor",
+     "desde": 423,
+     "hasta": 434
+    },
+    {
+     "t": "es",
+     "desde": 434,
+     "hasta": 438
+    },
+    {
+     "t": "una",
+     "desde": 438,
+     "hasta": 443
+    }
+   ]
+  },
+  {
+   "desde": 444,
+   "hasta": 478,
+   "palabras": [
+    {
+     "t": "preocupación",
+     "desde": 444,
+     "hasta": 457
+    },
+    {
+     "t": "legítima",
+     "desde": 457,
+     "hasta": 466
+    },
+    {
+     "t": "en",
+     "desde": 466,
+     "hasta": 468
+    },
+    {
+     "t": "DORA.",
+     "desde": 468,
+     "hasta": 473
+    }
+   ]
+  },
+  {
+   "desde": 491,
+   "hasta": 529,
+   "palabras": [
+    {
+     "t": "E",
+     "desde": 491,
+     "hasta": 498
+    },
+    {
+     "t": "incluso",
+     "desde": 498,
+     "hasta": 508
+    },
+    {
+     "t": "aparece",
+     "desde": 508,
+     "hasta": 516
+    },
+    {
+     "t": "explícitamente",
+     "desde": 516,
+     "hasta": 521
+    }
+   ]
+  },
+  {
+   "desde": 536,
+   "hasta": 568,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 536,
+     "hasta": 540
+    },
+    {
+     "t": "el",
+     "desde": 540,
+     "hasta": 544
+    },
+    {
+     "t": "artículo",
+     "desde": 544,
+     "hasta": 558
+    },
+    {
+     "t": "29.",
+     "desde": 558,
+     "hasta": 563
+    }
+   ]
+  },
+  {
+   "desde": 572,
+   "hasta": 588,
+   "palabras": [
+    {
+     "t": "¿Hasta",
+     "desde": 572,
+     "hasta": 580
+    },
+    {
+     "t": "aquí?",
+     "desde": 580,
+     "hasta": 585
+    }
+   ]
+  },
+  {
+   "desde": 588,
+   "hasta": 606,
+   "palabras": [
+    {
+     "t": "Bien.",
+     "desde": 588,
+     "hasta": 593
+    }
+   ]
+  },
+  {
+   "desde": 609,
+   "hasta": 632,
+   "palabras": [
+    {
+     "t": "Pero",
+     "desde": 609,
+     "hasta": 613
+    },
+    {
+     "t": "la",
+     "desde": 613,
+     "hasta": 618
+    },
+    {
+     "t": "conclusión",
+     "desde": 618,
+     "hasta": 626
+    },
+    {
+     "t": "es",
+     "desde": 626,
+     "hasta": 628
+    },
+    {
+     "t": "la",
+     "desde": 628,
+     "hasta": 633
+    }
+   ]
+  },
+  {
+   "desde": 632,
+   "hasta": 650,
+   "palabras": [
+    {
+     "t": "equivocada.",
+     "desde": 632,
+     "hasta": 640
+    }
+   ]
+  },
+  {
+   "desde": 658,
+   "hasta": 696,
+   "palabras": [
+    {
+     "t": "DORA",
+     "desde": 658,
+     "hasta": 664
+    },
+    {
+     "t": "no",
+     "desde": 664,
+     "hasta": 668
+    },
+    {
+     "t": "te",
+     "desde": 668,
+     "hasta": 671
+    },
+    {
+     "t": "pide",
+     "desde": 671,
+     "hasta": 680
+    },
+    {
+     "t": "reducir",
+     "desde": 680,
+     "hasta": 688
+    },
+    {
+     "t": "el",
+     "desde": 688,
+     "hasta": 693
+    },
+    {
+     "t": "número",
+     "desde": 693,
+     "hasta": 698
+    }
+   ]
+  },
+  {
+   "desde": 696,
+   "hasta": 746,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 696,
+     "hasta": 702
+    },
+    {
+     "t": "proveedores,",
+     "desde": 702,
+     "hasta": 718
+    },
+    {
+     "t": "te",
+     "desde": 718,
+     "hasta": 720
+    },
+    {
+     "t": "pide",
+     "desde": 720,
+     "hasta": 730
+    },
+    {
+     "t": "gestionar",
+     "desde": 730,
+     "hasta": 739
+    }
+   ]
+  },
+  {
+   "desde": 746,
+   "hasta": 778,
+   "palabras": [
+    {
+     "t": "el",
+     "desde": 746,
+     "hasta": 752
+    },
+    {
+     "t": "riesgo",
+     "desde": 752,
+     "hasta": 757
+    },
+    {
+     "t": "de",
+     "desde": 757,
+     "hasta": 762
+    },
+    {
+     "t": "cada",
+     "desde": 762,
+     "hasta": 767
+    },
+    {
+     "t": "uno.",
+     "desde": 767,
+     "hasta": 772
+    }
+   ]
+  },
+  {
+   "desde": 790,
+   "hasta": 822,
+   "palabras": [
+    {
+     "t": "Concentrarte",
+     "desde": 790,
+     "hasta": 804
+    },
+    {
+     "t": "en",
+     "desde": 804,
+     "hasta": 807
+    },
+    {
+     "t": "el",
+     "desde": 807,
+     "hasta": 812
+    },
+    {
+     "t": "proveedor",
+     "desde": 812,
+     "hasta": 817
+    }
+   ]
+  },
+  {
+   "desde": 822,
+   "hasta": 840,
+   "palabras": [
+    {
+     "t": "incumbente",
+     "desde": 822,
+     "hasta": 827
+    }
+   ]
+  },
+  {
+   "desde": 842,
+   "hasta": 880,
+   "palabras": [
+    {
+     "t": "para",
+     "desde": 842,
+     "hasta": 848
+    },
+    {
+     "t": "no",
+     "desde": 848,
+     "hasta": 854
+    },
+    {
+     "t": "añadir",
+     "desde": 854,
+     "hasta": 866
+    },
+    {
+     "t": "complejidad",
+     "desde": 866,
+     "hasta": 872
+    }
+   ]
+  },
+  {
+   "desde": 887,
+   "hasta": 917,
+   "palabras": [
+    {
+     "t": "puede",
+     "desde": 887,
+     "hasta": 896
+    },
+    {
+     "t": "aumentar",
+     "desde": 896,
+     "hasta": 901
+    },
+    {
+     "t": "el",
+     "desde": 901,
+     "hasta": 905
+    },
+    {
+     "t": "riesgo",
+     "desde": 905,
+     "hasta": 909
+    },
+    {
+     "t": "de",
+     "desde": 909,
+     "hasta": 914
+    }
+   ]
+  },
+  {
+   "desde": 917,
+   "hasta": 959,
+   "palabras": [
+    {
+     "t": "concentración",
+     "desde": 917,
+     "hasta": 936
+    },
+    {
+     "t": "con",
+     "desde": 936,
+     "hasta": 942
+    },
+    {
+     "t": "ese",
+     "desde": 942,
+     "hasta": 948
+    },
+    {
+     "t": "proveedor.",
+     "desde": 948,
+     "hasta": 953
+    }
+   ]
+  },
+  {
+   "desde": 968,
+   "hasta": 1013,
+   "palabras": [
+    {
+     "t": "Si",
+     "desde": 968,
+     "hasta": 972
+    },
+    {
+     "t": "se",
+     "desde": 972,
+     "hasta": 977
+    },
+    {
+     "t": "cae,",
+     "desde": 977,
+     "hasta": 989
+    },
+    {
+     "t": "se",
+     "desde": 989,
+     "hasta": 994
+    },
+    {
+     "t": "cae,",
+     "desde": 994,
+     "hasta": 1001
+    },
+    {
+     "t": "todo",
+     "desde": 1001,
+     "hasta": 1004
+    },
+    {
+     "t": "lo",
+     "desde": 1004,
+     "hasta": 1006
+    },
+    {
+     "t": "que",
+     "desde": 1006,
+     "hasta": 1011
+    }
+   ]
+  },
+  {
+   "desde": 1013,
+   "hasta": 1032,
+   "palabras": [
+    {
+     "t": "depende",
+     "desde": 1013,
+     "hasta": 1017
+    },
+    {
+     "t": "de",
+     "desde": 1017,
+     "hasta": 1020
+    },
+    {
+     "t": "él.",
+     "desde": 1020,
+     "hasta": 1025
+    }
+   ]
+  },
+  {
+   "desde": 1035,
+   "hasta": 1077,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 1035,
+     "hasta": 1041
+    },
+    {
+     "t": "pregunta",
+     "desde": 1041,
+     "hasta": 1048
+    },
+    {
+     "t": "correcta",
+     "desde": 1048,
+     "hasta": 1060
+    },
+    {
+     "t": "nunca",
+     "desde": 1060,
+     "hasta": 1067
+    },
+    {
+     "t": "es.",
+     "desde": 1067,
+     "hasta": 1072
+    }
+   ]
+  },
+  {
+   "desde": 1077,
+   "hasta": 1114,
+   "palabras": [
+    {
+     "t": "¿Más",
+     "desde": 1077,
+     "hasta": 1085
+    },
+    {
+     "t": "proveedores",
+     "desde": 1085,
+     "hasta": 1098
+    },
+    {
+     "t": "o",
+     "desde": 1098,
+     "hasta": 1103
+    },
+    {
+     "t": "menos?",
+     "desde": 1103,
+     "hasta": 1108
+    }
+   ]
+  }
+ ],
+ "audio": {
+  "musica": [
+   {
+    "archivo": "base",
+    "desde": 0,
+    "hasta": 1150,
+    "volumen": 0.12,
+    "fundidoEntrada": 12,
+    "fundidoSalida": 25,
+    "bucle": true
+   }
+  ],
+  "sfx": [
+   {
+    "archivo": "sfx-destello",
+    "en": 4,
+    "volumen": 0.6
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 300,
+    "volumen": 0.6
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 470,
+    "volumen": 0.6
+   },
+   {
+    "archivo": "sfx-golpe",
+    "en": 668,
+    "volumen": 0.7
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 690,
+    "volumen": 0.6
+   }
+  ]
+ },
+ "avisos": []
+}

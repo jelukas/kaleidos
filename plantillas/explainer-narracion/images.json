@@ -1,0 +1,10 @@
+{
+  "_plantilla": "Láminas del explainer (estilo milikito): node scripts/images.mjs <slug> --quality medium --concurrency 6. Ids = claves de los eventos lamina de guion.json. Sin personas reales, sin marcas, sin texto y con hueco arriba para los bocadillos.",
+  "format": "horizontal",
+  "quality": "medium",
+  "style": "Comic book panel illustration: bold thick black ink outlines, halftone shading, warm saturated colours (amber, orange, golden yellow, with teal and electric-blue accents), dramatic cinematic lighting with deep shadows, dynamic composition, 16:9 horizontal frame. Generic fictional characters only (no real people, no celebrities, no recognisable faces), no brand names or logos. Absolutely no text, letters, words, numbers or writing anywhere in the image: screens, papers, signs and clocks are blank or show only simple abstract shapes. Leave clean, uncluttered empty space in the upper part of the frame for speech balloons that will be added later.",
+  "images": [
+    { "id": "lamina-pregunta", "prompt": "A curious generic person opening the back panel of a giant glowing machine made of abstract gears, pipes and light, peering inside with a torch; tiny sparks and floating abstract shapes around. Warm amber light against a deep blue background. Empty space at the top for a thought balloon." },
+    { "id": "lamina-ejemplo", "prompt": "Split comic panel: on the left a tired generic worker buried under stacks of blank papers late at night; on the right the same worker relaxed in daylight, checking a single tidy screen of abstract blocks with a small helper robot. Strong contrast between cool night and warm day. Empty space at the top for a speech balloon." }
+  ]
+}

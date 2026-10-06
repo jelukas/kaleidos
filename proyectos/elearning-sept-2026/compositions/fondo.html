@@ -1,0 +1,12 @@
+<template>
+<style>
+#fondo{position:absolute;inset:0}
+#fondo .core{position:absolute;left:160px;right:160px;bottom:-760px;height:1500px;border-radius:50%;background:radial-gradient(closest-side,rgba(125,41,224,.30),rgba(255,1,162,.15) 62%,rgba(255,1,162,0))}
+</style>
+<div data-hf-id="hf-lfxz" id="fondo" data-composition-id="fondo" data-width="1920" data-height="1080"><div data-hf-id="hf-d5bp" class="core"></div></div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#fondo .core", { opacity: 0.75, scale: 0.96 }, { opacity: 1, scale: 1.05, duration: 6, ease: "sine.inOut", yoyo: true, repeat: 38 }, 0);
+window.__timelines["fondo"] = tl;
+</script>
+</template>

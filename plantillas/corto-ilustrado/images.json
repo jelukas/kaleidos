@@ -1,0 +1,10 @@
+{
+  "_plantilla": "Solo si el bruto no trae sus ilustraciones: node scripts/images.mjs <slug> --quality high → assets/images/<id>.jpg; después cópialas a work/ilustraciones/ (mkdir -p proyectos/<slug>/work/ilustraciones && cp proyectos/<slug>/assets/images/ilustracion-*.jpg proyectos/<slug>/work/ilustraciones/) y pasa tools/kaleidos ampliar y profundidad. Si las ilustraciones salen del bruto, extrae un fotograma limpio (fuera de fundidos) de cada una a work/ilustraciones/ y no uses este archivo. La paleta del estilo sale de las propias ilustraciones (variante de acuarela-ilustrada si hace falta).",
+  "format": "horizontal",
+  "quality": "high",
+  "style": "Soft watercolour illustration on warm off-white paper texture, gentle washes and visible brush strokes, loose ink linework, warm natural palette (terracotta, sage green, ochre, soft blue), calm daylight, clear depth with a distinct foreground, middle ground and background so it can be animated in 2.5D, 16:9 horizontal frame. Generic fictional characters only (no real people, no recognisable faces), no brand names or logos, absolutely no text, letters or numbers anywhere. Leave calm empty areas where white cards and hand-drawn labels will be placed later.",
+  "images": [
+    { "id": "ilustracion-1", "prompt": "<Escena 1: lo que explica la voz en ese tramo, con dos elementos claros que se puedan señalar (arriba a la derecha y abajo a la izquierda).>" },
+    { "id": "ilustracion-2", "prompt": "<Escena 2: el resultado o la idea final, con un elemento central que se pueda señalar.>" }
+  ]
+}

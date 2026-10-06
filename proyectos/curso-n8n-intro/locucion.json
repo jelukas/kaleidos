@@ -1,0 +1,495 @@
+{
+ "_nota": "Curso de introducción a n8n (≈ 28–30 min). Ids: bv = bienvenida, lXY = capítulo X lección Y, ci = cierre. «ene ocho ene» se corrige a «n8n» en guion.json › fixes.",
+ "voz": {},
+ "pausaEntreBloques": 0.35,
+ "bloques": [
+  {
+   "id": "bv01",
+   "texto": "Hola, te doy la bienvenida a este curso de introducción a ene ocho ene. Si alguna vez has pasado una tarde copiando datos de un correo a una hoja de cálculo, o avisando a tu equipo de lo mismo una y otra vez, este curso es para ti."
+  },
+  {
+   "id": "bv02",
+   "texto": "No necesitas saber programar. Vamos a ir paso a paso, con ejemplos sencillos y casos de uso reales, para que al terminar sepas qué es ene ocho ene, cómo funciona por dentro y cómo montar tu primera automatización."
+  },
+  {
+   "id": "bv02b",
+   "texto": "¿Qué necesitas para seguirlo? Solo tres cosas: un ordenador con navegador, ganas de probar y, si puede ser, una tarea concreta de tu trabajo que te gustaría quitarte de encima. Tenla en mente durante el curso, porque al final la convertiremos en tu primer proyecto."
+  },
+  {
+   "id": "bv03",
+   "texto": "El curso tiene cuatro capítulos. En el primero veremos qué es ene ocho ene y cómo empezar a usarlo. En el segundo, las piezas con las que se construye todo. En el tercero montaremos juntos un primer flujo. Y en el cuarto repasaremos casos de uso reales que puedes adaptar a tu trabajo. ¿Empezamos?",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "l11a",
+   "texto": "Capítulo uno: qué es ene ocho ene. Y empezamos con la primera lección: automatizar sin programar."
+  },
+  {
+   "id": "l11b",
+   "texto": "Piensa en las tareas que repites cada semana. Copiar los datos de un formulario a una hoja de cálculo. Reenviar un correo a la persona adecuada. Preparar el mismo informe cada lunes. Son tareas sencillas, pero se comen horas."
+  },
+  {
+   "id": "l11c",
+   "texto": "Automatizar es enseñar al ordenador a hacer esas tareas por ti. Le dices cuándo tiene que empezar, qué pasos tiene que seguir y dónde tiene que dejar el resultado. A partir de ahí, lo hace solo, sin olvidarse y sin cansarse."
+  },
+  {
+   "id": "l11d",
+   "texto": "Esa receta de pasos tiene un nombre: flujo de trabajo, o workflow, en inglés. Un workflow es como una fila de fichas de dominó. Algo empuja la primera ficha, y cada ficha empuja a la siguiente, hasta que la tarea queda hecha."
+  },
+  {
+   "id": "l11e",
+   "texto": "Ene ocho ene es una herramienta para crear esos workflows de forma visual. Su documentación la define como una herramienta de automatización que combina la inteligencia artificial con los procesos de negocio. En lugar de escribir código, colocas cajas en un lienzo y las unes con flechas. Cada caja hace una cosa: leer un correo, añadir una fila a una hoja, enviar un mensaje."
+  },
+  {
+   "id": "l11f",
+   "texto": "Y lo más interesante: según su web, ene ocho ene ofrece más de quinientas integraciones con aplicaciones que seguramente ya usas, como Gmail, Google Sheets, Slack, Notion o HubSpot. Así consigues que tus herramientas hablen entre sí."
+  },
+  {
+   "id": "l11g",
+   "texto": "Un ejemplo rápido. Cada vez que alguien rellena el formulario de contacto de tu web, ene ocho ene guarda sus datos en una hoja de cálculo y avisa a tu equipo por Slack. Tú no haces nada: ocurre solo, en segundos."
+  },
+  {
+   "id": "l11g2",
+   "texto": "Y no es solo cosa de marketing o de ventas. En recursos humanos, se puede preparar todo lo necesario cuando entra una persona nueva en la empresa. En finanzas, guardar cada factura que llega por correo en su carpeta y apuntarla en una hoja. En dirección, recibir cada lunes un resumen con los números de la semana."
+  },
+  {
+   "id": "l11h",
+   "texto": "Una idea antes de seguir: automatizar no es sustituir a las personas. Es quitarles lo repetitivo, para que dediquen su tiempo a lo que de verdad necesita criterio humano.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l12a",
+   "texto": "Segunda lección: ene ocho ene frente a Zapier y Make."
+  },
+  {
+   "id": "l12b",
+   "texto": "Si has oído hablar de automatización, seguramente te suenan Zapier o Make. Las tres herramientas hacen algo parecido: conectar aplicaciones y automatizar tareas con flujos visuales. Entonces, ¿qué tiene de especial ene ocho ene?"
+  },
+  {
+   "id": "l12c",
+   "texto": "La primera diferencia es que puedes instalarlo por tu cuenta. Su código fuente está disponible, con una licencia que la propia empresa llama fair code, y puedes usarlo en tus propios servidores. Ojo: ellos mismos aclaran que no lo llaman código abierto, porque su licencia pone algunos límites al uso comercial. Zapier y Make, en cambio, funcionan en la nube de cada empresa."
+  },
+  {
+   "id": "l12d",
+   "texto": "La segunda diferencia es la forma de cobrar, y cada empresa lo explica así en su página de precios. Zapier cuenta tareas: cada acción que sale bien es una tarea. Make cuenta créditos: cada acción de un módulo es un crédito. Y ene ocho ene cuenta ejecuciones: cada vez que un workflow se ejecuta de principio a fin cuenta como una, tenga los pasos que tenga."
+  },
+  {
+   "id": "l12e",
+   "texto": "La tercera es la flexibilidad. Ene ocho ene permite empezar sin escribir ni una línea de código, pero si un día lo necesitas, puedes añadir un poco de código o conectar con cualquier servicio que tenga una API. Es una herramienta que crece contigo."
+  },
+  {
+   "id": "l12f",
+   "texto": "¿Significa eso que es mejor para todo? No. Zapier anuncia más de nueve mil aplicaciones y es muy sencillo para automatizaciones pequeñas; la propia ene ocho ene reconoce que es una gran opción para personas no técnicas con tareas simples. Make anuncia más de tres mil aplicaciones y es muy visual. Ene ocho ene brilla cuando tus flujos crecen, cuando quieres controlar dónde están tus datos o cuando quieres trabajar con inteligencia artificial.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l13a",
+   "texto": "Tercera lección: cómo empezar. Ene ocho ene en la nube, o instalado por tu cuenta."
+  },
+  {
+   "id": "l13b",
+   "texto": "Tienes dos caminos. El primero es ene ocho ene Cloud: te registras en su web, y en unos minutos tienes tu espacio listo para trabajar. No tienes que instalar nada ni ocuparte del mantenimiento. Y según su web, los datos se guardan en la Unión Europea, en servidores de Fráncfort."
+  },
+  {
+   "id": "l13c",
+   "texto": "La versión en la nube se paga con una suscripción. Con los precios que publica hoy su web, el plan Starter cuesta veinte euros al mes con pago anual, o veinticuatro con pago mensual, e incluye dos mil quinientas ejecuciones al mes. El plan Pro cuesta cincuenta euros al mes con pago anual, o sesenta con pago mensual, con diez mil ejecuciones. Todos los planes incluyen usuarios y workflows ilimitados. Y antes de pagar, puedes probarla gratis durante catorce días, sin tarjeta."
+  },
+  {
+   "id": "l13d",
+   "texto": "El segundo camino es instalarlo por tu cuenta, lo que se llama autoalojado. La edición Community es gratuita, pero alguien de tu equipo tendrá que instalarla en un servidor, mantenerla actualizada y hacer copias de seguridad."
+  },
+  {
+   "id": "l13e",
+   "texto": "Nuestro consejo, si no tienes perfil técnico: empieza por la nube. Es también lo que recomienda la propia documentación de ene ocho ene. Te permite aprender sin preocuparte de servidores. Y si más adelante tu empresa necesita tener los datos en casa, lo que aprendas te servirá igual, porque el editor es el mismo."
+  },
+  {
+   "id": "l13f",
+   "texto": "Cuando entres por primera vez, verás tu panel con la lista de workflows. Al crear uno nuevo, se abre el lienzo: un espacio en blanco donde irás colocando las piezas. Y de esas piezas trata el siguiente capítulo.",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "l21a",
+   "texto": "Capítulo dos: las piezas de ene ocho ene. Todo workflow, por grande que sea, se construye con muy pocas piezas. Si las entiendes, entiendes ene ocho ene."
+  },
+  {
+   "id": "l21b",
+   "texto": "Primera lección del capítulo: los disparadores. En inglés, triggers."
+  },
+  {
+   "id": "l21c",
+   "texto": "Un disparador es el primer nodo de un workflow, y responde a una pregunta: ¿cuándo empieza esto? Sin disparador, el workflow no sabe cuándo ponerse en marcha."
+  },
+  {
+   "id": "l21d",
+   "texto": "Hay varios tipos. El más sencillo es el disparador manual, que en el lienzo aparece como When clicking Execute workflow: el workflow arranca cuando tú pulsas el botón Execute workflow. Es perfecto para hacer pruebas."
+  },
+  {
+   "id": "l21e",
+   "texto": "Luego está el disparador por horario, que en ene ocho ene se llama Schedule Trigger. Le dices, por ejemplo, todos los lunes a las nueve, y el workflow se ejecuta solo a esa hora."
+  },
+  {
+   "id": "l21f",
+   "texto": "También hay disparadores que reaccionan a lo que pasa en tus aplicaciones: cuando llega un correo nuevo a Gmail, cuando se añade una fila a una hoja de cálculo, o cuando alguien envía un formulario."
+  },
+  {
+   "id": "l21g",
+   "texto": "Y por último, el webhook. Suena técnico, pero la idea es simple: es como un timbre con una dirección propia en internet. Cuando otra aplicación toca ese timbre, el workflow se pone en marcha."
+  },
+  {
+   "id": "l21g2",
+   "texto": "¿Cómo eliges el disparador adecuado? Hazte una pregunta sencilla: ¿qué tiene que pasar para que yo hiciera esta tarea a mano? Si es una hora fija, usa el horario. Si es la llegada de algo, un correo o un formulario, usa el disparador de esa aplicación. Y si es otra herramienta la que avisa, el webhook."
+  },
+  {
+   "id": "l21h",
+   "texto": "Resumiendo: manual, por horario, por un evento en una aplicación o por webhook. Cada workflow empieza con uno de ellos.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l22a",
+   "texto": "Segunda lección: los nodos y las acciones."
+  },
+  {
+   "id": "l22b",
+   "texto": "Después del disparador vienen los demás nodos. Un nodo es cada una de las cajas del lienzo, y cada nodo hace una sola cosa. Piensa en una cadena de montaje: cada puesto hace su parte y pasa el resultado al siguiente."
+  },
+  {
+   "id": "l22c",
+   "texto": "Hay nodos de aplicaciones, que trabajan con un servicio concreto: añadir una fila en Google Sheets, enviar un correo con Gmail, crear un contacto en HubSpot o publicar un mensaje en Slack."
+  },
+  {
+   "id": "l22d",
+   "texto": "Y hay nodos generales, que sirven para cualquier workflow. Por ejemplo, el nodo If, que funciona como un cruce de caminos: si se cumple una condición, los datos van por un lado; si no, por otro."
+  },
+  {
+   "id": "l22e",
+   "texto": "El nodo Filter deja pasar solo lo que te interesa. El nodo Edit Fields sirve para ordenar o renombrar los datos. Y el nodo Wait hace que el workflow espere un rato antes de seguir."
+  },
+  {
+   "id": "l22f",
+   "texto": "Para cuando te animes a ir más lejos, existe el nodo HTTP Request, que permite hablar con casi cualquier servicio de internet, y el nodo Code, para escribir pequeños fragmentos de código. Pero tranquilidad: para empezar no los necesitas."
+  },
+  {
+   "id": "l22f2",
+   "texto": "Veamos un ejemplo con todas estas piezas. Llega un correo con una factura. Un nodo If comprueba si trae un archivo adjunto. Si lo trae, un nodo de Google Drive guarda el archivo en la carpeta de facturas. Y si no lo trae, un nodo de Gmail responde pidiendo el documento. Cuatro nodos, y una tarea que ya no tienes que hacer tú."
+  },
+  {
+   "id": "l22g",
+   "texto": "Para añadir un nodo, pulsas el botón con el signo más, buscas lo que quieres hacer, por ejemplo enviar un correo, y eliges la acción. En el buscador, los disparadores llevan el icono de un rayo. Después unes el nodo al anterior con una flecha. Así de sencillo.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l23a",
+   "texto": "Tercera lección: los datos que pasan de un paso a otro. Es la idea más importante del curso, así que vamos despacio."
+  },
+  {
+   "id": "l23b",
+   "texto": "Cada nodo recibe datos del nodo anterior, hace su trabajo y entrega datos al siguiente. Es como una cinta transportadora con cajas: cada nodo abre la caja, mira lo que hay dentro, hace algo y la pasa."
+  },
+  {
+   "id": "l23c",
+   "texto": "En ene ocho ene, cada una de esas cajas se llama item. Si llegan tres respuestas de un formulario, el siguiente nodo recibe tres items, y normalmente hará su trabajo una vez por cada uno."
+  },
+  {
+   "id": "l23d",
+   "texto": "Dentro de cada item, los datos están ordenados en campos, cada uno con su nombre y su valor. Por ejemplo, nombre, correo y mensaje. Por dentro se guardan en un formato llamado JSON, pero no te preocupes: ene ocho ene te los enseña también como una tabla."
+  },
+  {
+   "id": "l23e",
+   "texto": "¿Y cómo usas un dato del paso anterior? Con las expresiones. Una expresión es un hueco que se rellena solo. Por ejemplo, en el asunto de un correo escribes: nuevo contacto, y a continuación arrastras el campo nombre desde el panel de la izquierda."
+  },
+  {
+   "id": "l23f",
+   "texto": "Cuando el workflow se ejecute, ese hueco se convertirá en el nombre de cada persona. Las expresiones se reconocen porque van entre dobles llaves. Pero lo más cómodo es arrastrar y soltar, sin escribir nada."
+  },
+  {
+   "id": "l23f2",
+   "texto": "Volvamos al ejemplo de las tres respuestas del formulario. Si en el nodo de Slack escribes: nuevo contacto, y arrastras el campo nombre, ene ocho ene enviará tres mensajes, uno por cada item, y cada uno con su nombre. No tienes que repetir nada: el workflow recorre los items por ti."
+  },
+  {
+   "id": "l23g",
+   "texto": "Un consejo: después de ejecutar un nodo, abre su salida y mira los datos. Ver qué entra y qué sale de cada nodo es la mejor forma de entender lo que está pasando.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l24a",
+   "texto": "Cuarta lección: las credenciales, o cómo conectar ene ocho ene con tus aplicaciones."
+  },
+  {
+   "id": "l24b",
+   "texto": "Para que ene ocho ene pueda leer tu correo o escribir en tu hoja de cálculo, necesita permiso. Ese permiso se guarda en una credencial. Piensa en ella como una llave que le das a ene ocho ene para entrar en una aplicación concreta."
+  },
+  {
+   "id": "l24c",
+   "texto": "Con muchas aplicaciones, crear la credencial es tan fácil como pulsar un botón para iniciar sesión y aceptar los permisos. En otras tendrás que copiar una clave que te da la propia aplicación, siguiendo los pasos de la documentación. Al guardarla, ene ocho ene la prueba para confirmar que funciona."
+  },
+  {
+   "id": "l24d",
+   "texto": "Las credenciales se crean una vez y se reutilizan en todos tus workflows. Y se guardan cifradas: en el nodo eliges qué credencial usar, pero la clave no aparece escrita en el workflow."
+  },
+  {
+   "id": "l24d2",
+   "texto": "En la práctica es así: en el nodo de Google Sheets, por ejemplo, despliegas el campo de la credencial y eliges crear una nueva. Se abre una ventana, inicias sesión con tu cuenta de Google, aceptas los permisos, y la credencial queda guardada con el nombre que tú le pongas."
+  },
+  {
+   "id": "l24e",
+   "texto": "Tres reglas de oro con las credenciales. Una: da solo los permisos necesarios. Dos: nunca pegues contraseñas ni claves dentro de un nodo o de una nota. Y tres: si alguien deja el equipo, revisa qué credenciales tenía y cámbialas.",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "l31a",
+   "texto": "Capítulo tres: tu primer flujo, paso a paso. Vamos a construir juntos un caso muy común: un formulario de solicitudes que guarda cada respuesta en una hoja de cálculo y avisa al equipo."
+  },
+  {
+   "id": "l31b",
+   "texto": "Primera lección: del formulario a la hoja de cálculo, y de ahí al aviso."
+  },
+  {
+   "id": "l31b2",
+   "texto": "Antes de abrir ene ocho ene, un poco de preparación. Crea una hoja de cálculo nueva y escribe en la primera fila los títulos de las columnas: nombre, correo, curso y fecha. Esa primera fila es la que ene ocho ene usará para saber dónde va cada dato."
+  },
+  {
+   "id": "l31c",
+   "texto": "Paso uno: el disparador. Ene ocho ene tiene sus propios formularios, con el disparador On form submission. Lo añades, le pones un título, por ejemplo solicitud de formación, y creas tres campos: nombre, correo y curso que te interesa."
+  },
+  {
+   "id": "l31d",
+   "texto": "Ene ocho ene te da una dirección para abrir el formulario. Lo rellenas una vez con datos de prueba inventados, para que el workflow tenga algo con lo que trabajar."
+  },
+  {
+   "id": "l31e",
+   "texto": "Paso dos: guardar en una hoja de cálculo. Añades el nodo de Google Sheets con la acción de añadir una fila. Eliges tu credencial de Google, el documento y la hoja. Después relacionas cada columna con su campo: la columna nombre con el campo nombre, y así con el resto."
+  },
+  {
+   "id": "l31f",
+   "texto": "Paso tres: avisar al equipo. Añades un nodo de Slack, o de Gmail si preferís el correo, con la acción de enviar un mensaje. En el texto combinas palabras fijas con expresiones: nueva solicitud de, el nombre, para el curso, y el curso elegido."
+  },
+  {
+   "id": "l31f2",
+   "texto": "Fíjate en que, en este workflow, cada nodo tiene un nombre que explica lo que hace: formulario de solicitud, guardar en la hoja, avisar al equipo. Puedes renombrar cualquier nodo, y conviene hacerlo desde el principio."
+  },
+  {
+   "id": "l31g",
+   "texto": "Y listo: tres nodos unidos por flechas. Formulario, hoja de cálculo y aviso. Ese es tu primer workflow.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l32a",
+   "texto": "Segunda lección: probar y corregir errores."
+  },
+  {
+   "id": "l32b",
+   "texto": "Antes de dejar un workflow funcionando solo, hay que probarlo. Con el botón Execute workflow ejecutas el workflow entero, y con Execute step, un solo nodo. Y ves al momento qué datos entran y salen de cada paso."
+  },
+  {
+   "id": "l32c",
+   "texto": "Cuando un nodo funciona, se marca en verde. Cuando falla, se marca en rojo y te muestra un mensaje de error. No te asustes: ese mensaje casi siempre te da la pista de lo que pasa."
+  },
+  {
+   "id": "l32d",
+   "texto": "Los errores más habituales al empezar son tres. Una credencial sin permisos o caducada. Un campo con un nombre distinto del que esperabas, por ejemplo correo electrónico en lugar de correo. Y una hoja o una columna que no existe, o que alguien ha renombrado."
+  },
+  {
+   "id": "l32d2",
+   "texto": "¿Cómo se arregla? Abres el nodo en rojo, lees el mensaje y miras qué datos le llegaron. Corriges lo que falla, por ejemplo eliges otra vez la columna correcta, y vuelves a ejecutar solo ese paso. Repites hasta que todo el camino está en verde."
+  },
+  {
+   "id": "l32e",
+   "texto": "Un truco muy útil: fijar los datos de prueba. Ejecutas un nodo y, en su salida, pulsas Pin data. Así no tienes que rellenar el formulario cada vez que pruebas los pasos siguientes. Tranquilidad: cuando el workflow funciona de verdad, ignora esos datos fijados."
+  },
+  {
+   "id": "l32f",
+   "texto": "Y otro: deja notas en el lienzo, las sticky notes, para explicar qué hace cada parte. Tu yo del futuro, y tus compañeros, te lo agradecerán.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l33a",
+   "texto": "Tercera lección: poner el workflow en marcha y revisar las ejecuciones."
+  },
+  {
+   "id": "l33b",
+   "texto": "Todos los workflows nuevos empiezan sin publicar, y mientras pruebas, solo funcionan cuando tú los lanzas. Para que funcionen solos, a cualquier hora, pulsas el botón Publish, arriba en el editor. Desde ese momento, el formulario recibe respuestas, los horarios se cumplen y los eventos de tus aplicaciones ponen el workflow en marcha."
+  },
+  {
+   "id": "l33c",
+   "texto": "Ojo con un detalle: disparadores como el formulario o el webhook tienen dos direcciones, la Test URL, de prueba, y la Production URL, de producción. La de prueba solo funciona mientras estás probando. La de producción es la que debes compartir cuando el workflow ya está publicado."
+  },
+  {
+   "id": "l33d",
+   "texto": "Cada vez que el workflow se ejecuta, ene ocho ene lo apunta en la pestaña Executions, la lista de ejecuciones. Ahí ves cuándo se ejecutó, si terminó bien o con error, y puedes abrir cada ejecución para ver los datos paso a paso."
+  },
+  {
+   "id": "l33e",
+   "texto": "Para no enterarte tarde de los fallos, puedes asignar al workflow un workflow de errores, que empieza con el nodo Error Trigger y te avisa, por ejemplo por correo o por Slack, cuando algo falla. La documentación lo dice claro: todo workflow en producción debería tener uno."
+  },
+  {
+   "id": "l33e2",
+   "texto": "Un último hábito. Mientras editas, ene ocho ene guarda tus cambios solo, pero quedan como borrador hasta que vuelves a publicar. Así que, cuando cambies algo en un workflow que ya funciona, pruébalo antes de publicarlo de nuevo. Un cambio pequeño, como renombrar una columna en la hoja, puede romper un paso sin que te des cuenta."
+  },
+  {
+   "id": "l33f",
+   "texto": "Enhorabuena: ya sabes construir, probar y poner en marcha un workflow. Ahora vamos a ver lo que puedes hacer con esto en el mundo real.",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "l41a",
+   "texto": "Capítulo cuatro: casos de uso reales. Vamos a ver ejemplos que se repiten en empresas de todos los tamaños, explicados como recetas que puedes adaptar."
+  },
+  {
+   "id": "l41b",
+   "texto": "Primera lección: marketing, o cómo llevar los contactos de un formulario a tu CRM."
+  },
+  {
+   "id": "l41c",
+   "texto": "El problema: tu web recibe solicitudes de información, y alguien tiene que pasarlas a mano al CRM, la herramienta donde el equipo comercial gestiona sus clientes. Se retrasa, se olvidan contactos y se cuelan duplicados."
+  },
+  {
+   "id": "l41d",
+   "texto": "La receta. El disparador es el envío del formulario. Después, un nodo If comprueba que el correo no está vacío. A continuación, el nodo de HubSpot crea el contacto en el CRM con sus datos. Por último, un mensaje avisa al comercial de que tiene un contacto nuevo."
+  },
+  {
+   "id": "l41e",
+   "texto": "Se puede ir un poco más allá: por ejemplo, repartir los contactos según el interés que marcaron en el formulario, con el nodo Switch, para que cada uno llegue a la persona adecuada."
+  },
+  {
+   "id": "l41e2",
+   "texto": "Y si además quieres saber qué tal funciona tu captación, puedes añadir una rama que apunte cada contacto en una hoja de cálculo con la fecha y el origen. A final de mes, tendrás los datos listos para ver de dónde vienen tus contactos."
+  },
+  {
+   "id": "l41f",
+   "texto": "El resultado: cada contacto llega al CRM en segundos, con sus datos completos, y el equipo comercial puede responder mientras el interés todavía está caliente.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l42a",
+   "texto": "Segunda lección: clasificar y resumir los correos que llegan."
+  },
+  {
+   "id": "l42b",
+   "texto": "El problema: un buzón compartido, como el de atención al cliente, recibe decenas de correos al día. Alguien tiene que leerlos todos para saber de qué trata cada uno y a quién le toca."
+  },
+  {
+   "id": "l42c",
+   "texto": "La receta. El disparador es la llegada de un correo nuevo, con el disparador de Gmail o el de Outlook. Después, un nodo de inteligencia artificial lee el mensaje y decide su categoría: una duda, una incidencia o una factura, por ejemplo."
+  },
+  {
+   "id": "l42d",
+   "texto": "Según la categoría, el workflow etiqueta el correo, lo reenvía al equipo que toca y deja un resumen de dos líneas en un canal de Slack. En la galería oficial de ene ocho ene hay una plantilla que hace justo la primera parte: etiquetar con inteligencia artificial los correos que llegan a Gmail."
+  },
+  {
+   "id": "l42d2",
+   "texto": "Para que la clasificación funcione bien, describe cada categoría con claridad, como se lo explicarías a una persona nueva en el equipo: una incidencia es cuando algo no funciona; una factura, cuando el correo habla de pagos o adjunta un documento de cobro. Cuanto más claro, mejores resultados."
+  },
+  {
+   "id": "l42e",
+   "texto": "Un consejo importante: en casos así, empieza con el workflow proponiendo, no decidiendo. Por ejemplo, que prepare un borrador de respuesta que una persona revisa antes de enviarlo. Cuando confíes en los resultados, le das más autonomía.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l43a",
+   "texto": "Tercera lección: la inteligencia artificial en ene ocho ene, y los agentes."
+  },
+  {
+   "id": "l43b",
+   "texto": "En la lección anterior usamos la inteligencia artificial para una tarea concreta: clasificar. Pero ene ocho ene permite ir más allá, con el nodo AI Agent."
+  },
+  {
+   "id": "l43c",
+   "texto": "Un agente es un asistente que, en lugar de seguir siempre los mismos pasos, decide qué hacer para cumplir un encargo. Para eso tiene tres cosas: un modelo de lenguaje que piensa, una memoria para recordar la conversación y unas herramientas que puede usar."
+  },
+  {
+   "id": "l43d",
+   "texto": "En ene ocho ene, esas piezas se enchufan al nodo AI Agent como pequeños complementos: un modelo de chat, por ejemplo de OpenAI, de Anthropic o de Google, una memoria y al menos una herramienta. Las herramientas pueden ser tu calendario, tu hoja de cálculo o tu correo, y el agente decide cuál usar en cada momento."
+  },
+  {
+   "id": "l43d2",
+   "texto": "¿Y cómo hablas con el agente? Con el disparador Chat Trigger, que te da una ventana de chat lista para usar o que puedes integrar en tu propia web. Un detalle importante para tu factura: cada mensaje que recibe ese chat cuenta como una ejecución."
+  },
+  {
+   "id": "l43e",
+   "texto": "Un ejemplo real: un asistente interno en un chat. Alguien de tu equipo pregunta: ¿qué reuniones tengo mañana? El agente consulta el calendario y responde. O le pide: apunta este gasto en la hoja, y el agente añade la fila."
+  },
+  {
+   "id": "l43f",
+   "texto": "Dos precauciones. La primera: la inteligencia artificial se equivoca a veces, así que revisa sus resultados, sobre todo al principio. Y la segunda: piensa qué datos le das. Nada de datos personales o confidenciales sin que tu empresa lo haya aprobado."
+  },
+  {
+   "id": "l43g",
+   "texto": "Y una novedad que te facilitará la vida: en los planes Starter y Pro de la nube, el editor incluye ene ocho ene Assistant, un asistente, todavía en fase de prueba, al que le pides en lenguaje natural que cree, modifique o revise un workflow. Igual que con cualquier inteligencia artificial, la documentación insiste: revisa siempre lo que genera antes de ponerlo en producción.",
+   "pausaDespues": 0.9
+  },
+  {
+   "id": "l44a",
+   "texto": "Cuarta lección: las plantillas de la comunidad."
+  },
+  {
+   "id": "l44b",
+   "texto": "No hace falta empezar siempre desde cero. Ene ocho ene tiene una galería pública con más de diez mil plantillas de workflows. Unas noventa son del propio equipo de ene ocho ene, y el resto las publica la comunidad."
+  },
+  {
+   "id": "l44c",
+   "texto": "Puedes buscar por aplicación, por ejemplo Google Sheets, o por tarea, como resumir correos o publicar en redes sociales. Cada plantilla te enseña los nodos que usa y una explicación de lo que hace."
+  },
+  {
+   "id": "l44c2",
+   "texto": "Algunos ejemplos reales de la galería: gestionar las respuestas de un formulario de contacto con Google Sheets, avisos en Slack y respuestas por Gmail; registrar en HubSpot los contactos de un formulario; un informe semanal de los registros creados en una aplicación; o un chatbot de Slack con inteligencia artificial, este último del propio equipo de ene ocho ene."
+  },
+  {
+   "id": "l44d",
+   "texto": "Cuando encuentras una que te sirve, la copias a tu espacio, conectas tus propias credenciales y la adaptas a tu caso. Es una forma estupenda de aprender: ves cómo resuelven otros el mismo problema."
+  },
+  {
+   "id": "l44d2",
+   "texto": "Para usarlas desde el editor, pulsas Templates, eliges la plantilla y la añades a tu espacio. La documentación avisa de que casi siempre tendrás que rellenar tus credenciales y ajustar la configuración, porque cada empresa tiene sus hojas, sus canales y sus nombres."
+  },
+  {
+   "id": "l44e",
+   "texto": "Eso sí: revisa siempre la plantilla antes de usarla. Comprueba qué hace cada nodo, a qué aplicaciones se conecta y qué datos mueve. Y pruébala con datos ficticios antes de ponerla en marcha.",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "l45a",
+   "texto": "Y para terminar el capítulo, una lección exprés: más ideas para cada departamento, para que encuentres la tuya."
+  },
+  {
+   "id": "l45b",
+   "texto": "Recursos humanos. Cuando se firma una incorporación, el workflow crea la ficha de la persona en una hoja, envía el correo de bienvenida con la documentación y avisa a su responsable para que prepare el primer día."
+  },
+  {
+   "id": "l45c",
+   "texto": "Finanzas. Cada factura que llega por correo se guarda en su carpeta, se apuntan el proveedor, el importe y la fecha en una hoja, y si el importe supera una cantidad, se avisa a la persona que tiene que aprobarla."
+  },
+  {
+   "id": "l45d",
+   "texto": "Atención al cliente. Cuando una consulta lleva más de un día sin respuesta, el workflow avisa al equipo. Y cada viernes envía un resumen con las consultas más repetidas de la semana."
+  },
+  {
+   "id": "l45e",
+   "texto": "Y dirección. Cada lunes a primera hora, un workflow reúne las cifras de ventas, de soporte y de marketing, y las envía en un solo mensaje. Una reunión menos para poner a todo el mundo al día."
+  },
+  {
+   "id": "l45f",
+   "texto": "Fíjate en que todas estas ideas siguen el mismo patrón que ya conoces: un disparador, unos pasos y un resultado. Cuando lo interiorizas, empiezas a ver workflows por todas partes.",
+   "pausaDespues": 1.0
+  },
+  {
+   "id": "ci01",
+   "texto": "Y llegamos al final del curso. Antes de despedirnos, cinco buenas prácticas para tus primeros workflows."
+  },
+  {
+   "id": "ci02",
+   "texto": "Una: empieza por algo pequeño y repetitivo, que hagas cada semana. Dos: ponle a cada nodo un nombre que explique lo que hace. Tres: prueba con datos ficticios, nunca con datos reales de clientes. Cuatro: cuida las credenciales. Y cinco: revisa las ejecuciones de vez en cuando."
+  },
+  {
+   "id": "ci03",
+   "texto": "Repasemos lo aprendido. Ene ocho ene te permite crear workflows de forma visual. Cada workflow empieza con un disparador y sigue con nodos que hacen una tarea cada uno. Los datos viajan entre ellos como items. Las credenciales son las llaves de tus aplicaciones. Y antes de poner nada en marcha, siempre se prueba."
+  },
+  {
+   "id": "ci04",
+   "texto": "¿Y ahora qué? Elige una tarea que hoy te quite tiempo y conviértela en tu primer workflow. Si te atascas, tienes la documentación oficial, los cursos de la academia de ene ocho ene, en inglés, y su foro de la comunidad, donde responden tanto el equipo de soporte como otras personas usuarias."
+  },
+  {
+   "id": "ci05",
+   "texto": "Gracias por acompañarme en este curso. Nos vemos en el siguiente."
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+  "format": "horizontal",
+  "quality": "medium",
+  "style": "Comic book panel illustration: bold thick black ink outlines, halftone shading, warm saturated colours (amber, orange, golden yellow, with teal and electric-blue accents), dramatic cinematic lighting with deep shadows, dynamic composition, 16:9 horizontal frame. Generic fictional characters only (no real people, no celebrities, no recognisable faces), no brand names or logos. Absolutely no text, letters, words, numbers or writing anywhere in the image: screens, papers, signs and clocks are blank or show only simple abstract shapes. Leave clean, uncluttered empty space in the upper part of the frame for speech balloons that will be added later.",
+  "images": [
+    {
+      "id": "lamina-reunion",
+      "prompt": "A tense business meeting in a modern bank office. An enthusiastic executive leans over a glass table pushing a thick contract towards a hesitant IT risk analyst, while two colleagues nod eagerly; a wall screen shows an abstract rising bar chart and an empty calendar grid; late-afternoon golden light slices through window blinds. The doubtful analyst sits on the right. Empty space at the top left and top right for speech balloons."
+    },
+    {
+      "id": "lamina-firma",
+      "prompt": "Dramatic close-up on an office desk: a hand with a fountain pen has just signed a large contract, the ink still glistening. Across the desk, a smiling supplier representative in a suit walks away holding the signed copy, while a small old-fashioned brass balance scale on the desk is tipped completely to the supplier's side. Moody spotlight from above, amber and deep teal tones. Empty space at the top for a speech balloon."
+    },
+    {
+      "id": "lamina-alerta",
+      "prompt": "Monday morning in a bank's security operations centre: a young analyst holding a coffee mug freezes in front of several monitors glowing with a big red warning triangle and abstract network graphs; an analog wall clock without numerals shows a quarter past nine; the other desks are still half empty; red alert glow on the analyst's face against cool morning light. Empty space at the top left for a thought cloud and at the top right for a speech balloon."
+    },
+    {
+      "id": "lamina-atacante",
+      "prompt": "Inside a dark data centre, a faceless hooded silhouette made of shadow sneaks between glowing server racks, leaping from one rack to the next along glowing network cables, while a gigantic hourglass in the foreground runs out of sand. Red and amber lighting, strong contrast, sense of urgency. Empty space at the top for a speech balloon."
+    },
+    {
+      "id": "lamina-viernes",
+      "prompt": "Friday late afternoon in an open-plan office bathed in warm orange sunset light: a stressed employee stares in shock at a corporate laptop whose screen is completely black; stacks of documents on the desk and an analog wall clock without numerals showing half past four; colleagues leaving in the background wearing coats. Empty space at the top left and top right for speech balloons."
+    },
+    {
+      "id": "lamina-tablet",
+      "prompt": "At home at night, a person on a sofa connects from a personal tablet to a glowing corporate virtual desktop that floats above the screen like a protective bubble; hidden on the back of the tablet, a small sneaky cartoon bug-like spy creature secretly siphons glowing data particles, unnoticed. Warm lamp light versus cold blue screen glow. Empty space at the top for a thought cloud and a shout balloon."
+    }
+  ]
+}

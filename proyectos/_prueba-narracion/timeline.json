@@ -1,0 +1,468 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 698,
+ "fuente": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25,
+  "duracion": 18.3
+ },
+ "recorte": false,
+ "narracion": true,
+ "escenario": true,
+ "segmentos": [
+  {
+   "dst": 100,
+   "src": 0.0,
+   "dur": 458
+  }
+ ],
+ "planos": [],
+ "capitulos": [],
+ "eventos": [
+  {
+   "id": "e01",
+   "tipo": "titulo",
+   "desde": 106,
+   "hasta": 250,
+   "antetitulo": "Resumen",
+   "texto": "DevDay 2026",
+   "registro": "show"
+  },
+  {
+   "id": "e02",
+   "tipo": "panel",
+   "desde": 256,
+   "hasta": 450,
+   "kind": "lista",
+   "kicker": "Novedades",
+   "titulo": "Lo que llega",
+   "items": [
+    {
+     "en": 276,
+     "texto": "API Realtime"
+    },
+    {
+     "en": 308,
+     "texto": "Agentes con MCP"
+    },
+    {
+     "en": 356,
+     "texto": "SDK de TypeScript",
+     "detalle": "con WebGPU"
+    }
+   ]
+  },
+  {
+   "id": "e03",
+   "tipo": "bocadillo",
+   "desde": 456,
+   "hasta": 530,
+   "texto": "¡Tres minutos!",
+   "forma": "globo",
+   "lado": "der"
+  },
+  {
+   "id": "e04",
+   "tipo": "reaccion",
+   "desde": 530,
+   "hasta": 565,
+   "icono": "idea"
+  }
+ ],
+ "subtitulos": [
+  {
+   "desde": 106,
+   "hasta": 173,
+   "palabras": [
+    {
+     "t": "Bienvenidos",
+     "desde": 106,
+     "hasta": 120
+    },
+    {
+     "t": "a",
+     "desde": 120,
+     "hasta": 128
+    },
+    {
+     "t": "DevDay",
+     "desde": 128,
+     "hasta": 140
+    },
+    {
+     "t": "2026,",
+     "desde": 140,
+     "hasta": 168
+    },
+    {
+     "t": "el",
+     "desde": 168,
+     "hasta": 173
+    }
+   ]
+  },
+  {
+   "desde": 173,
+   "hasta": 220,
+   "palabras": [
+    {
+     "t": "repaso",
+     "desde": 173,
+     "hasta": 186
+    },
+    {
+     "t": "rápido",
+     "desde": 186,
+     "hasta": 190
+    },
+    {
+     "t": "a",
+     "desde": 190,
+     "hasta": 193
+    },
+    {
+     "t": "las",
+     "desde": 193,
+     "hasta": 196
+    },
+    {
+     "t": "novedades",
+     "desde": 196,
+     "hasta": 210
+    },
+    {
+     "t": "para",
+     "desde": 210,
+     "hasta": 215
+    }
+   ]
+  },
+  {
+   "desde": 220,
+   "hasta": 238,
+   "palabras": [
+    {
+     "t": "desarrolladores.",
+     "desde": 220,
+     "hasta": 230
+    }
+   ]
+  },
+  {
+   "desde": 256,
+   "hasta": 295,
+   "palabras": [
+    {
+     "t": "Hoy",
+     "desde": 256,
+     "hasta": 262
+    },
+    {
+     "t": "toca",
+     "desde": 262,
+     "hasta": 266
+    },
+    {
+     "t": "la",
+     "desde": 266,
+     "hasta": 276
+    },
+    {
+     "t": "API",
+     "desde": 276,
+     "hasta": 284
+    },
+    {
+     "t": "Realtime,",
+     "desde": 284,
+     "hasta": 289
+    }
+   ]
+  },
+  {
+   "desde": 304,
+   "hasta": 364,
+   "palabras": [
+    {
+     "t": "los",
+     "desde": 304,
+     "hasta": 308
+    },
+    {
+     "t": "agentes",
+     "desde": 308,
+     "hasta": 318
+    },
+    {
+     "t": "con",
+     "desde": 318,
+     "hasta": 324
+    },
+    {
+     "t": "MCP",
+     "desde": 324,
+     "hasta": 334
+    },
+    {
+     "t": "y",
+     "desde": 334,
+     "hasta": 337
+    },
+    {
+     "t": "el",
+     "desde": 337,
+     "hasta": 344
+    },
+    {
+     "t": "nuevo",
+     "desde": 344,
+     "hasta": 356
+    },
+    {
+     "t": "SDK",
+     "desde": 356,
+     "hasta": 361
+    }
+   ]
+  },
+  {
+   "desde": 364,
+   "hasta": 387,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 364,
+     "hasta": 370
+    },
+    {
+     "t": "TypeScript,",
+     "desde": 370,
+     "hasta": 379
+    }
+   ]
+  },
+  {
+   "desde": 392,
+   "hasta": 443,
+   "palabras": [
+    {
+     "t": "que",
+     "desde": 392,
+     "hasta": 398
+    },
+    {
+     "t": "llega",
+     "desde": 398,
+     "hasta": 402
+    },
+    {
+     "t": "con",
+     "desde": 402,
+     "hasta": 408
+    },
+    {
+     "t": "soporte",
+     "desde": 408,
+     "hasta": 419
+    },
+    {
+     "t": "para",
+     "desde": 419,
+     "hasta": 424
+    },
+    {
+     "t": "WebGPU.",
+     "desde": 424,
+     "hasta": 435
+    }
+   ]
+  },
+  {
+   "desde": 456,
+   "hasta": 503,
+   "palabras": [
+    {
+     "t": "En",
+     "desde": 456,
+     "hasta": 459
+    },
+    {
+     "t": "tres",
+     "desde": 459,
+     "hasta": 469
+    },
+    {
+     "t": "minutos",
+     "desde": 469,
+     "hasta": 478
+    },
+    {
+     "t": "verás",
+     "desde": 478,
+     "hasta": 484
+    },
+    {
+     "t": "qué",
+     "desde": 484,
+     "hasta": 492
+    },
+    {
+     "t": "cambia,",
+     "desde": 492,
+     "hasta": 497
+    }
+   ]
+  },
+  {
+   "desde": 504,
+   "hasta": 551,
+   "palabras": [
+    {
+     "t": "cuánto",
+     "desde": 504,
+     "hasta": 512
+    },
+    {
+     "t": "cuesta",
+     "desde": 512,
+     "hasta": 524
+    },
+    {
+     "t": "y",
+     "desde": 524,
+     "hasta": 530
+    },
+    {
+     "t": "cómo",
+     "desde": 530,
+     "hasta": 538
+    },
+    {
+     "t": "empezar",
+     "desde": 538,
+     "hasta": 543
+    },
+    {
+     "t": "hoy",
+     "desde": 543,
+     "hasta": 548
+    }
+   ]
+  },
+  {
+   "desde": 551,
+   "hasta": 558,
+   "palabras": [
+    {
+     "t": "mismo.",
+     "desde": 551,
+     "hasta": 556
+    }
+   ]
+  }
+ ],
+ "gestos": [],
+ "intro": {
+  "desde": 0,
+  "hasta": 100,
+  "kicker": "Noticias",
+  "titulo": "DevDay 2026",
+  "subtitulo": "Prueba del modo narración"
+ },
+ "outro": {
+  "desde": 573,
+  "hasta": 698,
+  "kicker": "En resumen",
+  "titulo": "DevDay 2026",
+  "puntos": [
+   "Realtime",
+   "MCP",
+   "TypeScript"
+  ]
+ },
+ "disposiciones": [
+  {
+   "desde": 0,
+   "hasta": 256,
+   "tipo": "completa"
+  },
+  {
+   "desde": 256,
+   "hasta": 573,
+   "tipo": "voz"
+  },
+  {
+   "desde": 573,
+   "hasta": 698,
+   "tipo": "completa"
+  }
+ ],
+ "audio": {
+  "musica": [
+   {
+    "archivo": "sintonia",
+    "desde": 0,
+    "hasta": 138,
+    "volumen": 0.5,
+    "fundidoEntrada": 0,
+    "fundidoSalida": 38,
+    "bucle": false
+   },
+   {
+    "archivo": "base",
+    "desde": 100,
+    "hasta": 558,
+    "volumen": 0.285,
+    "fundidoEntrada": 50,
+    "fundidoSalida": 50,
+    "bucle": true
+   },
+   {
+    "archivo": "cierre",
+    "desde": 533,
+    "hasta": 698,
+    "volumen": 0.5,
+    "fundidoEntrada": 25,
+    "fundidoSalida": 50,
+    "bucle": false
+   }
+  ],
+  "sfx": [
+   {
+    "archivo": "sfx-destello",
+    "en": 106,
+    "volumen": 0.5,
+    "dur": 25
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 256,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 456,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 530,
+    "volumen": 0.35,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 573,
+    "volumen": 0.35,
+    "dur": 50
+   }
+  ]
+ },
+ "avisos": []
+}

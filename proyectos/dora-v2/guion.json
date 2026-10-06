@@ -1,0 +1,2789 @@
+{
+ "fixes": {
+  "Dora": "DORA",
+  "SYM": "SIEM",
+  "PAC": "Pack",
+  "prerequisito": "prerrequisito",
+  "prorroga": "prórroga",
+  "Saltársela": "Saltárselo",
+  "moverse lentamente": "moverse lateralmente",
+  "la más útil": "la más sutil",
+  "DORA quiera": "DORA quiere",
+  "y se aplica regulatorias": "y, si aplica, regulatorias",
+  "saltárselo": "Saltárselo",
+  "Inscripción en la CMDB": "inscripción en la CMDB",
+  "de repente tu portátil": "De repente, tu portátil",
+  "gestionado, corporativo": "gestionado, sin EDR corporativo"
+ },
+ "cortes": [
+  {
+   "desde": 0.0,
+   "hasta": 33.6
+  },
+  {
+   "desde": 38.12,
+   "hasta": 38.85
+  },
+  {
+   "desde": 68.92,
+   "hasta": 104.3
+  },
+  {
+   "desde": 111.7,
+   "hasta": 138.8
+  },
+  {
+   "desde": 156.3,
+   "hasta": 166.05
+  },
+  {
+   "desde": 177.82,
+   "hasta": 183.7
+  },
+  {
+   "desde": 187.52,
+   "hasta": 198.35
+  },
+  {
+   "desde": 206.8,
+   "hasta": 219.8
+  },
+  {
+   "desde": 233.2,
+   "hasta": 235.7
+  },
+  {
+   "desde": 299.75,
+   "hasta": 435.1
+  },
+  {
+   "desde": 436.74,
+   "hasta": 455.35
+  },
+  {
+   "desde": 467.7,
+   "hasta": 477.2
+  },
+  {
+   "desde": 482.45,
+   "hasta": 483.8
+  },
+  {
+   "desde": 497.95,
+   "hasta": 503.3
+  },
+  {
+   "desde": 505.7,
+   "hasta": 591.9
+  },
+  {
+   "desde": 595.3,
+   "hasta": 637.5
+  },
+  {
+   "desde": 675.92,
+   "hasta": 682.25
+  },
+  {
+   "desde": 690.1,
+   "hasta": 736.3
+  },
+  {
+   "desde": 754.3,
+   "hasta": 766.1
+  },
+  {
+   "desde": 775.17,
+   "hasta": 776.5
+  },
+  {
+   "desde": 787.74,
+   "hasta": 802.2
+  },
+  {
+   "desde": 826.0,
+   "hasta": 861.7
+  },
+  {
+   "desde": 885.45,
+   "hasta": 887.4
+  },
+  {
+   "desde": 894.1,
+   "hasta": 900.6
+  },
+  {
+   "desde": 905.08,
+   "hasta": 907.3
+  },
+  {
+   "desde": 915.78,
+   "hasta": 926.65
+  },
+  {
+   "desde": 938.51,
+   "hasta": 1073.2
+  },
+  {
+   "desde": 1075.06,
+   "hasta": 1081.75
+  },
+  {
+   "desde": 1113.26,
+   "hasta": 1115.0
+  },
+  {
+   "desde": 1137.25,
+   "hasta": 1143.6
+  },
+  {
+   "desde": 1146.12,
+   "hasta": 1146.5
+  },
+  {
+   "desde": 1181.75,
+   "hasta": 1309.2
+  },
+  {
+   "desde": 1316.7,
+   "hasta": 1319.0
+  },
+  {
+   "desde": 1321.88,
+   "hasta": 1333.1
+  },
+  {
+   "desde": 1340.35,
+   "hasta": 1342.0
+  },
+  {
+   "desde": 1345.72,
+   "hasta": 1355.3
+  },
+  {
+   "desde": 1368.32,
+   "hasta": 1371.4
+  },
+  {
+   "desde": 1403.0,
+   "hasta": 1438.8
+  },
+  {
+   "desde": 1456.2,
+   "hasta": 1459.45
+  },
+  {
+   "desde": 1470.25,
+   "hasta": 1479.2
+  },
+  {
+   "desde": 1483.02,
+   "hasta": 1502.0
+  },
+  {
+   "desde": 1522.45,
+   "hasta": 1535.2
+  },
+  {
+   "desde": 1548.12,
+   "hasta": 1558.35
+  },
+  {
+   "desde": 1576.1,
+   "hasta": 1578.35
+  },
+  {
+   "desde": 1582.52,
+   "hasta": 1584.3
+  },
+  {
+   "desde": 1603.72,
+   "hasta": 1606.2
+  },
+  {
+   "desde": 1630.92,
+   "hasta": 1651.3
+  },
+  {
+   "desde": 1663.72,
+   "hasta": 1665.8
+  },
+  {
+   "desde": 1665.75,
+   "hasta": 1669.5
+  },
+  {
+   "desde": 1695.62,
+   "hasta": 1723.65
+  },
+  {
+   "desde": 1727.72,
+   "hasta": 1758.3
+  },
+  {
+   "desde": 1766.8,
+   "hasta": 1780.6
+  },
+  {
+   "desde": 1788.76,
+   "hasta": 1789.45
+  },
+  {
+   "desde": 1803.64,
+   "hasta": 1864.0
+  },
+  {
+   "desde": 1873.62,
+   "hasta": 1876.5
+  },
+  {
+   "desde": 1883.68,
+   "hasta": 1886.2
+  },
+  {
+   "desde": 1901.5,
+   "hasta": 1902.35
+  },
+  {
+   "desde": 1911.4,
+   "hasta": 1913.2
+  },
+  {
+   "desde": 1916.92,
+   "hasta": 1927.4
+  },
+  {
+   "desde": 1943.4,
+   "hasta": 1996.2
+  },
+  {
+   "desde": 2020.4,
+   "hasta": 2021.6
+  },
+  {
+   "desde": 2022.8,
+   "hasta": 2042.71
+  }
+ ],
+ "intro": {
+  "kicker": "Resiliencia operativa digital",
+  "titulo": "DORA en la práctica",
+  "subtitulo": "Tres casos reales para decidir como exige el reglamento",
+  "objeto3d": "escudo",
+  "duracion": 3.8
+ },
+ "capitulos": [
+  {
+   "cue": [
+    39.1,
+    "Caso 1, el"
+   ],
+   "n": 1,
+   "titulo": "El proveedor que ya conocemos",
+   "kicker": "Caso 1",
+   "subtitulo": "Contratar un SaaS con un proveedor certificado",
+   "acento": 0,
+   "objeto3d": "contrato"
+  },
+  {
+   "cue": [
+    139.0,
+    "Opción A, Pack"
+   ],
+   "n": 2,
+   "titulo": "Pack acelerado",
+   "kicker": "Caso 1 · Opción A",
+   "subtitulo": "Confiar en las certificaciones del proveedor",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    235.9,
+    "Opción B, reutilización"
+   ],
+   "n": 3,
+   "titulo": "Reutilización interna",
+   "kicker": "Caso 1 · Opción B",
+   "subtitulo": "Aprovechar lo que ya contrató otra unidad",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    435.3,
+    "Opción C, marco"
+   ],
+   "n": 4,
+   "titulo": "Marco completo",
+   "kicker": "Caso 1 · Opción C",
+   "subtitulo": "Lo que pide el capítulo V de DORA",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    592.2,
+    "Opción D. Estrategia"
+   ],
+   "n": 5,
+   "titulo": "Estrategia conservadora",
+   "kicker": "Caso 1 · Opción D",
+   "subtitulo": "Quedarse con el proveedor de siempre",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    738.8,
+    "Veamos el caso"
+   ],
+   "n": 6,
+   "titulo": "La señal débil de las 9:15",
+   "kicker": "Caso 2",
+   "subtitulo": "Una alerta sin confirmar que toca funciones críticas",
+   "acento": 1,
+   "objeto3d": "escudo"
+  },
+  {
+   "cue": [
+    802.4,
+    "Opción A. Confirmación"
+   ],
+   "n": 7,
+   "titulo": "Confirmación primero",
+   "kicker": "Caso 2 · Opción A",
+   "subtitulo": "Esperar a confirmar la alerta",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    907.4,
+    "Opción B. Activación"
+   ],
+   "n": 8,
+   "titulo": "Activación preliminar del protocolo",
+   "kicker": "Caso 2 · Opción B",
+   "subtitulo": "Activar en su grado más bajo",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1115.2,
+    "Opción C. Aislar"
+   ],
+   "n": 9,
+   "titulo": "Aislar y comunicar después",
+   "kicker": "Caso 2 · Opción C",
+   "subtitulo": "Contener sin el protocolo formal",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1319.3,
+    "Opción D. Decisión"
+   ],
+   "n": 10,
+   "titulo": "Decisión de las áreas afectadas",
+   "kicker": "Caso 2 · Opción D",
+   "subtitulo": "Esperar el permiso del negocio",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1439.3,
+    "Continuamos con el"
+   ],
+   "n": 11,
+   "titulo": "Viernes por la tarde",
+   "kicker": "Caso 3",
+   "subtitulo": "Portátil bloqueado y un plazo regulatorio a las 18:00",
+   "acento": 2,
+   "objeto3d": "reloj"
+  },
+  {
+   "cue": [
+    1502.1,
+    "Opción A. equipo"
+   ],
+   "n": 12,
+   "titulo": "Equipo del compañero",
+   "kicker": "Caso 3 · Opción A",
+   "subtitulo": "Trabajar en el portátil de otra persona",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1606.4,
+    "Opción B, VDI"
+   ],
+   "n": 13,
+   "titulo": "VDI desde dispositivo personal",
+   "kicker": "Caso 3 · Opción B",
+   "subtitulo": "Conectarse desde la tablet personal",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1758.6,
+    "Opción C, activación"
+   ],
+   "n": 14,
+   "titulo": "Activación del protocolo",
+   "kicker": "Caso 3 · Opción C",
+   "subtitulo": "Clasificar, comunicar y documentar",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    1886.4,
+    "Opción D, decisión"
+   ],
+   "n": 15,
+   "titulo": "Decisión del responsable",
+   "kicker": "Caso 3 · Opción D",
+   "subtitulo": "Esperar a que decida tu responsable",
+   "acento": 2,
+   "objeto3d": null
+  }
+ ],
+ "eventos": [
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    40.9,
+    "conocemos. Tu equipo necesita"
+   ],
+   "hasta": [
+    68.7,
+    "cliente. Que escucha un"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 1 · Enunciado",
+   "titulo": "Un SaaS de analítica para el banco",
+   "items": [
+    {
+     "cue": [
+      42.5,
+      "Tu equipo necesita una"
+     ],
+     "texto": "Herramienta SaaS de analítica avanzada",
+     "icono": "nube"
+    },
+    {
+     "cue": [
+      49.1,
+      "Habéis evaluado el mercado"
+     ],
+     "texto": "Fintech europea bien posicionada",
+     "icono": "red"
+    },
+    {
+     "cue": [
+      53.6,
+      "Certificación ISO 27001, SOC"
+     ],
+     "texto": "ISO 27001 · SOC 2 tipo 2 · referencias en bancos",
+     "icono": "escudo"
+    },
+    {
+     "cue": [
+      61.1,
+      "La herramienta procesará datos"
+     ],
+     "texto": "Tratará datos operativos y de funciones de cliente",
+     "icono": "datos"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    104.7,
+    "Negocio quiere cerrarlo este"
+   ],
+   "hasta": [
+    111.3,
+    "abordas? Y ahora vendrían"
+   ],
+   "texto": "Negocio quiere cerrarlo este trimestre",
+   "sub": "¿Cómo lo abordas?",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    139.0,
+    "Opción A, Pack acelerado"
+   ],
+   "hasta": [
+    148.0,
+    "Las certificaciones ISO 27001"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1 · Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Pack acelerado"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilización interna"
+    },
+    {
+     "letra": "C",
+     "texto": "Marco completo"
+    },
+    {
+     "letra": "D",
+     "texto": "Estrategia conservadora"
+    }
+   ],
+   "foco": {
+    "cue": [
+     146.7,
+     "Pero aquí está la"
+    ],
+    "letra": "A",
+    "veredicto": "trampa"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    148.0,
+    "Las certificaciones ISO 27001"
+   ],
+   "hasta": [
+    156.0,
+    "DORA. El artículo 30"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1",
+   "titulo": "Certificación ≠ contrato",
+   "izq": {
+    "cue": [
+     148.0,
+     "Las certificaciones ISO 27001"
+    ],
+    "titulo": "Certificaciones",
+    "items": [
+     "ISO 27001",
+     "SOC 2",
+     "Útiles, pero no bastan"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "cue": [
+     152.5,
+     "pero no sustituyen a"
+    ],
+    "titulo": "Cláusulas DORA",
+    "items": [
+     "Específicas",
+     "Obligatorias en el contrato"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "contrato",
+   "cue": [
+    166.2,
+    "el artículo 30 del"
+   ],
+   "hasta": [
+    187.0,
+    "bueno que sea Y"
+   ],
+   "lado": "izq",
+   "kicker": "Artículo 30 del reglamento",
+   "titulo": "Lo que el contrato tiene que incluir",
+   "etiquetas": [
+    {
+     "cue": [
+      170.0,
+      "derechos de auditoría sobre"
+     ],
+     "texto": "Derechos de auditoría"
+    },
+    {
+     "cue": [
+      172.0,
+      "gestión de subcontratistas, asistencia"
+     ],
+     "texto": "Gestión de subcontratistas"
+    },
+    {
+     "cue": [
+      173.6,
+      "asistencia y portabilidad en"
+     ],
+     "texto": "Asistencia y portabilidad en la salida"
+    },
+    {
+     "cue": [
+      176.5,
+      "cooperación con autoridades y"
+     ],
+     "texto": "Cooperación con autoridades"
+    },
+    {
+     "cue": [
+      184.1,
+      "casi ningún contrato estándar"
+     ],
+     "texto": "Casi ningún contrato estándar lo cubre"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    198.5,
+    "Y hay un problema"
+   ],
+   "hasta": [
+    229.4,
+    "La due diligence es"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1",
+   "titulo": "El orden importa",
+   "izq": {
+    "cue": [
+     202.4,
+     "de firmar es exactamente"
+    ],
+    "titulo": "Después de firmar",
+    "items": [
+     "Poder de negociación cero",
+     "Si hay riesgo, sin palanca"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "cue": [
+     220.0,
+     "Cuando la firma ya"
+    ],
+    "titulo": "Antes de firmar",
+    "items": [
+     "Negocias las cláusulas",
+     "Decides con información"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "cita",
+   "cue": [
+    229.4,
+    "La due diligence es"
+   ],
+   "hasta": [
+    235.9,
+    "Opción B, reutilización interna"
+   ],
+   "lado": "der",
+   "kicker": "Idea clave",
+   "titulo": "Idea clave",
+   "texto": "La due diligence es prerrequisito de la firma, no una tarea de onboarding.",
+   "resalta": [
+    "prerrequisito",
+    "firma"
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    235.9,
+    "Opción B, reutilización interna"
+   ],
+   "hasta": [
+    246.4,
+    "El problema es de"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1 · Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Pack acelerado"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilización interna"
+    },
+    {
+     "letra": "C",
+     "texto": "Marco completo"
+    },
+    {
+     "letra": "D",
+     "texto": "Estrategia conservadora"
+    }
+   ],
+   "foco": {
+    "cue": [
+     239.1,
+     "Esta es la más"
+    ],
+    "letra": "B",
+    "veredicto": "riesgo"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "mapa",
+   "cue": [
+    246.4,
+    "El problema es de"
+   ],
+   "hasta": [
+    273.5,
+    "Reaprovechar un contrato significa"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 1",
+   "titulo": "Cada relación se evalúa según su uso",
+   "centro": "Relación con el proveedor",
+   "nodos": [
+    {
+     "cue": [
+      257.3,
+      "unos riesgos concretos para"
+     ],
+     "texto": "Riesgos concretos"
+    },
+    {
+     "cue": [
+      258.8,
+      "para unos datos concretos"
+     ],
+     "texto": "Datos concretos"
+    },
+    {
+     "cue": [
+      260.2,
+      "en un caso de"
+     ],
+     "texto": "Caso de uso concreto"
+    },
+    {
+     "cue": [
+      265.8,
+      "otra criticidad de la"
+     ],
+     "texto": "Criticidad de la función"
+    },
+    {
+     "cue": [
+      269.4,
+      "otro nivel de impacto"
+     ],
+     "texto": "Nivel de impacto si falla"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    273.5,
+    "Reaprovechar un contrato significa"
+   ],
+   "hasta": [
+    282.8,
+    "Lo que era dato"
+   ],
+   "texto": "Reaprovechar un contrato",
+   "sub": "es aceptar cláusulas pensadas para otro caso",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    282.8,
+    "Lo que era dato"
+   ],
+   "hasta": [
+    290.4,
+    "Y desde el punto"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 1",
+   "titulo": "Otro uso, otro riesgo",
+   "izq": {
+    "cue": [
+     282.8,
+     "Lo que era dato"
+    ],
+    "titulo": "Allí",
+    "items": [
+     "Dato no crítico",
+     "Subcontratación que servía"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "cue": [
+     285.2,
+     "dato sensible aquí. Lo"
+    ],
+    "titulo": "Aquí",
+    "items": [
+     "Dato sensible",
+     "Puede no servirte"
+    ],
+    "tono": "bad"
+   }
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "registro",
+   "cue": [
+    290.4,
+    "Y desde el punto"
+   ],
+   "hasta": [
+    299.6,
+    "proveedor. Gracias. Por cuál"
+   ],
+   "lado": "izq",
+   "kicker": "Registro de información",
+   "titulo": "Cada relación se inscribe por separado",
+   "etiquetas": [
+    {
+     "cue": [
+      291.9,
+      "registro de información, cada"
+     ],
+     "texto": "Relación de servicio 1"
+    },
+    {
+     "cue": [
+      293.9,
+      "relación de servicio se"
+     ],
+     "texto": "Relación de servicio 2"
+    },
+    {
+     "cue": [
+      298.0,
+      "No vale, ya estaba"
+     ],
+     "texto": "«Ya estaba el otro proveedor» no vale"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    435.3,
+    "Opción C, marco completo"
+   ],
+   "hasta": [
+    459.2,
+    "de DORA. Clasificación previa"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1 · Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Pack acelerado"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilización interna"
+    },
+    {
+     "letra": "C",
+     "texto": "Marco completo"
+    },
+    {
+     "letra": "D",
+     "texto": "Estrategia conservadora"
+    }
+   ],
+   "foco": {
+    "cue": [
+     455.6,
+     "Esta es la respuesta"
+    ],
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "cue": [
+    460.6,
+    "Clasificación previa por criticidad"
+   ],
+   "hasta": [
+    482.3,
+    "crítica. Lo que parece"
+   ],
+   "lado": "der",
+   "kicker": "Lo que pide el capítulo V de DORA",
+   "titulo": "El marco completo",
+   "items": [
+    {
+     "cue": [
+      460.6,
+      "Clasificación previa por criticidad"
+     ],
+     "texto": "Clasificación previa por criticidad",
+     "icono": "lupa"
+    },
+    {
+     "cue": [
+      462.6,
+      "due diligence específica para"
+     ],
+     "texto": "Due diligence específica para tu caso",
+     "icono": "auditoria"
+    },
+    {
+     "cue": [
+      465.7,
+      "con cláusulas mínimas obligatorias"
+     ],
+     "texto": "Contrato con cláusulas mínimas",
+     "icono": "contrato"
+    },
+    {
+     "cue": [
+      477.4,
+      "inscripción en la CMDB"
+     ],
+     "texto": "Inscripción en el registro",
+     "icono": "registro"
+    },
+    {
+     "cue": [
+      479.1,
+      "y escalado al órgano"
+     ],
+     "texto": "Escalado a dirección si es crítica",
+     "icono": "banco"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    484.0,
+    "Lo que parece burocracia"
+   ],
+   "hasta": [
+    494.0,
+    "condiciones? Y cómo saldrías"
+   ],
+   "lado": "izq",
+   "kicker": "Lo que parece burocracia…",
+   "titulo": "…es lo que te preguntará el supervisor",
+   "items": [
+    {
+     "cue": [
+      491.5,
+      "Con quién? Para qué"
+     ],
+     "texto": "¿Con quién?",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      492.3,
+      "Para qué? Bajo qué"
+     ],
+     "texto": "¿Para qué?",
+     "icono": "lupa"
+    },
+    {
+     "cue": [
+      493.1,
+      "Bajo qué condiciones? Y"
+     ],
+     "texto": "¿Bajo qué condiciones?",
+     "icono": "contrato"
+    }
+   ]
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "salida",
+   "cue": [
+    494.3,
+    "Y cómo saldrías del"
+   ],
+   "hasta": [
+    505.3,
+    "va a hacer. Para"
+   ],
+   "lado": "izq",
+   "kicker": "Estrategia de salida",
+   "titulo": "¿Cómo saldrías si el proveedor desaparece?",
+   "etiquetas": [
+    {
+     "cue": [
+      494.8,
+      "saldrías del contrato si"
+     ],
+     "texto": "Salida ordenada del contrato"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    592.2,
+    "Opción D. Estrategia conservadora"
+   ],
+   "hasta": [
+    639.8,
+    "El riesgo de concentración"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1 · Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Pack acelerado"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilización interna"
+    },
+    {
+     "letra": "C",
+     "texto": "Marco completo"
+    },
+    {
+     "letra": "D",
+     "texto": "Estrategia conservadora"
+    }
+   ],
+   "foco": {
+    "cue": [
+     594.6,
+     "Esta es la más"
+    ],
+    "letra": "D",
+    "veredicto": "riesgo"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    644.6,
+    "E incluso aparece explícitamente"
+   ],
+   "hasta": [
+    658.3,
+    "Concentrarte en el proveedor"
+   ],
+   "lado": "der",
+   "kicker": "Caso 1",
+   "titulo": "Riesgo de concentración · art. 29",
+   "izq": {
+    "cue": [
+     639.8,
+     "El riesgo de concentración"
+    ],
+    "titulo": "Lo que pide DORA",
+    "items": [
+     "Gestionar el riesgo de cada proveedor",
+     "Vigilar la concentración"
+    ],
+    "tono": "ok"
+   },
+   "der": {
+    "cue": [
+     649.8,
+     "Pero la conclusión es"
+    ],
+    "titulo": "Conclusión equivocada",
+    "items": [
+     "Reducir el número de proveedores"
+    ],
+    "tono": "bad"
+   }
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "cadena",
+   "cue": [
+    658.3,
+    "Concentrarte en el proveedor"
+   ],
+   "hasta": [
+    675.6,
+    "dependencias. La pregunta correcta"
+   ],
+   "lado": "izq",
+   "kicker": "Concentrarse en un solo proveedor",
+   "titulo": "Si se cae, se cae todo lo que depende de él",
+   "etiquetas": [
+    {
+     "cue": [
+      658.3,
+      "Concentrarte en el proveedor"
+     ],
+     "texto": "Banco"
+    },
+    {
+     "cue": [
+      659.0,
+      "el proveedor incumbente para"
+     ],
+     "texto": "Proveedor único"
+    },
+    {
+     "cue": [
+      665.5,
+      "Si se cae, se"
+     ],
+     "texto": "Servicios dependientes"
+    },
+    {
+     "cue": [
+      674.2,
+      "y, paradójicamente, otras dependencias"
+     ],
+     "texto": "Nuevas dependencias"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    682.4,
+    "La pregunta correcta nunca"
+   ],
+   "hasta": [
+    738.8,
+    "Veamos el caso 2"
+   ],
+   "lado": "der",
+   "kicker": "La pregunta correcta",
+   "titulo": "¿Cada relación está bien…?",
+   "items": [
+    {
+     "cue": [
+      687.4,
+      "bien evaluada, contratada, inscrita"
+     ],
+     "texto": "Evaluada",
+     "icono": "lupa"
+    },
+    {
+     "cue": [
+      688.3,
+      "contratada, inscrita y monitorizada"
+     ],
+     "texto": "Contratada",
+     "icono": "contrato"
+    },
+    {
+     "cue": [
+      689.0,
+      "inscrita y monitorizada. Caso"
+     ],
+     "texto": "Inscrita",
+     "icono": "registro"
+    },
+    {
+     "cue": [
+      689.5,
+      "y monitorizada. Caso 2"
+     ],
+     "texto": "Monitorizada",
+     "icono": "reloj"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    743.2,
+    "Lunes a las 9"
+   ],
+   "hasta": [
+    754.0,
+    "críticas. Los patrones son"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 2 · Lunes, 9:15",
+   "titulo": "Salta una alerta",
+   "items": [
+    {
+     "cue": [
+      746.5,
+      "genera una alerta de"
+     ],
+     "texto": "Comportamiento anómalo detectado",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      749.1,
+      "en una aplicación interna"
+     ],
+     "texto": "App interna usada por varios equipos",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      752.8,
+      "incluyendo áreas operativas críticas"
+     ],
+     "texto": "Incluye áreas operativas críticas",
+     "icono": "banco"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    766.3,
+    "Los patrones son compatibles"
+   ],
+   "hasta": [
+    783.3,
+    "Eres el analista de"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 2",
+   "titulo": "Contexto",
+   "items": [
+    {
+     "cue": [
+      772.2,
+      "últimos seis meses se"
+     ],
+     "texto": "6 meses · de historial reciente",
+     "icono": "reloj"
+    },
+    {
+     "cue": [
+      773.8,
+      "tres similares que terminarían"
+     ],
+     "texto": "3 · alertas similares, todas falsas",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      777.8,
+      "servicios siguen funcionando con"
+     ],
+     "texto": "0 · quejas de usuarios por ahora",
+     "icono": "personas"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    783.3,
+    "Eres el analista de"
+   ],
+   "hasta": [
+    787.6,
+    "tomas? Vienen las opciones"
+   ],
+   "texto": "Eres el analista de turno",
+   "sub": "Decides en los próximos minutos",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    802.4,
+    "Opción A. Confirmación primero"
+   ],
+   "hasta": [
+    821.2,
+    "El artículo 17 exige"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Confirmación primero"
+    },
+    {
+     "letra": "B",
+     "texto": "Activación preliminar del protocolo"
+    },
+    {
+     "letra": "C",
+     "texto": "Aislar y comunicar después"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión de las áreas afectadas"
+    }
+   ],
+   "foco": {
+    "cue": [
+     818.1,
+     "El problema es que"
+    ],
+    "letra": "A",
+    "veredicto": "trampa"
+   }
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    821.2,
+    "El artículo 17 exige"
+   ],
+   "hasta": [
+    825.8,
+    "rápidos. Y sobre todo"
+   ],
+   "texto": "Artículo 17",
+   "sub": "Detección, gestión y notificación rápidas",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "linea",
+   "cue": [
+    861.9,
+    "Sobre todo, el reloj"
+   ],
+   "hasta": [
+    880.0,
+    "Y en esas dos"
+   ],
+   "lado": "izq",
+   "kicker": "El reloj regulatorio",
+   "titulo": "Esperar también cuenta",
+   "hitos": [
+    {
+     "cue": [
+      862.7,
+      "el reloj para notificar"
+     ],
+     "etiqueta": "Detección",
+     "texto": "Alerta detectada"
+    },
+    {
+     "cue": [
+      868.6,
+      "incidente se clasifica como"
+     ],
+     "etiqueta": "Clasificación",
+     "texto": "Se clasifica como grave: arranca el reloj",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      873.1,
+      "confirmar antes de activar"
+     ],
+     "etiqueta": "Espera",
+     "texto": "Dos horas «confirmando»",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      877.6,
+      "estás regalando dos horas"
+     ],
+     "etiqueta": "Resultado",
+     "texto": "Dos horas regaladas",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    880.0,
+    "Y en esas dos"
+   ],
+   "hasta": [
+    894.0,
+    "esperar. Eso, en un"
+   ],
+   "lado": "izq",
+   "kicker": "En esas dos horas",
+   "titulo": "Un atacante puede…",
+   "items": [
+    {
+     "cue": [
+      881.9,
+      "puede moverse lateralmente, escalar"
+     ],
+     "texto": "Moverse lateralmente",
+     "icono": "red"
+    },
+    {
+     "cue": [
+      883.3,
+      "escalar privilegios o exfiltrar"
+     ],
+     "texto": "Escalar privilegios",
+     "icono": "candado"
+    },
+    {
+     "cue": [
+      884.5,
+      "o exfiltrar datos. Y"
+     ],
+     "texto": "Exfiltrar datos",
+     "icono": "datos"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cita",
+   "cue": [
+    900.6,
+    "Eso, en un examen"
+   ],
+   "hasta": [
+    904.9,
+    "defender. Opción B. Activación"
+   ],
+   "lado": "der",
+   "kicker": "Ante el supervisor",
+   "titulo": "Ante el supervisor",
+   "texto": "Tu primera línea defensiva habrá sido esperar. Muy difícil de defender.",
+   "resalta": [
+    "esperar"
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    907.4,
+    "Opción B. Activación preliminar"
+   ],
+   "hasta": [
+    915.5,
+    "preliminar. no estás declarando"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Confirmación primero"
+    },
+    {
+     "letra": "B",
+     "texto": "Activación preliminar del protocolo"
+    },
+    {
+     "letra": "C",
+     "texto": "Aislar y comunicar después"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión de las áreas afectadas"
+    }
+   ],
+   "foco": {
+    "cue": [
+     911.8,
+     "Esta es la respuesta"
+    ],
+    "letra": "B",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    926.8,
+    "No estás declarando un"
+   ],
+   "hasta": [
+    938.3,
+    "críticas. A otra vez"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2",
+   "titulo": "La clave: «preliminar»",
+   "izq": {
+    "cue": [
+     926.8,
+     "No estás declarando un"
+    ],
+    "titulo": "No estás…",
+    "items": [
+     "Declarando un incidente grave"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "cue": [
+     928.8,
+     "estás activando el protocolo"
+    ],
+    "titulo": "Sí estás…",
+    "items": [
+     "Activando el protocolo en su grado más bajo",
+     "Cubriendo una alerta no confirmada"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "cue": [
+    1073.6,
+    "Esto te permite hacer"
+   ],
+   "hasta": [
+    1089.4,
+    "la cosa escala. Si"
+   ],
+   "lado": "der",
+   "kicker": "Dos cosas a la vez",
+   "titulo": "Activar en grado preliminar te permite",
+   "items": [
+    {
+     "cue": [
+      1081.8,
+      "actuar técnicamente, con contención"
+     ],
+     "texto": "Actuar técnicamente: contención, evidencias, impacto",
+     "icono": "escudo"
+    },
+    {
+     "cue": [
+      1086.5,
+      "y mantener el reloj"
+     ],
+     "texto": "Tener el reloj regulatorio bajo control",
+     "icono": "reloj"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    1091.5,
+    "Si en una hora"
+   ],
+   "hasta": [
+    1101.1,
+    "minuto cero. La filosofía"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2",
+   "titulo": "Pase lo que pase",
+   "izq": {
+    "cue": [
+     1091.5,
+     "Si en una hora"
+    ],
+    "titulo": "Falso positivo",
+    "items": [
+     "Cierras, registras y aprendes"
+    ],
+    "tono": "ok"
+   },
+   "der": {
+    "cue": [
+     1098.6,
+     "Si no, ya tienes"
+    ],
+    "titulo": "Incidente real",
+    "items": [
+     "Todo en marcha desde el minuto cero"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "balanza",
+   "cue": [
+    1103.3,
+    "La filosofía de fondo"
+   ],
+   "hasta": [
+    1112.9,
+    "a tiempo. Opción C"
+   ],
+   "lado": "izq",
+   "kicker": "La filosofía de DORA",
+   "titulo": "Activar pronto siempre sale más barato",
+   "etiquetas": [
+    {
+     "cue": [
+      1108.8,
+      "el coste de activar"
+     ],
+     "texto": "Coste de activar y desactivar"
+    },
+    {
+     "cue": [
+      1111.9,
+      "que el coste de"
+     ],
+     "texto": "Coste de no activar a tiempo"
+    },
+    {
+     "cue": [
+      1112.2,
+      "coste de no activar"
+     ],
+     "texto": "(pesa mucho más)"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1115.2,
+    "Opción C. Aislar y"
+   ],
+   "hasta": [
+    1128.4,
+    "contención. El problema es"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Confirmación primero"
+    },
+    {
+     "letra": "B",
+     "texto": "Activación preliminar del protocolo"
+    },
+    {
+     "letra": "C",
+     "texto": "Aislar y comunicar después"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión de las áreas afectadas"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1119.3,
+     "Esta opción está cerca"
+    ],
+    "letra": "C",
+    "veredicto": "riesgo"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    1132.4,
+    "es que hacerlo sin"
+   ],
+   "hasta": [
+    1167.1,
+    "incidente? La contención sin"
+   ],
+   "lado": "izq",
+   "kicker": "Aislar sin protocolo deja cabos sueltos",
+   "titulo": "Preguntas sin dueño",
+   "items": [
+    {
+     "cue": [
+      1143.7,
+      "Quién está clasificando el"
+     ],
+     "texto": "¿Quién clasifica el incidente y con qué criterio?",
+     "icono": "lupa"
+    },
+    {
+     "cue": [
+      1146.6,
+      "Quién preserva las evidencias"
+     ],
+     "texto": "¿Quién preserva las evidencias forenses?",
+     "icono": "auditoria"
+    },
+    {
+     "cue": [
+      1150.1,
+      "Se ha evaluado formalmente"
+     ],
+     "texto": "¿Se ha evaluado el impacto en funciones críticas?",
+     "icono": "banco"
+    },
+    {
+     "cue": [
+      1154.5,
+      "Está el reloj regulatorio"
+     ],
+     "texto": "¿Está activado el reloj regulatorio?",
+     "icono": "reloj"
+    },
+    {
+     "cue": [
+      1160.6,
+      "Si el aislamiento provoca"
+     ],
+     "texto": "¿Quién gestiona la indisponibilidad para clientes?",
+     "icono": "personas"
+    }
+   ]
+  },
+  {
+   "tipo": "gesto3d",
+   "objeto": "engranajes",
+   "cue": [
+    1175.1,
+    "sea parte de un"
+   ],
+   "texto": "Contención dentro del protocolo"
+  },
+  {
+   "tipo": "panel",
+   "kind": "mapa",
+   "cue": [
+    1177.9,
+    "implica. Registro, evaluación de"
+   ],
+   "hasta": [
+    1309.5,
+    "Aislar y comunicar después"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 2",
+   "titulo": "Contención dentro de un protocolo",
+   "centro": "Protocolo de incidentes",
+   "nodos": [
+    {
+     "cue": [
+      1177.9,
+      "implica. Registro, evaluación de"
+     ],
+     "texto": "Registro"
+    },
+    {
+     "cue": [
+      1179.4,
+      "evaluación de impacto, escalado"
+     ],
+     "texto": "Evaluación de impacto"
+    },
+    {
+     "cue": [
+      1180.1,
+      "impacto, escalado y comunicación"
+     ],
+     "texto": "Escalado"
+    },
+    {
+     "cue": [
+      1181.2,
+      "y comunicación. Aislar es"
+     ],
+     "texto": "Comunicación"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    1309.5,
+    "Aislar y comunicar después"
+   ],
+   "hasta": [
+    1316.4,
+    "regulatoria. Opción D. Decisión"
+   ],
+   "texto": "«Aislar y comunicar después»",
+   "sub": "Técnicamente maduro, pero sin disciplina regulatoria",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1319.3,
+    "Opción D. Decisión de"
+   ],
+   "hasta": [
+    1340.1,
+    "stakeholders. Es verdad que"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Confirmación primero"
+    },
+    {
+     "letra": "B",
+     "texto": "Activación preliminar del protocolo"
+    },
+    {
+     "letra": "C",
+     "texto": "Aislar y comunicar después"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión de las áreas afectadas"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1333.3,
+     "Esta es la trampa"
+    ],
+    "letra": "D",
+    "veredicto": "trampa"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    1342.2,
+    "Es verdad que las"
+   ],
+   "hasta": [
+    1381.7,
+    "no antes. Si esperas"
+   ],
+   "lado": "der",
+   "kicker": "Caso 2",
+   "titulo": "¿Quién decide qué?",
+   "izq": {
+    "cue": [
+     1355.5,
+     "pero la activación del"
+    ],
+    "titulo": "Seguridad TIC",
+    "items": [
+     "Activa el protocolo",
+     "Sin esperar aprobación previa"
+    ],
+    "tono": "ok"
+   },
+   "der": {
+    "cue": [
+     1371.5,
+     "El negocio entra en"
+    ],
+    "titulo": "Negocio",
+    "items": [
+     "Prioridades de servicio",
+     "Comunicación a clientes",
+     "Aceptación del impacto"
+    ],
+    "tono": "neutro"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "linea",
+   "cue": [
+    1384.1,
+    "Si esperas a que"
+   ],
+   "hasta": [
+    1402.8,
+    "sostiene. Estás riendo a"
+   ],
+   "lado": "izq",
+   "kicker": "Esperar permiso mete latencia humana",
+   "titulo": "Un proceso que DORA quiere automático",
+   "hitos": [
+    {
+     "cue": [
+      1389.3,
+      "15 minutos, una hora"
+     ],
+     "etiqueta": "15 min",
+     "texto": "15 minutos",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      1390.1,
+      "una hora, una mañana"
+     ],
+     "etiqueta": "1 hora",
+     "texto": "Una hora",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      1390.7,
+      "una mañana entera, en"
+     ],
+     "etiqueta": "Una mañana",
+     "texto": "Una mañana entera",
+     "tono": "bad"
+    },
+    {
+     "cue": [
+      1397.9,
+      "tu defensa ante el"
+     ],
+     "etiqueta": "Supervisor",
+     "texto": "Defensa que no se sostiene",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    1444.3,
+    "Está cerrando una entrega"
+   ],
+   "hasta": [
+    1470.0,
+    "acceder. Tienes 90 minutos"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 3 · Viernes por la tarde",
+   "titulo": "Todo falla a la peor hora",
+   "items": [
+    {
+     "cue": [
+      1444.3,
+      "Está cerrando una entrega"
+     ],
+     "texto": "Entrega crítica con plazo a las 18:00",
+     "icono": "reloj"
+    },
+    {
+     "cue": [
+      1447.4,
+      "Puede ser un reporte"
+     ],
+     "texto": "Reporte regulatorio, cierre operativo, nómina…",
+     "icono": "registro"
+    },
+    {
+     "cue": [
+      1459.5,
+      "De repente, tu portátil"
+     ],
+     "texto": "El portátil corporativo se bloquea",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      1466.6,
+      "El trabajo está guardado"
+     ],
+     "texto": "El trabajo está en red, pero sin equipo no accedes",
+     "icono": "datos"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "cue": [
+    1480.6,
+    "Tienes 90 minutos? Qué"
+   ],
+   "hasta": [
+    1482.5,
+    "tomaría? Acá la voz"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 3",
+   "titulo": "Tiempo disponible",
+   "valor": 90,
+   "unidad": "min",
+   "etiqueta": "para decidir y entregar"
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1502.1,
+    "Opción A. equipo del"
+   ],
+   "hasta": [
+    1517.8,
+    "pero rompe varios principios"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Equipo del compañero"
+    },
+    {
+     "letra": "B",
+     "texto": "VDI desde dispositivo personal"
+    },
+    {
+     "letra": "C",
+     "texto": "Activación del protocolo"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión del responsable"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1504.8,
+     "Esta es la opción"
+    ],
+    "letra": "A",
+    "veredicto": "trampa"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "cue": [
+    1517.8,
+    "pero rompe varios principios"
+   ],
+   "hasta": [
+    1547.9,
+    "complica. Segregación y configuración"
+   ],
+   "lado": "der",
+   "kicker": "Rompe varios principios a la vez",
+   "titulo": "1 · Trazabilidad del dispositivo",
+   "items": [
+    {
+     "cue": [
+      1521.3,
+      "La trazabilidad del dispositivo"
+     ],
+     "texto": "Tu sesión, en un equipo asignado a otra persona",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      1535.3,
+      "Los logs del SIEM"
+     ],
+     "texto": "Los logs del SIEM lo registran así",
+     "icono": "registro"
+    },
+    {
+     "cue": [
+      1546.4,
+      "la investigación forense se"
+     ],
+     "texto": "La investigación forense se complica",
+     "icono": "auditoria"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    1558.4,
+    "Segregación y configuración. portátil"
+   ],
+   "hasta": [
+    1582.3,
+    "exige. Política de uso"
+   ],
+   "lado": "izq",
+   "kicker": "2 · Segregación y configuración",
+   "titulo": "Heredas lo que no es tuyo",
+   "items": [
+    {
+     "cue": [
+      1562.1,
+      "puede tener perfiles, herramientas"
+     ],
+     "texto": "Perfiles, herramientas y permisos de otro rol",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      1572.1,
+      "Certificados, accesos guardados, software"
+     ],
+     "texto": "Certificados y accesos guardados",
+     "icono": "candado"
+    },
+    {
+     "cue": [
+      1574.2,
+      "software específico. Estás operando"
+     ],
+     "texto": "Software específico",
+     "icono": "datos"
+    },
+    {
+     "cue": [
+      1579.4,
+      "en un entorno técnicamente"
+     ],
+     "texto": "Un entorno distinto al que exige tu rol",
+     "icono": "alerta"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    1584.5,
+    "Política de uso de"
+   ],
+   "hasta": [
+    1597.2,
+    "se cumpla. Si lo"
+   ],
+   "texto": "3 · Política de uso de equipos",
+   "sub": "Prestar el equipo asignado es una infracción explícita",
+   "grande": true
+  },
+  {
+   "tipo": "gesto3d",
+   "objeto": "candado",
+   "cue": [
+    1600.2,
+    "la regla es una"
+   ],
+   "texto": "La regla se erosiona"
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1606.4,
+    "Opción B, VDI desde"
+   ],
+   "hasta": [
+    1616.6,
+    "los datos no salen"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Equipo del compañero"
+    },
+    {
+     "letra": "B",
+     "texto": "VDI desde dispositivo personal"
+    },
+    {
+     "letra": "C",
+     "texto": "Activación del protocolo"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión del responsable"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1611.4,
+     "Esta es la opción"
+    ],
+    "letra": "B",
+    "veredicto": "riesgo"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    1616.6,
+    "los datos no salen"
+   ],
+   "hasta": [
+    1651.4,
+    "Pero el dispositivo desde"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3",
+   "titulo": "El VDI no lo arregla todo",
+   "izq": {
+    "cue": [
+     1622.1,
+     "Y técnicamente, en términos"
+    ],
+    "titulo": "Lo que sí protege",
+    "items": [
+     "Encapsula la sesión",
+     "Restringe la salida de datos"
+    ],
+    "tono": "ok"
+   },
+   "der": {
+    "cue": [
+     1651.4,
+     "Pero el dispositivo desde"
+    ],
+    "titulo": "Lo que no",
+    "items": [
+     "El dispositivo desde el que te conectas"
+    ],
+    "tono": "bad"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    1651.4,
+    "Pero el dispositivo desde"
+   ],
+   "hasta": [
+    1669.6,
+    "Si tu tablet personal"
+   ],
+   "lado": "izq",
+   "kicker": "Tu tablet personal",
+   "titulo": "Un dispositivo no gestionado",
+   "items": [
+    {
+     "cue": [
+      1658.4,
+      "sin inventario, sin garantías"
+     ],
+     "texto": "Sin EDR corporativo",
+     "icono": "cruz"
+    },
+    {
+     "cue": [
+      1658.4,
+      "sin inventario, sin garantías"
+     ],
+     "texto": "Sin inventario",
+     "icono": "cruz"
+    },
+    {
+     "cue": [
+      1659.4,
+      "sin garantías de parche"
+     ],
+     "texto": "Sin garantías de parche",
+     "icono": "cruz"
+    },
+    {
+     "cue": [
+      1661.0,
+      "sin cifrado controlado y"
+     ],
+     "texto": "Sin cifrado controlado",
+     "icono": "cruz"
+    },
+    {
+     "cue": [
+      1662.3,
+      "y sin política de"
+     ],
+     "texto": "Sin política de actualizaciones",
+     "icono": "cruz"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "cue": [
+    1669.6,
+    "Si tu tablet personal"
+   ],
+   "hasta": [
+    1684.9,
+    "cliente. Y desde el"
+   ],
+   "lado": "izq",
+   "kicker": "Si la tablet está comprometida…",
+   "titulo": "…todo lo que ves en el VDI se filtra",
+   "items": [
+    {
+     "cue": [
+      1671.9,
+      "con un keylogger, un"
+     ],
+     "texto": "Keylogger",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      1672.8,
+      "un screen scraper o"
+     ],
+     "texto": "Screen scraper",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      1674.0,
+      "o un malware de"
+     ],
+     "texto": "Malware de captura de portapapeles",
+     "icono": "alerta"
+    },
+    {
+     "cue": [
+      1680.9,
+      "La capa de virtualización"
+     ],
+     "texto": "La virtualización no protege la captura",
+     "icono": "escudo"
+    }
+   ]
+  },
+  {
+   "tipo": "pop",
+   "cue": [
+    1687.4,
+    "Y desde el punto"
+   ],
+   "hasta": [
+    1695.4,
+    "esperada. Saltárselo porque todo"
+   ],
+   "texto": "Solo dispositivos gestionados",
+   "sub": "para acceder a sistemas críticos",
+   "grande": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "cita",
+   "cue": [
+    1723.8,
+    "Saltárselo porque todo va"
+   ],
+   "hasta": [
+    1758.6,
+    "Opción C, activación del"
+   ],
+   "lado": "der",
+   "kicker": "Idea clave",
+   "titulo": "Idea clave",
+   "texto": "Saltárselo porque todo va por VDI es shadow IT vestido de buena ingeniería.",
+   "resalta": [
+    "shadow",
+    "IT",
+    "ingeniería"
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1758.6,
+    "Opción C, activación del"
+   ],
+   "hasta": [
+    1780.9,
+    "No es se me"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Equipo del compañero"
+    },
+    {
+     "letra": "B",
+     "texto": "VDI desde dispositivo personal"
+    },
+    {
+     "letra": "C",
+     "texto": "Activación del protocolo"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión del responsable"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1761.0,
+     "Esta es la respuesta"
+    ],
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    1780.9,
+    "No es se me"
+   ],
+   "hasta": [
+    1788.5,
+    "fallo TIC. Comunicas a"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3",
+   "titulo": "Clasifica bien el incidente",
+   "izq": {
+    "cue": [
+     1780.9,
+     "No es se me"
+    ],
+    "titulo": "No es…",
+    "items": [
+     "«Se me ha roto el portátil»"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "cue": [
+     1782.8,
+     "es tengo un riesgo"
+    ],
+    "titulo": "Es…",
+    "items": [
+     "Riesgo de incumplir un plazo por un fallo TIC"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "cue": [
+    1789.7,
+    "Comunicas a las personas"
+   ],
+   "hasta": [
+    1803.5,
+    "1. Bien. Voy a"
+   ],
+   "lado": "der",
+   "kicker": "Lo que espera un banco maduro",
+   "titulo": "Actúas en paralelo",
+   "items": [
+    {
+     "cue": [
+      1789.7,
+      "Comunicas a las personas"
+     ],
+     "texto": "Comunicas a soporte TIC, responsable y área",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      1797.2,
+      "activas el plan de"
+     ],
+     "texto": "Activas el plan de continuidad",
+     "icono": "escudo"
+    },
+    {
+     "cue": [
+      1801.9,
+      "y documentas todo desde"
+     ],
+     "texto": "Documentas desde el minuto 1",
+     "icono": "registro"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "linea",
+   "cue": [
+    1864.1,
+    "Y además, dejas preparado"
+   ],
+   "hasta": [
+    1873.3,
+    "regulatorias. Ser ágil ante"
+   ],
+   "lado": "izq",
+   "kicker": "Deja preparado el siguiente escalón",
+   "titulo": "Por si el plazo se incumple",
+   "hitos": [
+    {
+     "cue": [
+      1864.1,
+      "Y además, dejas preparado"
+     ],
+     "etiqueta": "Ahora",
+     "texto": "Plan de continuidad activo",
+     "tono": "ok"
+    },
+    {
+     "cue": [
+      1868.2,
+      "El procedimiento de incidente"
+     ],
+     "etiqueta": "Si se incumple",
+     "texto": "Procedimiento de incidente operativo",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      1870.4,
+      "correspondientes notificaciones internas. y"
+     ],
+     "etiqueta": "Después",
+     "texto": "Notificaciones internas",
+     "tono": "aviso"
+    },
+    {
+     "cue": [
+      1872.4,
+      "y, si aplica, regulatorias"
+     ],
+     "etiqueta": "Si aplica",
+     "texto": "Y, si aplica, regulatorias",
+     "tono": "aviso"
+    }
+   ]
+  },
+  {
+   "tipo": "escena3d",
+   "objeto": "escudo",
+   "cue": [
+    1876.8,
+    "Ser ágil ante un"
+   ],
+   "hasta": [
+    1883.4,
+    "operativa. Opción D, decisión"
+   ],
+   "lado": "izq",
+   "kicker": "Idea clave",
+   "titulo": "Eso es resiliencia operativa",
+   "etiquetas": [
+    {
+     "cue": [
+      1876.8,
+      "Ser ágil ante un"
+     ],
+     "texto": "Ser ágil no es improvisar"
+    },
+    {
+     "cue": [
+      1879.7,
+      "es ejecutar lo que"
+     ],
+     "texto": "Es ejecutar lo que ya tenías preparado"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "opciones",
+   "cue": [
+    1886.4,
+    "Opción D, decisión del"
+   ],
+   "hasta": [
+    1901.1,
+    "tú mismo. La apertura"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3 · Opciones",
+   "titulo": "¿Qué decisión tomas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Equipo del compañero"
+    },
+    {
+     "letra": "B",
+     "texto": "VDI desde dispositivo personal"
+    },
+    {
+     "letra": "C",
+     "texto": "Activación del protocolo"
+    },
+    {
+     "letra": "D",
+     "texto": "Decisión del responsable"
+    }
+   ],
+   "foco": {
+    "cue": [
+     1893.8,
+     "pero comete dos errores"
+    ],
+    "letra": "D",
+    "veredicto": "riesgo"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "cue": [
+    1902.5,
+    "La apertura de un"
+   ],
+   "hasta": [
+    1916.5,
+    "15 minutos. Tu responsable"
+   ],
+   "lado": "der",
+   "kicker": "En paralelo, no esperando un correo",
+   "titulo": "Lo que tienes que activar tú",
+   "items": [
+    {
+     "cue": [
+      1902.5,
+      "La apertura de un"
+     ],
+     "texto": "Ticket en soporte TIC",
+     "icono": "contrato"
+    },
+    {
+     "cue": [
+      1904.9,
+      "la activación del plan"
+     ],
+     "texto": "Plan de continuidad",
+     "icono": "escudo"
+    },
+    {
+     "cue": [
+      1906.7,
+      "el aviso al área"
+     ],
+     "texto": "Aviso al área funcional",
+     "icono": "personas"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "cue": [
+    1927.6,
+    "Tu responsable tiene que"
+   ],
+   "hasta": [
+    1943.0,
+    "no antes. Mientras esperas"
+   ],
+   "lado": "der",
+   "kicker": "Caso 3",
+   "titulo": "El papel de tu responsable",
+   "izq": {
+    "cue": [
+     1930.1,
+     "pero no es la"
+    ],
+    "titulo": "No decide…",
+    "items": [
+     "Si llamas a IT"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "cue": [
+     1934.2,
+     "Es la persona que"
+    ],
+    "titulo": "Sí decide…",
+    "items": [
+     "¿Pedimos prórroga?",
+     "¿Quién avisa a cumplimiento?"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "cue": [
+    2000.4,
+    "esperas, intentas reiniciar otra"
+   ],
+   "hasta": [
+    2014.1,
+    "Si el portátil tiene"
+   ],
+   "lado": "izq",
+   "kicker": "Caso 3",
+   "titulo": "Reiniciar otra vez por tu cuenta",
+   "valor": 30,
+   "unidad": "min",
+   "etiqueta": "la primera media hora: el tiempo más valioso"
+  },
+  {
+   "tipo": "gesto3d",
+   "objeto": "orbe",
+   "cue": [
+    2015.2,
+    "de hardware, los reinicios"
+   ],
+   "texto": "Reiniciar puede complicar la recuperación"
+  }
+ ],
+ "outro": {
+  "kicker": "En resumen",
+  "titulo": "DORA en la práctica",
+  "puntos": [
+   "La due diligence va antes de firmar, nunca después",
+   "Ante una señal crítica, activar pronto cuesta menos que llegar tarde",
+   "Resiliencia es ejecutar lo que ya tenías preparado"
+  ],
+  "cta": "Fin del módulo · DORA en la práctica",
+  "objeto3d": "escudo",
+  "duracion": 4.5
+ }
+}

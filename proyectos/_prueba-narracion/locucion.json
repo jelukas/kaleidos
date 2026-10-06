@@ -1,0 +1,9 @@
+{
+ "voz": {},
+ "pausaEntreBloques": 0.35,
+ "bloques": [
+  {"id": "b01", "texto": "Bienvenidos a DevDay 2026, el repaso rápido a las novedades para desarrolladores.", "pausaDespues": 0.5},
+  {"id": "b02", "texto": "Hoy toca la API Realtime, los agentes con MCP y el nuevo SDK de TypeScript, que llega con soporte para WebGPU."},
+  {"id": "b03", "texto": "En tres minutos verás qué cambia, cuánto cuesta y cómo empezar hoy mismo."}
+ ]
+}

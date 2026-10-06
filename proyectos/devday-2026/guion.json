@@ -1,0 +1,850 @@
+{
+ "fixes": {
+  "GPT seis punto uno Sol": "GPT-6.1 Sol",
+  "GPT seis Astra": "GPT-6 Astra",
+  "Pro quinientos": "Pro 500",
+  "Dev Day": "DevDay",
+  "devday": "DevDay",
+  "Open AI": "OpenAI",
+  "Chat GPT": "ChatGPT",
+  "Codex Security Cloud": "Codex Security Cloud"
+ },
+ "cortes": [],
+ "intro": {
+  "estilo": "marca",
+  "previo": 4.0,
+  "palabras": [
+   "DEV",
+   "DAY"
+  ],
+  "etiquetas": [
+   "Noticias IA",
+   "29 · 09 · 2026"
+  ],
+  "lema": "Lo importante en cuatro minutos",
+  "kicker": "OpenAI DevDay 2026",
+  "titulo": "DevDay 2026",
+  "subtitulo": "Todo lo que anunció OpenAI",
+  "disposicion": "completa"
+ },
+ "capitulos": [
+  {
+   "cue": [
+    14.46,
+    "Empezamos por la estrella del día"
+   ],
+   "n": 1,
+   "sigla": "1",
+   "registro": "show",
+   "kicker": "Bloque 1",
+   "titulo": "Dots",
+   "subtitulo": "Agentes siempre encendidos",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    72.18,
+    "Segundo bloque"
+   ],
+   "n": 2,
+   "sigla": "2",
+   "registro": "show",
+   "kicker": "Bloque 2",
+   "titulo": "Modelos y velocidad",
+   "subtitulo": "GPT-6.1 Sol y Ultrafast",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    113.85,
+    "Tercer bloque"
+   ],
+   "n": 3,
+   "sigla": "3",
+   "registro": "show",
+   "kicker": "Bloque 3",
+   "titulo": "Codex y la API",
+   "subtitulo": "Novedades para desarrolladores",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    160.65,
+    "Cuarto bloque"
+   ],
+   "n": 4,
+   "sigla": "4",
+   "registro": "show",
+   "kicker": "Bloque 4",
+   "titulo": "ChatGPT, tu oficina",
+   "subtitulo": "Plugins, Space, Pages y más",
+   "acento": 3,
+   "objeto3d": null
+  },
+  {
+   "cue": [
+    195.77,
+    "Y por último, los planes"
+   ],
+   "n": 5,
+   "sigla": "5",
+   "registro": "show",
+   "kicker": "Bloque 5",
+   "titulo": "Planes y ecosistema",
+   "subtitulo": "Pro 500, Sign in y Marketplace",
+   "acento": 0,
+   "objeto3d": null
+  }
+ ],
+ "eventos": [
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-escenario",
+   "cue": [
+    0.16,
+    "Ayer, veintinueve de septiembre"
+   ],
+   "hasta": [
+    5.34,
+    "El más grande hasta ahora"
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      3.08,
+      "celebró en San Francisco su DevDay"
+     ],
+     "texto": "¡Arranca el DevDay!",
+     "x": 0.22,
+     "y": 0.16,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "registro": "show",
+   "cue": [
+    5.34,
+    "El más grande hasta ahora"
+   ],
+   "hasta": [
+    10.58,
+    "Te contamos lo importante"
+   ],
+   "kicker": "El DevDay más grande hasta ahora",
+   "titulo": "Más de",
+   "valor": 20,
+   "valorInicial": 0,
+   "etiqueta": "anuncios entre ChatGPT, Codex y modelos"
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "captura-recap",
+   "cue": [
+    10.58,
+    "Te contamos lo importante"
+   ],
+   "hasta": [
+    14.46,
+    "Empezamos por la estrella del día"
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "bocadillos": []
+  },
+  {
+   "tipo": "escena3d",
+   "registro": "show",
+   "disposicion": "voz",
+   "objeto": "letras",
+   "texto": "DOTS",
+   "cue": [
+    17.72,
+    "Son agentes siempre encendidos"
+   ],
+   "hasta": [
+    27.06,
+    "Cada dot funciona"
+   ],
+   "kicker": "Qué son",
+   "titulo": "Agentes que no se apagan",
+   "etiquetas": [
+    {
+     "cue": [
+      17.72,
+      "Son agentes siempre encendidos"
+     ],
+     "texto": "Siempre encendidos"
+    },
+    {
+     "cue": [
+      19.6,
+      "No esperan a que les escribas"
+     ],
+     "texto": "No esperan a que les escribas"
+    },
+    {
+     "cue": [
+      21.56,
+      "trabajan por ti las veinticuatro horas"
+     ],
+     "texto": "Trabajan por ti 24/7"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "registro": "editorial",
+   "cue": [
+    27.06,
+    "Cada dot funciona"
+   ],
+   "hasta": [
+    37.86,
+    "Puedes escribirle"
+   ],
+   "kicker": "Bloque 1 · Cómo funcionan",
+   "titulo": "Lo que tiene cada dot",
+   "items": [
+    {
+     "texto": "Funciona con GPT-6 Astra",
+     "icono": "bombilla"
+    },
+    {
+     "cue": [
+      29.88,
+      "su propio ordenador en la nube"
+     ],
+     "texto": "Ordenador y navegador propios en la nube",
+     "icono": "nube"
+    },
+    {
+     "cue": [
+      33.7,
+      "más de cuatro mil aplicaciones"
+     ],
+     "texto": "Más de 4.000 apps a través de plugins",
+     "icono": "red"
+    }
+   ]
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-dot",
+   "cue": [
+    37.86,
+    "Puedes escribirle"
+   ],
+   "hasta": [
+    44.42,
+    "Y el control"
+   ],
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      37.86,
+      "Puedes escribirle"
+     ],
+     "texto": "Tú descansa, yo sigo.",
+     "x": 0.25,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "cue": [
+      42.78,
+      "hablar con él por voz"
+     ],
+     "texto": "¿Hablamos?",
+     "x": 0.8,
+     "y": 0.17,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "reaccion",
+   "cue": [
+    44.42,
+    "Y el control"
+   ],
+   "icono": "pregunta"
+  },
+  {
+   "tipo": "panel",
+   "kind": "checklist",
+   "registro": "editorial",
+   "cue": [
+    44.42,
+    "Y el control"
+   ],
+   "hasta": [
+    56.56,
+    "Ojo con la disponibilidad"
+   ],
+   "kicker": "Bloque 1 · Control",
+   "titulo": "Tú pones las reglas",
+   "items": [
+    {
+     "cue": [
+      46.32,
+      "a qué aplicaciones accede"
+     ],
+     "texto": "A qué apps accede",
+     "icono": "candado"
+    },
+    {
+     "cue": [
+      48.04,
+      "qué puede hacer solo"
+     ],
+     "texto": "Qué hace solo y qué necesita tu aprobación",
+     "icono": "check"
+    },
+    {
+     "cue": [
+      52.52,
+      "como cambiar una contraseña"
+     ],
+     "texto": "Lo sensible, siempre tuyo: p. ej., cambiar una contraseña",
+     "icono": "llave"
+    }
+   ]
+  },
+  {
+   "tipo": "reaccion",
+   "cue": [
+    56.56,
+    "Ojo con la disponibilidad"
+   ],
+   "icono": "alerta"
+  },
+  {
+   "tipo": "panel",
+   "kind": "comparativa",
+   "registro": "editorial",
+   "cue": [
+    56.56,
+    "Ojo con la disponibilidad"
+   ],
+   "hasta": [
+    72.18,
+    "Segundo bloque"
+   ],
+   "kicker": "Bloque 1 · Disponibilidad",
+   "titulo": "¿Llegan a España?",
+   "izq": {
+    "cue": [
+     58.38,
+     "Llegan a los planes Pro"
+    ],
+    "titulo": "Plan Pro",
+    "items": [
+     "De momento, no en el Espacio Económico Europeo, Suiza ni Reino Unido"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "cue": [
+     67.86,
+     "Business Premium sí los tiene"
+    ],
+    "titulo": "Business Premium",
+    "items": [
+     "En todas las regiones compatibles"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "tipo": "titulo",
+   "registro": "show",
+   "cue": [
+    74.38,
+    "Llega GPT seis punto uno Sol"
+   ],
+   "hasta": [
+    81.94,
+    "En la API cuesta"
+   ],
+   "antetitulo": "Nuevo modelo",
+   "texto": "GPT-6.1 Sol",
+   "subtitulo": "Casi Astra, a una quinta parte del precio",
+   "destellos": true
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "registro": "editorial",
+   "cue": [
+    81.94,
+    "En la API cuesta"
+   ],
+   "hasta": [
+    89.9,
+    "Ya está en ChatGPT Work"
+   ],
+   "kicker": "Bloque 2 · Precio en la API",
+   "titulo": "Por millón de tokens",
+   "items": [
+    {
+     "texto": "Entrada: 2 $",
+     "icono": "entrada"
+    },
+    {
+     "cue": [
+      85.46,
+      "diez por millón de salida"
+     ],
+     "texto": "Salida: 10 $",
+     "icono": "salida"
+    },
+    {
+     "cue": [
+      86.96,
+      "la entrada en caché"
+     ],
+     "texto": "Entrada en caché: 0,10 $",
+     "icono": "dinero"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "clave",
+   "registro": "editorial",
+   "cue": [
+    89.9,
+    "Ya está en ChatGPT Work"
+   ],
+   "hasta": [
+    98.26,
+    "Y para quien tenga prisa"
+   ],
+   "kicker": "Bloque 2 · Disponibilidad",
+   "titulo": "Dónde usarlo hoy",
+   "texto": "En ChatGPT Work y en Codex para Plus, Pro, Business, Enterprise y Edu, y en la API. En el chat, todavía no.",
+   "resalta": [
+    "Work",
+    "Codex",
+    "todavía"
+   ]
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-velocidad",
+   "cue": [
+    98.26,
+    "Y para quien tenga prisa"
+   ],
+   "hasta": [
+    103.12,
+    "Hasta ocho veces"
+   ],
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      99.64,
+      "Ultrafast"
+     ],
+     "texto": "¡ULTRAFAST!",
+     "x": 0.2,
+     "y": 0.16,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "registro": "show",
+   "cue": [
+    103.12,
+    "Hasta ocho veces"
+   ],
+   "hasta": [
+    110.18,
+    "Hoy funciona con Astra"
+   ],
+   "kicker": "Ultrafast · nivel de velocidad premium",
+   "titulo": "Hasta",
+   "valor": 8,
+   "valorInicial": 1,
+   "unidad": "×",
+   "etiqueta": "más rápido en Codex (300 tokens/s) · hasta 6× en la API"
+  },
+  {
+   "tipo": "sello",
+   "cue": [
+    110.18,
+    "Hoy funciona con Astra"
+   ],
+   "hasta": [
+    113.85,
+    "Tercer bloque"
+   ],
+   "texto": "SOL, MUY PRONTO",
+   "tono": "ok"
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-codex-movil",
+   "cue": [
+    115.91,
+    "Codex sale del portátil"
+   ],
+   "hasta": [
+    123.81,
+    "La terminal de Codex se renueva"
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      122.09,
+      "incluso desde el móvil"
+     ],
+     "texto": "¡Lo lanzo desde el móvil!",
+     "x": 0.24,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "pasos",
+   "registro": "editorial",
+   "cue": [
+    123.81,
+    "La terminal de Codex se renueva"
+   ],
+   "hasta": [
+    133.47,
+    "Y Codex Security Cloud"
+   ],
+   "kicker": "Bloque 3 · Codex renovado",
+   "titulo": "Más Codex, en más sitios",
+   "items": [
+    {
+     "texto": "Terminal: tareas con la voz",
+     "icono": "mensaje"
+    },
+    {
+     "cue": [
+      127.21,
+      "sigues varios agentes a la vez"
+     ],
+     "texto": "Vista de agentes: varios a la vez",
+     "icono": "personas"
+    },
+    {
+     "cue": [
+      130.83,
+      "Llega una revisión de código"
+     ],
+     "texto": "Revisión de código en la app de escritorio",
+     "icono": "codigo"
+    }
+   ]
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-escudo",
+   "cue": [
+    133.47,
+    "Y Codex Security Cloud"
+   ],
+   "hasta": [
+    140.29,
+    "En la API, Agents API"
+   ],
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      138.51,
+      "prepara las correcciones"
+     ],
+     "texto": "¡Fallo encontrado y corregido!",
+     "x": 0.24,
+     "y": 0.17,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "mapa",
+   "registro": "editorial",
+   "cue": [
+    140.29,
+    "En la API, Agents API"
+   ],
+   "hasta": [
+    160.65,
+    "Cuarto bloque"
+   ],
+   "kicker": "Bloque 3 · La API",
+   "titulo": "Agentes para tu producto",
+   "centro": "API de OpenAI",
+   "nodos": [
+    {
+     "cue": [
+      140.29,
+      "En la API, Agents API"
+     ],
+     "texto": "Agents API: uso del ordenador"
+    },
+    {
+     "cue": [
+      146.65,
+      "La nueva Decisions API"
+     ],
+     "texto": "Decisions API: respuestas cerradas en tiempo real"
+    },
+    {
+     "cue": [
+      154.63,
+      "Bedrock Managed Agents"
+     ],
+     "texto": "Bedrock Managed Agents: agentes de OpenAI en AWS"
+    }
+   ]
+  },
+  {
+   "tipo": "lamina",
+   "registro": "lamina",
+   "imagen": "lamina-equipo",
+   "cue": [
+    164.31,
+    "OpenAI lo abre"
+   ],
+   "hasta": [
+    166.75,
+    "con mil doscientos millones"
+   ],
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "bocadillos": [
+    {
+     "cue": [
+      164.31,
+      "OpenAI lo abre"
+     ],
+     "texto": "¡Todos en el mismo sitio!",
+     "x": 0.2,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "registro": "show",
+   "cue": [
+    166.75,
+    "con mil doscientos millones"
+   ],
+   "hasta": [
+    169.67,
+    "Los desarrolladores pueden crear"
+   ],
+   "kicker": "Bloque 4 · ChatGPT abierto a los desarrolladores",
+   "titulo": "Un público de",
+   "valor": 1200,
+   "valorInicial": 0,
+   "etiqueta": "millones de usuarios semanales"
+  },
+  {
+   "tipo": "panel",
+   "kind": "tarjeta",
+   "registro": "show",
+   "cue": [
+    169.67,
+    "Los desarrolladores pueden crear"
+   ],
+   "hasta": [
+    176.17,
+    "Llega ChatGPT Space"
+   ],
+   "kicker": "Bloque 4 · Plugins",
+   "titulo": "Extensiones de plugins",
+   "texto": "Su sitio en la barra lateral y paneles interactivos dentro de ChatGPT",
+   "icono": "engranaje"
+  },
+  {
+   "tipo": "panel",
+   "kind": "lista",
+   "registro": "editorial",
+   "cue": [
+    176.17,
+    "Llega ChatGPT Space"
+   ],
+   "hasta": [
+    195.77,
+    "Y por último, los planes"
+   ],
+   "kicker": "Bloque 4 · Trabajo en equipo",
+   "titulo": "Novedades para equipos",
+   "items": [
+    {
+     "texto": "ChatGPT Space: equipo, ChatGPT y tu dot",
+     "icono": "carpeta"
+    },
+    {
+     "cue": [
+      181.81,
+      "Pages, un nuevo tipo de documento"
+     ],
+     "texto": "Pages: documentos para personas y agentes",
+     "icono": "documento"
+    },
+    {
+     "cue": [
+      186.15,
+      "Diapositivas colaborativas"
+     ],
+     "texto": "Diapositivas colaborativas (próximas semanas)",
+     "icono": "calendario"
+    },
+    {
+     "cue": [
+      191.55,
+      "mencionar a ChatGPT en Slack"
+     ],
+     "texto": "@ChatGPT en Slack y Teams (Business y Enterprise)",
+     "icono": "mensaje"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "registro": "show",
+   "cue": [
+    198.81,
+    "veinticinco veces el uso de Plus"
+   ],
+   "hasta": [
+    203.69,
+    "Con Sign in with ChatGPT"
+   ],
+   "kicker": "Bloque 5 · Nuevo plan Pro 500",
+   "titulo": "Uso de Plus multiplicado por",
+   "valor": 25,
+   "valorInicial": 1,
+   "unidad": "×",
+   "etiqueta": "con acceso a Ultrafast"
+  },
+  {
+   "tipo": "escena3d",
+   "registro": "show",
+   "disposicion": "voz",
+   "objeto": "llave",
+   "cue": [
+    203.69,
+    "Con Sign in with ChatGPT"
+   ],
+   "hasta": [
+    210.27,
+    "Y OpenAI Marketplace"
+   ],
+   "kicker": "Sign in with ChatGPT",
+   "titulo": "Tu plan, en otras herramientas",
+   "etiquetas": [
+    {
+     "cue": [
+      205.51,
+      "quien tenga Plus o Pro"
+     ],
+     "texto": "Para Plus y Pro"
+    },
+    {
+     "cue": [
+      208.03,
+      "en dieciséis herramientas de socios"
+     ],
+     "texto": "16 herramientas de socios"
+    }
+   ]
+  },
+  {
+   "tipo": "panel",
+   "kind": "cifra",
+   "registro": "show",
+   "cue": [
+    210.27,
+    "Y OpenAI Marketplace"
+   ],
+   "hasta": [
+    218.37,
+    "En resumen"
+   ],
+   "kicker": "Bloque 5 · OpenAI Marketplace",
+   "titulo": "Para empresas",
+   "valor": 32,
+   "valorInicial": 0,
+   "etiqueta": "socios donde dedicar parte del compromiso con OpenAI"
+  }
+ ],
+ "outro": {
+  "coda": 5.0,
+  "cue": [
+   218.37,
+   "En resumen"
+  ],
+  "kicker": "En resumen",
+  "titulo": "DevDay 2026",
+  "puntos": [
+   "Dots: agentes que no paran",
+   "GPT-6.1 Sol y Ultrafast: más barato y más rápido",
+   "ChatGPT como espacio de trabajo"
+  ],
+  "cta": "Revisa qué llega a tu cuenta",
+  "objeto3d": "trofeo",
+  "disposicion": "completa"
+ }
+}

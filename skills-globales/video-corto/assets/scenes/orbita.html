@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2vmin;
+          background: radial-gradient(circle at 50% 45%, #16161f 0%, var(--vox-ink) 62%);
+          overflow: hidden;
+        }
+        .orb {
+          width: 100%;
+          max-width: 140vmin;
+          height: 62vmin;
+        }
+        .otitle {
+          font: 900 8vmin/1 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.3vmin;
+          color: var(--vox-white);
+          text-align: center;
+        }
+        .otitle em {
+          font-style: normal;
+          color: var(--vox-yellow);
+        }
+        .osub {
+          font: 700 3vmin/1.2 var(--vox-font);
+          color: #9a9aa2;
+          text-transform: uppercase;
+          letter-spacing: 0.24vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="orbita">
+        <div class="otitle" id="o-title"><em>Sol</em>. Terra. Luna.</div>
+
+        <svg class="orb" viewBox="0 0 200 110" preserveAspectRatio="xMidYMid meet">
+          <!-- Órbita de Terra alrededor del Sol. -->
+          <ellipse cx="100" cy="55" rx="66" ry="32" fill="none" stroke="#2e2e38" stroke-width="0.7" />
+          <!-- Órbita de Luna alrededor de TERRA: viaja con ella (la timeline le
+               actualiza cx/cy en cada frame). -->
+          <ellipse id="o-luna-path" cx="166" cy="55" rx="15" ry="9.3" fill="none" stroke="#3a3a46" stroke-width="0.45" />
+
+          <circle cx="100" cy="55" r="17" fill="#ffe500" id="o-sol-glow" opacity="0.16" />
+          <circle cx="100" cy="55" r="11" fill="#ffe500" id="o-sol" />
+          <text x="100" y="58.6" text-anchor="middle" font-size="5.4" font-weight="900"
+                font-family="Archivo, sans-serif" fill="#0b0b0c">SOL</text>
+
+          <g id="o-terra">
+            <circle r="6.4" fill="#5fb0ff" />
+            <text y="1.8" text-anchor="middle" font-size="3.1" font-weight="900"
+                  font-family="Archivo, sans-serif" fill="#04121f">TERRA</text>
+          </g>
+
+          <g id="o-luna">
+            <circle r="5" fill="#e6e6ee" />
+            <text y="1.6" text-anchor="middle" font-size="2.7" font-weight="900"
+                  font-family="Archivo, sans-serif" fill="#0b0b0c">LUNA</text>
+          </g>
+        </svg>
+
+        <div class="osub" id="o-sub">La familia GPT-5.6</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // Se anima la POSICIÓN, no la rotación de un grupo padre. Rotar un <g> de
+        // SVG con GSAP hace que escriba el atributo transform usando su propio
+        // origen (el centro del bounding box del planeta, no el del sistema), así
+        // que los planetas no orbitaban: giraban sobre sí mismos o desaparecían.
+        // Calcular x/y desde el ángulo es explícito, determinista y además deja
+        // las etiquetas siempre derechas.
+        // La Luna es satélite de la TIERRA, no del Sol: su posición se calcula
+        // sobre la de Terra, no sobre el centro del sistema.
+        const terra = document.querySelector("#o-terra");
+        const luna = document.querySelector("#o-luna");
+        const lunaPath = document.querySelector("#o-luna-path");
+
+        const RX = 66, RY = 32; // órbita de Terra alrededor del Sol
+        const LR = 15;          // órbita de Luna alrededor de Terra
+        const VUELTAS_TERRA = 1.15;
+        const VUELTAS_LUNA = 5; // varias lunas por año, como toca
+        const DUR = 12;
+
+        const p = { a: 0 };
+        tl.fromTo(
+          p,
+          { a: 0 },
+          {
+            a: Math.PI * 2,
+            duration: DUR,
+            ease: "none",
+            onUpdate: () => {
+              const at = p.a * VUELTAS_TERRA;
+              const tx = 100 + RX * Math.cos(at);
+              const ty = 55 + RY * Math.sin(at);
+              terra.setAttribute("transform", `translate(${tx.toFixed(2)} ${ty.toFixed(2)})`);
+
+              const al = p.a * VUELTAS_LUNA;
+              const lx = tx + LR * Math.cos(al);
+              const ly = ty + LR * 0.62 * Math.sin(al);
+              luna.setAttribute("transform", `translate(${lx.toFixed(2)} ${ly.toFixed(2)})`);
+
+              // La órbita lunar se dibuja alrededor de Terra y viaja con ella.
+              lunaPath.setAttribute("cx", tx.toFixed(2));
+              lunaPath.setAttribute("cy", ty.toFixed(2));
+            },
+          },
+          0,
+        );
+
+        tl.fromTo("#o-sol-glow", { attr: { r: 17 } }, { attr: { r: 21 }, duration: 1.6, ease: "sine.inOut", yoyo: true, repeat: 7 }, 0)
+          .fromTo("#o-sol", { attr: { r: 0 } }, { attr: { r: 11 }, duration: 0.44, ease: "back.out(2.4)" }, 0.08)
+          .fromTo("#o-title", { opacity: 0, y: "2.4vmin" }, { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 0)
+          .fromTo("#o-sub", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.5);
+
+        window.__timelines["orbita"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+#subs4{position:absolute;inset:0;font-family:Inter,sans-serif}
+#subs4 .cap{position:absolute;left:200px;right:200px;bottom:58px;text-align:center;font-size:46px;font-weight:600;line-height:1.25;letter-spacing:-0.01em;opacity:0}
+#subs4 .w{display:inline-block;color:#0D1320;opacity:.5}
+#subs4 .cap.dk .w{color:#fff;opacity:.55;text-shadow:0 2px 18px rgba(20,0,50,.6)}</style>
+<div id="subs4" data-composition-id="subs4" data-width="1920" data-height="1080">
+<div class="cap" id="subs4c36"><span id="subs4w36_0" class="w">Claude</span> <span id="subs4w36_1" class="w">Code</span> <span id="subs4w36_2" class="w">y</span> <span id="subs4w36_3" class="w">Codex,</span> <span id="subs4w36_4" class="w">para</span> <span id="subs4w36_5" class="w">programar.</span></div>
+<div class="cap" id="subs4c37"><span id="subs4w37_0" class="w">Tú</span> <span id="subs4w37_1" class="w">mantienes</span> <span id="subs4w37_2" class="w">el</span> <span id="subs4w37_3" class="w">control:</span></div>
+<div class="cap" id="subs4c38"><span id="subs4w38_0" class="w">eliges</span> <span id="subs4w38_1" class="w">las</span> <span id="subs4w38_2" class="w">carpetas,</span> <span id="subs4w38_3" class="w">ves</span> <span id="subs4w38_4" class="w">cada</span> <span id="subs4w38_5" class="w">paso</span> <span id="subs4w38_6" class="w">y</span> <span id="subs4w38_7" class="w">te</span> <span id="subs4w38_8" class="w">pide</span></div>
+<div class="cap" id="subs4c39"><span id="subs4w39_0" class="w">permiso</span> <span id="subs4w39_1" class="w">antes</span> <span id="subs4w39_2" class="w">de</span> <span id="subs4w39_3" class="w">actuar.</span></div>
+<div class="cap" id="subs4c40"><span id="subs4w40_0" class="w">Algunas</span> <span id="subs4w40_1" class="w">funciones</span> <span id="subs4w40_2" class="w">cambian</span> <span id="subs4w40_3" class="w">según</span> <span id="subs4w40_4" class="w">tu</span> <span id="subs4w40_5" class="w">plan</span> <span id="subs4w40_6" class="w">y</span></div>
+<div class="cap" id="subs4c41"><span id="subs4w41_0" class="w">tu</span> <span id="subs4w41_1" class="w">país.</span></div>
+<div class="cap" id="subs4c42"><span id="subs4w42_0" class="w">Chat</span> <span id="subs4w42_1" class="w">para</span> <span id="subs4w42_2" class="w">preguntar.</span></div>
+<div class="cap" id="subs4c43"><span id="subs4w43_0" class="w">Agente</span> <span id="subs4w43_1" class="w">para</span> <span id="subs4w43_2" class="w">que</span> <span id="subs4w43_3" class="w">te</span> <span id="subs4w43_4" class="w">entregue</span> <span id="subs4w43_5" class="w">el</span> <span id="subs4w43_6" class="w">trabajo</span> <span id="subs4w43_7" class="w">hecho.</span></div>
+<div class="cap" id="subs4c44"><span id="subs4w44_0" class="w">Empieza</span> <span id="subs4w44_1" class="w">por</span> <span id="subs4w44_2" class="w">una</span> <span id="subs4w44_3" class="w">tarea</span> <span id="subs4w44_4" class="w">pequeña</span> <span id="subs4w44_5" class="w">de</span> <span id="subs4w44_6" class="w">tu</span> <span id="subs4w44_7" class="w">semana.</span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#subs4c36", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 92.74);
+tl.to("#subs4c36", { opacity: 0, duration: 0.16, ease: "power1.in" }, 95.43);
+tl.set("#subs4w36_0", { color: "#7D29E0", opacity: 1 }, 92.82);
+tl.set("#subs4w36_0", { color: "#0D1320" }, 92.87);
+tl.set("#subs4w36_1", { color: "#7D29E0", opacity: 1 }, 92.87);
+tl.set("#subs4w36_1", { color: "#0D1320" }, 93.05);
+tl.set("#subs4w36_2", { color: "#7D29E0", opacity: 1 }, 93.05);
+tl.set("#subs4w36_2", { color: "#0D1320" }, 93.14);
+tl.set("#subs4w36_3", { color: "#7D29E0", opacity: 1 }, 93.14);
+tl.set("#subs4w36_3", { color: "#0D1320" }, 93.77);
+tl.set("#subs4w36_4", { color: "#7D29E0", opacity: 1 }, 93.77);
+tl.set("#subs4w36_4", { color: "#0D1320" }, 94.17);
+tl.set("#subs4w36_5", { color: "#7D29E0", opacity: 1 }, 94.17);
+tl.set("#subs4w36_5", { color: "#0D1320" }, 95.24);
+tl.fromTo("#subs4c37", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 96.29);
+tl.to("#subs4c37", { opacity: 0, duration: 0.16, ease: "power1.in" }, 98.02);
+tl.set("#subs4w37_0", { color: "#7D29E0", opacity: 1 }, 96.37);
+tl.set("#subs4w37_0", { color: "#0D1320" }, 96.48);
+tl.set("#subs4w37_1", { color: "#7D29E0", opacity: 1 }, 96.48);
+tl.set("#subs4w37_1", { color: "#0D1320" }, 97.27);
+tl.set("#subs4w37_2", { color: "#7D29E0", opacity: 1 }, 97.27);
+tl.set("#subs4w37_2", { color: "#0D1320" }, 97.45);
+tl.set("#subs4w37_3", { color: "#7D29E0", opacity: 1 }, 97.45);
+tl.set("#subs4w37_3", { color: "#0D1320" }, 98.23);
+tl.fromTo("#subs4c38", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 98.15);
+tl.to("#subs4c38", { opacity: 0, duration: 0.16, ease: "power1.in" }, 100.93);
+tl.set("#subs4w38_0", { color: "#7D29E0", opacity: 1 }, 98.23);
+tl.set("#subs4w38_0", { color: "#0D1320" }, 98.62);
+tl.set("#subs4w38_1", { color: "#7D29E0", opacity: 1 }, 98.62);
+tl.set("#subs4w38_1", { color: "#0D1320" }, 98.81);
+tl.set("#subs4w38_2", { color: "#7D29E0", opacity: 1 }, 98.81);
+tl.set("#subs4w38_2", { color: "#0D1320" }, 99.54);
+tl.set("#subs4w38_3", { color: "#7D29E0", opacity: 1 }, 99.54);
+tl.set("#subs4w38_3", { color: "#0D1320" }, 99.85);
+tl.set("#subs4w38_4", { color: "#7D29E0", opacity: 1 }, 99.85);
+tl.set("#subs4w38_4", { color: "#0D1320" }, 100.25);
+tl.set("#subs4w38_5", { color: "#7D29E0", opacity: 1 }, 100.25);
+tl.set("#subs4w38_5", { color: "#0D1320" }, 100.74);
+tl.set("#subs4w38_6", { color: "#7D29E0", opacity: 1 }, 100.74);
+tl.set("#subs4w38_6", { color: "#0D1320" }, 100.74);
+tl.set("#subs4w38_7", { color: "#7D29E0", opacity: 1 }, 100.74);
+tl.set("#subs4w38_7", { color: "#0D1320" }, 100.87);
+tl.set("#subs4w38_8", { color: "#7D29E0", opacity: 1 }, 100.87);
+tl.set("#subs4w38_8", { color: "#0D1320" }, 101.14);
+tl.fromTo("#subs4c39", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 101.06);
+tl.to("#subs4c39", { opacity: 0, duration: 0.16, ease: "power1.in" }, 102.77);
+tl.set("#subs4w39_0", { color: "#7D29E0", opacity: 1 }, 101.14);
+tl.set("#subs4w39_0", { color: "#0D1320" }, 101.66);
+tl.set("#subs4w39_1", { color: "#7D29E0", opacity: 1 }, 101.66);
+tl.set("#subs4w39_1", { color: "#0D1320" }, 102.05);
+tl.set("#subs4w39_2", { color: "#7D29E0", opacity: 1 }, 102.05);
+tl.set("#subs4w39_2", { color: "#0D1320" }, 102.22);
+tl.set("#subs4w39_3", { color: "#7D29E0", opacity: 1 }, 102.22);
+tl.set("#subs4w39_3", { color: "#0D1320" }, 102.58);
+tl.fromTo("#subs4c40", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 103.1);
+tl.to("#subs4c40", { opacity: 0, duration: 0.16, ease: "power1.in" }, 104.92);
+tl.set("#subs4w40_0", { color: "#7D29E0", opacity: 1 }, 103.18);
+tl.set("#subs4w40_0", { color: "#0D1320" }, 103.25);
+tl.set("#subs4w40_1", { color: "#7D29E0", opacity: 1 }, 103.25);
+tl.set("#subs4w40_1", { color: "#0D1320" }, 103.75);
+tl.set("#subs4w40_2", { color: "#7D29E0", opacity: 1 }, 103.75);
+tl.set("#subs4w40_2", { color: "#0D1320" }, 104.26);
+tl.set("#subs4w40_3", { color: "#7D29E0", opacity: 1 }, 104.26);
+tl.set("#subs4w40_3", { color: "#0D1320" }, 104.77);
+tl.set("#subs4w40_4", { color: "#7D29E0", opacity: 1 }, 104.77);
+tl.set("#subs4w40_4", { color: "#0D1320" }, 105.02);
+tl.set("#subs4w40_5", { color: "#7D29E0", opacity: 1 }, 105.02);
+tl.set("#subs4w40_5", { color: "#0D1320" }, 105.06);
+tl.set("#subs4w40_6", { color: "#7D29E0", opacity: 1 }, 105.06);
+tl.set("#subs4w40_6", { color: "#0D1320" }, 105.13);
+tl.fromTo("#subs4c41", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 105.05);
+tl.to("#subs4c41", { opacity: 0, duration: 0.16, ease: "power1.in" }, 106.05);
+tl.set("#subs4w41_0", { color: "#7D29E0", opacity: 1 }, 105.13);
+tl.set("#subs4w41_0", { color: "#0D1320" }, 105.27);
+tl.set("#subs4w41_1", { color: "#7D29E0", opacity: 1 }, 105.27);
+tl.set("#subs4w41_1", { color: "#0D1320" }, 105.86);
+tl.fromTo("#subs4c42", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 107.25);
+tl.to("#subs4c42", { opacity: 0, duration: 0.16, ease: "power1.in" }, 108.69);
+tl.set("#subs4w42_0", { color: "#7D29E0", opacity: 1 }, 107.33);
+tl.set("#subs4w42_0", { color: "#0D1320" }, 107.59);
+tl.set("#subs4w42_1", { color: "#7D29E0", opacity: 1 }, 107.59);
+tl.set("#subs4w42_1", { color: "#0D1320" }, 107.86);
+tl.set("#subs4w42_2", { color: "#7D29E0", opacity: 1 }, 107.86);
+tl.set("#subs4w42_2", { color: "#0D1320" }, 108.5);
+tl.fromTo("#subs4c43", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 108.94);
+tl.to("#subs4c43", { opacity: 0, duration: 0.16, ease: "power1.in" }, 111.35);
+tl.set("#subs4w43_0", { color: "#7D29E0", opacity: 1 }, 109.02);
+tl.set("#subs4w43_0", { color: "#0D1320" }, 109.05);
+tl.set("#subs4w43_1", { color: "#7D29E0", opacity: 1 }, 109.05);
+tl.set("#subs4w43_1", { color: "#0D1320" }, 109.31);
+tl.set("#subs4w43_2", { color: "#7D29E0", opacity: 1 }, 109.31);
+tl.set("#subs4w43_2", { color: "#0D1320" }, 109.53);
+tl.set("#subs4w43_3", { color: "#7D29E0", opacity: 1 }, 109.53);
+tl.set("#subs4w43_3", { color: "#0D1320" }, 109.69);
+tl.set("#subs4w43_4", { color: "#7D29E0", opacity: 1 }, 109.69);
+tl.set("#subs4w43_4", { color: "#0D1320" }, 110.2);
+tl.set("#subs4w43_5", { color: "#7D29E0", opacity: 1 }, 110.2);
+tl.set("#subs4w43_5", { color: "#0D1320" }, 110.73);
+tl.set("#subs4w43_6", { color: "#7D29E0", opacity: 1 }, 110.73);
+tl.set("#subs4w43_6", { color: "#0D1320" }, 110.76);
+tl.set("#subs4w43_7", { color: "#7D29E0", opacity: 1 }, 110.76);
+tl.set("#subs4w43_7", { color: "#0D1320" }, 111.16);
+tl.fromTo("#subs4c44", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 111.72);
+tl.to("#subs4c44", { opacity: 0, duration: 0.16, ease: "power1.in" }, 114.13);
+tl.set("#subs4w44_0", { color: "#7D29E0", opacity: 1 }, 111.8);
+tl.set("#subs4w44_0", { color: "#0D1320" }, 111.83);
+tl.set("#subs4w44_1", { color: "#7D29E0", opacity: 1 }, 111.83);
+tl.set("#subs4w44_1", { color: "#0D1320" }, 112);
+tl.set("#subs4w44_2", { color: "#7D29E0", opacity: 1 }, 112);
+tl.set("#subs4w44_2", { color: "#0D1320" }, 112.25);
+tl.set("#subs4w44_3", { color: "#7D29E0", opacity: 1 }, 112.25);
+tl.set("#subs4w44_3", { color: "#0D1320" }, 112.67);
+tl.set("#subs4w44_4", { color: "#7D29E0", opacity: 1 }, 112.67);
+tl.set("#subs4w44_4", { color: "#0D1320" }, 113.39);
+tl.set("#subs4w44_5", { color: "#7D29E0", opacity: 1 }, 113.39);
+tl.set("#subs4w44_5", { color: "#0D1320" }, 113.48);
+tl.set("#subs4w44_6", { color: "#7D29E0", opacity: 1 }, 113.48);
+tl.set("#subs4w44_6", { color: "#0D1320" }, 113.51);
+tl.set("#subs4w44_7", { color: "#7D29E0", opacity: 1 }, 113.51);
+tl.set("#subs4w44_7", { color: "#0D1320" }, 113.94);
+
+window.__timelines["subs4"] = tl;
+</script>
+</template>

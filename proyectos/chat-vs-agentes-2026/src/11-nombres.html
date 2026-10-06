@@ -1,0 +1,189 @@
+<!--CSS-->
+#__ID__ .glow{position:absolute;width:1000px;height:1000px;border-radius:50%;filter:blur(30px)}
+#__ID__ .gl-l{left:-60px;top:-160px;background:radial-gradient(closest-side,rgba(125,41,224,.30),rgba(125,41,224,0))}
+#__ID__ .gl-r{left:980px;top:-120px;background:radial-gradient(closest-side,rgba(255,1,162,.26),rgba(255,1,162,0))}
+#__ID__ .pair{position:absolute;left:0;top:0;width:1920px;height:1080px;perspective:2000px;transform-style:preserve-3d}
+#__ID__ .col{position:absolute;top:130px;width:800px;height:620px;border-radius:44px;background:#fff;border:2px solid rgba(var(--c),.24);transform-style:preserve-3d}
+#__ID__ .cl{left:130px;--c:125,41,224;box-shadow:-36px 46px 90px rgba(var(--c),.32),0 8px 24px rgba(13,19,32,.08)}
+#__ID__ .cg{left:990px;--c:255,1,162;box-shadow:36px 46px 90px rgba(var(--c),.30),0 8px 24px rgba(13,19,32,.08)}
+#__ID__ .hdr{position:absolute;left:0;top:0;width:100%;height:200px;border-radius:42px 42px 0 0;overflow:hidden}
+#__ID__ .cl .hdr{background:linear-gradient(135deg,#7D29E0,#4F2BD0)}
+#__ID__ .cg .hdr{background:linear-gradient(135deg,#FF01A2,#B0007A)}
+#__ID__ .hdr .nm{position:absolute;left:40px;top:0;line-height:200px;font-size:136px;font-weight:800;letter-spacing:-0.04em;color:#fff;white-space:nowrap;transform-origin:0% 50%}
+#__ID__ .hdr .shine{position:absolute;left:0;top:-30px;width:110px;height:260px;background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.6),rgba(255,255,255,0))}
+#__ID__ .row,#__ID__ .ph{position:absolute;left:40px;width:720px;height:150px;border-radius:32px;box-sizing:border-box}
+#__ID__ .row{background:rgba(var(--c),.09);border:2px solid rgba(var(--c),.32);transform-style:preserve-3d;box-shadow:0 18px 36px rgba(var(--c),.18)}
+#__ID__ .ph{border:3px dashed rgba(var(--c),.38)}
+#__ID__ .r1,#__ID__ .p1{top:250px}
+#__ID__ .r2,#__ID__ .p2{top:424px}
+#__ID__ .row .ic{position:absolute;left:30px;top:27px;width:88px;height:88px;border-radius:50%;box-sizing:border-box}
+#__ID__ .row .ic.fill{background:rgb(var(--c));display:flex;align-items:center;justify-content:center}
+#__ID__ .row .ic.fill svg{width:48px;height:48px;display:block}
+#__ID__ .row .ic.ring{border:4px dashed rgb(var(--c))}
+#__ID__ .row .lb{position:absolute;left:150px;top:0;line-height:146px;font-size:64px;font-weight:800;letter-spacing:-0.03em;color:#0D1320;white-space:nowrap}
+#__ID__ .slot{display:inline-block;position:relative}
+#__ID__ .slot .fn{display:inline-block;color:rgb(var(--c))}
+#__ID__ .slot .fo{position:absolute;left:0;top:0;display:inline-block;color:#667085}
+#__ID__ .stk{position:absolute;right:20px;top:-48px;font-size:36px;font-weight:600;color:#2F125E;background:#fff;border:3px dashed #7D29E0;border-radius:999px;padding:4px 24px;line-height:48px;white-space:nowrap;box-shadow:0 18px 36px rgba(125,41,224,.34)}
+#__ID__ .stk .cow{position:relative;display:inline-block}
+#__ID__ .stk .cow i{position:absolute;left:-4px;right:-4px;top:54%;height:5px;border-radius:3px;background:#FF01A2;transform-origin:0% 50%}
+#__ID__ .bar{position:absolute;left:260px;top:800px;width:1400px;height:112px;border-radius:56px;background:#0D1320;box-shadow:0 30px 60px rgba(13,19,32,.35);opacity:.55}
+#__ID__ .bar .slotorb{position:absolute;left:38px;top:24px;width:64px;height:64px;border-radius:50%;border:3px dashed rgba(255,255,255,.55);box-sizing:border-box}
+#__ID__ .bar .bc{position:absolute;top:20px;height:72px;line-height:66px;border-radius:999px;border:3px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;font-size:44px;font-weight:800;letter-spacing:-0.02em;padding:0 30px;box-sizing:border-box;white-space:nowrap}
+#__ID__ .bar .dot{position:absolute;top:0;line-height:108px;color:#fff;font-size:56px;font-weight:800}
+#__ID__ .bar .arw{position:absolute;left:760px;top:26px;width:150px;height:60px;overflow:visible}
+#__ID__ .bar .prg{position:absolute;left:960px;top:0;line-height:108px;color:#fff;font-size:60px;font-weight:800;letter-spacing:-0.04em;white-space:nowrap}
+#__ID__ .bar .prg b{font-family:"JetBrains Mono",monospace;font-weight:400;font-size:46px;margin-right:16px;color:#fff}
+#__ID__ .trail{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(125,41,224,.42);z-index:48;filter:blur(3px)}
+#__ID__ .pt{position:absolute;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;opacity:0;z-index:47}
+#__ID__ .rp{position:absolute;left:0;top:0;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:6px solid #7D29E0;opacity:0;z-index:46;box-sizing:border-box}
+<!--HTML-->
+<div class="stage">
+  <div class="glow gl-l"></div><div class="glow gl-r"></div>
+  <div class="pair">
+    <div class="col cl">
+      <div class="hdr"><span class="nm">CLAUDE</span><i class="shine"></i></div>
+      <div class="ph p1"></div><div class="ph p2"></div>
+      <div class="row r1">
+        <span class="ic fill"><svg viewBox="0 0 48 48"><path d="M8 10 H40 a4 4 0 0 1 4 4 V30 a4 4 0 0 1 -4 4 H22 L12 43 V34 H8 a4 4 0 0 1 -4 -4 V14 a4 4 0 0 1 4 -4Z" fill="#fff"/></svg></span>
+        <span class="lb">Chat</span>
+      </div>
+      <div class="row r2">
+        <span class="ic ring"></span>
+        <span class="lb">Modo <span class="slot"><span class="fo">chat</span><span class="fn">agente</span></span></span>
+        <div class="stk">antes: <span class="cow">Cowork<i></i></span></div>
+      </div>
+    </div>
+    <div class="col cg">
+      <div class="hdr"><span class="nm">CHATGPT</span><i class="shine"></i></div>
+      <div class="ph p1"></div><div class="ph p2"></div>
+      <div class="row r1">
+        <span class="ic fill"><svg viewBox="0 0 48 48"><path d="M8 10 H40 a4 4 0 0 1 4 4 V30 a4 4 0 0 1 -4 4 H22 L12 43 V34 H8 a4 4 0 0 1 -4 -4 V14 a4 4 0 0 1 4 -4Z" fill="#fff"/></svg></span>
+        <span class="lb">Chat</span>
+      </div>
+      <div class="row r2">
+        <span class="ic ring"></span>
+        <span class="lb"><span class="slot"><span class="fo">Chat</span><span class="fn">Work</span></span></span>
+      </div>
+    </div>
+  </div>
+  <div class="bar">
+    <span class="slotorb"></span>
+    <span class="bc bc1" style="left:130px">Claude Code</span>
+    <span class="dot" style="left:446px">·</span>
+    <span class="bc bc2" style="left:490px">Codex</span>
+    <svg class="arw" viewBox="0 0 150 60"><path class="arp" d="M6 30 H132 M108 8 L134 30 L108 52" pathLength="1" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1"/></svg>
+    <span class="prg"><b>&lt;/&gt;</b>programar</span>
+  </div>
+  <div class="trail tr4"></div><div class="trail tr3"></div><div class="trail tr2"></div><div class="trail tr1"></div>
+  <div class="orb"></div>
+</div>
+<!--JS-->
+sceneIn("fade");
+const S = $q(".stage");
+const cClaude = cue("claude"), cModo = cue("modo"), cAgente = cue("agente"), cCowork = cue("cowork"), cGPT = cue("chatgpt"), cWork = cue("work"),
+      cCode = cue("claude", 1), cCodex = cue("codex"), cProg = cue("programar");
+
+/* ---- ambiente: resplandores que respiran, cada columna con su color ---- */
+tl.to(Q(".gl-l"), { scale: 1.12, x: 40, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+tl.to(Q(".gl-r"), { scale: 1.12, x: -40, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+
+/* ---- entrada con tilt de libro (rotateY espejo), cada una desde su lado ---- */
+tl.fromTo(Q(".cl"), { x: -720, rotateY: 34, scale: 0.82, opacity: 0 }, { x: 0, rotateY: 15, scale: 1, opacity: 1, duration: 1.0, ease: "power3.out" }, 0);
+tl.fromTo(Q(".cg"), { x: 720, rotateY: -34, scale: 0.82, opacity: 0 }, { x: 0, rotateY: -15, scale: 1, opacity: 1, duration: 1.0, ease: "power3.out" }, 0.16);
+/* flotación en contrafase (finita) */
+tl.to(Q(".cl"), { y: -9, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 5 }, 1.0);
+tl.to(Q(".cg"), { y: 9, duration: 1.4, ease: "sine.inOut", yoyo: true, repeat: 5 }, 1.0);
+
+/* ---- utilidades de brillo, anillo y confeti ---- */
+function ring(p, at, col, s = 2.4) {
+  const d = document.createElement("div"); d.className = "rp"; d.style.borderColor = col; S.appendChild(d);
+  tl.set(d, { x: p[0], y: p[1], opacity: 0.85, scale: 0.3 }, at);
+  tl.to(d, { opacity: 0, scale: s, duration: 0.7, ease: "power2.out" }, at);
+}
+function burst(p, at, col, n = 12, r = 150) {
+  for (let i = 0; i < n; i++) {
+    const d = document.createElement("div"); d.className = "pt";
+    d.style.background = i % 3 === 0 ? "#FF01A2" : i % 3 === 1 ? col : "#F2E7FC";
+    d.style.borderRadius = i % 2 ? "50%" : "4px"; S.appendChild(d);
+    const a = (i / n) * Math.PI * 2 + 0.3, rr = r * (0.62 + 0.38 * Math.abs(Math.sin(i * 2.7 + 1)));
+    tl.set(d, { x: p[0], y: p[1], scale: 0.3, opacity: 1, rotation: 0 }, at);
+    tl.to(d, { x: p[0] + Math.cos(a) * rr, y: p[1] + Math.sin(a) * rr + 30, scale: 1, rotation: (i % 2 ? 1 : -1) * 200, duration: 0.95, ease: "power3.out" }, at);
+    tl.to(d, { opacity: 0, duration: 0.4, ease: "power1.in" }, at + 0.5);
+  }
+}
+tl.set($$q(".shine"), { skewX: -20, x: -160 }, 0);
+function headPulse(col, at) {          // el nombre da un golpe y pasa un brillo por la cabecera
+  tl.fromTo(Q(col + " .nm"), { scale: 1 }, { scale: 1.07, duration: 0.14, ease: "power2.out", yoyo: true, repeat: 1 }, at);
+  tl.fromTo(Q(col + " .shine"), { x: -160 }, { x: 900, duration: 0.7, ease: "power2.inOut" }, at);
+}
+
+/* ---- orbe saltando de columna en columna (con estela) ---- */
+const TRD = [0.05, 0.1, 0.15, 0.2], TRO = [0.4, 0.32, 0.24, 0.16], TRS = [0.85, 0.7, 0.55, 0.4];
+let cur = { x: 960, y: -90 };
+tl.set(Q(".orb"), { x: cur.x, y: cur.y }, 0);
+TRD.forEach((_, i) => tl.set(Q(".tr" + (i + 1)), { x: cur.x, y: cur.y, opacity: TRO[i], scale: TRS[i] }, 0));
+function jump(x, y, at, d, h = 220) {
+  const top = Math.min(cur.y, y) - h;
+  const targets = [[Q(".orb"), 0]].concat(TRD.map((dl, i) => [Q(".tr" + (i + 1)), dl]));
+  targets.forEach(([t, dl]) => {
+    tl.to(t, { x, duration: d, ease: "power1.inOut" }, at + dl);
+    tl.to(t, { y: top, duration: d * 0.45, ease: "power2.out" }, at + dl);
+    tl.to(t, { y, duration: d * 0.55, ease: "power2.in" }, at + dl + d * 0.45);
+  });
+  tl.to(Q(".orb"), { scaleX: 1.2, scaleY: 0.78, duration: 0.1, ease: "power2.out" }, at - 0.1);   // anticipación
+  tl.to(Q(".orb"), { scaleX: 0.85, scaleY: 1.25, duration: 0.1, ease: "power2.out" }, at);          // estirón al despegar
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.1 }, at + 0.1);
+  orbSquash(at + d - 0.02);
+  cur = { x, y };
+}
+const pHeadL = [880, 124], pHeadR = [1744, 124];
+const pRowL = [130 + 40 + 30 + 44 + 10, 130 + 424 + 75], pRowR = [990 + 40 + 30 + 44 - 10, 130 + 424 + 75];
+const pBar = [260 + 38 + 32, 800 + 56];
+
+/* ================= CLAUDE ================= */
+jump(pHeadL[0], pHeadL[1], 0.12, 0.52, 40);
+headPulse(".cl", cClaude);
+ring(pHeadL, cClaude + 0.02, "#7D29E0", 2.6);
+/* fila Chat entra (ambas columnas, un pelín desfasadas) */
+tl.fromTo(Q(".cl .r1"), { opacity: 0, x: -80, z: -40 }, { opacity: 1, x: 0, z: 26, duration: 0.7, ease: "back.out(1.5)" }, 0.75);
+tl.fromTo(Q(".cg .r1"), { opacity: 0, x: 80, z: -40 }, { opacity: 1, x: 0, z: 26, duration: 0.7, ease: "back.out(1.5)" }, 0.95);
+/* fila «Modo agente»: el orbe aterriza en su icono; la palabra cambia como un panel de aeropuerto */
+jump(pRowL[0], pRowL[1], cModo - 0.45, 0.5, 200);
+tl.fromTo(Q(".cl .r2"), { opacity: 0, y: 70, scale: 0.8, z: -40 }, { opacity: 1, y: 0, scale: 1, z: 26, duration: 0.7, ease: "back.out(1.7)" }, cModo - 0.06);
+ring(pRowL, cModo + 0.02, "#7D29E0", 2.2);
+tl.set($$q(".slot .fo"), { transformPerspective: 500 }, 0);
+tl.to(Q(".cl .slot .fo"), { rotationX: -90, opacity: 0, duration: 0.28, ease: "power2.in" }, cAgente);
+tl.fromTo(Q(".cl .slot .fn"), { rotationX: 90, opacity: 0, transformPerspective: 500 }, { rotationX: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, cAgente + 0.16);
+burst([300 + 130 + 360, 130 + 424 + 75], cAgente + 0.3, "#7D29E0", 10, 110);
+/* etiqueta «antes: Cowork» (único sitio donde aparece el nombre) */
+tl.fromTo(Q(".stk"), { opacity: 0, scale: 0.3, rotation: -14, y: 24, z: 0 }, { opacity: 1, scale: 1, rotation: 4, y: 0, z: 60, duration: 0.7, ease: "back.out(2.2)" }, cCowork);
+tl.fromTo(Q(".stk .cow i"), { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, cCowork + 0.5);
+burst([130 + 560, 130 + 424 - 20], cCowork + 0.05, "#7D29E0", 12, 120);
+
+/* ================= CHATGPT ================= */
+jump(pHeadR[0], pHeadR[1], cGPT - 0.6, 0.62, 260);
+headPulse(".cg", cGPT);
+ring(pHeadR, cGPT + 0.02, "#FF01A2", 2.6);
+jump(pRowR[0], pRowR[1], cWork - 0.55, 0.5, 200);
+tl.fromTo(Q(".cg .r2"), { opacity: 0, y: 70, scale: 0.8, z: -40 }, { opacity: 1, y: 0, scale: 1, z: 26, duration: 0.7, ease: "back.out(1.7)" }, cWork - 0.1);
+ring(pRowR, cWork - 0.03, "#FF01A2", 2.2);
+tl.to(Q(".cg .slot .fo"), { rotationX: -90, opacity: 0, duration: 0.28, ease: "power2.in" }, cWork + 0.1);
+tl.fromTo(Q(".cg .slot .fn"), { rotationX: 90, opacity: 0, transformPerspective: 500 }, { rotationX: 0, opacity: 1, duration: 0.5, ease: "back.out(1.7)" }, cWork + 0.26);
+burst([990 + 150 + 120, 130 + 424 + 75], cWork + 0.4, "#FF01A2", 12, 120);
+
+/* ================= Claude Code · Codex → programar (55 %) ================= */
+const tB = beat(cCode - 0.15);
+jump(pBar[0], pBar[1], tB - 0.55, 0.55, 150);
+tl.fromTo(Q(".bar"), { opacity: 0, y: 90, scale: 0.9 }, { opacity: 0.55, y: 0, scale: 1, duration: 0.7, ease: "back.out(1.4)" }, tB - 0.1);
+tl.fromTo(Q(".bc1"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.2)" }, cCode);
+tl.fromTo(Q(".bar .dot"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, cCode + 0.25);
+tl.fromTo(Q(".bc2"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.2)" }, cCodex);
+tl.fromTo(Q(".arp"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.5, ease: "power2.inOut" }, cCodex + 0.55);
+tl.fromTo(Q(".bar .prg"), { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.55, ease: E }, cProg - 0.05);
+burst([1230, 856], cProg, "#9B61F6", 8, 90);
+orbPulse(cProg, 0.5);
+
+sceneOut("whip");
+<!--SFX-->
+[{"k":"pop","t":0.6,"v":0.45},{"k":"pop","t":1.4,"v":0.45},{"k":"shimmer","t":1.8,"v":0.4},{"k":"pop","t":3.3,"v":0.5},{"k":"whoosh","t":3.8,"v":0.35},{"k":"pop","t":4.4,"v":0.45},{"k":"pop","t":5.1,"v":0.45},{"k":"shimmer","t":5.2,"v":0.4},{"k":"whoosh","t":6.0,"v":0.3},{"k":"pop","t":6.5,"v":0.45},{"k":"click","t":7.9,"v":0.5}]

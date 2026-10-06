@@ -1,0 +1,212 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;inset:0}
+#__ID__ .g{position:absolute;inset:0}
+#__ID__ .strip.dk .lb[style*="color"]{color:#FFE0F3 !important}
+#__ID__ .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5}
+#__ID__ .meta{position:absolute;left:100px;top:136px;display:flex;gap:14px;align-items:center;z-index:30}
+#__ID__ .blk{display:inline-flex;padding:10px 24px;border-radius:999px;color:#fff;font-size:24px;letter-spacing:.16em}
+#__ID__ .vfade{position:absolute;left:0;right:0;bottom:0;height:90px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff 80%);z-index:2}
+#__ID__ .hlbox{z-index:6}
+/* ---- Comisión ---- */
+#__ID__ .tt{position:absolute;left:100px;top:196px;width:1720px;height:150px}
+#__ID__ .tt .mask{position:absolute;left:0;top:0}
+#__ID__ .tt .h{font-size:132px;color:#fff}
+#__ID__ .tt .h b{color:#C9A6FF;font-weight:800}
+#__ID__ .chips1{position:absolute;left:100px;top:352px;display:flex;gap:16px;align-items:center}
+#__ID__ .mychip{font-size:34px}
+#__ID__ .prop{border-color:#FFC97A;color:#FFD99C;background:rgba(255,201,122,.12)}
+#__ID__ .wC{left:90px;top:432px;width:900px;height:540px}
+#__ID__ .plabel{position:absolute;left:1060px;top:436px;width:760px;font-size:40px;font-weight:600;color:#E9DBFF;line-height:1.2}
+#__ID__ .pole{position:absolute;width:9px;height:236px;border-radius:5px;background:linear-gradient(180deg,#fff,#B9A7D6)}
+#__ID__ .flag{position:absolute;width:176px;height:112px;border-radius:6px 14px 14px 6px;box-shadow:0 16px 36px rgba(10,0,30,.4)}
+#__ID__ .fA{background:linear-gradient(135deg,#9B61F6 50%,#5E3DE6 50%)}
+#__ID__ .fB{background-color:#F2E7FC;background-image:radial-gradient(circle at 50% 50%,#FF01A2 0 27px,transparent 28px)}
+#__ID__ .plab{position:absolute;font-size:28px;font-weight:800;letter-spacing:.2em;color:#C9B8E8}
+#__ID__ .card{position:absolute;left:1060px;top:792px;width:330px;height:206px;border-radius:26px;background:linear-gradient(135deg,#8E4CF0 0%,#5E3DE6 60%,#2F125E 130%);border:2px solid rgba(255,255,255,.4);box-shadow:0 30px 70px rgba(10,0,30,.55);z-index:5}
+#__ID__ .card .cchip{position:absolute;left:26px;top:26px;width:62px;height:46px;border-radius:10px;background:linear-gradient(135deg,#fff,#D9C2FF)}
+#__ID__ .card .cl{position:absolute;left:26px;height:12px;border-radius:6px;background:rgba(255,255,255,.35)}
+#__ID__ .card .ct{position:absolute;left:26px;bottom:22px;font-size:34px;font-weight:800;letter-spacing:-0.02em;color:#fff;white-space:nowrap}
+#__ID__ .card svg{position:absolute;right:20px;top:18px}
+#__ID__ .glowring{position:absolute;left:1480px;top:792px;width:330px;height:206px;border-radius:26px;border:4px solid #FF01A2;opacity:0}
+#__ID__ .arcsvg{position:absolute;left:0;top:0}
+/* ---- Eurostat ---- */
+#__ID__ .wE{left:90px;top:215px;width:900px;height:540px}
+#__ID__ .chips2{position:absolute;left:90px;top:790px;width:900px;display:flex;flex-wrap:wrap;gap:14px}
+#__ID__ .cap2{position:absolute;left:94px;top:930px;width:900px;font-size:34px;font-weight:600;color:#D9C8F5;line-height:1.25}
+#__ID__ .gauge{position:absolute;left:0;top:0}
+#__ID__ .gv{position:absolute;left:1190px;top:436px;width:500px;text-align:center;font-size:152px;font-weight:800;letter-spacing:-0.05em;color:#fff;white-space:nowrap;font-feature-settings:"tnum";line-height:1.1}
+#__ID__ .gv .u{font-size:84px;color:#C9A6FF;margin-left:6px;letter-spacing:0}
+#__ID__ .gs{position:absolute;font-size:28px;font-weight:600;color:#B9A7D6;white-space:nowrap}
+#__ID__ .mk15{position:absolute;left:1445px;top:290px;width:0;height:0}
+#__ID__ .mk15 .d{position:absolute;left:-17px;top:-17px;width:34px;height:34px;border-radius:50%;background:#fff;border:6px solid #FF01A2;box-shadow:0 0 0 8px rgba(255,1,162,.25)}
+#__ID__ .mk15 .l{position:absolute;left:-150px;top:-78px;width:300px;text-align:center;font-size:34px;font-weight:800;color:#fff;white-space:nowrap}
+#__ID__ .row{position:absolute;left:1060px;display:flex;align-items:center;white-space:nowrap}
+#__ID__ .row .y{width:130px;font-size:46px;font-weight:800;color:#fff;letter-spacing:-0.02em}
+#__ID__ .row .b{height:64px;border-radius:14px;transform-origin:0 50%}
+#__ID__ .row .v{margin-left:18px;font-size:54px;font-weight:800;color:#fff;letter-spacing:-0.03em;font-feature-settings:"tnum"}
+#__ID__ .r15{top:778px} #__ID__ .r25{top:880px}
+#__ID__ .r15 .b{width:364px;background:linear-gradient(90deg,#5E3DE6,#9B61F6)}
+#__ID__ .r25 .b{width:493px;background:linear-gradient(90deg,#9B61F6,#FF01A2)}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0"></div>
+  <div class="blob b-a" style="left:1150px;top:-140px;width:800px;height:800px;background:#7D29E0"></div>
+  <div class="blob b-b" style="left:-260px;top:640px;width:760px;height:760px;background:#5E3DE6"></div>
+  <div class="strip dk"></div>
+  <div class="meta">
+    <span class="tag blk"></span>
+    <span class="badge dk">14 y 15 sep 2026</span>
+    <span class="badge srcdk">ec.europa.eu · eurostat</span>
+  </div>
+
+  <div class="world">
+    <!-- COMISIÓN -->
+    <div class="g g1">
+      <div class="tt" data-layout-allow-overlap>
+        <div class="mask" data-layout-allow-overlap><div class="r h t0" data-layout-allow-overlap>BRUSELAS</div></div>
+        <div class="mask" data-layout-allow-overlap><div class="r h t1" data-layout-allow-overlap>Skills <b>Portability Act</b></div></div>
+      </div>
+      <div class="chips1">
+        <span class="chip mychip prop c1">Propuesta · falta tramitación</span>
+        <span class="chip dark mychip c2">Paquete de 5 propuestas legislativas</span>
+      </div>
+      <div class="shotwin dark wC">
+        <div class="sbar"><i></i><i></i><i></i><div class="url">ec.europa.eu · 15 September 2026</div></div>
+        <div class="view"><img data-layout-allow-overflow src="assets/captures/ec-skills.png"></div>
+        <div class="vfade"></div>
+        <div class="hlbox hC"></div>
+      </div>
+      <div class="plabel pl">Cualificaciones digitales y comparables</div>
+      <svg class="arcsvg" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <path class="ghost" d="M1225 800 Q1435 540 1645 800" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="5" stroke-dasharray="4 16" stroke-linecap="round"/>
+        <path class="live" d="M1225 800 Q1435 540 1645 800" fill="none" stroke="#FF01A2" stroke-width="7" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"/>
+      </svg>
+      <div class="pole pA" style="left:1090px;top:556px"></div><div class="flag fA fl" style="left:1099px;top:556px"></div><div class="plab fl" style="left:1096px;top:698px">PAÍS A</div>
+      <div class="pole pB" style="left:1620px;top:556px"></div><div class="flag fB fl" style="left:1629px;top:556px"></div><div class="plab fl" style="left:1626px;top:698px">PAÍS B</div>
+      <div class="glowring gr"></div>
+      <div class="card cd">
+        <div class="cchip"></div>
+        <i class="cl" style="top:92px;width:200px"></i><i class="cl" style="top:116px;width:140px"></i>
+        <svg width="64" height="64" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="#fff"/><path class="ck" d="M18 33l9 9 19-21" fill="none" stroke="#5E3DE6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="60" stroke-dashoffset="60"/></svg>
+        <div class="ct">Cualificación digital</div>
+      </div>
+    </div>
+
+    <!-- EUROSTAT -->
+    <div class="g g2">
+      <div class="shotwin dark wE">
+        <div class="sbar"><i></i><i></i><i></i><div class="url">ec.europa.eu/eurostat · 14 September 2026</div></div>
+        <div class="view"><img data-layout-allow-overflow src="assets/captures/eurostat.png"></div>
+        <div class="vfade"></div>
+        <div class="hlbox hE1"></div>
+        <div class="hlbox hE2"></div>
+      </div>
+      <div class="chips2">
+        <span class="chip dark mychip e1">Suecia 38,2 % · el máximo</span>
+        <span class="chip dark mychip e2">Grecia 5,2 % · el mínimo</span>
+      </div>
+      <div class="cap2 cp">% de personas de 25 a 64 años en formación en las últimas 4 semanas</div>
+      <svg class="gauge" width="1920" height="1080" viewBox="0 0 1920 1080">
+        <defs><linearGradient id="gg16" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9B61F6"/><stop offset="1" stop-color="#FF01A2"/></linearGradient></defs>
+        <path class="trk" d="M1140 590 A300 300 0 0 1 1740 590" fill="none" stroke="rgba(255,255,255,.15)" stroke-width="34" stroke-linecap="round"/>
+        <path class="prg" d="M1140 590 A300 300 0 0 1 1740 590" fill="none" stroke="url(#gg16)" stroke-width="34" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"/>
+        <path class="seg" d="M1445 290 A300 300 0 0 1 1605 339" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"/>
+        <circle class="tip" cx="1605" cy="339" r="22" fill="#fff" stroke="#FF01A2" stroke-width="8" opacity="0"/>
+      </svg>
+      <div class="gs g0" style="left:1112px;top:622px">0 %</div>
+      <div class="gs g20" style="left:1700px;top:622px">20 %</div>
+      <div class="gv gvv"><span class="nn">0,0</span><span class="u">%</span></div>
+      <div class="mk15 m15"><div class="d"></div><div class="l">2015 · 10,1 %</div></div>
+      <div class="row r15"><div class="y">2015</div><div class="b"></div><div class="v vv15">10,1 %</div></div>
+      <div class="row r25"><div class="y">2025</div><div class="b"></div><div class="v vv25">13,7 %</div></div>
+    </div>
+  </div>
+</div>
+<!--JS-->
+$q(".blk").style.background = COLOR; $q(".blk").textContent = BLOCK;
+function hlAt(box, win, fx, fy, fw, fh, cx, cy, s, at, d) {
+  const v = $q(win + " .view"); const W = v.clientWidth, H = v.clientHeight;
+  hl(box, W / 2 - cx * s + fx * s, 54 + H / 2 - cy * s + fy * s, fw * s, fh * s, at, d);
+}
+const comma1 = (v) => v.toFixed(1).replace(".", ",");
+
+sceneIn("whip");
+dateStrip([PREV, "2026-09-15", "2026-09-14"], 0.5, 0.9, 5.9);
+tl.fromTo(Q(".meta"), { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, 0.3);
+tl.fromTo(Q(".b-a"), { x: 0, y: 0 }, { x: -140, y: 90, duration: DUR, ease: "sine.inOut" }, 0);
+tl.fromTo(Q(".b-b"), { x: 0, y: 0 }, { x: 160, y: -80, duration: DUR, ease: "sine.inOut" }, 0);
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.035, duration: 6.9, ease: "none" }, 0.1);
+
+/* ======== COMISIÓN (0 – 7,1 s) ======== */
+tl.fromTo(Q(".wC"), { x: -260, y: 50, opacity: 0, rotationY: -26, scale: 0.92, transformPerspective: 1600 }, { x: 0, y: 0, opacity: 1, rotationY: -4, scale: 1, transformPerspective: 1600, duration: 0.9, ease: E }, 0.05);
+shotSet(".wC", 1440, 900, 690, 410, 0.7);
+rise(".t0", 0.12, 0.9);
+const TSK = cue("Skills");
+tl.to(Q(".t0"), { yPercent: -115, duration: 0.4, ease: "power3.in" }, TSK - 0.35);
+tl.set(Q(".t0"), { opacity: 0 }, TSK + 0.1);
+tl.fromTo(Q(".t1"), { yPercent: 110 }, { yPercent: 0, duration: 0.95, ease: E }, TSK - 0.05);
+tl.fromTo(Q(".t1"), { scale: 1.08 }, { scale: 1, duration: 0.5, ease: "power4.out" }, TSK - 0.05);
+pop(".c1", cue("propone"), 0.5);
+pop(".c2", cue("Portability") + 0.2, 0.5);
+shotCam(".wC", 1440, 900, 500, 480, 1.05, TSK + 0.3, 1.1);
+hlAt(".hC", ".wC", 560, 494, 328, 38, 500, 480, 1.05, TSK + 1.5, 0.5);
+
+/* credencial digital que viaja entre dos países */
+const TQ = cue("cualificaciones");
+tl.fromTo(Q(".fl"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6, ease: E, stagger: 0.12 }, TQ - 0.3);
+tl.fromTo(Q(".pA"), { opacity: 0, scaleY: 0.2, transformOrigin: "50% 100%" }, { opacity: 1, scaleY: 1, duration: 0.5, ease: E }, TQ - 0.35);
+tl.fromTo(Q(".pB"), { opacity: 0, scaleY: 0.2, transformOrigin: "50% 100%" }, { opacity: 1, scaleY: 1, duration: 0.5, ease: E }, TQ - 0.25);
+tl.fromTo(Q(".pl"), { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: E }, TQ - 0.1);
+tl.fromTo(Q(".cd"), { opacity: 0, scale: 0.5, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR }, TQ + 0.1);
+tl.to(Q(".ck"), { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, cue("digitales") + 0.1);
+tl.fromTo(Q(".cd"), { rotation: 0 }, { rotation: -3, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.out" }, cue("digitales") + 0.1);
+fade(".ghost", cue("comparables") - 0.8, 0.5, 1);
+const TV = cue("comparables");
+tl.to(Q(".cd"), { x: 420, duration: 1.0, ease: IO }, TV);
+tl.to(Q(".cd"), { y: -120, duration: 0.5, ease: "sine.out" }, TV);
+tl.to(Q(".cd"), { y: 0, duration: 0.5, ease: "sine.in" }, TV + 0.5);
+tl.to(Q(".cd"), { rotation: 5, duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, TV);
+tl.to(Q(".live"), { strokeDashoffset: 0, duration: 1.0, ease: IO }, TV);
+tl.set(Q(".gr"), { opacity: 0 }, 0);
+tl.fromTo(Q(".gr"), { opacity: 0.9, scale: 1 }, { opacity: 0, scale: 1.35, duration: 0.7, ease: "power2.out", immediateRender: false }, TV + 1.0);
+tl.fromTo(Q(".cd"), { scale: 1 }, { scale: 1.06, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out" }, TV + 1.0);
+
+/* salida de la Comisión */
+tl.to(Q(".g1"), { x: -360, opacity: 0, filter: "blur(20px)", duration: 0.45, ease: "power3.in" }, 7.0);
+
+/* ======== EUROSTAT (7,1 – fin) ======== */
+tl.fromTo(Q(".g2"), { x: 360, opacity: 0, filter: "blur(20px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.55, ease: "power3.out" }, 7.15);
+tl.set(Q(".world"), { scale: 1 }, 7.1);
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.035, duration: DUR - 7.3, ease: "none" }, 7.2);
+tl.fromTo(Q(".wE"), { y: 70, rotationY: 16, transformPerspective: 1600 }, { y: 0, rotationY: -4, transformPerspective: 1600, duration: 0.9, ease: E }, 7.25);
+shotSet(".wE", 1440, 900, 560, 350, 0.85);
+hlAt(".hE1", ".wE", 160, 272, 160, 28, 560, 350, 0.85, 7.9, 0.4);
+tl.to(Q(".hE1"), { opacity: 0, duration: 0.25 }, 8.7);
+shotCam(".wE", 1440, 900, 563, 330, 1.1, 8.85, 1.2);
+hlAt(".hE2", ".wE", 160, 300, 810, 54, 563, 330, 1.1, 10.2, 0.5);
+
+/* indicador */
+const T13 = cue("trece");
+fade(".trk", 7.4, 0.5, 1); fade(".g0", 7.5, 0.4); fade(".g20", 7.5, 0.4);
+fade(".gvv", 7.6, 0.4);
+tl.to(Q(".prg"), { strokeDashoffset: 1 - 0.685, duration: 1.6, ease: "power3.out" }, T13 - 0.05);
+count(".gvv .nn", 13.7, T13 - 0.05, 1.6, comma1);
+tl.fromTo(Q(".tip"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, T13 + 1.3);
+tl.fromTo(Q(".gvv"), { scale: 1 }, { scale: 1.07, duration: 0.2, yoyo: true, repeat: 1, ease: "power2.out" }, T13 + 1.5);
+/* barra 2025 */
+tl.fromTo(Q(".r25"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, T13);
+tl.fromTo(Q(".r25 .b"), { scaleX: 0 }, { scaleX: 1, duration: 1.4, ease: "power3.out" }, T13);
+count(".vv25", 13.7, T13, 1.4, (v) => comma1(v) + " %");
+/* chips de máximos y mínimos */
+pop(".e1", cue("adultos"), 0.5); pop(".e2", cue("form"), 0.5);
+up(".cp", cue("ultimas") - 0.1, { d: 0.6 });
+/* 2015 */
+const T10 = cue("diez");
+tl.fromTo(Q(".r15"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, T10);
+tl.fromTo(Q(".r15 .b"), { scaleX: 0 }, { scaleX: 1, duration: 1.0, ease: "power3.out" }, T10);
+count(".vv15", 10.1, T10, 1.0, (v) => comma1(v) + " %");
+tl.fromTo(Q(".m15"), { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.5, ease: SPR }, T10 + 0.2);
+tl.to(Q(".seg"), { strokeDashoffset: 0, duration: 0.9, ease: IO }, cue("uno") + 0.3);
+sceneOut("whip");
+<!--SFX-->
+[{"k":"swipe","t":0.1,"v":0.4},{"k":"pop","t":1.8,"v":0.35},{"k":"shutter","t":2.55,"v":0.4},{"k":"pop","t":4.45,"v":0.35},{"k":"ding","t":5.2,"v":0.4},{"k":"whoosh","t":5.9,"v":0.4},{"k":"whoosh","t":7.1,"v":0.45},{"k":"counter","t":8.1,"v":0.35},{"k":"ping","t":14.05,"v":0.4}]

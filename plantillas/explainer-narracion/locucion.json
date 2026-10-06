@@ -1,0 +1,15 @@
+{
+ "_plantilla": "explainer-narracion · 8 bloques (gancho, problema, idea clave, cómo funciona, ejemplo, errores, checklist, cierre) ≈ 60–120 s. Sustituye cada texto por la locución real (≈ 150 palabras por minuto; 90 s ≈ 220 palabras). voz vacía = voz y modelo de .env (eleven_v4); más rápido: {\"modelo\": \"eleven_v4_turbo\"}. Si cambias una frase que usa guion.json como cue, cámbiala también allí (o pasa plantillas/herramientas/cues.py).",
+ "voz": {},
+ "pausaEntreBloques": 0.35,
+ "bloques": [
+  {"id": "b01", "texto": "¿Te has preguntado alguna vez cómo funciona esto por dentro? En un minuto y medio lo vas a entender, sin tecnicismos.", "pausaDespues": 0.6},
+  {"id": "b02", "texto": "Primero, el problema, que seguro que te suena de algo a ti también. Hoy casi todo el mundo lo hace a mano, pierde tiempo y comete errores que se podrían evitar."},
+  {"id": "b03", "texto": "La idea clave es muy sencilla: separar lo que decides tú de lo que puede hacer la máquina sola.", "pausaDespues": 0.7},
+  {"id": "b04", "texto": "Vamos con cómo funciona, paso a paso y sin ninguna prisa. Primero, recoges los datos. Segundo, el sistema los ordena. Y tercero, tú revisas el resultado."},
+  {"id": "b05", "texto": "Un ejemplo concreto: la tarea de siempre, contada antes y después, con una cifra que cualquiera pueda comprobar.", "pausaDespues": 0.7},
+  {"id": "b06", "texto": "Y ahora, lo que conviene evitar, que es donde falla casi todo el mundo. El error más común es fiarse sin revisar. Lo correcto es comprobar siempre la salida."},
+  {"id": "b07", "texto": "Antes de empezar, repasa tres cosas: que tienes los datos, que sabes quién revisa y que hay un plan si algo falla.", "pausaDespues": 0.7},
+  {"id": "b08", "texto": "En resumen: separa, revisa y comprueba. Y si te ha servido, compártelo con tu equipo."}
+ ]
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 4vmin;
+          background: var(--vox-ink);
+          padding: 9vmin 7vmin;
+        }
+        .bkicker {
+          display: inline-block;
+          background: var(--vox-yellow);
+          color: var(--vox-ink);
+          font: 800 2.8vmin/1 var(--vox-font);
+          letter-spacing: 0.3vmin;
+          text-transform: uppercase;
+          padding: 1.1vmin 1.7vmin;
+        }
+        .brow {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          gap: 3vmin;
+        }
+        .btrack {
+          flex: 1;
+          height: 9vmin;
+          position: relative;
+        }
+        .bfill {
+          position: absolute;
+          inset: 0;
+          transform-origin: left center;
+          background: #2f2f38;
+        }
+        .brow.key .bfill {
+          background: var(--vox-yellow);
+        }
+        .bval {
+          font: 900 8vmin/1 var(--vox-font);
+          color: var(--vox-white);
+          font-variant-numeric: tabular-nums;
+          min-width: 5.5em;
+        }
+        .brow.key .bval {
+          color: var(--vox-yellow);
+        }
+        .blabel {
+          font: 700 2.9vmin/1.2 var(--vox-font);
+          color: #9a9aa2;
+          text-transform: uppercase;
+          letter-spacing: 0.18vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="barras">
+        <div class="bkicker" id="b-kicker">Muertes de migrantes en Ceuta</div>
+
+        <div class="brow key" id="b-row-1">
+          <div class="bval" id="b-val-1">0</div>
+          <div class="btrack"><div class="bfill" id="b-fill-1"></div></div>
+        </div>
+        <div class="blabel" id="b-lab-1">En 2026, hasta julio</div>
+
+        <div class="brow" id="b-row-2">
+          <div class="bval" id="b-val-2">0</div>
+          <div class="btrack"><div class="bfill" id="b-fill-2"></div></div>
+        </div>
+        <div class="blabel" id="b-lab-2">En todo 2025</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // La barra de 2025 se escala respecto a la de 2026 (46/97), para que la
+        // comparación sea proporcional y no solo tipográfica.
+        const contar = (sel, to, at, dur) => {
+          const el = document.querySelector(sel);
+          const proxy = { v: 0 };
+          tl.fromTo(
+            proxy,
+            { v: 0 },
+            { v: to, duration: dur, ease: "power2.out", onUpdate: () => (el.textContent = String(Math.round(proxy.v))) },
+            at,
+          );
+        };
+
+        tl.fromTo("#b-kicker", { opacity: 0, x: "-2.4vmin" }, { opacity: 1, x: 0, duration: 0.32, ease: "power3.out" }, 0)
+          .fromTo("#b-fill-1", { scaleX: 0 }, { scaleX: 1, duration: 1.15, ease: "power3.out" }, 0.25)
+          .fromTo("#b-lab-1", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.9)
+          .fromTo("#b-fill-2", { scaleX: 0 }, { scaleX: 46 / 97, duration: 1.15, ease: "power3.out" }, 1.35)
+          .fromTo("#b-lab-2", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 2.0);
+
+        contar("#b-val-1", 97, 0.25, 1.15);
+        contar("#b-val-2", 46, 1.35, 1.15);
+
+        window.__timelines["barras"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

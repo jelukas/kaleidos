@@ -1,0 +1,274 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .blob{position:absolute;border-radius:50%;display:block}
+#__ID__ .blob.b1{left:1100px;top:-200px;width:1100px;height:1100px;background:radial-gradient(circle,rgba(230,0,142,.16),rgba(230,0,142,0) 66%)}
+#__ID__ .blob.b2{left:-300px;top:480px;width:1000px;height:1000px;background:radial-gradient(circle,rgba(125,41,224,.15),rgba(125,41,224,0) 66%)}
+#__ID__ .dotgrid{position:absolute;left:0;top:0;width:1920px;height:1080px;background-image:radial-gradient(rgba(125,41,224,.16) 2.5px,transparent 3px);background-size:48px 48px;opacity:0}
+/* tag / badges */
+#__ID__ .strip{--lbl:#475467}
+#__ID__ .shotwin .sbar .url{color:#475467}
+#__ID__ .badge.src{color:#344054}
+#__ID__ .tagrow{position:absolute;left:100px;top:140px;color:#C4007E;font-size:26px;opacity:0}
+#__ID__ .bdg{position:absolute;left:100px;top:972px;display:flex;gap:14px;opacity:0}
+/* cartel de bloque */
+#__ID__ .poster{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:25;overflow:hidden;background:linear-gradient(120deg,#E6008E 0%,#B3008F 48%,#5E3DE6 125%)}
+#__ID__ .poster .pnum{position:absolute;left:1180px;top:60px;font-size:760px;font-weight:800;letter-spacing:-.06em;line-height:1;color:rgba(255,255,255,.13);display:block}
+#__ID__ .poster .ring{position:absolute;border-radius:50%;border:4px solid rgba(255,255,255,.28);display:block}
+#__ID__ .poster .pk{position:absolute;left:100px;top:196px;color:#fff;font-size:34px;letter-spacing:.2em;font-weight:700;text-transform:uppercase;display:block}
+#__ID__ .poster .h{position:absolute;left:96px;color:#fff;font-size:212px}
+#__ID__ .poster .pc{position:absolute;left:100px;top:842px;display:flex;gap:18px}
+#__ID__ .poster .pc .chip{font-size:38px;background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.5);color:#fff}
+/* ventanas de captura (pan = imagen + cubiertas que se mueven juntas) */
+#__ID__ .pan{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0}
+#__ID__ .pan img{position:absolute;left:0;top:0;width:1440px;height:900px}
+#__ID__ .pan .cov{position:absolute;background:#fff;z-index:2}
+#__ID__ .pan .cov span{position:absolute;left:7px;top:27px;font-size:17px;color:#5b6472;white-space:nowrap}
+#__ID__ .wa1{left:780px;top:190px;width:1060px;height:640px}
+#__ID__ .wa2{left:1000px;top:330px;width:840px;height:560px}
+#__ID__ .pan .hlbox{border-width:4px}
+/* columnas de texto de cada plano */
+#__ID__ .bw{position:absolute;left:100px;font-size:126px}
+#__ID__ .bw.plus{color:var(--pink)}
+#__ID__ .eqchip{position:absolute;left:100px;top:612px;font-size:42px;font-weight:800;letter-spacing:.04em;color:#fff;background:linear-gradient(100deg,#7D29E0,#E6008E);border-radius:20px;padding:.38em .8em;border:none;box-shadow:0 18px 40px rgba(125,41,224,.35)}
+#__ID__ .pj{position:absolute;left:96px;font-size:194px;display:block}
+#__ID__ .pj.grad .r,#__ID__ .pj.grad{background:linear-gradient(95deg,#7D29E0,#E6008E);-webkit-background-clip:text;background-clip:text;color:transparent}
+#__ID__ .cch{position:absolute;left:100px;font-size:38px}
+/* rail de pasos */
+#__ID__ .rail{position:absolute;left:100px;top:230px;width:460px;height:560px}
+#__ID__ .rline{position:absolute;left:44px;top:80px;width:4px;height:380px;background:#E4E7EC;border-radius:2px;display:block}
+#__ID__ .rlf{position:absolute;left:44px;top:80px;width:4px;height:380px;background:linear-gradient(#7D29E0,#E6008E);border-radius:2px;transform-origin:50% 0;display:block}
+#__ID__ .st{position:absolute;left:0;width:460px;height:160px}
+#__ID__ .sbg{position:absolute;inset:0;border-radius:30px;background:var(--lila);border:2px solid var(--acc);box-shadow:0 18px 40px rgba(125,41,224,.2);opacity:0}
+#__ID__ .sn{position:absolute;left:14px;top:48px;width:64px;height:64px;border-radius:50%;background:#fff;border:3px solid #D0D5DD;color:#667085;font-weight:800;font-size:30px;line-height:58px;text-align:center;box-sizing:border-box}
+#__ID__ .stx{position:absolute;left:100px;top:0;width:350px;height:160px;display:flex;align-items:center;font-size:36px;line-height:1.15;font-weight:700;letter-spacing:-.01em;color:#667085}
+/* ventanas de vídeo */
+#__ID__ .vw{position:absolute;left:600px;top:190px;width:1240px;height:697px;border-radius:30px;overflow:hidden;background:#14091F;box-shadow:0 50px 120px rgba(47,18,94,.45),0 0 0 8px #fff,0 0 0 10px rgba(125,41,224,.25)}
+#__ID__ .vw video{position:absolute;left:0;top:0;width:1240px;height:697px;object-fit:cover;display:block}
+#__ID__ .vw.v4{transform-origin:100% 0}
+#__ID__ .vlab{position:absolute;left:600px;top:912px;display:flex;align-items:center;gap:12px;font-size:30px;font-weight:700;color:#475467;white-space:nowrap}
+#__ID__ .vlab i{display:block;width:0;height:0;border-left:20px solid var(--c);border-top:12px solid transparent;border-bottom:12px solid transparent}
+#__ID__ .vlab.l4{left:1070px;top:652px}
+#__ID__ .stk{position:absolute;right:48px;top:786px;font-size:58px;font-weight:800;letter-spacing:-.02em;line-height:1;color:#fff;background:var(--c);border-radius:22px;padding:.3em .62em;white-space:nowrap;box-shadow:0 22px 50px rgba(230,0,142,.4);display:block}
+#__ID__ .stk.vio{background:#7D29E0;box-shadow:0 22px 50px rgba(125,41,224,.4)}
+#__ID__ .stk.s4{right:80px;top:548px;font-size:42px}
+/* barrido */
+#__ID__ .sweep{position:absolute;left:0;top:-100px;width:2600px;height:1280px;z-index:40;background:linear-gradient(90deg,rgba(230,0,142,0) 0,#E6008E 7%,#7D29E0 50%,#E6008E 93%,rgba(230,0,142,0) 100%)}
+/* final */
+#__ID__ .h1{position:absolute;left:96px;top:290px;font-size:214px;display:block;white-space:nowrap}
+#__ID__ .h1 span{display:inline-block}
+#__ID__ .h1 .g{background:linear-gradient(95deg,#E6008E,#7D29E0);-webkit-background-clip:text;background-clip:text;color:transparent}
+#__ID__ .h1sub{position:absolute;left:100px;top:548px;font-size:54px;font-weight:800;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+#__ID__ .shock{position:absolute;left:380px;top:390px;width:300px;height:300px;margin:-150px 0 0 -150px;border-radius:50%;border:8px solid var(--pink);display:block;opacity:0}
+#__ID__ .spark{opacity:0;position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:7px;background:var(--pink);display:block;opacity:0}
+#__ID__ .card30{position:absolute;left:1070px;top:700px;width:770px;height:200px;box-sizing:border-box;padding:18px 36px;border-radius:30px}
+#__ID__ .card30 .n{font-size:112px;font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--acc);white-space:nowrap}
+#__ID__ .card30 .t{font-size:34px;font-weight:600;color:#475467;margin-top:10px;white-space:nowrap}
+<!--HTML-->
+<div class="stage" style="--c:#E6008E">
+  <div class="world">
+    <div class="dotgrid"></div>
+    <i class="blob b1"></i><i class="blob b2"></i>
+
+    <!-- B: captura del blog + «Coursera + Udemy» -->
+    <div class="bw h" style="top:262px"><span class="mask"><span class="r bw1">Coursera</span></span></div>
+    <div class="bw h plus" style="top:398px"><span class="mask"><span class="r bw2"><span style="color:#FF01A2">+</span> <span style="color:#0D1320">Udemy</span></span></span></div>
+    <div class="eqchip chip">= UNA SOLA EMPRESA</div>
+    <div class="shotwin wa1"><div class="sbar"><i></i><i></i><i></i><div class="url">blog.coursera.org</div></div>
+      <div class="view"><div class="pan" data-layout-allow-overflow><img src="assets/captures/coursera-helix-blog.png"/>
+        <div class="cov" style="left:318px;top:314px;width:306px;height:56px"><span>September 9, 2026</span></div>
+        <div class="hlbox hb1"></div><div class="hlbox hb2"></div></div></div></div>
+
+    <!-- C: nota de prensa + PROJECT HELIX -->
+    <div class="pj fwd h" style="top:236px;color:#7D29E0"><span class="mask"><span class="r fw">FWD 2026</span></span></div>
+    <div class="pj pjA h" style="top:236px">PROJECT</div>
+    <div class="pj pjB h grad" style="top:440px">HELIX</div>
+    <div class="cch chip dark" style="top:700px;color:#7D29E0;border-color:#7D29E0;background:#F2E7FC">Previsualizado en FWD 2026</div>
+    <div class="cch chip" style="top:790px;font-weight:800">Plataforma «AI-native»</div>
+    <div class="shotwin wa2"><div class="sbar"><i></i><i></i><i></i><div class="url">investor.coursera.com</div></div>
+      <div class="view"><div class="pan" data-layout-allow-overflow><img src="assets/captures/coursera-helix.png"/>
+        <div class="hlbox hb1"></div><div class="hlbox hb2"></div></div></div></div>
+
+    <!-- D-F: rail de pasos + vídeos oficiales -->
+    <div class="rail">
+      <i class="rline"></i><i class="rlf"></i>
+      <div class="st st1" style="top:0"><div class="sbg"></div><div class="sn">1</div><div class="stx">Objetivo de negocio en lenguaje natural</div></div>
+      <div class="st st2" style="top:190px"><div class="sbg"></div><div class="sn">2</div><div class="stx">Habilidades verificadas y rutas adaptativas</div></div>
+      <div class="st st3" style="top:380px"><div class="sbg"></div><div class="sn">3</div><div class="stx">Registro portable de habilidades</div></div>
+    </div>
+    <div class="vw v1"><video id="s09-vid1" src="assets/video/helix-demo.mp4" muted playsinline class="clip" data-start="7.2" data-duration="3.95" data-media-start="72.2" data-track-index="2"></video></div>
+    <div class="vw v2"><video id="s09-vid2" src="assets/video/helix-demo.mp4" muted playsinline class="clip" data-start="11.1" data-duration="1.7" data-media-start="90.4" data-track-index="3"></video></div>
+    <div class="vw v3"><video id="s09-vid3" src="assets/video/helix-demo.mp4" muted playsinline class="clip" data-start="12.75" data-duration="1.65" data-media-start="154.6" data-track-index="4"></video></div>
+    <div class="vw v4"><video id="s09-vid4" src="assets/video/helix-llm.mp4" muted playsinline class="clip" data-start="14.3" data-duration="2.75" data-media-start="15.3" data-track-index="5"></video></div>
+    <div class="vlab l1"><i></i>Vídeo oficial · Coursera + Udemy</div>
+    <div class="vlab l4"><i></i>Vídeo oficial · Coursera + Udemy</div>
+    <div class="stk sa">OBJETIVO DE NEGOCIO</div>
+    <div class="stk vio sb">EN LENGUAJE NATURAL</div>
+    <div class="stk sc">HABILIDADES VERIFICADAS</div>
+    <div class="stk vio sd">REGISTRO PORTABLE</div>
+    <div class="stk s4">DENTRO DE LOS ASISTENTES DE IA</div>
+
+    <!-- G: H1 2027 -->
+    <i class="shock"></i>
+    <div class="h1 h"><span class="g">H1</span> <span>2027</span></div>
+    <div class="h1sub">disponibilidad general</div>
+    <div class="card30 panel"><div class="n">0</div><div class="t">instructores y socios de contenido</div></div>
+    <i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i><i class="spark"></i>
+  </div>
+
+  <div class="stripwrap" data-layout-allow-occlusion><div class="strip"></div></div>
+  <div class="tagrow tag">Plataformas y contenidos</div>
+  <div class="bdg"><span class="badge date">9 sep 2026</span><span class="badge src">coursera.org</span></div>
+
+  <div class="sweep" data-layout-allow-occlusion data-layout-allow-overflow></div>
+
+  <!-- A: cartel de bloque -->
+  <div class="poster">
+        <i class="ring" style="left:1240px;top:520px;width:560px;height:560px"></i>
+    <i class="ring" style="left:1340px;top:620px;width:360px;height:360px"></i>
+    <div class="pk">Bloque 2 de 4</div>
+    <div class="h" style="top:292px"><span class="mask"><span class="r pp1">PLATAFORMAS</span></span></div>
+    <div class="h" style="top:512px"><span class="mask"><span class="r pp2">Y CONTENIDOS</span></span></div>
+    <div class="pc"><span class="chip">Coursera + Udemy</span><span class="chip">Articulate</span><span class="chip">Skillsoft</span><span class="chip">Coursera</span></div>
+  </div>
+</div>
+<!--JS-->
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 2.0, 0.9, 0);
+$$q(".strip .lb").forEach((el) => { if (el.textContent === "Esta semana") el.style.color = "#C4007E"; });
+tl.fromTo(Q(".stripwrap"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.9);
+tl.set(Q(".world"), { opacity: 0 }, 0);
+tl.set(Q(".world"), { opacity: 1 }, 1.85);
+
+/* ---------- utilidades locales ---------- */
+const pp = (W, H, fx, fy, s) => ({ x: W / 2 - fx * s, y: H / 2 - fy * s, scale: s });
+const A1 = { W: 1060, H: 586 }, A2 = { W: 840, H: 506 };
+function panSet(sel, A, fx, fy, s) { tl.set(Q(sel + " .pan"), pp(A.W, A.H, fx, fy, s), 0); }
+function panCam(sel, A, fx, fy, s, at, d = 1.0, ease = "power3.inOut") { tl.to(Q(sel + " .pan"), { ...pp(A.W, A.H, fx, fy, s), duration: d, ease }, at); }
+function hlOff(sel, at) { tl.to(Q(sel), { opacity: 0, duration: 0.25 }, at); }
+function sweep(t0, d = 0.7) { tl.fromTo(Q(".sweep"), { x: -2800 }, { x: 1900, duration: d, ease: "power2.inOut" }, t0); }
+const kill = (sel, at) => tl.set(Q(sel), { opacity: 0 }, at);
+tl.set(Q(".sweep"), { skewX: -12 }, 0);
+
+/* cámara lenta sobre todo el mundo */
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.035, duration: DUR, ease: "none", transformOrigin: "50% 50%" }, 0);
+tl.fromTo(Q(".blob.b1"), { x: 0 }, { x: -160, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".blob.b2"), { x: 0 }, { x: 140, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".dotgrid"), { opacity: 0 }, { opacity: 1, duration: 0.6 }, 1.9);
+tl.fromTo(Q(".dotgrid"), { y: 0 }, { y: -48, duration: DUR, ease: "none" }, 0);
+
+/* ---------- A · cartel de bloque (0 – 2.3 s) ---------- */
+rise(".pp1", 0.0, 0.7); rise(".pp2", 0.12, 0.7);
+up(".poster .pk", 0.1, { d: 0.5 });
+tl.fromTo(Q(".poster .pnum"), { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.9, ease: E }, 0);
+tl.fromTo(Q(".poster .ring"), { scale: 0.6, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.9, ease: E, stagger: 0.1 }, 0.1);
+$$q(".poster .pc .chip").forEach((c, i) => tl.fromTo(c, { opacity: 0, y: 40, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR }, 0.55 + i * 0.12));
+tl.to(Q(".poster"), { yPercent: -100, duration: 0.6, ease: "power4.inOut" }, 1.7);
+tl.set(Q(".poster"), { opacity: 0 }, 2.35);
+
+/* marco fijo: etiqueta de bloque + insignias */
+fade(".tagrow", 2.1, 0.4); fade(".bdg", 2.2, 0.4);
+
+/* ---------- B · blog: «Coursera + Udemy» (1.9 – 4.85 s) ---------- */
+panSet(".wa1", A1, 720, 255, 1.25);
+tl.fromTo(Q(".wa1"), { opacity: 0, x: 420, rotationY: -38, scale: 0.86, transformPerspective: 1700, filter: "blur(10px)" },
+  { opacity: 1, x: 0, rotationY: -5, scale: 1, filter: "blur(0px)", duration: 0.9, ease: E }, 1.85);
+tl.to(Q(".wa1"), { rotationY: 3, duration: 2.6, ease: "sine.inOut" }, 2.8);
+hl(".wa1 .hb1", 535, 195, 244, 50, 2.55);
+hlOff(".wa1 .hb1", 3.2);
+panCam(".wa1", A1, 720, 575, 1.3, 3.15, 0.95);
+hl(".wa1 .hb2", 568, 608, 300, 60, 4.0);
+rise(".bw1", Math.max(cue("coursera"), 2.2), 0.8);
+rise(".bw2", Math.max(cue("udemy") - 0.1, 2.75), 0.8);
+tl.fromTo(Q(".eqchip"), { opacity: 0, scale: 0.4, rotation: -8 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.6, ease: SPR }, cue("una"));
+tl.to(Q(".bw1, .bw2"), { x: -30, opacity: 0, duration: 0.25, ease: "power3.in" }, 4.55);
+tl.to(Q(".eqchip"), { x: -30, opacity: 0, duration: 0.25, ease: "power3.in" }, 4.55);
+tl.to(Q(".wa1"), { x: 260, rotationY: 40, opacity: 0, scale: 0.8, duration: 0.35, ease: "power3.in" }, 4.55);
+sweep(4.3, 0.5);
+
+/* ---------- C · PROJECT HELIX + nota de prensa (4.85 – 7.2 s) ---------- */
+panSet(".wa2", A2, 677, 590, 0.7);
+tl.fromTo(Q(".wa2"), { opacity: 0, x: 500, rotationY: 40, scale: 0.9, transformPerspective: 1700 },
+  { opacity: 1, x: 0, rotationY: -9, scale: 1, duration: 0.9, ease: E }, 4.65);
+tl.to(Q(".wa2"), { rotationY: -2, duration: 2.3, ease: "sine.inOut" }, 5.5);
+hl(".wa2 .hb1", 878, 588, 352, 52, 5.95);
+hlOff(".wa2 .hb1", 6.5);
+panCam(".wa2", A2, 680, 800, 0.74, 6.4, 0.7);
+hl(".wa2 .hb2", 163, 848, 852, 34, 6.95);
+tl.fromTo(Q(".cch"), { opacity: 0, x: -60 }, { opacity: 1, x: 0, duration: 0.6, ease: E, stagger: 0.35 }, 4.95);
+tl.fromTo(Q(".fwd"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, 4.93);
+rise(".fw", 4.95, 0.7);
+tl.to(Q(".fwd"), { x: -140, opacity: 0, duration: 0.2, ease: "power3.in" }, cue("project") - 0.28);
+slam(".pjA", cue("project"));
+slam(".pjB", cue("helix"));
+tl.to(Q(".pj, .cch"), { x: -80, opacity: 0, duration: 0.28, ease: "power3.in" }, 6.92);
+tl.to(Q(".wa2"), { x: 160, rotationY: -35, opacity: 0, scale: 0.85, duration: 0.3, ease: "power3.in" }, 6.92);
+sweep(6.85);
+
+/* ---------- D–F · vídeos oficiales con rail ---------- */
+tl.fromTo(Q(".rail"), { opacity: 0, x: -120 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, 7.15);
+tl.set(Q(".rlf"), { scaleY: 0 }, 0);
+const stepAct = (i, t) => {
+  tl.to(Q(".st" + i + " .sbg"), { opacity: 1, duration: 0.3 }, t);
+  tl.to(Q(".st" + i + " .sn"), { backgroundColor: "#7D29E0", borderColor: "#7D29E0", color: "#fff", scale: 1.12, duration: 0.35, ease: SPR }, t);
+  tl.to(Q(".st" + i + " .stx"), { color: "#0D1320", duration: 0.3 }, t);
+  if (i > 1) {
+    const p = i - 1;
+    tl.to(Q(".st" + p + " .sbg"), { opacity: 0, duration: 0.3 }, t);
+    tl.to(Q(".st" + p + " .sn"), { scale: 1, duration: 0.3 }, t);
+  }
+};
+stepAct(1, 7.35); stepAct(2, 11.15); stepAct(3, 12.8);
+tl.to(Q(".rlf"), { scaleY: 0.5, duration: 0.5, ease: "power2.out" }, 11.15);
+tl.to(Q(".rlf"), { scaleY: 1, duration: 0.5, ease: "power2.out" }, 12.8);
+tl.to(Q(".rail"), { x: -140, opacity: 0, duration: 0.3, ease: "power3.in" }, 14.1);
+
+/* clip 1: «What do you want to learn today?» (7.2 – 11.1 s) */
+tl.fromTo(Q(".v1"), { opacity: 0, rotationY: 32, x: 260, scale: 0.9, transformPerspective: 1800 },
+  { opacity: 1, rotationY: 0, x: 0, scale: 1, duration: 0.7, ease: E }, 7.22);
+tl.fromTo(Q(".v1"), { y: 0 }, { y: -10, duration: 3.3, ease: "sine.inOut" }, 7.9);
+fade(".vlab.l1", 7.5, 0.4);
+tl.fromTo(Q(".sa"), { opacity: 0, scale: 0.4, rotation: -9 }, { opacity: 1, scale: 1, rotation: -3, duration: 0.55, ease: SPR }, cue("objetivo"));
+tl.to(Q(".sa"), { opacity: 0, y: -18, duration: 0.2 }, cue("lenguaje") - 0.05);
+tl.fromTo(Q(".sb"), { opacity: 0, scale: 0.4, rotation: 8 }, { opacity: 1, scale: 1, rotation: 2, duration: 0.55, ease: SPR }, cue("lenguaje"));
+tl.set(Q(".v1"), { opacity: 0 }, 11.1); tl.set(Q(".sb"), { opacity: 0 }, 11.05);
+sweep(10.75);
+
+/* clip 2: «task-specific paths» (11.1 – 12.75 s) */
+tl.fromTo(Q(".v2"), { opacity: 0, y: 160, rotation: -5, scale: 0.9 }, { opacity: 1, y: 0, rotation: 0, scale: 1, duration: 0.55, ease: E }, 11.12);
+tl.fromTo(Q(".sc"), { opacity: 0, scale: 0.4, rotation: -9 }, { opacity: 1, scale: 1, rotation: -2, duration: 0.55, ease: SPR }, cue("habilidades"));
+tl.set(Q(".v2"), { opacity: 0 }, 12.75); tl.set(Q(".sc"), { opacity: 0 }, 12.72);
+sweep(12.4);
+
+/* clip 3: «Shareable skills record» (12.75 – 14.4 s) */
+tl.fromTo(Q(".v3"), { opacity: 0, scale: 0.6, rotation: 4 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: SPR }, 12.77);
+tl.fromTo(Q(".sd"), { opacity: 0, scale: 0.4, rotation: 8 }, { opacity: 1, scale: 1, rotation: 3, duration: 0.55, ease: SPR }, cue("registro"));
+tl.set(Q(".v3"), { opacity: 0 }, 14.35); tl.set(Q(".sd"), { opacity: 0 }, 14.3);
+tl.set(Q(".vlab.l1"), { opacity: 0 }, 14.3);
+sweep(14.0);
+
+/* ---------- G · clip 4 (asistentes de IA) + H1 2027 ---------- */
+tl.fromTo(Q(".v4"), { opacity: 0, x: 520, rotationY: 30, scale: 0.55, transformPerspective: 1800 },
+  { opacity: 1, x: 0, rotationY: 0, scale: 0.62, duration: 0.6, ease: E }, 14.33);
+fade(".vlab.l4", 14.7, 0.4);
+tl.fromTo(Q(".stk.s4"), { opacity: 0, scale: 0.4, rotation: -9 }, { opacity: 1, scale: 1, rotation: -3, duration: 0.55, ease: SPR }, 14.75);
+/* H1 2027 */
+const hAt = cue("semestre");
+slam(".h1", hAt);
+tl.fromTo(Q(".h1sub"), { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, hAt + 0.45);
+tl.fromTo(Q(".shock"), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 5, duration: 0.9, ease: "power2.out", immediateRender: false }, hAt + 0.2);
+const spk = $$q(".spark");
+spk.forEach((el, i) => {
+  const a = (i / spk.length) * Math.PI * 2 + 0.3, r = 360 + (i % 3) * 120;
+  tl.set(el, { x: 380, y: 410, background: i % 2 ? "#7D29E0" : "#E6008E" }, 0);
+  tl.fromTo(el, { opacity: 1, scale: 1, rotation: 0, x: 380, y: 410 }, { opacity: 0, scale: 0.2, rotation: 200, x: 380 + Math.cos(a) * r, y: 410 + Math.sin(a) * r * 0.7, duration: 0.95, ease: "power3.out", immediateRender: false }, hAt + 0.2);
+});
+/* 30.000+ */
+tl.fromTo(Q(".card30"), { opacity: 0, y: 50, rotation: 2 }, { opacity: 1, y: 0, rotation: 0, duration: 0.7, ease: E }, 15.2);
+{
+  const el = $q(".card30 .n"), o = { v: 0 };
+  tl.to(o, { v: 30000, duration: 1.3, ease: "power3.out", onUpdate: () => { el.textContent = String(Math.round(o.v)).replace(/\B(?=(\d{3})+(?!\d))/g, ".") + "+"; } }, 15.3);
+}
+
+sceneOut("whip");
+<!--SFX-->
+[{"k":"impact","t":0.12,"v":0.45},{"k":"swipe","t":1.7,"v":0.4},{"k":"shutter","t":1.95,"v":0.4},{"k":"swipe","t":4.5,"v":0.4},{"k":"impact","t":5.8,"v":0.5},{"k":"whoosh","t":6.85,"v":0.4},{"k":"whoosh","t":10.75,"v":0.35},{"k":"whoosh","t":12.4,"v":0.35},{"k":"whoosh","t":14.0,"v":0.4},{"k":"impact","t":14.5,"v":0.55},{"k":"counter","t":15.3,"v":0.3}]

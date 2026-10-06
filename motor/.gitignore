@@ -1,0 +1,17 @@
+node_modules
+out
+public/estilos
+fixtures/demo/media/*.mp4
+fixtures/demo/media/extras/*.png
+fixtures/demo/media/extras/*.jpg
+.DS_Store
+fixtures/demo-v2/media/*.mp4
+fixtures/demo-v2/media/extras
+fixtures/demo-v2/.tmp
+fixtures/demo/.tmp
+fixtures/milikito/media/*.mp4
+fixtures/milikito/media/*.m4a
+fixtures/milikito/media/extras
+fixtures/milikito/.tmp-*
+fixtures/narracion/media/*.m4a
+fixtures/narracion/media/extras

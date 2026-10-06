@@ -1,0 +1,17 @@
+{
+  "name": "videos-opus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer-core": "^25.12.0",
+    "si9": "npm:simple-icons@^9.21.0",
+    "simple-icons": "^16.32.0"
+  }
+}

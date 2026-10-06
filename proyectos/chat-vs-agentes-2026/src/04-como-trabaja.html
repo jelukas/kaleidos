@@ -1,0 +1,326 @@
+<!--CSS-->
+#__ID__ .dots{position:absolute;inset:-48px;background-image:radial-gradient(circle,rgba(125,41,224,.26) 2px,transparent 2.6px);background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse 62% 56% at 50% 46%,#000 0,rgba(0,0,0,.15) 70%,transparent 100%);mask-image:radial-gradient(ellipse 62% 56% at 50% 46%,#000 0,rgba(0,0,0,.15) 70%,transparent 100%)}
+#__ID__ .world{position:absolute;left:0;top:34px;width:1920px;height:1080px;transform-origin:960px 450px}
+#__ID__ .net{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:2;overflow:visible}
+#__ID__ .net .ln{fill:none;stroke:#9B61F6;stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .net .lnb{fill:none;stroke:rgba(155,97,246,.22);stroke-width:16;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .net .ring{fill:none;stroke:#C9A6F7;stroke-width:3;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .net .orbitpath{fill:none;stroke:rgba(125,41,224,.35);stroke-width:3;stroke-dasharray:2 14;stroke-linecap:round;opacity:0}
+#__ID__ .net .selrect{fill:rgba(125,41,224,.06);stroke:#7D29E0;stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .fgrp{position:absolute;inset:0;transform-origin:960px 450px;z-index:20}
+#__ID__ .fold{position:absolute;left:780px;top:310px;width:360px;height:280px;opacity:0}
+#__ID__ .fold svg{position:absolute;left:0;top:0;width:360px;height:280px;overflow:visible}
+#__ID__ .fold .back{z-index:1} #__ID__ .fold .front{z-index:4;filter:drop-shadow(0 26px 30px rgba(47,18,94,.35))}
+#__ID__ .paper{position:absolute;left:52px;top:52px;width:256px;height:176px;border-radius:12px;background:#fff;border:1px solid #E4E7EC;z-index:2;box-shadow:0 6px 14px rgba(47,18,94,.18);
+  background-image:linear-gradient(#EADCFB,#EADCFB),linear-gradient(#EDEFF3,#EDEFF3),linear-gradient(#EDEFF3,#EDEFF3);background-repeat:no-repeat;background-size:90px 12px,200px 8px,160px 8px;background-position:22px 22px,22px 52px,22px 74px}
+#__ID__ .paper.pa2{z-index:3;left:60px;top:60px}
+#__ID__ .hd{position:absolute;width:20px;height:20px;margin:-10px 0 0 -10px;background:#fff;border:4px solid #7D29E0;border-radius:6px;opacity:0;box-sizing:border-box}
+#__ID__ .badge{position:absolute;left:1128px;top:258px;width:64px;height:64px;border-radius:50%;background:#7D29E0;box-shadow:0 10px 24px rgba(125,41,224,.5);opacity:0}
+#__ID__ .badge svg{position:absolute;inset:0;width:64px;height:64px}
+#__ID__ .fchip{position:absolute;left:960px;top:638px;margin-left:-110px;width:220px;text-align:center;font-weight:600;font-size:38px;letter-spacing:-.01em;color:#7D29E0;background:#F2E7FC;border:2px solid #7D29E0;border-radius:999px;padding:6px 0 8px;opacity:0;box-sizing:border-box}
+#__ID__ .fl{position:absolute;left:0;top:0;width:92px;height:112px;margin:-56px 0 0 -46px;opacity:0;filter:drop-shadow(0 14px 18px rgba(47,18,94,.22))}
+#__ID__ .fl svg{display:block;width:92px;height:112px;overflow:visible}
+#__ID__ .ck{position:absolute;right:-16px;top:-14px;width:40px;height:40px;border-radius:50%;background:#067647;border:3px solid #fff;box-sizing:border-box;opacity:0}
+#__ID__ .ck svg{position:absolute;inset:0;width:34px;height:34px}
+#__ID__ .pill{position:absolute;height:112px;border-radius:56px;background:#fff;border:1px solid #E4E7EC;box-shadow:0 22px 50px rgba(13,19,32,.14),0 0 0 7px rgba(125,41,224,.07);display:flex;align-items:center;padding-left:16px;box-sizing:border-box;font-weight:600;font-size:40px;letter-spacing:-.01em;z-index:10;opacity:0}
+#__ID__ .pill .bd{width:80px;height:80px;border-radius:50%;background:#F2E7FC;display:flex;align-items:center;justify-content:center;margin-right:22px;flex:none}
+#__ID__ .pill svg{width:46px;height:46px;overflow:visible}
+#__ID__ .pill .live{position:absolute;right:-4px;top:-4px;width:26px;height:26px;border-radius:50%;background:#067647;border:4px solid #fff;box-sizing:border-box;opacity:0}
+#__ID__ .ic{fill:none;stroke:#7D29E0;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1}
+#__ID__ .icf{fill:#FF01A2;stroke:none}
+#__ID__ .prog{position:absolute;left:296px;top:480px;width:220px;height:220px;border-radius:50%;background:#fff;box-shadow:0 26px 60px rgba(13,19,32,.16),0 0 0 8px rgba(125,41,224,.07);z-index:10;opacity:0}
+#__ID__ .prog svg{position:absolute;left:0;top:0;width:220px;height:220px;overflow:visible}
+#__ID__ .prog .arc{stroke-dasharray:1;stroke-dashoffset:1}
+#__ID__ .hand{position:absolute;left:107px;top:46px;width:6px;height:64px;border-radius:3px;background:#0D1320;transform-origin:50% 100%}
+#__ID__ .hand.s{left:108px;top:38px;width:4px;height:72px;background:#FF01A2}
+#__ID__ .hub{position:absolute;left:101px;top:101px;width:18px;height:18px;border-radius:50%;background:#7D29E0;border:4px solid #fff;box-sizing:border-box}
+#__ID__ .lab{position:absolute;font-weight:600;font-size:38px;letter-spacing:-.01em;background:#fff;border:1px solid #E4E7EC;border-radius:999px;padding:6px 26px 8px;box-shadow:0 12px 28px rgba(13,19,32,.12);z-index:10;opacity:0;white-space:nowrap}
+#__ID__ .tu{position:absolute;left:1439px;top:515px;width:150px;height:150px;border-radius:50%;background:#fff;box-shadow:0 26px 60px rgba(13,19,32,.16),0 0 0 8px rgba(125,41,224,.07);z-index:10;opacity:0}
+#__ID__ .tu svg{position:absolute;inset:0;width:150px;height:150px;overflow:visible}
+#__ID__ .steam{fill:none;stroke:#9B61F6;stroke-width:5;stroke-linecap:round;stroke-dasharray:1}
+#__ID__ .strike{position:absolute;left:280px;top:634px;width:300px;height:112px;border-radius:56px;background:#fff;border:1px solid #E4E7EC;box-shadow:0 22px 50px rgba(13,19,32,.14);z-index:12;opacity:0}
+#__ID__ .strike svg{position:absolute;left:0;top:0;width:300px;height:112px;overflow:visible}
+#__ID__ .pk{position:absolute;left:0;top:0;width:16px;height:16px;margin:-8px 0 0 -8px;border-radius:50%;background:#FF01A2;border:3px solid #fff;box-sizing:border-box;box-shadow:0 0 14px rgba(255,1,162,.7);z-index:6;opacity:0}
+#__ID__ .pt{position:absolute;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;opacity:0;z-index:40}
+#__ID__ .og{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:radial-gradient(circle at 40% 36%,#E2CCFF 0 20%,#9B61F6 55%,#FF01A2 140%);z-index:45;filter:blur(2px)}
+#__ID__ .boom{position:absolute;left:840px;top:364px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,#fff 0,#E2CCFF 6%,#9B61F6 17%,#5E3DE6 30%,#2F125E 55%,#2F125E 100%);opacity:0;z-index:70}
+#__ID__ .shock{position:absolute;left:840px;top:364px;width:240px;height:240px;border-radius:50%;border:8px solid rgba(255,255,255,.85);box-sizing:border-box;opacity:0;z-index:71}
+<!--HTML-->
+<div class="stage">
+  <div class="bg clip" data-start="0" data-duration="__DUR__" data-track-index="0"><div class="dots"></div></div>
+  <div class="world">
+    <svg class="net" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="pg___ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7D29E0"/><stop offset="1" stop-color="#FF01A2"/></linearGradient>
+      </defs>
+      <ellipse class="orbitpath" cx="960" cy="482" rx="330" ry="125"/>
+      <ellipse class="ringx" cx="960" cy="450" rx="640" ry="280" fill="none" stroke="#C9A6F7" stroke-width="3" opacity="0"/>
+      <path class="lnb lb1" pathLength="1"/><path class="lnb lb2" pathLength="1"/><path class="lnb lb3" pathLength="1"/><path class="lnb lb4" pathLength="1"/>
+      <path class="ln ln1" pathLength="1"/><path class="ln ln2" pathLength="1"/><path class="ln ln3" pathLength="1"/><path class="ln ln4" pathLength="1"/>
+      <rect class="selrect" x="758" y="288" width="404" height="324" rx="30" pathLength="1"/>
+    </svg>
+
+    <div class="pill p1" style="left:241px;top:254px;width:330px"><div class="bd"><svg viewBox="0 0 48 48"><rect class="ic" x="6" y="11" width="36" height="26" rx="5" pathLength="1"/><path class="ic" d="M8 15 L24 28 L40 15" pathLength="1"/></svg></div>Correo<div class="live"></div></div>
+    <div class="pill p2" style="left:760px;top:114px;width:400px"><div class="bd"><svg viewBox="0 0 48 48"><rect class="ic" x="7" y="10" width="34" height="31" rx="6" pathLength="1"/><path class="ic" d="M7 20 H41" pathLength="1"/><path class="ic" d="M16 6 V13" pathLength="1"/><path class="ic" d="M32 6 V13" pathLength="1"/><circle class="icf" cx="31" cy="31" r="4"/><circle cx="17" cy="31" r="2.4" fill="#7D29E0"/></svg></div>Calendario<div class="live"></div></div>
+    <div class="pill p3" style="left:1334px;top:254px;width:360px"><div class="bd"><svg viewBox="0 0 48 48"><circle class="ic" cx="18" cy="17" r="6.5" pathLength="1"/><path class="ic" d="M5 38 C5 30 11 27 18 27 C25 27 31 30 31 38" pathLength="1"/><circle class="ic" cx="33" cy="19" r="5" pathLength="1"/><path class="ic" d="M31 28 C38 27 43 30 43 37" pathLength="1"/></svg></div>Clientes<div class="live"></div></div>
+
+    <div class="prog">
+      <svg viewBox="0 0 220 220">
+        <circle cx="110" cy="110" r="92" fill="none" stroke="#F2E7FC" stroke-width="14"/>
+        <circle class="arc" cx="110" cy="110" r="92" fill="none" stroke="url(#pg___ID__)" stroke-width="14" stroke-linecap="round" pathLength="1" transform="rotate(-90 110 110)"/>
+        <g stroke="#C9A6F7" stroke-width="3" stroke-linecap="round"><path d="M110 28 V38"/><path d="M110 182 V192"/><path d="M28 110 H38"/><path d="M182 110 H192"/></g>
+      </svg>
+      <div class="hand"></div><div class="hand s"></div><div class="hub"></div>
+    </div>
+    <div class="lab labp" style="left:251px;top:716px;width:310px;text-align:center;padding-left:0;padding-right:0">Segundo plano</div>
+
+    <div class="tu">
+      <svg viewBox="0 0 150 150">
+        <path class="ic" d="M42 70 H100 V92 C100 106 90 116 76 116 H66 C52 116 42 106 42 92 Z" pathLength="1" style="stroke-dasharray:none"/>
+        <path class="ic" d="M100 78 H108 C116 78 118 92 108 96 H98" pathLength="1" style="stroke-dasharray:none"/>
+        <path class="ic" d="M36 126 H106" pathLength="1" style="stroke-dasharray:none"/>
+        <path class="steam st1" d="M58 56 C52 48 64 44 58 34" pathLength="1"/>
+        <path class="steam st2" d="M72 58 C66 50 78 46 72 34" pathLength="1"/>
+        <path class="steam st3" d="M86 56 C80 48 92 44 86 34" pathLength="1"/>
+      </svg>
+    </div>
+    <div class="lab labt" style="left:1473px;top:690px;width:82px;text-align:center;padding-left:0;padding-right:0">Tú</div>
+
+    <div class="strike">
+      <svg viewBox="0 0 300 112">
+        <path class="ic" d="M92 78 C74 78 66 66 70 54 C74 40 90 36 100 42 C104 30 120 26 132 34 C142 24 164 30 164 48 C178 48 184 60 176 70 C172 76 166 78 160 78" pathLength="1" style="stroke-dasharray:none;stroke-width:5"/>
+        <path class="ic upa" d="M200 78 V32 M184 48 L200 32 L216 48" pathLength="1" style="stroke-dasharray:none;stroke-width:5;stroke:#5E3DE6"/>
+        <path class="ic dna" d="M244 34 V80 M228 64 L244 80 L260 64" pathLength="1" style="stroke-dasharray:none;stroke-width:5;stroke:#FF01A2"/>
+        <path class="slash" d="M44 94 L262 18" fill="none" stroke="#0D1320" stroke-width="10" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+      </svg>
+    </div>
+
+    <div class="fgrp">
+      <div class="fold">
+        <svg class="back" viewBox="0 0 360 280"><defs><linearGradient id="fb___ID__" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C7A0F8"/><stop offset="1" stop-color="#9B61F6"/></linearGradient></defs>
+          <path d="M20 44 Q20 22 42 22 H128 Q144 22 154 36 L166 54 H318 Q340 54 340 76 V238 Q340 262 316 262 H44 Q20 262 20 238 Z" fill="url(#fb___ID__)"/></svg>
+        <div class="paper pa1"></div><div class="paper pa2"></div><div class="paper pa3" style="z-index:3;left:56px;top:56px"></div>
+        <svg class="front" viewBox="0 0 360 280"><defs><linearGradient id="ff___ID__" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#A866F5"/><stop offset="0.55" stop-color="#7D29E0"/><stop offset="1" stop-color="#5E3DE6"/></linearGradient></defs>
+          <path d="M20 104 Q20 86 40 86 H320 Q340 86 340 104 V240 Q340 262 316 262 H44 Q20 262 20 240 Z" fill="url(#ff___ID__)"/>
+          <path d="M24 106 Q24 92 42 92 H318 Q336 92 336 106" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M150 182 L158 160 L166 182 L188 190 L166 198 L158 220 L150 198 L128 190 Z" fill="rgba(255,255,255,.85)" transform="translate(22 -4)"/>
+        </svg>
+      </div>
+      <div class="hd" style="left:758px;top:288px"></div><div class="hd" style="left:1162px;top:288px"></div><div class="hd" style="left:758px;top:612px"></div><div class="hd" style="left:1162px;top:612px"></div>
+      <div class="badge"><svg viewBox="0 0 64 64"><path class="ic" d="M19 33 L28 42 L46 23" pathLength="1" style="stroke:#fff;stroke-width:6"/></svg></div>
+      <div class="fchip">Mi carpeta</div>
+    </div>
+
+    <div class="files"></div>
+    <div class="pk pk1"></div><div class="pk pk2"></div><div class="pk pk3"></div><div class="pk pk4"></div>
+    <div class="pts"></div>
+    <div class="og og3"></div><div class="og og2"></div><div class="og og1"></div>
+    <div class="orb"></div>
+    <div class="ripple r1"></div>
+  </div>
+  <div class="boom"></div><div class="shock"></div>
+</div>
+<!--JS-->
+/* ===== datos ===== */
+const HX = 960, HY = 450;
+const LN = [
+  { c: [740, 360], p1: [571, 310] },    // Correo
+  { c: [1000, 330], p1: [960, 226] },   // Calendario
+  { c: [1180, 360], p1: [1334, 310] },  // Clientes
+  { c: [740, 540], p1: [513, 563] }     // Segundo plano
+];
+LN.forEach((l, i) => {
+  const d = `M${HX} ${HY} Q${l.c[0]} ${l.c[1]} ${l.p1[0]} ${l.p1[1]}`;
+  $q(".ln" + (i + 1)).setAttribute("d", d); $q(".lb" + (i + 1)).setAttribute("d", d);
+});
+const bez = (l, t) => { const u = 1 - t; return [u * u * HX + 2 * u * t * l.c[0] + t * t * l.p1[0], u * u * HY + 2 * u * t * l.c[1] + t * t * l.p1[1]]; };
+
+/* archivos que orbitan */
+const FT = [
+  { c: "#7D29E0", g: '<path d="M22 54 H70 M22 66 H70 M22 78 H52" stroke="#7D29E0" stroke-width="5" stroke-linecap="round"/>' },
+  { c: "#5E3DE6", g: '<rect x="20" y="48" width="52" height="38" rx="5" fill="none" stroke="#5E3DE6" stroke-width="4"/><path d="M20 61 H72 M20 74 H72 M46 48 V86" stroke="#5E3DE6" stroke-width="4"/>' },
+  { c: "#FF01A2", g: '<circle cx="34" cy="58" r="7" fill="#FF01A2"/><path d="M18 90 L40 66 L54 80 L62 72 L76 90 Z" fill="#FF01A2" opacity=".85"/>' },
+  { c: "#9B61F6", g: '<rect x="18" y="50" width="56" height="38" rx="6" fill="none" stroke="#9B61F6" stroke-width="4"/><path d="M34 60 H58 M34 70 H50" stroke="#9B61F6" stroke-width="4" stroke-linecap="round"/>' },
+  { c: "#7D29E0", g: '<circle cx="46" cy="68" r="19" fill="none" stroke="#7D29E0" stroke-width="4"/><path d="M40 58 L56 68 L40 78 Z" fill="#7D29E0"/>' },
+  { c: "#5E3DE6", g: '<path d="M22 56 H70 M22 68 H62 M22 80 H70 M22 92 H44" stroke="#5E3DE6" stroke-width="4" stroke-linecap="round"/>' }
+];
+const filesEl = $q(".files");
+FT.forEach((f) => {
+  const d = document.createElement("div"); d.className = "fl";
+  d.innerHTML = `<svg viewBox="0 0 92 112"><path d="M14 1 H62 L91 30 V98 Q91 111 78 111 H14 Q1 111 1 98 V14 Q1 1 14 1 Z" fill="#fff" stroke="#E4E7EC" stroke-width="2"/><path d="M62 1 L91 30 H74 Q62 30 62 18 Z" fill="${f.c}" opacity=".22"/><rect x="1" y="1" width="12" height="110" rx="6" fill="${f.c}" opacity="0"/>${f.g}</svg><div class="ck"><svg viewBox="0 0 34 34"><path d="M9 17 L15 23 L25 11" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+  filesEl.appendChild(d);
+});
+const FL = $$q(".fl");
+const orbit = { a: 20, r: 0 };
+function placeFiles() {
+  FL.forEach((el, i) => {
+    const ang = (orbit.a + i * 60) * Math.PI / 180, s = Math.sin(ang), c = Math.cos(ang);
+    const sc = (0.66 + 0.34 * (s + 1) / 2) * (0.3 + 0.7 * Math.min(1, orbit.r));
+    gsap.set(el, { x: HX + 330 * orbit.r * c, y: 482 + 125 * orbit.r * s, scale: sc, zIndex: s > 0 ? 30 : 12, opacity: orbit.r < 0.02 ? 0 : 0.78 + 0.22 * (s + 1) / 2 });
+  });
+}
+
+/* partículas */
+const ptsEl = $q(".pts");
+function burst(x, y, at, n = 10, rad = 130, rot = 0) {
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement("div"); el.className = "pt";
+    el.style.background = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6"][i % 4];
+    const sz = 8 + (i % 3) * 5; el.style.width = el.style.height = sz + "px"; el.style.margin = `${-sz / 2}px 0 0 ${-sz / 2}px`;
+    ptsEl.appendChild(el);
+    const ang = rot + i * (Math.PI * 2 / n), r = rad * (0.7 + 0.5 * ((i * 7) % 5) / 4);
+    tl.fromTo(el, { x, y, opacity: 0, scale: 0.3 }, { x, y, opacity: 1, scale: 1, duration: 0.06, ease: "none" }, at);
+    tl.to(el, { x: x + Math.cos(ang) * r, y: y + Math.sin(ang) * r, opacity: 0, scale: 0.2, duration: 0.7, ease: "power3.out" }, at + 0.06);
+  }
+}
+
+function rip(sel, x, y, at, big = 2.2) {
+  tl.set(Q(sel), { x, y, scale: 0.2, opacity: 0 }, Math.max(0, at - 0.02));
+  tl.to(Q(sel), { opacity: 0.9, duration: 0.01 }, at);
+  tl.to(Q(sel), { scale: big, duration: 0.6, ease: "power2.out" }, at);
+  tl.to(Q(sel), { opacity: 0, duration: 0.5, ease: "power2.in" }, at + 0.08);
+}
+/* orbe con estela */
+const GH = [".og1", ".og2", ".og3"];
+const GS = [0.86, 0.72, 0.58], GO = [0.42, 0.26, 0.14];
+function go(x, y, at, d = 0.6, ease = IO) {
+  tl.to(Q(".orb"), { x, y, duration: d, ease }, at);
+  GH.forEach((g, i) => tl.to(Q(g), { x, y, duration: d, ease }, at + 0.055 * (i + 1)));
+}
+function trailInit(x, y) { orbSet(x, y, 0); GH.forEach((g, i) => tl.set(Q(g), { x, y, scale: GS[i], opacity: GO[i] }, 0)); }
+
+/* ===== escena ===== */
+sceneIn("whip");
+tl.to(Q(".dots"), { x: -48, duration: DUR, ease: "none" }, 0);
+
+/* cámara virtual */
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.17, duration: 1.1, ease: "power2.inOut" }, 0);
+tl.to(Q(".world"), { scale: 0.93, duration: 0.7, ease: "power3.inOut" }, 3.75);
+tl.to(Q(".world"), { scale: 0.97, duration: 2.85, ease: "none" }, 4.45);
+tl.to(Q(".world"), { scale: 1.03, x: 70, duration: 1.0, ease: "power2.inOut" }, 7.3);
+tl.to(Q(".world"), { scale: 1.0, x: 20, duration: 2.1, ease: "none" }, 8.3);
+
+/* carpeta héroe */
+tl.set(Q(".pa1"), { rotation: -7 }, 0); tl.set(Q(".pa2"), { rotation: 4 }, 0); tl.set(Q(".pa3"), { rotation: -1.5 }, 0);
+tl.fromTo(Q(".fold"), { opacity: 0, scale: 0.72, y: 36 }, { opacity: 1, scale: 1, y: 0, duration: 0.85, ease: "back.out(1.5)" }, 0);
+
+/* orbe llega y hace clic: «eliges una carpeta» */
+trailInit(250, 800);
+go(640, 740, 0.05, 0.45, "power2.out");
+go(985, 440, 0.5, 0.55, "power3.out");
+const S = 1.1;
+rip(".r1", 985, 440, S);
+tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, S - 0.02);
+tl.fromTo(Q(".selrect"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.55, ease: "power2.out" }, S);
+tl.fromTo(Q(".hd"), { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: SPR, stagger: 0.06 }, S + 0.2);
+tl.fromTo(Q(".badge"), { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.4)" }, S + 0.35);
+tl.fromTo(Q(".badge .ic"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, S + 0.6);
+up(".fchip", S + 0.45, { y: 18, d: 0.6 });
+tl.fromTo(Q(".paper"), { y: 0 }, { y: -48, duration: 0.55, ease: "back.out(2)", stagger: 0.07 }, S + 0.05);
+burst(960, 450, S + 0.05, 14, 260);
+go(960, 530, 1.3, 0.5, "power3.out");
+orbPulse(1.9, 0.5);
+
+/* archivos salen de la carpeta y orbitan (más rápido con el tiempo: «trabajando») */
+tl.to(orbit, { r: 1, duration: 1.1, ease: "back.out(1.4)", onUpdate: placeFiles }, 1.25);
+tl.to(Q(".orbitpath"), { opacity: 1, duration: 0.6, ease: "power2.out" }, 1.5);
+tl.to(orbit, { a: 20 + 700, duration: 10.4, ease: "power1.in", onUpdate: placeFiles }, 0.2);
+tl.to(orbit, { r: 0, duration: 0.5, ease: "power3.in", onUpdate: placeFiles }, DUR - 1.1);
+
+/* «se acabó subir y bajar archivos» */
+tl.fromTo(Q(".strike"), { opacity: 0, scale: 0.5, x: -40 }, { opacity: 1, scale: 1, x: 0, duration: 0.55, ease: SPR }, 1.6);
+tl.fromTo(Q(".upa"), { y: 0 }, { y: -10, duration: 0.16, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.07);
+tl.fromTo(Q(".dna"), { y: 0 }, { y: 10, duration: 0.16, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.46);
+tl.fromTo(Q(".slash"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.22, ease: "power4.out" }, 2.72);
+tl.fromTo(Q(".strike"), { rotation: 0 }, { rotation: -5, duration: 0.07, yoyo: true, repeat: 3, ease: "none" }, 2.9);
+orbSquash(2.85);
+tl.to(Q(".strike"), { opacity: 0, scale: 0, rotation: -14, y: 40, duration: 0.4, ease: "power3.in" }, 3.35);
+burst(430, 690, 3.55, 9, 120, 0.3);
+
+/* anillo de órbita + nodos conectados, cada uno cuando la voz lo nombra */
+tl.fromTo(Q(".ringx"), { opacity: 0, attr: { rx: 380, ry: 168 } }, { opacity: 0.9, attr: { rx: 640, ry: 280 }, duration: 0.9, ease: "power3.out" }, 3.85);
+const NODE = [
+  { n: 1, t: cue("correo"), line: 1, pill: ".p1", arr: [575, 312], pk: 1 },
+  { n: 2, t: cue("calendario"), line: 2, pill: ".p2", arr: [960, 264], pk: 2 },
+  { n: 3, t: cue("clientes"), line: 3, pill: ".p3", arr: [1330, 312], pk: 3 }
+];
+let orbAt = [960, 530];
+NODE.forEach((o, k) => {
+  const t0 = o.t - 0.12;
+  // línea que se dibuja
+  tl.fromTo(Q(".lb" + o.line), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.5, ease: "power2.inOut" }, t0);
+  tl.fromTo(Q(".ln" + o.line), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.5, ease: "power2.inOut" }, t0);
+  go(o.arr[0], o.arr[1], t0, 0.5, "power3.inOut");
+  // nodo salta al anillo
+  pop(o.pill, t0 + 0.4, 0.6);
+  tl.fromTo(Q(o.pill + " .ic"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.55, ease: "power2.out", stagger: 0.07 }, t0 + 0.5);
+  tl.fromTo(Q(o.pill + " .live"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(3)" }, t0 + 0.8);
+  orbPulse(t0 + 0.48, 0.4);
+  burst(o.arr[0], o.arr[1], t0 + 0.45, 8, 90, k);
+});
+/* paquetes de datos viajando por las líneas */
+NODE.forEach((o, k) => {
+  const l = LN[o.line - 1], st = o.t + 0.55, dur = 0.85, reps = Math.max(1, Math.floor((10.3 - st) / dur) - 1);
+  const dot = $q(".pk" + o.pk), p = { t: 0 };
+  tl.fromTo(dot, { opacity: 0 }, { opacity: 1, duration: 0.05 }, st);
+  tl.fromTo(p, { t: 0 }, { t: 1, duration: dur, repeat: reps, yoyo: true, ease: "power1.inOut", onUpdate: () => { const b = bez(l, p.t); gsap.set(dot, { x: b[0], y: b[1] }); } }, st + k * 0.17);
+  tl.to(dot, { opacity: 0, duration: 0.15 }, 10.3);
+});
+
+/* orbe vuelve al centro; «tareas largas» (anillo de progreso + reloj) */
+go(960, 520, 7.05, 0.4, "power2.inOut");
+const T4 = cue("sigue") + 0.05;
+tl.fromTo(Q(".lb4"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.5, ease: "power2.inOut" }, T4);
+tl.fromTo(Q(".ln4"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.5, ease: "power2.inOut" }, T4);
+go(517, 562, T4, 0.5, "power3.inOut");
+pop(".prog", T4 + 0.42, 0.65);
+orbPulse(T4 + 0.5, 0.4);
+burst(517, 562, T4 + 0.5, 8, 90, 0.6);
+const T5 = cue("tareas") + 0.1;
+tl.fromTo(Q(".arc"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 10.3 - T5, ease: "power1.inOut" }, T5);
+tl.fromTo(Q(".hand:not(.s)"), { rotation: 0 }, { rotation: 360 * 2, duration: 10.3 - T5, ease: "none" }, T5);
+tl.fromTo(Q(".hand.s"), { rotation: 0 }, { rotation: 360 * 14, duration: 10.3 - T5, ease: "none" }, T5);
+up(".labp", cue("largas") - 0.1, { y: 16, d: 0.5 });
+
+/* el orbe sigue trabajando en el centro mientras los archivos se marcan hechos */
+go(960, 530, T4 + 0.7, 0.45, "power2.inOut");
+const C0 = 8.35, NSEG = 28;
+for (let i = 1; i <= NSEG; i++) {
+  const th = Math.PI / 2 + i * (Math.PI * 2 / 20);
+  go(HX + 170 * Math.cos(th), 482 + 62 * Math.sin(th), C0 + i * (1 / 14), 1 / 14, "none");
+}
+FL.forEach((el, i) => {
+  const t = C0 + 0.25 + i * 0.34;
+  tl.fromTo(el.querySelector(".ck"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(3)" }, t);
+});
+
+/* «tú haces otra cosa» */
+const T6 = cue("tu", 3);
+pop(".tu", T6, 0.6);
+up(".labt", T6 + 0.25, { y: 14, d: 0.5 });
+[".st1", ".st2", ".st3"].forEach((s, i) => {
+  tl.fromTo(Q(s), { strokeDashoffset: 1, opacity: 0, y: 6 }, { strokeDashoffset: 0, opacity: 0.9, y: -4, duration: 0.7, ease: "sine.out", repeat: 2, yoyo: true }, T6 + 0.35 + i * 0.18);
+});
+
+/* salida: el anillo colapsa a un punto que estalla hacia el plano oscuro */
+const X0 = DUR - 1.2;
+tl.to(Q(".ringx"), { attr: { rx: 6, ry: 3 }, strokeWidth: 12, stroke: "#7D29E0", duration: 0.7, ease: "power3.in" }, X0 - 0.05);
+tl.to(Q(".ln, .lnb"), { strokeDashoffset: 1, duration: 0.45, ease: "power3.in" }, X0 - 0.05);
+[".p1", ".p2", ".p3", ".prog", ".tu", ".labp", ".labt"].forEach((s, i) => {
+  const cx = { ".p1": 406, ".p2": 960, ".p3": 1514, ".prog": 406, ".tu": 1514, ".labp": 406, ".labt": 1514 }[s];
+  const cy = { ".p1": 310, ".p2": 170, ".p3": 310, ".prog": 590, ".tu": 590, ".labp": 745, ".labt": 710 }[s];
+  tl.to(Q(s), { x: HX - cx, y: HY - cy, scale: 0.05, opacity: 0, duration: 0.6, ease: "power3.in" }, X0 + i * 0.025);
+});
+tl.to(Q(".fgrp"), { scale: 0.04, opacity: 0, duration: 0.55, ease: "power3.in" }, X0 + 0.15);
+tl.to(Q(".pk"), { opacity: 0, duration: 0.1 }, X0 - 0.05);
+go(HX, HY, X0, 0.55, "power3.in");
+tl.to(Q(".orb"), { scale: 1.5, duration: 0.5, ease: "power2.in" }, X0 + 0.1);
+const BT = DUR - 0.5;
+tl.fromTo(Q(".boom"), { opacity: 0, scale: 0.02 }, { opacity: 1, scale: 0.06, duration: 0.05, ease: "none" }, BT - 0.05);
+tl.to(Q(".boom"), { scale: 12.5, duration: 0.48, ease: "power3.out" }, BT);
+tl.fromTo(Q(".shock"), { opacity: 0, scale: 0.05 }, { opacity: 0.9, scale: 0.1, duration: 0.05, ease: "none" }, BT - 0.05);
+tl.to(Q(".shock"), { scale: 12.5, opacity: 0, duration: 0.5, ease: "power2.out" }, BT);
+tl.to(Q(".world"), { opacity: 0, duration: 0.3, ease: "power2.in" }, BT + 0.1);
+<!--SFX-->
+[{"k":"click","t":1.1,"v":0.5},{"k":"pop","t":1.3,"v":0.4},{"k":"impact","t":2.82,"v":0.35},{"k":"pop","t":4.9,"v":0.45},{"k":"pop","t":5.55,"v":0.45},{"k":"pop","t":6.95,"v":0.45},{"k":"pop","t":8.0,"v":0.45},{"k":"pop","t":9.5,"v":0.4},{"k":"riser","t":9.0,"v":0.4},{"k":"impact","t":11.1,"v":0.6}]

@@ -1,0 +1,70 @@
+/* KIT COMPARTIDO v2 — se inyecta en cada escena (build2.mjs). Prefijo: #__ID__ */
+#__ID__{position:absolute;inset:0;font-family:Inter,sans-serif;color:#0D1320;overflow:hidden;
+  --ink:#0D1320;--soft:#667085;--acc:#7D29E0;--pink:#FF01A2;--deep:#2F125E;--indigo:#5E3DE6;--lav:#9B61F6;
+  --bg:#FAFBFC;--lila:#F2E7FC;--line:#E4E7EC;--warn:#B54708}
+#__ID__ .stage{position:absolute;inset:0}
+#__ID__ .bg{position:absolute;inset:0}
+#__ID__ .bg-violet{background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%)}
+#__ID__ .bg-deep{background:radial-gradient(1200px 800px at 70% 20%,#4A1D96 0%,#2F125E 55%,#1A0836 100%)}
+#__ID__ .bg-light{background:#FAFBFC}
+#__ID__ .h{font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap}
+#__ID__ .mask{display:block;overflow:hidden;padding:0.08em 0.04em 0.16em;margin:-0.08em -0.04em -0.16em}
+#__ID__ .mask>.r{display:block}
+#__ID__ .eye{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:28px;color:var(--soft)}
+#__ID__ .acc{color:var(--acc)} #__ID__ .pink{color:var(--pink)} #__ID__ .soft{color:var(--soft)} #__ID__ .white{color:#fff}
+#__ID__ .panel{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(13,19,32,.12);border-radius:32px;box-sizing:border-box}
+#__ID__ .panel.dark{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(10,0,30,.45);color:#fff;backdrop-filter:blur(8px)}
+#__ID__ .chip{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:.32em .85em;font-weight:600;font-size:40px;line-height:1.1;background:#fff;white-space:nowrap}
+#__ID__ .chip.dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
+#__ID__ .chip.acc{background:var(--lila);border-color:var(--acc);color:var(--acc)}
+/* ventana de app / navegador simulada */
+#__ID__ .win{position:absolute;background:#fff;border-radius:22px;box-shadow:0 40px 100px rgba(10,0,30,.35);overflow:hidden;box-sizing:border-box;border:1px solid rgba(13,19,32,.12)}
+#__ID__ .win.dark{background:#14091F;border-color:rgba(255,255,255,.14)}
+#__ID__ .win .bar{height:56px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line)}
+#__ID__ .win.dark .bar{background:#1E0F33;border-bottom-color:rgba(255,255,255,.1)}
+#__ID__ .win .bar i{display:block;width:16px;height:16px;border-radius:50%;background:#FF5F57}
+#__ID__ .win .bar i:nth-child(2){background:#FEBC2E} #__ID__ .win .bar i:nth-child(3){background:#28C840}
+#__ID__ .win .bar .url{margin-left:18px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;max-width:620px}
+#__ID__ .win.dark .bar .url{background:rgba(255,255,255,.08);color:#B9A7D6}
+/* el orbe del agente (espina del vídeo) */
+#__ID__ .orb{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff 0 7%,#E2CCFF 8% 24%,#9B61F6 48%,#7D29E0 66%,#FF01A2 135%);
+  box-shadow:0 0 36px rgba(125,41,224,.7),0 0 96px rgba(255,1,162,.4);z-index:50}
+#__ID__ .orb::before{content:"";position:absolute;inset:-16px;border-radius:50%;border:2px solid rgba(125,41,224,.4)}
+#__ID__ .ripple{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:4px solid var(--acc);opacity:0;z-index:49;visibility:visible}
+/* etiqueta de simulación */
+#__ID__ .simlabel{position:absolute;right:56px;top:44px;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:1.5px solid currentColor;opacity:.75;z-index:60}
+#__ID__ .simlabel.on-dark{color:#fff} #__ID__ .simlabel.on-light{color:var(--soft)}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+#__ID__ .shotwin{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 44px 110px rgba(13,19,32,.38);background:#fff;border:1px solid rgba(13,19,32,.14)}
+#__ID__ .shotwin.dark{box-shadow:0 44px 110px rgba(10,0,30,.6);border-color:rgba(255,255,255,.16)}
+#__ID__ .shotwin .sbar{position:absolute;left:0;right:0;top:0;height:54px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line);z-index:3}
+#__ID__ .shotwin .sbar i{display:block;width:15px;height:15px;border-radius:50%;background:#FF5F57}
+#__ID__ .shotwin .sbar i:nth-child(2){background:#FEBC2E} #__ID__ .shotwin .sbar i:nth-child(3){background:#28C840}
+#__ID__ .shotwin .sbar .url{margin-left:16px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;white-space:nowrap;overflow:hidden}
+#__ID__ .shotwin .view{position:absolute;left:0;right:0;top:54px;bottom:0;overflow:hidden;background:#fff}
+#__ID__ .shotwin .view img{position:absolute;left:0;top:0;display:block;transform-origin:0 0;max-width:none}
+#__ID__ .hlbox{position:absolute;border:5px solid var(--pink);border-radius:14px;opacity:0;z-index:4;box-shadow:0 0 0 6px rgba(255,1,162,.18),0 0 40px rgba(255,1,162,.45)}
+#__ID__ .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:999px;font-weight:700;font-size:24px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+#__ID__ .badge.week{background:var(--pink);color:#fff}
+#__ID__ .badge.date{background:var(--lila);color:var(--acc)}
+#__ID__ .badge.src{background:rgba(13,19,32,.07);color:#475467;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#__ID__ .badge.dk{background:rgba(255,255,255,.14);color:#fff}
+#__ID__ .badge.srcdk{background:rgba(255,255,255,.12);color:#E2CCFF;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#__ID__ .tag{font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:26px}
+/* tira de calendario (1 sep → 2 oct) */
+#__ID__ .strip{position:absolute;left:100px;right:100px;top:36px;height:84px;z-index:20}
+#__ID__ .strip .rail{position:absolute;left:0;right:0;top:34px;height:4px;border-radius:2px;background:var(--rail,rgba(13,19,32,.14))}
+#__ID__ .strip .fill{position:absolute;left:0;top:34px;height:4px;border-radius:2px;background:linear-gradient(90deg,#7D29E0,#FF01A2);width:0}
+#__ID__ .strip .tk{position:absolute;top:28px;width:2px;height:16px;background:var(--tick,rgba(13,19,32,.25));margin-left:-1px}
+#__ID__ .strip .tk.m{height:26px;top:23px}
+#__ID__ .strip .wk{position:absolute;top:20px;height:32px;border-radius:16px;background:rgba(255,1,162,.12);border:2px solid rgba(255,1,162,.55)}
+#__ID__ .strip .lb{position:absolute;top:-4px;font-weight:700;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--lbl,#475467);transform:translateX(-50%);white-space:nowrap}
+#__ID__ .strip .mk{position:absolute;top:21px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#C9A6FF 14%,#7D29E0 60%,#FF01A2 140%);box-shadow:0 0 0 6px rgba(125,41,224,.25),0 0 28px rgba(255,1,162,.55)}
+#__ID__ .strip .dt{position:absolute;top:50px;transform:translateX(-50%);font-weight:800;font-size:26px;color:var(--ink);white-space:nowrap;letter-spacing:-0.01em}
+#__ID__ .strip.dk{--rail:rgba(255,255,255,.2);--tick:rgba(255,255,255,.35);--lbl:#E4D8F8}
+#__ID__ .strip.dk .dt{color:#fff}
+
+#__ID__ .strip .lb.wkl{color:#C4007E}
+#__ID__ .strip.dk .lb.wkl{color:#FF9AD8}

@@ -1,0 +1,98 @@
+{
+ "slug": "dora-milikito",
+ "titulo": "DORA en la práctica",
+ "bruto": "brutos/prueba1.mp4",
+ "metodo": "clase-larga",
+ "estilo": "milikito",
+ "idioma": "es",
+ "salida": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25
+ },
+ "ponente": {
+  "recorte": true
+ },
+ "cortes": {
+  "silencioMin": 0.8,
+  "margen": 0.25,
+  "colaFinal": 1.6
+ },
+ "whisper": {
+  "modelo": "large-v3-turbo",
+  "prompt": "Curso sobre el reglamento DORA de resiliencia operativa digital. Proveedores TIC, due diligence, ISO 27001, SOC 2, subcontratistas, registro de información, cláusulas contractuales, fintech, banco, SaaS, SIEM, EDR, VDI, shadow IT, funciones críticas o importantes, estrategia de salida, plan de continuidad."
+ },
+ "lambda": {
+  "region": "eu-west-1",
+  "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+  "framesPorLambda": 100,
+  "crf": 20,
+  "conservarSalida": false
+ },
+ "escenario": true,
+ "preproceso": {
+  "desde": "dora-v2",
+  "enlaces": 41,
+  "fecha": "2026-09-30",
+  "nota": "work/ enlazado con enlaces duros; los pasos que reescriben una salida la independizan antes (clon), así el proyecto de origen no cambia"
+ },
+ "audio": {
+  "origen": "estilos/milikito/audio",
+  "musica": {
+   "sintonia": {
+    "archivo": "sintonia",
+    "volumen": 0.5,
+    "fundidoEntrada": 0,
+    "fundidoSalida": 1.5,
+    "hasta": "voz",
+    "nota": "apertura sin voz (intro.previo); se funde al entrar la voz"
+   },
+   "base": {
+    "archivo": "base",
+    "lufs": -28,
+    "volumen": 0.12,
+    "bucle": true,
+    "fundidoEntrada": 2,
+    "fundidoSalida": 2,
+    "nota": "bajo la voz; `lufs` manda: linea mide el archivo y calcula el volumen (≈ −28 LUFS)"
+   },
+   "cierre": {
+    "archivo": "cierre",
+    "volumen": 0.5,
+    "fundidoEntrada": 1,
+    "fundidoSalida": 2,
+    "nota": "entra al acabar la voz, sobre la coda sin voz (outro.coda)"
+   }
+  },
+  "sfx": {
+   "titulo": {
+    "archivo": "sfx-destello",
+    "volumen": 0.5
+   },
+   "bocadillo": {
+    "archivo": "sfx-pop",
+    "volumen": 0.45
+   },
+   "reaccion": {
+    "archivo": "sfx-pop",
+    "volumen": 0.35
+   },
+   "disposicion": {
+    "archivo": "sfx-whoosh",
+    "volumen": 0.35
+   },
+   "sello": {
+    "archivo": "sfx-golpe",
+    "volumen": 0.6
+   },
+   "capitulo": {
+    "archivo": "sfx-ficha",
+    "volumen": 0.5
+   },
+   "veredicto": {
+    "archivo": "sfx-sello",
+    "volumen": 0.5
+   }
+  }
+ }
+}

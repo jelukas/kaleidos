@@ -1,0 +1,467 @@
+<!--CSS-->
+#__ID__ .cam{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 470px}
+#__ID__ .far{position:absolute;left:-1200px;top:-1200px;width:5200px;height:4200px;
+  background-image:radial-gradient(circle,rgba(125,41,224,.20) 0 4px,transparent 5px);background-size:96px 96px}
+#__ID__ .world{position:absolute;left:0;top:0;width:4000px;height:2800px}
+#__ID__ .route{position:absolute;left:0;top:0;width:4000px;height:2800px;overflow:visible}
+#__ID__ .rt{fill:none;stroke-width:16;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1}
+/* estaciones */
+#__ID__ .st{position:absolute;width:1700px;height:860px;border-radius:64px;box-sizing:border-box;
+  background:linear-gradient(160deg,rgba(var(--c),.17),rgba(var(--c),.05) 55%,rgba(255,255,255,.55));
+  border:3px solid rgba(var(--c),.30);box-shadow:0 70px 150px rgba(var(--c),.24),inset 0 0 0 12px rgba(255,255,255,.38)}
+#__ID__ .st-m{left:150px;top:270px;--c:125,41,224}
+#__ID__ .st-v{left:2150px;top:270px;--c:255,1,162}
+#__ID__ .st-r{left:2150px;top:1470px;--c:94,61,230}
+#__ID__ .st-a{left:150px;top:1470px;--c:155,97,246}
+#__ID__ .ttl{position:absolute;left:64px;top:18px;font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap;
+  color:rgb(var(--c));overflow:hidden;padding:.06em .05em .16em;margin:-.06em -.05em -.16em}
+#__ID__ .ttl .ch{display:inline-block;transform-origin:0% 100%}
+#__ID__ .num{position:absolute;right:56px;top:40px;width:128px;height:128px;border-radius:42px;background:rgb(var(--c));color:#fff;font-weight:800;font-size:70px;line-height:128px;
+  letter-spacing:-0.03em;text-align:center;box-shadow:0 22px 44px rgba(var(--c),.38)}
+#__ID__ .chips{position:absolute;left:64px;top:244px;display:flex;gap:16px}
+#__ID__ .chips .chip{font-size:36px;background:#fff;color:#0D1320;border:3px solid rgb(var(--c));box-shadow:0 10px 26px rgba(var(--c),.22);padding:.28em .8em}
+#__ID__ .chips .chip::before{content:"";display:inline-block;width:.42em;height:.42em;border-radius:50%;background:rgb(var(--c));margin-right:.5em;vertical-align:.06em}
+/* tarjetas */
+#__ID__ .cd{position:absolute;top:330px;height:490px;background:#fff;border:1px solid #E4E7EC;border-radius:36px;box-sizing:border-box;
+  padding:34px 32px;box-shadow:0 34px 70px rgba(13,19,32,.15),0 4px 14px rgba(13,19,32,.07);transform-origin:100% 0}
+#__ID__ .eb{font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:22px;color:#667085;line-height:28px}
+#__ID__ .hd{font-weight:800;letter-spacing:-0.03em;font-size:40px;line-height:50px;color:#0D1320;white-space:nowrap}
+#__ID__ .fld{margin-top:18px;height:86px}
+#__ID__ .fld .k{display:block;font-size:22px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#667085;line-height:28px}
+#__ID__ .fld .v{display:block;font-size:38px;font-weight:600;line-height:50px;color:#0D1320;white-space:nowrap}
+#__ID__ .tg i{display:inline-block;font-style:normal;font-size:30px;font-weight:600;padding:2px 18px;margin-right:12px;border-radius:999px;background:#F2E7FC;color:#2F125E;line-height:44px}
+#__ID__ .plot{position:absolute;left:56px;top:150px;width:718px;height:310px}
+#__ID__ .bar{position:absolute;bottom:60px;width:70px;border-radius:16px 16px 6px 6px;background:linear-gradient(180deg,#9B61F6,#7D29E0);transform-origin:50% 100%}
+#__ID__ .bar.hl{background:linear-gradient(180deg,#FF5CC4,#FF01A2)}
+#__ID__ .wd{position:absolute;bottom:8px;width:70px;text-align:center;font-size:30px;font-weight:600;color:#667085;line-height:40px}
+#__ID__ .wd.hl{color:#FF01A2;font-weight:800}
+#__ID__ .gl{position:absolute;left:0;width:718px;height:2px;background:#E4E7EC}
+#__ID__ .trend{position:absolute;left:0;top:0;width:718px;height:250px;overflow:visible}
+#__ID__ .big{position:absolute;right:40px;top:24px;font-size:84px;font-weight:800;letter-spacing:-0.04em;color:#7D29E0;line-height:100px}
+/* listas con check */
+#__ID__ .li{display:flex;align-items:center;gap:20px;height:80px;font-size:38px;font-weight:600;color:#0D1320;white-space:nowrap}
+#__ID__ .ck{flex:none;width:48px;height:48px;border-radius:50%;box-sizing:border-box;border:3px solid #D0D5DD;background:#fff;display:flex;align-items:center;justify-content:center}
+#__ID__ .ck svg{width:28px;height:28px;display:block;overflow:visible}
+#__ID__ .ck path{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+#__ID__ .sk{display:block;height:18px;border-radius:9px;background:#E4E7EC;margin-top:14px;transform-origin:0% 50%}
+#__ID__ .av{position:absolute;top:34px;width:56px;height:56px;border-radius:50%;border:4px solid #fff;box-shadow:0 6px 16px rgba(13,19,32,.2)}
+#__ID__ .pgt{position:absolute;left:32px;right:32px;bottom:34px;height:22px;border-radius:11px;background:#F2F4F7;overflow:hidden}
+#__ID__ .pgt i{display:block;height:100%;width:100%;border-radius:11px;background:linear-gradient(90deg,#FF5CC4,#FF01A2);transform-origin:0% 50%}
+#__ID__ .listo{position:absolute;right:-30px;top:-38px;display:flex;align-items:center;gap:12px;background:#FF01A2;color:#fff;font-size:46px;font-weight:800;
+  letter-spacing:-0.02em;padding:12px 30px 12px 22px;border-radius:999px;box-shadow:0 22px 44px rgba(255,1,162,.45);line-height:56px}
+#__ID__ .listo svg{width:44px;height:44px;display:block}
+#__ID__ .jchip{position:absolute;right:30px;top:36px;font-size:30px;font-weight:600;background:#EDE9FD;color:#2F125E;border-radius:999px;padding:2px 20px;line-height:44px}
+#__ID__ .sec{margin-top:14px}
+#__ID__ .sec .eb{font-size:20px}
+#__ID__ .lockwrap{position:absolute;left:50%;top:34px;width:240px;height:300px;margin-left:-120px}
+#__ID__ .lockwrap svg{display:block;width:240px;height:300px;overflow:visible}
+#__ID__ .lbl{position:absolute;left:24px;right:24px;bottom:30px;text-align:center;background:#FFF1E3;border:3px solid #B54708;border-radius:26px;
+  color:#B54708;font-size:38px;font-weight:800;letter-spacing:-0.02em;line-height:44px;padding:12px 8px;box-sizing:border-box}
+#__ID__ .lbl span{display:block}
+#__ID__ .thumbs{position:absolute;left:32px;top:136px;width:556px;height:220px}
+#__ID__ .th{position:absolute;top:0;width:170px;height:220px;border-radius:22px;overflow:hidden;box-shadow:0 14px 30px rgba(47,18,94,.22)}
+#__ID__ .th svg{display:block;width:170px;height:220px}
+#__ID__ .cap{position:absolute;top:374px;width:170px;text-align:center;font-size:26px;font-weight:600;color:#667085;line-height:34px}
+#__ID__ .sel{position:absolute;left:-10px;top:-10px;width:190px;height:240px;border-radius:30px;border:6px solid #7D29E0;box-sizing:border-box}
+#__ID__ .selb{position:absolute;right:-24px;top:-24px;width:56px;height:56px;border-radius:50%;background:#7D29E0;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(125,41,224,.5)}
+#__ID__ .selb svg{width:30px;height:30px;display:block}
+#__ID__ .tx{font-size:32px;font-weight:600;line-height:44px;color:#0D1320;margin-top:16px;min-height:132px}
+#__ID__ .caret{display:inline-block;width:4px;height:34px;background:#9B61F6;vertical-align:-6px;margin-left:3px}
+#__ID__ .fr{position:relative;height:84px;display:flex;align-items:center;gap:18px}
+#__ID__ .fi{flex:none;width:40px;height:50px;border-radius:8px 14px 8px 8px;background:#F2E7FC;border:3px solid #9B61F6;box-sizing:border-box}
+#__ID__ .nm{position:relative;flex:1;height:46px;overflow:hidden;font-family:"JetBrains Mono",monospace;font-size:32px;line-height:46px;white-space:nowrap}
+#__ID__ .nm span{position:absolute;left:0;top:0}
+#__ID__ .nm .o{color:#667085}
+#__ID__ .nm .n{color:#0D1320;font-weight:400}
+#__ID__ .fdone{position:absolute;left:32px;right:32px;bottom:30px;height:52px;border-radius:26px;background:#F2E7FC;color:#2F125E;font-size:30px;font-weight:600;line-height:52px;text-align:center}
+/* orbe, estela y partículas (dentro del mundo) */
+#__ID__ .trail{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:rgba(125,41,224,.42);z-index:48;filter:blur(3px)}
+#__ID__ .pt{position:absolute;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;opacity:0;z-index:47}
+#__ID__ .rp{position:absolute;left:0;top:0;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:6px solid #7D29E0;opacity:0;z-index:46;box-sizing:border-box}
+<!--HTML-->
+<div class="stage">
+  <div class="cam">
+    <div class="far" data-layout-allow-overflow></div>
+    <div class="world" data-layout-allow-overflow>
+      <svg class="route" viewBox="0 0 4000 2800" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1__ID__" gradientUnits="userSpaceOnUse" x1="1850" y1="700" x2="2150" y2="700"><stop offset="0" stop-color="#7D29E0"/><stop offset="1" stop-color="#FF01A2"/></linearGradient>
+          <linearGradient id="g2__ID__" gradientUnits="userSpaceOnUse" x1="3000" y1="1130" x2="3000" y2="1470"><stop offset="0" stop-color="#FF01A2"/><stop offset="1" stop-color="#5E3DE6"/></linearGradient>
+          <linearGradient id="g3__ID__" gradientUnits="userSpaceOnUse" x1="2150" y1="1900" x2="1850" y2="1900"><stop offset="0" stop-color="#5E3DE6"/><stop offset="1" stop-color="#9B61F6"/></linearGradient>
+          <linearGradient id="g4__ID__" gradientUnits="userSpaceOnUse" x1="1000" y1="1470" x2="1000" y2="1130"><stop offset="0" stop-color="#9B61F6"/><stop offset="1" stop-color="#7D29E0"/></linearGradient>
+        </defs>
+        <path class="rt rt1" d="M1850 700 H2150" pathLength="1" stroke="url(#g1__ID__)"/>
+        <path class="rt rt2" d="M3000 1130 V1470" pathLength="1" stroke="url(#g2__ID__)"/>
+        <path class="rt rt3" d="M2150 1900 H1850" pathLength="1" stroke="url(#g3__ID__)"/>
+        <path class="rt rt4" d="M1000 1470 V1130" pathLength="1" stroke="url(#g4__ID__)"/>
+      </svg>
+
+      <!-- 01 MARKETING -->
+      <div class="st st-m">
+        <div class="num n-m">01</div>
+        <div class="ttl t-m" data-t="MARKETING" style="font-size:180px"></div>
+        <div class="chips">
+          <span class="chip c1">Briefing</span><span class="chip c2">Campaña</span><span class="chip c3">Informe</span>
+        </div>
+        <div class="cd brief" style="left:64px;width:600px">
+          <div class="eb">Briefing de campaña</div>
+          <div class="hd">Campaña de otoño</div>
+          <div class="fld"><span class="k">Objetivo</span><span class="v">Más registros</span></div>
+          <div class="fld"><span class="k">Público</span><span class="v">Pymes</span></div>
+          <div class="fld"><span class="k">Canales</span><span class="v tg"><i>Email</i><i>Social</i><i>Web</i></span></div>
+        </div>
+        <div class="cd chart" style="left:720px;width:920px">
+          <div class="eb">Informe semanal · datos de ejemplo</div>
+          <div class="hd">Cada lunes</div>
+          <div class="big cnt">+0 %</div>
+          <div class="plot">
+                        <div class="bar hl b0" style="left:0;height:120px"></div>
+            <div class="bar b1" style="left:108px;height:160px"></div>
+            <div class="bar b2" style="left:216px;height:140px"></div>
+            <div class="bar b3" style="left:324px;height:200px"></div>
+            <div class="bar b4" style="left:432px;height:180px"></div>
+            <div class="bar b5" style="left:540px;height:230px"></div>
+            <div class="bar b6" style="left:648px;height:250px"></div>
+            <div class="wd hl" style="left:0">L</div><div class="wd" style="left:108px">M</div><div class="wd" style="left:216px">X</div>
+            <div class="wd" style="left:324px">J</div><div class="wd" style="left:432px">V</div><div class="wd" style="left:540px">S</div><div class="wd" style="left:648px">D</div>
+            <svg class="trend" viewBox="0 0 718 250" xmlns="http://www.w3.org/2000/svg">
+              <path class="tpath" d="M35 120 L143 80 L251 100 L359 40 L467 60 L575 10 L683 -10" pathLength="1" fill="none" stroke="#0D1320" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1" stroke-dashoffset="1" transform="translate(0,2)"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 VENTAS -->
+      <div class="st st-v">
+        <div class="num n-v">02</div>
+        <div class="ttl t-v" data-t="VENTAS" style="font-size:200px;color:#E6008E"></div>
+        <div class="chips">
+          <span class="chip c1">Reunión</span><span class="chip c2">Memo</span>
+        </div>
+        <div class="cd meet" style="left:64px;width:760px">
+          <div class="eb">Reunión · Lun 10:00</div>
+          <div class="hd">Cliente A</div>
+          <div class="av a1" style="right:130px;background:linear-gradient(135deg,#FF5CC4,#FF01A2)"></div>
+          <div class="av a2" style="right:88px;background:linear-gradient(135deg,#B58CFF,#7D29E0)"></div>
+          <div class="av a3" style="right:46px;background:linear-gradient(135deg,#8FA0FF,#5E3DE6)"></div>
+          <div style="margin-top:14px">
+            <div class="li r1"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Contexto</div>
+            <div class="li r2"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Propuesta</div>
+            <div class="li r3"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Próximos pasos</div>
+          </div>
+          <div class="pgt"><i class="pgi"></i></div>
+        </div>
+        <div class="cd memo" style="left:880px;width:760px">
+          <div class="eb">Memo</div>
+          <div class="hd">Seguimiento de la reunión</div>
+          <div style="margin-top:26px">
+            <span class="sk m1" style="width:100%"></span>
+            <span class="sk m2" style="width:92%"></span>
+            <span class="sk m3" style="width:96%"></span>
+            <span class="sk m4" style="width:68%"></span>
+            <span class="sk m5" style="width:88%;margin-top:34px"></span>
+            <span class="sk m6" style="width:54%"></span>
+          </div>
+          <div class="listo"><svg viewBox="0 0 44 44"><path d="M9 23 L19 33 L36 11" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg>Listo</div>
+        </div>
+      </div>
+
+      <!-- 03 RECURSOS HUMANOS -->
+      <div class="st st-r">
+        <div class="num n-r">03</div>
+        <div class="ttl t-r" data-t="RECURSOS HUMANOS" style="font-size:128px;top:52px"></div>
+        <div class="chips">
+          <span class="chip c1">Incorporación</span><span class="chip c2">Puestos</span>
+        </div>
+        <div class="cd plan" style="left:64px;width:560px">
+          <div class="eb">Plan de</div>
+          <div class="hd">Incorporación</div>
+          <div style="margin-top:18px">
+            <div class="li r1"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Bienvenida</div>
+            <div class="li r2"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Equipo</div>
+            <div class="li r3"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Objetivos</div>
+            <div class="li r4"><span class="ck"><svg viewBox="0 0 28 28"><path pathLength="1" d="M5 15 L12 22 L24 7"/></svg></span>Revisión</div>
+          </div>
+        </div>
+        <div class="cd job" style="left:680px;width:520px">
+          <div class="eb">Descripción de</div>
+          <div class="hd">Puesto</div>
+          <div class="jchip">Analista</div>
+          <div class="sec"><div class="eb">Misión</div><span class="sk j1" style="width:100%"></span><span class="sk j2" style="width:74%"></span></div>
+          <div class="sec"><div class="eb">Funciones</div><span class="sk j3" style="width:96%"></span><span class="sk j4" style="width:88%"></span><span class="sk j5" style="width:62%"></span></div>
+          <div class="sec"><div class="eb">Requisitos</div><span class="sk j6" style="width:90%"></span><span class="sk j7" style="width:58%"></span></div>
+        </div>
+        <div class="cd lock" style="left:1260px;width:380px">
+          <div class="lockwrap">
+            <svg viewBox="0 0 240 300" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="lg__ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8A6BFF"/><stop offset="1" stop-color="#5E3DE6"/></linearGradient></defs>
+              <g class="shackle"><path d="M68 130 V92 a52 52 0 0 1 104 0 V130" fill="none" stroke="#2F125E" stroke-width="22" stroke-linecap="round"/></g>
+              <rect x="30" y="124" width="180" height="150" rx="34" fill="url(#lg__ID__)"/>
+              <circle cx="120" cy="188" r="20" fill="#fff"/><rect x="111" y="198" width="18" height="40" rx="9" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="lbl"><span>Sin datos</span><span>personales</span></div>
+        </div>
+      </div>
+
+      <!-- 04 AUDIOVISUAL -->
+      <div class="st st-a">
+        <div class="num n-a">04</div>
+        <div class="ttl t-a" data-t="AUDIOVISUAL" style="font-size:160px"></div>
+        <div class="chips">
+          <span class="chip c1">Conceptos</span><span class="chip c2">Guiones</span><span class="chip c3">Archivos</span>
+        </div>
+        <div class="cd conc" style="left:64px;width:620px">
+          <div class="eb">Tablero</div>
+          <div class="hd">Conceptos</div>
+          <div class="thumbs">
+            <div class="th t1" style="left:0">
+              <svg viewBox="0 0 170 220"><defs><linearGradient id="ta__ID__" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD1EE"/><stop offset="1" stop-color="#F2E7FC"/></linearGradient></defs>
+                <rect width="170" height="220" fill="url(#ta__ID__)"/><circle cx="116" cy="70" r="30" fill="#FF01A2"/>
+                <path d="M0 170 Q50 110 100 160 T170 140 V220 H0Z" fill="#9B61F6"/><path d="M0 195 Q60 150 120 190 T170 180 V220 H0Z" fill="#5E3DE6"/></svg>
+            </div>
+            <div class="th t2" style="left:193px">
+              <svg viewBox="0 0 170 220"><rect width="170" height="220" fill="#2F125E"/><circle cx="62" cy="76" r="42" fill="#9B61F6"/><path d="M60 210 L118 96 L176 210Z" fill="#FF01A2"/><rect x="18" y="150" width="54" height="54" rx="10" fill="#F2E7FC"/></svg>
+            </div>
+            <div class="th t3" style="left:386px">
+              <svg viewBox="0 0 170 220"><rect width="170" height="220" fill="#EDE9FD"/><path d="M-10 120 Q30 70 70 120 T150 120 T230 120" fill="none" stroke="#7D29E0" stroke-width="14" stroke-linecap="round"/><path d="M-10 160 Q30 110 70 160 T150 160 T230 160" fill="none" stroke="#FF01A2" stroke-width="14" stroke-linecap="round"/><circle cx="130" cy="52" r="20" fill="#5E3DE6"/></svg>
+            </div>
+            <div class="sel"><div class="selb"><svg viewBox="0 0 30 30"><path d="M6 16 L13 23 L25 8" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+          </div>
+          <div class="cap" style="left:32px">Concepto A</div><div class="cap" style="left:225px">Concepto B</div><div class="cap" style="left:418px">Concepto C</div>
+        </div>
+        <div class="cd scr" style="left:740px;width:440px">
+          <div class="eb">Guion</div>
+          <div class="hd">Escena 1</div>
+          <div class="tx"><span class="typed"></span><span class="caret"></span></div>
+          <span class="sk s1" style="width:100%"></span><span class="sk s2" style="width:84%"></span><span class="sk s3" style="width:92%"></span><span class="sk s4" style="width:58%"></span>
+        </div>
+        <div class="cd fil" style="left:1240px;width:400px">
+          <div class="eb">Archivos</div>
+          <div class="hd">En orden</div>
+          <div style="margin-top:12px">
+            <div class="fr f1"><span class="fi"></span><span class="nm"><span class="o">IMG_0412</span><span class="n">01_apertura</span></span></div>
+            <div class="fr f2"><span class="fi"></span><span class="nm"><span class="o">IMG_0419</span><span class="n">02_entrevista</span></span></div>
+            <div class="fr f3"><span class="fi"></span><span class="nm"><span class="o">AUDIO_7</span><span class="n">03_voz</span></span></div>
+            <div class="fr f4"><span class="fi"></span><span class="nm"><span class="o">CLIP_3</span><span class="n">04_cierre</span></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="trail tr4"></div><div class="trail tr3"></div><div class="trail tr2"></div><div class="trail tr1"></div>
+      <div class="orb"></div>
+    </div>
+  </div>
+</div>
+<!--JS-->
+sceneIn("zoom");
+const W = $q(".world");
+const C = { M: "#7D29E0", V: "#FF01A2", R: "#5E3DE6", A: "#9B61F6" };
+const ST = { M: [150, 270], V: [2150, 270], R: [2150, 1470], A: [150, 1470] };
+const CAMS = { M: [-40, -230, 1], V: [-2040, -230, 1], R: [-2040, -1430, 1], A: [-40, -1430, 1], ALL: [100, -89, 0.43] };
+const topEdge = (st, left, off) => [ST[st][0] + left + off, ST[st][1] + 330];
+
+/* ---- titulares cinéticos (letra a letra) ---- */
+$$q(".ttl").forEach((el) => {
+  el.innerHTML = el.dataset.t.split("").map((c) => '<span class="ch">' + (c === " " ? "&nbsp;" : c) + "</span>").join("");
+});
+function kin(sel, at) {
+  const chs = $$q(sel + " .ch");
+  tl.fromTo(chs, { yPercent: 125, rotation: 12, opacity: 0 }, { yPercent: 0, rotation: 0, opacity: 1, duration: 0.8, ease: "back.out(1.6)", stagger: 0.04 }, at);
+}
+function numPop(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 0.2, rotation: -80 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.7, ease: "back.out(1.8)" }, at);
+}
+
+/* ---- cámara virtual: pan con desenfoque de movimiento, ligero zoom-out intermedio y paralaje del fondo ---- */
+tl.set(Q(".world"), { x: CAMS.M[0], y: CAMS.M[1], scale: 1, transformOrigin: "0px 0px", filter: "blur(0px)" }, 0);
+tl.set(Q(".far"), { x: CAMS.M[0] * 0.45, y: CAMS.M[1] * 0.45 }, 0);
+function cam(name, at, d, ease = "power3.inOut", blur = 6, dip = 0.93) {
+  const [x, y, s] = CAMS[name];
+  tl.to(Q(".world"), { x, y, scale: s, duration: d, ease }, at);
+  tl.to(Q(".far"), { x: x * 0.45, y: y * 0.45, scale: name === "ALL" ? 0.8 : 1, duration: d, ease }, at);
+  tl.to(Q(".world"), { filter: "blur(" + blur + "px)", duration: d * 0.42, ease: "power2.in" }, at);
+  tl.to(Q(".world"), { filter: "blur(0px)", duration: d * 0.58, ease: "power2.out" }, at + d * 0.42);
+  tl.to(Q(".cam"), { scale: dip, duration: d * 0.5, ease: "sine.inOut" }, at);
+  tl.to(Q(".cam"), { scale: 1, duration: d * 0.5, ease: "sine.inOut" }, at + d * 0.5);
+}
+
+/* ---- orbe con estela ---- */
+const TRD = [0.05, 0.1, 0.15, 0.2], TRO = [0.4, 0.32, 0.24, 0.16], TRS = [0.85, 0.7, 0.55, 0.4];
+function orbHome(x, y) {
+  tl.set(Q(".orb"), { x, y }, 0);
+  TRD.forEach((_, i) => tl.set(Q(".tr" + (i + 1)), { x, y, opacity: TRO[i], scale: TRS[i] }, 0));
+}
+function orbGo(p, at, d = 0.6, ease = "power2.inOut") {
+  const [x, y] = p;
+  tl.to(Q(".orb"), { x, y, duration: d, ease }, at);
+  TRD.forEach((dl, i) => tl.to(Q(".tr" + (i + 1)), { x, y, duration: d, ease }, at + dl));
+}
+/* anillo y confeti (elementos creados con valores fijos, sin azar) */
+function ring(p, at, col, s = 2.6) {
+  const d = document.createElement("div"); d.className = "rp"; d.style.borderColor = col; W.appendChild(d);
+  tl.set(d, { x: p[0], y: p[1], opacity: 0.85, scale: 0.3 }, at);
+  tl.to(d, { opacity: 0, scale: s, duration: 0.75, ease: "power2.out" }, at);
+}
+function burst(p, at, col, n = 14, r = 160) {
+  for (let i = 0; i < n; i++) {
+    const d = document.createElement("div"); d.className = "pt";
+    d.style.background = i % 3 === 0 ? "#FF01A2" : i % 3 === 1 ? col : "#F2E7FC";
+    d.style.borderRadius = i % 2 ? "50%" : "4px"; W.appendChild(d);
+    const a = (i / n) * Math.PI * 2 + 0.3, rr = r * (0.62 + 0.38 * Math.abs(Math.sin(i * 2.7 + 1)));
+    tl.set(d, { x: p[0], y: p[1], scale: 0.3, opacity: 1, rotation: 0 }, at);
+    tl.to(d, { x: p[0] + Math.cos(a) * rr, y: p[1] + Math.sin(a) * rr + 30, scale: 1, rotation: (i % 2 ? 1 : -1) * 200, duration: 0.95, ease: "power3.out" }, at);
+    tl.to(d, { opacity: 0, duration: 0.4, ease: "power1.in" }, at + 0.5);
+  }
+}
+/* una pieza «entregada»: aparece con rebote en el punto donde llega el orbe */
+function deliver(sel, at, col, p) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 0.5, y: 60, rotation: -4 }, { opacity: 1, scale: 1, y: 0, rotation: 0, duration: 0.75, ease: "back.out(1.6)" }, at);
+  orbSquash(at - 0.02);
+  ring(p, at, col, 2.2);
+}
+function chipPop(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 0.4, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "back.out(2.2)" }, at);
+}
+function tick(ck, at, col) {
+  tl.fromTo(Q(ck), { backgroundColor: "#ffffff", borderColor: "#D0D5DD", scale: 0.7 }, { backgroundColor: col, borderColor: col, scale: 1, duration: 0.45, ease: SPR }, at);
+  tl.fromTo(Q(ck + " path"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, at + 0.08);
+}
+function rowIn(sel, at, st = 0.1) {
+  tl.fromTo($$q(sel), { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: E, stagger: st }, at);
+}
+function lines(sel, at, st = 0.1, d = 0.5) {
+  tl.fromTo($$q(sel), { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power3.out", stagger: st }, at);
+}
+/* conexiones entre estaciones */
+const drawRoute = (n, at, d = 0.6) => tl.to(Q(".rt" + n), { strokeDashoffset: 0, duration: d, ease: "power2.inOut" }, at);
+
+/* ================= 01 MARKETING ================= */
+const oBrief = topEdge("M", 64, 520), oChart = topEdge("M", 720, 480);
+orbHome(ST.M[0] + 1330, ST.M[1] + 280);
+kin(".t-m", 0.02);
+numPop(".n-m", 0.25);
+const cBrief = cue("briefings"), cCamp = cue("campañas"), cInf = cue("informe"), cLun = cue("lunes");
+chipPop(".st-m .c1", cBrief - 0.02);
+orbGo(oBrief, cBrief - 0.5, 0.5, "power3.inOut");
+deliver(".brief", cBrief, C.M, oBrief);
+rowIn(".brief .fld", cBrief + 0.2, 0.14);
+chipPop(".st-m .c2", cCamp);
+tl.fromTo($$q(".brief .tg i"), { opacity: 0, scale: 0.4, y: 14 }, { opacity: 1, scale: 1, y: 0, duration: 0.45, ease: "back.out(2.4)", stagger: 0.12 }, cCamp);
+chipPop(".st-m .c3", cInf);
+orbGo(oChart, cInf - 0.55, 0.55, "power3.inOut");
+deliver(".chart", cInf, C.M, oChart);
+tl.fromTo($$q(".chart .bar"), { scaleY: 0 }, { scaleY: 1, duration: 0.7, ease: "back.out(1.5)", stagger: 0.1 }, cInf + 0.2);
+count(".chart .cnt", 18, cInf + 0.25, 1.5, (v) => "+" + Math.round(v) + " %");
+tl.fromTo(Q(".tpath"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.9, ease: "power2.inOut" }, cInf + 0.8);
+const pL = [ST.M[0] + 720 + 56 + 35, ST.M[1] + 330 + 150 + 250 - 120];
+tl.to(Q(".chart .b0"), { scaleY: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: "power2.out" }, beat(cLun));
+ring(pL, beat(cLun), "#FF01A2", 2.4);
+burst(pL, beat(cLun), C.M, 12, 130);
+/* pan a Ventas */
+drawRoute(1, 4.25, 0.6);
+orbGo(topEdge("V", 64, 560), 4.3, 0.7, "power3.inOut");
+cam("V", 4.33, 0.72);
+
+/* ================= 02 VENTAS ================= */
+const oMeet = topEdge("V", 64, 560), oMemo = topEdge("V", 880, 120);
+const cReu = cue("reunión"), cPre = cue("preparada"), cMemo = cue("memo"), cList = cue("listo");
+kin(".t-v", 4.7);
+numPop(".n-v", 4.2);
+deliver(".meet", 4.98, C.V, oMeet);
+chipPop(".st-v .c1", cReu);
+tl.fromTo($$q(".meet .av"), { opacity: 0, scale: 0.3, y: -20 }, { opacity: 1, scale: 1, y: 0, duration: 0.5, ease: "back.out(2.4)", stagger: 0.1 }, 5.15);
+tick(".meet .r1 .ck", cReu + 0.12, C.V);
+tick(".meet .r2 .ck", cPre - 0.2, C.V);
+tick(".meet .r3 .ck", cPre + 0.35, C.V);
+tl.fromTo(Q(".pgi"), { scaleX: 0 }, { scaleX: 1, duration: 1.3, ease: "power2.inOut" }, cReu + 0.1);
+chipPop(".st-v .c2", cMemo - 0.05);
+orbGo(oMemo, cMemo - 0.6, 0.55, "power3.inOut");
+deliver(".memo", cMemo - 0.06, C.V, oMemo);
+lines(".memo .sk", cMemo + 0.1, 0.11, 0.5);
+const tL = beat(cList - 0.05);
+tl.fromTo(Q(".listo"), { opacity: 0, scale: 2.4, rotation: -22, y: -20 }, { opacity: 1, scale: 1, rotation: -6, y: 0, duration: 0.5, ease: "back.out(1.8)" }, tL);
+const pListo = [ST.V[0] + 880 + 760 - 70, ST.V[1] + 330];
+ring(pListo, tL + 0.05, "#FF01A2", 2.6);
+burst(pListo, tL + 0.05, C.V, 16, 190);
+orbPulse(tL, 0.4);
+/* pan a Recursos humanos */
+drawRoute(2, 7.5, 0.7);
+orbGo(topEdge("R", 64, 430), 7.55, 0.7, "power3.inOut");
+cam("R", 7.6, 0.75);
+
+/* ================= 03 RECURSOS HUMANOS ================= */
+const oPlan = topEdge("R", 64, 430), oJob = topEdge("R", 680, 250), oLock = topEdge("R", 1260, 190);
+const cPla = cue("planes"), cInc = cue("incorporación"), cDes = cue("descripciones"), cPue = cue("puesto"), cSin = cue("sin"), cDat = cue("datos"), cPer = cue("personales");
+kin(".t-r", 8.05);
+numPop(".n-r", 8.3);
+chipPop(".st-r .c1", cInc - 0.05);
+deliver(".plan", cPla - 0.05, C.R, oPlan);
+rowIn(".plan .li", cPla + 0.2, 0.12);
+tick(".plan .r1 .ck", cInc + 0.0, C.R);
+tick(".plan .r2 .ck", cInc + 0.38, C.R);
+tick(".plan .r3 .ck", cInc + 0.76, C.R);
+tick(".plan .r4 .ck", cInc + 1.1, C.R);
+orbGo(oJob, cDes - 0.5, 0.5, "power3.inOut");
+deliver(".job", cDes, C.R, oJob);
+chipPop(".st-r .c2", cPue - 0.05);
+tl.fromTo(Q(".jchip"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.4)" }, cDes + 0.3);
+lines(".job .sk", cDes + 0.3, 0.1, 0.5);
+orbGo(oLock, cSin - 0.5, 0.5, "power3.inOut");
+deliver(".lock", cSin, C.R, oLock);
+tl.set(Q(".lock .shackle"), { rotation: -34, y: -12, svgOrigin: "172 130" }, 0);
+tl.fromTo(Q(".lbl"), { opacity: 0, scale: 0.4, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(2)" }, cDat);
+const tC = beat(cPer - 0.1);
+tl.to(Q(".lock .shackle"), { rotation: 0, y: 0, svgOrigin: "172 130", duration: 0.45, ease: "elastic.out(1,0.55)" }, tC);
+tl.to(Q(".lock"), { x: 10, duration: 0.05, repeat: 5, yoyo: true, ease: "none" }, tC + 0.12);
+tl.set(Q(".lock"), { x: 0 }, tC + 0.45);
+const pLock = [ST.R[0] + 1260 + 190, ST.R[1] + 330 + 34 + 175];
+ring(pLock, tC + 0.1, "#B54708", 3.2);
+ring(pLock, tC + 0.3, "#5E3DE6", 2.6);
+burst(pLock, tC + 0.12, "#B54708", 16, 200);
+/* pan a Audiovisual */
+drawRoute(3, 13.5, 0.7);
+orbGo(topEdge("A", 64, 500), 13.55, 0.8, "power3.inOut");
+cam("A", 13.62, 0.75);
+
+/* ================= 04 AUDIOVISUAL ================= */
+const oConc = topEdge("A", 64, 500), oScr = topEdge("A", 740, 300), oFil = topEdge("A", 1240, 200);
+const cCon = cue("conceptos"), cGui = cue("guiones"), cArc = cue("archivos"), cOrd = cue("orden");
+kin(".t-a", 13.95);
+numPop(".n-a", 14.3);
+chipPop(".st-a .c1", cCon - 0.02);
+deliver(".conc", cCon - 0.12, C.A, oConc);
+tl.fromTo($$q(".th"), { opacity: 0, scale: 0.4, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.55, ease: "back.out(2)", stagger: 0.25 }, cCon + 0.1);
+tl.fromTo($$q(".cap"), { opacity: 0 }, { opacity: 1, duration: 0.4, stagger: 0.25 }, cCon + 0.3);
+tl.fromTo(Q(".sel"), { opacity: 0, scale: 1.3 }, { opacity: 1, scale: 1, duration: 0.45, ease: "back.out(2)" }, cCon + 0.95);
+orbGo(oScr, cGui - 0.5, 0.45, "power3.inOut");
+chipPop(".st-a .c2", cGui);
+deliver(".scr", cGui - 0.05, C.A, oScr);
+typeText(".scr .typed", "Plano general al amanecer.", cGui + 0.15, 26);
+lines(".scr .sk", cGui + 1.0, 0.1, 0.45);
+tl.fromTo(Q(".caret"), { opacity: 1 }, { opacity: 0, duration: 0.01, repeat: 5, yoyo: true, repeatDelay: 0.25 }, cGui + 0.2);
+orbGo(oFil, cArc - 0.4, 0.4, "power3.inOut");
+chipPop(".st-a .c3", cArc - 0.03);
+deliver(".fil", cArc - 0.05, C.A, oFil);
+rowIn(".fil .fr", cArc + 0.15, 0.08);
+const ren = [16.1, 16.3, 16.5, 16.68];
+ren.forEach((t, i) => {
+  const r = ".fil .f" + (i + 1);
+  tl.fromTo(Q(r + " .o"), { yPercent: 0 }, { yPercent: -110, duration: 0.4, ease: "power3.inOut" }, t);
+  tl.fromTo(Q(r + " .n"), { yPercent: 110 }, { yPercent: 0, duration: 0.4, ease: "power3.inOut" }, t);
+  tl.fromTo(Q(r + " .fi"), { backgroundColor: "#F2E7FC" }, { backgroundColor: "#9B61F6", duration: 0.3 }, t + 0.1);
+  burst([ST.A[0] + 1240 + 56, ST.A[1] + 330 + 158 + i * 84], t + 0.15, C.A, 5, 60);
+});
+/* la cámara se aleja: las 4 estaciones a la vez, el bucle se cierra y el orbe queda en el centro */
+const tZ = 17.0;
+drawRoute(4, tZ, 0.6);
+cam("ALL", tZ, 0.9, "power3.inOut", 4, 1);
+orbGo([2000, 1300], tZ + 0.05, 0.8, "power3.inOut");
+orbSquash(tZ + 0.85);
+ring([2000, 1300], tZ + 0.85, "#7D29E0", 6);
+
+sceneOut("fade");
+<!--SFX-->
+[{"k":"pop","t":1.3,"v":0.45},{"k":"pop","t":2.95,"v":0.45},{"k":"whoosh","t":4.3,"v":0.4},{"k":"pop","t":5.0,"v":0.45},{"k":"pop","t":6.55,"v":0.45},{"k":"ding","t":6.9,"v":0.6},
+ {"k":"whoosh","t":7.55,"v":0.4},{"k":"pop","t":8.95,"v":0.45},{"k":"pop","t":10.35,"v":0.45},{"k":"pop","t":11.75,"v":0.45},{"k":"click","t":12.9,"v":0.7},
+ {"k":"whoosh","t":13.55,"v":0.4},{"k":"pop","t":14.4,"v":0.45},{"k":"pop","t":15.3,"v":0.45},{"k":"pop","t":15.85,"v":0.45},{"k":"shimmer","t":17.0,"v":0.5}]

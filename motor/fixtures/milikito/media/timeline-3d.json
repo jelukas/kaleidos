@@ -1,0 +1,153 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 480,
+ "fuente": {
+  "ancho": 3840,
+  "alto": 2160,
+  "fps": 25,
+  "duracion": 2042.709
+ },
+ "recorte": true,
+ "plancha": {
+  "x": 856,
+  "y": 0,
+  "ancho": 2624,
+  "alto": 2160,
+  "escala": 0.75,
+  "mascara": "fuente",
+  "curva": "metodo"
+ },
+ "segmentos": [
+  {
+   "dst": 0,
+   "src": 1160,
+   "dur": 480
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 480,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1941,
+    500
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  }
+ ],
+ "capitulos": [],
+ "eventos": [
+  {
+   "id": "o1",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 0,
+   "hasta": 74,
+   "kicker": "Catálogo 3D · 1/6",
+   "etiquetas": [],
+   "objeto": "trofeo",
+   "titulo": "Trofeo"
+  },
+  {
+   "id": "o2",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 80,
+   "hasta": 154,
+   "kicker": "Catálogo 3D · 2/6",
+   "etiquetas": [],
+   "objeto": "llave",
+   "titulo": "Llave"
+  },
+  {
+   "id": "o3",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 160,
+   "hasta": 234,
+   "kicker": "Catálogo 3D · 3/6",
+   "etiquetas": [
+    {
+     "texto": "Registro"
+    },
+    {
+     "texto": "Evaluación"
+    },
+    {
+     "texto": "Escalado"
+    },
+    {
+     "texto": "Comunicación"
+    }
+   ],
+   "objeto": "escalera",
+   "titulo": "Escalera"
+  },
+  {
+   "id": "o4",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 240,
+   "hasta": 314,
+   "kicker": "Catálogo 3D · 4/6",
+   "etiquetas": [],
+   "objeto": "letras",
+   "titulo": "Letras",
+   "texto": "¡Acción!"
+  },
+  {
+   "id": "o5",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 320,
+   "hasta": 394,
+   "kicker": "Catálogo 3D · 5/6",
+   "etiquetas": [],
+   "objeto": "letras",
+   "titulo": "Letras (tildes)",
+   "texto": "Ñandú ÁÉÍÓÚ"
+  },
+  {
+   "id": "o6",
+   "tipo": "escena3d",
+   "lado": "izq",
+   "desde": 400,
+   "hasta": 474,
+   "kicker": "Catálogo 3D · 6/6",
+   "etiquetas": [
+    {
+     "texto": "Banco"
+    },
+    {
+     "texto": "Proveedor único"
+    },
+    {
+     "texto": "Servicios dependientes"
+    },
+    {
+     "texto": "Nuevas dependencias"
+    }
+   ],
+   "objeto": "cadena",
+   "titulo": "Cadena (etiquetas largas)"
+  }
+ ],
+ "subtitulos": [],
+ "gestos": [],
+ "intro": null,
+ "outro": null,
+ "avisos": [
+  "fixture: ventana f10300–f12320 de proyectos/dora-v2 (solo lectura) con eventos «show» de prueba"
+ ]
+}

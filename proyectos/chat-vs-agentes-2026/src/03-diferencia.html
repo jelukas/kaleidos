@@ -1,0 +1,314 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .layer{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .bgL{position:absolute;left:-2000px;top:-2000px;width:6000px;height:6000px;background-color:#E9ECF1;background-image:radial-gradient(rgba(71,84,103,.22) 2.5px,transparent 3px);background-size:46px 46px}
+#__ID__ .bgR{position:absolute;left:-2000px;top:-2000px;width:6000px;height:6000px;background-color:#F5ECFD;background-image:radial-gradient(circle 1000px at 3430px 2500px,rgba(255,1,162,.16),rgba(255,1,162,0) 70%),radial-gradient(circle 1300px at 3300px 2560px,rgba(125,41,224,.2),rgba(125,41,224,0) 72%),radial-gradient(rgba(125,41,224,.2) 2.5px,transparent 3px);background-size:auto,auto,46px 46px}
+#__ID__ .grp{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .lab{position:absolute;top:60px;font-size:118px;text-align:center}
+#__ID__ .lab.L{left:70px;width:720px;color:#475467}
+#__ID__ .lab.R{left:1010px;width:840px;color:var(--acc)}
+#__ID__ .fx{position:absolute;display:block;box-sizing:border-box}
+#__ID__ .labline{position:absolute;left:1280px;top:186px;width:300px;height:10px;border-radius:5px;background:linear-gradient(90deg,#7D29E0,#FF01A2);transform-origin:0 50%}
+#__ID__ .win{border-radius:26px}
+#__ID__ .win .bar .ttl{margin-left:16px;font-size:26px;font-weight:600;color:#667085}
+#__ID__ .winglow{position:absolute;left:1010px;top:240px;width:840px;height:628px;border-radius:26px;box-shadow:0 0 140px 30px rgba(125,41,224,.55),0 0 0 4px rgba(125,41,224,.55);opacity:0}
+/* chat */
+#__ID__ .ub{position:absolute;right:1160px;top:326px;background:var(--acc);color:#fff;font-weight:600;font-size:34px;line-height:1.2;padding:18px 28px;border-radius:30px 30px 8px 30px;white-space:nowrap;box-shadow:0 14px 30px rgba(125,41,224,.35)}
+#__ID__ .av{position:absolute;left:100px;top:440px;width:56px;height:56px;border-radius:50%;background:var(--lila);display:block}
+#__ID__ .av svg{display:block;width:56px;height:56px}
+#__ID__ .ab{position:absolute;left:172px;top:430px;width:588px;box-sizing:border-box;padding:20px 28px 22px;background:#F2F4F7;border-radius:8px 30px 30px 30px;border:1px solid var(--line)}
+#__ID__ .cl{font-size:34px;line-height:49px;height:49px;color:var(--ink);white-space:nowrap}
+#__ID__ .cl.b{font-weight:600}
+#__ID__ .dots{position:absolute;left:28px;top:30px;width:120px;height:30px;background:#F2F4F7}
+#__ID__ .dots i{position:absolute;top:5px;width:18px;height:18px;border-radius:50%;background:#98A2B3;display:block}
+#__ID__ .inp{position:absolute;left:100px;top:786px;width:660px;height:66px;border-radius:33px;background:#F2F4F7;border:1px solid var(--line);box-sizing:border-box}
+#__ID__ .inp span{position:absolute;left:30px;top:0;line-height:64px;font-size:30px;color:#667085}
+#__ID__ .inp i{position:absolute;right:8px;top:8px;width:48px;height:48px;border-radius:50%;background:#D0D5DD;display:block}
+#__ID__ .sticker{position:absolute;left:470px;top:694px;font-size:34px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--pink);background:#fff;border:4px solid var(--pink);border-radius:16px;padding:12px 24px;white-space:nowrap;box-shadow:0 14px 30px rgba(255,1,162,.25)}
+/* agente */
+#__ID__ .task{position:absolute;left:1038px;top:316px;background:var(--lila);color:var(--acc);border:2px solid var(--acc);font-weight:600;font-size:34px;line-height:1.1;padding:14px 28px;border-radius:999px;white-space:nowrap}
+#__ID__ .fback,#__ID__ .ffront{position:absolute;left:1065px;top:600px;width:250px;height:190px;display:block}
+#__ID__ .fback{z-index:1} #__ID__ .ffront{z-index:3}
+#__ID__ .fback svg,#__ID__ .ffront svg{display:block;width:250px;height:190px}
+#__ID__ .flabel{position:absolute;left:1040px;top:798px;width:300px;text-align:center;font-size:34px;font-weight:600;color:#475467;z-index:3}
+#__ID__ .file{position:absolute;width:74px;height:92px;z-index:2;background:#fff;border:2px solid #D9C2FA;border-radius:10px;box-sizing:border-box;box-shadow:0 12px 24px rgba(47,18,94,.22);overflow:hidden}
+#__ID__ .file i{display:block;height:22px;margin:0 0 9px}
+#__ID__ .file b{display:block;height:7px;border-radius:4px;background:#D9C2FA;margin:0 10px 7px}
+#__ID__ .file b:nth-child(3){width:34px}
+#__ID__ .scan{position:absolute;left:1050px;top:600px;width:280px;height:10px;border-radius:5px;background:linear-gradient(90deg,rgba(255,1,162,0),#FF01A2,rgba(255,1,162,0));box-shadow:0 0 30px 6px rgba(255,1,162,.5);opacity:0;z-index:4}
+#__ID__ .panel2{position:absolute;left:1400px;top:410px;width:420px;height:366px;background:#fff;border:1px solid var(--line);border-radius:28px;box-shadow:0 24px 60px rgba(13,19,32,.14);box-sizing:border-box;z-index:5}
+#__ID__ .row{position:absolute;left:14px;width:390px;height:104px}
+#__ID__ .rowbg{position:absolute;inset:0;border-radius:20px;background:var(--lila);opacity:0}
+#__ID__ .ring0{position:absolute;left:20px;top:26px;width:52px;height:52px;border-radius:50%;border:4px solid #D0D5DD;box-sizing:border-box;display:block}
+#__ID__ .spin{position:absolute;left:20px;top:26px;width:52px;height:52px;border-radius:50%;border:6px solid rgba(125,41,224,.22);border-top-color:#7D29E0;box-sizing:border-box;opacity:0;display:block}
+#__ID__ .ck{position:absolute;left:20px;top:26px;width:52px;height:52px;border-radius:50%;background:#067647;display:block;opacity:0}
+#__ID__ .ck svg{display:block;width:52px;height:52px}
+#__ID__ .rl{position:absolute;left:92px;top:0;line-height:104px;font-size:40px;font-weight:600;color:#667085;white-space:nowrap}
+#__ID__ .doc{position:absolute;left:1265px;top:360px;width:330px;height:420px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 40px 90px rgba(47,18,94,.35),0 0 0 8px rgba(125,41,224,.14);z-index:20;overflow:hidden;opacity:0}
+#__ID__ .doc .dt{position:absolute;left:0;width:330px;text-align:center;top:24px;font-size:40px;line-height:1.14;font-weight:800;letter-spacing:-.04em;color:var(--ink);white-space:nowrap}
+#__ID__ .doc .dt span{display:block}
+#__ID__ .doc .dt span:last-child{color:var(--acc)}
+#__ID__ .doc .base{position:absolute;left:28px;top:300px;width:274px;height:4px;background:#E4E7EC}
+#__ID__ .doc .cb{position:absolute;bottom:116px;width:42px;border-radius:8px 8px 0 0;transform-origin:50% 100%}
+#__ID__ .doc .tx{position:absolute;left:28px;height:12px;border-radius:6px;background:#E4E7EC}
+#__ID__ .stamp{position:absolute;left:1560px;top:340px;width:84px;height:84px;border-radius:50%;background:#067647;z-index:25;box-shadow:0 14px 30px rgba(6,118,71,.4);opacity:0;display:block}
+#__ID__ .stamp svg{display:block;width:84px;height:84px}
+#__ID__ .bit{position:absolute;left:0;top:0;width:18px;height:18px;margin:-9px 0 0 -9px;z-index:26;display:block;opacity:0}
+#__ID__ .rip{position:absolute;left:0;top:0;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:5px solid var(--acc);opacity:0;z-index:49;display:block}
+#__ID__ .divline{position:absolute;left:0;top:-200px;width:8px;height:1480px;border-radius:4px;background:linear-gradient(180deg,#FF01A2,#7D29E0);box-shadow:0 0 40px 8px rgba(125,41,224,.45);z-index:30}
+#__ID__ .vs{position:absolute;left:-55px;top:485px;width:110px;height:110px;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;font-size:46px;letter-spacing:-.02em;line-height:110px;text-align:center;z-index:31;box-shadow:0 16px 40px rgba(13,19,32,.35)}
+<!--HTML-->
+<div class="stage">
+  <div class="world">
+    <div class="layer layerL">
+      <div class="bgL"></div>
+      <div class="grp Lc"><div class="grp Lin">
+        <div class="lab L h"><span class="mask"><span class="r">CHAT</span></span></div>
+        <div class="win" style="left:70px;top:240px;width:720px;height:628px"><div class="bar"><i></i><i></i><i></i><span class="ttl">Chat</span></div></div>
+        <div class="ub">Prepara el resumen semanal</div>
+        <div class="av"><svg viewBox="0 0 56 56"><path d="M28 12l4 11 11 4-11 4-4 11-4-11-11-4 11-4z" fill="#7D29E0"/></svg></div>
+        <div class="ab"><div class="cl b"></div><div class="cl"></div><div class="cl"></div><div class="cl"></div>
+          <div class="dots"><i style="left:0"></i><i style="left:30px"></i><i style="left:60px"></i></div></div>
+        <div class="inp"><span>Escribe un mensaje…</span><i></i></div>
+        <div class="sticker">Solo texto</div>
+      </div></div>
+    </div>
+    <div class="layer layerR">
+      <div class="bgR"></div>
+      <div class="grp Rfx"><i class="fx" style="left:1900px;top:300px;width:190px;height:190px;border-radius:50%;border:4px solid rgba(125,41,224,.3)"></i><i class="fx" style="left:2000px;top:620px;width:130px;height:130px;border-radius:30px;border:4px solid rgba(255,1,162,.3)"></i><i class="fx" style="left:1890px;top:790px;width:60px;height:60px;border-radius:50%;background:rgba(255,1,162,.35)"></i><i class="fx" style="left:870px;top:330px;width:110px;height:110px;border-radius:50%;border:4px solid rgba(125,41,224,.3)"></i><i class="fx" style="left:850px;top:760px;width:90px;height:90px;border-radius:24px;border:4px solid rgba(255,1,162,.28)"></i><i class="fx" style="left:1960px;top:480px;width:44px;height:44px;border-radius:50%;background:rgba(125,41,224,.4)"></i><i class="fx" style="left:1500px;top:900px;width:160px;height:160px;border-radius:50%;border:4px solid rgba(125,41,224,.25)"></i><i class="fx" style="left:1180px;top:60px;width:70px;height:70px;border-radius:18px;background:rgba(155,97,246,.3)"></i></div>
+      <div class="grp Rc">
+        <div class="lab R h"><span class="mask"><span class="r">AGENTE</span></span></div>
+        <div class="labline"></div>
+        <div class="winglow"></div>
+        <div class="win" style="left:1010px;top:240px;width:840px;height:628px"><div class="bar"><i></i><i></i><i></i><span class="ttl">Aplicación de escritorio</span></div></div>
+        <div class="task">Prepara el resumen semanal</div>
+        <div class="fback"><svg viewBox="0 0 250 190"><path d="M10 30a16 16 0 0 1 16-16h64l24 26h110a16 16 0 0 1 16 16v118a16 16 0 0 1-16 16H26a16 16 0 0 1-16-16z" fill="#5E3DE6"/></svg></div>
+        <div class="ffront"><svg viewBox="0 0 250 190"><defs><linearGradient id="fg-__ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9B61F6"/><stop offset="1" stop-color="#7D29E0"/></linearGradient></defs><rect x="10" y="62" width="230" height="118" rx="18" fill="url(#fg-__ID__)"/><rect x="10" y="62" width="230" height="8" rx="4" fill="#fff" opacity=".35"/></svg></div>
+        <div class="flabel">Mi carpeta</div>
+        <div class="scan"></div>
+        <div class="panel2">
+          <div class="row" style="top:16px"><div class="rowbg"></div><i class="ring0"></i><i class="spin"></i><i class="ck"><svg viewBox="0 0 52 52"><path d="M15 27l8 8 15-17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><div class="rl">Leyendo</div></div>
+          <div class="row" style="top:130px"><div class="rowbg"></div><i class="ring0"></i><i class="spin"></i><i class="ck"><svg viewBox="0 0 52 52"><path d="M15 27l8 8 15-17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><div class="rl">Analizando</div></div>
+          <div class="row" style="top:244px"><div class="rowbg"></div><i class="ring0"></i><i class="spin"></i><i class="ck"><svg viewBox="0 0 52 52"><path d="M15 27l8 8 15-17" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></svg></i><div class="rl">Creando</div></div>
+        </div>
+        <div class="doc">
+          <div class="dt"><span>Resumen</span><span>semanal</span></div>
+          <div class="cb" style="left:28px;height:70px;top:230px;background:#D9C2FA"></div>
+          <div class="cb" style="left:86px;height:110px;top:190px;background:#9B61F6"></div>
+          <div class="cb" style="left:144px;height:86px;top:214px;background:#5E3DE6"></div>
+          <div class="cb" style="left:202px;height:150px;top:150px;background:#7D29E0"></div>
+          <div class="base"></div>
+          <div class="tx" style="top:326px;width:274px"></div>
+          <div class="tx" style="top:352px;width:222px"></div>
+          <div class="tx" style="top:378px;width:160px"></div>
+        </div>
+        <div class="stamp"><svg viewBox="0 0 84 84"><path d="M24 44l12 12 24-27" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="rip r1"></div><div class="rip r2"></div>
+        <div class="orb"></div>
+      </div>
+    </div>
+    <div class="divline"></div>
+    <div class="vs">VS</div>
+  </div>
+</div>
+<!--JS-->
+/* ============ ritmo: tiempos clave (voz = cue, golpes = beat) ============ */
+const B = BEATS;
+const T_BUB = B[2];                 // 1,091  burbujas del encargo
+const T_CHAT = B[4];                // 2,182  «En chat…» responde el asistente
+const T_STICK = B[8];               // 4,364  «solo texto»
+const T_WAKE = B[9];                // 4,909  «Con la aplicación…» despierta el agente
+const T_WORK = B[12];               // 6,545  «trabaja:» protagonismo
+const T_OPEN = cue("abre");         // ~7,2   «abre tus archivos»
+const T_S2 = B[15];                 // 8,182  Analizando
+const T_S3 = B[17];                 // 9,273  Creando
+const T_DOC = B[19];                // 10,364 «entrega» el documento
+const T_SWEEP = B[20];              // 10,909 el divisor barre
+const GREEN = "#067647";
+
+/* ============ divisor diagonal con clip-path ============ */
+const D = { cx: 960 }, SK = 60;
+const xAt = (y) => D.cx + SK - ((2 * SK) / 1080) * y;
+const Lel = $q(".layerL"), Rel = $q(".layerR");
+function applyDiv() {
+  const a = xAt(-2000), b = xAt(3000);
+  Lel.style.clipPath = "polygon(-3000px -2000px," + a + "px -2000px," + b + "px 3000px,-3000px 3000px)";
+  Rel.style.clipPath = "polygon(" + a + "px -2000px,5000px -2000px,5000px 3000px," + b + "px 3000px)";
+  gsap.set(Q(".divline"), { x: D.cx - 4 });
+  gsap.set(Q(".vs"), { x: D.cx });
+}
+gsap.set(Q(".divline"), { rotation: (Math.atan2(SK, 540) * 180) / Math.PI, transformOrigin: "50% 50%" });
+applyDiv();
+const moveDiv = (to, at, d, ease) => tl.to(D, { cx: to, duration: d, ease, onUpdate: applyDiv }, at);
+
+/* ============ cámara virtual ============ */
+tl.set(Q(".world"), { transformOrigin: "0 0", scale: 1.08, x: 960 - 1.08 * 960, y: 540 - 1.08 * 540 }, 0);
+function cam(at, d, s, px, py, qx, qy, ease = "power3.inOut") {
+  return tl.to(Q(".world"), { scale: s, x: qx - s * px, y: qy - s * py, duration: d, ease }, at);
+}
+cam(0, 0.9, 1.0, 960, 540, 960, 540, "expo.out");
+cam(0.9, T_CHAT - 0.9, 1.03, 960, 540, 960, 540, "none");
+cam(T_CHAT, 0.85, 1.1, 430, 554, 620, 566);
+cam(4.6, 0.75, 1.0, 960, 540, 960, 540);
+cam(5.35, T_WORK - 5.35, 1.03, 960, 540, 960, 540, "none");
+cam(T_WORK, 0.9, 1.2, 1430, 554, 1040, 612);
+cam(T_WORK + 0.9, T_SWEEP - T_WORK - 0.9, 1.25, 1430, 554, 1040, 612, "none");
+cam(T_SWEEP, 0.8, 1.1, 1430, 470, 960, 540);
+
+/* ============ entrada: dos alas con inclinación (split-tilt), aterrizan en el golpe 0 ============ */
+tl.fromTo(Q(".Lc"), { x: -640, rotationY: 26, transformPerspective: 1500, transformOrigin: "960px 540px" }, { x: 0, rotationY: 0, duration: 0.8, ease: "power4.out" }, 0);
+tl.fromTo(Q(".Rc"), { x: 640, rotationY: -26, transformPerspective: 1500, transformOrigin: "960px 540px" }, { x: 0, rotationY: 0, duration: 0.8, ease: "power4.out" }, 0.04);
+rise(".lab.L .r", 0.12, 0.9);
+rise(".lab.R .r", 0.18, 0.9);
+tl.fromTo(Q(".labline"), { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: E }, 0.5);
+tl.fromTo(Q(".vs"), { scale: 0 }, { scale: 1, duration: 0.55, ease: "back.out(2.4)" }, B[1]);
+tl.fromTo(Q(".vs"), { rotation: -20 }, { rotation: 0, duration: 0.55, ease: "back.out(2)" }, B[1]);
+tl.to(Q(".vs"), { scale: 0, rotation: 90, duration: 0.4, ease: "back.in(2)" }, T_WORK - 0.05);
+/* pulso del divisor con la música mientras hay split */
+B.filter((b) => b > 1.3 && b < T_WORK - 0.4).forEach((b) => {
+  tl.fromTo(Q(".divline"), { scaleX: 1 }, { scaleX: 2.2, duration: 0.12, yoyo: true, repeat: 1, ease: "sine.inOut" }, b);
+});
+
+$$q(".fx").forEach((f, i) => tl.fromTo(f, { y: 0, rotation: 0 }, { y: (i % 2 ? -90 : 90), rotation: (i % 2 ? -40 : 50), duration: DUR, ease: "none" }, 0));
+/* ============ LADO CHAT ============ */
+tl.fromTo(Q(".ub"), { opacity: 0, x: 120, scale: 0.7 }, { opacity: 1, x: 0, scale: 1, duration: 0.55, ease: SPR }, T_BUB);
+tl.set(Q(".av"), { opacity: 0 }, 0);
+tl.fromTo(Q(".ab"), { opacity: 0, y: 30, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR }, T_CHAT);
+tl.fromTo(Q(".av"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: SPR }, T_CHAT);
+$$q(".dots i").forEach((d, i) => {
+  tl.fromTo(d, { y: 0 }, { y: -10, duration: 0.17, yoyo: true, repeat: 3, ease: "sine.inOut" }, T_CHAT + 0.1 + i * 0.07);
+});
+tl.to(Q(".dots"), { opacity: 0, duration: 0.15 }, T_CHAT + 0.62);
+const LINES = ["Claro. Este es el resumen:", "• Ventas: ligera subida", "• Tareas: 12 cerradas", "• Pendiente: revisar plan"];
+let tt = T_CHAT + 0.66;
+$$q(".cl").forEach((el, i) => { tt += typeText(".cl:nth-child(" + (i + 1) + ")", LINES[i], tt, 80) + 0.07; });
+const T_TEXT_END = tt;
+tl.fromTo(Q(".sticker"), { opacity: 0, scale: 2.2, rotation: -26 }, { opacity: 1, scale: 1, rotation: -6, duration: 0.45, ease: "back.out(2)" }, T_STICK);
+tl.fromTo(Q(".inp i"), { background: "#D0D5DD" }, { background: "#7D29E0", duration: 0.2 }, T_CHAT - 0.2);
+
+/* el chat se apaga cuando el agente toma el protagonismo */
+tl.set(Q(".Lin"), { transformOrigin: "430px 554px" }, 0);
+tl.to(Q(".Lin"), { opacity: 0.68, scale: 0.93, filter: "grayscale(0.9) blur(1.5px)", duration: 0.8, ease: "power2.out" }, T_WORK);
+moveDiv(820, T_WORK, 0.9, "power3.inOut");
+
+/* ============ LADO AGENTE ============ */
+tl.fromTo(Q(".task"), { opacity: 0, y: -30, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, T_BUB);
+tl.fromTo(Q(".fback,.ffront"), { opacity: 0, y: 60, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.7, ease: "back.out(1.8)" }, 0.55);
+tl.fromTo(Q(".flabel"), { opacity: 0 }, { opacity: 1, duration: 0.4 }, 1.0);
+tl.set(Q(".fback,.ffront"), { transformOrigin: "50% 100%" }, 0);
+/* archivos: caen desordenados con rebote */
+const FILES = [[1065, 420, -14, "#7D29E0"], [1170, 408, 9, "#FF01A2"], [1275, 424, -7, "#5E3DE6"], [1110, 492, 17, "#9B61F6"], [1230, 496, -18, "#FF01A2"]];
+const stage = $q(".Rc");
+FILES.forEach(([x, y, r, c], i) => {
+  const f = document.createElement("div"); f.className = "file";
+  f.style.left = x + "px"; f.style.top = y + "px";
+  f.innerHTML = '<i style="background:' + c + '"></i><b></b><b></b><b></b>';
+  stage.insertBefore(f, $q(".scan"));
+  tl.fromTo(f, { y: -330, opacity: 0, rotation: r + 50 }, { y: 0, opacity: 1, rotation: r, duration: 0.75, ease: "bounce.out" }, 0.85 + i * 0.1);
+  /* bamboleo suave mientras esperan */
+  tl.fromTo(f, { x: 0 }, { x: (i % 2 ? 7 : -7), duration: 0.7, yoyo: true, repeat: 3, ease: "sine.inOut" }, 1.8 + i * 0.1);
+});
+const FILE_EL = $$q(".file");
+/* panel de pasos entra y queda en espera */
+tl.fromTo(Q(".panel2"), { opacity: 0, x: 80, scale: 0.9 }, { opacity: 1, x: 0, scale: 1, duration: 0.7, ease: "back.out(1.5)" }, 1.9);
+$$q(".panel2 .row").forEach((r, i) => tl.fromTo(r, { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, 2.2 + i * 0.12));
+
+/* el orbe despierta */
+orbSet(1640, 372, 0);
+tl.set(Q(".orb"), { opacity: 0, scale: 0 }, 0);
+tl.fromTo(Q(".orb"), { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 1, duration: 0.65, ease: SPR }, T_WAKE);
+tl.fromTo(Q(".winglow"), { opacity: 0 }, { opacity: 1, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, T_WAKE);
+tl.fromTo(Q(".rip.r1"), { x: 1640, y: 372, opacity: 0.9, scale: 0.2 }, { x: 1640, y: 372, opacity: 0, scale: 3.2, duration: 0.8, ease: "power2.out", immediateRender: false }, T_WAKE);
+tl.fromTo(Q(".orb"), { y: 372 }, { y: 352, duration: 0.36, yoyo: true, repeat: 3, ease: "sine.inOut" }, T_WAKE + 0.65);
+/* protagonismo en «trabaja» */
+tl.fromTo(Q(".winglow"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out", immediateRender: false }, T_WORK);
+
+/* ---- paso a paso ---- */
+const ROWS = $$q(".panel2 .row");
+function stepOn(i, at) {
+  const r = ROWS[i];
+  tl.to(r.querySelector(".rowbg"), { opacity: 1, duration: 0.25 }, at);
+  tl.to(r.querySelector(".ring0"), { opacity: 0, duration: 0.15 }, at);
+  tl.fromTo(r.querySelector(".spin"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.25, ease: SPR }, at);
+  tl.fromTo(r.querySelector(".spin"), { rotation: 0 }, { rotation: 1080, duration: 1.0, ease: "none" }, at);
+  tl.to(r.querySelector(".rl"), { color: "#0D1320", duration: 0.2 }, at);
+}
+function stepDone(i, at) {
+  const r = ROWS[i];
+  tl.to(r.querySelector(".spin"), { opacity: 0, scale: 0.2, duration: 0.18 }, at);
+  tl.fromTo(r.querySelector(".ck"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(2.6)" }, at + 0.05);
+  tl.to(r.querySelector(".rowbg"), { opacity: 0, duration: 0.4 }, at + 0.15);
+}
+
+/* ---- «abre tus archivos»: el orbe los recoge, uno a uno vuelan a la carpeta ---- */
+const FC = [[1102, 466], [1207, 454], [1312, 470], [1147, 538], [1267, 542]];
+const T_O = T_OPEN - 0.17;
+FC.forEach(([x, y], i) => orbTo(x, y, T_O + i * 0.11, 0.12, "power2.inOut"));
+orbTo(1190, 575, T_O + 5 * 0.11, 0.25, "power2.inOut");
+stepOn(0, T_OPEN);
+FILE_EL.forEach((f, i) => {
+  const L = T_O + i * 0.11 + 0.1;
+  tl.to(f, { x: 1153 - FILES[i][0], y: 624 - FILES[i][1], scale: 0.55, rotation: 0, duration: 0.5, ease: "power3.in" }, L);
+  tl.to(f, { opacity: 0, duration: 0.12 }, L + 0.4);
+  tl.to(Q(".fback,.ffront"), { scaleY: 0.92, scaleX: 1.03, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.out" }, L + 0.44);
+});
+stepDone(0, T_S2 - 0.1);
+
+/* ---- «Analizando»: haz de escaneo + el orbe orbita la carpeta ---- */
+stepOn(1, T_S2);
+orbTo(1190, 556, T_S2 - 0.08, 0.2, "power2.out");
+const OR = { a: 0 };
+tl.to(OR, { a: Math.PI * 2.5, duration: 1.0, ease: "power1.inOut", onUpdate: () => gsap.set(Q(".orb"), { x: 1190 + 160 * Math.sin(OR.a), y: 680 - 125 * Math.cos(OR.a) }) }, T_S2 + 0.12);
+tl.fromTo(Q(".scan"), { opacity: 0, y: 0 }, { opacity: 1, duration: 0.1 }, T_S2 + 0.1);
+tl.fromTo(Q(".scan"), { y: 0 }, { y: 175, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut" }, T_S2 + 0.1);
+tl.to(Q(".scan"), { opacity: 0, duration: 0.12 }, T_S2 + 1.2);
+stepDone(1, T_S3 - 0.1);
+
+/* ---- «Creando»: chispas de la carpeta al orbe ---- */
+stepOn(2, T_S3);
+orbTo(1430, 560, T_S3, 0.5, "power3.inOut");
+orbPulse(T_S3 + 0.5, 0.5);
+const SPK = [[1150, 620], [1230, 640], [1190, 600], [1260, 610], [1120, 650], [1210, 630]];
+SPK.forEach(([x, y], i) => {
+  const s = document.createElement("i"); s.className = "bit"; s.style.background = i % 2 ? "#FF01A2" : "#7D29E0"; s.style.borderRadius = "50%";
+  stage.appendChild(s);
+  tl.fromTo(s, { x, y, opacity: 1, scale: 1.1 }, { x: 1430 + (i - 3) * 6, y: 560 + (i - 3) * 4, opacity: 0, scale: 0.2, duration: 0.55, ease: "power2.in", immediateRender: false }, T_S3 + 0.15 + i * 0.1);
+  tl.fromTo(s, { opacity: 0 }, { opacity: 1, duration: 0.05, immediateRender: false }, T_S3 + 0.15 + i * 0.1);
+});
+stepDone(2, T_DOC - 0.18);
+
+/* ---- el entregable: el documento aparece ---- */
+tl.fromTo(Q(".doc"), { opacity: 0, scale: 0.15, y: 70, rotation: -10, transformOrigin: "50% 17%" }, { opacity: 1, scale: 1, y: 0, rotation: 0, duration: 0.65, ease: "back.out(1.9)" }, T_DOC);
+$$q(".doc .cb").forEach((c, i) => tl.fromTo(c, { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "back.out(1.6)" }, T_DOC + 0.3 + i * 0.07));
+tl.fromTo(Q(".stamp"), { opacity: 0, scale: 0, rotation: -40 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: "back.out(2.6)" }, T_DOC + 0.4);
+tl.to(Q(".panel2"), { opacity: 0, x: 90, scale: 0.92, duration: 0.3, ease: "power2.in" }, T_DOC - 0.3);
+tl.to(Q(".fback,.ffront,.flabel,.task"), { opacity: 0.25, duration: 0.4 }, T_DOC);
+orbSquash(T_DOC - 0.1);
+orbTo(1640, 420, T_DOC + 0.1, 0.6, "power3.out");
+orbPulse(T_DOC + 0.7, 0.4);
+/* confeti */
+const COLS = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6", "#FFB3E3"];
+for (let i = 0; i < 16; i++) {
+  const a = (i / 16) * Math.PI * 2, r = 170 + (i % 3) * 60;
+  const s = document.createElement("i"); s.className = "bit"; s.style.background = COLS[i % 5]; s.style.borderRadius = i % 2 ? "50%" : "4px";
+  stage.appendChild(s);
+  tl.fromTo(s, { x: 1430, y: 570, opacity: 1, scale: 1.1, rotation: 0 }, { x: 1430 + Math.cos(a) * r * 1.4, y: 570 + Math.sin(a) * r + 70, opacity: 0, scale: 0.4, rotation: 240, duration: 0.85, ease: "power3.out", immediateRender: false }, T_DOC + 0.1);
+  tl.fromTo(s, { opacity: 0 }, { opacity: 1, duration: 0.05, immediateRender: false }, T_DOC + 0.1);
+}
+
+/* ---- el divisor barre, queda solo el agente, el documento llena el cuadro ---- */
+moveDiv(-260, T_SWEEP, 0.75, "power3.inOut");
+tl.to(Q(".orb"), { opacity: 0, scale: 0.4, duration: 0.3 }, T_SWEEP + 0.25);
+tl.to(Q(".stamp"), { opacity: 0, scale: 0.4, duration: 0.25 }, T_SWEEP + 0.2);
+tl.to(Q(".doc"), { scale: 6.8, duration: 0.85, ease: "power3.inOut" }, T_SWEEP + 0.2);
+tl.to(Q(".doc"), { borderRadius: 4, duration: 0.85 }, T_SWEEP + 0.2);
+
+sceneIn("whip");
+sceneOut("zoom");
+<!--SFX-->
+[{"k":"impact","t":0.04,"v":0.45},{"k":"pop","t":1.09,"v":0.45},{"k":"pop","t":2.18,"v":0.4},
+ {"k":"key","t":2.9,"v":0.3},{"k":"key","t":3.1,"v":0.3},{"k":"key","t":3.3,"v":0.3},{"k":"key","t":3.5,"v":0.3},{"k":"key","t":3.7,"v":0.3},{"k":"key","t":3.9,"v":0.3},{"k":"key","t":4.1,"v":0.3},
+ {"k":"impact","t":4.36,"v":0.5},{"k":"shimmer","t":4.91,"v":0.4},{"k":"whoosh","t":6.45,"v":0.5},
+ {"k":"click","t":7.17,"v":0.4},{"k":"click","t":7.28,"v":0.4},{"k":"click","t":7.39,"v":0.4},{"k":"click","t":7.5,"v":0.4},{"k":"click","t":7.61,"v":0.4},
+ {"k":"ding","t":8.15,"v":0.5},{"k":"ding","t":9.2,"v":0.5},{"k":"riser","t":9.5,"v":0.4},{"k":"ding","t":10.18,"v":0.55},
+ {"k":"shimmer","t":10.36,"v":0.6},{"k":"whoosh","t":10.9,"v":0.6}]

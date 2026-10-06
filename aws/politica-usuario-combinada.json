@@ -1,0 +1,235 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "RemotionHandleQuotas",
+      "Effect": "Allow",
+      "Action": [
+        "servicequotas:GetServiceQuota",
+        "servicequotas:GetAWSDefaultServiceQuota",
+        "servicequotas:RequestServiceQuotaIncrease",
+        "servicequotas:ListRequestedServiceQuotaChangeHistoryByQuota"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "RemotionPermissionValidation",
+      "Effect": "Allow",
+      "Action": [
+        "iam:SimulatePrincipalPolicy"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "RemotionLambdaInvokation",
+      "Effect": "Allow",
+      "Action": [
+        "iam:PassRole"
+      ],
+      "Resource": [
+        "arn:aws:iam::*:role/remotion-lambda-role"
+      ]
+    },
+    {
+      "Sid": "RemotionStorage",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:DeleteObject",
+        "s3:PutObjectAcl",
+        "s3:PutObject",
+        "s3:CreateBucket",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:PutBucketAcl",
+        "s3:DeleteBucket",
+        "s3:PutBucketOwnershipControls",
+        "s3:PutBucketPublicAccessBlock",
+        "s3:PutBucketPolicy",
+        "s3:PutLifecycleConfiguration"
+      ],
+      "Resource": [
+        "arn:aws:s3:::remotionlambda-*"
+      ]
+    },
+    {
+      "Sid": "RemotionBucketListing",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListAllMyBuckets"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "RemotionFunctionListing",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:ListFunctions",
+        "lambda:GetFunction"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "RemotionFunctionManagement",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:InvokeAsync",
+        "lambda:InvokeFunction",
+        "lambda:CreateFunction",
+        "lambda:DeleteFunction",
+        "lambda:PutFunctionEventInvokeConfig",
+        "lambda:PutRuntimeManagementConfig",
+        "lambda:TagResource"
+      ],
+      "Resource": [
+        "arn:aws:lambda:*:*:function:remotion-render-*"
+      ]
+    },
+    {
+      "Sid": "RemotionLogsRetention",
+      "Effect": "Allow",
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:PutRetentionPolicy"
+      ],
+      "Resource": [
+        "arn:aws:logs:*:*:log-group:/aws/lambda/remotion-render-*"
+      ]
+    },
+    {
+      "Sid": "RemotionFetchBinaries",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:GetLayerVersion"
+      ],
+      "Resource": [
+        "arn:aws:lambda:*:678892195805:layer:remotion-binaries-*",
+        "arn:aws:lambda:*:580247275435:layer:LambdaInsightsExtension*"
+      ]
+    },
+    {
+      "Sid": "HyperFramesLambdaSam",
+      "Effect": "Allow",
+      "Action": [
+        "cloudformation:CreateChangeSet",
+        "cloudformation:CreateStack",
+        "cloudformation:DeleteChangeSet",
+        "cloudformation:DeleteStack",
+        "cloudformation:DescribeChangeSet",
+        "cloudformation:DescribeStackEvents",
+        "cloudformation:DescribeStackResource",
+        "cloudformation:DescribeStackResources",
+        "cloudformation:DescribeStacks",
+        "cloudformation:ExecuteChangeSet",
+        "cloudformation:GetTemplate",
+        "cloudformation:GetTemplateSummary",
+        "cloudformation:ListStacks",
+        "cloudformation:UpdateStack",
+        "cloudformation:ValidateTemplate",
+        "cloudwatch:DeleteAlarms",
+        "cloudwatch:DescribeAlarms",
+        "cloudwatch:PutMetricAlarm",
+        "iam:AttachRolePolicy",
+        "iam:CreateRole",
+        "iam:DeleteRole",
+        "iam:DeleteRolePolicy",
+        "iam:DetachRolePolicy",
+        "iam:GetRole",
+        "iam:GetRolePolicy",
+        "iam:PutRolePolicy",
+        "iam:TagRole",
+        "iam:UntagRole",
+        "lambda:AddPermission",
+        "lambda:CreateFunction",
+        "lambda:DeleteFunction",
+        "lambda:GetFunction",
+        "lambda:GetFunctionConfiguration",
+        "lambda:InvokeFunction",
+        "lambda:ListFunctions",
+        "lambda:PutFunctionConcurrency",
+        "lambda:RemovePermission",
+        "lambda:TagResource",
+        "lambda:UntagResource",
+        "lambda:UpdateFunctionCode",
+        "lambda:UpdateFunctionConfiguration",
+        "logs:CreateLogGroup",
+        "logs:DeleteLogGroup",
+        "logs:DescribeLogGroups",
+        "logs:PutRetentionPolicy",
+        "logs:TagResource",
+        "s3:CreateBucket",
+        "s3:DeleteBucket",
+        "s3:DeleteBucketPolicy",
+        "s3:DeleteObject",
+        "s3:GetBucketLocation",
+        "s3:GetBucketPolicy",
+        "s3:GetBucketTagging",
+        "s3:GetBucketVersioning",
+        "s3:GetEncryptionConfiguration",
+        "s3:GetLifecycleConfiguration",
+        "s3:GetObject",
+        "s3:ListAllMyBuckets",
+        "s3:ListBucket",
+        "s3:PutBucketPolicy",
+        "s3:PutBucketTagging",
+        "s3:PutBucketVersioning",
+        "s3:PutEncryptionConfiguration",
+        "s3:PutLifecycleConfiguration",
+        "s3:PutObject",
+        "states:CreateStateMachine",
+        "states:DeleteStateMachine",
+        "states:DescribeExecution",
+        "states:DescribeStateMachine",
+        "states:GetExecutionHistory",
+        "states:ListExecutions",
+        "states:ListStateMachines",
+        "states:StartExecution",
+        "states:StopExecution",
+        "states:TagResource",
+        "states:UntagResource",
+        "states:UpdateStateMachine"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "HyperFramesPassRole",
+      "Effect": "Allow",
+      "Action": "iam:PassRole",
+      "Resource": "arn:aws:iam::*:role/hyperframes-kaleidos-*",
+      "Condition": {
+        "StringEquals": {
+          "iam:PassedToService": [
+            "lambda.amazonaws.com",
+            "states.amazonaws.com"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "KaleidosBucketsPrivados",
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutBucketPublicAccessBlock",
+        "s3:GetBucketPublicAccessBlock",
+        "s3:PutBucketCORS",
+        "s3:GetBucketCORS",
+        "s3:GetObjectAcl"
+      ],
+      "Resource": [
+        "arn:aws:s3:::kaleidos-*",
+        "arn:aws:s3:::hyperframes-kaleidos-*",
+        "arn:aws:s3:::aws-sam-cli-managed-default-*"
+      ]
+    }
+  ]
+}

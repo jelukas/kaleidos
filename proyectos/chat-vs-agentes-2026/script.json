@@ -1,0 +1,66 @@
+{
+  "modelId": "eleven_v4",
+  "defaultGap": 0.0,
+  "lines": [
+    {
+      "id": "l02",
+      "text": "¿Y si, en vez de pedirle un texto a la IA, le pidieras el trabajo hecho?",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v03",
+      "text": "Esa es la diferencia. En chat, la IA contesta. Con la aplicación de escritorio, trabaja: abre tus archivos, sigue un encargo paso a paso y te entrega el resultado.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v04",
+      "text": "Eliges una carpeta y se acabó subir y bajar archivos. Se conecta a tu correo, tu calendario o tu gestor de clientes, y sigue con tareas largas mientras tú haces otra cosa.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v05",
+      "text": "Y no solo escribe. Produce.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v06",
+      "text": "Puede escribir el código de un vídeo, con herramientas como Remotion o HyperFrames, y renderizarlo.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v07",
+      "text": "Generar imágenes, revisarlas, detectar lo que falla y corregirlo.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v08",
+      "text": "Montar una landing, cortarla en secciones y dejarla lista para publicar.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v09",
+      "text": "Y preparar presentaciones que entran por los ojos.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v10",
+      "text": "En marketing, briefings, campañas y el informe de cada lunes. En ventas, la reunión preparada y el memo listo. En recursos humanos, planes de incorporación y descripciones de puesto, sin pegar datos personales. En audiovisual, conceptos, guiones y archivos en orden.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v11",
+      "text": "En Claude, el modo agente, antes llamado Cowork. En ChatGPT, Work. Claude Code y Codex, para programar.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "v12",
+      "text": "Tú mantienes el control: eliges las carpetas, ves cada paso y te pide permiso antes de actuar. Algunas funciones cambian según tu plan y tu país.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "l14",
+      "text": "Chat para preguntar. Agente para que te entregue el trabajo hecho. Empieza por una tarea pequeña de tu semana.",
+      "gapBefore": 0.0
+    }
+  ]
+}

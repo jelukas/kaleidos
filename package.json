@@ -1,0 +1,18 @@
+{
+  "name": "kaleidos",
+  "private": true,
+  "type": "module",
+  "description": "Fábrica de vídeos: brutos → pipeline (tools/) → motor Remotion (motor/) con estilos (estilos/) → render en AWS Lambda",
+  "scripts": {
+    "tts": "node scripts/tts.mjs",
+    "audio": "node scripts/audio.mjs",
+    "imagenes": "node scripts/images.mjs",
+    "stock": "node scripts/stock.mjs",
+    "capturas": "node scripts/capture.mjs"
+  },
+  "dependencies": {
+    "puppeteer-core": "^25.12.0",
+    "si9": "npm:simple-icons@^9.21.0",
+    "simple-icons": "^16.32.0"
+  }
+}

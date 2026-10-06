@@ -1,0 +1,178 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:1175px 608px}
+#__ID__ .eyeb{position:absolute;left:100px;top:46px;opacity:0}
+#__ID__ .stat{position:absolute;top:104px;display:flex;align-items:baseline;gap:22px;white-space:nowrap}
+#__ID__ .stat .n{display:block;font-weight:800;letter-spacing:-.05em;line-height:1;font-size:236px;font-variant-numeric:tabular-nums}
+#__ID__ .stat .u{display:block;font-weight:600;font-size:52px;color:#667085;letter-spacing:-.01em}
+#__ID__ .s1{left:100px} #__ID__ .s1 .n{color:#7D29E0}
+#__ID__ .s2{left:660px} #__ID__ .s2 .n{color:#0D1320}
+#__ID__ .s3{left:1130px} #__ID__ .s3 .n{color:#0D1320}
+#__ID__ .axt{position:absolute;left:100px;top:456px;font-weight:700;font-size:26px;letter-spacing:.14em;color:#667085;text-transform:uppercase;opacity:0;white-space:nowrap}
+#__ID__ .rail{position:absolute;left:560px;top:478px;width:1230px;height:4px;border-radius:2px;background:rgba(13,19,32,.2);transform-origin:0 50%}
+#__ID__ .tk{position:absolute;top:470px;width:2px;height:20px;background:rgba(13,19,32,.28);margin-left:-1px}
+#__ID__ .tk.m{height:30px;top:465px;background:rgba(13,19,32,.5)}
+#__ID__ .tl{position:absolute;top:498px;font-weight:700;font-size:23px;color:#667085;transform:translateX(-50%);white-space:nowrap;opacity:0}
+#__ID__ .play{position:absolute;left:0;top:350px;width:4px;height:140px;margin-left:-2px;border-radius:2px;background:linear-gradient(#FF01A2,#7D29E0);box-shadow:0 0 24px rgba(255,1,162,.7);opacity:0}
+#__ID__ .playlb{position:absolute;left:0;top:318px;transform:translateX(-50%);font-weight:800;font-size:28px;color:#fff;background:#7D29E0;border-radius:999px;padding:6px 18px;white-space:nowrap;opacity:0}
+#__ID__ .wcol{position:absolute;left:1560px;top:372px;width:236px;height:648px;border-radius:30px;background:rgba(255,1,162,.07);border:3px dashed rgba(255,1,162,.55);opacity:0;transform-origin:50% 100%}
+#__ID__ .wlab{position:absolute;left:1560px;top:382px;width:236px;text-align:center;font-weight:800;font-size:24px;letter-spacing:.16em;color:#C2007F;opacity:0;white-space:nowrap}
+#__ID__ .trk{position:absolute;left:560px;width:1230px;height:96px;border-radius:48px;transform-origin:0 50%}
+#__ID__ .fillbar{position:absolute;left:560px;width:1230px;height:96px;border-radius:48px;background:#7D29E0;transform-origin:0 50%;opacity:0}
+#__ID__ .chipl{position:absolute;left:100px;height:64px;display:flex;align-items:center;padding:0 28px;border-radius:32px;color:#fff;font-weight:800;font-size:30px;letter-spacing:-.01em;white-space:nowrap;box-shadow:0 14px 36px rgba(13,19,32,.18)}
+#__ID__ .cnt{position:absolute;left:1806px;width:68px;height:68px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:38px}
+#__ID__ .dot{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;background:#fff;border:5px solid #0D1320;box-sizing:border-box;box-shadow:0 4px 12px rgba(13,19,32,.25);z-index:5}
+#__ID__ .rg{position:absolute;left:0;top:0;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:4px solid #7D29E0;opacity:0;z-index:4;box-sizing:border-box}
+#__ID__ .flood{position:absolute;left:1075px;top:508px;width:200px;height:200px;border-radius:50%;background:#7D29E0;opacity:0;z-index:90}
+#__ID__ .deepfade{position:absolute;inset:0;opacity:0;z-index:95}
+#__ID__ .irisout{position:absolute;inset:0;z-index:100;background:linear-gradient(135deg,#7D29E0,#5E3DE6 55%,#FF01A2 140%)}
+<!--HTML-->
+<div class="stage">
+  <div class="world">
+    <div class="eyeb eye">Mapa del mes · septiembre 2026</div>
+    <div class="stat s1"><span class="n">0</span><span class="u">noticias</span></div>
+    <div class="stat s2"><span class="n">4</span><span class="u">bloques</span></div>
+    <div class="stat s3"><span class="n">0:00</span><span class="u">min</span></div>
+    <div class="axt">Calendario · 1 sep → 2 oct</div>
+    <div class="wcol"></div><div class="wlab">ESTA SEMANA</div>
+    <div class="rail"></div>
+    <div class="axis"></div>
+    <div class="play"></div><div class="playlb">1 sep</div>
+    <div class="lanes"></div>
+    <div class="dots"></div>
+    <div class="rings"></div>
+  </div>
+  <div class="flood"></div>
+  <div class="deepfade bg-deep"></div>
+  <div class="irisout"></div>
+</div>
+<!--JS-->
+/* entrada: el iris violeta del logo se cierra y descubre el mapa */
+tl.fromTo(Q(".irisout"), { clipPath: "circle(150% at 533px 538px)" }, { clipPath: "circle(0% at 533px 538px)", duration: 0.7, ease: "power3.out" }, 0);
+tl.set(Q(".irisout"), { opacity: 0 }, 0.72);
+
+const QQ = (list) => list.split(",").map((x) => Q(x.trim())).join(",");
+/* ---------- datos: 19 noticias (fechas y bloque de las escenas s04–s17) ---------- */
+const LANES = [
+  { n: "IA", c: "#7D29E0", days: ["2026-09-09", "2026-09-21", "2026-09-25", "2026-09-25", "2026-09-29", "2026-09-29", "2026-09-29", "2026-10-02"] },
+  { n: "Plataformas y contenidos", c: "#E6008E", days: ["2026-09-09", "2026-09-10", "2026-09-10", "2026-09-28"] },
+  { n: "Mercado", c: "#9B61F6", days: ["2026-09-18", "2026-09-29"] },
+  { n: "España y Europa", c: "#5E3DE6", days: ["2026-09-14", "2026-09-15", "2026-09-22", "2026-09-29", "2026-09-30"] }
+];
+const X = (d) => 580 + d * (1180 / 31);
+const LY = (i) => 560 + i * 116 + 48;            // centro vertical de cada carril
+const AY = 478;                                    // línea base de la fila de fechas
+
+/* eje: marcas y etiquetas */
+let axh = "";
+for (let d = 0; d <= 31; d++) axh += '<div class="tk' + (d % 7 === 0 || d === 31 ? " m" : "") + '" style="left:' + X(d) + 'px"></div>';
+[[0, "1 sep"], [7, "8"], [14, "15"], [21, "22"], [28, "29"], [31, "2 oct"]].forEach(([d, t]) => { axh += '<div class="tl" style="left:' + X(d) + 'px">' + t + "</div>"; });
+$q(".axis").innerHTML = axh;
+
+/* carriles */
+let lh = "";
+LANES.forEach((L, i) => {
+  const y = 560 + i * 116;
+  lh += '<div class="trk l' + i + '" style="top:' + y + 'px;background:' + L.c + '22"></div>';
+  lh += '<div class="chipl l' + i + ' c' + i + '" style="top:' + (LY(i) - 32) + 'px;background:' + L.c + '">' + L.n + "</div>";
+  lh += '<div class="cnt l' + i + ' b' + i + '" style="top:' + (LY(i) - 34) + 'px;background:' + L.c + '">' + L.days.length + "</div>";
+});
+lh += '<div class="fillbar" style="top:560px"></div>';
+$q(".lanes").innerHTML = lh;
+
+/* puntos: orden por día; apilados por fecha en la fila de fechas y en cada carril */
+const dots = [];
+LANES.forEach((L, li) => {
+  const byDay = {};
+  L.days.forEach((iso) => { const d = dayIndex(iso); (byDay[d] = byDay[d] || []).push(d); });
+  Object.keys(byDay).forEach((k) => { byDay[k].forEach((d, j, arr) => dots.push({ d, li, j, nj: arr.length })); });
+});
+dots.sort((a, b) => a.d - b.d || a.li - b.li);
+const axCount = {};
+dots.forEach((o) => { axCount[o.d] = (axCount[o.d] || 0); o.k = axCount[o.d]++; });
+const dotsEl = $q(".dots"), ringsEl = $q(".rings");
+dots.forEach((o, i) => {
+  const el = document.createElement("div"); el.className = "dot d" + o.li; dotsEl.appendChild(el); o.el = el;
+  o.ax = X(o.d); o.ay = AY - 22 - o.k * 24;
+  o.ly = LY(o.li) + (o.j - (o.nj - 1) / 2) * 30;
+  o.t = 0.55 + (o.d / 31) * 1.5;
+  tl.set(el, { x: o.ax, y: o.ay, opacity: 0, scale: 0.2 }, 0);
+});
+
+/* ---------- 0–2,1 s: la fecha recorre el mes y las 19 noticias se encienden ---------- */
+up(".eyeb", 0.3, { y: 14, d: 0.5 });
+tl.fromTo(Q(".stat.s1"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, 0.25);
+tl.fromTo(Q(".rail"), { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: E }, 0.2);
+tl.fromTo(Q(".axis .tk"), { opacity: 0 }, { opacity: 1, duration: 0.3, stagger: 0.012 }, 0.3);
+tl.fromTo(Q(".axis .tl"), { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4, stagger: 0.06 }, 0.5);
+up(".axt", 0.35, { y: 10, d: 0.5 });
+const SW0 = 0.55, SWD = 1.5, sw = { p: 0 }, cnum = $q(".s1 .n"), pl = $q(".play"), plb = $q(".playlb");
+pl.style.left = X(0) + "px"; plb.style.left = X(0) + "px";
+tl.set(Q(".play"), { opacity: 1 }, SW0 - 0.05); tl.set(Q(".playlb"), { opacity: 1 }, SW0 - 0.05);
+tl.set(Q(".play"), { opacity: 0 }, SW0 + SWD + 0.3); tl.set(Q(".playlb"), { opacity: 0 }, SW0 + SWD + 0.3);
+tl.to(sw, { p: 1, duration: SWD, ease: "none", onUpdate: () => {
+  const d = sw.p * 31, x = X(d);
+  pl.style.left = x + "px"; plb.style.left = x + "px"; plb.textContent = dayLabel(d);
+  cnum.textContent = dots.filter((q) => q.d <= d + 0.0001).length;
+} }, SW0);
+dots.forEach((q) => { tl.fromTo(q.el, { opacity: 0, scale: 0.2 }, { opacity: 1, scale: 0.78, duration: 0.35, ease: SPR }, q.t); });
+tl.fromTo(Q(".stat.s1 .u"), { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, cue("noticias"));
+tl.fromTo(Q(".stat.s1 .n"), { scale: 1 }, { scale: 1.1, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut", transformOrigin: "0% 100%" }, SW0 + SWD);
+
+/* ---------- 2,07 s «cuatro bloques»: los carriles se despliegan y los puntos caen ---------- */
+const C4 = cue("cuatro"), BL = cue("bloques");
+tl.fromTo(Q(".stat.s2"), { opacity: 0, scale: 0.5, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR, transformOrigin: "0% 100%" }, C4);
+LANES.forEach((L, i) => {
+  tl.fromTo(Q(".trk.l" + i), { scaleX: 0, opacity: 0 }, { scaleX: 1, opacity: 1, duration: 0.7, ease: E }, C4 + 0.05 + i * 0.13);
+  tl.fromTo(Q(".chipl.c" + i), { opacity: 0 }, { opacity: 1, duration: 0.08 }, BL + i * 0.13);
+  tl.fromTo(Q(".chipl.c" + i), { scale: 0.4, x: -60 }, { scale: 1, x: 0, duration: 0.55, ease: SPR, transformOrigin: "0% 50%" }, BL + i * 0.13);
+  tl.fromTo(Q(".cnt.b" + i), { opacity: 0 }, { opacity: 1, duration: 0.08 }, BL + 0.35 + i * 0.13);
+  tl.fromTo(Q(".cnt.b" + i), { scale: 0.3 }, { scale: 1, duration: 0.5, ease: SPR }, BL + 0.35 + i * 0.13);
+});
+const DROP = beat(BL);
+dots.forEach((q, i) => {
+  const t = DROP + i * 0.032, col = LANES[q.li].c;
+  tl.to(q.el, { x: q.ax, y: q.ly, scale: 1, duration: 0.62, ease: "bounce.out" }, t);
+  tl.to(q.el, { borderColor: col, duration: 0.2, ease: "none" }, t + 0.28);
+});
+tl.to(QQ(".rail, .axis, .axt"), { opacity: 0.35, duration: 0.5 }, DROP + 0.7);
+
+/* ---------- 3,57 s «tres minutos»: el reloj del vídeo ---------- */
+const MN = cue("tres");
+tl.fromTo(Q(".stat.s3"), { opacity: 0, scale: 0.5, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR, transformOrigin: "0% 100%" }, MN);
+count(".s3 .n", 234, MN + 0.1, 1.5, (v) => Math.floor(v / 60) + ":" + String(Math.floor(v % 60)).padStart(2, "0"));
+
+/* ---------- 4,4 s: ESTA SEMANA ---------- */
+const WKT = 4.4;
+tl.fromTo(Q(".wcol"), { opacity: 0, scaleY: 0.3 }, { opacity: 1, scaleY: 1, duration: 0.6, ease: E }, WKT);
+tl.fromTo(Q(".wlab"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: E }, WKT + 0.2);
+dots.filter((q) => q.d >= 27).forEach((q, i) => tl.fromTo(q.el, { scale: 1 }, { scale: 1.45, duration: 0.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, WKT + 0.25 + i * 0.05));
+
+/* ---------- 5,04 s «empezamos por donde más ruido hay»: la IA se hace notar ---------- */
+const NO = cue("empezamos"), RU = cue("ruido");
+tl.to(QQ(".trk.l1,.trk.l2,.trk.l3,.d1,.d2,.d3"), { opacity: 0.22, duration: 0.5, ease: "power2.out" }, NO);
+tl.to(QQ(".chipl.c1,.chipl.c2,.chipl.c3,.cnt.b1,.cnt.b2,.cnt.b3"), { scale: 0.88, duration: 0.5, ease: "power2.out", transformOrigin: "0% 50%" }, NO);
+tl.to(Q(".wcol"), { opacity: 0.35, duration: 0.5 }, NO);
+tl.to(Q(".trk.l0"), { scaleY: 1.18, duration: 0.5, ease: SPR }, NO + 0.1);
+tl.fromTo(Q(".cnt.b0"), { scale: 1 }, { scale: 1.3, duration: 0.3, yoyo: true, repeat: 3, ease: "sine.inOut" }, RU - 0.2);
+dots.filter((q) => q.li === 0).forEach((q, i) => {
+  const r = document.createElement("div"); r.className = "rg"; ringsEl.appendChild(r);
+  tl.set(r, { x: q.ax, y: q.ly }, 0);
+  [0, 0.55].forEach((add) => tl.fromTo(r, { opacity: 0.9, scale: 0.8 }, { opacity: 0, scale: 3.6, duration: 0.8, ease: "power2.out", immediateRender: false }, RU - 0.1 + add + i * 0.07));
+  tl.fromTo(q.el, { scale: 1 }, { scale: 1.4, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut" }, RU - 0.1 + i * 0.07);
+});
+
+/* ---------- 7,3 s «la inteligencia artificial»: el carril IA se llena y explota ---------- */
+const IA = cue("inteligencia");
+tl.fromTo(Q(".fillbar"), { scaleX: 0, opacity: 1 }, { scaleX: 1, opacity: 1, duration: 0.55, ease: "power3.inOut" }, IA);
+tl.to(Q(".trk.l0"), { opacity: 0, duration: 0.1 }, IA + 0.5);
+tl.to(Q(".d0"), { backgroundColor: "#FFFFFF", borderColor: "#FFFFFF", duration: 0.3 }, IA + 0.2);
+tl.fromTo(Q(".chipl.c0"), { scale: 1 }, { scale: 1.25, duration: 0.4, ease: SPR, transformOrigin: "0% 50%" }, IA);
+tl.fromTo(Q(".fillbar"), { scaleY: 1 }, { scaleY: 1.18, duration: 0.4, ease: SPR }, IA);
+tl.to(Q(".world"), { scale: 1.1, duration: 1.4, ease: "power2.in" }, IA + 0.2);
+const FL = IA + 0.45;
+tl.set(Q(".world"), { opacity: 0 }, FL + 1.17);
+tl.set(Q(".flood"), { opacity: 1 }, FL);
+tl.fromTo(Q(".flood"), { scale: 0.1 }, { scale: 30, duration: 1.15, ease: "power3.in" }, FL);
+tl.fromTo(Q(".deepfade"), { opacity: 0 }, { opacity: 1, duration: 0.6, ease: "power2.inOut" }, DUR - 1.0);
+<!--SFX-->
+[{"k":"counter","t":0.55,"v":0.35},{"k":"pop","t":2.3,"v":0.4},{"k":"swipe","t":2.38,"v":0.35},{"k":"ding","t":3.6,"v":0.4},{"k":"ping","t":4.45,"v":0.35},{"k":"riser","t":6.5,"v":0.4},{"k":"impact","t":7.7,"v":0.55}]

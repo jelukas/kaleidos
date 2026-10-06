@@ -1,0 +1,436 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+/* KIT COMPARTIDO v2 — se inyecta en cada escena (build2.mjs). Prefijo: #s13 */
+#s13{position:absolute;inset:0;font-family:Inter,sans-serif;color:#0D1320;overflow:hidden;
+  --ink:#0D1320;--soft:#667085;--acc:#7D29E0;--pink:#FF01A2;--deep:#2F125E;--indigo:#5E3DE6;--lav:#9B61F6;
+  --bg:#FAFBFC;--lila:#F2E7FC;--line:#E4E7EC;--warn:#B54708}
+#s13 .stage{position:absolute;inset:0}
+#s13 .bg{position:absolute;inset:0}
+#s13 .bg-violet{background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%)}
+#s13 .bg-deep{background:radial-gradient(1200px 800px at 70% 20%,#4A1D96 0%,#2F125E 55%,#1A0836 100%)}
+#s13 .bg-light{background:#FAFBFC}
+#s13 .h{font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap}
+#s13 .mask{display:block;overflow:hidden;padding:0.08em 0.04em 0.16em;margin:-0.08em -0.04em -0.16em}
+#s13 .mask>.r{display:block}
+#s13 .eye{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:28px;color:var(--soft)}
+#s13 .acc{color:var(--acc)} #s13 .pink{color:var(--pink)} #s13 .soft{color:var(--soft)} #s13 .white{color:#fff}
+#s13 .panel{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(13,19,32,.12);border-radius:32px;box-sizing:border-box}
+#s13 .panel.dark{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(10,0,30,.45);color:#fff;backdrop-filter:blur(8px)}
+#s13 .chip{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:.32em .85em;font-weight:600;font-size:40px;line-height:1.1;background:#fff;white-space:nowrap}
+#s13 .chip.dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
+#s13 .chip.acc{background:var(--lila);border-color:var(--acc);color:var(--acc)}
+/* ventana de app / navegador simulada */
+#s13 .win{position:absolute;background:#fff;border-radius:22px;box-shadow:0 40px 100px rgba(10,0,30,.35);overflow:hidden;box-sizing:border-box;border:1px solid rgba(13,19,32,.12)}
+#s13 .win.dark{background:#14091F;border-color:rgba(255,255,255,.14)}
+#s13 .win .bar{height:56px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line)}
+#s13 .win.dark .bar{background:#1E0F33;border-bottom-color:rgba(255,255,255,.1)}
+#s13 .win .bar i{display:block;width:16px;height:16px;border-radius:50%;background:#FF5F57}
+#s13 .win .bar i:nth-child(2){background:#FEBC2E} #s13 .win .bar i:nth-child(3){background:#28C840}
+#s13 .win .bar .url{margin-left:18px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;max-width:620px}
+#s13 .win.dark .bar .url{background:rgba(255,255,255,.08);color:#B9A7D6}
+/* el orbe del agente (espina del vídeo) */
+#s13 .orb{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff 0 7%,#E2CCFF 8% 24%,#9B61F6 48%,#7D29E0 66%,#FF01A2 135%);
+  box-shadow:0 0 36px rgba(125,41,224,.7),0 0 96px rgba(255,1,162,.4);z-index:50}
+#s13 .orb::before{content:"";position:absolute;inset:-16px;border-radius:50%;border:2px solid rgba(125,41,224,.4)}
+#s13 .ripple{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:4px solid var(--acc);opacity:0;z-index:49;visibility:visible}
+/* etiqueta de simulación */
+#s13 .simlabel{position:absolute;right:56px;top:44px;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:1.5px solid currentColor;opacity:.75;z-index:60}
+#s13 .simlabel.on-dark{color:#fff} #s13 .simlabel.on-light{color:var(--soft)}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+#s13 .shotwin{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 44px 110px rgba(13,19,32,.38);background:#fff;border:1px solid rgba(13,19,32,.14)}
+#s13 .shotwin.dark{box-shadow:0 44px 110px rgba(10,0,30,.6);border-color:rgba(255,255,255,.16)}
+#s13 .shotwin .sbar{position:absolute;left:0;right:0;top:0;height:54px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line);z-index:3}
+#s13 .shotwin .sbar i{display:block;width:15px;height:15px;border-radius:50%;background:#FF5F57}
+#s13 .shotwin .sbar i:nth-child(2){background:#FEBC2E} #s13 .shotwin .sbar i:nth-child(3){background:#28C840}
+#s13 .shotwin .sbar .url{margin-left:16px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;white-space:nowrap;overflow:hidden}
+#s13 .shotwin .view{position:absolute;left:0;right:0;top:54px;bottom:0;overflow:hidden;background:#fff}
+#s13 .shotwin .view img{position:absolute;left:0;top:0;display:block;transform-origin:0 0;max-width:none}
+#s13 .hlbox{position:absolute;border:5px solid var(--pink);border-radius:14px;opacity:0;z-index:4;box-shadow:0 0 0 6px rgba(255,1,162,.18),0 0 40px rgba(255,1,162,.45)}
+#s13 .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:999px;font-weight:700;font-size:24px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+#s13 .badge.week{background:var(--pink);color:#fff}
+#s13 .badge.date{background:var(--lila);color:var(--acc)}
+#s13 .badge.src{background:rgba(13,19,32,.07);color:#475467;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s13 .badge.dk{background:rgba(255,255,255,.14);color:#fff}
+#s13 .badge.srcdk{background:rgba(255,255,255,.12);color:#E2CCFF;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s13 .tag{font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:26px}
+/* tira de calendario (1 sep → 2 oct) */
+#s13 .strip{position:absolute;left:100px;right:100px;top:36px;height:84px;z-index:20}
+#s13 .strip .rail{position:absolute;left:0;right:0;top:34px;height:4px;border-radius:2px;background:var(--rail,rgba(13,19,32,.14))}
+#s13 .strip .fill{position:absolute;left:0;top:34px;height:4px;border-radius:2px;background:linear-gradient(90deg,#7D29E0,#FF01A2);width:0}
+#s13 .strip .tk{position:absolute;top:28px;width:2px;height:16px;background:var(--tick,rgba(13,19,32,.25));margin-left:-1px}
+#s13 .strip .tk.m{height:26px;top:23px}
+#s13 .strip .wk{position:absolute;top:20px;height:32px;border-radius:16px;background:rgba(255,1,162,.12);border:2px solid rgba(255,1,162,.55)}
+#s13 .strip .lb{position:absolute;top:-4px;font-weight:700;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--lbl,#475467);transform:translateX(-50%);white-space:nowrap}
+#s13 .strip .mk{position:absolute;top:21px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#C9A6FF 14%,#7D29E0 60%,#FF01A2 140%);box-shadow:0 0 0 6px rgba(125,41,224,.25),0 0 28px rgba(255,1,162,.55)}
+#s13 .strip .dt{position:absolute;top:50px;transform:translateX(-50%);font-weight:800;font-size:26px;color:var(--ink);white-space:nowrap;letter-spacing:-0.01em}
+#s13 .strip.dk{--rail:rgba(255,255,255,.2);--tick:rgba(255,255,255,.35);--lbl:#E4D8F8}
+#s13 .strip.dk .dt{color:#fff}
+
+#s13 .strip .lb.wkl{color:#C4007E}
+#s13 .strip.dk .lb.wkl{color:#FF9AD8}
+
+#s13 .world{position:absolute;inset:0}
+#s13 .blob{position:absolute;border-radius:50%}
+#s13 .blob.b1{left:-300px;top:560px;width:1000px;height:1000px;background:radial-gradient(closest-side,rgba(155,97,246,.24),rgba(155,97,246,0))}
+#s13 .blob.b2{left:1100px;top:-320px;width:1100px;height:1100px;background:radial-gradient(closest-side,rgba(255,1,162,.14),rgba(255,1,162,0))}
+#s13 .lbl{position:absolute;left:100px;top:140px;height:48px;display:flex;align-items:center;gap:18px;white-space:nowrap}
+#s13 .lbl .tag{color:#8247E5}
+#s13 .lbl .bar{display:block;width:8px;height:34px;border-radius:4px;background:#9B61F6}
+/* cartel de bloque */
+#s13 .post{position:absolute;inset:0;z-index:80;background:linear-gradient(135deg,#3F1E9E 0%,#5E3DE6 55%,#7D29E0 100%);overflow:hidden}
+#s13 .post .pc{position:absolute;border-radius:50%;border:3px solid rgba(255,255,255,.22);display:block}
+#s13 .post .pe{position:absolute;left:0;top:262px;width:1920px;text-align:center;font-weight:600;letter-spacing:.3em;text-transform:uppercase;font-size:34px;color:#E2CCFF}
+#s13 .post .pt{position:absolute;left:0;top:330px;width:1920px;text-align:center;font-size:310px;color:#fff;line-height:1}
+#s13 .post .pt .r{display:block;padding-bottom:0.04em}
+#s13 .post .pb{position:absolute;left:560px;top:690px;width:800px;height:18px;border-radius:9px;background:#9B61F6;transform-origin:0 50%;display:block}
+/* grupos ventana + chips + sello */
+#s13 .grp{position:absolute;top:212px;width:760px;height:440px}
+#s13 .gI{left:100px} #s13 .gW{left:1060px}
+#s13 .grp .shotwin{left:0;top:0;width:760px;height:440px}
+#s13 .grp .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#s13 .grp .chips{position:absolute;left:-8px;top:410px;width:776px;display:flex;justify-content:center;gap:12px;z-index:8}
+#s13 .grp .chip{font-size:31px;padding:.3em .75em;border-color:#C9B1F5;color:#2F125E;box-shadow:0 12px 30px rgba(94,61,230,.18)}
+#s13 .grp .chip b{color:#7D29E0}
+#s13 .grp .stamp{position:absolute;right:-22px;top:-8px;z-index:9;font-weight:800;font-size:46px;letter-spacing:.06em;color:#7D29E0;border:7px solid #7D29E0;border-radius:18px;padding:6px 20px;background:rgba(255,255,255,.88);display:block;white-space:nowrap}
+#s13 .grp .stamp.pk{color:#E6008E;border-color:#E6008E}
+#s13 .rg{position:absolute;border-radius:50%;display:block;left:960px;top:522px}
+#s13 .rg.r1{width:980px;height:980px;margin:-490px 0 0 -490px;border:3px solid rgba(125,41,224,.20)}
+#s13 .rg.r2{width:1300px;height:1300px;margin:-650px 0 0 -650px;border:3px dashed rgba(230,0,142,.22)}
+#s13 .ph{position:absolute;left:100px;top:212px;width:760px;height:440px;border:5px dashed #C9B1F5;border-radius:26px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:240px;color:#9B61F6}
+/* línea de tiempo */
+#s13 .tmw{position:absolute;inset:0}
+#s13 svg.tm{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible}
+#s13 .ms{position:absolute;top:722px;width:44px;height:44px;border-radius:50%;background:#fff;border:7px solid #9B61F6;box-sizing:border-box;display:block}
+#s13 .ms.m18{left:458px} #s13 .ms.m29{left:1418px}
+#s13 .ms.on{background:#7D29E0;border-color:#7D29E0;box-shadow:0 0 0 10px rgba(125,41,224,.18)}
+#s13 .dl{position:absolute;top:772px;width:300px;text-align:center;font-weight:800;font-size:46px;letter-spacing:.02em;color:#0D1320;white-space:nowrap}
+#s13 .dl.d18{left:330px} #s13 .dl.d29{left:1290px}
+#s13 .dsub{position:absolute;left:280px;top:826px;width:400px;text-align:center;font-weight:600;font-size:28px;color:#667085;white-space:nowrap}
+#s13 .cnt{position:absolute;left:560px;top:770px;width:800px;text-align:center;font-size:150px;color:#0D1320;line-height:1;white-space:nowrap}
+#s13 .cnt .u{color:#E6008E;font-size:100px;letter-spacing:-.02em}
+#s13 .cnt .nv{color:#7D29E0}
+/* final: MEDIR */
+#s13 .two{position:absolute;left:0;top:236px;width:1920px;display:flex;justify-content:center;align-items:center;gap:22px}
+#s13 .two .chip{font-size:44px;border-color:#C9B1F5;color:#2F125E}
+#s13 .two .pl{font-weight:800;font-size:64px;color:#9B61F6;display:block}
+#s13 .med{position:absolute;left:0;top:344px;width:1920px;text-align:center;font-size:300px;line-height:1;color:#7D29E0;display:block}
+#s13 .dim{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible}
+#s13 .rul{position:absolute;left:260px;top:744px;width:1400px;height:140px}
+#s13 .rul .trk{position:absolute;left:0;top:56px;width:1400px;height:56px;border-radius:28px;background:#fff;border:3px solid #C9B1F5;box-sizing:border-box;overflow:hidden}
+#s13 .rul .fl{position:absolute;left:0;top:0;bottom:0;width:100%;background:linear-gradient(90deg,#7D29E0,#FF01A2);transform-origin:0 50%;border-radius:25px}
+#s13 .rul .tk{position:absolute;top:30px;width:3px;height:18px;margin-left:-1.5px;background:#9B61F6;border-radius:2px;display:block}
+#s13 .rul .tk.l{top:16px;height:32px;background:#7D29E0}
+#s13 .rul .pin{position:absolute;left:0;top:2px;width:0;height:0;margin-left:-16px;border-left:16px solid transparent;border-right:16px solid transparent;border-top:28px solid #E6008E;display:block}
+#s13 .ver{position:absolute;left:1180px;top:900px;font-size:56px;font-weight:800;letter-spacing:.08em;color:#E6008E;border:8px solid #E6008E;border-radius:20px;padding:6px 30px;background:rgba(255,255,255,.9);display:block;white-space:nowrap}</style>
+<div data-hf-id="hf-ij6j" id="s13" data-composition-id="s13" data-width="1920" data-height="1080">
+<div data-hf-id="hf-tan6" class="stage">
+  <div data-hf-id="hf-n1vw" class="world">
+    <div data-hf-id="hf-bmg8" class="blob b1"></div><div data-hf-id="hf-kac3" class="blob b2"></div>
+    <div data-hf-id="hf-p8km" class="lbl"><i data-hf-id="hf-31m3" class="bar"></i><span data-hf-id="hf-hrec" class="tag">Mercado</span><span data-hf-id="hf-i3v4" class="badge week">Esta semana</span><span data-hf-id="hf-e7bp" class="badge date">18 y 29 sep 2026</span><span data-hf-id="hf-cs2n" class="badge src">pearson.com</span></div>
+
+    <div data-hf-id="hf-wzk5" class="ph">?</div>
+    <i data-hf-id="hf-xhlu" class="rg r1" data-layout-allow-overlap=""></i><i data-hf-id="hf-9q8j" class="rg r2" data-layout-allow-overlap=""></i>
+
+    <div data-hf-id="hf-ytuf" class="grp gI">
+      <div data-hf-id="hf-faxy" class="shotwin wI">
+        <div data-hf-id="hf-7ma2" class="sbar"><i data-hf-id="hf-wt6k"></i><i data-hf-id="hf-zeb8"></i><i data-hf-id="hf-y7e5"></i><div data-hf-id="hf-dmra" class="url">pearson.com · 18 sep 2026</div></div>
+        <div data-hf-id="hf-z18r" class="view"><img data-hf-id="hf-njyb" src="assets/captures/pearson-its.png" alt="" data-layout-allow-overflow="">
+          <div data-hf-id="hf-iqnx" class="hlbox hI1"></div><div data-hf-id="hf-mory" class="hlbox hI2"></div><div data-hf-id="hf-qmvz" class="hlbox hI3"></div><div data-hf-id="hf-xwk6" class="flash"></div></div>
+      </div>
+      <div data-hf-id="hf-exrd" class="chips"><span data-hf-id="hf-18zv" class="chip cI1">Evaluación <b data-hf-id="hf-s33z">remota</b></span><span data-hf-id="hf-anl1" class="chip cI2"><b data-hf-id="hf-lzci">Certificación</b></span></div>
+      <div data-hf-id="hf-5txn" class="stamp pk stI">18 SEP</div>
+    </div>
+
+    <div data-hf-id="hf-uz7t" class="grp gW">
+      <div data-hf-id="hf-gudc" class="shotwin wW">
+        <div data-hf-id="hf-6oge" class="sbar"><i data-hf-id="hf-ylp6"></i><i data-hf-id="hf-0l8b"></i><i data-hf-id="hf-0zjc"></i><div data-hf-id="hf-9hb2" class="url">pearson.com · 29 sep 2026</div></div>
+        <div data-hf-id="hf-2kx7" class="view"><img data-hf-id="hf-4kiq" src="assets/captures/pearson-workera.png" alt="" data-layout-allow-overflow="">
+          <div data-hf-id="hf-f0iv" class="hlbox hW1"></div><div data-hf-id="hf-4518" class="hlbox hW2"></div><div data-hf-id="hf-4wp1" class="hlbox hW3"></div><div data-hf-id="hf-r6ka" class="flash"></div></div>
+      </div>
+      <div data-hf-id="hf-4dp9" class="chips"><span data-hf-id="hf-7jkz" class="chip cW1" data-layout-allow-overlap="">Evaluación <b data-hf-id="hf-rp4k">adaptativa</b></span><span data-hf-id="hf-6fz9" class="chip cW2" data-layout-allow-overlap="">Escenarios <b data-hf-id="hf-dw43">por rol</b></span></div>
+      <div data-hf-id="hf-3m1s" class="stamp stW">29 SEP</div>
+    </div>
+
+    <div data-hf-id="hf-1ax8" class="tmw">
+      <svg data-hf-id="hf-sba2" class="tm" viewBox="0 0 1920 1080">
+        <path data-hf-id="hf-k4kx" class="axb" d="M480 744H1440" stroke="#DCCBF8" stroke-width="8" stroke-linecap="round" fill="none" />
+        <path data-hf-id="hf-wabl" class="axf" d="M1440 744H480" pathLength="1" stroke="#7D29E0" stroke-width="8" stroke-linecap="round" fill="none" />
+        <g data-hf-id="hf-q36s" class="tks" />
+        <path data-hf-id="hf-z3fk" class="arc" d="M1440 888C1440 1040 480 1040 480 888" pathLength="1" stroke="#E6008E" stroke-width="8" stroke-linecap="round" stroke-dasharray="1" fill="none" />
+        <path data-hf-id="hf-d98z" class="arh" d="M456 918L480 880L504 918" stroke="#E6008E" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+      </svg>
+      <i data-hf-id="hf-magq" class="ms m18"></i><i data-hf-id="hf-uham" class="ms m29"></i>
+      <div data-hf-id="hf-5iy6" class="dl d18">18 sep</div><div data-hf-id="hf-m11a" class="dl d29">29 sep</div>
+      <div data-hf-id="hf-ac3n" class="dsub">ITS · Baltimore (EE. UU.)</div>
+      <div data-hf-id="hf-2xtd" class="h cnt" data-layout-allow-overlap=""><span data-hf-id="hf-i8lb" class="nv">0</span> <span data-hf-id="hf-yfwl" class="u">DÍAS</span></div>
+    </div>
+
+    <div data-hf-id="hf-9yku" class="two"><span data-hf-id="hf-mxvf" class="chip c2a">ITS · 18 sep</span><span data-hf-id="hf-5rqm" class="pl">+</span><span data-hf-id="hf-siup" class="chip c2b">Workera · 29 sep</span></div>
+    <div data-hf-id="hf-ceg1" class="h med" data-layout-allow-overlap="">MEDIR</div>
+    <svg data-hf-id="hf-3c17" class="dim" viewBox="0 0 1920 1080"><path data-hf-id="hf-57ow" class="dl1" d="M310 330H1610M310 312V348M1610 312V348" pathLength="1" stroke="#9B61F6" stroke-width="6" stroke-linecap="round" fill="none" /></svg>
+    <div data-hf-id="hf-d1bh" class="rul"><i data-hf-id="hf-kp55" class="pin"></i><div data-hf-id="hf-l3rt" class="trk"><div data-hf-id="hf-ufy6" class="fl"></div></div></div>
+    <div data-hf-id="hf-f5pn" class="ver">VERIFICADO</div>
+
+    <div data-hf-id="hf-j2jy" class="post">
+      <i data-hf-id="hf-wree" class="pc c1" data-layout-allow-overflow="" style="left:-200px;top:-260px;width:900px;height:900px"></i>
+      <i data-hf-id="hf-jgj4" class="pc c2" data-layout-allow-overflow="" style="left:1250px;top:520px;width:1000px;height:1000px"></i>
+      <i data-hf-id="hf-5vg0" class="pc c3" data-layout-allow-overflow="" style="left:1500px;top:-120px;width:420px;height:420px"></i>
+      <div data-hf-id="hf-2zf3" class="pe">Bloque 3 de 4</div>
+      <div data-hf-id="hf-45il" class="mask pt" data-layout-allow-overflow=""><div data-hf-id="hf-jev3" class="r h">MERCADO</div></div>
+      <i data-hf-id="hf-7a4e" class="pb"></i>
+    </div>
+  </div>
+  <div data-hf-id="hf-0u8q" class="strip"></div>
+</div>
+</div>
+<script>
+/* KIT COMPARTIDO v2 (JS) — dentro del <script> de cada escena. Disponibles: ID, DUR, CUES, BEATS, tl y los helpers. */
+const ID = "s13";
+const DUR = 16.24;
+const CUES = {"words":[{"t":"Mercado.","s":0.42,"e":1.57},{"t":"Pearson","s":1.57,"e":2},{"t":"compra","s":2,"e":2.32},{"t":"Workera,","s":2.32,"e":2.86},{"t":"evaluación","s":2.86,"e":3.65},{"t":"de","s":3.65,"e":3.77},{"t":"competencias","s":3.77,"e":4.67},{"t":"con","s":4.67,"e":4.9},{"t":"IA,","s":4.9,"e":5.21},{"t":"el","s":5.21,"e":5.55},{"t":"veintinueve","s":5.55,"e":5.78},{"t":"de","s":5.78,"e":5.92},{"t":"septiembre.","s":5.92,"e":6.84},{"t":"Once","s":7.34,"e":7.36},{"t":"días","s":7.36,"e":7.69},{"t":"antes,","s":7.69,"e":8.44},{"t":"ITS,","s":8.44,"e":8.68},{"t":"evaluación","s":8.68,"e":9.58},{"t":"y","s":9.58,"e":9.59},{"t":"certificación","s":9.59,"e":10.7},{"t":"a","s":10.7,"e":10.78},{"t":"distancia.","s":10.78,"e":11.86},{"t":"Dos","s":12.46,"e":12.46},{"t":"compras:","s":12.46,"e":12.87},{"t":"medir","s":12.87,"e":13.29},{"t":"lo","s":13.29,"e":13.58},{"t":"que","s":13.58,"e":13.71},{"t":"la","s":13.71,"e":13.88},{"t":"gente","s":13.88,"e":14.3},{"t":"sabe","s":14.3,"e":14.69},{"t":"hacer.","s":14.69,"e":15.38}],"voiceStart":0.4};      // { words:[{t,s,e}], voiceStart } — tiempos relativos a la escena (s). Vacío si el plano no lleva voz
+const BEATS = [0.33,0.83,1.33,1.83,2.33,2.83,3.33,3.83,4.33,4.83,5.33,5.83,6.33,6.83,7.33,7.83,8.33,8.83,9.33,9.83,10.33,10.83,11.33,11.83,12.33,12.83,13.33,13.83,14.33,14.83,15.33,15.83];
+const DATES = ["2026-09-18","2026-09-29"], PREV = "2026-09-28", BLOCK = "Mercado", COLOR = "#9B61F6", WEEK = true;   // fechas de la(s) noticia(s) de la escena, fecha anterior, bloque, color del bloque, si es de esta semana    // pulsos de la música (110 BPM) relativos a la escena (s), solo los que caen dentro
+const tl = gsap.timeline({ paused: true });
+const E = "expo.out", SPR = "back.out(1.7)", SOFTSPR = "back.out(1.2)", IO = "power3.inOut";
+const Q = (s) => "#" + ID + " " + s;
+const $q = (s) => document.querySelector(Q(s));
+const $$q = (s) => [...document.querySelectorAll(Q(s))];
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ]/g, "");
+/* tiempo de inicio de una palabra de la locución: cue("texto") | cue("el", 1) (n-ésima coincidencia por prefijo) | cue(7) por índice */
+function cue(w, nth = 0) {
+  if (typeof w === "number") return CUES.words[w].s;
+  const hits = CUES.words.filter((x) => norm(x.t).startsWith(norm(w)));
+  if (!hits[nth]) throw new Error("cue no encontrado: " + w + " #" + nth);
+  return Math.max(0, hits[nth].s - 0.05);
+}
+/* siguiente pulso de la música a partir de t (para clavar golpes al ritmo) */
+function beat(t) { const b = BEATS.find((x) => x >= t - 0.02); return b === undefined ? t : b; }
+
+/* ---- entradas de texto y elementos ---- */
+function rise(sel, at, d = 1.0) { return tl.fromTo(Q(sel), { yPercent: 110 }, { yPercent: 0, duration: d, ease: E }, at); }   // titular dentro de .mask>.r
+function up(sel, at, o = {}) { return tl.fromTo(Q(sel), { opacity: 0, y: o.y ?? 28 }, { opacity: o.to ?? 1, y: 0, duration: o.d ?? 0.8, ease: o.ease ?? E }, at); }
+function pop(sel, at, d = 0.6) { return tl.fromTo(Q(sel), { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at); }
+function fade(sel, at, d = 0.4, to = 1) { return tl.fromTo(Q(sel), { opacity: 0 }, { opacity: to, duration: d, ease: "power2.out" }, at); }
+/* golpe: escala grande + desenfoque que aterriza con sacudida */
+function slam(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 1.7, filter: "blur(26px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.42, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 14, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + 0.38);
+  tl.set(Q(sel), { x: 0 }, at + 0.74);
+}
+/* texto que se escribe carácter a carácter en el elemento sel; devuelve la duración */
+function typeText(sel, text, at, cps = 30) {
+  const el = $q(sel), o = { n: 0 };
+  el.textContent = "";
+  tl.to(o, { n: text.length, duration: text.length / cps, ease: "none", onUpdate: () => { el.textContent = text.slice(0, Math.round(o.n)); } }, at);
+  return text.length / cps;
+}
+/* contador numérico 0→valor en sel */
+function count(sel, to, at, d = 1.2, fmt = (v) => String(Math.round(v))) {
+  const el = $q(sel), o = { v: 0 };
+  tl.to(o, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(o.v); } }, at);
+}
+/* ---- el orbe del agente ---- */
+function orbSet(x, y, at = 0) { tl.set(Q(".orb"), { x, y }, at); }
+function orbTo(x, y, at, d = 0.7, ease = IO) { return tl.to(Q(".orb"), { x, y, duration: d, ease }, at); }
+function orbSquash(at) {   // estira y encoge con humor (al terminar una tarea)
+  tl.to(Q(".orb"), { scaleX: 1.35, scaleY: 0.72, duration: 0.11, ease: "power2.out" }, at);
+  tl.to(Q(".orb"), { scaleX: 0.85, scaleY: 1.2, duration: 0.14, ease: "power2.inOut" }, at + 0.11);
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.35, ease: "elastic.out(1,0.5)" }, at + 0.25);
+}
+function orbPulse(at, d = 0.5) { tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 1.3, duration: d / 2, yoyo: true, repeat: 1, ease: "sine.inOut" }, at); }
+/* clic: anillo que se expande en (x,y). Requiere <div class="ripple"> en el HTML (uno por clic: .ripple.r1, .r2…) */
+function clickAt(sel, x, y, at) {
+  tl.set(Q(sel), { x, y, opacity: 0 }, 0);
+  tl.fromTo(Q(sel), { opacity: 0.9, scale: 0.2 }, { opacity: 0, scale: 2.2, duration: 0.6, ease: "power2.out" }, at);
+  tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, at - 0.02);
+}
+/* ---- entrada / salida de escena sobre .stage ---- */
+function sceneIn(kind = "fade") {
+  if (kind === "cut") return;
+  if (kind === "whip") tl.fromTo(Q(".stage"), { x: 260, opacity: 0, filter: "blur(22px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else if (kind === "zoom") tl.fromTo(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else tl.fromTo(Q(".stage"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+}
+function sceneOut(kind = "fade") {
+  const t = DUR - 0.42;
+  if (kind === "cut") return;
+  if (kind === "whip") tl.to(Q(".stage"), { x: -260, opacity: 0, filter: "blur(22px)", duration: 0.42, ease: "power3.in" }, t);
+  else if (kind === "zoom") tl.to(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)", duration: 0.42, ease: "power3.in" }, t);
+  else tl.to(Q(".stage"), { opacity: 0, duration: 0.4, ease: "power2.inOut" }, t);
+}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+/* índice de día desde el 1-sep-2026 (0) hasta el 2-oct-2026 (31) */
+function dayIndex(iso) { const [y, m, d] = iso.split("-").map(Number); return Math.round((Date.UTC(y, m - 1, d) - Date.UTC(2026, 8, 1)) / 86400000); }
+function dayLabel(i) { const t = new Date(Date.UTC(2026, 8, 1) + Math.round(i) * 86400000); return t.getUTCDate() + " " + MES[t.getUTCMonth()]; }
+/* tira de calendario dentro de <div class="strip [dk]"></div> (vacío en el HTML).
+   dateStrip([PREV, ...DATES], at, d, gap): el marcador viaja por las fechas en orden (AAAA-MM-DD), `d` s por tramo y `gap` s entre tramos.
+   La semana del 28 sep al 2 oct queda resaltada. */
+function dateStrip(path, at = 0.2, d = 0.9, gap = 1.0) {
+  const host = $q(".strip"), W = 1720, N = 31, X = (i) => (i / N) * W;
+  let h = '<div class="rail"></div><div class="fill"></div>';
+  for (let i = 0; i <= N; i++) h += '<div class="tk' + (i === 0 || i === 30 || i === 31 || i % 7 === 0 ? " m" : "") + '" style="left:' + X(i) + 'px"></div>';
+  h += '<div class="wk" style="left:' + (X(27) - 8) + 'px;width:' + (X(31) - X(27) + 16) + 'px"></div>';
+  h += '<div class="lb" style="left:' + X(0) + 'px">1 sep</div><div class="lb" style="left:' + X(15) + 'px">sep 2026</div><div class="lb wkl" style="left:' + X(29) + 'px">Esta semana</div>';
+  h += '<div class="mk"></div><div class="dt"></div>';
+  host.innerHTML = h;
+  const mk = host.querySelector(".mk"), dt = host.querySelector(".dt"), fl = host.querySelector(".fill");
+  const idx = path.map(dayIndex), o = { v: idx[0] };
+  const draw = () => { const x = X(o.v); mk.style.left = x + "px"; dt.style.left = Math.min(Math.max(x, 60), W - 60) + "px"; dt.textContent = dayLabel(o.v); fl.style.width = x + "px"; };
+  draw();
+  for (let k = 1; k < idx.length; k++) tl.to(o, { v: idx[k], duration: d, ease: "power3.inOut", onUpdate: draw }, at + (k - 1) * (d + gap));
+  tl.fromTo(host, { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 0);
+}
+/* ventana de captura: <div class="shotwin" style="left:..;top:..;width:..;height:.."><div class="sbar"><i></i><i></i><i></i><div class="url">dominio.com</div></div><div class="view"><img src="assets/captures/x.png"></div></div>
+   shotView(sel, natW, natH, fx, fy, s): coloca la imagen (ancho natW px) con el punto (fx,fy) de la imagen en el centro de la vista a escala s */
+function shotPos(sel, natW, natH, fx, fy, s) {
+  const win = $q(sel + " .view"), W = win.clientWidth || parseFloat(getComputedStyle(win).width), H = win.clientHeight || parseFloat(getComputedStyle(win).height);
+  return { x: W / 2 - fx * s, y: H / 2 - fy * s, scale: s };
+}
+function shotSet(sel, natW, natH, fx, fy, s) { const p = shotPos(sel, natW, natH, fx, fy, s); tl.set(Q(sel + " .view img"), { width: natW, ...p }, 0); }
+function shotCam(sel, natW, natH, fx, fy, s, at, d = 1.2, ease = "power3.inOut") { const p = shotPos(sel, natW, natH, fx, fy, s); return tl.to(Q(sel + " .view img"), { ...p, duration: d, ease }, at); }
+/* caja de resaltado en coordenadas de la vista de la ventana (sel = ventana): hl(".w1", x, y, w, h, at) */
+function hl(box, x, y, w, h, at, d = 0.5) {
+  tl.set(Q(box), { left: x, top: y, width: w, height: h }, 0);
+  tl.fromTo(Q(box), { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at);
+}
+
+const CW = 1440, CH = 900;
+function hlAt(box, win, fx, fy, s, px, py, pw, ph, at, d = 0.5) {
+  const p = shotPos(win, CW, CH, fx, fy, s);
+  hl(box, p.x + px * s, p.y + py * s, pw * s, ph * s, at, d);
+}
+sceneIn("whip");
+dateStrip([PREV, "2026-09-29", "2026-09-18"], 4.7, 0.9, 1.7);
+tl.to(Q(".strip"), { opacity: 0, duration: 0.01 }, 0.52);
+tl.to(Q(".strip"), { opacity: 1, duration: 0.4, ease: "power2.out" }, 1.6);   // Workera (29) y, once días antes, ITS (18)
+
+/* fondo vivo */
+tl.fromTo(Q(".blob.b1"), { x: 0, y: 0 }, { x: 180, y: -90, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".blob.b2"), { x: 0, y: 0 }, { x: -220, y: 100, duration: DUR, ease: "none" }, 0);
+up(".lbl", 1.4, { d: 0.6, y: 18 });
+
+/* ---------- cartel «MERCADO» ---------- */
+tl.fromTo(Q(".post .pc.c1"), { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2, ease: E }, 0);
+tl.fromTo(Q(".post .pc.c2"), { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.2, ease: E }, 0.05);
+tl.fromTo(Q(".post .pc.c3"), { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 1.0, ease: E }, 0.1);
+up(".post .pe", 0.05, { d: 0.6, y: 18 });
+rise(".post .pt .r", 0.0, 0.75);
+tl.fromTo(Q(".post .pb"), { scaleX: 0 }, { scaleX: 1, duration: 0.7, ease: E }, 0.35);
+tl.fromTo(Q(".post .pt"), { scale: 1 }, { scale: 1.05, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut", transformOrigin: "50% 50%" }, beat(0.35));
+tl.to(Q(".post"), { yPercent: -100, duration: 0.65, ease: IO }, 1.35);
+
+/* ---------- Workera (29 sep): ventana grande ---------- */
+shotSet(".wW", CW, CH, 720, 370, 0.78);
+shotSet(".wI", CW, CH, 620, 690, 1.0);
+tl.set(Q(".gW"), { scale: 1.38, x: -480, y: 90, transformOrigin: "50% 50%" }, 0);
+tl.to(Q(".gW"), { scale: 1.45, duration: 5.6, ease: "power1.out" }, 1.5);
+tl.fromTo(Q(".rg.r1"), { opacity: 0, scale: 0.6, rotation: 0 }, { opacity: 1, scale: 1, rotation: 60, duration: 5.6, ease: "power2.out" }, 1.5);
+tl.fromTo(Q(".rg.r2"), { opacity: 0, scale: 0.5, rotation: 0 }, { opacity: 1, scale: 1, rotation: -50, duration: 5.6, ease: "power2.out" }, 1.6);
+tl.fromTo(Q(".gW"), { opacity: 0 }, { opacity: 1, duration: 0.6, ease: E }, 1.4);
+tl.fromTo(Q(".gW .shotwin"), { y: 60 }, { y: 0, duration: 0.7, ease: E }, 1.4);
+tl.fromTo(Q(".gW .flash"), { opacity: 0.85 }, { opacity: 0, duration: 0.4, ease: "power2.out" }, 1.55);
+hlAt(".hW1", ".wW", 720, 370, 0.78, 676, 272, 238, 56, cue("Workera"));
+tl.to(Q(".hW1"), { opacity: 0, duration: 0.25 }, 3.5);
+shotCam(".wW", CW, CH, 600, 700, 1.0, 3.5, 1.0);
+hlAt(".hW2", ".wW", 600, 700, 1.0, 782, 764, 124, 30, cue("IA"));
+hlAt(".hW3", ".wW", 600, 700, 1.0, 268, 574, 98, 26, cue("veintinueve"));
+tl.fromTo(Q(".cW1"), { opacity: 0, y: 26, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, cue("evaluación"));
+tl.fromTo(Q(".cW2"), { opacity: 0, y: 26, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, cue("competencias"));
+tl.fromTo(Q(".stW"), { opacity: 0, scale: 2.4, rotation: -22 }, { opacity: 1, scale: 1, rotation: -7, duration: 0.35, ease: "power4.in" }, cue("septiembre") - 0.3);
+tl.fromTo(Q(".stW"), { y: 0 }, { y: 6, duration: 0.06, yoyo: true, repeat: 3, ease: "none" }, cue("septiembre") + 0.05);
+// la ventana se hace sitio a la derecha
+const T2 = cue("Once") - 0.1;
+tl.to(Q(".hW2"), { opacity: 0, duration: 0.2 }, T2 - 0.1);
+tl.to(Q(".hW3"), { opacity: 0, duration: 0.2 }, T2 - 0.1);
+tl.to(Q(".gW"), { scale: 1, x: 0, y: 0, duration: 0.85, ease: IO }, T2);
+tl.to(Q(".rg"), { opacity: 0, scale: 1.3, duration: 0.5, ease: "power2.in" }, T2);
+
+/* ---------- línea de tiempo: 29 sep ← 11 días → 18 sep ---------- */
+const ticks = $q(".tks");
+for (let k = 0; k <= 11; k++) {
+  const x = 480 + (960 / 11) * k;
+  const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  p.setAttribute("d", "M" + x + " 728V760"); p.setAttribute("stroke", "#DCCBF8"); p.setAttribute("stroke-width", "5"); p.setAttribute("stroke-linecap", "round"); p.setAttribute("class", "tkp");
+  ticks.appendChild(p);
+}
+const tkp = $$q(".tkp");
+tl.set(Q(".axf"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".arc"), { strokeDashoffset: 1 }, 0);
+tl.fromTo(Q(".arh"), { opacity: 0 }, { opacity: 0, duration: 0.01 }, 0);
+tl.fromTo(Q(".axb"), { opacity: 0 }, { opacity: 1, duration: 0.5 }, T2 + 0.3);
+tkp.forEach((p, i) => tl.fromTo(p, { opacity: 0 }, { opacity: 1, duration: 0.3 }, T2 + 0.35 + i * 0.02));
+pop(".ms.m29", T2 + 0.55, 0.5);
+fade(".dl.d29", T2 + 0.6, 0.4);
+tl.to(Q(".ms.m29"), { backgroundColor: "#7D29E0", borderColor: "#7D29E0", boxShadow: "0 0 0 10px rgba(125,41,224,.18)", duration: 0.3 }, T2 + 0.9);
+const TC = cue("Once");
+fade(".ph", TC - 0.2, 0.4);
+tl.fromTo(Q(".ph"), { scale: 0.92 }, { scale: 1, duration: 0.5, ease: SPR }, TC - 0.2);
+tl.to(Q(".axf"), { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, TC + 0.05);
+tkp.forEach((p, i) => tl.to(p, { stroke: "#7D29E0", duration: 0.2 }, TC + 0.05 + (11 - i) * (1.0 / 11) * 0.95));
+tl.to(Q(".arc"), { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, TC + 0.15);
+tl.to(Q(".arh"), { opacity: 1, duration: 0.2 }, TC + 1.1);
+pop(".cnt", TC, 0.5);
+count(".cnt .nv", 11, TC + 0.05, 1.0);
+
+/* ---------- ITS (18 sep) ---------- */
+const T3 = cue("ITS");
+tl.fromTo(Q(".gI"), { opacity: 0, x: -260, rotation: -5 }, { opacity: 1, x: 0, rotation: 0, duration: 0.8, ease: "back.out(1.3)" }, T3 - 0.1);
+tl.to(Q(".ph"), { opacity: 0, duration: 0.25 }, T3 - 0.1);
+tl.fromTo(Q(".gI .flash"), { opacity: 0.85 }, { opacity: 0, duration: 0.4, ease: "power2.out" }, T3 + 0.3);
+pop(".ms.m18", T3 + 0.2, 0.5);
+fade(".dl.d18", T3 + 0.25, 0.4);
+tl.to(Q(".ms.m18"), { backgroundColor: "#E6008E", borderColor: "#E6008E", boxShadow: "0 0 0 10px rgba(230,0,142,.18)", duration: 0.3 }, T3 + 0.5);
+up(".dsub", T3 + 0.55, { d: 0.5, y: 12 });
+hlAt(".hI1", ".wI", 620, 690, 1.0, 362, 553, 128, 26, T3 + 0.6);
+tl.fromTo(Q(".stI"), { opacity: 0, scale: 2.4, rotation: 20 }, { opacity: 1, scale: 1, rotation: 6, duration: 0.35, ease: "power4.in" }, T3 + 0.9);
+tl.fromTo(Q(".stI"), { y: 0 }, { y: 6, duration: 0.06, yoyo: true, repeat: 3, ease: "none" }, T3 + 1.25);
+tl.fromTo(Q(".cI1"), { opacity: 0, y: 26, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, cue("evaluación", 1));
+tl.fromTo(Q(".cI2"), { opacity: 0, y: 26, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, cue("certificación"));
+tl.to(Q(".hI1"), { opacity: 0, duration: 0.2 }, cue("certificación") - 0.15);
+hlAt(".hI2", ".wI", 620, 690, 1.0, 628, 806, 236, 28, cue("certificación") + 0.05);
+tl.to(Q(".hI2"), { opacity: 0, duration: 0.2 }, cue("distancia") - 0.12);
+hlAt(".hI3", ".wI", 620, 690, 1.0, 764, 778, 160, 28, cue("distancia"));
+
+/* ---------- cierre: MEDIR ---------- */
+const T4 = cue("Dos") - 0.05;
+const outs = [".gI", ".gW", ".tmw"];
+outs.forEach((s) => tl.to(Q(s), { opacity: 0, scale: 0.9, y: -30, filter: "blur(12px)", duration: 0.45, ease: "power3.in", transformOrigin: "50% 50%" }, T4 - 0.2));
+tl.to(Q(".hI3"), { opacity: 0, duration: 0.2 }, T4 - 0.25);
+tl.fromTo(Q(".c2a"), { opacity: 0, y: 30, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, T4 + 0.1);
+tl.fromTo(Q(".two .pl"), { opacity: 0, scale: 0.2, rotation: -90 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.5, ease: SPR }, T4 + 0.3);
+tl.fromTo(Q(".c2b"), { opacity: 0, y: 30, scale: 0.6 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, T4 + 0.45);
+slam(".med", cue("medir") - 0.02);
+tl.set(Q(".dl1"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.to(Q(".dl1"), { strokeDashoffset: 0, duration: 0.7, ease: "power3.inOut" }, cue("medir") + 0.25);
+// regla
+const rul = $q(".rul");
+for (let i = 0; i <= 70; i++) {
+  const t = document.createElement("i"); t.className = "tk" + (i % 10 === 0 ? " l" : ""); t.style.left = (i * 20) + "px"; rul.insertBefore(t, rul.querySelector(".trk"));
+}
+const tks = $$q(".rul .tk");
+tl.fromTo(Q(".rul"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, cue("medir") + 0.3);
+tks.forEach((t, i) => tl.fromTo(t, { scaleY: 0 }, { scaleY: 1, duration: 0.25, ease: "power2.out", transformOrigin: "50% 100%" }, cue("medir") + 0.4 + i * 0.008));
+const TR = cue(25);   // «lo que la gente sabe hacer»
+tl.fromTo(Q(".rul .fl"), { scaleX: 0 }, { scaleX: 1, duration: 1.7, ease: "power2.inOut" }, TR);
+tl.fromTo(Q(".rul .pin"), { x: 0 }, { x: 1400, duration: 1.7, ease: "power2.inOut" }, TR);
+tl.fromTo(Q(".ver"), { opacity: 0, scale: 2.4, rotation: 18 }, { opacity: 1, scale: 1, rotation: -5, duration: 0.35, ease: "power4.in" }, TR + 1.75);
+tl.fromTo(Q(".ver"), { y: 0 }, { y: 6, duration: 0.06, yoyo: true, repeat: 3, ease: "none" }, TR + 2.1);
+[13.33, 13.83, 14.33, 14.83].forEach((b) => tl.fromTo(Q(".med"), { scale: 1 }, { scale: 1.035, duration: 0.12, yoyo: true, repeat: 1, ease: "sine.inOut", transformOrigin: "50% 50%" }, beat(b)));
+
+sceneOut("whip");
+window.__timelines["s13"] = tl;
+</script>
+</template>

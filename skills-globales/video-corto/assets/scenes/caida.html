@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3vmin;
+          background: var(--vox-ink);
+          padding: 7vmin 6vmin;
+          overflow: hidden;
+        }
+        .ckicker {
+          background: var(--vox-yellow);
+          color: var(--vox-ink);
+          font: 800 2.6vmin/1 var(--vox-font);
+          letter-spacing: 0.28vmin;
+          text-transform: uppercase;
+          padding: 1.1vmin 1.8vmin;
+          text-align: center;
+        }
+        /* Altura holgada: en la primera versión el contenido de cada columna
+           (26+5+2,4 + gaps) superaba la caja y el layout se descolocaba entero. */
+        .cwrap {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          gap: 8vmin;
+          height: 40vmin;
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 1.4vmin;
+        }
+        .cbar {
+          width: 14vmin;
+          transform-origin: bottom center;
+        }
+        /* 5,2 = 26 x 0,20/1,00: la altura es la proporción real del precio. */
+        .cbar.old { background: #33333d; height: 26vmin; }
+        .cbar.new { background: var(--vox-yellow); height: 5.2vmin; }
+        .price {
+          font: 900 5vmin/1 var(--vox-font);
+          font-variant-numeric: tabular-nums;
+          color: var(--vox-white);
+          white-space: nowrap;
+        }
+        .price.hi { color: var(--vox-yellow); }
+        .tag {
+          font: 700 2.3vmin/1.2 var(--vox-font);
+          color: #8a8a92;
+          text-transform: uppercase;
+          letter-spacing: 0.2vmin;
+        }
+        .drop {
+          font: 900 13vmin/0.9 var(--vox-font);
+          color: var(--vox-yellow);
+          letter-spacing: -0.6vmin;
+        }
+        .dropnote {
+          font: 700 2.8vmin/1.2 var(--vox-font);
+          color: #d7d7dc;
+          text-transform: uppercase;
+          letter-spacing: 0.2vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="caida">
+        <div class="ckicker" id="c-kicker">Luna · entrada por millón de tokens</div>
+
+        <div class="cwrap">
+          <div class="col">
+            <div class="price" id="c-old-p">$1,00</div>
+            <div class="cbar old" id="c-old"></div>
+            <div class="tag">Antes</div>
+          </div>
+          <div class="col">
+            <div class="price hi" id="c-new-p">$0,20</div>
+            <div class="cbar new" id="c-new"></div>
+            <div class="tag">Ahora</div>
+          </div>
+        </div>
+
+        <div class="drop" id="c-drop">−80%</div>
+        <div class="dropnote" id="c-note">30 de julio de 2026</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#c-kicker", { opacity: 0, y: "-1.6vmin" }, { opacity: 1, y: 0, duration: 0.26, ease: "power3.out" }, 0)
+          .fromTo("#c-old", { scaleY: 0 }, { scaleY: 1, duration: 0.42, ease: "power3.out" }, 0.1)
+          .fromTo("#c-old-p", { opacity: 0, y: "1.4vmin" }, { opacity: 1, y: 0, duration: 0.26 }, 0.24)
+          .fromTo("#c-new", { scaleY: 0 }, { scaleY: 1, duration: 0.5, ease: "power4.out" }, 0.62)
+          .fromTo("#c-new-p", { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.34, ease: "back.out(2.2)" }, 0.72)
+          // El −80% entra golpeando: es el dato que carga el plano.
+          .fromTo("#c-drop", { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2.6)" }, 1.0)
+          .fromTo("#c-note", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.3);
+
+        window.__timelines["caida"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

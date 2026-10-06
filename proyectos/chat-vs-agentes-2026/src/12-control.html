@@ -1,0 +1,273 @@
+<!--CSS-->
+#__ID__ .dots{position:absolute;inset:-48px;background-image:radial-gradient(circle,rgba(125,41,224,.22) 2px,transparent 2.6px);background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 46%,#000 0,rgba(0,0,0,.12) 72%,transparent 100%);mask-image:radial-gradient(ellipse 60% 55% at 50% 46%,#000 0,rgba(0,0,0,.12) 72%,transparent 100%)}
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 470px}
+#__ID__ .left{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:560px 465px}
+#__ID__ .fsvg{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible;z-index:1}
+#__ID__ .fdash{fill:none;stroke:#7D29E0;stroke-width:8;stroke-linecap:round;stroke-dasharray:30 20}
+#__ID__ .ffill{fill:rgba(125,41,224,.05);opacity:0}
+#__ID__ .post{position:absolute;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:#fff;border:6px solid #7D29E0;box-sizing:border-box;z-index:2;opacity:0}
+#__ID__ .lock{position:absolute;left:270px;top:225px;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:#7D29E0;box-shadow:0 12px 26px rgba(125,41,224,.45);z-index:3;opacity:0}
+#__ID__ .lock svg{position:absolute;inset:0;width:76px;height:76px}
+#__ID__ .fold{position:absolute;left:430px;top:372px;width:260px;height:202px;z-index:3;opacity:0}
+#__ID__ .fold svg{position:absolute;left:0;top:0;width:260px;height:202px;overflow:visible}
+#__ID__ .fold .front{z-index:4;filter:drop-shadow(0 18px 22px rgba(47,18,94,.32))}
+#__ID__ .fold .back{z-index:1}
+#__ID__ .paper{position:absolute;left:38px;top:36px;width:184px;height:128px;border-radius:9px;background:#fff;border:1px solid #E4E7EC;z-index:2;box-shadow:0 5px 10px rgba(47,18,94,.16);
+  background-image:linear-gradient(#EADCFB,#EADCFB),linear-gradient(#EDEFF3,#EDEFF3);background-repeat:no-repeat;background-size:66px 9px,140px 6px;background-position:16px 16px,16px 38px}
+#__ID__ .fl{position:absolute;left:0;top:0;width:80px;height:98px;margin:-49px 0 0 -40px;z-index:4;opacity:0;filter:drop-shadow(0 12px 16px rgba(47,18,94,.22))}
+#__ID__ .fl svg{display:block;width:80px;height:98px;overflow:visible}
+#__ID__ .ck{position:absolute;right:-14px;top:-12px;width:38px;height:38px;border-radius:50%;background:#067647;border:3px solid #fff;box-sizing:border-box;opacity:0}
+#__ID__ .ck svg{position:absolute;inset:0;width:32px;height:32px}
+#__ID__ .mk{position:absolute;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;background:#fff;border:5px solid #7D29E0;color:#7D29E0;font-weight:800;font-size:34px;line-height:46px;text-align:center;box-sizing:border-box;box-shadow:0 10px 22px rgba(125,41,224,.3);z-index:5;opacity:0}
+#__ID__ .route{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:4;overflow:visible}
+#__ID__ .route path{fill:none;stroke:#9B61F6;stroke-width:5;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .scrim{position:absolute;left:250px;top:205px;width:620px;height:520px;border-radius:52px;background:rgba(250,251,252,.72);z-index:6;opacity:0}
+#__ID__ .dlg{position:absolute;left:230px;top:279px;width:660px;height:372px;border-radius:36px;background:#fff;border:1px solid #E4E7EC;box-shadow:0 40px 90px rgba(13,19,32,.28),0 0 0 8px rgba(125,41,224,.08);z-index:7;opacity:0;box-sizing:border-box;transform-origin:50% 60%}
+#__ID__ .dlg .ti{position:absolute;left:40px;top:40px;display:flex;align-items:center}
+#__ID__ .dlg .qb{width:84px;height:84px;border-radius:50%;background:#F2E7FC;display:flex;align-items:center;justify-content:center;margin-right:22px;flex:none}
+#__ID__ .dlg .qb svg{width:46px;height:46px;overflow:visible}
+#__ID__ .dlg .tx{font-weight:800;font-size:44px;letter-spacing:-.03em;line-height:1.08;white-space:nowrap}
+#__ID__ .dlg .tx .ln{display:block}
+#__ID__ .dlg .fi{position:absolute;left:40px;top:150px;display:flex;gap:14px}
+#__ID__ .dlg .fi i{display:block;width:62px;height:62px;border-radius:14px;background:#F2F4F7;border:1px solid #E4E7EC;position:relative}
+#__ID__ .dlg .fi i svg{position:absolute;inset:11px;width:40px;height:40px}
+#__ID__ .btn{position:absolute;top:244px;height:88px;border-radius:44px;font-weight:600;font-size:40px;line-height:84px;text-align:center;box-sizing:border-box;width:250px}
+#__ID__ .btn.no{left:104px;border:2px solid #D0D5DD;color:#0D1320;background:#fff}
+#__ID__ .btn.ok{left:370px;background:#7D29E0;color:#fff;box-shadow:0 14px 30px rgba(125,41,224,.45)}
+#__ID__ .ctl{position:absolute;left:980px;top:190px;width:740px;height:504px;z-index:5;opacity:0}
+#__ID__ .ctl .card{position:absolute;inset:0;border-radius:36px;background:#fff;border:1px solid #E4E7EC;box-shadow:0 34px 80px rgba(13,19,32,.16)}
+#__ID__ .ctl .hd{position:absolute;left:34px;top:0;height:108px;display:flex;align-items:center;font-weight:800;font-size:40px;letter-spacing:-.03em}
+#__ID__ .ctl .hd .hb{width:64px;height:64px;border-radius:18px;background:#0D1320;margin-right:20px;display:flex;align-items:center;justify-content:center}
+#__ID__ .ctl .hd .hb svg{width:38px;height:38px}
+#__ID__ .row{position:absolute;left:0;width:740px;height:132px;border-top:1px solid #EDEFF3;opacity:0}
+#__ID__ .row .rhl{position:absolute;inset:0;background:#F2E7FC;opacity:0}
+#__ID__ .row .rb{position:absolute;left:34px;top:30px;width:72px;height:72px;border-radius:50%;background:#F2E7FC;display:flex;align-items:center;justify-content:center}
+#__ID__ .row .rb svg{width:42px;height:42px;overflow:visible}
+#__ID__ .row .rl{position:absolute;left:128px;top:0;height:132px;display:flex;align-items:center;font-weight:600;font-size:38px;letter-spacing:-.01em;white-space:nowrap}
+#__ID__ .sw{position:absolute;right:34px;top:31px;width:124px;height:70px;border-radius:35px;background:#D0D5DD}
+#__ID__ .kn{position:absolute;left:7px;top:7px;width:56px;height:56px;border-radius:50%;background:#fff;box-shadow:0 4px 10px rgba(13,19,32,.28)}
+#__ID__ .pg{position:absolute;right:34px;top:31px;width:70px;height:70px}
+#__ID__ .ico{fill:none;stroke:#7D29E0;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+#__ID__ .note{position:absolute;left:1040px;top:742px;width:620px;height:96px;border-radius:48px;background:#fff;border:2px dashed #B54708;box-sizing:border-box;display:flex;align-items:center;padding-left:22px;font-weight:600;font-size:38px;letter-spacing:-.01em;color:#0D1320;opacity:0;z-index:5;box-shadow:0 18px 40px rgba(13,19,32,.1)}
+#__ID__ .note .gl{width:56px;height:56px;margin-right:16px;flex:none;overflow:visible}
+#__ID__ .note .tiers{position:absolute;right:28px;top:0;height:92px;display:flex;align-items:center;gap:10px}
+#__ID__ .note .tiers b{display:block;width:16px;height:16px;border-radius:50%;background:#E4E7EC}
+#__ID__ .link{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:4;overflow:visible}
+#__ID__ .link path{fill:none;stroke:#B54708;stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .pt{position:absolute;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;opacity:0;z-index:40}
+#__ID__ .og{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:radial-gradient(circle at 40% 36%,#E2CCFF 0 20%,#9B61F6 55%,#FF01A2 140%);z-index:45;filter:blur(2px)}
+<!--HTML-->
+<div class="stage">
+  <div class="bg clip" data-start="0" data-duration="__DUR__" data-track-index="0"><div class="dots"></div></div>
+  <div class="world">
+    <div class="left">
+      <svg class="fsvg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+        <defs><mask id="fm___ID__" maskUnits="userSpaceOnUse" x="0" y="0" width="1920" height="1080"><rect class="fmask" x="270" y="225" width="580" height="480" rx="44" fill="none" stroke="#fff" stroke-width="40" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></mask></defs>
+        <rect class="ffill" x="270" y="225" width="580" height="480" rx="44"/>
+        <rect class="fdash" x="270" y="225" width="580" height="480" rx="44" mask="url(#fm___ID__)"/>
+      </svg>
+      <div class="post" style="left:270px;top:705px"></div><div class="post" style="left:850px;top:225px"></div><div class="post" style="left:850px;top:705px"></div>
+      <div class="lock"><svg viewBox="0 0 76 76"><rect x="23" y="35" width="30" height="24" rx="6" fill="#fff"/><path d="M29 35 V29 C29 22 47 22 47 29 V35" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="38" cy="46" r="3.6" fill="#7D29E0"/></svg></div>
+
+      <div class="fold">
+        <svg class="back" viewBox="0 0 360 280"><defs><linearGradient id="fb___ID__" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C7A0F8"/><stop offset="1" stop-color="#9B61F6"/></linearGradient></defs>
+          <path d="M20 44 Q20 22 42 22 H128 Q144 22 154 36 L166 54 H318 Q340 54 340 76 V238 Q340 262 316 262 H44 Q20 262 20 238 Z" fill="url(#fb___ID__)"/></svg>
+        <div class="paper pa1"></div><div class="paper pa2" style="left:44px;top:42px"></div>
+        <svg class="front" viewBox="0 0 360 280"><defs><linearGradient id="ff___ID__" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#A866F5"/><stop offset="0.55" stop-color="#7D29E0"/><stop offset="1" stop-color="#5E3DE6"/></linearGradient></defs>
+          <path d="M20 104 Q20 86 40 86 H320 Q340 86 340 104 V240 Q340 262 316 262 H44 Q20 262 20 240 Z" fill="url(#ff___ID__)"/>
+          <path d="M24 106 Q24 92 42 92 H318 Q336 92 336 106" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="3" stroke-linecap="round"/></svg>
+      </div>
+      <div class="fl f1"></div><div class="fl f2"></div><div class="fl f3"></div>
+
+      <svg class="route" viewBox="0 0 1920 1080"><path class="rt1" d="M425 610 Q430 420 560 316"/><path class="rt2" d="M560 316 Q690 410 700 610"/></svg>
+      <div class="mk m1" style="left:425px;top:610px">1</div><div class="mk m2" style="left:560px;top:316px">2</div><div class="mk m3" style="left:700px;top:610px">3</div>
+
+      <div class="scrim"></div>
+      <div class="dlg">
+        <div class="ti"><div class="qb"><svg viewBox="0 0 48 48"><path class="ico" d="M24 5 L39 11 V23 C39 33 32 40 24 43 C16 40 9 33 9 23 V11 Z"/><path class="ico" d="M18 24 L22.5 28.5 L31 19"/></svg></div><div class="tx"><span class="ln">¿Permitir editar</span><span class="ln">3 archivos?</span></div></div>
+        <div class="fi">
+          <i><svg viewBox="0 0 40 40"><path d="M8 12 H32 M8 20 H32 M8 28 H22" stroke="#7D29E0" stroke-width="4" stroke-linecap="round"/></svg></i>
+          <i><svg viewBox="0 0 40 40"><rect x="6" y="9" width="28" height="22" rx="4" fill="none" stroke="#5E3DE6" stroke-width="3.6"/><path d="M6 17 H34 M6 24 H34 M20 9 V31" stroke="#5E3DE6" stroke-width="3.6"/></svg></i>
+          <i><svg viewBox="0 0 40 40"><circle cx="14" cy="14" r="4.5" fill="#FF01A2"/><path d="M5 33 L16 20 L24 28 L29 23 L36 33 Z" fill="#FF01A2" opacity=".85"/></svg></i>
+        </div>
+        <div class="btn no">Ahora no</div><div class="btn ok">Permitir</div>
+      </div>
+
+      <div class="og og3"></div><div class="og og2"></div><div class="og og1"></div>
+      <div class="orb"></div>
+      <div class="ripple r1"></div><div class="ripple r2"></div><div class="ripple r3"></div>
+      <div class="pts"></div>
+    </div>
+
+    <div class="ctl">
+      <div class="card"></div>
+      <div class="hd"><div class="hb"><svg viewBox="0 0 38 38"><path d="M5 10 H33 M5 19 H33 M5 28 H33" stroke="#fff" stroke-width="3.4" stroke-linecap="round"/><circle cx="13" cy="10" r="3.6" fill="#FF01A2" stroke="#fff" stroke-width="2"/><circle cx="25" cy="19" r="3.6" fill="#9B61F6" stroke="#fff" stroke-width="2"/><circle cx="16" cy="28" r="3.6" fill="#FF01A2" stroke="#fff" stroke-width="2"/></svg></div>Controles</div>
+      <div class="row ro1" style="top:108px"><div class="rhl"></div><div class="rb"><svg viewBox="0 0 48 48"><path class="ico" d="M6 14 Q6 10 10 10 H19 L23 15 H38 Q42 15 42 19 V35 Q42 39 38 39 H10 Q6 39 6 35 Z"/></svg></div><div class="rl">Tú eliges la carpeta</div><div class="sw"><div class="kn"></div></div></div>
+      <div class="row ro2" style="top:240px"><div class="rhl"></div><div class="rb"><svg viewBox="0 0 48 48"><path class="ico" d="M4 24 C10 14 38 14 44 24 C38 34 10 34 4 24 Z"/><circle class="ico" cx="24" cy="24" r="6"/></svg></div><div class="rl">Ves cada paso</div><div class="sw"><div class="kn"></div></div></div>
+      <div class="row ro3" style="top:372px"><div class="rhl"></div><div class="rb"><svg viewBox="0 0 48 48"><path class="ico" d="M24 5 L39 11 V23 C39 33 32 40 24 43 C16 40 9 33 9 23 V11 Z"/><path class="ico" d="M17 24 L22 29 L31 18"/></svg></div><div class="rl">Te pide permiso</div><div class="sw"><div class="kn"></div></div></div>
+    </div>
+
+    <svg class="link" viewBox="0 0 1920 1080"><path class="lk" d="M1350 694 V742" pathLength="1"/></svg>
+    <div class="note">
+      <svg class="gl" viewBox="0 0 56 56"><circle class="gc" cx="28" cy="28" r="22" fill="none" stroke="#B54708" stroke-width="3.4"/><ellipse class="gm" cx="28" cy="28" rx="10" ry="22" fill="none" stroke="#B54708" stroke-width="3"/><path d="M6 28 H50 M10 17 H46 M10 39 H46" stroke="#B54708" stroke-width="3" stroke-linecap="round"/></svg>
+      Varía según plan y país
+      <div class="tiers"><b class="t1"></b><b class="t2"></b><b class="t3"></b></div>
+    </div>
+  </div>
+</div>
+<!--JS-->
+const GH = [".og1", ".og2", ".og3"];
+const GS = [0.86, 0.72, 0.58], GO = [0.42, 0.26, 0.14];
+function go(x, y, at, d = 0.6, ease = IO) {
+  tl.to(Q(".orb"), { x, y, duration: d, ease }, at);
+  GH.forEach((g, i) => tl.to(Q(g), { x, y, duration: d, ease }, at + 0.055 * (i + 1)));
+}
+function trailInit(x, y) { orbSet(x, y, 0); GH.forEach((g, i) => tl.set(Q(g), { x, y, scale: GS[i], opacity: GO[i] }, 0)); }
+function rip(sel, x, y, at, big = 2.2) {
+  tl.set(Q(sel), { x, y, scale: 0.2, opacity: 0 }, Math.max(0, at - 0.02));
+  tl.to(Q(sel), { opacity: 0.9, duration: 0.01 }, at);
+  tl.to(Q(sel), { scale: big, duration: 0.6, ease: "power2.out" }, at);
+  tl.to(Q(sel), { opacity: 0, duration: 0.5, ease: "power2.in" }, at + 0.08);
+}
+const ptsEl = $q(".pts");
+function burst(x, y, at, n = 8, rad = 100, rot = 0) {
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement("div"); el.className = "pt";
+    el.style.background = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6"][i % 4];
+    const sz = 8 + (i % 3) * 5; el.style.width = el.style.height = sz + "px"; el.style.margin = `${-sz / 2}px 0 0 ${-sz / 2}px`;
+    ptsEl.appendChild(el);
+    const ang = rot + i * (Math.PI * 2 / n), r = rad * (0.7 + 0.5 * ((i * 7) % 5) / 4);
+    tl.fromTo(el, { x, y, opacity: 0, scale: 0.3 }, { x, y, opacity: 1, scale: 1, duration: 0.06, ease: "none" }, at);
+    tl.to(el, { x: x + Math.cos(ang) * r, y: y + Math.sin(ang) * r, opacity: 0, scale: 0.2, duration: 0.65, ease: "power3.out" }, at + 0.06);
+  }
+}
+/* archivos pequeños del diálogo */
+const FG = [
+  '<path d="M8 40 H36 M8 52 H36 M8 64 H26" stroke="#7D29E0" stroke-width="4.5" stroke-linecap="round"/>',
+  '<rect x="10" y="36" width="44" height="32" rx="5" fill="none" stroke="#5E3DE6" stroke-width="4"/><path d="M10 47 H54 M10 58 H54 M32 36 V68" stroke="#5E3DE6" stroke-width="4"/>',
+  '<circle cx="26" cy="46" r="6" fill="#FF01A2"/><path d="M12 76 L30 56 L42 68 L50 60 L66 76 Z" fill="#FF01A2" opacity=".85"/>'
+];
+const FC = ["#7D29E0", "#5E3DE6", "#FF01A2"];
+$$q(".fl").forEach((el, i) => {
+  el.innerHTML = `<svg viewBox="0 0 80 98"><path d="M12 1 H54 L79 26 V86 Q79 97 68 97 H12 Q1 97 1 86 V12 Q1 1 12 1 Z" fill="#fff" stroke="#E4E7EC" stroke-width="2"/><path d="M54 1 L79 26 H64 Q54 26 54 16 Z" fill="${FC[i]}" opacity=".22"/>${FG[i]}</svg><div class="ck"><svg viewBox="0 0 32 32"><path d="M8 16 L14 22 L24 10" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>`;
+});
+
+sceneIn("fade");
+tl.to(Q(".dots"), { x: -48, duration: DUR, ease: "none" }, 0);
+
+/* cámara: deriva lenta + empuje hacia el diálogo + vuelta */
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.03, duration: 4.8, ease: "none" }, 0);
+tl.to(Q(".world"), { scale: 1.07, x: 70, duration: 0.7, ease: "power3.inOut" }, 4.85);
+tl.to(Q(".world"), { scale: 1.0, x: 0, duration: 0.9, ease: "power3.inOut" }, 6.75);
+tl.to(Q(".world"), { scale: 1.04, duration: 3.3, ease: "none" }, 7.65);
+
+/* fase A: el grupo «carpeta + valla» empieza centrado y grande; luego cede sitio al panel */
+tl.set(Q(".left"), { x: 400, scale: 1.2 }, 0);
+tl.to(Q(".left"), { x: 0, scale: 1, duration: 0.95, ease: "power3.inOut" }, 2.25);
+tl.set(Q(".pa1"), { rotation: -6 }, 0); tl.set(Q(".pa2"), { rotation: 3 }, 0);
+tl.fromTo(Q(".fold"), { opacity: 0, scale: 0.7, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.8, ease: "back.out(1.5)" }, 0);
+tl.fromTo(Q(".paper"), { y: 0 }, { y: -26, duration: 0.5, ease: "back.out(2)", stagger: 0.06 }, 0.7);
+
+/* la valla se dibuja («tú mantienes el control») */
+tl.fromTo(Q(".fmask"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.95, ease: "power2.inOut" }, 0.3);
+tl.fromTo(Q(".ffill"), { opacity: 0 }, { opacity: 1, duration: 0.7, ease: "power2.out" }, 0.6);
+tl.fromTo(Q(".post"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.45, ease: SPR, stagger: 0.12 }, 0.75);
+tl.fromTo(Q(".lock"), { opacity: 0, scale: 0.3, rotation: -25 }, { opacity: 1, scale: 1, rotation: 0, duration: 0.6, ease: "back.out(2.4)" }, 0.65);
+
+/* el orbe intenta salir y rebota (humor) */
+trailInit(500, 560);
+go(560, 520, 0.2, 0.5, "power2.out");
+orbPulse(0.85, 0.4);
+function bounce(ix, iy, bx, by, wx, wy, at, vert, rs) {
+  go(ix, iy, at, 0.32, "power2.in");
+  const t = at + 0.32;
+  rip(rs, wx, wy, t, 2);
+  tl.to(Q(".orb"), { scaleX: vert ? 1.3 : 0.6, scaleY: vert ? 0.6 : 1.3, duration: 0.07, ease: "power2.out" }, t);
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.5, ease: "elastic.out(1,0.45)" }, t + 0.07);
+  tl.to(Q(".fdash"), { stroke: "#FF01A2", strokeWidth: 13, duration: 0.07, ease: "none" }, t);
+  tl.to(Q(".fdash"), { stroke: "#7D29E0", strokeWidth: 8, duration: 0.45, ease: "power2.out" }, t + 0.07);
+  tl.fromTo(Q(".fsvg"), { x: 0 }, { x: vert ? 0 : 10, y: vert ? -10 : 0, duration: 0.04, yoyo: true, repeat: 5, ease: "none" }, t);
+  tl.set(Q(".fsvg"), { x: 0, y: 0 }, t + 0.26);
+  burst(wx, wy, t, 7, 70, vert ? 1.0 : 0);
+  go(bx, by, t + 0.05, 0.55, "back.out(2.2)");
+}
+bounce(800, 470, 640, 520, 846, 470, 1.38, false, ".r1");
+bounce(530, 292, 560, 450, 530, 225, 2.45, true, ".r3");
+
+/* interruptor 1: «eliges las carpetas» */
+tl.fromTo(Q(".ctl"), { opacity: 0, x: 130 }, { opacity: 1, x: 0, duration: 0.9, ease: E }, 2.3);
+tl.fromTo(Q(".row"), { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.7, ease: E, stagger: 0.12 }, 2.5);
+function toggle(n, at) {
+  const r = ".ro" + n;
+  tl.to(Q(r + " .sw"), { backgroundColor: "#7D29E0", duration: 0.25, ease: "power2.out" }, at);
+  tl.to(Q(r + " .kn"), { x: 54, duration: 0.5, ease: "back.out(2.2)" }, at);
+  tl.fromTo(Q(r + " .rhl"), { opacity: 0 }, { opacity: 1, duration: 0.15, ease: "none" }, at + 0.05);
+  tl.to(Q(r + " .rhl"), { opacity: 0.45, duration: 0.6, ease: "power2.out" }, at + 0.2);
+  tl.fromTo(Q(r + " .rb"), { scale: 1 }, { scale: 1.22, duration: 0.2, yoyo: true, repeat: 1, ease: "sine.inOut" }, at + 0.05);
+  tl.fromTo(Q(r + " .sw"), { scale: 1 }, { scale: 1.06, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, at);
+}
+toggle(1, cue("eliges") + 0.5);
+
+/* «ves cada paso»: el orbe recorre 3 pasos visibles dentro de la valla */
+const V = cue("ves");
+toggle(2, V + 0.1);
+go(425, 610, V - 0.05, 0.4, "power3.inOut");
+pop(".m1", V + 0.2, 0.4);
+tl.fromTo(Q(".rt1"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.4, ease: "power2.inOut" }, V + 0.3);
+go(560, 316, V + 0.3, 0.4, "power3.inOut");
+pop(".m2", V + 0.6, 0.4);
+tl.fromTo(Q(".rt2"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 1, duration: 0.4, ease: "power2.inOut" }, V + 0.7);
+go(700, 610, V + 0.7, 0.4, "power3.inOut");
+pop(".m3", V + 0.95, 0.35);
+orbPulse(V + 0.95, 0.35);
+
+/* «te pide permiso antes de actuar»: diálogo, el orbe espera, clic en Permitir */
+const D = cue("pide");
+tl.to(Q(".mk, .route path"), { opacity: 0, duration: 0.18, ease: "power2.in" }, D);
+tl.fromTo(Q(".scrim"), { opacity: 0 }, { opacity: 1, duration: 0.35, ease: "power2.out" }, D);
+tl.fromTo(Q(".dlg"), { opacity: 0, scale: 0.78, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: "back.out(1.8)" }, D + 0.03);
+tl.fromTo(Q(".dlg .qb"), { scale: 0 }, { scale: 1, duration: 0.5, ease: "back.out(2.6)" }, D + 0.3);
+tl.fromTo(Q(".dlg .fi i"), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: E, stagger: 0.08 }, D + 0.4);
+tl.fromTo(Q(".btn"), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: E, stagger: 0.1 }, D + 0.5);
+toggle(3, cue("permiso") + 0.1);
+go(560, 700, D + 0.05, 0.5, "power3.out");
+/* espera: pequeña respiración */
+tl.to(Q(".orb"), { y: 690, duration: 0.45, yoyo: true, repeat: 1, ease: "sine.inOut" }, D + 0.75);
+const CK = cue("actuar") + 0.1;
+go(826, 600, CK - 0.5, 0.45, "power3.inOut");
+rip(".r2", 826, 600, CK);
+tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, CK - 0.02);
+tl.to(Q(".btn.ok"), { scale: 0.93, backgroundColor: "#5E21B0", duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, CK - 0.02);
+burst(726, 568, CK + 0.02, 10, 120);
+tl.to(Q(".dlg"), { opacity: 0, scale: 0.9, y: -16, duration: 0.3, ease: "power2.in" }, CK + 0.28);
+tl.to(Q(".scrim"), { opacity: 0, duration: 0.3 }, CK + 0.28);
+
+/* el orbe sigue: edita 3 archivos y los marca */
+const FP = [[440, 318], [560, 296], [680, 318]];
+$$q(".fl").forEach((el, i) => {
+  const t = CK + 0.4 + i * 0.28;
+  tl.fromTo(el, { opacity: 0, x: 560, y: 470, scale: 0.3 }, { opacity: 1, x: FP[i][0], y: FP[i][1], scale: 1, duration: 0.5, ease: "back.out(1.8)" }, t);
+  go(FP[i][0], FP[i][1] + 78, t + 0.12, 0.3, "power3.out");
+  tl.fromTo(el.querySelector(".ck"), { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(3)" }, t + 0.42);
+});
+orbSquash(CK + 1.35);
+go(560, 560, CK + 1.45, 0.5, "power2.inOut");
+
+/* detalle sobrio: «según tu plan y tu país» */
+const N0 = cue("funciones");
+tl.fromTo(Q(".lk"), { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 0.9, duration: 0.35, ease: "power2.out" }, N0 - 0.05);
+tl.fromTo(Q(".note"), { opacity: 0, y: 24, scale: 0.92 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: "back.out(1.5)" }, N0 + 0.1);
+tl.fromTo(Q(".note .gc, .note .gm"), { opacity: 0 }, { opacity: 1, duration: 0.3 }, N0 + 0.2);
+tl.fromTo(Q(".gm"), { attr: { rx: 10 } }, { attr: { rx: 2 }, duration: 0.9, yoyo: true, repeat: 3, ease: "sine.inOut" }, cue("cambian"));
+tl.to(Q(".t1"), { backgroundColor: "#B54708", scale: 1.3, duration: 0.25, yoyo: true, repeat: 1 }, cue("plan") - 0.1);
+tl.set(Q(".t1"), { backgroundColor: "#B54708" }, cue("plan") + 0.4);
+tl.to(Q(".t2"), { backgroundColor: "#B54708", scale: 1.3, duration: 0.25, yoyo: true, repeat: 1 }, cue("plan") + 0.25);
+tl.set(Q(".t2"), { backgroundColor: "#B54708" }, cue("plan") + 0.75);
+tl.fromTo(Q(".t3"), { scale: 1 }, { scale: 1.5, duration: 0.3, yoyo: true, repeat: 1, ease: "sine.inOut" }, cue("país") - 0.05);
+/* orbe en reposo con respiración */
+tl.to(Q(".orb"), { y: 545, duration: 0.8, yoyo: true, repeat: 3, ease: "sine.inOut" }, N0 + 0.1);
+
+sceneOut("fade");
+<!--SFX-->
+[{"k":"pop","t":0.7,"v":0.35},{"k":"impact","t":1.7,"v":0.3},{"k":"impact","t":2.77,"v":0.3},{"k":"pop","t":3.0,"v":0.45},{"k":"pop","t":3.75,"v":0.45},{"k":"pop","t":5.35,"v":0.45},{"k":"pop","t":5.0,"v":0.4},{"k":"click","t":6.45,"v":0.55},{"k":"ding","t":7.0,"v":0.3},{"k":"pop","t":7.45,"v":0.35}]

@@ -1,0 +1,60 @@
+# Credenciales (nunca en git)
+.env
+.env.*
+!.env.example
+
+# Dependencias
+node_modules/
+
+# Material en bruto y salidas (pesan mucho)
+brutos/*
+!brutos/LEEME.md
+resultados/
+benchmark/resultados/
+
+# Intermedios de cada proyecto
+proyectos/*/work/
+proyectos/*/media/
+proyectos/*/out/
+proyectos/*/build/
+proyectos/*/build-local/
+proyectos/*/media-public/
+
+# Motor y herramientas
+motor/out/
+motor/public/estilos/
+tools/.venv/
+tools/modelos/
+tools/vendor/
+__pycache__/
+
+# Clon de HyperFrames para su despliegue en Lambda
+vendor/
+
+# Varios
+.DS_Store
+out/
+.remotion/
+.hyperframes/
+
+# Proyectos: solo datos y código. Los assets (audio, vídeo, capturas de webs, textos copiados de terceros) se quedan
+# en local: pesan mucho y pueden llevar material de terceros o datos personales.
+proyectos/*/assets/
+proyectos/*/public/
+proyectos/*/research/
+proyectos/*/snapshots/
+proyectos/*/.thumbnails/
+proyectos/*/.waveform-cache/
+proyectos/*/.media/
+
+# Encargos puntuales (notas privadas de una sesión)
+ENCARGO-*.md
+
+# Historial del andamiaje de create-video (repo anidado de benchmark/remotion-test)
+.git-create-video/
+
+# Registro del instalador
+instalar.log
+
+# Registros de despliegues y renders (llevan ARNs con el ID de la cuenta de AWS)
+benchmark/logs/*.log

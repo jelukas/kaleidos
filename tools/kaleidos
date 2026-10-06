@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Envoltorio de la CLI: tools/kaleidos <comando> <slug> [opciones]
+# Equivale a: uv run --project tools kaleidos <comando> …
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+UV="$(command -v uv || echo /opt/homebrew/bin/uv)"
+cd "$DIR/.."
+exec "$UV" run --quiet --project "$DIR" kaleidos "$@"

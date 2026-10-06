@@ -1,0 +1,4799 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 6040,
+ "fuente": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25,
+  "duracion": 232.6
+ },
+ "recorte": false,
+ "narracion": true,
+ "escenario": true,
+ "segmentos": [
+  {
+   "dst": 100,
+   "src": 0.0,
+   "dur": 5815
+  }
+ ],
+ "planos": [],
+ "capitulos": [
+  {
+   "desde": 462,
+   "hasta": 1905,
+   "rotuloHasta": 547,
+   "n": 1,
+   "sigla": "1",
+   "registro": "show",
+   "kicker": "Bloque 1",
+   "titulo": "Dots",
+   "subtitulo": "Agentes siempre encendidos",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "desde": 1905,
+   "hasta": 2946,
+   "rotuloHasta": 1990,
+   "n": 2,
+   "sigla": "2",
+   "registro": "show",
+   "kicker": "Bloque 2",
+   "titulo": "Modelos y velocidad",
+   "subtitulo": "GPT-6.1 Sol y Ultrafast",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "desde": 2946,
+   "hasta": 4116,
+   "rotuloHasta": 3031,
+   "n": 3,
+   "sigla": "3",
+   "registro": "show",
+   "kicker": "Bloque 3",
+   "titulo": "Codex y la API",
+   "subtitulo": "Novedades para desarrolladores",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "desde": 4116,
+   "hasta": 4994,
+   "rotuloHasta": 4201,
+   "n": 4,
+   "sigla": "4",
+   "registro": "show",
+   "kicker": "Bloque 4",
+   "titulo": "ChatGPT, tu oficina",
+   "subtitulo": "Plugins, Space, Pages y más",
+   "acento": 3,
+   "objeto3d": null
+  },
+  {
+   "desde": 4994,
+   "hasta": 5559,
+   "rotuloHasta": 5079,
+   "n": 5,
+   "sigla": "5",
+   "registro": "show",
+   "kicker": "Bloque 5",
+   "titulo": "Planes y ecosistema",
+   "subtitulo": "Pro 500, Sign in y Marketplace",
+   "acento": 0,
+   "objeto3d": null
+  }
+ ],
+ "eventos": [
+  {
+   "id": "e01",
+   "tipo": "lamina",
+   "desde": 106,
+   "hasta": 228,
+   "registro": "lamina",
+   "imagen": "lamina-escenario",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "en": 177,
+     "texto": "¡Arranca el DevDay!",
+     "x": 0.22,
+     "y": 0.16,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e02",
+   "tipo": "panel",
+   "desde": 234,
+   "hasta": 358,
+   "kind": "cifra",
+   "registro": "show",
+   "kicker": "El DevDay más grande hasta ahora",
+   "titulo": "Más de",
+   "valor": 20,
+   "valorInicial": 0,
+   "etiqueta": "anuncios entre ChatGPT, Codex y modelos"
+  },
+  {
+   "id": "e03",
+   "tipo": "lamina",
+   "desde": 364,
+   "hasta": 462,
+   "registro": "lamina",
+   "imagen": "captura-recap",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "bocadillos": []
+  },
+  {
+   "id": "e04",
+   "tipo": "escena3d",
+   "desde": 553,
+   "hasta": 770,
+   "registro": "show",
+   "disposicion": "voz",
+   "objeto": "letras",
+   "texto": "DOTS",
+   "kicker": "Qué son",
+   "titulo": "Agentes que no se apagan",
+   "etiquetas": [
+    {
+     "en": 553,
+     "texto": "Siempre encendidos"
+    },
+    {
+     "en": 590,
+     "texto": "No esperan a que les escribas"
+    },
+    {
+     "en": 639,
+     "texto": "Trabajan por ti 24/7"
+    }
+   ]
+  },
+  {
+   "id": "e05",
+   "tipo": "panel",
+   "desde": 776,
+   "hasta": 1040,
+   "kind": "lista",
+   "registro": "editorial",
+   "kicker": "Bloque 1 · Cómo funcionan",
+   "titulo": "Lo que tiene cada dot",
+   "items": [
+    {
+     "texto": "Funciona con GPT-6 Astra",
+     "icono": "bombilla",
+     "en": 788
+    },
+    {
+     "en": 847,
+     "texto": "Ordenador y navegador propios en la nube",
+     "icono": "nube"
+    },
+    {
+     "en": 943,
+     "texto": "Más de 4.000 apps a través de plugins",
+     "icono": "red"
+    }
+   ]
+  },
+  {
+   "id": "e06",
+   "tipo": "lamina",
+   "desde": 1046,
+   "hasta": 1204,
+   "registro": "lamina",
+   "imagen": "lamina-dot",
+   "zoom": [
+    1.0,
+    1.07
+   ],
+   "bocadillos": [
+    {
+     "en": 1046,
+     "texto": "Tú descansa, yo sigo.",
+     "x": 0.25,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "en": 1170,
+     "texto": "¿Hablamos?",
+     "x": 0.8,
+     "y": 0.17,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e07",
+   "tipo": "panel",
+   "desde": 1210,
+   "hasta": 1508,
+   "kind": "checklist",
+   "registro": "editorial",
+   "kicker": "Bloque 1 · Control",
+   "titulo": "Tú pones las reglas",
+   "items": [
+    {
+     "en": 1258,
+     "texto": "A qué apps accede",
+     "icono": "candado"
+    },
+    {
+     "en": 1301,
+     "texto": "Qué hace solo y qué necesita tu aprobación",
+     "icono": "check"
+    },
+    {
+     "en": 1413,
+     "texto": "Lo sensible, siempre tuyo: p. ej., cambiar una contraseña",
+     "icono": "llave"
+    }
+   ]
+  },
+  {
+   "id": "e08",
+   "tipo": "reaccion",
+   "desde": 1210,
+   "hasta": 1245,
+   "icono": "pregunta"
+  },
+  {
+   "id": "e09",
+   "tipo": "panel",
+   "desde": 1514,
+   "hasta": 1905,
+   "kind": "comparativa",
+   "registro": "editorial",
+   "kicker": "Bloque 1 · Disponibilidad",
+   "titulo": "¿Llegan a España?",
+   "izq": {
+    "en": 1560,
+    "titulo": "Plan Pro",
+    "items": [
+     "De momento, no en el Espacio Económico Europeo, Suiza ni Reino Unido"
+    ],
+    "tono": "bad"
+   },
+   "der": {
+    "en": 1796,
+    "titulo": "Business Premium",
+    "items": [
+     "En todas las regiones compatibles"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "e10",
+   "tipo": "reaccion",
+   "desde": 1514,
+   "hasta": 1549,
+   "icono": "alerta"
+  },
+  {
+   "id": "e11",
+   "tipo": "titulo",
+   "desde": 1996,
+   "hasta": 2142,
+   "registro": "show",
+   "antetitulo": "Nuevo modelo",
+   "texto": "GPT-6.1 Sol",
+   "subtitulo": "Casi Astra, a una quinta parte del precio",
+   "destellos": true
+  },
+  {
+   "id": "e12",
+   "tipo": "panel",
+   "desde": 2148,
+   "hasta": 2342,
+   "kind": "lista",
+   "registro": "editorial",
+   "kicker": "Bloque 2 · Precio en la API",
+   "titulo": "Por millón de tokens",
+   "items": [
+    {
+     "texto": "Entrada: 2 $",
+     "icono": "entrada",
+     "en": 2160
+    },
+    {
+     "en": 2236,
+     "texto": "Salida: 10 $",
+     "icono": "salida"
+    },
+    {
+     "en": 2274,
+     "texto": "Entrada en caché: 0,10 $",
+     "icono": "dinero"
+    }
+   ]
+  },
+  {
+   "id": "e13",
+   "tipo": "panel",
+   "desde": 2348,
+   "hasta": 2550,
+   "kind": "clave",
+   "registro": "editorial",
+   "kicker": "Bloque 2 · Disponibilidad",
+   "titulo": "Dónde usarlo hoy",
+   "texto": "En ChatGPT Work y en Codex para Plus, Pro, Business, Enterprise y Edu, y en la API. En el chat, todavía no.",
+   "resalta": [
+    "Work",
+    "Codex",
+    "todavía"
+   ]
+  },
+  {
+   "id": "e14",
+   "tipo": "lamina",
+   "desde": 2556,
+   "hasta": 2672,
+   "registro": "lamina",
+   "imagen": "lamina-velocidad",
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "bocadillos": [
+    {
+     "en": 2591,
+     "texto": "¡ULTRAFAST!",
+     "x": 0.2,
+     "y": 0.16,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e15",
+   "tipo": "panel",
+   "desde": 2678,
+   "hasta": 2848,
+   "kind": "cifra",
+   "registro": "show",
+   "kicker": "Ultrafast · nivel de velocidad premium",
+   "titulo": "Hasta",
+   "valor": 8,
+   "valorInicial": 1,
+   "unidad": "×",
+   "etiqueta": "más rápido en Codex (300 tokens/s) · hasta 6× en la API"
+  },
+  {
+   "id": "e16",
+   "tipo": "sello",
+   "desde": 2854,
+   "hasta": 2946,
+   "texto": "SOL, MUY PRONTO",
+   "tono": "ok"
+  },
+  {
+   "id": "e17",
+   "tipo": "lamina",
+   "desde": 3037,
+   "hasta": 3189,
+   "registro": "lamina",
+   "imagen": "lamina-codex-movil",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "en": 3152,
+     "texto": "¡Lo lanzo desde el móvil!",
+     "x": 0.24,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e18",
+   "tipo": "panel",
+   "desde": 3195,
+   "hasta": 3431,
+   "kind": "pasos",
+   "registro": "editorial",
+   "kicker": "Bloque 3 · Codex renovado",
+   "titulo": "Más Codex, en más sitios",
+   "items": [
+    {
+     "texto": "Terminal: tareas con la voz",
+     "icono": "mensaje",
+     "en": 3207
+    },
+    {
+     "en": 3280,
+     "texto": "Vista de agentes: varios a la vez",
+     "icono": "personas"
+    },
+    {
+     "en": 3371,
+     "texto": "Revisión de código en la app de escritorio",
+     "icono": "codigo"
+    }
+   ]
+  },
+  {
+   "id": "e19",
+   "tipo": "lamina",
+   "desde": 3437,
+   "hasta": 3601,
+   "registro": "lamina",
+   "imagen": "lamina-escudo",
+   "zoom": [
+    1.0,
+    1.08
+   ],
+   "bocadillos": [
+    {
+     "en": 3563,
+     "texto": "¡Fallo encontrado y corregido!",
+     "x": 0.24,
+     "y": 0.17,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e20",
+   "tipo": "panel",
+   "desde": 3607,
+   "hasta": 4116,
+   "kind": "mapa",
+   "registro": "editorial",
+   "kicker": "Bloque 3 · La API",
+   "titulo": "Agentes para tu producto",
+   "centro": "API de OpenAI",
+   "nodos": [
+    {
+     "en": 3607,
+     "texto": "Agents API: uso del ordenador"
+    },
+    {
+     "en": 3766,
+     "texto": "Decisions API: respuestas cerradas en tiempo real"
+    },
+    {
+     "en": 3966,
+     "texto": "Bedrock Managed Agents: agentes de OpenAI en AWS"
+    }
+   ]
+  },
+  {
+   "id": "e21",
+   "tipo": "lamina",
+   "desde": 4208,
+   "hasta": 4263,
+   "registro": "lamina",
+   "imagen": "lamina-equipo",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "bocadillos": [
+    {
+     "en": 4208,
+     "texto": "¡Todos en el mismo sitio!",
+     "x": 0.2,
+     "y": 0.17,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ]
+  },
+  {
+   "id": "e22",
+   "tipo": "panel",
+   "desde": 4269,
+   "hasta": 4336,
+   "kind": "cifra",
+   "registro": "show",
+   "kicker": "Bloque 4 · ChatGPT abierto a los desarrolladores",
+   "titulo": "Un público de",
+   "valor": 1200,
+   "valorInicial": 0,
+   "etiqueta": "millones de usuarios semanales"
+  },
+  {
+   "id": "e23",
+   "tipo": "panel",
+   "desde": 4342,
+   "hasta": 4498,
+   "kind": "tarjeta",
+   "registro": "show",
+   "kicker": "Bloque 4 · Plugins",
+   "titulo": "Extensiones de plugins",
+   "texto": "Su sitio en la barra lateral y paneles interactivos dentro de ChatGPT",
+   "icono": "engranaje"
+  },
+  {
+   "id": "e24",
+   "tipo": "panel",
+   "desde": 4504,
+   "hasta": 4994,
+   "kind": "lista",
+   "registro": "editorial",
+   "kicker": "Bloque 4 · Trabajo en equipo",
+   "titulo": "Novedades para equipos",
+   "items": [
+    {
+     "texto": "ChatGPT Space: equipo, ChatGPT y tu dot",
+     "icono": "carpeta",
+     "en": 4516
+    },
+    {
+     "en": 4645,
+     "texto": "Pages: documentos para personas y agentes",
+     "icono": "documento"
+    },
+    {
+     "en": 4754,
+     "texto": "Diapositivas colaborativas (próximas semanas)",
+     "icono": "calendario"
+    },
+    {
+     "en": 4889,
+     "texto": "@ChatGPT en Slack y Teams (Business y Enterprise)",
+     "icono": "mensaje"
+    }
+   ]
+  },
+  {
+   "id": "e25",
+   "tipo": "panel",
+   "desde": 5085,
+   "hasta": 5186,
+   "kind": "cifra",
+   "registro": "show",
+   "kicker": "Bloque 5 · Nuevo plan Pro 500",
+   "titulo": "Uso de Plus multiplicado por",
+   "valor": 25,
+   "valorInicial": 1,
+   "unidad": "×",
+   "etiqueta": "con acceso a Ultrafast"
+  },
+  {
+   "id": "e26",
+   "tipo": "escena3d",
+   "desde": 5192,
+   "hasta": 5351,
+   "registro": "show",
+   "disposicion": "voz",
+   "objeto": "llave",
+   "kicker": "Sign in with ChatGPT",
+   "titulo": "Tu plan, en otras herramientas",
+   "etiquetas": [
+    {
+     "en": 5238,
+     "texto": "Para Plus y Pro"
+    },
+    {
+     "en": 5301,
+     "texto": "16 herramientas de socios"
+    }
+   ]
+  },
+  {
+   "id": "e27",
+   "tipo": "panel",
+   "desde": 5357,
+   "hasta": 5553,
+   "kind": "cifra",
+   "registro": "show",
+   "kicker": "Bloque 5 · OpenAI Marketplace",
+   "titulo": "Para empresas",
+   "valor": 32,
+   "valorInicial": 0,
+   "etiqueta": "socios donde dedicar parte del compromiso con OpenAI"
+  }
+ ],
+ "subtitulos": [
+  {
+   "desde": 104,
+   "hasta": 122,
+   "palabras": [
+    {
+     "t": "Ayer,",
+     "desde": 104,
+     "hasta": 110
+    }
+   ]
+  },
+  {
+   "desde": 126,
+   "hasta": 154,
+   "palabras": [
+    {
+     "t": "veintinueve",
+     "desde": 126,
+     "hasta": 132
+    },
+    {
+     "t": "de",
+     "desde": 132,
+     "hasta": 138
+    },
+    {
+     "t": "septiembre,",
+     "desde": 138,
+     "hasta": 146
+    }
+   ]
+  },
+  {
+   "desde": 160,
+   "hasta": 177,
+   "palabras": [
+    {
+     "t": "OpenAI",
+     "desde": 160,
+     "hasta": 165
+    }
+   ]
+  },
+  {
+   "desde": 177,
+   "hasta": 210,
+   "palabras": [
+    {
+     "t": "celebró",
+     "desde": 177,
+     "hasta": 182
+    },
+    {
+     "t": "en",
+     "desde": 182,
+     "hasta": 186
+    },
+    {
+     "t": "San",
+     "desde": 186,
+     "hasta": 200
+    },
+    {
+     "t": "Francisco",
+     "desde": 200,
+     "hasta": 206
+    },
+    {
+     "t": "su",
+     "desde": 206,
+     "hasta": 211
+    }
+   ]
+  },
+  {
+   "desde": 210,
+   "hasta": 228,
+   "palabras": [
+    {
+     "t": "DevDay.",
+     "desde": 210,
+     "hasta": 218
+    }
+   ]
+  },
+  {
+   "desde": 234,
+   "hasta": 281,
+   "palabras": [
+    {
+     "t": "El",
+     "desde": 234,
+     "hasta": 238
+    },
+    {
+     "t": "más",
+     "desde": 238,
+     "hasta": 246
+    },
+    {
+     "t": "grande",
+     "desde": 246,
+     "hasta": 251
+    },
+    {
+     "t": "hasta",
+     "desde": 251,
+     "hasta": 258
+    },
+    {
+     "t": "ahora:",
+     "desde": 258,
+     "hasta": 272
+    },
+    {
+     "t": "más",
+     "desde": 272,
+     "hasta": 275
+    },
+    {
+     "t": "de",
+     "desde": 275,
+     "hasta": 280
+    }
+   ]
+  },
+  {
+   "desde": 281,
+   "hasta": 325,
+   "palabras": [
+    {
+     "t": "veinte",
+     "desde": 281,
+     "hasta": 287
+    },
+    {
+     "t": "anuncios",
+     "desde": 287,
+     "hasta": 299
+    },
+    {
+     "t": "entre",
+     "desde": 299,
+     "hasta": 306
+    },
+    {
+     "t": "ChatGPT,",
+     "desde": 306,
+     "hasta": 317
+    }
+   ]
+  },
+  {
+   "desde": 330,
+   "hasta": 358,
+   "palabras": [
+    {
+     "t": "Codex",
+     "desde": 330,
+     "hasta": 337
+    },
+    {
+     "t": "y",
+     "desde": 337,
+     "hasta": 340
+    },
+    {
+     "t": "sus",
+     "desde": 340,
+     "hasta": 346
+    },
+    {
+     "t": "modelos.",
+     "desde": 346,
+     "hasta": 351
+    }
+   ]
+  },
+  {
+   "desde": 364,
+   "hasta": 408,
+   "palabras": [
+    {
+     "t": "Te",
+     "desde": 364,
+     "hasta": 370
+    },
+    {
+     "t": "contamos",
+     "desde": 370,
+     "hasta": 378
+    },
+    {
+     "t": "lo",
+     "desde": 378,
+     "hasta": 391
+    },
+    {
+     "t": "importante",
+     "desde": 391,
+     "hasta": 398
+    },
+    {
+     "t": "en",
+     "desde": 398,
+     "hasta": 404
+    },
+    {
+     "t": "menos",
+     "desde": 404,
+     "hasta": 409
+    }
+   ]
+  },
+  {
+   "desde": 408,
+   "hasta": 436,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 408,
+     "hasta": 414
+    },
+    {
+     "t": "cuatro",
+     "desde": 414,
+     "hasta": 425
+    },
+    {
+     "t": "minutos.",
+     "desde": 425,
+     "hasta": 430
+    }
+   ]
+  },
+  {
+   "desde": 462,
+   "hasta": 508,
+   "palabras": [
+    {
+     "t": "Empezamos",
+     "desde": 462,
+     "hasta": 474
+    },
+    {
+     "t": "por",
+     "desde": 474,
+     "hasta": 478
+    },
+    {
+     "t": "la",
+     "desde": 478,
+     "hasta": 483
+    },
+    {
+     "t": "estrella",
+     "desde": 483,
+     "hasta": 491
+    },
+    {
+     "t": "del",
+     "desde": 491,
+     "hasta": 496
+    },
+    {
+     "t": "día:",
+     "desde": 496,
+     "hasta": 501
+    }
+   ]
+  },
+  {
+   "desde": 512,
+   "hasta": 530,
+   "palabras": [
+    {
+     "t": "los",
+     "desde": 512,
+     "hasta": 519
+    },
+    {
+     "t": "dots.",
+     "desde": 519,
+     "hasta": 524
+    }
+   ]
+  },
+  {
+   "desde": 543,
+   "hasta": 579,
+   "palabras": [
+    {
+     "t": "Son",
+     "desde": 543,
+     "hasta": 547
+    },
+    {
+     "t": "agentes",
+     "desde": 547,
+     "hasta": 550
+    },
+    {
+     "t": "siempre",
+     "desde": 562,
+     "hasta": 567
+    },
+    {
+     "t": "encendidos.",
+     "desde": 567,
+     "hasta": 572
+    }
+   ]
+  },
+  {
+   "desde": 590,
+   "hasta": 628,
+   "palabras": [
+    {
+     "t": "No",
+     "desde": 590,
+     "hasta": 597
+    },
+    {
+     "t": "esperan",
+     "desde": 597,
+     "hasta": 601
+    },
+    {
+     "t": "a",
+     "desde": 601,
+     "hasta": 604
+    },
+    {
+     "t": "que",
+     "desde": 604,
+     "hasta": 608
+    },
+    {
+     "t": "les",
+     "desde": 608,
+     "hasta": 614
+    },
+    {
+     "t": "escribas:",
+     "desde": 614,
+     "hasta": 620
+    }
+   ]
+  },
+  {
+   "desde": 639,
+   "hasta": 676,
+   "palabras": [
+    {
+     "t": "trabajan",
+     "desde": 639,
+     "hasta": 650
+    },
+    {
+     "t": "por",
+     "desde": 650,
+     "hasta": 652
+    },
+    {
+     "t": "ti",
+     "desde": 652,
+     "hasta": 656
+    },
+    {
+     "t": "las",
+     "desde": 656,
+     "hasta": 666
+    },
+    {
+     "t": "veinticuatro",
+     "desde": 666,
+     "hasta": 671
+    }
+   ]
+  },
+  {
+   "desde": 678,
+   "hasta": 722,
+   "palabras": [
+    {
+     "t": "horas,",
+     "desde": 678,
+     "hasta": 691
+    },
+    {
+     "t": "hacia",
+     "desde": 691,
+     "hasta": 696
+    },
+    {
+     "t": "los",
+     "desde": 696,
+     "hasta": 702
+    },
+    {
+     "t": "objetivos",
+     "desde": 702,
+     "hasta": 712
+    },
+    {
+     "t": "que",
+     "desde": 712,
+     "hasta": 717
+    },
+    {
+     "t": "tú",
+     "desde": 717,
+     "hasta": 722
+    }
+   ]
+  },
+  {
+   "desde": 722,
+   "hasta": 742,
+   "palabras": [
+    {
+     "t": "les",
+     "desde": 722,
+     "hasta": 726
+    },
+    {
+     "t": "marques.",
+     "desde": 726,
+     "hasta": 734
+    }
+   ]
+  },
+  {
+   "desde": 776,
+   "hasta": 840,
+   "palabras": [
+    {
+     "t": "Cada",
+     "desde": 776,
+     "hasta": 781
+    },
+    {
+     "t": "dot",
+     "desde": 781,
+     "hasta": 792
+    },
+    {
+     "t": "funciona",
+     "desde": 792,
+     "hasta": 799
+    },
+    {
+     "t": "con",
+     "desde": 799,
+     "hasta": 806
+    },
+    {
+     "t": "GPT-6 Astra,",
+     "desde": 806,
+     "hasta": 832
+    }
+   ]
+  },
+  {
+   "desde": 843,
+   "hasta": 874,
+   "palabras": [
+    {
+     "t": "tiene",
+     "desde": 843,
+     "hasta": 847
+    },
+    {
+     "t": "su",
+     "desde": 847,
+     "hasta": 854
+    },
+    {
+     "t": "propio",
+     "desde": 854,
+     "hasta": 860
+    },
+    {
+     "t": "ordenador",
+     "desde": 860,
+     "hasta": 870
+    },
+    {
+     "t": "en",
+     "desde": 870,
+     "hasta": 872
+    },
+    {
+     "t": "la",
+     "desde": 872,
+     "hasta": 877
+    }
+   ]
+  },
+  {
+   "desde": 874,
+   "hasta": 929,
+   "palabras": [
+    {
+     "t": "nube",
+     "desde": 874,
+     "hasta": 885
+    },
+    {
+     "t": "y",
+     "desde": 885,
+     "hasta": 889
+    },
+    {
+     "t": "su",
+     "desde": 889,
+     "hasta": 896
+    },
+    {
+     "t": "propio",
+     "desde": 896,
+     "hasta": 902
+    },
+    {
+     "t": "navegador,",
+     "desde": 902,
+     "hasta": 920
+    },
+    {
+     "t": "y",
+     "desde": 920,
+     "hasta": 922
+    },
+    {
+     "t": "se",
+     "desde": 922,
+     "hasta": 927
+    }
+   ]
+  },
+  {
+   "desde": 929,
+   "hasta": 965,
+   "palabras": [
+    {
+     "t": "conecta",
+     "desde": 929,
+     "hasta": 938
+    },
+    {
+     "t": "a",
+     "desde": 938,
+     "hasta": 943
+    },
+    {
+     "t": "más",
+     "desde": 943,
+     "hasta": 947
+    },
+    {
+     "t": "de",
+     "desde": 947,
+     "hasta": 954
+    },
+    {
+     "t": "cuatro",
+     "desde": 954,
+     "hasta": 958
+    },
+    {
+     "t": "mil",
+     "desde": 958,
+     "hasta": 963
+    }
+   ]
+  },
+  {
+   "desde": 965,
+   "hasta": 1006,
+   "palabras": [
+    {
+     "t": "aplicaciones",
+     "desde": 965,
+     "hasta": 984
+    },
+    {
+     "t": "a",
+     "desde": 984,
+     "hasta": 989
+    },
+    {
+     "t": "través",
+     "desde": 989,
+     "hasta": 993
+    },
+    {
+     "t": "de",
+     "desde": 993,
+     "hasta": 996
+    },
+    {
+     "t": "los",
+     "desde": 996,
+     "hasta": 1001
+    }
+   ]
+  },
+  {
+   "desde": 1006,
+   "hasta": 1024,
+   "palabras": [
+    {
+     "t": "plugins.",
+     "desde": 1006,
+     "hasta": 1011
+    }
+   ]
+  },
+  {
+   "desde": 1046,
+   "hasta": 1087,
+   "palabras": [
+    {
+     "t": "Puedes",
+     "desde": 1046,
+     "hasta": 1056
+    },
+    {
+     "t": "escribirle",
+     "desde": 1056,
+     "hasta": 1069
+    },
+    {
+     "t": "desde",
+     "desde": 1069,
+     "hasta": 1076
+    },
+    {
+     "t": "ChatGPT,",
+     "desde": 1076,
+     "hasta": 1081
+    }
+   ]
+  },
+  {
+   "desde": 1101,
+   "hasta": 1160,
+   "palabras": [
+    {
+     "t": "desde",
+     "desde": 1101,
+     "hasta": 1112
+    },
+    {
+     "t": "Slack",
+     "desde": 1112,
+     "hasta": 1122
+    },
+    {
+     "t": "o",
+     "desde": 1122,
+     "hasta": 1129
+    },
+    {
+     "t": "desde",
+     "desde": 1129,
+     "hasta": 1138
+    },
+    {
+     "t": "Teams,",
+     "desde": 1138,
+     "hasta": 1150
+    },
+    {
+     "t": "e",
+     "desde": 1150,
+     "hasta": 1155
+    }
+   ]
+  },
+  {
+   "desde": 1160,
+   "hasta": 1202,
+   "palabras": [
+    {
+     "t": "incluso",
+     "desde": 1160,
+     "hasta": 1170
+    },
+    {
+     "t": "hablar",
+     "desde": 1170,
+     "hasta": 1174
+    },
+    {
+     "t": "con",
+     "desde": 1174,
+     "hasta": 1179
+    },
+    {
+     "t": "él",
+     "desde": 1179,
+     "hasta": 1183
+    },
+    {
+     "t": "por",
+     "desde": 1183,
+     "hasta": 1190
+    },
+    {
+     "t": "voz.",
+     "desde": 1190,
+     "hasta": 1195
+    }
+   ]
+  },
+  {
+   "desde": 1210,
+   "hasta": 1234,
+   "palabras": [
+    {
+     "t": "¿Y",
+     "desde": 1210,
+     "hasta": 1215
+    },
+    {
+     "t": "el",
+     "desde": 1215,
+     "hasta": 1222
+    },
+    {
+     "t": "control?",
+     "desde": 1222,
+     "hasta": 1227
+    }
+   ]
+  },
+  {
+   "desde": 1242,
+   "hasta": 1280,
+   "palabras": [
+    {
+     "t": "Tú",
+     "desde": 1242,
+     "hasta": 1250
+    },
+    {
+     "t": "decides",
+     "desde": 1250,
+     "hasta": 1258
+    },
+    {
+     "t": "a",
+     "desde": 1258,
+     "hasta": 1262
+    },
+    {
+     "t": "qué",
+     "desde": 1262,
+     "hasta": 1270
+    },
+    {
+     "t": "aplicaciones",
+     "desde": 1270,
+     "hasta": 1275
+    }
+   ]
+  },
+  {
+   "desde": 1284,
+   "hasta": 1301,
+   "palabras": [
+    {
+     "t": "accede,",
+     "desde": 1284,
+     "hasta": 1289
+    }
+   ]
+  },
+  {
+   "desde": 1301,
+   "hasta": 1342,
+   "palabras": [
+    {
+     "t": "qué",
+     "desde": 1301,
+     "hasta": 1307
+    },
+    {
+     "t": "puede",
+     "desde": 1307,
+     "hasta": 1312
+    },
+    {
+     "t": "hacer",
+     "desde": 1312,
+     "hasta": 1320
+    },
+    {
+     "t": "solo",
+     "desde": 1320,
+     "hasta": 1328
+    },
+    {
+     "t": "y",
+     "desde": 1328,
+     "hasta": 1332
+    },
+    {
+     "t": "qué",
+     "desde": 1332,
+     "hasta": 1337
+    }
+   ]
+  },
+  {
+   "desde": 1344,
+   "hasta": 1370,
+   "palabras": [
+    {
+     "t": "necesita",
+     "desde": 1344,
+     "hasta": 1348
+    },
+    {
+     "t": "tu",
+     "desde": 1348,
+     "hasta": 1352
+    },
+    {
+     "t": "aprobación.",
+     "desde": 1352,
+     "hasta": 1362
+    }
+   ]
+  },
+  {
+   "desde": 1382,
+   "hasta": 1424,
+   "palabras": [
+    {
+     "t": "Algunas",
+     "desde": 1382,
+     "hasta": 1390
+    },
+    {
+     "t": "tareas",
+     "desde": 1390,
+     "hasta": 1400
+    },
+    {
+     "t": "sensibles,",
+     "desde": 1400,
+     "hasta": 1413
+    },
+    {
+     "t": "como",
+     "desde": 1413,
+     "hasta": 1418
+    }
+   ]
+  },
+  {
+   "desde": 1424,
+   "hasta": 1451,
+   "palabras": [
+    {
+     "t": "cambiar",
+     "desde": 1424,
+     "hasta": 1432
+    },
+    {
+     "t": "una",
+     "desde": 1432,
+     "hasta": 1438
+    },
+    {
+     "t": "contraseña,",
+     "desde": 1438,
+     "hasta": 1443
+    }
+   ]
+  },
+  {
+   "desde": 1462,
+   "hasta": 1494,
+   "palabras": [
+    {
+     "t": "siempre",
+     "desde": 1462,
+     "hasta": 1468
+    },
+    {
+     "t": "se",
+     "desde": 1468,
+     "hasta": 1472
+    },
+    {
+     "t": "quedan",
+     "desde": 1472,
+     "hasta": 1481
+    },
+    {
+     "t": "contigo.",
+     "desde": 1481,
+     "hasta": 1486
+    }
+   ]
+  },
+  {
+   "desde": 1514,
+   "hasta": 1553,
+   "palabras": [
+    {
+     "t": "Ojo",
+     "desde": 1514,
+     "hasta": 1521
+    },
+    {
+     "t": "con",
+     "desde": 1521,
+     "hasta": 1524
+    },
+    {
+     "t": "la",
+     "desde": 1524,
+     "hasta": 1531
+    },
+    {
+     "t": "disponibilidad.",
+     "desde": 1531,
+     "hasta": 1545
+    }
+   ]
+  },
+  {
+   "desde": 1560,
+   "hasta": 1614,
+   "palabras": [
+    {
+     "t": "Llegan",
+     "desde": 1560,
+     "hasta": 1566
+    },
+    {
+     "t": "a",
+     "desde": 1566,
+     "hasta": 1570
+    },
+    {
+     "t": "los",
+     "desde": 1570,
+     "hasta": 1576
+    },
+    {
+     "t": "planes",
+     "desde": 1576,
+     "hasta": 1588
+    },
+    {
+     "t": "Pro",
+     "desde": 1588,
+     "hasta": 1595
+    },
+    {
+     "t": "y",
+     "desde": 1595,
+     "hasta": 1604
+    },
+    {
+     "t": "Business",
+     "desde": 1604,
+     "hasta": 1609
+    }
+   ]
+  },
+  {
+   "desde": 1614,
+   "hasta": 1632,
+   "palabras": [
+    {
+     "t": "Premium.",
+     "desde": 1614,
+     "hasta": 1619
+    }
+   ]
+  },
+  {
+   "desde": 1632,
+   "hasta": 1678,
+   "palabras": [
+    {
+     "t": "Pero",
+     "desde": 1632,
+     "hasta": 1636
+    },
+    {
+     "t": "en",
+     "desde": 1636,
+     "hasta": 1638
+    },
+    {
+     "t": "el",
+     "desde": 1638,
+     "hasta": 1644
+    },
+    {
+     "t": "plan",
+     "desde": 1644,
+     "hasta": 1650
+    },
+    {
+     "t": "Pro,",
+     "desde": 1650,
+     "hasta": 1658
+    },
+    {
+     "t": "de",
+     "desde": 1658,
+     "hasta": 1668
+    },
+    {
+     "t": "momento,",
+     "desde": 1668,
+     "hasta": 1673
+    }
+   ]
+  },
+  {
+   "desde": 1678,
+   "hasta": 1719,
+   "palabras": [
+    {
+     "t": "no",
+     "desde": 1678,
+     "hasta": 1683
+    },
+    {
+     "t": "llegan",
+     "desde": 1683,
+     "hasta": 1689
+    },
+    {
+     "t": "al",
+     "desde": 1689,
+     "hasta": 1698
+    },
+    {
+     "t": "Espacio",
+     "desde": 1698,
+     "hasta": 1706
+    },
+    {
+     "t": "Económico",
+     "desde": 1706,
+     "hasta": 1716
+    }
+   ]
+  },
+  {
+   "desde": 1719,
+   "hasta": 1773,
+   "palabras": [
+    {
+     "t": "Europeo,",
+     "desde": 1719,
+     "hasta": 1737
+    },
+    {
+     "t": "ni",
+     "desde": 1737,
+     "hasta": 1740
+    },
+    {
+     "t": "a",
+     "desde": 1740,
+     "hasta": 1743
+    },
+    {
+     "t": "Suiza,",
+     "desde": 1743,
+     "hasta": 1758
+    },
+    {
+     "t": "ni",
+     "desde": 1758,
+     "hasta": 1762
+    },
+    {
+     "t": "al",
+     "desde": 1762,
+     "hasta": 1766
+    },
+    {
+     "t": "Reino",
+     "desde": 1766,
+     "hasta": 1771
+    }
+   ]
+  },
+  {
+   "desde": 1773,
+   "hasta": 1791,
+   "palabras": [
+    {
+     "t": "Unido.",
+     "desde": 1773,
+     "hasta": 1778
+    }
+   ]
+  },
+  {
+   "desde": 1796,
+   "hasta": 1836,
+   "palabras": [
+    {
+     "t": "Business",
+     "desde": 1796,
+     "hasta": 1807
+    },
+    {
+     "t": "Premium",
+     "desde": 1807,
+     "hasta": 1814
+    },
+    {
+     "t": "sí",
+     "desde": 1814,
+     "hasta": 1818
+    },
+    {
+     "t": "los",
+     "desde": 1818,
+     "hasta": 1825
+    },
+    {
+     "t": "tiene",
+     "desde": 1825,
+     "hasta": 1830
+    },
+    {
+     "t": "en",
+     "desde": 1830,
+     "hasta": 1835
+    }
+   ]
+  },
+  {
+   "desde": 1836,
+   "hasta": 1881,
+   "palabras": [
+    {
+     "t": "todas",
+     "desde": 1836,
+     "hasta": 1843
+    },
+    {
+     "t": "las",
+     "desde": 1843,
+     "hasta": 1851
+    },
+    {
+     "t": "regiones",
+     "desde": 1851,
+     "hasta": 1864
+    },
+    {
+     "t": "compatibles.",
+     "desde": 1864,
+     "hasta": 1873
+    }
+   ]
+  },
+  {
+   "desde": 1905,
+   "hasta": 1946,
+   "palabras": [
+    {
+     "t": "Segundo",
+     "desde": 1905,
+     "hasta": 1917
+    },
+    {
+     "t": "bloque:",
+     "desde": 1917,
+     "hasta": 1929
+    },
+    {
+     "t": "modelos",
+     "desde": 1929,
+     "hasta": 1936
+    },
+    {
+     "t": "y",
+     "desde": 1936,
+     "hasta": 1941
+    }
+   ]
+  },
+  {
+   "desde": 1946,
+   "hasta": 1960,
+   "palabras": [
+    {
+     "t": "velocidad.",
+     "desde": 1946,
+     "hasta": 1951
+    }
+   ]
+  },
+  {
+   "desde": 1960,
+   "hasta": 2016,
+   "palabras": [
+    {
+     "t": "Llega",
+     "desde": 1960,
+     "hasta": 1970
+    },
+    {
+     "t": "GPT-6.1 Sol.",
+     "desde": 1970,
+     "hasta": 2008
+    }
+   ]
+  },
+  {
+   "desde": 2020,
+   "hasta": 2043,
+   "palabras": [
+    {
+     "t": "Según",
+     "desde": 2020,
+     "hasta": 2032
+    },
+    {
+     "t": "OpenAI,",
+     "desde": 2032,
+     "hasta": 2037
+    }
+   ]
+  },
+  {
+   "desde": 2048,
+   "hasta": 2082,
+   "palabras": [
+    {
+     "t": "se",
+     "desde": 2048,
+     "hasta": 2055
+    },
+    {
+     "t": "acerca",
+     "desde": 2055,
+     "hasta": 2058
+    },
+    {
+     "t": "a",
+     "desde": 2058,
+     "hasta": 2060
+    },
+    {
+     "t": "la",
+     "desde": 2060,
+     "hasta": 2065
+    },
+    {
+     "t": "inteligencia",
+     "desde": 2065,
+     "hasta": 2076
+    },
+    {
+     "t": "de",
+     "desde": 2076,
+     "hasta": 2081
+    }
+   ]
+  },
+  {
+   "desde": 2082,
+   "hasta": 2124,
+   "palabras": [
+    {
+     "t": "Astra",
+     "desde": 2082,
+     "hasta": 2089
+    },
+    {
+     "t": "por",
+     "desde": 2089,
+     "hasta": 2092
+    },
+    {
+     "t": "una",
+     "desde": 2092,
+     "hasta": 2098
+    },
+    {
+     "t": "quinta",
+     "desde": 2098,
+     "hasta": 2109
+    },
+    {
+     "t": "parte",
+     "desde": 2109,
+     "hasta": 2112
+    },
+    {
+     "t": "de",
+     "desde": 2112,
+     "hasta": 2116
+    },
+    {
+     "t": "su",
+     "desde": 2116,
+     "hasta": 2121
+    }
+   ]
+  },
+  {
+   "desde": 2124,
+   "hasta": 2142,
+   "palabras": [
+    {
+     "t": "precio.",
+     "desde": 2124,
+     "hasta": 2129
+    }
+   ]
+  },
+  {
+   "desde": 2148,
+   "hasta": 2199,
+   "palabras": [
+    {
+     "t": "En",
+     "desde": 2148,
+     "hasta": 2151
+    },
+    {
+     "t": "la",
+     "desde": 2151,
+     "hasta": 2159
+    },
+    {
+     "t": "API",
+     "desde": 2159,
+     "hasta": 2172
+    },
+    {
+     "t": "cuesta",
+     "desde": 2172,
+     "hasta": 2181
+    },
+    {
+     "t": "dos",
+     "desde": 2181,
+     "hasta": 2188
+    },
+    {
+     "t": "dólares",
+     "desde": 2188,
+     "hasta": 2194
+    },
+    {
+     "t": "por",
+     "desde": 2194,
+     "hasta": 2199
+    }
+   ]
+  },
+  {
+   "desde": 2199,
+   "hasta": 2241,
+   "palabras": [
+    {
+     "t": "millón",
+     "desde": 2199,
+     "hasta": 2204
+    },
+    {
+     "t": "de",
+     "desde": 2204,
+     "hasta": 2211
+    },
+    {
+     "t": "tokens",
+     "desde": 2211,
+     "hasta": 2217
+    },
+    {
+     "t": "de",
+     "desde": 2217,
+     "hasta": 2224
+    },
+    {
+     "t": "entrada",
+     "desde": 2224,
+     "hasta": 2231
+    },
+    {
+     "t": "y",
+     "desde": 2231,
+     "hasta": 2236
+    },
+    {
+     "t": "diez",
+     "desde": 2236,
+     "hasta": 2241
+    }
+   ]
+  },
+  {
+   "desde": 2241,
+   "hasta": 2286,
+   "palabras": [
+    {
+     "t": "por",
+     "desde": 2241,
+     "hasta": 2246
+    },
+    {
+     "t": "millón",
+     "desde": 2246,
+     "hasta": 2252
+    },
+    {
+     "t": "de",
+     "desde": 2252,
+     "hasta": 2256
+    },
+    {
+     "t": "salida,",
+     "desde": 2256,
+     "hasta": 2259
+    },
+    {
+     "t": "y",
+     "desde": 2272,
+     "hasta": 2274
+    },
+    {
+     "t": "la",
+     "desde": 2274,
+     "hasta": 2282
+    },
+    {
+     "t": "entrada",
+     "desde": 2282,
+     "hasta": 2287
+    }
+   ]
+  },
+  {
+   "desde": 2286,
+   "hasta": 2304,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 2286,
+     "hasta": 2290
+    },
+    {
+     "t": "caché,",
+     "desde": 2290,
+     "hasta": 2295
+    }
+   ]
+  },
+  {
+   "desde": 2308,
+   "hasta": 2342,
+   "palabras": [
+    {
+     "t": "diez",
+     "desde": 2308,
+     "hasta": 2314
+    },
+    {
+     "t": "céntimos",
+     "desde": 2314,
+     "hasta": 2326
+    },
+    {
+     "t": "por",
+     "desde": 2326,
+     "hasta": 2330
+    },
+    {
+     "t": "millón.",
+     "desde": 2330,
+     "hasta": 2335
+    }
+   ]
+  },
+  {
+   "desde": 2348,
+   "hasta": 2406,
+   "palabras": [
+    {
+     "t": "Ya",
+     "desde": 2348,
+     "hasta": 2352
+    },
+    {
+     "t": "está",
+     "desde": 2352,
+     "hasta": 2355
+    },
+    {
+     "t": "en",
+     "desde": 2355,
+     "hasta": 2360
+    },
+    {
+     "t": "ChatGPT",
+     "desde": 2360,
+     "hasta": 2377
+    },
+    {
+     "t": "Work",
+     "desde": 2377,
+     "hasta": 2388
+    },
+    {
+     "t": "y",
+     "desde": 2388,
+     "hasta": 2392
+    },
+    {
+     "t": "en",
+     "desde": 2392,
+     "hasta": 2396
+    },
+    {
+     "t": "Codex",
+     "desde": 2396,
+     "hasta": 2401
+    }
+   ]
+  },
+  {
+   "desde": 2406,
+   "hasta": 2424,
+   "palabras": [
+    {
+     "t": "para",
+     "desde": 2406,
+     "hasta": 2411
+    },
+    {
+     "t": "Plus,",
+     "desde": 2411,
+     "hasta": 2416
+    }
+   ]
+  },
+  {
+   "desde": 2428,
+   "hasta": 2453,
+   "palabras": [
+    {
+     "t": "Pro,",
+     "desde": 2428,
+     "hasta": 2441
+    },
+    {
+     "t": "Business,",
+     "desde": 2441,
+     "hasta": 2446
+    }
+   ]
+  },
+  {
+   "desde": 2460,
+   "hasta": 2478,
+   "palabras": [
+    {
+     "t": "Enterprise",
+     "desde": 2460,
+     "hasta": 2466
+    }
+   ]
+  },
+  {
+   "desde": 2480,
+   "hasta": 2498,
+   "palabras": [
+    {
+     "t": "y",
+     "desde": 2480,
+     "hasta": 2485
+    },
+    {
+     "t": "Edu.",
+     "desde": 2485,
+     "hasta": 2490
+    }
+   ]
+  },
+  {
+   "desde": 2505,
+   "hasta": 2544,
+   "palabras": [
+    {
+     "t": "En",
+     "desde": 2505,
+     "hasta": 2508
+    },
+    {
+     "t": "el",
+     "desde": 2508,
+     "hasta": 2514
+    },
+    {
+     "t": "chat,",
+     "desde": 2514,
+     "hasta": 2526
+    },
+    {
+     "t": "todavía",
+     "desde": 2526,
+     "hasta": 2533
+    },
+    {
+     "t": "no.",
+     "desde": 2533,
+     "hasta": 2538
+    }
+   ]
+  },
+  {
+   "desde": 2556,
+   "hasta": 2589,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 2556,
+     "hasta": 2561
+    },
+    {
+     "t": "para",
+     "desde": 2561,
+     "hasta": 2566
+    },
+    {
+     "t": "quien",
+     "desde": 2566,
+     "hasta": 2572
+    },
+    {
+     "t": "tenga",
+     "desde": 2572,
+     "hasta": 2576
+    },
+    {
+     "t": "prisa,",
+     "desde": 2576,
+     "hasta": 2581
+    }
+   ]
+  },
+  {
+   "desde": 2591,
+   "hasta": 2609,
+   "palabras": [
+    {
+     "t": "Ultrafast:",
+     "desde": 2591,
+     "hasta": 2600
+    }
+   ]
+  },
+  {
+   "desde": 2614,
+   "hasta": 2648,
+   "palabras": [
+    {
+     "t": "un",
+     "desde": 2614,
+     "hasta": 2619
+    },
+    {
+     "t": "nuevo",
+     "desde": 2619,
+     "hasta": 2626
+    },
+    {
+     "t": "nivel",
+     "desde": 2626,
+     "hasta": 2630
+    },
+    {
+     "t": "de",
+     "desde": 2630,
+     "hasta": 2638
+    },
+    {
+     "t": "velocidad",
+     "desde": 2638,
+     "hasta": 2643
+    }
+   ]
+  },
+  {
+   "desde": 2648,
+   "hasta": 2666,
+   "palabras": [
+    {
+     "t": "premium.",
+     "desde": 2648,
+     "hasta": 2653
+    }
+   ]
+  },
+  {
+   "desde": 2678,
+   "hasta": 2716,
+   "palabras": [
+    {
+     "t": "Hasta",
+     "desde": 2678,
+     "hasta": 2684
+    },
+    {
+     "t": "ocho",
+     "desde": 2684,
+     "hasta": 2690
+    },
+    {
+     "t": "veces",
+     "desde": 2690,
+     "hasta": 2696
+    },
+    {
+     "t": "más",
+     "desde": 2696,
+     "hasta": 2707
+    },
+    {
+     "t": "rápido",
+     "desde": 2707,
+     "hasta": 2712
+    },
+    {
+     "t": "en",
+     "desde": 2712,
+     "hasta": 2717
+    }
+   ]
+  },
+  {
+   "desde": 2716,
+   "hasta": 2734,
+   "palabras": [
+    {
+     "t": "Codex,",
+     "desde": 2716,
+     "hasta": 2721
+    }
+   ]
+  },
+  {
+   "desde": 2743,
+   "hasta": 2788,
+   "palabras": [
+    {
+     "t": "trescientos",
+     "desde": 2743,
+     "hasta": 2752
+    },
+    {
+     "t": "tokens",
+     "desde": 2752,
+     "hasta": 2758
+    },
+    {
+     "t": "por",
+     "desde": 2758,
+     "hasta": 2768
+    },
+    {
+     "t": "segundo,",
+     "desde": 2768,
+     "hasta": 2782
+    },
+    {
+     "t": "y",
+     "desde": 2782,
+     "hasta": 2787
+    }
+   ]
+  },
+  {
+   "desde": 2788,
+   "hasta": 2832,
+   "palabras": [
+    {
+     "t": "hasta",
+     "desde": 2788,
+     "hasta": 2792
+    },
+    {
+     "t": "seis",
+     "desde": 2792,
+     "hasta": 2798
+    },
+    {
+     "t": "veces",
+     "desde": 2798,
+     "hasta": 2806
+    },
+    {
+     "t": "más",
+     "desde": 2806,
+     "hasta": 2812
+    },
+    {
+     "t": "en",
+     "desde": 2812,
+     "hasta": 2816
+    },
+    {
+     "t": "la",
+     "desde": 2816,
+     "hasta": 2821
+    },
+    {
+     "t": "API.",
+     "desde": 2821,
+     "hasta": 2826
+    }
+   ]
+  },
+  {
+   "desde": 2854,
+   "hasta": 2906,
+   "palabras": [
+    {
+     "t": "Hoy",
+     "desde": 2854,
+     "hasta": 2864
+    },
+    {
+     "t": "funciona",
+     "desde": 2864,
+     "hasta": 2868
+    },
+    {
+     "t": "con",
+     "desde": 2868,
+     "hasta": 2876
+    },
+    {
+     "t": "Astra;",
+     "desde": 2876,
+     "hasta": 2890
+    },
+    {
+     "t": "con",
+     "desde": 2890,
+     "hasta": 2896
+    },
+    {
+     "t": "Sol,",
+     "desde": 2896,
+     "hasta": 2901
+    }
+   ]
+  },
+  {
+   "desde": 2906,
+   "hasta": 2926,
+   "palabras": [
+    {
+     "t": "muy",
+     "desde": 2906,
+     "hasta": 2915
+    },
+    {
+     "t": "pronto.",
+     "desde": 2915,
+     "hasta": 2920
+    }
+   ]
+  },
+  {
+   "desde": 2946,
+   "hasta": 2974,
+   "palabras": [
+    {
+     "t": "Tercer",
+     "desde": 2946,
+     "hasta": 2956
+    },
+    {
+     "t": "bloque,",
+     "desde": 2956,
+     "hasta": 2964
+    },
+    {
+     "t": "para",
+     "desde": 2964,
+     "hasta": 2969
+    }
+   ]
+  },
+  {
+   "desde": 2974,
+   "hasta": 2995,
+   "palabras": [
+    {
+     "t": "desarrolladores.",
+     "desde": 2974,
+     "hasta": 2987
+    }
+   ]
+  },
+  {
+   "desde": 2998,
+   "hasta": 3032,
+   "palabras": [
+    {
+     "t": "Codex",
+     "desde": 2998,
+     "hasta": 3006
+    },
+    {
+     "t": "sale",
+     "desde": 3006,
+     "hasta": 3011
+    },
+    {
+     "t": "del",
+     "desde": 3011,
+     "hasta": 3017
+    },
+    {
+     "t": "portátil:",
+     "desde": 3017,
+     "hasta": 3024
+    }
+   ]
+  },
+  {
+   "desde": 3037,
+   "hasta": 3075,
+   "palabras": [
+    {
+     "t": "ahora",
+     "desde": 3037,
+     "hasta": 3043
+    },
+    {
+     "t": "trabaja",
+     "desde": 3043,
+     "hasta": 3053
+    },
+    {
+     "t": "también",
+     "desde": 3053,
+     "hasta": 3058
+    },
+    {
+     "t": "en",
+     "desde": 3058,
+     "hasta": 3061
+    },
+    {
+     "t": "la",
+     "desde": 3061,
+     "hasta": 3064
+    },
+    {
+     "t": "nube,",
+     "desde": 3064,
+     "hasta": 3069
+    }
+   ]
+  },
+  {
+   "desde": 3077,
+   "hasta": 3118,
+   "palabras": [
+    {
+     "t": "y",
+     "desde": 3077,
+     "hasta": 3084
+    },
+    {
+     "t": "puedes",
+     "desde": 3084,
+     "hasta": 3090
+    },
+    {
+     "t": "lanzar",
+     "desde": 3090,
+     "hasta": 3099
+    },
+    {
+     "t": "tareas",
+     "desde": 3099,
+     "hasta": 3108
+    },
+    {
+     "t": "desde",
+     "desde": 3108,
+     "hasta": 3113
+    }
+   ]
+  },
+  {
+   "desde": 3118,
+   "hasta": 3146,
+   "palabras": [
+    {
+     "t": "cualquier",
+     "desde": 3118,
+     "hasta": 3127
+    },
+    {
+     "t": "dispositivo,",
+     "desde": 3127,
+     "hasta": 3138
+    }
+   ]
+  },
+  {
+   "desde": 3152,
+   "hasta": 3179,
+   "palabras": [
+    {
+     "t": "incluso",
+     "desde": 3152,
+     "hasta": 3159
+    },
+    {
+     "t": "desde",
+     "desde": 3159,
+     "hasta": 3163
+    },
+    {
+     "t": "el",
+     "desde": 3163,
+     "hasta": 3168
+    },
+    {
+     "t": "móvil.",
+     "desde": 3168,
+     "hasta": 3173
+    }
+   ]
+  },
+  {
+   "desde": 3195,
+   "hasta": 3237,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 3195,
+     "hasta": 3203
+    },
+    {
+     "t": "terminal",
+     "desde": 3203,
+     "hasta": 3208
+    },
+    {
+     "t": "de",
+     "desde": 3208,
+     "hasta": 3213
+    },
+    {
+     "t": "Codex",
+     "desde": 3213,
+     "hasta": 3221
+    },
+    {
+     "t": "se",
+     "desde": 3221,
+     "hasta": 3226
+    },
+    {
+     "t": "renueva:",
+     "desde": 3226,
+     "hasta": 3231
+    }
+   ]
+  },
+  {
+   "desde": 3243,
+   "hasta": 3280,
+   "palabras": [
+    {
+     "t": "diriges",
+     "desde": 3243,
+     "hasta": 3252
+    },
+    {
+     "t": "las",
+     "desde": 3252,
+     "hasta": 3257
+    },
+    {
+     "t": "tareas",
+     "desde": 3257,
+     "hasta": 3264
+    },
+    {
+     "t": "con",
+     "desde": 3264,
+     "hasta": 3267
+    },
+    {
+     "t": "la",
+     "desde": 3267,
+     "hasta": 3272
+    },
+    {
+     "t": "voz",
+     "desde": 3272,
+     "hasta": 3276
+    },
+    {
+     "t": "y",
+     "desde": 3276,
+     "hasta": 3281
+    }
+   ]
+  },
+  {
+   "desde": 3280,
+   "hasta": 3323,
+   "palabras": [
+    {
+     "t": "sigues",
+     "desde": 3280,
+     "hasta": 3291
+    },
+    {
+     "t": "varios",
+     "desde": 3291,
+     "hasta": 3296
+    },
+    {
+     "t": "agentes",
+     "desde": 3296,
+     "hasta": 3306
+    },
+    {
+     "t": "a",
+     "desde": 3306,
+     "hasta": 3308
+    },
+    {
+     "t": "la",
+     "desde": 3307,
+     "hasta": 3312
+    },
+    {
+     "t": "vez",
+     "desde": 3312,
+     "hasta": 3320
+    },
+    {
+     "t": "en",
+     "desde": 3320,
+     "hasta": 3325
+    }
+   ]
+  },
+  {
+   "desde": 3323,
+   "hasta": 3360,
+   "palabras": [
+    {
+     "t": "la",
+     "desde": 3323,
+     "hasta": 3330
+    },
+    {
+     "t": "nueva",
+     "desde": 3330,
+     "hasta": 3337
+    },
+    {
+     "t": "vista",
+     "desde": 3337,
+     "hasta": 3341
+    },
+    {
+     "t": "de",
+     "desde": 3341,
+     "hasta": 3344
+    },
+    {
+     "t": "agentes.",
+     "desde": 3344,
+     "hasta": 3352
+    }
+   ]
+  },
+  {
+   "desde": 3371,
+   "hasta": 3409,
+   "palabras": [
+    {
+     "t": "Llega",
+     "desde": 3371,
+     "hasta": 3377
+    },
+    {
+     "t": "una",
+     "desde": 3377,
+     "hasta": 3385
+    },
+    {
+     "t": "revisión",
+     "desde": 3385,
+     "hasta": 3392
+    },
+    {
+     "t": "de",
+     "desde": 3392,
+     "hasta": 3399
+    },
+    {
+     "t": "código",
+     "desde": 3399,
+     "hasta": 3403
+    },
+    {
+     "t": "en",
+     "desde": 3403,
+     "hasta": 3406
+    },
+    {
+     "t": "la",
+     "desde": 3406,
+     "hasta": 3411
+    }
+   ]
+  },
+  {
+   "desde": 3409,
+   "hasta": 3430,
+   "palabras": [
+    {
+     "t": "app",
+     "desde": 3409,
+     "hasta": 3412
+    },
+    {
+     "t": "de",
+     "desde": 3412,
+     "hasta": 3417
+    },
+    {
+     "t": "escritorio.",
+     "desde": 3417,
+     "hasta": 3422
+    }
+   ]
+  },
+  {
+   "desde": 3437,
+   "hasta": 3487,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 3437,
+     "hasta": 3442
+    },
+    {
+     "t": "Codex",
+     "desde": 3442,
+     "hasta": 3455
+    },
+    {
+     "t": "Security",
+     "desde": 3455,
+     "hasta": 3464
+    },
+    {
+     "t": "Cloud",
+     "desde": 3464,
+     "hasta": 3476
+    },
+    {
+     "t": "analiza",
+     "desde": 3476,
+     "hasta": 3481
+    }
+   ]
+  },
+  {
+   "desde": 3488,
+   "hasta": 3521,
+   "palabras": [
+    {
+     "t": "repositorios",
+     "desde": 3488,
+     "hasta": 3502
+    },
+    {
+     "t": "de",
+     "desde": 3502,
+     "hasta": 3510
+    },
+    {
+     "t": "GitHub,",
+     "desde": 3510,
+     "hasta": 3515
+    }
+   ]
+  },
+  {
+   "desde": 3528,
+   "hasta": 3563,
+   "palabras": [
+    {
+     "t": "investiga",
+     "desde": 3528,
+     "hasta": 3535
+    },
+    {
+     "t": "lo",
+     "desde": 3535,
+     "hasta": 3538
+    },
+    {
+     "t": "que",
+     "desde": 3538,
+     "hasta": 3549
+    },
+    {
+     "t": "encuentra",
+     "desde": 3549,
+     "hasta": 3556
+    },
+    {
+     "t": "y",
+     "desde": 3556,
+     "hasta": 3561
+    }
+   ]
+  },
+  {
+   "desde": 3563,
+   "hasta": 3593,
+   "palabras": [
+    {
+     "t": "prepara",
+     "desde": 3563,
+     "hasta": 3570
+    },
+    {
+     "t": "las",
+     "desde": 3570,
+     "hasta": 3576
+    },
+    {
+     "t": "correcciones.",
+     "desde": 3576,
+     "hasta": 3585
+    }
+   ]
+  },
+  {
+   "desde": 3607,
+   "hasta": 3665,
+   "palabras": [
+    {
+     "t": "En",
+     "desde": 3607,
+     "hasta": 3610
+    },
+    {
+     "t": "la",
+     "desde": 3610,
+     "hasta": 3617
+    },
+    {
+     "t": "API,",
+     "desde": 3617,
+     "hasta": 3629
+    },
+    {
+     "t": "Agents",
+     "desde": 3629,
+     "hasta": 3642
+    },
+    {
+     "t": "API",
+     "desde": 3642,
+     "hasta": 3654
+    },
+    {
+     "t": "ya",
+     "desde": 3654,
+     "hasta": 3659
+    },
+    {
+     "t": "puede",
+     "desde": 3659,
+     "hasta": 3664
+    }
+   ]
+  },
+  {
+   "desde": 3665,
+   "hasta": 3708,
+   "palabras": [
+    {
+     "t": "usar",
+     "desde": 3665,
+     "hasta": 3669
+    },
+    {
+     "t": "el",
+     "desde": 3669,
+     "hasta": 3674
+    },
+    {
+     "t": "ordenador:",
+     "desde": 3674,
+     "hasta": 3681
+    },
+    {
+     "t": "sus",
+     "desde": 3693,
+     "hasta": 3697
+    },
+    {
+     "t": "agentes",
+     "desde": 3697,
+     "hasta": 3702
+    }
+   ]
+  },
+  {
+   "desde": 3709,
+   "hasta": 3747,
+   "palabras": [
+    {
+     "t": "manejan",
+     "desde": 3709,
+     "hasta": 3723
+    },
+    {
+     "t": "software",
+     "desde": 3723,
+     "hasta": 3729
+    },
+    {
+     "t": "para",
+     "desde": 3729,
+     "hasta": 3738
+    },
+    {
+     "t": "completar",
+     "desde": 3738,
+     "hasta": 3743
+    }
+   ]
+  },
+  {
+   "desde": 3747,
+   "hasta": 3765,
+   "palabras": [
+    {
+     "t": "tareas.",
+     "desde": 3747,
+     "hasta": 3752
+    }
+   ]
+  },
+  {
+   "desde": 3766,
+   "hasta": 3816,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 3766,
+     "hasta": 3772
+    },
+    {
+     "t": "nueva",
+     "desde": 3772,
+     "hasta": 3778
+    },
+    {
+     "t": "Decisions",
+     "desde": 3778,
+     "hasta": 3791
+    },
+    {
+     "t": "API,",
+     "desde": 3791,
+     "hasta": 3803
+    },
+    {
+     "t": "en",
+     "desde": 3803,
+     "hasta": 3810
+    },
+    {
+     "t": "vista",
+     "desde": 3810,
+     "hasta": 3815
+    }
+   ]
+  },
+  {
+   "desde": 3816,
+   "hasta": 3854,
+   "palabras": [
+    {
+     "t": "previa,",
+     "desde": 3816,
+     "hasta": 3820
+    },
+    {
+     "t": "responde",
+     "desde": 3833,
+     "hasta": 3847
+    },
+    {
+     "t": "preguntas",
+     "desde": 3847,
+     "hasta": 3852
+    }
+   ]
+  },
+  {
+   "desde": 3854,
+   "hasta": 3895,
+   "palabras": [
+    {
+     "t": "cerradas",
+     "desde": 3854,
+     "hasta": 3864
+    },
+    {
+     "t": "en",
+     "desde": 3864,
+     "hasta": 3871
+    },
+    {
+     "t": "tiempo",
+     "desde": 3871,
+     "hasta": 3878
+    },
+    {
+     "t": "real",
+     "desde": 3878,
+     "hasta": 3890
+    },
+    {
+     "t": "para",
+     "desde": 3890,
+     "hasta": 3895
+    }
+   ]
+  },
+  {
+   "desde": 3895,
+   "hasta": 3935,
+   "palabras": [
+    {
+     "t": "clasificar",
+     "desde": 3895,
+     "hasta": 3914
+    },
+    {
+     "t": "o",
+     "desde": 3914,
+     "hasta": 3918
+    },
+    {
+     "t": "enrutar.",
+     "desde": 3918,
+     "hasta": 3927
+    }
+   ]
+  },
+  {
+   "desde": 3938,
+   "hasta": 3985,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 3938,
+     "hasta": 3942
+    },
+    {
+     "t": "con",
+     "desde": 3942,
+     "hasta": 3951
+    },
+    {
+     "t": "Amazon,",
+     "desde": 3951,
+     "hasta": 3954
+    },
+    {
+     "t": "Bedrock",
+     "desde": 3966,
+     "hasta": 3975
+    },
+    {
+     "t": "Managed",
+     "desde": 3975,
+     "hasta": 3980
+    }
+   ]
+  },
+  {
+   "desde": 3985,
+   "hasta": 4037,
+   "palabras": [
+    {
+     "t": "Agents",
+     "desde": 3985,
+     "hasta": 3988
+    },
+    {
+     "t": "ejecuta",
+     "desde": 4000,
+     "hasta": 4010
+    },
+    {
+     "t": "agentes",
+     "desde": 4010,
+     "hasta": 4021
+    },
+    {
+     "t": "de",
+     "desde": 4021,
+     "hasta": 4026
+    },
+    {
+     "t": "OpenAI",
+     "desde": 4026,
+     "hasta": 4031
+    }
+   ]
+  },
+  {
+   "desde": 4040,
+   "hasta": 4095,
+   "palabras": [
+    {
+     "t": "por",
+     "desde": 4040,
+     "hasta": 4053
+    },
+    {
+     "t": "completo",
+     "desde": 4053,
+     "hasta": 4067
+    },
+    {
+     "t": "dentro",
+     "desde": 4067,
+     "hasta": 4071
+    },
+    {
+     "t": "de",
+     "desde": 4071,
+     "hasta": 4084
+    },
+    {
+     "t": "AWS.",
+     "desde": 4084,
+     "hasta": 4089
+    }
+   ]
+  },
+  {
+   "desde": 4116,
+   "hasta": 4154,
+   "palabras": [
+    {
+     "t": "Cuarto",
+     "desde": 4116,
+     "hasta": 4128
+    },
+    {
+     "t": "bloque:",
+     "desde": 4128,
+     "hasta": 4131
+    },
+    {
+     "t": "ChatGPT",
+     "desde": 4143,
+     "hasta": 4148
+    }
+   ]
+  },
+  {
+   "desde": 4164,
+   "hasta": 4194,
+   "palabras": [
+    {
+     "t": "quiere",
+     "desde": 4164,
+     "hasta": 4170
+    },
+    {
+     "t": "ser",
+     "desde": 4170,
+     "hasta": 4174
+    },
+    {
+     "t": "tu",
+     "desde": 4174,
+     "hasta": 4178
+    },
+    {
+     "t": "oficina.",
+     "desde": 4178,
+     "hasta": 4186
+    }
+   ]
+  },
+  {
+   "desde": 4208,
+   "hasta": 4253,
+   "palabras": [
+    {
+     "t": "OpenAI",
+     "desde": 4208,
+     "hasta": 4221
+    },
+    {
+     "t": "lo",
+     "desde": 4221,
+     "hasta": 4226
+    },
+    {
+     "t": "abre",
+     "desde": 4226,
+     "hasta": 4232
+    },
+    {
+     "t": "como",
+     "desde": 4232,
+     "hasta": 4242
+    },
+    {
+     "t": "espacio",
+     "desde": 4242,
+     "hasta": 4247
+    }
+   ]
+  },
+  {
+   "desde": 4253,
+   "hasta": 4269,
+   "palabras": [
+    {
+     "t": "compartido,",
+     "desde": 4253,
+     "hasta": 4258
+    }
+   ]
+  },
+  {
+   "desde": 4269,
+   "hasta": 4287,
+   "palabras": [
+    {
+     "t": "con",
+     "desde": 4269,
+     "hasta": 4273
+    },
+    {
+     "t": "mil",
+     "desde": 4273,
+     "hasta": 4275
+    },
+    {
+     "t": "doscientos",
+     "desde": 4274,
+     "hasta": 4279
+    }
+   ]
+  },
+  {
+   "desde": 4296,
+   "hasta": 4335,
+   "palabras": [
+    {
+     "t": "millones",
+     "desde": 4296,
+     "hasta": 4302
+    },
+    {
+     "t": "de",
+     "desde": 4302,
+     "hasta": 4307
+    },
+    {
+     "t": "usuarios",
+     "desde": 4307,
+     "hasta": 4318
+    },
+    {
+     "t": "semanales.",
+     "desde": 4318,
+     "hasta": 4327
+    }
+   ]
+  },
+  {
+   "desde": 4342,
+   "hasta": 4382,
+   "palabras": [
+    {
+     "t": "Los",
+     "desde": 4342,
+     "hasta": 4350
+    },
+    {
+     "t": "desarrolladores",
+     "desde": 4350,
+     "hasta": 4366
+    },
+    {
+     "t": "pueden",
+     "desde": 4366,
+     "hasta": 4373
+    },
+    {
+     "t": "crear",
+     "desde": 4373,
+     "hasta": 4378
+    }
+   ]
+  },
+  {
+   "desde": 4382,
+   "hasta": 4425,
+   "palabras": [
+    {
+     "t": "extensiones",
+     "desde": 4382,
+     "hasta": 4391
+    },
+    {
+     "t": "de",
+     "desde": 4391,
+     "hasta": 4401
+    },
+    {
+     "t": "plugins,",
+     "desde": 4401,
+     "hasta": 4414
+    },
+    {
+     "t": "con",
+     "desde": 4414,
+     "hasta": 4418
+    },
+    {
+     "t": "su",
+     "desde": 4418,
+     "hasta": 4423
+    }
+   ]
+  },
+  {
+   "desde": 4425,
+   "hasta": 4460,
+   "palabras": [
+    {
+     "t": "sitio",
+     "desde": 4425,
+     "hasta": 4428
+    },
+    {
+     "t": "en",
+     "desde": 4428,
+     "hasta": 4431
+    },
+    {
+     "t": "la",
+     "desde": 4431,
+     "hasta": 4435
+    },
+    {
+     "t": "barra",
+     "desde": 4435,
+     "hasta": 4445
+    },
+    {
+     "t": "lateral",
+     "desde": 4445,
+     "hasta": 4454
+    },
+    {
+     "t": "y",
+     "desde": 4454,
+     "hasta": 4459
+    }
+   ]
+  },
+  {
+   "desde": 4460,
+   "hasta": 4489,
+   "palabras": [
+    {
+     "t": "paneles",
+     "desde": 4460,
+     "hasta": 4472
+    },
+    {
+     "t": "interactivos.",
+     "desde": 4472,
+     "hasta": 4481
+    }
+   ]
+  },
+  {
+   "desde": 4504,
+   "hasta": 4528,
+   "palabras": [
+    {
+     "t": "Llega",
+     "desde": 4504,
+     "hasta": 4517
+    },
+    {
+     "t": "ChatGPT",
+     "desde": 4517,
+     "hasta": 4522
+    }
+   ]
+  },
+  {
+   "desde": 4536,
+   "hasta": 4552,
+   "palabras": [
+    {
+     "t": "Space,",
+     "desde": 4536,
+     "hasta": 4541
+    }
+   ]
+  },
+  {
+   "desde": 4552,
+   "hasta": 4591,
+   "palabras": [
+    {
+     "t": "un",
+     "desde": 4552,
+     "hasta": 4558
+    },
+    {
+     "t": "lugar",
+     "desde": 4558,
+     "hasta": 4565
+    },
+    {
+     "t": "común",
+     "desde": 4565,
+     "hasta": 4570
+    },
+    {
+     "t": "para",
+     "desde": 4570,
+     "hasta": 4573
+    },
+    {
+     "t": "el",
+     "desde": 4573,
+     "hasta": 4580
+    },
+    {
+     "t": "equipo,",
+     "desde": 4580,
+     "hasta": 4585
+    }
+   ]
+  },
+  {
+   "desde": 4593,
+   "hasta": 4628,
+   "palabras": [
+    {
+     "t": "ChatGPT",
+     "desde": 4593,
+     "hasta": 4598
+    },
+    {
+     "t": "y",
+     "desde": 4610,
+     "hasta": 4613
+    },
+    {
+     "t": "tu",
+     "desde": 4613,
+     "hasta": 4616
+    },
+    {
+     "t": "dot.",
+     "desde": 4616,
+     "hasta": 4621
+    }
+   ]
+  },
+  {
+   "desde": 4645,
+   "hasta": 4663,
+   "palabras": [
+    {
+     "t": "Pages,",
+     "desde": 4645,
+     "hasta": 4650
+    }
+   ]
+  },
+  {
+   "desde": 4664,
+   "hasta": 4708,
+   "palabras": [
+    {
+     "t": "un",
+     "desde": 4664,
+     "hasta": 4669
+    },
+    {
+     "t": "nuevo",
+     "desde": 4669,
+     "hasta": 4675
+    },
+    {
+     "t": "tipo",
+     "desde": 4675,
+     "hasta": 4679
+    },
+    {
+     "t": "de",
+     "desde": 4679,
+     "hasta": 4686
+    },
+    {
+     "t": "documento",
+     "desde": 4686,
+     "hasta": 4697
+    },
+    {
+     "t": "para",
+     "desde": 4697,
+     "hasta": 4702
+    }
+   ]
+  },
+  {
+   "desde": 4708,
+   "hasta": 4733,
+   "palabras": [
+    {
+     "t": "personas",
+     "desde": 4708,
+     "hasta": 4713
+    },
+    {
+     "t": "y",
+     "desde": 4713,
+     "hasta": 4716
+    },
+    {
+     "t": "agentes.",
+     "desde": 4716,
+     "hasta": 4725
+    }
+   ]
+  },
+  {
+   "desde": 4754,
+   "hasta": 4772,
+   "palabras": [
+    {
+     "t": "Diapositivas",
+     "desde": 4754,
+     "hasta": 4759
+    }
+   ]
+  },
+  {
+   "desde": 4775,
+   "hasta": 4793,
+   "palabras": [
+    {
+     "t": "colaborativas,",
+     "desde": 4775,
+     "hasta": 4780
+    }
+   ]
+  },
+  {
+   "desde": 4793,
+   "hasta": 4828,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 4793,
+     "hasta": 4797
+    },
+    {
+     "t": "las",
+     "desde": 4797,
+     "hasta": 4804
+    },
+    {
+     "t": "próximas",
+     "desde": 4804,
+     "hasta": 4817
+    },
+    {
+     "t": "semanas.",
+     "desde": 4817,
+     "hasta": 4822
+    }
+   ]
+  },
+  {
+   "desde": 4832,
+   "hasta": 4882,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 4832,
+     "hasta": 4835
+    },
+    {
+     "t": "en",
+     "desde": 4835,
+     "hasta": 4842
+    },
+    {
+     "t": "Business",
+     "desde": 4842,
+     "hasta": 4850
+    },
+    {
+     "t": "y",
+     "desde": 4850,
+     "hasta": 4861
+    },
+    {
+     "t": "Enterprise",
+     "desde": 4861,
+     "hasta": 4875
+    },
+    {
+     "t": "ya",
+     "desde": 4875,
+     "hasta": 4880
+    }
+   ]
+  },
+  {
+   "desde": 4882,
+   "hasta": 4931,
+   "palabras": [
+    {
+     "t": "puedes",
+     "desde": 4882,
+     "hasta": 4889
+    },
+    {
+     "t": "mencionar",
+     "desde": 4889,
+     "hasta": 4899
+    },
+    {
+     "t": "a",
+     "desde": 4899,
+     "hasta": 4905
+    },
+    {
+     "t": "ChatGPT",
+     "desde": 4905,
+     "hasta": 4923
+    },
+    {
+     "t": "en",
+     "desde": 4923,
+     "hasta": 4928
+    }
+   ]
+  },
+  {
+   "desde": 4931,
+   "hasta": 4978,
+   "palabras": [
+    {
+     "t": "Slack",
+     "desde": 4931,
+     "hasta": 4942
+    },
+    {
+     "t": "y",
+     "desde": 4942,
+     "hasta": 4946
+    },
+    {
+     "t": "en",
+     "desde": 4946,
+     "hasta": 4958
+    },
+    {
+     "t": "Microsoft",
+     "desde": 4958,
+     "hasta": 4967
+    },
+    {
+     "t": "Teams.",
+     "desde": 4967,
+     "hasta": 4972
+    }
+   ]
+  },
+  {
+   "desde": 4994,
+   "hasta": 5035,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 4994,
+     "hasta": 4998
+    },
+    {
+     "t": "por",
+     "desde": 4998,
+     "hasta": 5006
+    },
+    {
+     "t": "último,",
+     "desde": 5006,
+     "hasta": 5016
+    },
+    {
+     "t": "los",
+     "desde": 5016,
+     "hasta": 5024
+    },
+    {
+     "t": "planes.",
+     "desde": 5024,
+     "hasta": 5029
+    }
+   ]
+  },
+  {
+   "desde": 5042,
+   "hasta": 5116,
+   "palabras": [
+    {
+     "t": "Nace",
+     "desde": 5042,
+     "hasta": 5057
+    },
+    {
+     "t": "Pro",
+     "desde": 5057,
+     "hasta": 5064
+    },
+    {
+     "t": "500:",
+     "desde": 5064,
+     "hasta": 5070
+    },
+    {
+     "t": "veinticinco",
+     "desde": 5070,
+     "hasta": 5102
+    },
+    {
+     "t": "veces",
+     "desde": 5102,
+     "hasta": 5111
+    },
+    {
+     "t": "el",
+     "desde": 5111,
+     "hasta": 5116
+    }
+   ]
+  },
+  {
+   "desde": 5116,
+   "hasta": 5164,
+   "palabras": [
+    {
+     "t": "uso",
+     "desde": 5116,
+     "hasta": 5119
+    },
+    {
+     "t": "de",
+     "desde": 5119,
+     "hasta": 5128
+    },
+    {
+     "t": "Plus,",
+     "desde": 5128,
+     "hasta": 5139
+    },
+    {
+     "t": "con",
+     "desde": 5139,
+     "hasta": 5149
+    },
+    {
+     "t": "acceso",
+     "desde": 5149,
+     "hasta": 5157
+    },
+    {
+     "t": "a",
+     "desde": 5157,
+     "hasta": 5162
+    }
+   ]
+  },
+  {
+   "desde": 5164,
+   "hasta": 5182,
+   "palabras": [
+    {
+     "t": "Ultrafast.",
+     "desde": 5164,
+     "hasta": 5170
+    }
+   ]
+  },
+  {
+   "desde": 5192,
+   "hasta": 5232,
+   "palabras": [
+    {
+     "t": "Con",
+     "desde": 5192,
+     "hasta": 5199
+    },
+    {
+     "t": "Sign",
+     "desde": 5199,
+     "hasta": 5203
+    },
+    {
+     "t": "in",
+     "desde": 5203,
+     "hasta": 5208
+    },
+    {
+     "t": "with",
+     "desde": 5208,
+     "hasta": 5213
+    },
+    {
+     "t": "ChatGPT,",
+     "desde": 5213,
+     "hasta": 5224
+    }
+   ]
+  },
+  {
+   "desde": 5238,
+   "hasta": 5289,
+   "palabras": [
+    {
+     "t": "quien",
+     "desde": 5238,
+     "hasta": 5245
+    },
+    {
+     "t": "tenga",
+     "desde": 5245,
+     "hasta": 5254
+    },
+    {
+     "t": "Plus",
+     "desde": 5254,
+     "hasta": 5260
+    },
+    {
+     "t": "o",
+     "desde": 5260,
+     "hasta": 5266
+    },
+    {
+     "t": "Pro",
+     "desde": 5266,
+     "hasta": 5277
+    },
+    {
+     "t": "podrá",
+     "desde": 5277,
+     "hasta": 5284
+    },
+    {
+     "t": "usar",
+     "desde": 5284,
+     "hasta": 5289
+    }
+   ]
+  },
+  {
+   "desde": 5289,
+   "hasta": 5332,
+   "palabras": [
+    {
+     "t": "su",
+     "desde": 5289,
+     "hasta": 5295
+    },
+    {
+     "t": "plan",
+     "desde": 5295,
+     "hasta": 5301
+    },
+    {
+     "t": "en",
+     "desde": 5301,
+     "hasta": 5311
+    },
+    {
+     "t": "dieciséis",
+     "desde": 5311,
+     "hasta": 5321
+    },
+    {
+     "t": "herramientas",
+     "desde": 5321,
+     "hasta": 5329
+    }
+   ]
+  },
+  {
+   "desde": 5332,
+   "hasta": 5352,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 5332,
+     "hasta": 5338
+    },
+    {
+     "t": "socios.",
+     "desde": 5338,
+     "hasta": 5344
+    }
+   ]
+  },
+  {
+   "desde": 5357,
+   "hasta": 5391,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 5357,
+     "hasta": 5364
+    },
+    {
+     "t": "OpenAI",
+     "desde": 5364,
+     "hasta": 5367
+    },
+    {
+     "t": "Marketplace",
+     "desde": 5380,
+     "hasta": 5385
+    }
+   ]
+  },
+  {
+   "desde": 5404,
+   "hasta": 5455,
+   "palabras": [
+    {
+     "t": "permitirá",
+     "desde": 5404,
+     "hasta": 5411
+    },
+    {
+     "t": "a",
+     "desde": 5411,
+     "hasta": 5414
+    },
+    {
+     "t": "las",
+     "desde": 5426,
+     "hasta": 5437
+    },
+    {
+     "t": "empresas",
+     "desde": 5437,
+     "hasta": 5444
+    },
+    {
+     "t": "dedicar",
+     "desde": 5444,
+     "hasta": 5449
+    }
+   ]
+  },
+  {
+   "desde": 5457,
+   "hasta": 5504,
+   "palabras": [
+    {
+     "t": "parte",
+     "desde": 5457,
+     "hasta": 5460
+    },
+    {
+     "t": "de",
+     "desde": 5460,
+     "hasta": 5463
+    },
+    {
+     "t": "su",
+     "desde": 5463,
+     "hasta": 5470
+    },
+    {
+     "t": "compromiso",
+     "desde": 5470,
+     "hasta": 5483
+    },
+    {
+     "t": "a",
+     "desde": 5483,
+     "hasta": 5493
+    },
+    {
+     "t": "software",
+     "desde": 5493,
+     "hasta": 5498
+    }
+   ]
+  },
+  {
+   "desde": 5505,
+   "hasta": 5541,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 5505,
+     "hasta": 5518
+    },
+    {
+     "t": "treinta",
+     "desde": 5518,
+     "hasta": 5522
+    },
+    {
+     "t": "y",
+     "desde": 5522,
+     "hasta": 5524
+    },
+    {
+     "t": "dos",
+     "desde": 5523,
+     "hasta": 5526
+    },
+    {
+     "t": "socios.",
+     "desde": 5526,
+     "hasta": 5533
+    }
+   ]
+  },
+  {
+   "desde": 5559,
+   "hasta": 5577,
+   "palabras": [
+    {
+     "t": "En",
+     "desde": 5559,
+     "hasta": 5564
+    },
+    {
+     "t": "resumen:",
+     "desde": 5564,
+     "hasta": 5569
+    }
+   ]
+  },
+  {
+   "desde": 5583,
+   "hasta": 5628,
+   "palabras": [
+    {
+     "t": "agentes",
+     "desde": 5583,
+     "hasta": 5593
+    },
+    {
+     "t": "que",
+     "desde": 5593,
+     "hasta": 5596
+    },
+    {
+     "t": "no",
+     "desde": 5596,
+     "hasta": 5603
+    },
+    {
+     "t": "paran,",
+     "desde": 5603,
+     "hasta": 5614
+    },
+    {
+     "t": "modelos",
+     "desde": 5614,
+     "hasta": 5623
+    },
+    {
+     "t": "más",
+     "desde": 5623,
+     "hasta": 5628
+    }
+   ]
+  },
+  {
+   "desde": 5628,
+   "hasta": 5678,
+   "palabras": [
+    {
+     "t": "baratos",
+     "desde": 5628,
+     "hasta": 5640
+    },
+    {
+     "t": "y",
+     "desde": 5640,
+     "hasta": 5645
+    },
+    {
+     "t": "más",
+     "desde": 5645,
+     "hasta": 5651
+    },
+    {
+     "t": "rápidos,",
+     "desde": 5651,
+     "hasta": 5669
+    },
+    {
+     "t": "y",
+     "desde": 5669,
+     "hasta": 5673
+    },
+    {
+     "t": "un",
+     "desde": 5673,
+     "hasta": 5678
+    }
+   ]
+  },
+  {
+   "desde": 5678,
+   "hasta": 5696,
+   "palabras": [
+    {
+     "t": "ChatGPT",
+     "desde": 5678,
+     "hasta": 5683
+    }
+   ]
+  },
+  {
+   "desde": 5699,
+   "hasta": 5736,
+   "palabras": [
+    {
+     "t": "que",
+     "desde": 5699,
+     "hasta": 5704
+    },
+    {
+     "t": "quiere",
+     "desde": 5704,
+     "hasta": 5710
+    },
+    {
+     "t": "ser",
+     "desde": 5710,
+     "hasta": 5714
+    },
+    {
+     "t": "tu",
+     "desde": 5714,
+     "hasta": 5723
+    },
+    {
+     "t": "espacio",
+     "desde": 5723,
+     "hasta": 5727
+    },
+    {
+     "t": "de",
+     "desde": 5727,
+     "hasta": 5732
+    }
+   ]
+  },
+  {
+   "desde": 5736,
+   "hasta": 5754,
+   "palabras": [
+    {
+     "t": "trabajo.",
+     "desde": 5736,
+     "hasta": 5741
+    }
+   ]
+  },
+  {
+   "desde": 5756,
+   "hasta": 5798,
+   "palabras": [
+    {
+     "t": "Muchas",
+     "desde": 5756,
+     "hasta": 5762
+    },
+    {
+     "t": "novedades",
+     "desde": 5762,
+     "hasta": 5778
+    },
+    {
+     "t": "llegan",
+     "desde": 5778,
+     "hasta": 5789
+    },
+    {
+     "t": "poco",
+     "desde": 5789,
+     "hasta": 5792
+    },
+    {
+     "t": "a",
+     "desde": 5792,
+     "hasta": 5797
+    }
+   ]
+  },
+  {
+   "desde": 5798,
+   "hasta": 5845,
+   "palabras": [
+    {
+     "t": "poco,",
+     "desde": 5798,
+     "hasta": 5811
+    },
+    {
+     "t": "así",
+     "desde": 5811,
+     "hasta": 5815
+    },
+    {
+     "t": "que",
+     "desde": 5815,
+     "hasta": 5820
+    },
+    {
+     "t": "revisa",
+     "desde": 5820,
+     "hasta": 5832
+    },
+    {
+     "t": "qué",
+     "desde": 5832,
+     "hasta": 5841
+    },
+    {
+     "t": "aparece",
+     "desde": 5841,
+     "hasta": 5846
+    }
+   ]
+  },
+  {
+   "desde": 5845,
+   "hasta": 5867,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 5845,
+     "hasta": 5848
+    },
+    {
+     "t": "tu",
+     "desde": 5848,
+     "hasta": 5856
+    },
+    {
+     "t": "cuenta.",
+     "desde": 5856,
+     "hasta": 5861
+    }
+   ]
+  },
+  {
+   "desde": 5872,
+   "hasta": 5914,
+   "palabras": [
+    {
+     "t": "¡Nos",
+     "desde": 5872,
+     "hasta": 5878
+    },
+    {
+     "t": "vemos",
+     "desde": 5878,
+     "hasta": 5883
+    },
+    {
+     "t": "en",
+     "desde": 5883,
+     "hasta": 5886
+    },
+    {
+     "t": "el",
+     "desde": 5886,
+     "hasta": 5894
+    },
+    {
+     "t": "próximo",
+     "desde": 5894,
+     "hasta": 5903
+    },
+    {
+     "t": "vídeo!",
+     "desde": 5903,
+     "hasta": 5908
+    }
+   ]
+  }
+ ],
+ "gestos": [],
+ "intro": {
+  "desde": 0,
+  "hasta": 100,
+  "estilo": "marca",
+  "palabras": [
+   "DEV",
+   "DAY"
+  ],
+  "etiquetas": [
+   "Noticias IA",
+   "29 · 09 · 2026"
+  ],
+  "lema": "Lo importante en cuatro minutos",
+  "kicker": "OpenAI DevDay 2026",
+  "titulo": "DevDay 2026",
+  "subtitulo": "Todo lo que anunció OpenAI"
+ },
+ "outro": {
+  "desde": 5559,
+  "hasta": 6040,
+  "kicker": "En resumen",
+  "titulo": "DevDay 2026",
+  "puntos": [
+   "Dots: agentes que no paran",
+   "GPT-6.1 Sol y Ultrafast: más barato y más rápido",
+   "ChatGPT como espacio de trabajo"
+  ],
+  "cta": "Revisa qué llega a tu cuenta",
+  "objeto3d": "trofeo"
+ },
+ "disposiciones": [
+  {
+   "desde": 0,
+   "hasta": 234,
+   "tipo": "completa"
+  },
+  {
+   "desde": 234,
+   "hasta": 364,
+   "tipo": "voz"
+  },
+  {
+   "desde": 364,
+   "hasta": 553,
+   "tipo": "completa"
+  },
+  {
+   "desde": 553,
+   "hasta": 1046,
+   "tipo": "voz"
+  },
+  {
+   "desde": 1046,
+   "hasta": 1210,
+   "tipo": "completa"
+  },
+  {
+   "desde": 1210,
+   "hasta": 1905,
+   "tipo": "voz"
+  },
+  {
+   "desde": 1905,
+   "hasta": 2148,
+   "tipo": "completa"
+  },
+  {
+   "desde": 2148,
+   "hasta": 2556,
+   "tipo": "voz"
+  },
+  {
+   "desde": 2556,
+   "hasta": 2678,
+   "tipo": "completa"
+  },
+  {
+   "desde": 2678,
+   "hasta": 2946,
+   "tipo": "voz"
+  },
+  {
+   "desde": 2946,
+   "hasta": 3195,
+   "tipo": "completa"
+  },
+  {
+   "desde": 3195,
+   "hasta": 3437,
+   "tipo": "voz"
+  },
+  {
+   "desde": 3437,
+   "hasta": 3607,
+   "tipo": "completa"
+  },
+  {
+   "desde": 3607,
+   "hasta": 4116,
+   "tipo": "voz"
+  },
+  {
+   "desde": 4116,
+   "hasta": 4269,
+   "tipo": "completa"
+  },
+  {
+   "desde": 4269,
+   "hasta": 4994,
+   "tipo": "voz"
+  },
+  {
+   "desde": 4994,
+   "hasta": 5085,
+   "tipo": "completa"
+  },
+  {
+   "desde": 5085,
+   "hasta": 5559,
+   "tipo": "voz"
+  },
+  {
+   "desde": 5559,
+   "hasta": 6040,
+   "tipo": "completa"
+  }
+ ],
+ "audio": {
+  "musica": [
+   {
+    "archivo": "sintonia",
+    "desde": 0,
+    "hasta": 138,
+    "volumen": 0.5,
+    "fundidoEntrada": 0,
+    "fundidoSalida": 38,
+    "bucle": false
+   },
+   {
+    "archivo": "base",
+    "desde": 100,
+    "hasta": 5915,
+    "volumen": 0.285,
+    "fundidoEntrada": 50,
+    "fundidoSalida": 50,
+    "bucle": true
+   },
+   {
+    "archivo": "cierre",
+    "desde": 5890,
+    "hasta": 6040,
+    "volumen": 0.5,
+    "fundidoEntrada": 25,
+    "fundidoSalida": 50,
+    "bucle": false
+   }
+  ],
+  "sfx": [
+   {
+    "archivo": "sfx-pop",
+    "en": 177,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 234,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 364,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 462,
+    "volumen": 0.5,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 553,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 1046,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 1170,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 1210,
+    "volumen": 0.35,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 1514,
+    "volumen": 0.35,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 1905,
+    "volumen": 0.5,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 1996,
+    "volumen": 0.5,
+    "dur": 25
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 2148,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 2556,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 2591,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 2678,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-golpe",
+    "en": 2854,
+    "volumen": 0.6,
+    "dur": 25
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 2946,
+    "volumen": 0.5,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 3152,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 3195,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 3437,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 3563,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 3607,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 4116,
+    "volumen": 0.5,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 4208,
+    "volumen": 0.45,
+    "dur": 16
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 4269,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 4994,
+    "volumen": 0.5,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 5085,
+    "volumen": 0.35,
+    "dur": 50
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 5559,
+    "volumen": 0.35,
+    "dur": 50
+   }
+  ]
+ },
+ "avisos": [
+  "evento 1 (lamina) empezaba dentro del intro: se retrasa 2 fotogramas",
+  "evento 4 (escena3d) empezaba dentro del rótulo del capítulo 1: se retrasa 10 fotogramas",
+  "evento 11 (titulo) («GPT-6.1 Sol») caía dentro del rótulo del capítulo 2: se retrasa 36 fotogramas",
+  "evento 17 (lamina) empezaba dentro del rótulo del capítulo 3: se retrasa 39 fotogramas",
+  "evento 25 (panel/cifra) empezaba dentro del rótulo del capítulo 5: se retrasa 15 fotogramas"
+ ]
+}

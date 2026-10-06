@@ -1,0 +1,133 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 470px}
+#__ID__ .halo{position:absolute;left:260px;top:120px;width:1400px;height:760px;border-radius:50%;background:radial-gradient(closest-side,rgba(125,41,224,.20),rgba(255,1,162,.10) 58%,rgba(255,1,162,0));opacity:0}
+#__ID__ .halo2{position:absolute;left:760px;top:520px;width:640px;height:340px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.22),rgba(125,41,224,.10) 60%,rgba(125,41,224,0));opacity:0}
+#__ID__ .txt{position:absolute;left:0;top:170px;width:1920px;text-align:center;transform-origin:960px 346px}
+#__ID__ .ln{display:block;white-space:nowrap;text-align:center}
+#__ID__ .chatl{display:flex;align-items:center;justify-content:center;gap:26px;font-weight:800;letter-spacing:-.04em;font-size:92px;line-height:1.1;color:#667085;height:120px;transform-origin:50% 50%}
+#__ID__ .chatl svg{width:96px;height:96px;overflow:visible;flex:none}
+#__ID__ .big{font-weight:800;letter-spacing:-.045em;font-size:176px;line-height:1.0;color:#0D1320;height:176px}
+#__ID__ .big.g1{margin-top:44px}
+#__ID__ .wm{display:inline-block;overflow:hidden;padding:.1em .06em .2em;margin:-.1em -.06em -.2em;vertical-align:top;position:relative}
+#__ID__ .wm>.r{display:inline-block}
+#__ID__ .sp{display:inline-block;width:.26em}
+#__ID__ .chatl .sp{width:.24em}
+#__ID__ .hecho{color:#7D29E0}
+#__ID__ .hw{display:inline-block;position:relative;vertical-align:top;margin:0 -0.06em;padding:0 0.06em}
+#__ID__ .ul{position:absolute;left:0.04em;right:0.12em;bottom:-0.02em;height:16px;border-radius:8px;background:linear-gradient(90deg,#7D29E0,#FF01A2);transform-origin:0 50%;opacity:0}
+#__ID__ .ring{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible;z-index:20}
+#__ID__ .pt{position:absolute;left:0;top:0;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;opacity:0;z-index:40}
+#__ID__ .og{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;background:radial-gradient(circle at 40% 36%,#E2CCFF 0 20%,#9B61F6 55%,#FF01A2 140%);z-index:45;filter:blur(2px)}
+<!--HTML-->
+<div class="stage">
+  <div class="bg clip" data-start="0" data-duration="__DUR__" data-track-index="0"><div class="halo"></div><div class="halo2"></div></div>
+  <div class="world">
+    <div class="txt">
+      <div class="ln chatl">
+        <svg viewBox="0 0 96 96"><path class="bub" d="M14 22 Q14 12 24 12 H72 Q82 12 82 22 V56 Q82 66 72 66 H44 L26 82 V66 H24 Q14 66 14 56 Z" fill="none" stroke="#667085" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" pathLength="1" style="stroke-dasharray:1;stroke-dashoffset:1"/><circle class="bd" cx="34" cy="39" r="4.5" fill="#667085"/><circle class="bd" cx="48" cy="39" r="4.5" fill="#667085"/><circle class="bd" cx="62" cy="39" r="4.5" fill="#667085"/></svg>
+        <div class="cw"><span class="wm"><span class="r c0">Chat</span></span><span class="sp"></span><span class="wm"><span class="r c1">para</span></span><span class="sp"></span><span class="wm"><span class="r c2">preguntar.</span></span></div>
+      </div>
+      <div class="ln big g1"><span class="wm"><span class="r a0">Agente</span></span><span class="sp"></span><span class="wm"><span class="r a1">para</span></span><span class="sp"></span><span class="wm"><span class="r a2">que</span></span></div>
+      <div class="ln big g2"><span class="wm"><span class="r a3">te</span></span><span class="sp"></span><span class="wm"><span class="r a4">entregue</span></span></div>
+      <div class="ln big g3"><span class="wm"><span class="r a5">el</span></span><span class="sp"></span><span class="wm"><span class="r a6">trabajo</span></span><span class="sp"></span><span class="hw"><span class="wm"><span class="r a7 hecho">hecho.</span></span><span class="ul"></span></span></div>
+    </div>
+    <div class="og og3"></div><div class="og og2"></div><div class="og og1"></div>
+    <div class="orb"></div>
+    <div class="pts"></div>
+  </div>
+  <svg class="ring" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="rg___ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7D29E0"/><stop offset="1" stop-color="#FF01A2"/></linearGradient></defs>
+    <circle class="rc" cx="960" cy="470" r="86" fill="none" stroke="url(#rg___ID__)" stroke-width="14" opacity="0"/>
+  </svg>
+</div>
+<!--JS-->
+const GH = [".og1", ".og2", ".og3"];
+const GS = [0.86, 0.72, 0.58], GO = [0.42, 0.26, 0.14];
+function go(x, y, at, d = 0.6, ease = IO) {
+  tl.to(Q(".orb"), { x, y, duration: d, ease }, at);
+  GH.forEach((g, i) => tl.to(Q(g), { x, y, duration: d, ease }, at + 0.05 * (i + 1)));
+}
+function trailInit(x, y) { orbSet(x, y, 0); GH.forEach((g, i) => tl.set(Q(g), { x, y, scale: GS[i], opacity: GO[i] }, 0)); }
+const ptsEl = $q(".pts");
+function burst(x, y, at, n = 16, rad = 220, rot = 0) {
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement("div"); el.className = "pt";
+    el.style.background = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6"][i % 4];
+    const sz = 9 + (i % 3) * 6; el.style.width = el.style.height = sz + "px"; el.style.margin = `${-sz / 2}px 0 0 ${-sz / 2}px`;
+    ptsEl.appendChild(el);
+    const ang = rot + i * (Math.PI * 2 / n), r = rad * (0.6 + 0.6 * ((i * 7) % 5) / 4);
+    tl.fromTo(el, { x, y, opacity: 0, scale: 0.3 }, { x, y, opacity: 1, scale: 1, duration: 0.06, ease: "none" }, at);
+    tl.to(el, { x: x + Math.cos(ang) * r, y: y + Math.sin(ang) * r, opacity: 0, scale: 0.2, duration: 0.8, ease: "power3.out" }, at + 0.06);
+  }
+}
+
+sceneIn("fade");
+
+/* cámara: empieza algo cerca y se asienta */
+tl.fromTo(Q(".world"), { scale: 1.07 }, { scale: 1, duration: 4.2, ease: "power2.out" }, 0);
+
+/* resplandor de fondo (lo único vivo durante la pieza sostenida) */
+tl.fromTo(Q(".halo"), { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 1.4, ease: "power2.out" }, 0);
+
+/* «Chat para preguntar.» — suave, con rebote */
+const rb = "back.out(1.5)";
+["c0", "c1", "c2"].forEach((c, i) => {
+  const t = [Math.max(0.15, cue("chat") - 0.25), cue("para") - 0.12, cue("preguntar") - 0.1][i];
+  tl.fromTo(Q("." + c), { yPercent: 115 }, { yPercent: 0, duration: 0.7, ease: rb }, t);
+});
+tl.fromTo(Q(".bub"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.6, ease: "power2.out" }, 0.05);
+tl.fromTo(Q(".bd"), { scale: 0, transformOrigin: "50% 50%" }, { scale: 1, duration: 0.35, ease: "back.out(3)", stagger: 0.1 }, 0.4);
+/* el chat cede protagonismo cuando entra el agente */
+const A0 = cue("agente");
+tl.to(Q(".chatl"), { scale: 0.78, y: -8, opacity: 0.55, duration: 0.6, ease: "power3.inOut" }, A0 - 0.1);
+
+/* el orbe entra y escribe el agente */
+trailInit(150, 880);
+go(300, 600, 0.9, 0.9, "power2.out");
+go(215, 470, A0 - 0.25, 0.5, "power3.inOut");
+
+/* «Agente para que te entregue el trabajo hecho.» — por palabras, con rebote y solape */
+const rbk = "back.out(1.7)";
+const WORDS = [
+  ["a0", A0], ["a1", A0 + 0.14], ["a2", cue("que") - 0.02],
+  ["a3", cue("te") - 0.02], ["a4", cue("entregue") - 0.05],
+  ["a5", cue("el") - 0.02], ["a6", cue("el") + 0.18]
+];
+WORDS.forEach(([c, t]) => tl.fromTo(Q("." + c), { yPercent: 118, rotation: 4 }, { yPercent: 0, rotation: 0, duration: 0.75, ease: rbk }, t));
+/* el orbe acompaña la línea que se escribe */
+go(235, 650, cue("te") - 0.1, 0.4, "power3.inOut");
+go(235, 840, cue("el") - 0.2, 0.45, "power3.inOut");
+
+/* «hecho.» — golpe en violeta con subrayado trazado por el orbe */
+const H = cue("hecho");
+tl.fromTo(Q(".a7"), { yPercent: 130, scale: 1.5, filter: "blur(18px)" }, { yPercent: 0, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" }, H);
+tl.fromTo(Q(".hw"), { x: 0 }, { x: 10, duration: 0.045, repeat: 5, yoyo: true, ease: "none" }, H + 0.42);
+tl.set(Q(".hw"), { x: 0 }, H + 0.72);
+tl.fromTo(Q(".halo2"), { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1.1, duration: 0.5, ease: "power3.out" }, H);
+tl.to(Q(".halo2"), { opacity: 0.75, scale: 1, duration: 1.0, ease: "power2.out" }, H + 0.5);
+tl.fromTo(Q(".halo"), { scale: 1 }, { scale: 1.12, duration: 0.5, ease: "power3.out" }, H);
+tl.to(Q(".halo"), { scale: 1, duration: 1.2, ease: "power2.inOut" }, H + 0.5);
+tl.fromTo(Q(".ul"), { opacity: 1, scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power3.inOut" }, H + 0.22);
+/* orbe: baja a la palabra, recorre el subrayado y se queda al final */
+go(1140, 880, H - 0.2, 0.4, "power3.inOut");
+go(1642, 884, H + 0.22, 0.5, "power3.inOut");
+orbSquash(H + 0.75);
+burst(1350, 790, H + 0.05, 18, 230);
+
+/* pieza sostenida: ~3 s sin más movimiento que el resplandor */
+tl.to(Q(".halo"), { opacity: 0.7, scale: 1.08, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.6);
+tl.to(Q(".halo2"), { opacity: 0.45, duration: 1.2, ease: "sine.inOut", yoyo: true, repeat: 2 }, 4.6);
+
+/* última fase (últimos 0,9 s): todo se contrae a un aro que se convierte en el logo */
+const X = DUR - 0.95;
+tl.to(Q(".txt"), { scale: 1.035, duration: 0.25, ease: "power2.out" }, X - 0.02);
+go(533, 538, X + 0.05, 0.42, "power3.inOut");
+tl.to(Q(".txt"), { scale: 0.03, x: 533 - 960, y: 22, rotation: -8, opacity: 0, duration: 0.42, ease: "power3.in" }, X + 0.22);
+tl.to(Q(".halo, .halo2"), { opacity: 0, duration: 0.45, ease: "power2.in" }, X + 0.2);
+tl.to(Q(".og"), { opacity: 0, duration: 0.2 }, X + 0.3);
+tl.to(Q(".orb"), { scale: 1.7, duration: 0.2, ease: "power2.in" }, X + 0.4);
+tl.to(Q(".orb"), { scale: 0.05, opacity: 0, duration: 0.3, ease: "power3.in" }, X + 0.6);
+/* el aro nace donde se contrae todo y queda donde el logo dibuja el suyo (533,538), ø final 185 */
+tl.fromTo(Q(".rc"), { attr: { cx: 533, cy: 538, r: 2 }, opacity: 0 }, { attr: { cx: 533, cy: 538, r: 85.5 }, opacity: 1, duration: 0.5, ease: "expo.out" }, X + 0.45);
+<!--SFX-->
+[{"k":"pop","t":0.7,"v":0.4},{"k":"pop","t":1.4,"v":0.35},{"k":"pop","t":2.5,"v":0.4},{"k":"impact","t":4.25,"v":0.55},{"k":"riser","t":6.7,"v":0.35},{"k":"pop","t":8.55,"v":0.5}]

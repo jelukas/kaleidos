@@ -1,0 +1,186 @@
+<!--CSS-->
+#__ID__ .rays{position:absolute;left:-240px;top:-660px;width:2400px;height:2400px;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,255,255,.06) 0 5deg,rgba(255,255,255,0) 5deg 15deg);
+  -webkit-mask-image:radial-gradient(closest-side,#000 15%,transparent 100%);mask-image:radial-gradient(closest-side,#000 15%,transparent 100%)}
+#__ID__ .gl{position:absolute;width:1100px;height:440px;left:410px;border-radius:50%;opacity:0}
+#__ID__ .pts{position:absolute;inset:0}
+#__ID__ .pt{position:absolute;left:0;top:0;border-radius:50%}
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 540px}
+/* hero */
+#__ID__ .hero{position:absolute;left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:20px;box-sizing:border-box;transform-origin:960px 480px}
+#__ID__ .hh1{display:block;font-weight:800;letter-spacing:-.05em;line-height:.95;font-size:340px;color:#fff;white-space:nowrap;text-shadow:0 12px 60px rgba(20,0,60,.55)}
+#__ID__ .three{color:#FF4FBE}
+#__ID__ .hh2{display:block;font-weight:800;letter-spacing:.01em;line-height:1;font-size:92px;color:#E2CCFF;white-space:nowrap;margin-top:16px}
+#__ID__ .hd{position:absolute;left:100px;top:60px;font-weight:800;font-size:62px;letter-spacing:-.02em;color:#fff;white-space:nowrap;opacity:0}
+#__ID__ .hd b{color:#FF4FBE}
+#__ID__ .hd i{font-style:normal;font-weight:600;color:#E2CCFF;font-size:40px;letter-spacing:.14em;margin-left:22px}
+/* afirmaciones */
+#__ID__ .row{position:absolute;left:100px;width:1720px;height:240px;border-radius:40px;box-sizing:border-box;border:2px solid rgba(255,255,255,.2);
+  background:linear-gradient(100deg,var(--cg) -20%,rgba(255,255,255,.06) 60%);box-shadow:0 30px 80px rgba(8,0,24,.5);opacity:0}
+#__ID__ .num{position:absolute;left:24px;top:24px;width:188px;height:188px;border-radius:30px;background:var(--c);display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:112px;letter-spacing:-.05em;color:#fff;border:4px solid rgba(255,255,255,.4);box-sizing:border-box}
+#__ID__ .rt{position:absolute;left:250px;top:0;bottom:0;width:1270px;display:flex;flex-direction:column;justify-content:center}
+#__ID__ .rt .mask{font-size:80px;color:#fff;font-weight:800;letter-spacing:-.04em;line-height:1.06}
+#__ID__ .ic{position:absolute;right:24px;top:24px;width:188px;height:188px;border-radius:30px;background:var(--c);border:4px solid rgba(255,255,255,.4);box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+#__ID__ .ico{width:146px;height:146px;overflow:visible}
+#__ID__ .ico .p{stroke-dasharray:1;stroke-dashoffset:1}
+#__ID__ .rk{position:absolute;left:118px;width:200px;height:200px;margin:-100px 0 0 -100px;border-radius:50%;border:8px solid #fff;opacity:0}
+/* despedida */
+#__ID__ .fin{position:absolute;left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:10px;box-sizing:border-box;z-index:20}
+#__ID__ .f1{display:inline-block;font-weight:800;letter-spacing:-.045em;line-height:1;font-size:210px;color:#fff;white-space:nowrap;text-shadow:0 12px 60px rgba(30,0,80,.6)}
+#__ID__ .f2{display:inline-block;font-weight:800;letter-spacing:-.05em;line-height:1;font-size:300px;white-space:nowrap;color:#FF4FBE;
+  background:linear-gradient(90deg,#E9D5FF 0%,#FF6FC7 55%,#FF01A2 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;padding-bottom:.04em}
+#__ID__ .f3{display:inline-block;margin-top:26px;font-weight:700;letter-spacing:.16em;font-size:34px;color:#fff;background:rgba(20,6,42,.85);border:2px solid rgba(255,255,255,.4);border-radius:999px;padding:12px 34px;white-space:nowrap;opacity:0}
+#__ID__ .sw{position:absolute;left:960px;top:540px;width:300px;height:300px;margin:-150px 0 0 -150px;border-radius:50%;border:10px solid #FF6FC7;opacity:0;z-index:19}
+/* iris a claro + aro del logo */
+#__ID__ .iris{position:absolute;left:860px;top:440px;width:200px;height:200px;border-radius:50%;background:#FAFBFC;opacity:0;z-index:90}
+#__ID__ .ringsvg{position:absolute;left:0;top:0;width:1920px;height:1080px;z-index:95;overflow:visible}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+    <div class="rays" data-layout-allow-overflow></div>
+    <div class="gl g0" style="top:100px;background:radial-gradient(closest-side,rgba(125,41,224,.75),rgba(125,41,224,0))"></div>
+    <div class="gl g1" style="top:368px;background:radial-gradient(closest-side,rgba(155,97,246,.6),rgba(155,97,246,0))"></div>
+    <div class="gl g2" style="top:636px;background:radial-gradient(closest-side,rgba(94,61,230,.75),rgba(94,61,230,0))"></div>
+  </div>
+  <div class="pts"></div>
+  <div class="world">
+    <div class="hero"><div class="hh1"><span class="three">3</span> IDEAS</div><div class="hh2">PARA LLEVARTE A CASA</div></div>
+    <div class="hd"><b>3</b> IDEAS<i>PARA LLEVARTE A CASA</i></div>
+
+    <div class="row r0" style="top:200px;--c:#7D29E0;--cg:rgba(125,41,224,.62)">
+      <div class="rk k0" style="top:118px"></div>
+      <div class="num n0">01</div>
+      <div class="rt"><div class="mask"><div class="r ra">La IA ya es parte</div></div><div class="mask"><div class="r rb">del catálogo</div></div></div>
+      <div class="ic"><svg class="ico i1" viewBox="0 0 120 120" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <rect class="p" x="14" y="50" width="22" height="56" rx="4" pathLength="1"/>
+        <rect class="p" x="42" y="36" width="22" height="70" rx="4" pathLength="1"/>
+        <rect class="p" x="70" y="58" width="22" height="48" rx="4" pathLength="1"/>
+        <path class="p" d="M8 108H100" pathLength="1"/>
+        <path class="sp" d="M98 8 L102 22 L116 26 L102 30 L98 44 L94 30 L80 26 L94 22 Z" fill="#fff" stroke="none"/>
+      </svg></div>
+    </div>
+
+    <div class="row r1" style="top:468px;--c:#9B61F6;--cg:rgba(155,97,246,.5)">
+      <div class="rk k1" style="top:118px"></div>
+      <div class="num n1">02</div>
+      <div class="rt"><div class="mask"><div class="r ra">Medir competencias:</div></div><div class="mask"><div class="r rb">el nuevo campo de batalla</div></div></div>
+      <div class="ic"><svg class="ico i2" viewBox="0 0 120 120" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path class="p" d="M14 92 A46 46 0 0 1 106 92" pathLength="1"/>
+        <path class="p" d="M29 59 L35 65" pathLength="1"/><path class="p" d="M60 41 V50" pathLength="1"/><path class="p" d="M91 59 L85 65" pathLength="1"/>
+        <path class="p" d="M10 108H110" pathLength="1"/>
+        <g class="ndl"><line x1="60" y1="92" x2="60" y2="52" stroke-width="7"/></g>
+        <circle cx="60" cy="92" r="8" fill="#fff" stroke="none"/>
+      </svg></div>
+    </div>
+
+    <div class="row r2" style="top:736px;--c:#5E3DE6;--cg:rgba(94,61,230,.62)">
+      <div class="rk k2" style="top:118px"></div>
+      <div class="num n2">03</div>
+      <div class="rt"><div class="mask"><div class="r ra">Dinero público para formar:</div></div><div class="mask"><div class="r rb">en marcha</div></div></div>
+      <div class="ic"><svg class="ico i3" viewBox="0 0 120 120" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <g class="coin c1"><path d="M26 98 v8 a34 11 0 0 0 68 0 v-8"/><ellipse cx="60" cy="98" rx="34" ry="11" fill="rgba(255,255,255,.18)"/></g>
+        <g class="coin c2"><path d="M26 80 v8 a34 11 0 0 0 68 0 v-8"/><ellipse cx="60" cy="80" rx="34" ry="11" fill="rgba(255,255,255,.18)"/></g>
+        <g class="coin c3"><path d="M26 56 v14 a34 14 0 0 0 68 0 v-14"/><ellipse cx="60" cy="56" rx="34" ry="14" fill="rgba(255,255,255,.28)"/><text x="60" y="64" text-anchor="middle" font-size="21" font-weight="800" fill="#fff" stroke="none" font-family="Inter,sans-serif">€</text></g>
+      </svg></div>
+    </div>
+  </div>
+  <div class="sw s1"></div>
+  <div class="fin"><div class="f1">NOS VEMOS</div><div class="f2">EL LUNES.</div><div class="f3">EVENTO OPENWEBINARS · 5 DE OCTUBRE</div></div>
+  <div class="iris"></div>
+  <svg class="ringsvg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="rgc___ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7D29E0"/><stop offset="1" stop-color="#FF01A2"/></linearGradient></defs>
+    <circle class="rc" cx="960" cy="540" r="30" fill="none" stroke="url(#rgc___ID__)" stroke-width="14" opacity="0"/>
+  </svg>
+</div>
+<!--JS-->
+sceneIn("fade");
+
+const A = cue("IA"), M = cue("medir"), D = cue("dinero"), N = cue("nos"), L = cue("lunes"), MAR = cue("marcha");
+const OUT = N - 0.32;
+
+/* ---------- fondo vivo ---------- */
+tl.fromTo(Q(".rays"), { rotation: 0 }, { rotation: 40, duration: DUR, ease: "none" }, 0);
+let sd = 11;
+const rnd = () => { sd = (sd * 16807) % 2147483647; return (sd - 1) / 2147483646; };
+const ptsEl = $q(".pts"), PC = ["#E2CCFF", "#FF6FC7", "#9B61F6", "#FFFFFF"];
+for (let i = 0; i < 40; i++) {
+  const el = document.createElement("div"); el.className = "pt";
+  const z = 0.4 + rnd() * 0.9, sz = Math.round(4 + z * 7);
+  el.style.cssText = "width:" + sz + "px;height:" + sz + "px;background:" + PC[i % 4] + ";opacity:" + (0.22 + z * 0.35);
+  ptsEl.appendChild(el);
+  const x = Math.round(rnd() * 1920), y0 = Math.round(300 + rnd() * 900);
+  tl.fromTo(el, { x, y: y0 }, { x: x + Math.round((rnd() - 0.5) * 140), y: y0 - 360 - Math.round(z * 480), duration: DUR, ease: "none" }, 0);
+}
+tl.fromTo(Q(".world"), { scale: 1.0 }, { scale: 1.035, duration: DUR, ease: "none" }, 0);
+
+/* ---------- hero: 3 IDEAS ---------- */
+tl.fromTo(Q(".hh1"), { opacity: 0.35, scale: 1.8, filter: "blur(22px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.5, ease: "power4.out" }, 0);
+tl.fromTo(Q(".hh1"), { x: 0 }, { x: 12, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, 0.44);
+tl.set(Q(".hh1"), { x: 0 }, 0.8);
+up(".hh2", 0.4, { y: 40, d: 0.7 });
+[0.64, 1.14, 1.64].forEach((b) => tl.fromTo(Q(".hero"), { scale: 1 }, { scale: 1.03, duration: 0.12, yoyo: true, repeat: 1, ease: "sine.inOut" }, b));
+tl.to(Q(".hero"), { scale: 0.42, y: -400, opacity: 0, filter: "blur(10px)", duration: 0.42, ease: "power3.in" }, A - 0.4);
+tl.fromTo(Q(".hd"), { opacity: 0, y: -24 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, A + 0.05);
+
+/* ---------- las tres afirmaciones ---------- */
+function enter(i, t) {
+  const s = ".r" + i;
+  tl.fromTo(Q(s), { opacity: 0, x: i % 2 ? 180 : -180 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, t);
+  tl.fromTo(Q(".n" + i), { scale: 0.3, rotation: -16 }, { scale: 1, rotation: 0, duration: 0.65, ease: SPR }, t + 0.05);
+  tl.fromTo(Q(s + " .ic"), { scale: 0.3, rotation: 14 }, { scale: 1, rotation: 0, duration: 0.65, ease: SPR }, t + 0.15);
+  tl.fromTo(Q(s + " .ra"), { yPercent: 110 }, { yPercent: 0, duration: 0.75, ease: E }, t + 0.1);
+  tl.fromTo(Q(s + " .rb"), { yPercent: 110 }, { yPercent: 0, duration: 0.75, ease: E }, t + 0.24);
+  tl.fromTo(Q(".k" + i), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 5, duration: 0.8, ease: "power3.out", immediateRender: false }, t + 0.05);
+  tl.fromTo(Q(".g" + i), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.6, ease: "power2.out" }, t);
+  tl.to(Q(".g" + i), { opacity: 0.55, duration: 1.2, ease: "sine.inOut" }, t + 0.6);
+}
+enter(0, A); enter(1, M); enter(2, D);
+
+/* iconos que se dibujan y se mueven */
+tl.fromTo(Q(".i1 .p"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.7, ease: "power2.out", stagger: 0.1 }, A + 0.25);
+tl.fromTo(Q(".i1 .sp"), { scale: 0, rotation: -90, svgOrigin: "98 26" }, { scale: 1, rotation: 0, svgOrigin: "98 26", duration: 0.6, ease: SPR }, A + 0.65);
+tl.to(Q(".i1 .sp"), { scale: 1.35, svgOrigin: "98 26", duration: 0.35, yoyo: true, repeat: 5, ease: "sine.inOut" }, A + 1.4);
+tl.fromTo(Q(".i2 .p"), { strokeDashoffset: 1 }, { strokeDashoffset: 0, duration: 0.7, ease: "power2.out", stagger: 0.09 }, M + 0.25);
+tl.fromTo(Q(".i2 .ndl"), { rotation: -80, svgOrigin: "60 92" }, { rotation: 38, svgOrigin: "60 92", duration: 1.0, ease: "elastic.out(1,0.45)" }, M + 0.55);
+tl.to(Q(".i2 .ndl"), { rotation: 52, svgOrigin: "60 92", duration: 0.5, ease: "sine.inOut", yoyo: true, repeat: 3 }, M + 1.8);
+tl.fromTo(Q(".i3 .coin"), { y: -70, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, ease: "bounce.out", stagger: 0.14 }, D + 0.25);
+tl.to(Q(".i3 .c3"), { y: -8, duration: 0.2, yoyo: true, repeat: 5, ease: "sine.inOut" }, MAR - 0.1);
+tl.to(Q(".i3 .c2"), { y: -5, duration: 0.2, yoyo: true, repeat: 5, ease: "sine.inOut" }, MAR);
+/* «en marcha»: la fila 3 late */
+tl.fromTo(Q(".r2"), { scale: 1 }, { scale: 1.025, duration: 0.25, yoyo: true, repeat: 3, ease: "sine.inOut" }, MAR - 0.05);
+
+/* ---------- despedida: Nos vemos el lunes. ---------- */
+tl.to(Q(".r0"), { x: -260, opacity: 0, filter: "blur(14px)", duration: 0.36, ease: "power3.in" }, OUT);
+tl.to(Q(".r1"), { x: 260, opacity: 0, filter: "blur(14px)", duration: 0.36, ease: "power3.in" }, OUT + 0.06);
+tl.to(Q(".r2"), { x: -260, opacity: 0, filter: "blur(14px)", duration: 0.36, ease: "power3.in" }, OUT + 0.12);
+tl.to(Q(".hd"), { opacity: 0, y: -30, duration: 0.3, ease: "power2.in" }, OUT);
+tl.to(Q(".gl"), { opacity: 0.35, duration: 0.5 }, OUT);
+function hit(sel, at, d = 0.46) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 1.8, filter: "blur(22px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 12, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + d - 0.04);
+  tl.set(Q(sel), { x: 0 }, at + d + 0.34);
+}
+hit(".f1", N + 0.1); hit(".f2", L, 0.5);
+up(".f3", L + 0.4, { y: 22, d: 0.5 });
+tl.fromTo(Q(".sw"), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 8, duration: 0.9, ease: "power3.out", immediateRender: false }, L);
+/* confeti con semilla fija */
+const bursts = [];
+for (let i = 0; i < 26; i++) {
+  const el = document.createElement("div"); el.className = "pt"; el.style.zIndex = 21;
+  const sz = 10 + (i % 3) * 6; el.style.cssText += ";width:" + sz + "px;height:" + sz + "px;background:" + ["#7D29E0", "#FF01A2", "#9B61F6", "#FF6FC7"][i % 4] + ";border-radius:" + (i % 2 ? "50%" : "3px") + ";opacity:0;z-index:21";
+  ptsEl.appendChild(el);
+  const ang = i * (Math.PI * 2 / 26) + rnd() * 0.3, r = 360 + rnd() * 420;
+  tl.fromTo(el, { x: 960, y: 560, opacity: 1, scale: 0.4, rotation: 0 }, { x: 960 + Math.cos(ang) * r, y: 560 + Math.sin(ang) * r * 0.62, opacity: 0, scale: 1, rotation: 240 * (i % 2 ? 1 : -1), duration: 1.0, ease: "power3.out", immediateRender: false }, L + 0.05);
+  tl.set(el, { opacity: 0 }, 0);
+}
+
+/* ---------- ÚLTIMO ~1,1 s: iris a claro y aro violeta→rosa que se asienta donde nace el logo ---------- */
+const X0 = DUR - 1.1;
+tl.to(Q(".fin"), { scale: 1.08, opacity: 0, filter: "blur(8px)", duration: 0.45, ease: "power2.in" }, X0 + 0.05);
+tl.set(Q(".iris"), { opacity: 1 }, X0);
+tl.fromTo(Q(".iris"), { scale: 0.05 }, { scale: 16, duration: 0.8, ease: "power3.in" }, X0);
+tl.set(Q(".rc"), { opacity: 1 }, X0 + 0.15);
+tl.fromTo(Q(".rc"), { attr: { cx: 960, cy: 540, r: 24 } }, { attr: { cx: 533, cy: 538, r: 85.5 }, duration: 0.9, ease: "expo.out" }, X0 + 0.15);
+<!--SFX-->
+[{"k":"impact","t":0.1,"v":0.5},{"k":"impact","t":2.12,"v":0.5},{"k":"impact","t":3.9,"v":0.5},{"k":"impact","t":7.27,"v":0.5},{"k":"ding","t":9.4,"v":0.35},{"k":"swipe","t":10.0,"v":0.4},{"k":"impact","t":10.86,"v":0.55},{"k":"shimmer","t":12.3,"v":0.5}]

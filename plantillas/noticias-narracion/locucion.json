@@ -1,0 +1,73 @@
+{
+ "_plantilla": "noticias-narracion · 15 bloques (gancho + 5 bloques temáticos + cierre). Sustituye cada texto por la locución real: 1–3 frases por bloque, ≈ 150 palabras por minuto (3–4 min ≈ 500–600 palabras, ≈ 3.500 caracteres), cifras y siglas escritas como se dicen. pausaDespues 0.7 al cerrar cada bloque temático. voz vacía = ELEVENLABS_VOICE_ID y ELEVENLABS_MODEL_ID de .env (eleven_v4); otra voz: {\"id\": \"<voice_id>\"}; más rápido: {\"modelo\": \"eleven_v4_turbo\"}. Si cambias una frase que usa guion.json como cue, cámbiala también allí (o pasa plantillas/herramientas/cues.py).",
+ "voz": {},
+ "pausaEntreBloques": 0.35,
+ "bloques": [
+  {
+   "id": "b01",
+   "texto": "Esto es el gancho de la noticia: qué ha pasado, cuándo y dónde. Por qué te importa, en una sola frase. Te contamos lo importante en menos de cuatro minutos.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b02",
+   "texto": "Empezamos por la noticia principal, la que más cambia las cosas. Aquí va qué es, dicho en una frase clara. Y a quién afecta, en otra frase corta."
+  },
+  {
+   "id": "b03",
+   "texto": "Cómo funciona por dentro: la primera pieza, la segunda pieza y la tercera pieza, una detrás de otra, con una cifra verificada en la fuente oficial."
+  },
+  {
+   "id": "b04",
+   "texto": "¿Y quién tiene el control? Lo que decide cada usuario, lo que hace el sistema solo y lo que siempre necesita tu aprobación."
+  },
+  {
+   "id": "b05",
+   "texto": "Ojo con la disponibilidad. Dónde llega ya y para qué planes. Y dónde todavía no llega, según la fuente oficial.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b06",
+   "texto": "Segundo bloque: la segunda noticia, en pocas palabras y sin rodeos para empezar. Lo nuevo de verdad, dicho con el nombre exacto del producto."
+  },
+  {
+   "id": "b07",
+   "texto": "Los números de esta noticia: el primer precio, el segundo precio y el tercer precio, siempre como los publica la fuente oficial."
+  },
+  {
+   "id": "b08",
+   "texto": "Y un dato que llama la atención: hasta tantas veces más, según la propia empresa. Hoy funciona así; lo siguiente llegará muy pronto.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b09",
+   "texto": "Tercer bloque, para quien lo usa cada día en su trabajo. Lo que cambia desde hoy, contado con un ejemplo concreto."
+  },
+  {
+   "id": "b10",
+   "texto": "Tres novedades rápidas en este bloque. La primera novedad, en una frase. La segunda novedad, en otra. Y la tercera novedad, para terminar."
+  },
+  {
+   "id": "b11",
+   "texto": "Cómo encaja todo: en el centro está la plataforma, y alrededor, la primera herramienta, la segunda herramienta y la tercera herramienta.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b12",
+   "texto": "Cuarto bloque: el cambio de fondo, lo que hay detrás de todos estos anuncios. Una cifra de contexto, siempre con su fuente. Y lo que quiere conseguir quien lo anuncia."
+  },
+  {
+   "id": "b13",
+   "texto": "Lo que llega en las próximas semanas: primero una cosa, después otra, y al final la tercera, con fechas solo si son oficiales.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b14",
+   "texto": "Y por último, el quinto bloque: los planes y los precios que cambian con este anuncio. Lo que cambia para quien paga cada mes. Y lo que cambia para las empresas.",
+   "pausaDespues": 0.7
+  },
+  {
+   "id": "b15",
+   "texto": "En resumen: la primera idea, la segunda idea y la tercera idea, en una frase cada una. Tienes las fuentes en la descripción. ¡Nos vemos en el próximo vídeo!"
+  }
+ ]
+}

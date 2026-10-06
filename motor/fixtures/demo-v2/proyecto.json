@@ -1,0 +1,8 @@
+{
+  "slug": "demo-v2",
+  "titulo": "Fixture con la máscara real de dora-v2",
+  "estilo": "curso-azul",
+  "ponente": {
+    "recorte": true
+  }
+}

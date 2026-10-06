@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1545" height="875" viewBox="0 0 1545 875">
+  <!-- Lámina de cómic SINTÉTICA para el fixture (personajes genéricos, sin personas reales). -->
+  <defs>
+    <linearGradient id="pared" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3C98B"/><stop offset="1" stop-color="#E29A55"/></linearGradient>
+    <linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7EC8F2"/><stop offset="1" stop-color="#CDEBFA"/></linearGradient>
+    <linearGradient id="mesa" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8A4F2A"/><stop offset="1" stop-color="#5E3218"/></linearGradient>
+    <pattern id="trama" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="7" cy="7" r="2.2" fill="#B25E24" opacity="0.35"/></pattern>
+    <radialGradient id="luz" cx="0.5" cy="0.3" r="0.7"><stop offset="0" stop-color="#FFF6D8" stop-opacity="0.7"/><stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1545" height="875" fill="url(#pared)"/>
+  <rect width="1545" height="875" fill="url(#trama)"/>
+  <!-- ventana -->
+  <rect x="980" y="70" width="440" height="300" rx="10" fill="url(#cielo)" stroke="#161616" stroke-width="9"/>
+  <path d="M1200 70 V370 M980 220 H1420" stroke="#161616" stroke-width="7"/>
+  <path d="M1010 330 C1080 270 1150 300 1200 250 C1260 200 1330 260 1400 230 V360 H1010 Z" fill="#6DBB6A" stroke="#161616" stroke-width="5"/>
+  <circle cx="1340" cy="130" r="36" fill="#FFE14A" stroke="#161616" stroke-width="5"/>
+  <!-- pizarra con gráfica -->
+  <rect x="120" y="80" width="420" height="270" rx="10" fill="#FDFBF3" stroke="#161616" stroke-width="9"/>
+  <path d="M160 300 L250 240 L330 270 L420 170 L500 190" fill="none" stroke="#E0432B" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M160 120 V310 H505" fill="none" stroke="#161616" stroke-width="6"/>
+  <rect width="1545" height="875" fill="url(#luz)"/>
+  <!-- personajes (genéricos) -->
+  <g stroke="#161616" stroke-width="9" stroke-linejoin="round">
+    <path d="M250 900 C250 690 300 610 400 610 C500 610 550 690 550 900 Z" fill="#3E6FD8"/>
+    <circle cx="400" cy="500" r="100" fill="#F2B98C"/>
+    <path d="M305 470 C300 380 490 360 500 470 C470 420 360 420 305 470 Z" fill="#3A2A1E"/>
+    <circle cx="365" cy="505" r="11" fill="#161616" stroke="none"/><circle cx="435" cy="505" r="11" fill="#161616" stroke="none"/>
+    <path d="M370 555 Q400 575 430 555" fill="none" stroke-width="7"/>
+    <path d="M660 900 C660 700 700 640 790 640 C880 640 920 700 920 900 Z" fill="#2FA37A"/>
+    <circle cx="790" cy="540" r="92" fill="#C98B5E"/>
+    <path d="M700 520 C700 430 880 430 880 520 C850 470 740 470 700 520 Z" fill="#161616"/>
+    <circle cx="757" cy="548" r="10" fill="#161616" stroke="none"/><circle cx="823" cy="548" r="10" fill="#161616" stroke="none"/>
+    <path d="M760 596 Q790 584 820 596" fill="none" stroke-width="7"/>
+    <path d="M1040 900 C1040 690 1090 620 1190 620 C1290 620 1340 690 1340 900 Z" fill="#E0432B"/>
+    <circle cx="1190" cy="515" r="98" fill="#F6CFA8"/>
+    <path d="M1095 500 C1080 400 1300 390 1290 500 C1300 560 1290 430 1190 440 C1110 440 1100 520 1095 500 Z" fill="#8C5A2B"/>
+    <circle cx="1155" cy="522" r="11" fill="#161616" stroke="none"/><circle cx="1225" cy="522" r="11" fill="#161616" stroke="none"/>
+    <path d="M1160 572 Q1190 590 1220 572" fill="none" stroke-width="7"/>
+  </g>
+  <!-- mesa delante -->
+  <path d="M40 760 L1505 760 L1545 875 L0 875 Z" fill="url(#mesa)" stroke="#161616" stroke-width="9"/>
+  <rect x="330" y="720" width="160" height="46" rx="6" fill="#FDFBF3" stroke="#161616" stroke-width="6"/>
+  <rect x="1110" y="715" width="120" height="52" rx="8" fill="#9CE5DF" stroke="#161616" stroke-width="6"/>
+  <path d="M720 725 h140 v40 h-140 z" fill="#FFE14A" stroke="#161616" stroke-width="6"/>
+</svg>

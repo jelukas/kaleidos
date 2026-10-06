@@ -1,0 +1,2718 @@
+{
+ "fixes": {
+  "ene ocho ene": "n8n",
+  "Ene ocho ene": "n8n",
+  "fair code": "fair-code",
+  "Edit fields": "Edit Fields",
+  "Hub Spot": "HubSpot",
+  "Google sheets": "Google Sheets",
+  "web hook": "webhook"
+ },
+ "cortes": [],
+ "intro": {
+  "estilo": "marca",
+  "previo": 4.0,
+  "palabras": [
+   "n8n",
+   "DESDE",
+   "CERO"
+  ],
+  "etiquetas": [
+   "Curso",
+   "Para no técnicos"
+  ],
+  "lema": "Automatiza tu trabajo sin programar",
+  "kicker": "Curso de introducción",
+  "titulo": "Introducción a n8n",
+  "subtitulo": "Automatiza sin programar, con casos reales",
+  "disposicion": "completa",
+  "franja": {
+   "titulo": "Introducción a n8n",
+   "subtitulo": "4 capítulos · 15 lecciones",
+   "firma": "Una formación de OpenWebinars"
+  }
+ },
+ "capitulos": [
+  {
+   "cue": "Capítulo uno",
+   "n": 1,
+   "sigla": "1",
+   "registro": "editorial",
+   "kicker": "Capítulo 1",
+   "titulo": "Qué es n8n",
+   "subtitulo": "Lección 1.1 · Automatizar sin programar",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "cue": "Capítulo dos",
+   "n": 2,
+   "sigla": "2",
+   "registro": "editorial",
+   "kicker": "Capítulo 2",
+   "titulo": "Las piezas de n8n",
+   "subtitulo": "Lección 2.1 · Disparadores",
+   "acento": 1,
+   "objeto3d": null
+  },
+  {
+   "cue": "Capítulo tres",
+   "n": 3,
+   "sigla": "3",
+   "registro": "editorial",
+   "kicker": "Capítulo 3",
+   "titulo": "Tu primer flujo",
+   "subtitulo": "Lección 3.1 · Formulario → hoja → aviso",
+   "acento": 2,
+   "objeto3d": null
+  },
+  {
+   "cue": "Capítulo cuatro",
+   "n": 4,
+   "sigla": "4",
+   "registro": "editorial",
+   "kicker": "Capítulo 4",
+   "titulo": "Casos de uso reales",
+   "subtitulo": "Lección 4.1 · Marketing: contactos al CRM",
+   "acento": 3,
+   "objeto3d": null
+  },
+  {
+   "cue": "Y llegamos al final del curso",
+   "n": 5,
+   "sigla": "✓",
+   "registro": "editorial",
+   "kicker": "Para terminar",
+   "titulo": "Cierre",
+   "subtitulo": "Buenas prácticas y siguientes pasos",
+   "acento": 0,
+   "objeto3d": null
+  }
+ ],
+ "eventos": [
+  {
+   "tipo": "lamina",
+   "cue": "te doy la bienvenida a este curso",
+   "imagen": "lamina-bienvenida",
+   "bocadillos": [
+    {
+     "cue": "copiando datos de un correo",
+     "texto": "¿Otra vez copiar y pegar?",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "No necesitas saber programar"
+  },
+  {
+   "tipo": "panel",
+   "cue": "No necesitas saber programar",
+   "kind": "checklist",
+   "kicker": "Bienvenida",
+   "titulo": "Al terminar sabrás",
+   "items": [
+    {
+     "texto": "Qué es n8n",
+     "icono": "bombilla",
+     "cue": "para que al terminar sepas"
+    },
+    {
+     "texto": "Cómo funciona por dentro",
+     "icono": "engranaje",
+     "cue": "cómo funciona por dentro"
+    },
+    {
+     "texto": "Montar tu primera automatización",
+     "icono": "check",
+     "cue": "cómo montar tu primera automatización"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Qué necesitas para seguirlo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Qué necesitas para seguirlo",
+   "kind": "lista",
+   "kicker": "Antes de empezar",
+   "titulo": "Solo necesitas",
+   "items": [
+    {
+     "texto": "Un ordenador con navegador",
+     "icono": "mundo",
+     "cue": "un ordenador con navegador"
+    },
+    {
+     "texto": "Ganas de probar",
+     "icono": "rayo",
+     "cue": "ganas de probar"
+    },
+    {
+     "texto": "Una tarea concreta en mente",
+     "icono": "objetivo",
+     "cue": "una tarea concreta de tu trabajo"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "El curso tiene cuatro capítulos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "El curso tiene cuatro capítulos",
+   "kind": "linea",
+   "kicker": "El curso",
+   "titulo": "Cuatro capítulos",
+   "hitos": [
+    {
+     "cue": "En el primero veremos",
+     "etiqueta": "1",
+     "texto": "Qué es n8n"
+    },
+    {
+     "cue": "En el segundo, las piezas",
+     "etiqueta": "2",
+     "texto": "Las piezas"
+    },
+    {
+     "cue": "En el tercero montaremos",
+     "etiqueta": "3",
+     "texto": "Tu primer flujo"
+    },
+    {
+     "cue": "Y en el cuarto repasaremos",
+     "etiqueta": "4",
+     "texto": "Casos de uso reales"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Capítulo uno"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Piensa en las tareas que repites",
+   "kind": "lista",
+   "kicker": "Lección 1.1",
+   "titulo": "Tareas que se repiten",
+   "items": [
+    {
+     "texto": "Copiar datos de un formulario a una hoja",
+     "icono": "documento",
+     "cue": "Copiar los datos de un formulario"
+    },
+    {
+     "texto": "Reenviar un correo a quien toca",
+     "icono": "correo",
+     "cue": "Reenviar un correo a la persona"
+    },
+    {
+     "texto": "Preparar el mismo informe cada lunes",
+     "icono": "calendario",
+     "cue": "Preparar el mismo informe"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Son tareas sencillas, pero se comen horas"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Son tareas sencillas, pero se comen horas",
+   "imagen": "lamina-copiar-pegar",
+   "bocadillos": [
+    {
+     "cue": "Son tareas sencillas",
+     "texto": "¡Se comen horas!",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Automatizar es enseñar al ordenador"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Automatizar es enseñar al ordenador",
+   "kind": "pasos",
+   "kicker": "Lección 1.1",
+   "titulo": "Automatizar es dar una receta",
+   "items": [
+    {
+     "texto": "Cuándo empieza",
+     "icono": "reloj",
+     "cue": "cuándo tiene que empezar"
+    },
+    {
+     "texto": "Qué pasos sigue",
+     "icono": "flecha",
+     "cue": "qué pasos tiene que seguir"
+    },
+    {
+     "texto": "Dónde deja el resultado",
+     "icono": "objetivo",
+     "cue": "dónde tiene que dejar el resultado"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Esa receta de pasos tiene un nombre"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Esa receta de pasos tiene un nombre",
+   "imagen": "lamina-domino",
+   "bocadillos": [
+    {
+     "cue": "o workflow, en inglés",
+     "texto": "Workflow = flujo de trabajo",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "es una herramienta para crear esos workflows de forma visual"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "es una herramienta para crear esos workflows de forma visual",
+   "imagen": "cap-home",
+   "bocadillos": [],
+   "pie": "n8n.io",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "En lugar de escribir código, colocas cajas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "En lugar de escribir código, colocas cajas",
+   "kind": "clave",
+   "kicker": "Lección 1.1",
+   "titulo": "Sin escribir código",
+   "texto": "Colocas cajas en un lienzo y las unes con flechas. Cada caja hace una cosa.",
+   "resalta": [
+    "cajas",
+    "flechas"
+   ],
+   "registro": "editorial",
+   "hasta": "más de quinientas integraciones"
+  },
+  {
+   "tipo": "panel",
+   "cue": "más de quinientas integraciones",
+   "kind": "cifra",
+   "kicker": "Según n8n.io",
+   "titulo": "Más de",
+   "valor": 500,
+   "valorInicial": 0,
+   "etiqueta": "integraciones: Gmail, Google Sheets, Slack, Notion, HubSpot…",
+   "registro": "editorial",
+   "hasta": "Un ejemplo rápido"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Un ejemplo rápido",
+   "kind": "pasos",
+   "kicker": "Ejemplo",
+   "titulo": "Formulario → hoja → aviso",
+   "items": [
+    {
+     "texto": "Alguien rellena el formulario de tu web",
+     "icono": "documento"
+    },
+    {
+     "texto": "Se guarda en una hoja de cálculo",
+     "icono": "datos",
+     "cue": "guarda sus datos en una hoja de cálculo"
+    },
+    {
+     "texto": "Tu equipo recibe un aviso en Slack",
+     "icono": "mensaje",
+     "cue": "avisa a tu equipo por Slack"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Y no es solo cosa de marketing"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Y no es solo cosa de marketing",
+   "kind": "lista",
+   "kicker": "En toda la empresa",
+   "titulo": "No solo marketing",
+   "items": [
+    {
+     "texto": "Recursos humanos: incorporaciones",
+     "icono": "personas",
+     "cue": "En recursos humanos"
+    },
+    {
+     "texto": "Finanzas: facturas a su carpeta y a la hoja",
+     "icono": "dinero",
+     "cue": "En finanzas, guardar cada factura"
+    },
+    {
+     "texto": "Dirección: resumen de los lunes",
+     "icono": "grafica",
+     "cue": "En dirección, recibir cada lunes"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Una idea antes de seguir"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Una idea antes de seguir",
+   "kind": "clave",
+   "kicker": "Lección 1.1",
+   "titulo": "Una idea clave",
+   "texto": "Automatizar no es sustituir a las personas: es quitarles lo repetitivo.",
+   "resalta": [
+    "repetitivo"
+   ],
+   "registro": "editorial",
+   "hasta": "frente a Zapier y Make"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "frente a Zapier y Make",
+   "antetitulo": "Lección 1.2",
+   "texto": "n8n, Zapier y Make",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Si has oído hablar de automatización"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Si has oído hablar de automatización",
+   "imagen": "lamina-tres-caminos",
+   "bocadillos": [
+    {
+     "cue": "seguramente te suenan Zapier o Make",
+     "texto": "¿Cuál elijo?",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "qué tiene de especial"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "qué tiene de especial",
+   "imagen": "cap-vs-zapier",
+   "bocadillos": [],
+   "pie": "Comparativa publicada por n8n · n8n.io/vs/zapier",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "La primera diferencia es que puedes instalarlo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "La primera diferencia es que puedes instalarlo",
+   "kind": "tarjeta",
+   "kicker": "Diferencia 1",
+   "titulo": "Puedes instalarlo tú",
+   "texto": "Código fuente disponible: puedes usarlo en tus propios servidores.",
+   "icono": "servidor",
+   "registro": "editorial",
+   "hasta": "ellos mismos aclaran que no lo llaman código abierto"
+  },
+  {
+   "tipo": "panel",
+   "cue": "ellos mismos aclaran que no lo llaman código abierto",
+   "kind": "clave",
+   "kicker": "Licencia",
+   "titulo": "Fair-code, no «open source»",
+   "texto": "Su licencia pone algunos límites al uso comercial, así que n8n no se llama a sí mismo open source.",
+   "resalta": [
+    "fair-code",
+    "límites"
+   ],
+   "registro": "editorial",
+   "hasta": "Zapier y Make, en cambio, funcionan en la nube"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Zapier y Make, en cambio, funcionan en la nube",
+   "kind": "comparativa",
+   "kicker": "Diferencia 1",
+   "titulo": "¿Dónde funciona?",
+   "izq": {
+    "titulo": "n8n",
+    "tono": "ok",
+    "items": [
+     "En tus servidores o en su nube"
+    ]
+   },
+   "der": {
+    "titulo": "Zapier y Make",
+    "tono": "neutro",
+    "items": [
+     "En la nube de cada empresa"
+    ]
+   },
+   "registro": "editorial",
+   "hasta": "La segunda diferencia es la forma de cobrar"
+  },
+  {
+   "tipo": "panel",
+   "cue": "La segunda diferencia es la forma de cobrar",
+   "kind": "lista",
+   "kicker": "Diferencia 2 · según sus páginas de precios",
+   "titulo": "Cómo cobra cada una",
+   "items": [
+    {
+     "texto": "Zapier: por tarea (cada acción que sale bien)",
+     "icono": "check",
+     "cue": "Zapier cuenta tareas"
+    },
+    {
+     "texto": "Make: por crédito (cada acción de un módulo)",
+     "icono": "dinero",
+     "cue": "Make cuenta créditos"
+    },
+    {
+     "texto": "n8n: por ejecución completa del workflow",
+     "icono": "rayo",
+     "cue": "Y ene ocho ene cuenta ejecuciones"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "La tercera es la flexibilidad"
+  },
+  {
+   "tipo": "panel",
+   "cue": "La tercera es la flexibilidad",
+   "kind": "pasos",
+   "kicker": "Diferencia 3",
+   "titulo": "Crece contigo",
+   "items": [
+    {
+     "texto": "Sin escribir código",
+     "icono": "check"
+    },
+    {
+     "texto": "Un poco de código si lo necesitas",
+     "icono": "codigo",
+     "cue": "puedes añadir un poco de código"
+    },
+    {
+     "texto": "Cualquier servicio con API",
+     "icono": "red",
+     "cue": "conectar con cualquier servicio"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Significa eso que es mejor para todo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Significa eso que es mejor para todo",
+   "kind": "lista",
+   "kicker": "Cada una brilla en algo",
+   "titulo": "¿Mejor para todo? No",
+   "items": [
+    {
+     "texto": "Zapier: +9.000 apps (según Zapier), muy sencillo",
+     "icono": "estrella",
+     "cue": "Zapier anuncia más de nueve mil"
+    },
+    {
+     "texto": "Make: +3.000 apps (según Make), muy visual",
+     "icono": "color",
+     "cue": "Make anuncia más de tres mil"
+    },
+    {
+     "texto": "n8n: flujos que crecen, control de los datos e IA",
+     "icono": "objetivo",
+     "cue": "brilla cuando tus flujos crecen"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Tercera lección: cómo empezar"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "Tercera lección: cómo empezar",
+   "antetitulo": "Lección 1.3",
+   "texto": "Cloud o autoalojado",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Tienes dos caminos"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Tienes dos caminos",
+   "imagen": "lamina-nube-casa",
+   "bocadillos": [
+    {
+     "cue": "se guardan en la Unión Europea",
+     "texto": "Datos en la UE (Fráncfort)",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "La versión en la nube se paga"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "La versión en la nube se paga",
+   "imagen": "cap-precios",
+   "bocadillos": [],
+   "pie": "n8n.io/pricing · consultado el 3/10/2026",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "el plan Starter cuesta"
+  },
+  {
+   "tipo": "panel",
+   "cue": "el plan Starter cuesta",
+   "kind": "comparativa",
+   "kicker": "n8n Cloud · precios de n8n.io",
+   "titulo": "Starter y Pro",
+   "izq": {
+    "titulo": "Starter",
+    "tono": "neutro",
+    "items": [
+     "20 €/mes con pago anual",
+     "24 €/mes con pago mensual",
+     "2.500 ejecuciones al mes"
+    ]
+   },
+   "der": {
+    "cue": "El plan Pro cuesta",
+    "titulo": "Pro",
+    "tono": "neutro",
+    "items": [
+     "50 €/mes con pago anual",
+     "60 €/mes con pago mensual",
+     "10.000 ejecuciones al mes"
+    ]
+   },
+   "registro": "editorial",
+   "hasta": "puedes probarla gratis durante catorce días"
+  },
+  {
+   "tipo": "sello",
+   "cue": "puedes probarla gratis durante catorce días",
+   "texto": "14 DÍAS GRATIS",
+   "tono": "ok",
+   "hasta": "El segundo camino es instalarlo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "El segundo camino es instalarlo",
+   "kind": "tarjeta",
+   "kicker": "Autoalojado",
+   "titulo": "Community Edition",
+   "texto": "Gratis, pero alguien la instala, la actualiza y hace copias de seguridad.",
+   "icono": "servidor",
+   "registro": "editorial",
+   "hasta": "Nuestro consejo, si no tienes perfil técnico"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Nuestro consejo, si no tienes perfil técnico",
+   "imagen": "cap-elegir",
+   "bocadillos": [
+    {
+     "cue": "empieza por la nube",
+     "texto": "Empieza por la nube",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "cue": "Te permite aprender sin preocuparte de servidores",
+     "texto": "Sin servidores que mantener",
+     "x": 0.75,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "cue": "porque el editor es el mismo",
+     "texto": "El editor es el mismo",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "docs.n8n.io · Choose how to use n8n",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Cuando entres por primera vez"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Cuando entres por primera vez",
+   "kind": "pasos",
+   "kicker": "Primeros pasos",
+   "titulo": "Tu primera visita",
+   "items": [
+    {
+     "texto": "Panel con tus workflows",
+     "icono": "carpeta"
+    },
+    {
+     "texto": "Crear un workflow nuevo",
+     "icono": "entrada",
+     "cue": "Al crear uno nuevo"
+    },
+    {
+     "texto": "El lienzo en blanco",
+     "icono": "documento",
+     "cue": "se abre el lienzo"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Capítulo dos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Si las entiendes, entiendes",
+   "kind": "mapa",
+   "kicker": "Capítulo 2",
+   "titulo": "Las piezas",
+   "centro": "Workflow",
+   "nodos": [
+    {
+     "texto": "Disparadores"
+    },
+    {
+     "texto": "Nodos"
+    },
+    {
+     "texto": "Datos"
+    },
+    {
+     "texto": "Credenciales"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Un disparador es el primer nodo"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Un disparador es el primer nodo",
+   "imagen": "lamina-disparadores",
+   "bocadillos": [
+    {
+     "cue": "cuándo empieza esto",
+     "texto": "¿Cuándo empieza esto?",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Hay varios tipos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Hay varios tipos",
+   "kind": "lista",
+   "kicker": "Lección 2.1",
+   "titulo": "Tipos de disparador",
+   "items": [
+    {
+     "texto": "Manual: «When clicking ‘Execute workflow’»",
+     "icono": "punto",
+     "cue": "el disparador manual"
+    },
+    {
+     "texto": "Por horario: Schedule Trigger",
+     "icono": "reloj",
+     "cue": "el disparador por horario"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "reaccionan a lo que pasa en tus aplicaciones"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "reaccionan a lo que pasa en tus aplicaciones",
+   "imagen": "cap-form-trigger",
+   "bocadillos": [
+    {
+     "cue": "cuando alguien envía un formulario",
+     "texto": "Correo, fila nueva, formulario…",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "n8n.io/integrations",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Y por último, el webhook"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Y por último, el webhook",
+   "kind": "tarjeta",
+   "kicker": "Lección 2.1",
+   "titulo": "Webhook",
+   "texto": "Un timbre con dirección propia en internet: otra aplicación lo toca y el workflow arranca.",
+   "icono": "red",
+   "registro": "editorial",
+   "hasta": "Cómo eliges el disparador adecuado"
+  },
+  {
+   "tipo": "reaccion",
+   "cue": "Cómo eliges el disparador adecuado",
+   "icono": "pregunta"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Cómo eliges el disparador adecuado",
+   "kind": "lista",
+   "kicker": "Lección 2.1",
+   "titulo": "¿Qué lo provoca?",
+   "items": [
+    {
+     "texto": "Una hora fija → horario",
+     "icono": "reloj",
+     "cue": "Si es una hora fija"
+    },
+    {
+     "texto": "La llegada de algo → disparador de la app",
+     "icono": "correo",
+     "cue": "Si es la llegada de algo"
+    },
+    {
+     "texto": "Otra herramienta avisa → webhook",
+     "icono": "red",
+     "cue": "Y si es otra herramienta"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Resumiendo: manual, por horario"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Resumiendo: manual, por horario",
+   "kind": "checklist",
+   "kicker": "Resumen",
+   "titulo": "Cuatro disparadores",
+   "items": [
+    {
+     "texto": "Manual",
+     "icono": "check"
+    },
+    {
+     "texto": "Por horario",
+     "icono": "check"
+    },
+    {
+     "texto": "Por evento en una app",
+     "icono": "check"
+    },
+    {
+     "texto": "Por webhook",
+     "icono": "check"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Segunda lección: los nodos y las acciones"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "Segunda lección: los nodos y las acciones",
+   "antetitulo": "Lección 2.2",
+   "texto": "Nodos y acciones",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Después del disparador vienen los demás nodos"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Después del disparador vienen los demás nodos",
+   "imagen": "lamina-cadena-montaje",
+   "bocadillos": [
+    {
+     "cue": "cada nodo hace una sola cosa",
+     "texto": "Un nodo = una tarea",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Hay nodos de aplicaciones"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Hay nodos de aplicaciones",
+   "kind": "lista",
+   "kicker": "Lección 2.2",
+   "titulo": "Nodos de aplicaciones",
+   "items": [
+    {
+     "texto": "Google Sheets · añadir una fila",
+     "icono": "datos",
+     "cue": "añadir una fila en Google Sheets"
+    },
+    {
+     "texto": "Gmail · enviar un correo",
+     "icono": "correo",
+     "cue": "enviar un correo con Gmail"
+    },
+    {
+     "texto": "HubSpot · crear un contacto",
+     "icono": "persona",
+     "cue": "crear un contacto en HubSpot"
+    },
+    {
+     "texto": "Slack · publicar un mensaje",
+     "icono": "mensaje",
+     "cue": "publicar un mensaje en Slack"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Y hay nodos generales"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Y hay nodos generales",
+   "kind": "lista",
+   "kicker": "Lección 2.2",
+   "titulo": "Nodos generales",
+   "items": [
+    {
+     "texto": "If: un cruce de caminos",
+     "icono": "flecha",
+     "cue": "el nodo If"
+    },
+    {
+     "texto": "Filter: deja pasar lo que interesa",
+     "icono": "lupa",
+     "cue": "El nodo Filter"
+    },
+    {
+     "texto": "Edit Fields: ordena y renombra datos",
+     "icono": "engranaje",
+     "cue": "El nodo Edit Fields"
+    },
+    {
+     "texto": "Wait: espera antes de seguir",
+     "icono": "reloj",
+     "cue": "el nodo Wait"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Para cuando te animes a ir más lejos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Para cuando te animes a ir más lejos",
+   "kind": "lista",
+   "kicker": "Para más adelante",
+   "titulo": "Si un día quieres más",
+   "items": [
+    {
+     "texto": "HTTP Request: habla con casi cualquier servicio",
+     "icono": "mundo",
+     "cue": "el nodo HTTP Request"
+    },
+    {
+     "texto": "Code: pequeños fragmentos de código",
+     "icono": "codigo",
+     "cue": "y el nodo Code"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Veamos un ejemplo con todas estas piezas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Veamos un ejemplo con todas estas piezas",
+   "kind": "pasos",
+   "kicker": "Ejemplo",
+   "titulo": "Facturas por correo",
+   "items": [
+    {
+     "texto": "Llega un correo con una factura",
+     "icono": "correo",
+     "cue": "Llega un correo con una factura"
+    },
+    {
+     "texto": "If: ¿trae un archivo adjunto?",
+     "icono": "pregunta",
+     "cue": "comprueba si trae un archivo adjunto"
+    },
+    {
+     "texto": "Sí → Google Drive lo guarda en su carpeta",
+     "icono": "carpeta",
+     "cue": "guarda el archivo en la carpeta"
+    },
+    {
+     "texto": "No → Gmail pide el documento",
+     "icono": "mensaje",
+     "cue": "responde pidiendo el documento"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Para añadir un nodo, pulsas el botón"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Para añadir un nodo, pulsas el botón",
+   "imagen": "cap-integraciones",
+   "bocadillos": [
+    {
+     "cue": "los disparadores llevan el icono de un rayo",
+     "texto": "Disparadores: icono de rayo",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "n8n.io/integrations",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "los datos que pasan de un paso a otro"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "los datos que pasan de un paso a otro",
+   "antetitulo": "Lección 2.3",
+   "texto": "Los datos entre pasos",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Es la idea más importante del curso"
+  },
+  {
+   "tipo": "sello",
+   "cue": "Es la idea más importante del curso",
+   "texto": "IDEA CLAVE",
+   "tono": "aviso",
+   "hasta": "Cada nodo recibe datos del nodo anterior"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Cada nodo recibe datos del nodo anterior",
+   "imagen": "lamina-cajas-datos",
+   "bocadillos": [
+    {
+     "cue": "cada nodo abre la caja",
+     "texto": "Abre, mira, hace algo y pasa",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "cada una de esas cajas se llama item"
+  },
+  {
+   "tipo": "panel",
+   "cue": "cada una de esas cajas se llama item",
+   "kind": "pasos",
+   "kicker": "Lección 2.3",
+   "titulo": "Cada caja es un item",
+   "items": [
+    {
+     "texto": "Llegan 3 respuestas del formulario",
+     "icono": "documento",
+     "cue": "Si llegan tres respuestas"
+    },
+    {
+     "texto": "El siguiente nodo recibe 3 items",
+     "icono": "datos",
+     "cue": "el siguiente nodo recibe tres items"
+    },
+    {
+     "texto": "Trabaja una vez por cada item",
+     "icono": "check",
+     "cue": "una vez por cada uno"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Dentro de cada item"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Dentro de cada item",
+   "kind": "lista",
+   "kicker": "Lección 2.3",
+   "titulo": "Dentro de un item: campos",
+   "items": [
+    {
+     "texto": "nombre",
+     "icono": "nombre"
+    },
+    {
+     "texto": "correo",
+     "icono": "correo"
+    },
+    {
+     "texto": "mensaje",
+     "icono": "mensaje"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Por dentro se guardan en un formato llamado JSON"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Por dentro se guardan en un formato llamado JSON",
+   "imagen": "cap-datos",
+   "bocadillos": [],
+   "pie": "docs.n8n.io · n8n's data structure",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Con las expresiones"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Con las expresiones",
+   "kind": "clave",
+   "kicker": "Lección 2.3",
+   "titulo": "Expresiones",
+   "texto": "Una expresión es un hueco que se rellena solo con un dato del paso anterior.",
+   "resalta": [
+    "hueco"
+   ],
+   "registro": "editorial",
+   "hasta": "en el asunto de un correo escribes"
+  },
+  {
+   "tipo": "panel",
+   "cue": "en el asunto de un correo escribes",
+   "kind": "tarjeta",
+   "kicker": "Ejemplo",
+   "titulo": "Asunto del correo",
+   "texto": "Nuevo contacto: {{ nombre }} — arrastras el campo desde el panel de la izquierda.",
+   "icono": "correo",
+   "registro": "editorial",
+   "hasta": "Las expresiones se reconocen"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Las expresiones se reconocen",
+   "kind": "clave",
+   "kicker": "Lección 2.3",
+   "titulo": "Entre dobles llaves",
+   "texto": "{{ $json.nombre }} · lo más cómodo: arrastrar y soltar.",
+   "resalta": [
+    "arrastrar",
+    "soltar"
+   ],
+   "registro": "editorial",
+   "hasta": "Volvamos al ejemplo de las tres respuestas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Volvamos al ejemplo de las tres respuestas",
+   "kind": "pasos",
+   "kicker": "Ejemplo",
+   "titulo": "3 items → 3 mensajes",
+   "items": [
+    {
+     "texto": "Nuevo contacto: Persona 1",
+     "icono": "mensaje"
+    },
+    {
+     "texto": "Nuevo contacto: Persona 2",
+     "icono": "mensaje"
+    },
+    {
+     "texto": "Nuevo contacto: Persona 3",
+     "icono": "mensaje"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Un consejo: después de ejecutar un nodo"
+  },
+  {
+   "tipo": "reaccion",
+   "cue": "Un consejo: después de ejecutar un nodo",
+   "icono": "idea"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Un consejo: después de ejecutar un nodo",
+   "kind": "clave",
+   "kicker": "Consejo",
+   "titulo": "Mira los datos",
+   "texto": "Ver qué entra y qué sale de cada nodo es la mejor forma de entenderlo.",
+   "resalta": [
+    "entra",
+    "sale"
+   ],
+   "registro": "editorial",
+   "hasta": "Cuarta lección: las credenciales"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "Cuarta lección: las credenciales",
+   "antetitulo": "Lección 2.4",
+   "texto": "Credenciales",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "pueda leer tu correo o escribir en tu hoja"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "pueda leer tu correo o escribir en tu hoja",
+   "imagen": "lamina-llavero",
+   "bocadillos": [
+    {
+     "cue": "una llave que le das",
+     "texto": "Una credencial = una llave",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "crear la credencial es tan fácil"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "crear la credencial es tan fácil",
+   "imagen": "cap-credenciales",
+   "bocadillos": [
+    {
+     "cue": "siguiendo los pasos de la documentación",
+     "texto": "Los pasos, en la documentación",
+     "x": 0.75,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "cue": "Al guardarla",
+     "texto": "Al guardarla, n8n la prueba",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "docs.n8n.io · Create and edit credentials",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Las credenciales se crean una vez"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Las credenciales se crean una vez",
+   "kind": "checklist",
+   "kicker": "Lección 2.4",
+   "titulo": "Así funcionan",
+   "items": [
+    {
+     "texto": "Se crean una vez",
+     "icono": "llave"
+    },
+    {
+     "texto": "Se reutilizan en todos tus workflows",
+     "icono": "red",
+     "cue": "se reutilizan en todos tus workflows"
+    },
+    {
+     "texto": "Se guardan cifradas",
+     "icono": "candado",
+     "cue": "Y se guardan cifradas"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "En la práctica es así"
+  },
+  {
+   "tipo": "panel",
+   "cue": "En la práctica es así",
+   "kind": "pasos",
+   "kicker": "Ejemplo",
+   "titulo": "Credencial de Google",
+   "items": [
+    {
+     "texto": "Despliega el campo de la credencial",
+     "icono": "flecha",
+     "cue": "despliegas el campo de la credencial"
+    },
+    {
+     "texto": "Crear una nueva",
+     "icono": "entrada",
+     "cue": "eliges crear una nueva"
+    },
+    {
+     "texto": "Inicia sesión con Google",
+     "icono": "persona",
+     "cue": "inicias sesión con tu cuenta de Google"
+    },
+    {
+     "texto": "Acepta los permisos",
+     "icono": "check",
+     "cue": "aceptas los permisos"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Tres reglas de oro"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Tres reglas de oro",
+   "kind": "checklist",
+   "kicker": "Lección 2.4",
+   "titulo": "Tres reglas de oro",
+   "items": [
+    {
+     "texto": "Solo los permisos necesarios",
+     "icono": "candado",
+     "cue": "da solo los permisos necesarios"
+    },
+    {
+     "texto": "Nunca pegues claves en un nodo o una nota",
+     "icono": "alerta",
+     "tono": "aviso",
+     "cue": "nunca pegues contraseñas"
+    },
+    {
+     "texto": "Si alguien deja el equipo, revisa y cambia",
+     "icono": "personas",
+     "cue": "si alguien deja el equipo"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Capítulo tres"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Vamos a construir juntos un caso muy común",
+   "imagen": "lamina-formulario-hoja",
+   "bocadillos": [
+    {
+     "cue": "guarda cada respuesta en una hoja de cálculo",
+     "texto": "Formulario → hoja → aviso",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "un poco de preparación"
+  },
+  {
+   "tipo": "panel",
+   "cue": "un poco de preparación",
+   "kind": "lista",
+   "kicker": "Antes de empezar",
+   "titulo": "Prepara la hoja: fila 1",
+   "items": [
+    {
+     "texto": "nombre",
+     "icono": "nombre"
+    },
+    {
+     "texto": "correo",
+     "icono": "correo"
+    },
+    {
+     "texto": "curso",
+     "icono": "documento"
+    },
+    {
+     "texto": "fecha",
+     "icono": "calendario"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Paso uno: el disparador"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Paso uno: el disparador",
+   "kind": "pasos",
+   "kicker": "Paso 1",
+   "titulo": "On form submission",
+   "items": [
+    {
+     "texto": "Título: «Solicitud de formación»",
+     "icono": "documento",
+     "cue": "solicitud de formación"
+    },
+    {
+     "texto": "Campo: nombre",
+     "icono": "nombre",
+     "cue": "creas tres campos"
+    },
+    {
+     "texto": "Campo: correo",
+     "icono": "correo",
+     "cue": "creas tres campos"
+    },
+    {
+     "texto": "Campo: curso que te interesa",
+     "icono": "objetivo",
+     "cue": "y curso que te interesa"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "te da una dirección para abrir el formulario"
+  },
+  {
+   "tipo": "panel",
+   "cue": "te da una dirección para abrir el formulario",
+   "kind": "tarjeta",
+   "kicker": "Paso 1",
+   "titulo": "Pruébalo",
+   "texto": "Rellénalo una vez con datos de prueba inventados.",
+   "icono": "documento",
+   "registro": "editorial",
+   "hasta": "Paso dos: guardar en una hoja de cálculo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Paso dos: guardar en una hoja de cálculo",
+   "kind": "pasos",
+   "kicker": "Paso 2",
+   "titulo": "Google Sheets",
+   "items": [
+    {
+     "texto": "Acción: añadir una fila",
+     "icono": "datos",
+     "cue": "con la acción de añadir una fila"
+    },
+    {
+     "texto": "Tu credencial de Google",
+     "icono": "llave",
+     "cue": "Eliges tu credencial de Google"
+    },
+    {
+     "texto": "Documento y hoja",
+     "icono": "carpeta",
+     "cue": "el documento y la hoja"
+    },
+    {
+     "texto": "Cada columna con su campo",
+     "icono": "flecha",
+     "cue": "relacionas cada columna con su campo"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Paso tres: avisar al equipo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Paso tres: avisar al equipo",
+   "kind": "tarjeta",
+   "kicker": "Paso 3",
+   "titulo": "Aviso en Slack o Gmail",
+   "texto": "Acción: enviar un mensaje",
+   "icono": "mensaje",
+   "registro": "editorial",
+   "hasta": "En el texto combinas palabras fijas con expresiones"
+  },
+  {
+   "tipo": "panel",
+   "cue": "En el texto combinas palabras fijas con expresiones",
+   "kind": "clave",
+   "kicker": "Paso 3",
+   "titulo": "Palabras fijas + expresiones",
+   "texto": "Nueva solicitud de {{ nombre }} para el curso {{ curso }}",
+   "resalta": [
+    "{{ nombre }}",
+    "{{ curso }}"
+   ],
+   "registro": "editorial",
+   "hasta": "Fíjate en que, en este workflow"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Fíjate en que, en este workflow",
+   "kind": "lista",
+   "kicker": "Buena práctica",
+   "titulo": "Nodos con nombre",
+   "items": [
+    {
+     "texto": "Formulario de solicitud",
+     "icono": "documento"
+    },
+    {
+     "texto": "Guardar en la hoja",
+     "icono": "datos",
+     "cue": "guardar en la hoja"
+    },
+    {
+     "texto": "Avisar al equipo",
+     "icono": "mensaje",
+     "cue": "avisar al equipo. Puedes renombrar"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Y listo: tres nodos unidos por flechas"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Y listo: tres nodos unidos por flechas",
+   "imagen": "cap-plantilla-formulario",
+   "bocadillos": [],
+   "pie": "Plantilla parecida en la galería oficial · n8n.io/workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Ese es tu primer workflow"
+  },
+  {
+   "tipo": "sello",
+   "cue": "Ese es tu primer workflow",
+   "texto": "¡PRIMER WORKFLOW!",
+   "tono": "ok",
+   "hasta": "probar y corregir errores"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "probar y corregir errores",
+   "antetitulo": "Lección 3.2",
+   "texto": "Probar y corregir",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Antes de dejar un workflow funcionando solo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Antes de dejar un workflow funcionando solo",
+   "kind": "comparativa",
+   "kicker": "Lección 3.2",
+   "titulo": "Dos botones para probar",
+   "izq": {
+    "titulo": "Execute workflow",
+    "tono": "neutro",
+    "items": [
+     "Ejecuta el workflow entero"
+    ]
+   },
+   "der": {
+    "cue": "y con Execute step",
+    "titulo": "Execute step",
+    "tono": "neutro",
+    "items": [
+     "Ejecuta un solo nodo"
+    ]
+   },
+   "registro": "editorial",
+   "hasta": "Cuando un nodo funciona, se marca en verde"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Cuando un nodo funciona, se marca en verde",
+   "imagen": "lamina-lupa-error",
+   "bocadillos": [
+    {
+     "cue": "ese mensaje casi siempre te da la pista",
+     "texto": "El mensaje te da la pista",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Los errores más habituales al empezar"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Los errores más habituales al empezar",
+   "kind": "checklist",
+   "kicker": "Lección 3.2",
+   "titulo": "Errores típicos",
+   "items": [
+    {
+     "texto": "Credencial sin permisos o caducada",
+     "icono": "llave",
+     "tono": "bad",
+     "cue": "Una credencial sin permisos"
+    },
+    {
+     "texto": "Un campo con otro nombre",
+     "icono": "nombre",
+     "tono": "bad",
+     "cue": "Un campo con un nombre distinto"
+    },
+    {
+     "texto": "Hoja o columna que no existe",
+     "icono": "datos",
+     "tono": "bad",
+     "cue": "Y una hoja o una columna que no existe"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Cómo se arregla"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Cómo se arregla",
+   "kind": "pasos",
+   "kicker": "Lección 3.2",
+   "titulo": "Cómo se arregla",
+   "items": [
+    {
+     "texto": "Abre el nodo en rojo",
+     "icono": "alerta",
+     "cue": "Abres el nodo en rojo"
+    },
+    {
+     "texto": "Lee el mensaje y mira los datos",
+     "icono": "lupa",
+     "cue": "lees el mensaje"
+    },
+    {
+     "texto": "Corrige",
+     "icono": "engranaje",
+     "cue": "Corriges lo que falla"
+    },
+    {
+     "texto": "Vuelve a ejecutar ese paso",
+     "icono": "check",
+     "cue": "vuelves a ejecutar solo ese paso"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "fijar los datos de prueba"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "fijar los datos de prueba",
+   "imagen": "cap-pin-data",
+   "bocadillos": [
+    {
+     "cue": "pulsas Pin data",
+     "texto": "Pin data: datos fijados",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "docs.n8n.io · Pin and mock data",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "deja notas en el lienzo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "deja notas en el lienzo",
+   "kind": "tarjeta",
+   "kicker": "Consejo",
+   "titulo": "Sticky notes",
+   "texto": "Notas en el lienzo para explicar qué hace cada parte.",
+   "icono": "documento",
+   "registro": "editorial",
+   "hasta": "poner el workflow en marcha y revisar"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "poner el workflow en marcha y revisar",
+   "antetitulo": "Lección 3.3",
+   "texto": "Publicar y revisar",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Todos los workflows nuevos empiezan sin publicar"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Todos los workflows nuevos empiezan sin publicar",
+   "imagen": "lamina-interruptor",
+   "bocadillos": [],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "pulsas el botón Publish"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "pulsas el botón Publish",
+   "imagen": "cap-publish",
+   "bocadillos": [
+    {
+     "cue": "pulsas el botón Publish",
+     "texto": "Publish",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "docs.n8n.io · Save and publish workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Ojo con un detalle"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Ojo con un detalle",
+   "kind": "comparativa",
+   "kicker": "Lección 3.3",
+   "titulo": "Dos direcciones",
+   "izq": {
+    "titulo": "Test URL",
+    "tono": "neutro",
+    "items": [
+     "Solo mientras pruebas"
+    ]
+   },
+   "der": {
+    "cue": "La de producción es la que debes compartir",
+    "titulo": "Production URL",
+    "tono": "ok",
+    "items": [
+     "La que compartes al publicar"
+    ]
+   },
+   "registro": "editorial",
+   "hasta": "lo apunta en la pestaña Executions"
+  },
+  {
+   "tipo": "panel",
+   "cue": "lo apunta en la pestaña Executions",
+   "kind": "lista",
+   "kicker": "Lección 3.3",
+   "titulo": "Executions",
+   "items": [
+    {
+     "texto": "Cuándo se ejecutó",
+     "icono": "reloj",
+     "cue": "Ahí ves cuándo se ejecutó"
+    },
+    {
+     "texto": "Si terminó bien o con error",
+     "icono": "check",
+     "cue": "si terminó bien o con error"
+    },
+    {
+     "texto": "Los datos, paso a paso",
+     "icono": "lupa",
+     "cue": "ver los datos paso a paso"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Para no enterarte tarde de los fallos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Para no enterarte tarde de los fallos",
+   "kind": "pasos",
+   "kicker": "Lección 3.3",
+   "titulo": "Workflow de errores",
+   "items": [
+    {
+     "texto": "Falla un workflow",
+     "icono": "alerta"
+    },
+    {
+     "texto": "Arranca el Error Trigger",
+     "icono": "rayo",
+     "cue": "empieza con el nodo Error Trigger"
+    },
+    {
+     "texto": "Te avisa por correo o Slack",
+     "icono": "correo",
+     "cue": "por correo o por Slack"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "La documentación lo dice claro"
+  },
+  {
+   "tipo": "panel",
+   "cue": "La documentación lo dice claro",
+   "kind": "cita",
+   "kicker": "docs.n8n.io",
+   "titulo": "Lo dice la documentación",
+   "texto": "Todo workflow en producción debería tener uno.",
+   "resalta": [
+    "Todo"
+   ],
+   "registro": "editorial",
+   "hasta": "Un último hábito"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Un último hábito",
+   "kind": "tarjeta",
+   "kicker": "Buena práctica",
+   "titulo": "Borrador hasta publicar",
+   "texto": "Mientras editas, n8n guarda tus cambios como borrador.",
+   "icono": "documento",
+   "registro": "editorial",
+   "hasta": "cuando cambies algo en un workflow que ya funciona"
+  },
+  {
+   "tipo": "panel",
+   "cue": "cuando cambies algo en un workflow que ya funciona",
+   "kind": "pasos",
+   "kicker": "Buena práctica",
+   "titulo": "Antes de volver a publicar",
+   "items": [
+    {
+     "texto": "Cambias algo",
+     "icono": "engranaje"
+    },
+    {
+     "texto": "Lo pruebas",
+     "icono": "lupa",
+     "cue": "pruébalo antes de publicarlo de nuevo"
+    },
+    {
+     "texto": "Lo vuelves a publicar",
+     "icono": "check",
+     "cue": "pruébalo antes de publicarlo de nuevo"
+    },
+    {
+     "texto": "Ojo: renombrar una columna puede romper un paso",
+     "icono": "alerta",
+     "tono": "aviso",
+     "cue": "Un cambio pequeño"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Enhorabuena: ya sabes construir"
+  },
+  {
+   "tipo": "sello",
+   "cue": "Enhorabuena: ya sabes construir",
+   "texto": "¡ENHORABUENA!",
+   "tono": "ok",
+   "hasta": "Capítulo cuatro"
+  },
+  {
+   "tipo": "panel",
+   "cue": "explicados como recetas que puedes adaptar",
+   "kind": "lista",
+   "kicker": "Capítulo 4",
+   "titulo": "Recetas",
+   "items": [
+    {
+     "texto": "Contactos al CRM",
+     "icono": "persona"
+    },
+    {
+     "texto": "Correos clasificados",
+     "icono": "correo"
+    },
+    {
+     "texto": "IA y agentes",
+     "icono": "bombilla"
+    },
+    {
+     "texto": "Plantillas",
+     "icono": "carpeta"
+    },
+    {
+     "texto": "Ideas por departamento",
+     "icono": "personas"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "cómo llevar los contactos de un formulario a tu CRM"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "cómo llevar los contactos de un formulario a tu CRM",
+   "imagen": "lamina-embudo",
+   "bocadillos": [],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "El problema: tu web recibe solicitudes"
+  },
+  {
+   "tipo": "panel",
+   "cue": "El problema: tu web recibe solicitudes",
+   "kind": "checklist",
+   "kicker": "El problema",
+   "titulo": "A mano no escala",
+   "items": [
+    {
+     "texto": "Se retrasa",
+     "icono": "reloj",
+     "tono": "bad",
+     "cue": "Se retrasa"
+    },
+    {
+     "texto": "Se olvidan contactos",
+     "icono": "alerta",
+     "tono": "bad",
+     "cue": "se olvidan contactos"
+    },
+    {
+     "texto": "Se cuelan duplicados",
+     "icono": "cruz",
+     "tono": "bad",
+     "cue": "se cuelan duplicados"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "El disparador es el envío del formulario"
+  },
+  {
+   "tipo": "panel",
+   "cue": "El disparador es el envío del formulario",
+   "kind": "pasos",
+   "kicker": "La receta",
+   "titulo": "Del formulario al CRM",
+   "items": [
+    {
+     "texto": "Formulario enviado",
+     "icono": "documento"
+    },
+    {
+     "texto": "If: el correo no está vacío",
+     "icono": "flecha",
+     "cue": "comprueba que el correo no está vacío"
+    },
+    {
+     "texto": "HubSpot: crea el contacto",
+     "icono": "persona",
+     "cue": "el nodo de HubSpot crea el contacto"
+    },
+    {
+     "texto": "Aviso al comercial",
+     "icono": "mensaje",
+     "cue": "un mensaje avisa al comercial"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Se puede ir un poco más allá"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Se puede ir un poco más allá",
+   "kind": "tarjeta",
+   "kicker": "Un paso más",
+   "titulo": "Switch",
+   "texto": "Reparte los contactos según su interés para que cada uno llegue a la persona adecuada.",
+   "icono": "red",
+   "registro": "editorial",
+   "hasta": "si además quieres saber qué tal funciona"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "si además quieres saber qué tal funciona",
+   "imagen": "cap-plantilla-hubspot",
+   "bocadillos": [],
+   "pie": "Plantilla de la galería oficial · n8n.io/workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "El resultado: cada contacto llega"
+  },
+  {
+   "tipo": "panel",
+   "cue": "El resultado: cada contacto llega",
+   "kind": "checklist",
+   "kicker": "El resultado",
+   "titulo": "Contactos al día",
+   "items": [
+    {
+     "texto": "En segundos",
+     "icono": "rayo"
+    },
+    {
+     "texto": "Con los datos completos",
+     "icono": "check",
+     "cue": "con sus datos completos"
+    },
+    {
+     "texto": "Respuesta en caliente",
+     "icono": "objetivo",
+     "cue": "mientras el interés todavía está caliente"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "clasificar y resumir los correos que llegan"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "clasificar y resumir los correos que llegan",
+   "antetitulo": "Lección 4.2",
+   "texto": "Clasificar y resumir correos",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "un buzón compartido"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "un buzón compartido",
+   "imagen": "lamina-buzon",
+   "bocadillos": [
+    {
+     "cue": "decenas de correos al día",
+     "texto": "Decenas de correos al día",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "grito",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "la llegada de un correo nuevo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "la llegada de un correo nuevo",
+   "kind": "pasos",
+   "kicker": "La receta",
+   "titulo": "Correos con IA",
+   "items": [
+    {
+     "texto": "Llega un correo (Gmail u Outlook)",
+     "icono": "correo"
+    },
+    {
+     "texto": "La IA lee el mensaje",
+     "icono": "bombilla",
+     "cue": "un nodo de inteligencia artificial lee el mensaje"
+    },
+    {
+     "texto": "Categoría: duda, incidencia o factura",
+     "icono": "carpeta",
+     "cue": "una duda, una incidencia o una factura"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Según la categoría, el workflow"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Según la categoría, el workflow",
+   "kind": "lista",
+   "kicker": "La receta",
+   "titulo": "Según la categoría",
+   "items": [
+    {
+     "texto": "Etiqueta el correo",
+     "icono": "check"
+    },
+    {
+     "texto": "Lo reenvía al equipo que toca",
+     "icono": "flecha",
+     "cue": "lo reenvía al equipo que toca"
+    },
+    {
+     "texto": "Resumen de dos líneas en Slack",
+     "icono": "mensaje",
+     "cue": "deja un resumen de dos líneas"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "En la galería oficial"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "En la galería oficial",
+   "imagen": "cap-plantilla-gmail-ia",
+   "bocadillos": [],
+   "pie": "Plantilla de la galería oficial · n8n.io/workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Para que la clasificación funcione bien"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Para que la clasificación funcione bien",
+   "kind": "cita",
+   "kicker": "Consejo",
+   "titulo": "Describe cada categoría",
+   "texto": "Como se lo explicarías a una persona nueva en el equipo.",
+   "resalta": [
+    "persona nueva"
+   ],
+   "registro": "editorial",
+   "hasta": "una incidencia es cuando algo no funciona"
+  },
+  {
+   "tipo": "panel",
+   "cue": "una incidencia es cuando algo no funciona",
+   "kind": "lista",
+   "kicker": "Ejemplo",
+   "titulo": "Categorías bien descritas",
+   "items": [
+    {
+     "texto": "Incidencia: algo no funciona",
+     "icono": "alerta"
+    },
+    {
+     "texto": "Factura: pagos o documento de cobro",
+     "icono": "dinero",
+     "cue": "una factura, cuando el correo habla de pagos"
+    },
+    {
+     "texto": "Cuanto más claro, mejores resultados",
+     "icono": "check",
+     "cue": "Cuanto más claro"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "empieza con el workflow proponiendo"
+  },
+  {
+   "tipo": "panel",
+   "cue": "empieza con el workflow proponiendo",
+   "kind": "comparativa",
+   "kicker": "Consejo",
+   "titulo": "Propone antes de decidir",
+   "izq": {
+    "titulo": "Al principio",
+    "tono": "neutro",
+    "items": [
+     "Prepara un borrador",
+     "Una persona lo revisa"
+    ]
+   },
+   "der": {
+    "cue": "Cuando confíes en los resultados",
+    "titulo": "Con confianza",
+    "tono": "ok",
+    "items": [
+     "Más autonomía"
+    ]
+   },
+   "registro": "editorial",
+   "hasta": "Tercera lección: la inteligencia artificial"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "Tercera lección: la inteligencia artificial",
+   "antetitulo": "Lección 4.3",
+   "texto": "IA y agentes",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "En la lección anterior usamos"
+  },
+  {
+   "tipo": "panel",
+   "cue": "En la lección anterior usamos",
+   "kind": "tarjeta",
+   "kicker": "Lección 4.3",
+   "titulo": "Más allá de clasificar",
+   "texto": "El nodo AI Agent",
+   "icono": "bombilla",
+   "registro": "editorial",
+   "hasta": "Un agente es un asistente que"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Un agente es un asistente que",
+   "imagen": "lamina-agente",
+   "bocadillos": [],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Para eso tiene tres cosas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Para eso tiene tres cosas",
+   "kind": "mapa",
+   "kicker": "Lección 4.3",
+   "titulo": "Las piezas de un agente",
+   "centro": "AI Agent",
+   "nodos": [
+    {
+     "cue": "un modelo de lenguaje que piensa",
+     "texto": "Modelo que piensa"
+    },
+    {
+     "cue": "una memoria para recordar",
+     "texto": "Memoria"
+    },
+    {
+     "cue": "unas herramientas que puede usar",
+     "texto": "Herramientas"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "se enchufan al nodo AI Agent"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "se enchufan al nodo AI Agent",
+   "imagen": "cap-plantilla-agente",
+   "bocadillos": [
+    {
+     "cue": "Las herramientas pueden ser tu calendario",
+     "texto": "Calendario, hoja, correo…",
+     "x": 0.75,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    },
+    {
+     "cue": "el agente decide cuál usar",
+     "texto": "El agente decide qué herramienta usar",
+     "x": 0.25,
+     "y": 0.165,
+     "forma": "globo",
+     "cola": "abajo"
+    }
+   ],
+   "pie": "Plantilla «AI agent chat» del equipo de n8n · n8n.io/workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "cómo hablas con el agente"
+  },
+  {
+   "tipo": "panel",
+   "cue": "cómo hablas con el agente",
+   "kind": "tarjeta",
+   "kicker": "Lección 4.3",
+   "titulo": "Chat Trigger",
+   "texto": "Una ventana de chat lista para usar. Ojo: cada mensaje cuenta como una ejecución.",
+   "icono": "mensaje",
+   "registro": "editorial",
+   "hasta": "Un ejemplo real: un asistente interno"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Un ejemplo real: un asistente interno",
+   "kind": "lista",
+   "kicker": "Ejemplo",
+   "titulo": "Asistente interno en un chat",
+   "items": [
+    {
+     "texto": "«¿Qué reuniones tengo mañana?» → consulta el calendario",
+     "icono": "calendario",
+     "cue": "qué reuniones tengo mañana"
+    },
+    {
+     "texto": "«Apunta este gasto» → añade una fila",
+     "icono": "datos",
+     "cue": "apunta este gasto en la hoja"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Dos precauciones"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Dos precauciones",
+   "kind": "checklist",
+   "kicker": "Lección 4.3",
+   "titulo": "Dos precauciones",
+   "items": [
+    {
+     "texto": "La IA se equivoca a veces: revisa",
+     "icono": "alerta",
+     "tono": "aviso",
+     "cue": "se equivoca a veces"
+    },
+    {
+     "texto": "Nada de datos personales sin aprobación",
+     "icono": "candado",
+     "tono": "aviso",
+     "cue": "piensa qué datos le das"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "una novedad que te facilitará la vida"
+  },
+  {
+   "tipo": "panel",
+   "cue": "una novedad que te facilitará la vida",
+   "kind": "tarjeta",
+   "kicker": "Novedad · en preview",
+   "titulo": "n8n Assistant",
+   "texto": "Pídele en lenguaje natural que cree, modifique o revise un workflow. Planes Starter y Pro de Cloud.",
+   "icono": "bombilla",
+   "registro": "editorial",
+   "hasta": "Igual que con cualquier inteligencia artificial"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Igual que con cualquier inteligencia artificial",
+   "kind": "cita",
+   "kicker": "docs.n8n.io",
+   "titulo": "La documentación insiste",
+   "texto": "Revisa siempre lo que genera antes de ponerlo en producción.",
+   "resalta": [
+    "Revisa"
+   ],
+   "registro": "editorial",
+   "hasta": "Cuarta lección: las plantillas"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "Cuarta lección: las plantillas",
+   "antetitulo": "Lección 4.4",
+   "texto": "Plantillas de la comunidad",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "No hace falta empezar siempre desde cero"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "No hace falta empezar siempre desde cero",
+   "imagen": "lamina-biblioteca",
+   "bocadillos": [],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "más de diez mil plantillas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "más de diez mil plantillas",
+   "kind": "cifra",
+   "kicker": "Galería oficial · n8n.io/workflows",
+   "titulo": "Más de",
+   "valor": 10000,
+   "valorInicial": 0,
+   "etiqueta": "plantillas; unas 90 del propio equipo de n8n",
+   "registro": "editorial",
+   "hasta": "Puedes buscar por aplicación"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Puedes buscar por aplicación",
+   "imagen": "cap-galeria",
+   "bocadillos": [],
+   "pie": "n8n.io/workflows",
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Algunos ejemplos reales de la galería"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Algunos ejemplos reales de la galería",
+   "kind": "lista",
+   "kicker": "Ejemplos de la galería",
+   "titulo": "Plantillas reales",
+   "items": [
+    {
+     "texto": "Formulario de contacto → Sheets, Slack y Gmail",
+     "icono": "documento",
+     "cue": "gestionar las respuestas de un formulario"
+    },
+    {
+     "texto": "Contactos de un formulario a HubSpot",
+     "icono": "persona",
+     "cue": "registrar en HubSpot"
+    },
+    {
+     "texto": "Informe semanal de registros",
+     "icono": "grafica",
+     "cue": "un informe semanal"
+    },
+    {
+     "texto": "Chatbot de Slack con IA (equipo de n8n)",
+     "icono": "mensaje",
+     "cue": "un chatbot de Slack"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Cuando encuentras una que te sirve"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Cuando encuentras una que te sirve",
+   "kind": "pasos",
+   "kicker": "Lección 4.4",
+   "titulo": "Usar una plantilla",
+   "items": [
+    {
+     "texto": "Cópiala a tu espacio",
+     "icono": "carpeta"
+    },
+    {
+     "texto": "Conecta tus credenciales",
+     "icono": "llave",
+     "cue": "conectas tus propias credenciales"
+    },
+    {
+     "texto": "Adáptala a tu caso",
+     "icono": "engranaje",
+     "cue": "la adaptas a tu caso"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Para usarlas desde el editor"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Para usarlas desde el editor",
+   "kind": "tarjeta",
+   "kicker": "En el editor",
+   "titulo": "Templates",
+   "texto": "Casi siempre tendrás que rellenar tus credenciales y ajustar la configuración.",
+   "icono": "carpeta",
+   "registro": "editorial",
+   "hasta": "porque cada empresa tiene sus hojas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "porque cada empresa tiene sus hojas",
+   "kind": "clave",
+   "kicker": "En el editor",
+   "titulo": "Adáptala siempre",
+   "texto": "Cada empresa tiene sus hojas, sus canales y sus nombres.",
+   "resalta": [
+    "hojas",
+    "canales",
+    "nombres"
+   ],
+   "registro": "editorial",
+   "hasta": "revisa siempre la plantilla antes de usarla"
+  },
+  {
+   "tipo": "panel",
+   "cue": "revisa siempre la plantilla antes de usarla",
+   "kind": "checklist",
+   "kicker": "Antes de usarla",
+   "titulo": "Revisa la plantilla",
+   "items": [
+    {
+     "texto": "Qué hace cada nodo",
+     "icono": "lupa",
+     "cue": "Comprueba qué hace cada nodo"
+    },
+    {
+     "texto": "A qué aplicaciones se conecta",
+     "icono": "red",
+     "cue": "a qué aplicaciones se conecta"
+    },
+    {
+     "texto": "Qué datos mueve",
+     "icono": "datos",
+     "cue": "qué datos mueve"
+    },
+    {
+     "texto": "Pruébala con datos ficticios",
+     "icono": "check",
+     "cue": "pruébala con datos ficticios"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "una lección exprés"
+  },
+  {
+   "tipo": "titulo",
+   "cue": "una lección exprés",
+   "antetitulo": "Lección 4.5",
+   "texto": "Ideas por departamento",
+   "registro": "editorial",
+   "destellos": true,
+   "hasta": "Recursos humanos. Cuando se firma"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Recursos humanos. Cuando se firma",
+   "kind": "tarjeta",
+   "kicker": "Recursos humanos",
+   "titulo": "Incorporaciones",
+   "texto": "Ficha en la hoja, correo de bienvenida y aviso a su responsable.",
+   "icono": "personas",
+   "registro": "editorial",
+   "hasta": "Finanzas. Cada factura que llega"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Finanzas. Cada factura que llega",
+   "kind": "tarjeta",
+   "kicker": "Finanzas",
+   "titulo": "Facturas",
+   "texto": "A su carpeta, a la hoja y, si supera un importe, a quien la aprueba.",
+   "icono": "dinero",
+   "registro": "editorial",
+   "hasta": "Atención al cliente. Cuando una consulta"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Atención al cliente. Cuando una consulta",
+   "kind": "tarjeta",
+   "kicker": "Atención al cliente",
+   "titulo": "Consultas",
+   "texto": "Aviso si lleva más de un día sin respuesta y resumen de los viernes.",
+   "icono": "mensaje",
+   "registro": "editorial",
+   "hasta": "Y dirección. Cada lunes a primera hora"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Y dirección. Cada lunes a primera hora",
+   "kind": "tarjeta",
+   "kicker": "Dirección",
+   "titulo": "Resumen de los lunes",
+   "texto": "Ventas, soporte y marketing en un solo mensaje.",
+   "icono": "grafica",
+   "registro": "editorial",
+   "hasta": "Fíjate en que todas estas ideas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Fíjate en que todas estas ideas",
+   "kind": "pasos",
+   "kicker": "El patrón",
+   "titulo": "Siempre lo mismo",
+   "items": [
+    {
+     "texto": "Un disparador",
+     "icono": "rayo"
+    },
+    {
+     "texto": "Unos pasos",
+     "icono": "engranaje",
+     "cue": "unos pasos"
+    },
+    {
+     "texto": "Un resultado",
+     "icono": "objetivo",
+     "cue": "y un resultado"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Y llegamos al final del curso"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Una: empieza por algo pequeño",
+   "kind": "checklist",
+   "kicker": "Para tus primeros workflows",
+   "titulo": "Cinco buenas prácticas",
+   "items": [
+    {
+     "texto": "Empieza por algo pequeño y repetitivo",
+     "icono": "objetivo"
+    },
+    {
+     "texto": "Nombres de nodo que se entiendan",
+     "icono": "nombre",
+     "cue": "ponle a cada nodo un nombre"
+    },
+    {
+     "texto": "Prueba con datos ficticios",
+     "icono": "documento",
+     "cue": "prueba con datos ficticios"
+    },
+    {
+     "texto": "Cuida las credenciales",
+     "icono": "llave",
+     "cue": "Cuatro: cuida las credenciales"
+    },
+    {
+     "texto": "Revisa las ejecuciones",
+     "icono": "lupa",
+     "cue": "revisa las ejecuciones de vez en cuando"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Repasemos lo aprendido"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Repasemos lo aprendido",
+   "kind": "checklist",
+   "kicker": "En resumen",
+   "titulo": "Lo que ya sabes",
+   "items": [
+    {
+     "texto": "Workflows visuales",
+     "icono": "check"
+    },
+    {
+     "texto": "Disparador + nodos",
+     "icono": "check",
+     "cue": "Cada workflow empieza con un disparador"
+    },
+    {
+     "texto": "Los datos viajan como items",
+     "icono": "check",
+     "cue": "Los datos viajan entre ellos"
+    },
+    {
+     "texto": "Credenciales = llaves",
+     "icono": "check",
+     "cue": "Las credenciales son las llaves"
+    },
+    {
+     "texto": "Antes de publicar, se prueba",
+     "icono": "check",
+     "cue": "siempre se prueba"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Y ahora qué"
+  },
+  {
+   "tipo": "lamina",
+   "cue": "Y ahora qué",
+   "imagen": "lamina-cierre",
+   "bocadillos": [
+    {
+     "cue": "conviértela en tu primer workflow",
+     "texto": "¿Cuál será tu primer workflow?",
+     "x": 0.22,
+     "y": 0.165,
+     "forma": "nube",
+     "cola": "abajo"
+    }
+   ],
+   "registro": "lamina",
+   "zoom": [
+    1.0,
+    1.06
+   ],
+   "hasta": "Si te atascas"
+  },
+  {
+   "tipo": "panel",
+   "cue": "Si te atascas",
+   "kind": "lista",
+   "kicker": "Siguientes pasos",
+   "titulo": "Dónde seguir",
+   "items": [
+    {
+     "texto": "Documentación: docs.n8n.io",
+     "icono": "documento",
+     "cue": "la documentación oficial"
+    },
+    {
+     "texto": "n8n Academy: learn.n8n.io (en inglés)",
+     "icono": "estrella",
+     "cue": "los cursos de la academia"
+    },
+    {
+     "texto": "Foro: community.n8n.io",
+     "icono": "personas",
+     "cue": "su foro de la comunidad"
+    }
+   ],
+   "registro": "editorial",
+   "hasta": "Gracias por acompañarme en este curso"
+  }
+ ],
+ "outro": {
+  "cue": "Gracias por acompañarme en este curso",
+  "coda": 5.0,
+  "kicker": "Curso completado",
+  "titulo": "Introducción a n8n",
+  "puntos": [
+   "Disparadores, nodos, datos y credenciales",
+   "Tu primer workflow, probado y publicado",
+   "Casos reales para tu trabajo"
+  ],
+  "cta": "Elige una tarea y automatízala",
+  "objeto3d": "trofeo",
+  "disposicion": "completa"
+ }
+}

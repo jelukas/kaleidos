@@ -1,0 +1,12 @@
+{
+  "_plantilla": "Láminas de cómic del estilo milikito (gpt-image-2): node scripts/images.mjs <slug> --quality medium --concurrency 6 → assets/images/<id>.jpg. Los ids son las claves que usa guion.json (eventos lamina). Adapta cada prompt a su bloque; mantén el estilo: sin personas reales, sin marcas, sin texto y con hueco arriba para los bocadillos.",
+  "format": "horizontal",
+  "quality": "medium",
+  "style": "Comic book panel illustration: bold thick black ink outlines, halftone shading, warm saturated colours (amber, orange, golden yellow, with teal and electric-blue accents), dramatic cinematic lighting with deep shadows, dynamic composition, 16:9 horizontal frame. Generic fictional characters only (no real people, no celebrities, no recognisable faces), no brand names or logos. Absolutely no text, letters, words, numbers or writing anywhere in the image: screens, papers, signs and clocks are blank or show only simple abstract shapes. Leave clean, uncluttered empty space in the upper part of the frame for speech balloons that will be added later.",
+  "images": [
+    { "id": "lamina-apertura", "prompt": "A busy newsroom at dawn seen from above: generic reporters leaning over desks with laptops and phones, a giant wall of blank screens glowing with abstract shapes, coffee cups and scattered blank papers, a sense of breaking news and urgency. Empty space at the top for a shout balloon." },
+    { "id": "lamina-dato", "prompt": "Dynamic comic action scene: a huge glowing arrow bursts upward through a wall of abstract bar shapes, leaving speed lines and sparks, while a startled generic analyst at a desk leans back in surprise; strong radial motion blur, electric-blue and golden tones. Empty space at the top for a shout balloon." },
+    { "id": "lamina-uso", "prompt": "A relaxed generic professional at a sunny café table using a laptop and a phone; above them a stylised cloud holds several floating abstract windows and tiny helper robots arranging blocks. Warm golden afternoon light with teal accents. Empty space at the top for a speech balloon." },
+    { "id": "lamina-contexto", "prompt": "A wide city skyline at dusk seen from a rooftop, with thousands of tiny glowing dots rising from the windows and forming an abstract constellation in the sky; a small generic figure watches from the edge. Deep blue and amber light. Empty space at the top for a speech balloon." }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+ "_plantilla": "explainer-narracion (estilo milikito, registro editorial). Cues = frases literales de locucion.json; los segundos los pone plantillas/herramientas/cues.py. Textos entre <>: sustituir. Nada de cifras que la voz no diga.",
+ "fixes": {},
+ "cortes": [],
+ "intro": {"previo": 3.0, "kicker": "Explicado en un minuto", "titulo": "<Concepto>", "subtitulo": "<La pregunta que responde el vídeo>", "disposicion": "completa"},
+ "capitulos": [
+  {"cue": [8.24, "Primero, el problema"], "n": 1, "sigla": "1", "registro": "editorial", "kicker": "Paso 1", "titulo": "El problema", "subtitulo": "<En una línea>", "acento": 0, "objeto3d": null},
+  {"cue": [27.47, "Vamos con cómo funciona"], "n": 2, "sigla": "2", "registro": "editorial", "kicker": "Paso 2", "titulo": "Cómo funciona", "subtitulo": "<En una línea>", "acento": 1, "objeto3d": null},
+  {"cue": [44.52, "Y ahora, lo que conviene evitar"], "n": 3, "sigla": "3", "registro": "editorial", "kicker": "Paso 3", "titulo": "Lo que conviene evitar", "subtitulo": "<En una línea>", "acento": 2, "objeto3d": null}
+ ],
+ "eventos": [
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-pregunta", "cue": [0, "Te has preguntado alguna vez"], "hasta": [8.24, "Primero, el problema"], "zoom": [1.0, 1.08],
+   "bocadillos": [{"cue": [1.82, "cómo funciona esto por dentro"], "texto": "<¿Cómo funciona?>", "x": 0.22, "y": 0.17, "forma": "nube", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "lista", "registro": "editorial", "cue": [12.96, "Hoy casi todo el mundo lo hace a mano"], "hasta": [19.86, "La idea clave"], "kicker": "El problema", "titulo": "<Lo que pasa hoy>",
+   "items": [{"texto": "<Se hace a mano>", "icono": "persona"}, {"cue": [16.24, "pierde tiempo"], "texto": "<Se pierde tiempo>", "icono": "reloj"}, {"cue": [16.96, "y comete errores"], "texto": "<Errores evitables>", "icono": "alerta"}]},
+  {"tipo": "reaccion", "cue": [19.86, "La idea clave"], "icono": "idea"},
+  {"tipo": "panel", "kind": "clave", "registro": "editorial", "cue": [19.86, "La idea clave"], "hasta": [27.47, "Vamos con cómo funciona"], "kicker": "La idea clave", "titulo": "<En una frase>",
+   "texto": "<Separar lo que decides tú de lo que puede hacer la máquina sola>", "resalta": ["decides", "sola"]},
+  {"tipo": "panel", "kind": "pasos", "registro": "editorial", "cue": [31.47, "Primero, recoges los datos"], "hasta": [37.27, "Un ejemplo concreto"], "kicker": "Cómo funciona", "titulo": "<Tres pasos>",
+   "items": [{"texto": "<Recoges los datos>", "icono": "datos"}, {"cue": [32.92, "Segundo, el sistema los ordena"], "texto": "<El sistema los ordena>", "icono": "engranaje"}, {"cue": [34.74, "Y tercero, tú revisas el resultado"], "texto": "<Tú revisas el resultado>", "icono": "check"}]},
+  {"tipo": "lamina", "registro": "lamina", "imagen": "lamina-ejemplo", "cue": [37.27, "Un ejemplo concreto"], "hasta": [44.52, "Y ahora, lo que conviene evitar"], "zoom": [1.0, 1.08],
+   "bocadillos": [{"cue": [39.82, "contada antes y después"], "texto": "<¡Antes y después!>", "x": 0.24, "y": 0.17, "forma": "globo", "cola": "abajo"}]},
+  {"tipo": "panel", "kind": "comparativa", "registro": "editorial", "cue": [49.61, "El error más común"], "hasta": [55.41, "Antes de empezar"], "kicker": "Lo que conviene evitar", "titulo": "<Error y acierto>",
+   "izq": {"cue": [49.61, "El error más común"], "titulo": "Error", "items": ["<Fiarse sin revisar>"], "tono": "bad"},
+   "der": {"cue": [52.52, "Lo correcto es comprobar"], "titulo": "Lo correcto", "items": ["<Comprobar siempre la salida>"], "tono": "ok"}},
+  {"tipo": "panel", "kind": "checklist", "registro": "editorial", "cue": [55.41, "Antes de empezar"], "hasta": [64.11, "En resumen"], "kicker": "Antes de empezar", "titulo": "<Tres comprobaciones>",
+   "items": [{"cue": [57.6, "que tienes los datos"], "texto": "<Tienes los datos>", "icono": "datos"}, {"cue": [59.05, "que sabes quién revisa"], "texto": "<Sabes quién revisa>", "icono": "persona"}, {"cue": [60.5, "y que hay un plan si algo falla"], "texto": "<Hay un plan si falla>", "icono": "escudo"}]}
+ ],
+ "outro": {"coda": 4.0, "cue": [64.11, "En resumen"], "kicker": "En resumen", "titulo": "<Concepto>",
+           "puntos": ["<Primera idea>", "<Segunda idea>", "<Tercera idea>"], "cta": "<Compártelo con tu equipo>", "objeto3d": "bombilla", "disposicion": "completa"}
+}

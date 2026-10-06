@@ -1,0 +1,397 @@
+<!--CSS-->
+#__ID__ .dots{position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.10) 2px,transparent 2.5px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,#000 20%,transparent 85%);mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,#000 20%,transparent 85%)}
+#__ID__ .blob{position:absolute;border-radius:50%;filter:blur(110px)}
+#__ID__ .blob.b1{left:-260px;top:-240px;width:900px;height:900px;background:rgba(94,61,230,.55)}
+#__ID__ .blob.b2{right:-300px;bottom:-320px;width:1000px;height:1000px;background:rgba(255,1,162,.38)}
+#__ID__ .dust{position:absolute;left:0;top:0;width:8px;height:8px;border-radius:50%;background:#E2CCFF;opacity:.0}
+#__ID__ .winglow{position:absolute;left:560px;top:40px;width:800px;height:950px;background:radial-gradient(closest-side,rgba(255,1,162,.5),rgba(125,41,224,.28) 55%,transparent 100%);filter:blur(30px)}
+#__ID__ .cam{position:absolute;inset:0;perspective:2200px;perspective-origin:50% 50%}
+#__ID__ .rig{position:absolute;left:370px;top:-431px;width:1180px;height:1892px;transform-style:preserve-3d}
+#__ID__ .frame{position:absolute;inset:0;background:#fff;border-radius:22px;box-shadow:0 60px 140px rgba(10,0,30,.6);z-index:1}
+#__ID__ .bar{position:absolute;left:0;top:0;width:1180px;height:72px;background:#F2F4F7;border-radius:22px 22px 0 0;border-bottom:1px solid #E4E7EC;display:flex;align-items:center;gap:12px;padding:0 28px;box-sizing:border-box;z-index:40}
+#__ID__ .bar i{display:block;width:20px;height:20px;border-radius:50%;background:#FF5F57}
+#__ID__ .bar i:nth-child(2){background:#FEBC2E}
+#__ID__ .bar i:nth-child(3){background:#28C840}
+#__ID__ .bar .url{margin-left:24px;width:620px;height:44px;border-radius:22px;background:#fff;font-size:28px;font-weight:600;color:#667085;display:flex;align-items:center;gap:12px;padding:0 20px;box-sizing:border-box}
+#__ID__ .bar .live{position:absolute;right:28px;top:14px;height:44px;padding:0 22px;border-radius:22px;background:#ECFDF3;color:#067647;font-size:26px;font-weight:800;display:flex;align-items:center;gap:10px;opacity:0}
+#__ID__ .bar .live u{display:block;width:14px;height:14px;border-radius:50%;background:#12B76A;text-decoration:none}
+#__ID__ .pg{position:absolute;inset:0;transform-style:preserve-3d;z-index:10}
+#__ID__ .sw{position:absolute;left:0;width:1180px;transform-style:preserve-3d}
+#__ID__ .sec{position:absolute;inset:0;overflow:hidden;background:#fff;box-shadow:0 0 0 0px rgba(255,255,255,0),0 0 0px rgba(10,0,30,0)}
+#__ID__ .lbl{position:absolute;right:1260px;top:50%;margin-top:-80px;height:160px;padding:0 56px 0 24px;border-radius:80px;background:#fff;color:#2F125E;font-weight:800;font-size:92px;letter-spacing:-.03em;display:flex;align-items:center;gap:26px;white-space:nowrap;box-shadow:0 30px 80px rgba(10,0,30,.5);transform-origin:100% 50%;opacity:0}
+#__ID__ .lbl b{display:flex;align-items:center;justify-content:center;width:112px;height:112px;border-radius:50%;background:linear-gradient(135deg,#7D29E0,#FF01A2);color:#fff;font-size:50px;letter-spacing:0}
+#__ID__ .lbl::after{content:"";position:absolute;left:100%;top:50%;width:90px;height:10px;margin-top:-5px;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+#__ID__ .dash{position:absolute;inset:10px;border:5px dashed #FF01A2;border-radius:24px;opacity:0;z-index:5}
+#__ID__ .tag{position:absolute;left:26px;top:12px;font-family:"JetBrains Mono",monospace;font-size:34px;background:#0D1320;color:#fff;border-radius:12px;padding:6px 18px;z-index:6;opacity:0}
+#__ID__ .s2 .tag,#__ID__ .s3 .tag{left:520px}
+#__ID__ .s4 .tag{left:300px}
+#__ID__ .cut{position:absolute;left:-60px;width:1300px;height:16px;z-index:20;opacity:1}
+#__ID__ .beam{position:absolute;inset:0;border-radius:8px;background:linear-gradient(90deg,#FF01A2,#fff 70%,#fff);box-shadow:0 0 30px 8px rgba(255,1,162,.8),0 0 70px 14px rgba(155,97,246,.45);transform-origin:0 50%}
+#__ID__ .glossbox{position:absolute;inset:0;overflow:hidden;border-radius:22px;pointer-events:none;z-index:30}
+#__ID__ .gloss{position:absolute;left:0;top:-200px;width:380px;height:2300px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform-origin:50% 50%}
+
+/* --- secciones de la landing --- */
+#__ID__ .s0{background:linear-gradient(135deg,#F2E7FC 0%,#fff 52%,#FFE3F4 100%)}
+#__ID__ .nav{position:absolute;left:70px;right:70px;top:66px;height:56px;display:flex;align-items:center}
+#__ID__ .nav .lg{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#7D29E0,#FF01A2)}
+#__ID__ .nav .nm{margin-left:14px;font-size:32px;font-weight:800;letter-spacing:-.03em;color:#0D1320}
+#__ID__ .nav .lk{margin-left:auto;display:flex;gap:44px;font-size:26px;font-weight:600;color:#667085}
+#__ID__ .nav .nb{margin-left:48px;height:52px;padding:0 28px;border-radius:26px;background:#0D1320;color:#fff;font-size:24px;font-weight:600;display:flex;align-items:center}
+#__ID__ .hh{position:absolute;left:70px;top:150px;font-size:94px;font-weight:800;letter-spacing:-.04em;line-height:1.0;color:#0D1320;white-space:nowrap}
+#__ID__ .hh span{display:block}
+#__ID__ .hh .v{color:#7D29E0}
+#__ID__ .caret{display:inline-block;width:8px;height:78px;margin-left:10px;background:#FF01A2;vertical-align:-6px;border-radius:3px;opacity:0}
+#__ID__ .hs{position:absolute;left:70px;top:356px;font-size:28px;color:#667085;font-weight:400;white-space:nowrap}
+#__ID__ .hbtn{position:absolute;left:70px;top:416px;height:76px;padding:0 44px;border-radius:38px;background:linear-gradient(90deg,#7D29E0,#FF01A2);color:#fff;font-size:32px;font-weight:800;display:flex;align-items:center;box-shadow:0 12px 30px rgba(125,41,224,.35)}
+#__ID__ .hghost{position:absolute;left:392px;top:416px;height:76px;padding:0 38px;border-radius:38px;border:3px solid #D9C2F5;color:#7D29E0;font-size:30px;font-weight:600;display:flex;align-items:center}
+#__ID__ .mockA{position:absolute;left:740px;top:150px;width:380px;height:300px;border-radius:34px;background:linear-gradient(135deg,#7D29E0,#5E3DE6 55%,#FF01A2 130%);box-shadow:0 30px 60px rgba(94,61,230,.35);transform:rotate(3deg)}
+#__ID__ .mockA .ch{position:absolute;left:34px;right:34px;bottom:34px;height:170px;display:flex;align-items:flex-end;gap:16px}
+#__ID__ .mockA .ch i{flex:1;border-radius:12px 12px 4px 4px;background:rgba(255,255,255,.85)}
+#__ID__ .mockA .tt{position:absolute;left:34px;top:30px;width:140px;height:18px;border-radius:9px;background:rgba(255,255,255,.7)}
+#__ID__ .mockA .tt2{position:absolute;left:34px;top:62px;width:90px;height:14px;border-radius:7px;background:rgba(255,255,255,.4)}
+#__ID__ .mockB{position:absolute;left:700px;top:380px;width:210px;height:116px;border-radius:26px;background:#fff;box-shadow:0 24px 50px rgba(13,19,32,.18);padding:18px 24px;box-sizing:border-box}
+#__ID__ .mockB b{display:block;font-size:50px;font-weight:800;letter-spacing:-.04em;color:#7D29E0;line-height:1}
+#__ID__ .mockB span{display:block;margin-top:6px;font-size:22px;font-weight:600;color:#667085}
+#__ID__ .orb1{position:absolute;left:1040px;top:104px;width:96px;height:96px;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff 0 8%,#FFB3E2 30%,#FF01A2 80%)}
+#__ID__ .ring1{position:absolute;left:1000px;top:400px;width:130px;height:130px;border-radius:50%;border:16px solid #E2CCFF}
+
+#__ID__ .s1{background:#fff}
+#__ID__ .h2{position:absolute;left:0;right:0;top:34px;text-align:center;font-size:56px;font-weight:800;letter-spacing:-.04em;color:#0D1320}
+#__ID__ .h2 em{font-style:normal;color:#7D29E0}
+#__ID__ .cards{position:absolute;left:70px;top:130px;display:flex;gap:25px}
+#__ID__ .card{position:relative;width:330px;height:220px;border-radius:28px;background:#F8F4FE;border:2px solid #ECDDFB;box-sizing:border-box;padding:28px 30px}
+#__ID__ .card .ic{width:68px;height:68px;border-radius:20px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#7D29E0,#9B61F6)}
+#__ID__ .card:nth-child(2) .ic{background:linear-gradient(135deg,#FF01A2,#FF6AC8)}
+#__ID__ .card:nth-child(3) .ic{background:linear-gradient(135deg,#5E3DE6,#7D29E0)}
+#__ID__ .card h4{margin:14px 0 6px;font-size:38px;font-weight:800;letter-spacing:-.03em;color:#0D1320}
+#__ID__ .card p{margin:0;font-size:25px;line-height:1.25;color:#667085}
+#__ID__ .mouse{position:absolute;left:0;top:0;width:60px;height:60px;z-index:12;opacity:0;filter:drop-shadow(0 6px 8px rgba(13,19,32,.35))}
+
+#__ID__ .s2{background:linear-gradient(135deg,#2F125E,#5E3DE6)}
+#__ID__ .s2 .h2{color:#fff;text-align:left;left:70px;top:30px;font-size:50px}
+#__ID__ .tcards{position:absolute;left:70px;top:118px;display:flex;gap:25px}
+#__ID__ .tc{width:330px;height:190px;border-radius:26px;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.2);box-sizing:border-box;padding:22px 26px;color:#fff}
+#__ID__ .tc .stars{display:flex;gap:4px;height:30px}
+#__ID__ .tc q{display:block;margin:10px 0 0;font-size:28px;font-weight:600;line-height:1.2;quotes:none}
+#__ID__ .tc .who{position:absolute;left:26px;bottom:20px;display:flex;align-items:center;gap:14px;font-size:24px;font-weight:600}
+#__ID__ .tc .who i{display:block;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#FF01A2,#9B61F6)}
+#__ID__ .tc{position:relative}
+
+#__ID__ .s3{background:#FAFBFC}
+#__ID__ .tog{position:absolute;right:70px;top:46px;width:128px;height:52px;border-radius:26px;background:#E4E7EC}
+#__ID__ .tog i{position:absolute;left:5px;top:5px;width:42px;height:42px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+#__ID__ .plans{position:absolute;left:70px;top:122px;display:flex;gap:25px}
+#__ID__ .plan{position:relative;width:330px;height:236px;border-radius:28px;background:#fff;border:2px solid #E4E7EC;box-sizing:border-box;padding:24px 30px}
+#__ID__ .plan.pro{background:linear-gradient(135deg,#7D29E0,#FF01A2);border:0;color:#fff;box-shadow:0 22px 50px rgba(125,41,224,.4)}
+#__ID__ .plan small{display:block;font-size:26px;font-weight:600;color:#667085}
+#__ID__ .plan.pro small{color:#F2E7FC}
+#__ID__ .plan b{display:block;margin-top:2px;font-size:70px;font-weight:800;letter-spacing:-.05em;line-height:1.05}
+#__ID__ .plan b span{font-size:26px;font-weight:600;letter-spacing:0;opacity:.7}
+#__ID__ .plan ul{margin:8px 0 0;padding:0;list-style:none;font-size:25px;font-weight:600;line-height:1.5}
+#__ID__ .plan li::before{content:"";display:inline-block;width:14px;height:14px;border-radius:50%;background:#7D29E0;margin-right:12px}
+#__ID__ .plan.pro li::before{background:#fff}
+#__ID__ .plan .bd{position:absolute;right:22px;top:-18px;height:38px;padding:0 18px;border-radius:19px;background:#0D1320;color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center}
+
+#__ID__ .s4{background:#0D1320;border-radius:0 0 22px 22px}
+#__ID__ .fcol{position:absolute;top:44px;font-size:26px;font-weight:600;color:#98A2B3;line-height:1.7}
+#__ID__ .fcol b{display:block;color:#fff;font-size:28px;font-weight:800}
+#__ID__ .fcol span{display:block;position:relative;width:max-content}
+#__ID__ .fcol .ul{position:absolute;left:0;bottom:6px;height:4px;width:100%;background:#FF01A2;transform-origin:0 50%}
+#__ID__ .flogo{position:absolute;left:70px;top:48px;display:flex;align-items:center;gap:14px;color:#fff;font-size:34px;font-weight:800;letter-spacing:-.03em}
+#__ID__ .flogo i{display:block;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#7D29E0,#FF01A2)}
+#__ID__ .fcopy{position:absolute;left:70px;bottom:26px;font-size:22px;color:#A9B2C3}
+
+/* --- elementos de pantalla --- */
+#__ID__ .chips{position:absolute;left:0;right:0;top:36px;display:grid;justify-items:center;z-index:55}
+#__ID__ .chips .chip{grid-area:1/1;font-size:36px}
+#__ID__ .pub{position:absolute;left:1340px;top:640px;width:400px;height:124px;border-radius:62px;display:flex;align-items:center;justify-content:center;gap:18px;color:#fff;font-size:54px;font-weight:800;letter-spacing:-.03em;box-shadow:0 30px 70px rgba(255,1,162,.5);z-index:45}
+#__ID__ .pub .pbg{position:absolute;inset:0;border-radius:62px}
+#__ID__ .pub .pa{background:linear-gradient(90deg,#7D29E0,#FF01A2)}
+#__ID__ .pub .pb{background:linear-gradient(90deg,#067647,#12B76A);opacity:0}
+#__ID__ .pub .t1,#__ID__ .pub .t2{position:absolute;inset:0;padding-left:64px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;gap:16px}
+#__ID__ .pub .t2{opacity:0}
+#__ID__ .shock{position:absolute;left:810px;top:365px;width:300px;height:300px;border-radius:50%;border:8px solid #fff;opacity:0;z-index:30}
+#__ID__ .fx{position:absolute;inset:0;z-index:58;pointer-events:none}
+#__ID__ .sp{position:absolute;left:0;top:0;display:block;opacity:0}
+#__ID__ .ghost{position:absolute;left:50%;top:50%;width:960px;height:540px;margin:-270px 0 0 -480px;border-radius:28px;overflow:hidden;box-shadow:0 40px 100px rgba(10,0,30,.5);z-index:48}
+#__ID__ .ghost.g1{background:linear-gradient(135deg,#7D29E0,#FF01A2)}
+#__ID__ .ghost.g2{background:#fff}
+#__ID__ .ghost.g3{background:linear-gradient(135deg,#2F125E,#5E3DE6)}
+#__ID__ .ghost i{position:absolute;display:block}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0"></div>
+  <div class="dots"></div>
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="simlabel on-dark">Simulación · Landing</div>
+  <div class="winglow"></div>
+
+  <div class="cam">
+    <div class="rig" data-layout-ignore>
+      <div class="frame"></div>
+      <div class="bar"><i></i><i></i><i></i>
+        <div class="url"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#667085" stroke-width="2.5"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>tu-empresa.example</div>
+        <div class="live"><u></u>En línea</div>
+      </div>
+      <div class="pg">
+        <div class="sw w0" style="top:72px;height:520px"><div class="sec s0">
+          <div class="nav"><div class="lg"></div><div class="nm">Tu Empresa</div><div class="lk"><span>Producto</span><span>Precios</span><span>Contacto</span></div><div class="nb">Entrar</div></div>
+          <div class="hh"><span>Tu negocio,</span><span class="v">online hoy<i class="caret"></i></span></div>
+          <div class="hs">Una página clara que convierte visitas en clientes.</div>
+          <div class="hbtn">Empezar gratis</div><div class="hghost">Ver demo</div>
+          <div class="orb1"></div><div class="ring1"></div>
+          <div class="mockA"><div class="tt"></div><div class="tt2"></div><div class="ch"><i style="height:38%"></i><i style="height:58%"></i><i style="height:46%"></i><i style="height:82%"></i><i style="height:100%"></i></div></div>
+          <div class="mockB"><b>+42%</b><span>más visitas</span></div>
+          <div class="dash"></div><div class="tag">&lt;header&gt;</div>
+        </div><div class="lbl"><b>01</b>Hero</div></div>
+
+        <div class="sw w1" style="top:592px;height:380px"><div class="sec s1">
+          <div class="h2">Todo lo que <em>necesitas</em></div>
+          <div class="cards">
+            <div class="card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M13 2 4 14h6l-1 8 9-12h-6z"/></svg></div><h4>Rápida</h4><p>Lista en minutos.</p></div>
+            <div class="card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M4 4h16v12H9l-5 4z"/></svg></div><h4>Clara</h4><p>Mensajes claros.</p></div>
+            <div class="card"><div class="ic"><svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/></svg></div><h4>Segura</h4><p>Datos a salvo.</p></div>
+          </div>
+          <svg class="mouse" viewBox="0 0 24 24"><path d="M4 2l15 9-6.5 1.6L9 19z" fill="#fff" stroke="#0D1320" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <div class="dash"></div><div class="tag">&lt;section&gt;</div>
+        </div><div class="lbl"><b>02</b>Beneficios</div></div>
+
+        <div class="sw w2" style="top:972px;height:340px"><div class="sec s2">
+          <div class="h2">Lo que dicen</div>
+          <div class="tcards">
+            <div class="tc"><div class="stars"></div><q>Nos ahorró semanas de trabajo.</q><div class="who"><i></i><span>Cliente A</span></div></div>
+            <div class="tc"><div class="stars"></div><q>Se ve increíble y funciona.</q><div class="who"><i></i><span>Empresa X</span></div></div>
+            <div class="tc"><div class="stars"></div><q>Publicada el mismo día.</q><div class="who"><i></i><span>Cliente B</span></div></div>
+          </div>
+          <div class="dash"></div><div class="tag">&lt;blockquote&gt;</div>
+        </div><div class="lbl"><b>03</b>Prueba social</div></div>
+
+        <div class="sw w3" style="top:1312px;height:380px"><div class="sec s3">
+          <div class="h2" style="text-align:left;left:70px;font-size:52px">Planes simples</div>
+          <div class="tog"><i></i></div>
+          <div class="plans">
+            <div class="plan"><small>Básico</small><b>9 €<span>/mes</span></b><ul><li>1 sitio</li><li>Soporte por correo</li></ul></div>
+            <div class="plan pro"><div class="bd">Popular</div><small>Pro</small><b>29 €<span>/mes</span></b><ul><li>5 sitios</li><li>Estadísticas</li></ul></div>
+            <div class="plan"><small>Equipo</small><b>79 €<span>/mes</span></b><ul><li>Sitios ilimitados</li><li>Roles de equipo</li></ul></div>
+          </div>
+          <div class="dash"></div><div class="tag">&lt;form&gt;</div>
+        </div><div class="lbl"><b>04</b>Precios</div></div>
+
+        <div class="sw w4" style="top:1692px;height:200px"><div class="sec s4">
+          <div class="flogo"><i></i>Tu Empresa</div>
+          <div class="fcol" style="left:520px"><b>Producto</b><span>Funciones<i class="ul"></i></span><span>Novedades</span></div>
+          <div class="fcol" style="left:760px"><b>Empresa</b><span>Nosotros</span><span>Contacto</span></div>
+          <div class="fcol" style="left:1000px"><b>Ayuda</b><span>Guías</span><span>Estado</span></div>
+          <div class="fcopy">© Tu Empresa</div>
+          <div class="dash"></div><div class="tag">&lt;footer&gt;</div>
+        </div><div class="lbl"><b>05</b>Pie</div></div>
+      </div>
+
+      <div class="cut c0"><div class="beam"></div></div>
+      <div class="cut c1"><div class="beam"></div></div>
+      <div class="cut c2"><div class="beam"></div></div>
+      <div class="cut c3"><div class="beam"></div></div>
+      <div class="glossbox"><div class="gloss"></div></div>
+    </div>
+  </div>
+
+  <div class="chips">
+    <div class="chip dark c-a">landing.png · imagen plana</div>
+    <div class="chip dark c-b">5 secciones · 5 bloques</div>
+    <div class="chip dark c-c">HTML vivo · listo para web</div>
+  </div>
+
+  <div class="shock"></div>
+  <div class="pub"><div class="pbg pa"></div><div class="pbg pb"></div>
+    <div class="t1"><svg width="56" height="56" viewBox="0 0 24 24" fill="#fff"><path d="M2 21 23 12 2 3v7l15 2-15 2z"/></svg>Publicar</div>
+    <div class="t2"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>En línea</div>
+  </div>
+
+  <div class="ghost g1" data-layout-ignore><i style="left:60px;top:60px;width:520px;height:90px;border-radius:20px;background:rgba(255,255,255,.9)"></i><i style="left:60px;top:180px;width:340px;height:30px;border-radius:15px;background:rgba(255,255,255,.55)"></i><i style="right:-80px;bottom:-120px;width:520px;height:520px;border-radius:50%;background:rgba(255,255,255,.25)"></i></div>
+  <div class="ghost g2" data-layout-ignore><i style="left:70px;bottom:70px;width:90px;height:150px;border-radius:12px;background:#7D29E0"></i><i style="left:200px;bottom:70px;width:90px;height:260px;border-radius:12px;background:#FF01A2"></i><i style="left:330px;bottom:70px;width:90px;height:210px;border-radius:12px;background:#9B61F6"></i><i style="left:460px;bottom:70px;width:90px;height:340px;border-radius:12px;background:#5E3DE6"></i><i style="left:70px;top:60px;width:420px;height:44px;border-radius:12px;background:#0D1320"></i></div>
+  <div class="ghost g3" data-layout-ignore><i style="left:80px;top:150px;width:360px;height:240px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#9B61F6 55%,#FF01A2)"></i><i style="left:520px;top:200px;width:340px;height:44px;border-radius:12px;background:rgba(255,255,255,.85)"></i><i style="left:520px;top:270px;width:240px;height:28px;border-radius:12px;background:rgba(255,255,255,.5)"></i></div>
+
+  <div class="fx"></div>
+  <div class="ripple r1"></div>
+  <div class="orb"></div>
+</div>
+<!--JS-->
+sceneIn("whip");
+
+/* ---------- utilidades deterministas ---------- */
+function rng(seed) { return function () { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+function burst(cx, cy, n, at, o = {}) {
+  const r = rng(o.seed || 7), cols = o.cols || ["#ffffff", "#FF01A2", "#9B61F6", "#E2CCFF"], host = $q(".fx");
+  for (let i = 0; i < n; i++) {
+    const el = document.createElement("i"); el.className = "sp";
+    const sz = (o.size || 10) * (0.6 + r() * 0.9);
+    el.style.width = sz + "px"; el.style.height = (o.rect ? sz * (0.35 + r() * 0.5) : sz) + "px";
+    el.style.background = cols[i % cols.length]; el.style.borderRadius = o.rect ? "2px" : "50%";
+    host.appendChild(el);
+    const a = (o.a0 ?? 0) + r() * (o.a1 ?? Math.PI * 2), d = (o.dist || 160) * (0.35 + r() * 0.9), dur = (o.dur || 0.8) * (0.7 + r() * 0.5);
+    tl.fromTo(el, { opacity: 0 }, { opacity: 1, duration: 0.001 }, at);
+    tl.fromTo(el, { x: cx, y: cy, scale: 1, rotation: 0 }, { x: cx + Math.cos(a) * d, y: cy + Math.sin(a) * d + (o.grav || 0), scale: 0.25, rotation: (r() - 0.5) * 540, duration: dur, ease: "power3.out" }, at);
+    tl.to(el, { opacity: 0, duration: dur * 0.4, ease: "power1.in" }, at + dur * 0.6);
+  }
+}
+/* polvo ambiente (semilla fija) */
+{
+  const r = rng(11);
+  for (let i = 0; i < 26; i++) {
+    const el = document.createElement("i"); el.className = "dust"; $q(".stage").insertBefore(el, $q(".winglow"));
+    const x = 80 + r() * 1760, y = 120 + r() * 840, s = 0.6 + r() * 1.4;
+    el.style.width = el.style.height = 4 + r() * 8 + "px";
+    tl.fromTo(el, { x, y, opacity: 0 }, { y: y - 120 - r() * 160, opacity: 0.55, duration: 1.2 + r(), ease: "sine.inOut", yoyo: true, repeat: 3 }, r() * 0.8);
+  }
+}
+
+/* ---------- geometría ---------- */
+const TOPS = [72, 592, 972, 1312, 1692], HS = [520, 380, 340, 380, 200];
+const S0 = 0.42, CY = 515, CX = 960;                       // estado plano: escala y centro en pantalla
+const sx = (lx) => CX + (lx - 590) * S0, sy = (ly) => CY + (ly - 946) * S0;
+
+/* base */
+tl.set(Q(".frame"), { z: -8 }, 0); tl.set(Q(".bar"), { z: 8 }, 0);
+$$q(".cut").forEach((c, i) => { c.style.top = TOPS[i + 1] - 8 + "px"; });
+tl.set(Q(".cut"), { z: 14 }, 0); tl.set(Q(".glossbox"), { z: 16 }, 0);
+tl.set(Q(".rig"), { clipPath: "none" }, 0);
+$$q(".stars").forEach((el) => { el.innerHTML = Array(5).fill('<svg viewBox="0 0 24 24" width="30" height="30"><path fill="#FFC53D" d="M12 2l3 6.5 7 .8-5.2 4.8 1.5 7L12 17.5 5.7 21l1.5-7L2 9.3l7-.8z"/></svg>').join(""); });
+
+/* ---------- 0 · entrada: la captura plana ---------- */
+tl.fromTo(Q(".cam"), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, 0);
+tl.fromTo(Q(".rig"), { y: 110, rotationX: 24, rotationY: -16, scale: 0.34 }, { y: 0, rotationX: 0, rotationY: 0, scale: S0, duration: 1.15, ease: E }, 0);
+tl.fromTo(Q(".winglow"), { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 1.0, ease: E }, 0.1);
+tl.fromTo(Q(".c-a"), { opacity: 0, y: -26, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: SPR }, 0.35);
+tl.fromTo(Q(".gloss"), { x: -460 }, { x: 1300, duration: 0.9, ease: "power2.inOut" }, 0.85);
+tl.to(Q(".blob.b1"), { x: 120, y: 80, duration: 8, ease: "sine.inOut" }, 0);
+tl.to(Q(".blob.b2"), { x: -140, y: -100, duration: 8, ease: "sine.inOut" }, 0);
+/* orbe */
+orbSet(1500, 280);
+pop(".orb", 0.3, 0.5);
+orbTo(1470, 330, 0.8, 0.6, "sine.inOut");
+
+/* ---------- 1 · «cortarla»: láseres que barren ---------- */
+tl.to(Q(".c-a"), { opacity: 0, y: -20, duration: 0.25, ease: "power2.in" }, 1.5);
+const CUT_AT = [1.7, 1.88, 2.06, 2.24], CUT_D = 0.15;
+orbTo(sx(-40), sy(TOPS[1]), 1.36, 0.3, "power3.inOut");
+CUT_AT.forEach((t0, k) => {
+  const ltr = k % 2 === 0, y = sy(TOPS[k + 1]), xa = sx(-40), xb = sx(1220);
+  tl.set(Q(".c" + k + " .beam"), { transformOrigin: ltr ? "0% 50%" : "100% 50%" }, 0);
+  tl.fromTo(Q(".c" + k + " .beam"), { scaleX: 0 }, { scaleX: 1, duration: CUT_D, ease: "power1.inOut" }, t0);
+  if (k > 0) tl.to(Q(".orb"), { x: ltr ? xa : xb, y, duration: 0.05, ease: "power2.out" }, t0 - 0.05);
+  tl.to(Q(".orb"), { x: ltr ? xb : xa, y, duration: CUT_D, ease: "power1.inOut" }, t0);
+  tl.to(Q(".c" + k + " .beam"), { scaleY: 2.2, duration: 0.08, ease: "power2.out" }, t0 + CUT_D);
+  burst(ltr ? xb : xa, y, 12, t0 + CUT_D, { seed: 20 + k, dist: 130, size: 9, dur: 0.6, a0: ltr ? -Math.PI / 2 : Math.PI / 2, a1: Math.PI });
+});
+
+/* ---------- 2 · «secciones»: se despegan en 3D con etiquetas ---------- */
+const EXP = { y: [-70, -35, 0, 35, 70], z: [-300, -120, 60, 230, 400], x: [-40, 20, 70, 20, -40] };
+const T_EXP = 2.34;
+tl.to(Q(".rig"), { rotationY: -32, rotationX: 8, rotationZ: -1.5, scale: 0.47, duration: 0.7, ease: E }, T_EXP);
+tl.to(Q(".rig"), { rotationY: -24, rotationX: 5, x: -24, duration: 0.5, ease: "sine.inOut" }, T_EXP + 0.62);
+tl.to(Q(".c-a"), { opacity: 0, duration: 0.01 }, 1.7);
+tl.fromTo(Q(".c-b"), { opacity: 0, y: -26, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: SPR }, 2.5);
+tl.to(Q(".c-b"), { opacity: 0, y: -20, duration: 0.25, ease: "power2.in" }, 3.05);
+tl.to(Q(".cut"), { opacity: 0, duration: 0.3, ease: "power2.out" }, 2.4);
+tl.to(Q(".frame"), { z: -520, opacity: 0, duration: 0.5, ease: "power2.out" }, T_EXP);
+tl.to(Q(".bar"), { z: -520, opacity: 0, duration: 0.5, ease: "power2.out" }, T_EXP);
+tl.to(Q(".winglow"), { scale: 1.5, duration: 1.0, ease: E }, T_EXP);
+orbTo(1640, 400, 2.4, 0.8, E);
+TOPS.forEach((_, i) => {
+  const t = T_EXP + i * 0.04;
+  tl.to(Q(".sw.w" + i), { x: EXP.x[i], y: EXP.y[i], z: EXP.z[i], duration: Math.min(0.8, 2.96 - t), ease: E }, t);
+  tl.to(Q(".sw.w" + i + " .sec"), { borderTopLeftRadius: 34, borderTopRightRadius: 34, borderBottomLeftRadius: 34, borderBottomRightRadius: 34, boxShadow: "0 0 0 10px rgba(255,255,255,.55), 0 80px 160px rgba(10,0,30,.55)", duration: 0.4, ease: "power2.out" }, t);
+  const lt = cue("secciones") + i * 0.11;
+  tl.fromTo(Q(".sw.w" + i + " .lbl"), { opacity: 0, x: 160, scale: 0.6 }, { opacity: 1, x: 0, scale: 1, duration: 0.55, ease: SPR }, lt);
+  tl.to(Q(".sw.w" + i + " .lbl"), { opacity: 0, x: 80, duration: 0.25, ease: "power2.in" }, 2.98 + i * 0.01);
+});
+/* pulso de luz del orbe sobre las etiquetas */
+tl.fromTo(Q(".winglow"), { opacity: 1 }, { opacity: 0.55, duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 2.8);
+
+/* ---------- 3 · recomposición como bloques «vivos» (golpe en el pulso 3.355) ---------- */
+const T_IMP = beat(3.3);                      // 3.355
+tl.to(Q(".rig"), { rotationY: 0, rotationX: 0, rotationZ: 0, scale: S0, x: 0, duration: 0.38, ease: "power3.in" }, T_IMP - 0.38);
+tl.set(Q(".frame"), { z: -8 }, T_IMP - 0.02); tl.set(Q(".bar"), { z: 8 }, T_IMP - 0.02);
+tl.to(Q(".frame"), { opacity: 1, duration: 0.2, ease: "power2.out" }, T_IMP);
+tl.to(Q(".bar"), { opacity: 1, duration: 0.2, ease: "power2.out" }, T_IMP);
+TOPS.forEach((_, i) => {
+  tl.to(Q(".sw.w" + i), { x: 0, y: 0, z: 0, duration: 0.36, ease: "power3.in" }, T_IMP - 0.38 + i * 0.004);
+  tl.to(Q(".sw.w" + i + " .sec"), { borderTopLeftRadius: 0, borderTopRightRadius: 0, borderBottomLeftRadius: i === 4 ? 22 : 0, borderBottomRightRadius: i === 4 ? 22 : 0, boxShadow: "0 0 0 0px rgba(255,255,255,0), 0 0 0px rgba(10,0,30,0)", duration: 0.3, ease: "power2.in" }, T_IMP - 0.34);
+});
+/* impacto */
+tl.to(Q(".rig"), { scale: 0.395, duration: 0.09, ease: "power2.out" }, T_IMP);
+tl.to(Q(".rig"), { scale: S0, duration: 0.55, ease: "elastic.out(1,0.45)" }, T_IMP + 0.09);
+tl.fromTo(Q(".shock"), { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 5, duration: 0.7, ease: "power3.out" }, T_IMP);
+tl.fromTo(Q(".winglow"), { scale: 1.2 }, { scale: 1.0, duration: 0.6, ease: E }, T_IMP);
+burst(CX, CY, 34, T_IMP, { seed: 41, dist: 520, size: 12, dur: 0.9, rect: true, grav: 80 });
+orbTo(1400, 600, T_IMP + 0.05, 0.6, E);
+tl.fromTo(Q(".c-c"), { opacity: 0, y: -26, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: SPR }, T_IMP + 0.15);
+tl.to(Q(".c-c"), { opacity: 0, y: -20, duration: 0.3, ease: "power2.in" }, 4.7);
+
+/* detalles de HTML que aparecen: contornos, etiquetas, cursor de texto, hover */
+TOPS.forEach((_, i) => {
+  const t = T_IMP + 0.12 + i * 0.09;
+  tl.fromTo(Q(".w" + i + " .dash"), { opacity: 0, scale: 0.97 }, { opacity: 1, scale: 1, duration: 0.35, ease: "power2.out" }, t);
+  tl.fromTo(Q(".w" + i + " .tag"), { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.4, ease: SPR }, t + 0.05);
+  tl.to(Q(".w" + i + " .dash"), { opacity: 0, duration: 0.3 }, 4.95);
+  tl.to(Q(".w" + i + " .tag"), { opacity: 0, duration: 0.3 }, 4.95);
+});
+tl.set(Q(".caret"), { opacity: 1 }, T_IMP + 0.25);
+tl.fromTo(Q(".caret"), { opacity: 1 }, { opacity: 0, duration: 0.001, repeat: 9, repeatDelay: 0.14, yoyo: true }, T_IMP + 0.25);
+tl.set(Q(".caret"), { opacity: 0 }, 4.95);
+tl.fromTo(Q(".stars svg"), { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.35, ease: SPR, stagger: 0.03 }, T_IMP + 0.3);
+/* cursor + hover en la tarjeta 2 */
+tl.fromTo(Q(".mouse"), { x: 120, y: 330, opacity: 0 }, { x: 70, y: 262, opacity: 1, duration: 0.01 }, T_IMP + 0.35);
+tl.to(Q(".mouse"), { x: 480, y: 250, duration: 0.5, ease: "power3.inOut" }, T_IMP + 0.4);
+tl.to(Q(".card:nth-child(2)"), { y: -16, backgroundColor: "#fff", borderColor: "#7D29E0", boxShadow: "0 26px 50px rgba(125,41,224,.3)", duration: 0.3, ease: "power2.out" }, T_IMP + 0.85);
+tl.to(Q(".mouse"), { opacity: 0, duration: 0.25 }, 4.4);
+/* botón del hero con hover y el interruptor de precios */
+tl.to(Q(".hbtn"), { scale: 1.06, y: -4, boxShadow: "0 22px 50px rgba(255,1,162,.5)", duration: 0.3, ease: "power2.out" }, T_IMP + 0.5);
+tl.to(Q(".tog i"), { x: 76, duration: 0.4, ease: SPR }, T_IMP + 0.6);
+tl.to(Q(".tog"), { backgroundColor: "#7D29E0", duration: 0.4 }, T_IMP + 0.6);
+tl.fromTo(Q(".fcol .ul"), { scaleX: 0 }, { scaleX: 1, duration: 0.45, ease: E }, T_IMP + 0.75);
+
+/* ---------- 4 · «Publicar»: el orbe pulsa el botón ---------- */
+const T_BTN = cue("lista");
+tl.fromTo(Q(".pub"), { opacity: 0, scale: 0.5, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR }, T_BTN);
+orbTo(1330, 640, T_BTN + 0.1, 0.6, E);
+tl.to(Q(".pub"), { boxShadow: "0 30px 90px rgba(255,1,162,.85)", duration: 0.5, yoyo: true, repeat: 1, ease: "sine.inOut" }, 4.0);
+orbTo(1388, 702, 4.25, 0.18, "power2.out");
+const T_CLK = beat(4.4);                       // 4.445
+clickAt(".r1", 1388, 702, T_CLK);
+tl.to(Q(".pub"), { scale: 0.93, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, T_CLK - 0.02);
+tl.to(Q(".pub .pb"), { opacity: 1, duration: 0.25, ease: "power2.out" }, T_CLK + 0.08);
+tl.to(Q(".pub .t1"), { opacity: 0, y: -18, duration: 0.2, ease: "power2.in" }, T_CLK + 0.06);
+tl.fromTo(Q(".pub .t2"), { opacity: 0, y: 18, scale: 0.8 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: SPR }, T_CLK + 0.16);
+tl.to(Q(".pub"), { boxShadow: "0 30px 90px rgba(18,183,106,.7)", duration: 0.3 }, T_CLK + 0.1);
+burst(1540, 700, 44, T_CLK + 0.1, { seed: 77, dist: 420, size: 13, dur: 1.0, rect: true, grav: 140, cols: ["#ffffff", "#FF01A2", "#9B61F6", "#12B76A", "#FFC53D"] });
+tl.fromTo(Q(".winglow"), { opacity: 1 }, { opacity: 1, duration: 0.01 }, T_CLK);
+tl.to(Q(".rig"), { scale: 0.43, duration: 0.15, yoyo: true, repeat: 1, ease: "power2.out" }, T_CLK + 0.1);
+orbTo(1690, 470, T_CLK + 0.35, 0.7, E);
+tl.to(Q(".pub"), { opacity: 0, scale: 0.8, x: 80, duration: 0.35, ease: "power2.in" }, 5.0);
+
+/* ---------- 5 · el navegador se despliega y la página hace scroll con cámara ---------- */
+const S1 = 1.0, Y1 = 551 * S1, T_UNF = 4.92;
+tl.set(Q(".rig"), { clipPath: "inset(0px 0px 0px 0px round 22px)" }, T_UNF - 0.02);
+tl.to(Q(".rig"), { clipPath: "inset(0px 0px " + (1892 - 790) + "px 0px round 22px)", scale: S1, y: Y1, rotationY: -14, rotationX: 7, duration: 0.85, ease: "expo.inOut" }, T_UNF);
+tl.to(Q(".winglow"), { scaleX: 1.9, scaleY: 0.9, opacity: 0.75, duration: 0.85, ease: "expo.inOut" }, T_UNF);
+tl.to(Q(".bar .live"), { opacity: 1, duration: 0.01 }, T_UNF + 0.3);
+tl.fromTo(Q(".bar .live"), { scale: 0.6 }, { scale: 1, duration: 0.5, ease: SPR }, T_UNF + 0.3);
+/* scroll por pasos clavados a los pulsos */
+const SC = [[beat(5.45), -520], [beat(6.0), -900], [beat(6.55), -1102]];
+SC.forEach(([t, y]) => { tl.to(Q(".pg"), { y, duration: 0.6, ease: "expo.out" }, t - 0.04); });
+tl.to(Q(".rig"), { rotationY: 9, rotationX: 1, scale: 1.03, y: 551 * 1.03, duration: 1.7, ease: "sine.inOut" }, 5.75);
+orbPulse(5.536, 0.4); orbPulse(6.082, 0.4); orbPulse(6.627, 0.4);
+orbTo(1700, 330, 5.7, 0.8, "sine.inOut");
+
+/* ---------- 6 · el scroll se transforma en diapositivas (traspaso) ---------- */
+tl.to(Q(".rig"), { x: -280, rotationY: 40, scale: 0.82, y: 551 * 0.82, duration: 0.6, ease: "power3.in" }, 7.25);
+tl.to(Q(".winglow"), { opacity: 0, duration: 0.5 }, 7.3);
+tl.to(Q(".cam"), { opacity: 0, duration: 0.25, ease: "power2.in" }, 7.65);
+tl.to(Q(".orb"), { opacity: 0, scale: 0.4, duration: 0.3 }, 7.55);
+[["g1", 7.26, -18], ["g2", 7.36, 12], ["g3", 7.46, -8]].forEach(([g, t, rz]) => {
+  tl.fromTo(Q("." + g), { x: 2300, rotationY: -60, rotationZ: rz, scale: 1.05, opacity: 1 }, { x: -2300, rotationY: 40, rotationZ: -rz * 0.5, scale: 1.05, duration: 0.74, ease: "power2.inOut" }, t);
+});
+sceneOut("cut");
+<!--SFX-->
+[{"k":"whoosh","t":1.78,"v":0.35},{"k":"whoosh","t":1.98,"v":0.3},{"k":"whoosh","t":2.18,"v":0.3},{"k":"whoosh","t":2.38,"v":0.3},{"k":"riser","t":2.85,"v":0.3},{"k":"impact","t":3.355,"v":0.5},{"k":"pop","t":3.62,"v":0.4},{"k":"click","t":4.445,"v":0.6},{"k":"ding","t":4.52,"v":0.45},{"k":"whoosh","t":7.3,"v":0.4}]

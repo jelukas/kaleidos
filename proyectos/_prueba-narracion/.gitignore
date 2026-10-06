@@ -1,0 +1,4 @@
+# Intermedios y enlaces para el motor (se regeneran con tools/kaleidos)
+work/
+media/
+props-local.json

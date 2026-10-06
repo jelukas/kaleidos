@@ -1,0 +1,115 @@
+{
+ "sfx": [
+  {
+   "id": "whoosh",
+   "prompt": "Fast cinematic whoosh transition, airy swoosh passing left to right, clean, no music",
+   "durationSeconds": 0.8,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "whoosh-long",
+   "prompt": "Long smooth swoosh with a soft airy tail, cinematic transition, clean",
+   "durationSeconds": 1.4,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "impact",
+   "prompt": "Deep cinematic impact hit with a short sub-bass boom, tight, no reverb tail",
+   "durationSeconds": 1.0,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "riser",
+   "prompt": "Rising tension riser building up with filtered noise and pitch, ends abruptly with silence",
+   "durationSeconds": 3.0,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "pop",
+   "prompt": "Soft bubble pop sound for a user interface, short and friendly",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "click",
+   "prompt": "Crisp UI mouse click, short, clean, modern software",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "key",
+   "prompt": "Single soft mechanical keyboard key press, short",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "ding",
+   "prompt": "Bright pleasant success chime with two ascending notes, clean, modern app",
+   "durationSeconds": 1.0,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "ping",
+   "prompt": "Subtle digital notification ping, short and clean",
+   "durationSeconds": 0.6,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "shutter",
+   "prompt": "Digital camera shutter click, screenshot capture sound, short",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "stamp",
+   "prompt": "Rubber stamp thud on paper, short, punchy",
+   "durationSeconds": 0.6,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "glitch",
+   "prompt": "Short digital glitch stutter, electronic, tight",
+   "durationSeconds": 0.7,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "shimmer",
+   "prompt": "Sparkling magical shimmer chime arpeggio rising, bright and elegant",
+   "durationSeconds": 1.6,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "sting",
+   "prompt": "Short punchy electronic news broadcast sting hit, bold, no melody tail",
+   "durationSeconds": 2.0,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "counter",
+   "prompt": "Fast digital ticking counter numbers rolling, accelerating and then stopping",
+   "durationSeconds": 1.2,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "swipe",
+   "prompt": "Quick UI card swipe slide sound, light",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  },
+  {
+   "id": "tick",
+   "prompt": "Tiny soft electronic tick, very short",
+   "durationSeconds": 0.5,
+   "promptInfluence": 0.5
+  }
+ ],
+ "musicModelId": "music_v2",
+ "music": [
+  {
+   "id": "musica",
+   "lengthMs": 237000,
+   "instrumental": true,
+   "prompt": "Energetic modern technology news-digest track, instrumental, around 120 BPM. Driving four-on-the-floor kick, tight bass, bright plucks and clean synth stabs, light claps and hi-hats. Opens with a punchy 8-bar intro that builds into a confident groove, then stays steady and upbeat for the main body with a small fill every 8 bars, one short breakdown around the two-thirds mark, a lift back into the groove, and a clean resolving final hit at the end. Leaves space in the mid frequencies for a narrator. No vocals, no spoken words."
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "slug": "dora-v2",
+ "titulo": "DORA en la práctica",
+ "bruto": "brutos/prueba1.mp4",
+ "metodo": "clase-larga",
+ "estilo": "curso-azul",
+ "idioma": "es",
+ "salida": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25
+ },
+ "ponente": {
+  "recorte": true
+ },
+ "cortes": {
+  "silencioMin": 0.8,
+  "margen": 0.25,
+  "colaFinal": 1.6
+ },
+ "whisper": {
+  "modelo": "large-v3-turbo",
+  "prompt": "Curso sobre el reglamento DORA de resiliencia operativa digital. Proveedores TIC, due diligence, ISO 27001, SOC 2, subcontratistas, registro de información, cláusulas contractuales, fintech, banco, SaaS, SIEM, EDR, VDI, shadow IT, funciones críticas o importantes, estrategia de salida, plan de continuidad."
+ },
+ "lambda": {
+  "region": "eu-west-1",
+  "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+  "framesPorLambda": 100,
+  "crf": 20,
+  "conservarSalida": false
+ }
+}

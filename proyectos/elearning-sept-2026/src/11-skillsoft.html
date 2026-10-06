@@ -1,0 +1,202 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;inset:0}
+#__ID__ .blob{position:absolute;border-radius:50%}
+#__ID__ .blob.b1{left:-260px;top:520px;width:900px;height:900px;background:radial-gradient(closest-side,rgba(255,1,162,.20),rgba(255,1,162,0))}
+#__ID__ .blob.b2{left:1180px;top:-300px;width:1000px;height:1000px;background:radial-gradient(closest-side,rgba(125,41,224,.22),rgba(125,41,224,0))}
+#__ID__ .lbl{position:absolute;left:100px;top:140px;height:48px;display:flex;align-items:center;gap:18px;white-space:nowrap}
+#__ID__ .lbl .tag{color:__COLOR__}
+#__ID__ .lbl .bar{display:block;width:8px;height:34px;border-radius:4px;background:__COLOR__}
+#__ID__ .w1{left:100px;top:232px;width:1000px;height:620px}
+#__ID__ .w1 .view img{filter:brightness(1.3) contrast(1.03)}
+#__ID__ .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#__ID__ .hlbox{border-color:#FF01A2}
+/* columna derecha A: producto */
+#__ID__ .ra{position:absolute;left:1160px;top:232px;width:660px;height:640px}
+#__ID__ .ra .ring{position:absolute;left:130px;top:70px;width:530px;height:530px;border-radius:50%;border:3px dashed rgba(125,41,224,.35);display:block}
+#__ID__ .ra .ring.r2{left:180px;top:120px;width:430px;height:430px;border:3px solid rgba(255,1,162,.22)}
+#__ID__ .ra .rk{position:absolute;left:0;top:0;font-size:30px}
+#__ID__ .ra .mask{padding:0 .04em .1em;margin:0 -.04em}
+#__ID__ .ra .sk{position:absolute;left:0;top:46px;width:660px;font-size:92px}
+#__ID__ .ra .t1{position:absolute;left:0;top:160px;font-size:216px;color:#7D29E0;display:inline-block;line-height:1.02}
+#__ID__ .ra .mk1{position:absolute;left:0;top:376px;width:660px;font-size:122px}
+#__ID__ .ra .mk2{position:absolute;left:0;top:514px;width:660px;font-size:122px}
+#__ID__ .ra .mk2 .r{color:#E6008E}
+#__ID__ .ra .c1{position:absolute;left:0;top:664px;font-size:34px}
+#__ID__ .ra .c2{position:absolute;left:424px;top:664px;font-size:34px}
+/* columna derecha B: calendario + 85 % */
+#__ID__ .rb{position:absolute;left:1160px;top:232px;width:660px;height:760px}
+#__ID__ .cal{position:absolute;left:0;top:0;width:660px;height:340px;padding:0}
+#__ID__ .cal .hd{position:absolute;left:24px;top:14px;height:54px;display:flex;align-items:center;gap:18px;font-weight:800;font-size:44px;letter-spacing:-.02em;white-space:nowrap}
+#__ID__ .cal .hw{position:relative;color:#667085;display:inline-block}
+#__ID__ .cal .hw i{position:absolute;left:-6px;top:50%;height:6px;margin-top:-3px;width:calc(100% + 12px);background:#FF01A2;border-radius:3px;transform-origin:0 50%}
+#__ID__ .cal .ar{color:#7D29E0;display:inline-block}
+#__ID__ .cal .hdy{color:#E6008E;display:inline-block}
+#__ID__ .cal .grid{position:absolute;left:24px;top:82px;width:612px;height:228px}
+#__ID__ .cal .cd{position:absolute;width:72px;height:36px;border-radius:9px;background:#F2E7FC;border:2px solid #E1CBF8;box-sizing:border-box}
+#__ID__ .cal .cd.on{background:#7D29E0;border-color:#7D29E0}
+#__ID__ .sayc{position:absolute;left:0;top:364px;font-size:36px;color:#B54708;background:#FFF3E6;border-color:#B54708}
+#__ID__ .num{position:absolute;left:0;top:446px;font-size:212px;color:#0D1320;display:inline-block;line-height:1;letter-spacing:-.05em}
+#__ID__ .num .pc{color:#E6008E}
+#__ID__ .num .sg{color:#7D29E0}
+#__ID__ .trk{position:absolute;left:0;top:660px;width:660px;height:36px;border-radius:18px;border:2px solid #E1CBF8;background:repeating-linear-gradient(135deg,#F2E7FC 0 12px,#fff 12px 24px);overflow:hidden;box-sizing:border-box}
+#__ID__ .trk .fl{position:absolute;left:0;top:0;bottom:0;width:100%;border-radius:16px;background:linear-gradient(90deg,#7D29E0,#FF01A2);transform-origin:0 50%}
+#__ID__ .cut{position:absolute;left:0;top:646px;width:6px;height:64px;margin-left:-3px;border-radius:3px;background:#0D1320;opacity:0}
+#__ID__ .blab{position:absolute;left:0;top:712px;width:660px;height:40px;display:flex;justify-content:space-between;font-size:26px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#667085}
+#__ID__ .blab b{color:#E6008E}
+#__ID__ .conf{position:absolute;width:16px;height:16px;border-radius:4px;opacity:0;display:block}
+/* píldora beta */
+#__ID__ .beta{position:absolute;left:100px;top:896px;width:1000px;height:100px;display:flex;align-items:center;gap:22px;padding:0 28px;border-radius:50px;background:#fff;border:2px solid #E1CBF8;box-shadow:0 18px 50px rgba(125,41,224,.16);box-sizing:border-box;white-space:nowrap}
+#__ID__ .beta .bt{font-weight:800;letter-spacing:.14em;font-size:24px;color:#fff;background:#7D29E0;padding:8px 18px;border-radius:999px;display:inline-block}
+#__ID__ .beta .tx{font-weight:600;font-size:38px;letter-spacing:-.01em}
+#__ID__ .beta .tx b{color:#E6008E;font-weight:800}
+#__ID__ .beta svg{display:block;flex:none}
+<!--HTML-->
+<div class="stage">
+  <div class="world">
+    <div class="blob b1"></div><div class="blob b2"></div>
+    <div class="lbl"><i class="bar"></i><span class="tag">Plataformas y contenidos</span><span class="badge date">10 sep 2026</span><span class="badge src">skillsoft.com</span></div>
+
+    <div class="shotwin w1">
+      <div class="sbar"><i></i><i></i><i></i><div class="url">ir.skillsoft.com · nota de prensa</div></div>
+      <div class="view"><img src="assets/captures/skillsoft-lx-title.png" alt="" data-layout-allow-overflow>
+        <div class="hlbox hA"></div><div class="hlbox hB"></div><div class="flash"></div>
+      </div>
+    </div>
+
+    <div class="ra">
+      <div class="ring r1"></div><div class="ring r2"></div>
+      <div class="eye rk">Lanzamiento</div>
+      <div class="mask sk"><div class="r h">SKILLSOFT</div></div>
+      <div class="h t1">LX</div>
+      <div class="mask mk1"><div class="r h">DESIGN</div></div>
+      <div class="mask mk2"><div class="r h">STUDIO</div></div>
+      <div class="chip acc c1">contenido a medida</div>
+      <div class="chip acc c2">con IA</div>
+    </div>
+
+    <div class="rb">
+      <div class="panel cal">
+        <div class="hd"><span class="hw">SEMANAS<i></i></span><span class="ar">→</span><span class="hdy">DÍAS</span></div>
+        <div class="grid"></div>
+      </div>
+      <div class="chip sayc">según la empresa*</div>
+      <div class="num h"><span class="sg">−</span><span class="nv">0</span><span class="pc">%</span></div>
+      <div class="trk"><div class="fl"></div></div>
+      <div class="cut"></div>
+      <div class="blab"><span>Tiempo de desarrollo</span><b>hasta −85 %*</b></div>
+      <div class="confs"></div>
+    </div>
+
+    <div class="panel beta">
+      <span class="bt">BETA</span>
+      <svg width="54" height="54" viewBox="0 0 54 54" fill="none"><circle cx="27" cy="29" r="19" stroke="#7D29E0" stroke-width="5"/><path d="M27 29V17" stroke="#E6008E" stroke-width="5" stroke-linecap="round"/><path d="M20 5h14" stroke="#7D29E0" stroke-width="5" stroke-linecap="round"/></svg>
+      <span class="tx">Simulaciones con IA en <b>~15 min</b>*</span>
+    </div>
+  </div>
+  <div class="strip"></div>
+</div>
+<!--JS-->
+const CW = 1440, CH = 900;
+function hlAt(box, win, fx, fy, s, px, py, pw, ph, at, d = 0.5) {
+  const p = shotPos(win, CW, CH, fx, fy, s);
+  hl(box, p.x + px * s, p.y + py * s, pw * s, ph * s, at, d);
+}
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 0.3, 0.9, 0.8);
+
+/* fondo vivo */
+tl.fromTo(Q(".b1"), { x: 0, y: 0 }, { x: 160, y: -80, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".b2"), { x: 0, y: 0 }, { x: -200, y: 90, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.025, duration: DUR, ease: "none", transformOrigin: "50% 50%" }, 0);
+
+up(".lbl", 0.15, { d: 0.6, y: 18 });
+
+/* ---------- ventana: captura real ---------- */
+shotSet(".w1", CW, CH, 720, 393, 0.72);
+tl.fromTo(Q(".w1"), { opacity: 0, y: 46, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: E }, 0.04);
+tl.fromTo(Q(".w1"), { rotation: 0 }, { rotation: -0.7, duration: 2.4, ease: "sine.inOut", yoyo: true, repeat: 1, transformOrigin: "50% 50%" }, 0.7);
+tl.fromTo(Q(".flash"), { opacity: 0.85 }, { opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+// zoom al titular: «Weeks to Days»
+shotCam(".w1", CW, CH, 250, 250, 2.1, 1.45, 1.05);
+hlAt(".hA", ".w1", 250, 250, 2.1, 30, 230, 250, 46, 2.55);
+tl.to(Q(".hA"), { opacity: 0, duration: 0.25 }, 5.5);
+// zoom a la frase del 85 % (asterisco incluido)
+shotCam(".w1", CW, CH, 1090, 425, 1.9, 6.25, 1.0);
+hlAt(".hB", ".w1", 1090, 425, 1.9, 1119, 425, 108, 28, 7.65);
+
+/* ---------- columna A: producto ---------- */
+tl.fromTo(Q(".ra .ring.r1"), { opacity: 0, scale: 0.5, rotation: 0 }, { opacity: 1, scale: 1, rotation: 120, duration: 5.3, ease: "power2.out" }, 0.2);
+tl.fromTo(Q(".ra .ring.r2"), { opacity: 0, scale: 0.4, rotation: 0 }, { opacity: 1, scale: 1, rotation: -90, duration: 5.3, ease: "power2.out" }, 0.3);
+up(".ra .rk", 0.3, { d: 0.5, y: 14 });
+rise(".ra .sk .r", cue("Skillsoft"), 0.8);
+slam(".ra .t1", beat(cue("LX")));
+rise(".ra .mk1 .r", cue("Design"), 0.8);
+rise(".ra .mk2 .r", cue("Studio"), 0.8);
+pop(".ra .c1", cue("contenido"), 0.55);
+pop(".ra .c2", cue(8), 0.5);
+tl.to(Q(".ra"), { x: 120, opacity: 0, filter: "blur(14px)", duration: 0.35, ease: "power3.in" }, 5.5);
+
+/* ---------- columna B: calendario que se contrae + 85 % ---------- */
+const grid = $q(".cal .grid"), cells = [];
+for (let r = 0; r < 5; r++) for (let c = 0; c < 7; c++) {
+  const d = document.createElement("div");
+  d.className = "cd"; d.style.left = c * 90 + "px"; d.style.top = r * 48 + "px"; grid.appendChild(d); cells.push({ d, r, c });
+}
+const TB = 5.72;   // entra el bloque B
+tl.fromTo(Q(".cal"), { opacity: 0, x: 140, filter: "blur(12px)" }, { opacity: 1, x: 0, filter: "blur(0px)", duration: 0.55, ease: E }, TB);
+tl.fromTo(Q(".cal .hw"), { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.4, ease: E }, TB + 0.15);
+tl.set(Q(".cal .ar"), { opacity: 0 }, 0);
+tl.set(Q(".cal .hdy"), { opacity: 0 }, 0);
+tl.set(Q(".cal .hw i"), { scaleX: 0 }, 0);
+cells.forEach((o, i) => {
+  tl.fromTo(o.d, { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.3, ease: SPR }, TB + 0.2 + i * 0.008);
+  tl.to(o.d, { backgroundColor: "#7D29E0", borderColor: "#7D29E0", duration: 0.2 }, TB + 0.55 + i * 0.024);
+});
+pop(".sayc", Math.max(cue("según"), TB + 0.35), 0.5);
+// «reduce»: las semanas se contraen a unos pocos días
+const TC = cue("reduce");
+tl.to(Q(".cal .hw i"), { scaleX: 1, duration: 0.3, ease: "power3.out" }, TC - 0.05);
+tl.fromTo(Q(".cal .ar"), { opacity: 0, x: -20 }, { opacity: 1, x: 0, duration: 0.35, ease: E }, TC + 0.1);
+tl.fromTo(Q(".cal .hdy"), { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.5, ease: SPR }, TC + 0.2);
+cells.forEach((o, i) => {
+  if (o.r > 0) tl.to(o.d, { scaleY: 0, opacity: 0, duration: 0.32, ease: "power3.in" }, TC + (4 - o.r) * 0.07 + o.c * 0.01);
+  else if (o.c >= 3) tl.to(o.d, { scale: 0, opacity: 0, duration: 0.28, ease: "power3.in" }, TC + 0.28 + (6 - o.c) * 0.03);
+  else {
+    const tx = [110, 180, 250][o.c];
+    o.d.innerHTML = '<svg viewBox="0 0 24 24" width="24" height="24" style="position:absolute;left:21px;top:5px" fill="none"><path d="M5 12.5l4.5 4.5L19 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    tl.to(o.d, { x: tx, y: 96, scale: 2, backgroundColor: "#FF01A2", borderColor: "#FF01A2", duration: 0.7, ease: "back.out(1.5)" }, TC + 0.4 + o.c * 0.06);
+  }
+});
+tl.to(Q(".cal"), { scale: 1.035, duration: 0.18, yoyo: true, repeat: 1, ease: "sine.inOut", transformOrigin: "50% 50%" }, TC + 0.9);
+
+// 85 %
+const TN = cue("ochenta");
+pop(".num", TN - 0.06, 0.5);
+count(".num .nv", 85, TN, 1.25);
+tl.fromTo(Q(".trk"), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.45, ease: E }, TN - 0.4);
+tl.fromTo(Q(".trk .fl"), { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power2.out" }, TN - 0.3);
+fade(".blab", TN - 0.2, 0.4);
+// recorte: la barra se acorta al 15 %
+tl.to(Q(".trk .fl"), { scaleX: 0.15, duration: 1.15, ease: "power3.inOut" }, TN + 0.25);
+tl.fromTo(Q(".cut"), { opacity: 0, x: 660, y: 0 }, { opacity: 1, x: 660, duration: 0.15 }, TN + 0.2);
+tl.to(Q(".cut"), { x: 99, duration: 1.15, ease: "power3.inOut" }, TN + 0.25);
+tl.to(Q(".cut"), { opacity: 0, duration: 0.3 }, TN + 1.5);
+// confeti de recorte (semilla fija)
+let sd = 11; const rnd = () => (sd = (sd * 1664525 + 1013904223) % 4294967296) / 4294967296;
+const confHost = $q(".confs"), cols = ["#7D29E0", "#FF01A2", "#9B61F6", "#E6008E"];
+for (let i = 0; i < 18; i++) {
+  const c = document.createElement("i"); c.className = "conf"; c.style.left = 120 + "px"; c.style.top = 678 + "px"; c.style.background = cols[i % 4];
+  confHost.appendChild(c);
+  const a = -Math.PI * (0.15 + 0.7 * rnd()), v = 120 + 220 * rnd();
+  tl.set(c, { opacity: 1 }, TN + 1.4);
+  tl.fromTo(c, { x: 0, y: 0, rotation: 0 }, { opacity: 0, x: Math.cos(a) * v * 1.6 + 200, y: Math.sin(a) * v + 140 * rnd(), rotation: 360 * rnd() - 180, duration: 0.9, ease: "power2.out" }, TN + 1.4);
+}
+// píldora: simulaciones en ~15 minutos
+up(".beta", cue("desarrollo") + 0.35, { d: 0.6, y: 40, ease: SPR });
+
+/* pulsos de música: la cifra late */
+[8.55, 9.05, 9.55, 10.05].forEach((b) => tl.fromTo(Q(".num"), { scale: 1 }, { scale: 1.04, duration: 0.12, yoyo: true, repeat: 1, ease: "sine.inOut", transformOrigin: "0 50%" }, beat(b)));
+
+sceneOut("whip");
+<!--SFX-->
+[{"k":"shutter","t":0.3,"v":0.45},{"k":"impact","t":1.93,"v":0.5},{"k":"pop","t":3.7,"v":0.35},{"k":"ping","t":5.65,"v":0.4},{"k":"swipe","t":6.9,"v":0.45},{"k":"counter","t":7.75,"v":0.4},{"k":"stamp","t":9.05,"v":0.45},{"k":"pop","t":9.6,"v":0.35}]

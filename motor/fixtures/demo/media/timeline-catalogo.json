@@ -1,0 +1,264 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 1140,
+ "fuente": {
+  "ancho": 3840,
+  "alto": 2160,
+  "fps": 25,
+  "duracion": 2042.688
+ },
+ "recorte": false,
+ "plancha": null,
+ "segmentos": [
+  {
+   "dst": 0,
+   "src": 41,
+   "dur": 1140
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 1140,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1
+   ]
+  }
+ ],
+ "capitulos": [],
+ "eventos": [
+  {
+   "id": "c01",
+   "tipo": "escena3d",
+   "objeto": "escudo",
+   "desde": 0,
+   "hasta": 70,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 1/15",
+   "titulo": "escudo",
+   "etiquetas": []
+  },
+  {
+   "id": "c02",
+   "tipo": "escena3d",
+   "objeto": "contrato",
+   "desde": 76,
+   "hasta": 146,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 2/15",
+   "titulo": "contrato",
+   "etiquetas": [
+    {
+     "en": 84,
+     "texto": "Auditoría"
+    },
+    {
+     "en": 125,
+     "texto": "Salida"
+    }
+   ]
+  },
+  {
+   "id": "c03",
+   "tipo": "escena3d",
+   "objeto": "registro",
+   "desde": 152,
+   "hasta": 222,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 3/15",
+   "titulo": "registro",
+   "etiquetas": []
+  },
+  {
+   "id": "c04",
+   "tipo": "escena3d",
+   "objeto": "cadena",
+   "desde": 228,
+   "hasta": 298,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 4/15",
+   "titulo": "cadena",
+   "etiquetas": [
+    {
+     "en": 236,
+     "texto": "Entidad"
+    },
+    {
+     "en": 256,
+     "texto": "Proveedor"
+    },
+    {
+     "en": 277,
+     "texto": "Subcontrata"
+    }
+   ]
+  },
+  {
+   "id": "c05",
+   "tipo": "escena3d",
+   "objeto": "balanza",
+   "desde": 304,
+   "hasta": 374,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 5/15",
+   "titulo": "balanza",
+   "etiquetas": [
+    {
+     "en": 312,
+     "texto": "Riesgo"
+    },
+    {
+     "en": 353,
+     "texto": "Control"
+    }
+   ]
+  },
+  {
+   "id": "c06",
+   "tipo": "escena3d",
+   "objeto": "salida",
+   "desde": 380,
+   "hasta": 450,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 6/15",
+   "titulo": "salida",
+   "etiquetas": []
+  },
+  {
+   "id": "c07",
+   "tipo": "escena3d",
+   "objeto": "orbe",
+   "desde": 456,
+   "hasta": 526,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 7/15",
+   "titulo": "orbe",
+   "etiquetas": []
+  },
+  {
+   "id": "c08",
+   "tipo": "escena3d",
+   "objeto": "piramide",
+   "desde": 532,
+   "hasta": 602,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 8/15",
+   "titulo": "piramide",
+   "etiquetas": [
+    {
+     "en": 540,
+     "texto": "Mínimo"
+    },
+    {
+     "en": 554,
+     "texto": "Limitado"
+    },
+    {
+     "en": 567,
+     "texto": "Alto"
+    },
+    {
+     "en": 581,
+     "texto": "Inaceptable"
+    }
+   ]
+  },
+  {
+   "id": "c09",
+   "tipo": "escena3d",
+   "objeto": "estrellas-ue",
+   "desde": 608,
+   "hasta": 678,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 9/15",
+   "titulo": "estrellas-ue",
+   "etiquetas": []
+  },
+  {
+   "id": "c10",
+   "tipo": "escena3d",
+   "objeto": "reloj",
+   "desde": 684,
+   "hasta": 754,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 10/15",
+   "titulo": "reloj",
+   "etiquetas": []
+  },
+  {
+   "id": "c11",
+   "tipo": "escena3d",
+   "objeto": "grafica",
+   "desde": 760,
+   "hasta": 830,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 11/15",
+   "titulo": "grafica",
+   "etiquetas": []
+  },
+  {
+   "id": "c12",
+   "tipo": "escena3d",
+   "objeto": "candado",
+   "desde": 836,
+   "hasta": 906,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 12/15",
+   "titulo": "candado",
+   "etiquetas": []
+  },
+  {
+   "id": "c13",
+   "tipo": "escena3d",
+   "objeto": "engranajes",
+   "desde": 912,
+   "hasta": 982,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 13/15",
+   "titulo": "engranajes",
+   "etiquetas": []
+  },
+  {
+   "id": "c14",
+   "tipo": "escena3d",
+   "objeto": "bombilla",
+   "desde": 988,
+   "hasta": 1058,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 14/15",
+   "titulo": "bombilla",
+   "etiquetas": []
+  },
+  {
+   "id": "c15",
+   "tipo": "escena3d",
+   "objeto": "documento",
+   "desde": 1064,
+   "hasta": 1134,
+   "lado": "der",
+   "kicker": "Catálogo 3D · 15/15",
+   "titulo": "documento",
+   "etiquetas": []
+  }
+ ],
+ "subtitulos": [],
+ "gestos": [],
+ "intro": null,
+ "outro": null,
+ "avisos": [
+  "fixture sintético: subtítulos y gesto inventados"
+ ]
+}

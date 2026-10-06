@@ -1,0 +1,137 @@
+[
+ {
+  "id": "cap-home",
+  "url": "https://n8n.io/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-vs-zapier",
+  "url": "https://n8n.io/vs/zapier/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-precios",
+  "url": "https://n8n.io/pricing/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 5000
+ },
+ {
+  "id": "cap-elegir",
+  "url": "https://docs.n8n.io/choose-how-to-use-n8n",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-form-trigger",
+  "url": "https://n8n.io/integrations/n8n-form-trigger/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 5000
+ },
+ {
+  "id": "cap-integraciones",
+  "url": "https://n8n.io/integrations/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 5000
+ },
+ {
+  "id": "cap-datos",
+  "url": "https://docs.n8n.io/build/work-with-data/understand-n8ns-data-structure",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-credenciales",
+  "url": "https://docs.n8n.io/build/understand-workflows/create-and-edit-credentials",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-plantilla-formulario",
+  "url": "https://n8n.io/workflows/11643-manage-contact-form-submissions-with-google-sheets-slack-alerts-and-gmail-replies/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 11000
+ },
+ {
+  "id": "cap-pin-data",
+  "url": "https://docs.n8n.io/build/work-with-data/pin-and-mock-data",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-publish",
+  "url": "https://docs.n8n.io/build/understand-workflows/save-and-publish-workflows",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 4000
+ },
+ {
+  "id": "cap-plantilla-hubspot",
+  "url": "https://n8n.io/workflows/2122-automatically-email-great-leads-when-they-submit-a-form-and-record-in-hubspot/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 11000
+ },
+ {
+  "id": "cap-plantilla-gmail-ia",
+  "url": "https://n8n.io/workflows/2197-auto-label-incoming-gmail-messages-with-ai-nodes/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 11000
+ },
+ {
+  "id": "cap-plantilla-agente",
+  "url": "https://n8n.io/workflows/1954-ai-agent-chat/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 11000
+ },
+ {
+  "id": "cap-galeria",
+  "url": "https://n8n.io/workflows/",
+  "width": 1440,
+  "height": 810,
+  "fullPage": false,
+  "scrollY": 0,
+  "wait": 6000
+ }
+]

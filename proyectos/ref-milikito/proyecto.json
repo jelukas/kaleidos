@@ -1,0 +1,32 @@
+{
+  "slug": "ref-milikito",
+  "titulo": "Referencia de estilo «milikito» (solo análisis)",
+  "bruto": "brutos/milikito.mp4",
+  "metodo": "clase-larga",
+  "estilo": "curso-azul",
+  "idioma": "es",
+  "salida": {
+    "ancho": 1920,
+    "alto": 1080,
+    "fps": 29.945
+  },
+  "ponente": {
+    "recorte": false
+  },
+  "cortes": {
+    "silencioMin": 0.8,
+    "margen": 0.25,
+    "colaFinal": 1.6
+  },
+  "whisper": {
+    "modelo": "large-v3-turbo",
+    "prompt": "Pitch Perfect, método T.R.A.M.A., Tensión, Revelación, Actuación, Metamorfosis, Acción final, antagonista, storytelling, pitch, propuesta, EUREKA"
+  },
+  "lambda": {
+    "region": "eu-west-1",
+    "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+    "framesPorLambda": 100,
+    "crf": 20,
+    "conservarSalida": false
+  }
+}

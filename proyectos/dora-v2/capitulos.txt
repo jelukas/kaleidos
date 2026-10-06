@@ -1,0 +1,15 @@
+0:00 Caso 1 · El proveedor que ya conocemos
+0:40 Caso 1 · Opción A · Pack acelerado
+1:32 Caso 1 · Opción B · Reutilización interna
+2:29 Caso 1 · Opción C · Marco completo
+3:04 Caso 1 · Opción D · Estrategia conservadora
+3:54 Caso 2 · La señal débil de las 9:15
+4:29 Caso 2 · Opción A · Confirmación primero
+5:24 Caso 2 · Opción B · Activación preliminar del protocolo
+6:14 Caso 2 · Opción C · Aislar y comunicar después
+7:16 Caso 2 · Opción D · Decisión de las áreas afectadas
+8:12 Caso 3 · Viernes por la tarde
+8:42 Caso 3 · Opción A · Equipo del compañero
+9:51 Caso 3 · Opción B · VDI desde dispositivo personal
+10:54 Caso 3 · Opción C · Activación del protocolo
+11:41 Caso 3 · Opción D · Decisión del responsable

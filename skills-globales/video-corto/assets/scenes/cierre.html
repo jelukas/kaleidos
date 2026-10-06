@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 4vmin;
+          background: var(--vox-ink);
+          padding: 9vmin 6vmin;
+        }
+        .cfield {
+          width: 100%;
+          max-width: 108vmin;
+          height: 42vmin;
+        }
+        .ccount {
+          font: 900 17vmin/0.9 var(--vox-font);
+          color: var(--vox-yellow);
+          font-variant-numeric: tabular-nums;
+        }
+        .cline {
+          font: 900 5.6vmin/1.12 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.16vmin;
+          color: var(--vox-white);
+          text-align: center;
+          max-width: 92%;
+        }
+        .cfoot {
+          font: 700 2.5vmin/1.2 var(--vox-font);
+          color: #8a8a92;
+          text-transform: uppercase;
+          letter-spacing: 0.2vmin;
+        }
+      </style>
+
+      <div id="root" data-composition-id="cierre">
+        <!-- Aquí 1 punto = 1 persona. Son exactamente 67, contados. -->
+        <svg class="cfield" viewBox="0 0 96 30" preserveAspectRatio="xMidYMid meet">
+          <g id="c-dots"></g>
+        </svg>
+        <div class="ccount" id="c-count">0</div>
+        <div class="cline" id="c-line">personas que no llegaron al otro lado</div>
+        <div class="cfoot" id="c-foot">Ceuta · 30 y 31 de julio de 2026</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+
+        // 67 puntos exactos, uno por persona: 17 por fila salvo la última.
+        const TOTAL = 67;
+        const PER_ROW = 17;
+        const g = document.getElementById("c-dots");
+        let svg = "";
+        for (let i = 0; i < TOTAL; i++) {
+          const row = Math.floor(i / PER_ROW);
+          const col = i % PER_ROW;
+          const rowCount = Math.min(PER_ROW, TOTAL - row * PER_ROW);
+          // Centra la última fila, que va incompleta.
+          const offset = (96 - rowCount * 5.4) / 2 + 2.7;
+          svg += `<circle class="cdot" cx="${(offset + col * 5.4).toFixed(2)}" cy="${(4 + row * 7).toFixed(2)}" r="1.7" fill="#ffe500" opacity="0"/>`;
+        }
+        g.innerHTML = svg;
+
+        const tl = gsap.timeline({ paused: true });
+
+        // Los puntos aparecen uno a uno: el conteo y el campo van sincronizados.
+        tl.to(".cdot", { opacity: 1, duration: 0.14, stagger: 0.052, ease: "none" }, 0.3);
+
+        const el = document.getElementById("c-count");
+        const proxy = { v: 0 };
+        tl.fromTo(
+          proxy,
+          { v: 0 },
+          {
+            v: TOTAL,
+            duration: TOTAL * 0.052,
+            ease: "none",
+            onUpdate: () => {
+              el.textContent = String(Math.round(proxy.v));
+            },
+          },
+          0.3,
+        )
+          .fromTo("#c-count", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 0.26)
+          .fromTo("#c-line", { opacity: 0, y: "2vmin" }, { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 3.9)
+          .fromTo("#c-foot", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 4.5);
+
+        window.__timelines["cierre"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

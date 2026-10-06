@@ -1,0 +1,1559 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 2225,
+ "fuente": {
+  "ancho": 3840,
+  "alto": 2160,
+  "fps": 25,
+  "duracion": 2042.688
+ },
+ "recorte": true,
+ "plancha": {
+  "x": 768,
+  "y": 0,
+  "ancho": 2400,
+  "alto": 2160,
+  "escala": 0.75
+ },
+ "segmentos": [
+  {
+   "dst": 0,
+   "src": 41,
+   "dur": 685
+  },
+  {
+   "dst": 685,
+   "src": 72,
+   "dur": 415
+  },
+  {
+   "dst": 1100,
+   "src": 92,
+   "dur": 950
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 150,
+   "tipo": "card",
+   "forzado": true,
+   "s": 0.54,
+   "tx": 1440,
+   "ty": 262,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 150,
+   "hasta": 241,
+   "tipo": "card",
+   "forzado": true,
+   "s": 0.54,
+   "tx": 1440,
+   "ty": 262,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 241,
+   "hasta": 352,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 352,
+   "hasta": 463,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 463,
+   "hasta": 574,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 574,
+   "hasta": 685,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 685,
+   "hasta": 761,
+   "tipo": "popL",
+   "forzado": true,
+   "s": 0.74,
+   "tx": 640,
+   "ty": 368,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.03
+   ]
+  },
+  {
+   "desde": 761,
+   "hasta": 887,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 887,
+   "hasta": 988,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 988,
+   "hasta": 1063,
+   "tipo": "wide",
+   "forzado": true,
+   "s": 0.52,
+   "tx": 960,
+   "ty": 250,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.03
+   ]
+  },
+  {
+   "desde": 1063,
+   "hasta": 1100,
+   "tipo": "medium",
+   "forzado": false,
+   "s": 0.76,
+   "tx": 960,
+   "ty": 372,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.03
+   ]
+  },
+  {
+   "desde": 1100,
+   "hasta": 1191,
+   "tipo": "card",
+   "forzado": true,
+   "s": 0.54,
+   "tx": 1440,
+   "ty": 262,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1191,
+   "hasta": 1302,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1302,
+   "hasta": 1403,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1403,
+   "hasta": 1524,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1524,
+   "hasta": 1645,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1645,
+   "hasta": 1776,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1776,
+   "hasta": 1877,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1877,
+   "hasta": 1988,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.02
+   ]
+  },
+  {
+   "desde": 1988,
+   "hasta": 2046,
+   "tipo": "wide",
+   "forzado": true,
+   "s": 0.52,
+   "tx": 960,
+   "ty": 250,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.03
+   ]
+  },
+  {
+   "desde": 2046,
+   "hasta": 2225,
+   "tipo": "wide",
+   "forzado": false,
+   "s": 0.52,
+   "tx": 960,
+   "ty": 250,
+   "nariz": [
+    1930,
+    500
+   ],
+   "zoom": [
+    1,
+    1.03
+   ]
+  }
+ ],
+ "capitulos": [
+  {
+   "desde": 150,
+   "hasta": 1100,
+   "rotuloHasta": 235,
+   "n": 1,
+   "titulo": "Decidir con datos",
+   "kicker": "Capítulo 1",
+   "subtitulo": "Qué revisar antes de firmar con un proveedor",
+   "acento": 0,
+   "objeto3d": null
+  },
+  {
+   "desde": 1100,
+   "hasta": 2050,
+   "rotuloHasta": 1185,
+   "n": 2,
+   "titulo": "Cuando algo falla",
+   "kicker": "Capítulo 2",
+   "subtitulo": "Señales, plazos y cómo reaccionar a tiempo",
+   "acento": 1,
+   "objeto3d": "bombilla"
+  }
+ ],
+ "eventos": [
+  {
+   "id": "e01",
+   "tipo": "panel",
+   "kind": "lista",
+   "desde": 241,
+   "hasta": 346,
+   "lado": "der",
+   "kicker": "Antes de firmar",
+   "titulo": "Qué pedir al proveedor",
+   "items": [
+    {
+     "en": 251,
+     "texto": "Certificaciones vigentes",
+     "icono": "escudo"
+    },
+    {
+     "en": 271,
+     "texto": "Plan de continuidad probado",
+     "icono": "reloj",
+     "detalle": "con fecha del último simulacro"
+    },
+    {
+     "en": 292,
+     "texto": "Lista de subcontratistas",
+     "icono": "red"
+    },
+    {
+     "en": 312,
+     "texto": "Derecho de auditoría",
+     "icono": "auditoria"
+    }
+   ]
+  },
+  {
+   "id": "e02",
+   "tipo": "panel",
+   "kind": "pasos",
+   "desde": 352,
+   "hasta": 457,
+   "lado": "izq",
+   "kicker": "Proceso",
+   "titulo": "Del riesgo a la decisión",
+   "items": [
+    {
+     "en": 362,
+     "texto": "Identificar",
+     "icono": "lupa"
+    },
+    {
+     "en": 392,
+     "texto": "Evaluar",
+     "icono": "balanza"
+    },
+    {
+     "en": 423,
+     "texto": "Decidir",
+     "icono": "check"
+    }
+   ]
+  },
+  {
+   "id": "e03",
+   "tipo": "panel",
+   "kind": "checklist",
+   "desde": 463,
+   "hasta": 568,
+   "lado": "der",
+   "kicker": "Revisión",
+   "titulo": "El contrato incluye…",
+   "items": [
+    {
+     "en": 473,
+     "texto": "Niveles de servicio medibles",
+     "tono": "ok"
+    },
+    {
+     "en": 493,
+     "texto": "Plazos de notificación de incidentes",
+     "tono": "ok"
+    },
+    {
+     "en": 514,
+     "texto": "Estrategia de salida",
+     "tono": "aviso",
+     "detalle": "solo esbozada"
+    },
+    {
+     "en": 534,
+     "texto": "Ubicación de los datos",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "id": "e04",
+   "tipo": "panel",
+   "kind": "comparativa",
+   "desde": 574,
+   "hasta": 679,
+   "lado": "der",
+   "kicker": "Certificación ≠ contrato",
+   "titulo": "No es lo mismo",
+   "izq": {
+    "en": 584,
+    "titulo": "Certificados",
+    "items": [
+     "Útiles como punto de partida",
+     "No cubren tu caso"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "en": 612,
+    "titulo": "Cláusulas",
+    "items": [
+     "Específicas del servicio",
+     "Obligan a las dos partes"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "e05",
+   "tipo": "pop",
+   "desde": 685,
+   "hasta": 755,
+   "texto": "Revisar es contrastar,",
+   "sub": "no releer",
+   "grande": true
+  },
+  {
+   "id": "e06",
+   "tipo": "panel",
+   "kind": "opciones",
+   "desde": 761,
+   "hasta": 881,
+   "lado": "der",
+   "kicker": "Caso práctico",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Firmar ya y revisar después"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilizar una evaluación antigua"
+    },
+    {
+     "letra": "C",
+     "texto": "Evaluación completa y proporcional"
+    },
+    {
+     "letra": "D",
+     "texto": "Esperar a que otro decida"
+    }
+   ],
+   "foco": {
+    "en": 830,
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "id": "e07",
+   "tipo": "panel",
+   "kind": "cifra",
+   "desde": 887,
+   "hasta": 982,
+   "lado": "der",
+   "kicker": "Plazo",
+   "titulo": "Notificación inicial",
+   "valor": 72,
+   "valorInicial": 0,
+   "unidad": "h",
+   "etiqueta": "como máximo desde que se detecta el incidente"
+  },
+  {
+   "id": "e08",
+   "tipo": "gesto3d",
+   "objeto": "orbe",
+   "desde": 988,
+   "hasta": 1063,
+   "texto": "Todo encaja"
+  },
+  {
+   "id": "e09",
+   "tipo": "panel",
+   "kind": "cita",
+   "desde": 1191,
+   "hasta": 1296,
+   "lado": "izq",
+   "kicker": "Idea clave",
+   "texto": "La resiliencia no se improvisa: se ensaya antes de necesitarla",
+   "resalta": [
+    "se ensaya"
+   ]
+  },
+  {
+   "id": "e10",
+   "tipo": "panel",
+   "kind": "clave",
+   "desde": 1302,
+   "hasta": 1397,
+   "lado": "der",
+   "kicker": "Concepto",
+   "titulo": "Función crítica",
+   "texto": "Si se interrumpe, el servicio al cliente se detiene",
+   "resalta": [
+    "se detiene"
+   ]
+  },
+  {
+   "id": "e11",
+   "tipo": "panel",
+   "kind": "linea",
+   "desde": 1403,
+   "hasta": 1518,
+   "lado": "der",
+   "kicker": "Cronología",
+   "titulo": "Un incidente, paso a paso",
+   "hitos": [
+    {
+     "en": 1413,
+     "etiqueta": "09:15",
+     "texto": "Alerta sin confirmar"
+    },
+    {
+     "en": 1435,
+     "etiqueta": "09:40",
+     "texto": "Se activa el protocolo"
+    },
+    {
+     "en": 1457,
+     "etiqueta": "11:00",
+     "texto": "Aviso inicial"
+    },
+    {
+     "en": 1480,
+     "etiqueta": "Día 3",
+     "texto": "Informe intermedio"
+    }
+   ]
+  },
+  {
+   "id": "e12",
+   "tipo": "panel",
+   "kind": "mapa",
+   "desde": 1524,
+   "hasta": 1639,
+   "lado": "izq",
+   "kicker": "Dependencias",
+   "titulo": "Quién toca el servicio",
+   "centro": "Servicio crítico",
+   "nodos": [
+    {
+     "en": 1534,
+     "texto": "Proveedor en la nube"
+    },
+    {
+     "en": 1556,
+     "texto": "Equipo interno"
+    },
+    {
+     "en": 1578,
+     "texto": "Subcontrata"
+    },
+    {
+     "en": 1601,
+     "texto": "Autoridad supervisora"
+    }
+   ]
+  },
+  {
+   "id": "e13",
+   "tipo": "escena3d",
+   "objeto": "cadena",
+   "desde": 1645,
+   "hasta": 1770,
+   "lado": "der",
+   "kicker": "Concentración",
+   "titulo": "Si uno cae, caen todos",
+   "etiquetas": [
+    {
+     "en": 1657,
+     "texto": "Entidad"
+    },
+    {
+     "en": 1693,
+     "texto": "Proveedor"
+    },
+    {
+     "en": 1730,
+     "texto": "Subcontrata"
+    }
+   ]
+  },
+  {
+   "id": "e14",
+   "tipo": "panel",
+   "kind": "tarjeta",
+   "desde": 1776,
+   "hasta": 1871,
+   "lado": "der",
+   "kicker": "Recuerda",
+   "titulo": "Documentar",
+   "texto": "Lo que no está documentado, no se puede demostrar",
+   "icono": "documento"
+  },
+  {
+   "id": "e15",
+   "tipo": "panel",
+   "kind": "caso",
+   "desde": 1877,
+   "hasta": 1982,
+   "lado": "izq",
+   "kicker": "Caso 2",
+   "titulo": "La señal débil",
+   "texto": "Una alerta sin confirmar afecta a funciones críticas. Esperar a tener certeza deja fuera de plazo la primera notificación.",
+   "veredicto": {
+    "en": 1945,
+    "texto": "Activar pronto",
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "e16",
+   "tipo": "ilustracion",
+   "desde": 1988,
+   "hasta": 2046,
+   "imagen": "ilustracion-demo",
+   "profundidad": "ilustracion-demo-prof",
+   "camara": {
+    "desde": [
+     -0.35,
+     0.05,
+     0
+    ],
+    "hasta": [
+     0.45,
+     0.12,
+     -0.9
+    ]
+   },
+   "anclas": [
+    {
+     "u": 0.32,
+     "v": 0.62,
+     "lift": 0.05,
+     "texto": "Oficina",
+     "objeto": "candado",
+     "en": 1996
+    },
+    {
+     "u": 0.76,
+     "v": 0.27,
+     "lift": 0.05,
+     "texto": "Sol",
+     "en": 2008
+    }
+   ]
+  }
+ ],
+ "subtitulos": [
+  {
+   "desde": 6,
+   "hasta": 74,
+   "palabras": [
+    {
+     "t": "Hoy",
+     "desde": 6,
+     "hasta": 13
+    },
+    {
+     "t": "vamos",
+     "desde": 13,
+     "hasta": 20
+    },
+    {
+     "t": "a",
+     "desde": 20,
+     "hasta": 27
+    },
+    {
+     "t": "ver",
+     "desde": 27,
+     "hasta": 34
+    },
+    {
+     "t": "cómo",
+     "desde": 34,
+     "hasta": 41
+    },
+    {
+     "t": "decidir",
+     "desde": 41,
+     "hasta": 48
+    },
+    {
+     "t": "con",
+     "desde": 48,
+     "hasta": 55
+    },
+    {
+     "t": "datos",
+     "desde": 55,
+     "hasta": 62
+    }
+   ]
+  },
+  {
+   "desde": 81,
+   "hasta": 147,
+   "palabras": [
+    {
+     "t": "antes",
+     "desde": 81,
+     "hasta": 90
+    },
+    {
+     "t": "de",
+     "desde": 90,
+     "hasta": 99
+    },
+    {
+     "t": "firmar",
+     "desde": 99,
+     "hasta": 108
+    },
+    {
+     "t": "con",
+     "desde": 108,
+     "hasta": 117
+    },
+    {
+     "t": "un",
+     "desde": 117,
+     "hasta": 126
+    },
+    {
+     "t": "proveedor.",
+     "desde": 126,
+     "hasta": 135
+    }
+   ]
+  },
+  {
+   "desde": 156,
+   "hasta": 204,
+   "palabras": [
+    {
+     "t": "Primero,",
+     "desde": 156,
+     "hasta": 165
+    },
+    {
+     "t": "qué",
+     "desde": 165,
+     "hasta": 174
+    },
+    {
+     "t": "le",
+     "desde": 174,
+     "hasta": 183
+    },
+    {
+     "t": "pedimos.",
+     "desde": 183,
+     "hasta": 192
+    }
+   ]
+  },
+  {
+   "desde": 262,
+   "hasta": 346,
+   "palabras": [
+    {
+     "t": "Después,",
+     "desde": 262,
+     "hasta": 271
+    },
+    {
+     "t": "cómo",
+     "desde": 271,
+     "hasta": 280
+    },
+    {
+     "t": "pasar",
+     "desde": 280,
+     "hasta": 289
+    },
+    {
+     "t": "del",
+     "desde": 289,
+     "hasta": 298
+    },
+    {
+     "t": "riesgo",
+     "desde": 298,
+     "hasta": 307
+    },
+    {
+     "t": "a",
+     "desde": 307,
+     "hasta": 316
+    },
+    {
+     "t": "la",
+     "desde": 316,
+     "hasta": 325
+    },
+    {
+     "t": "decisión.",
+     "desde": 325,
+     "hasta": 334
+    }
+   ]
+  },
+  {
+   "desde": 367,
+   "hasta": 433,
+   "palabras": [
+    {
+     "t": "Revisamos",
+     "desde": 367,
+     "hasta": 376
+    },
+    {
+     "t": "el",
+     "desde": 376,
+     "hasta": 385
+    },
+    {
+     "t": "contrato",
+     "desde": 385,
+     "hasta": 394
+    },
+    {
+     "t": "punto",
+     "desde": 394,
+     "hasta": 403
+    },
+    {
+     "t": "por",
+     "desde": 403,
+     "hasta": 412
+    },
+    {
+     "t": "punto",
+     "desde": 412,
+     "hasta": 421
+    }
+   ]
+  },
+  {
+   "desde": 473,
+   "hasta": 530,
+   "palabras": [
+    {
+     "t": "y",
+     "desde": 473,
+     "hasta": 482
+    },
+    {
+     "t": "separamos",
+     "desde": 482,
+     "hasta": 491
+    },
+    {
+     "t": "certificado",
+     "desde": 491,
+     "hasta": 500
+    },
+    {
+     "t": "de",
+     "desde": 500,
+     "hasta": 509
+    },
+    {
+     "t": "cláusula.",
+     "desde": 509,
+     "hasta": 518
+    }
+   ]
+  },
+  {
+   "desde": 578,
+   "hasta": 635,
+   "palabras": [
+    {
+     "t": "Revisar",
+     "desde": 578,
+     "hasta": 587
+    },
+    {
+     "t": "es",
+     "desde": 587,
+     "hasta": 596
+    },
+    {
+     "t": "contrastar,",
+     "desde": 596,
+     "hasta": 605
+    },
+    {
+     "t": "no",
+     "desde": 605,
+     "hasta": 614
+    },
+    {
+     "t": "releer.",
+     "desde": 614,
+     "hasta": 623
+    }
+   ]
+  },
+  {
+   "desde": 684,
+   "hasta": 759,
+   "palabras": [
+    {
+     "t": "Ante",
+     "desde": 684,
+     "hasta": 693
+    },
+    {
+     "t": "un",
+     "desde": 693,
+     "hasta": 702
+    },
+    {
+     "t": "caso",
+     "desde": 702,
+     "hasta": 711
+    },
+    {
+     "t": "práctico,",
+     "desde": 711,
+     "hasta": 720
+    },
+    {
+     "t": "¿qué",
+     "desde": 720,
+     "hasta": 729
+    },
+    {
+     "t": "harías",
+     "desde": 729,
+     "hasta": 738
+    },
+    {
+     "t": "tú?",
+     "desde": 738,
+     "hasta": 747
+    }
+   ]
+  },
+  {
+   "desde": 789,
+   "hasta": 855,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 789,
+     "hasta": 798
+    },
+    {
+     "t": "opción",
+     "desde": 798,
+     "hasta": 807
+    },
+    {
+     "t": "C",
+     "desde": 807,
+     "hasta": 816
+    },
+    {
+     "t": "es",
+     "desde": 816,
+     "hasta": 825
+    },
+    {
+     "t": "la",
+     "desde": 825,
+     "hasta": 834
+    },
+    {
+     "t": "proporcional.",
+     "desde": 834,
+     "hasta": 843
+    }
+   ]
+  },
+  {
+   "desde": 895,
+   "hasta": 961,
+   "palabras": [
+    {
+     "t": "Setenta",
+     "desde": 895,
+     "hasta": 904
+    },
+    {
+     "t": "y",
+     "desde": 904,
+     "hasta": 913
+    },
+    {
+     "t": "dos",
+     "desde": 913,
+     "hasta": 922
+    },
+    {
+     "t": "horas",
+     "desde": 922,
+     "hasta": 931
+    },
+    {
+     "t": "como",
+     "desde": 931,
+     "hasta": 940
+    },
+    {
+     "t": "máximo.",
+     "desde": 940,
+     "hasta": 949
+    }
+   ]
+  },
+  {
+   "desde": 1000,
+   "hasta": 1048,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 1000,
+     "hasta": 1009
+    },
+    {
+     "t": "así,",
+     "desde": 1009,
+     "hasta": 1018
+    },
+    {
+     "t": "todo",
+     "desde": 1018,
+     "hasta": 1027
+    },
+    {
+     "t": "encaja.",
+     "desde": 1027,
+     "hasta": 1036
+    }
+   ]
+  },
+  {
+   "desde": 1106,
+   "hasta": 1163,
+   "palabras": [
+    {
+     "t": "Vamos",
+     "desde": 1106,
+     "hasta": 1115
+    },
+    {
+     "t": "con",
+     "desde": 1115,
+     "hasta": 1124
+    },
+    {
+     "t": "el",
+     "desde": 1124,
+     "hasta": 1133
+    },
+    {
+     "t": "segundo",
+     "desde": 1133,
+     "hasta": 1142
+    },
+    {
+     "t": "bloque.",
+     "desde": 1142,
+     "hasta": 1151
+    }
+   ]
+  },
+  {
+   "desde": 1212,
+   "hasta": 1269,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 1212,
+     "hasta": 1221
+    },
+    {
+     "t": "resiliencia",
+     "desde": 1221,
+     "hasta": 1230
+    },
+    {
+     "t": "se",
+     "desde": 1230,
+     "hasta": 1239
+    },
+    {
+     "t": "ensaya",
+     "desde": 1239,
+     "hasta": 1248
+    },
+    {
+     "t": "antes.",
+     "desde": 1248,
+     "hasta": 1257
+    }
+   ]
+  },
+  {
+   "desde": 1317,
+   "hasta": 1383,
+   "palabras": [
+    {
+     "t": "Una",
+     "desde": 1317,
+     "hasta": 1326
+    },
+    {
+     "t": "función",
+     "desde": 1326,
+     "hasta": 1335
+    },
+    {
+     "t": "crítica",
+     "desde": 1335,
+     "hasta": 1344
+    },
+    {
+     "t": "detiene",
+     "desde": 1344,
+     "hasta": 1353
+    },
+    {
+     "t": "el",
+     "desde": 1353,
+     "hasta": 1362
+    },
+    {
+     "t": "servicio.",
+     "desde": 1362,
+     "hasta": 1371
+    }
+   ]
+  },
+  {
+   "desde": 1423,
+   "hasta": 1489,
+   "palabras": [
+    {
+     "t": "Veamos",
+     "desde": 1423,
+     "hasta": 1432
+    },
+    {
+     "t": "un",
+     "desde": 1432,
+     "hasta": 1441
+    },
+    {
+     "t": "incidente",
+     "desde": 1441,
+     "hasta": 1450
+    },
+    {
+     "t": "paso",
+     "desde": 1450,
+     "hasta": 1459
+    },
+    {
+     "t": "a",
+     "desde": 1459,
+     "hasta": 1468
+    },
+    {
+     "t": "paso.",
+     "desde": 1468,
+     "hasta": 1477
+    }
+   ]
+  },
+  {
+   "desde": 1528,
+   "hasta": 1585,
+   "palabras": [
+    {
+     "t": "¿Quién",
+     "desde": 1528,
+     "hasta": 1537
+    },
+    {
+     "t": "toca",
+     "desde": 1537,
+     "hasta": 1546
+    },
+    {
+     "t": "el",
+     "desde": 1546,
+     "hasta": 1555
+    },
+    {
+     "t": "servicio",
+     "desde": 1555,
+     "hasta": 1564
+    },
+    {
+     "t": "crítico?",
+     "desde": 1564,
+     "hasta": 1573
+    }
+   ]
+  },
+  {
+   "desde": 1634,
+   "hasta": 1691,
+   "palabras": [
+    {
+     "t": "Si",
+     "desde": 1634,
+     "hasta": 1643
+    },
+    {
+     "t": "uno",
+     "desde": 1643,
+     "hasta": 1652
+    },
+    {
+     "t": "cae,",
+     "desde": 1652,
+     "hasta": 1661
+    },
+    {
+     "t": "caen",
+     "desde": 1661,
+     "hasta": 1670
+    },
+    {
+     "t": "todos.",
+     "desde": 1670,
+     "hasta": 1679
+    }
+   ]
+  },
+  {
+   "desde": 1739,
+   "hasta": 1814,
+   "palabras": [
+    {
+     "t": "Lo",
+     "desde": 1739,
+     "hasta": 1748
+    },
+    {
+     "t": "que",
+     "desde": 1748,
+     "hasta": 1757
+    },
+    {
+     "t": "no",
+     "desde": 1757,
+     "hasta": 1766
+    },
+    {
+     "t": "se",
+     "desde": 1766,
+     "hasta": 1775
+    },
+    {
+     "t": "documenta,",
+     "desde": 1775,
+     "hasta": 1784
+    },
+    {
+     "t": "no",
+     "desde": 1784,
+     "hasta": 1793
+    },
+    {
+     "t": "existe.",
+     "desde": 1793,
+     "hasta": 1802
+    }
+   ]
+  },
+  {
+   "desde": 1845,
+   "hasta": 1902,
+   "palabras": [
+    {
+     "t": "Ante",
+     "desde": 1845,
+     "hasta": 1854
+    },
+    {
+     "t": "la",
+     "desde": 1854,
+     "hasta": 1863
+    },
+    {
+     "t": "duda,",
+     "desde": 1863,
+     "hasta": 1872
+    },
+    {
+     "t": "activar",
+     "desde": 1872,
+     "hasta": 1881
+    },
+    {
+     "t": "pronto.",
+     "desde": 1881,
+     "hasta": 1890
+    }
+   ]
+  },
+  {
+   "desde": 1950,
+   "hasta": 2007,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 1950,
+     "hasta": 1959
+    },
+    {
+     "t": "para",
+     "desde": 1959,
+     "hasta": 1968
+    },
+    {
+     "t": "terminar,",
+     "desde": 1968,
+     "hasta": 1977
+    },
+    {
+     "t": "un",
+     "desde": 1977,
+     "hasta": 1986
+    },
+    {
+     "t": "repaso.",
+     "desde": 1986,
+     "hasta": 1995
+    }
+   ]
+  }
+ ],
+ "gestos": [
+  {
+   "desde": 986,
+   "pico": 1004,
+   "hasta": 1060,
+   "munecas": [
+    [
+     1600,
+     1250
+    ],
+    [
+     2380,
+     1230
+    ]
+   ],
+   "pista": [
+    {
+     "f": 986,
+     "munecas": [
+      [
+       1700,
+       1480
+      ],
+      [
+       2260,
+       1460
+      ]
+     ]
+    },
+    {
+     "f": 995,
+     "munecas": [
+      [
+       1650,
+       1350
+      ],
+      [
+       2320,
+       1330
+      ]
+     ]
+    },
+    {
+     "f": 1004,
+     "munecas": [
+      [
+       1600,
+       1250
+      ],
+      [
+       2380,
+       1230
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "intro": {
+  "desde": 0,
+  "hasta": 150,
+  "kicker": "Curso de prueba",
+  "titulo": "Decisiones con proveedores",
+  "subtitulo": "Fixture de desarrollo del motor de kaleidos",
+  "objeto3d": "escudo"
+ },
+ "outro": {
+  "desde": 2050,
+  "hasta": 2225,
+  "kicker": "En resumen",
+  "titulo": "Tres ideas para llevarte",
+  "puntos": [
+   "Pide evidencias antes de firmar",
+   "Ensaya la respuesta a incidentes",
+   "Documenta cada decisión"
+  ],
+  "cta": "Siguiente módulo: la salida ordenada",
+  "objeto3d": "escudo"
+ },
+ "avisos": [
+  "fixture: máscara real de dora-v2 (partes parte_000000.mp4, parte_002500.mp4), plancha de prueba desde el mezzanine 1080p"
+ ]
+}

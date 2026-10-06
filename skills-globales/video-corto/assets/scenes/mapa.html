@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- El runtime IGNORA el <head>: todo lo vivo va dentro de <template>. -->
+  </head>
+  <body>
+    <template>
+      <style>
+        /* Sin data-width/height en la raíz: la caja la manda el slot del host,
+           por eso la misma escena sirve para 9:16 y 16:9. */
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 4vmin;
+          background: var(--vox-ink);
+          padding: 8vmin 6vmin;
+        }
+        .maptitle {
+          font: 900 7.2vmin/1 var(--vox-font);
+          text-transform: uppercase;
+          letter-spacing: -0.2vmin;
+          color: var(--vox-white);
+          text-align: center;
+        }
+        .maptitle em {
+          font-style: normal;
+          color: var(--vox-yellow);
+        }
+        /* meet (no slice): el diagrama entero cabe en los dos formatos. */
+        .diagram {
+          width: 100%;
+          max-width: 168vmin;
+          height: 64vmin;
+        }
+        .note {
+          font: 700 2.6vmin/1.2 var(--vox-font);
+          color: #8a8a92;
+          text-transform: uppercase;
+          letter-spacing: 0.18vmin;
+          text-align: center;
+        }
+      </style>
+
+      <div id="root" data-composition-id="mapa">
+        <div class="maptitle" id="map-title">Miles entraron <em>nadando</em></div>
+
+        <svg class="diagram" viewBox="0 0 200 100" preserveAspectRatio="xMidYMid meet">
+          <!-- Tierra arriba, mar abajo: esquema, no cartografía.
+               Tonos separados a propósito: en el render previo tierra y mar
+               quedaban casi indistinguibles. -->
+          <path id="map-land" d="M0,0 H200 V44 Q150,52 100,44 Q50,36 0,46 Z" fill="#33333d" />
+          <rect x="0" y="44" width="200" height="56" fill="#0d1b2e" />
+
+          <!-- Espigón del Tarajal: la frontera que se adentra en el mar. -->
+          <rect id="map-spur" x="118" y="44" width="3.2" height="26" fill="#6e6e7c" />
+
+          <!-- Ruta a nado, rodeando el espigón. -->
+          <path
+            id="map-route"
+            d="M44,50 C60,74 96,86 124,74 C134,70 138,60 140,52"
+            fill="none"
+            stroke="#ffe500"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            stroke-dasharray="6 5"
+          />
+
+          <!-- Origen: Fnideq -->
+          <circle id="map-dot-a" cx="44" cy="48" r="4.2" fill="#ffffff" />
+          <text id="map-lbl-a" x="44" y="36" fill="#ffffff" font-size="8.4" font-weight="900"
+                font-family="Archivo, sans-serif" text-anchor="middle">FNIDEQ</text>
+
+          <!-- Destino: Ceuta -->
+          <circle id="map-dot-b" cx="140" cy="48" r="4.2" fill="#ffe500" />
+          <text id="map-lbl-b" x="140" y="36" fill="#ffe500" font-size="8.4" font-weight="900"
+                font-family="Archivo, sans-serif" text-anchor="middle">CEUTA</text>
+
+          <text id="map-dist" x="92" y="92" fill="#ffe500" font-size="9" font-weight="900"
+                font-family="Archivo, sans-serif" text-anchor="middle">5 KM A NADO</text>
+        </svg>
+
+        <div class="note" id="map-note">Esquema, no a escala</div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        // La ruta se dibuja con dashoffset. Se fija el patrón en el propio tween
+        // para que el seek reconstruya siempre el mismo estado.
+        const route = document.getElementById("map-route");
+        const len = route.getTotalLength();
+
+        // fromTo en todo (nunca from): el host re-busca la escena en cada seek.
+        tl.fromTo("#map-title", { opacity: 0, y: "2vmin" }, { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 0)
+          .fromTo("#map-dot-a", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)", transformOrigin: "center" }, 0.24)
+          .fromTo("#map-lbl-a", { opacity: 0 }, { opacity: 1, duration: 0.24 }, 0.3)
+          .fromTo(route, { strokeDashoffset: len }, { strokeDashoffset: 0, duration: 1.5, ease: "power1.inOut" }, 0.42)
+          .fromTo("#map-spur", { opacity: 0, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.3, ease: "power2.out", transformOrigin: "top center" }, 0.6)
+          .fromTo("#map-dot-b", { opacity: 0, scale: 0 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2)", transformOrigin: "center" }, 1.5)
+          .fromTo("#map-lbl-b", { opacity: 0 }, { opacity: 1, duration: 0.24 }, 1.56)
+          .fromTo("#map-dist", { opacity: 0, y: 4 }, { opacity: 1, y: 0, duration: 0.34, ease: "power3.out" }, 1.7)
+          .fromTo("#map-note", { opacity: 0 }, { opacity: 1, duration: 0.3 }, 1.9);
+
+        // strokeDasharray se deja fijo en el atributo; solo se anima el offset.
+        gsap.set(route, { strokeDasharray: len });
+
+        window.__timelines["mapa"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

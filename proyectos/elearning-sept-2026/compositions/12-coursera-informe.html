@@ -1,0 +1,431 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+/* KIT COMPARTIDO v2 — se inyecta en cada escena (build2.mjs). Prefijo: #s12 */
+#s12{position:absolute;inset:0;font-family:Inter,sans-serif;color:#0D1320;overflow:hidden;
+  --ink:#0D1320;--soft:#667085;--acc:#7D29E0;--pink:#FF01A2;--deep:#2F125E;--indigo:#5E3DE6;--lav:#9B61F6;
+  --bg:#FAFBFC;--lila:#F2E7FC;--line:#E4E7EC;--warn:#B54708}
+#s12 .stage{position:absolute;inset:0}
+#s12 .bg{position:absolute;inset:0}
+#s12 .bg-violet{background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%)}
+#s12 .bg-deep{background:radial-gradient(1200px 800px at 70% 20%,#4A1D96 0%,#2F125E 55%,#1A0836 100%)}
+#s12 .bg-light{background:#FAFBFC}
+#s12 .h{font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap}
+#s12 .mask{display:block;overflow:hidden;padding:0.08em 0.04em 0.16em;margin:-0.08em -0.04em -0.16em}
+#s12 .mask>.r{display:block}
+#s12 .eye{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:28px;color:var(--soft)}
+#s12 .acc{color:var(--acc)} #s12 .pink{color:var(--pink)} #s12 .soft{color:var(--soft)} #s12 .white{color:#fff}
+#s12 .panel{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(13,19,32,.12);border-radius:32px;box-sizing:border-box}
+#s12 .panel.dark{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(10,0,30,.45);color:#fff;backdrop-filter:blur(8px)}
+#s12 .chip{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:.32em .85em;font-weight:600;font-size:40px;line-height:1.1;background:#fff;white-space:nowrap}
+#s12 .chip.dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
+#s12 .chip.acc{background:var(--lila);border-color:var(--acc);color:var(--acc)}
+/* ventana de app / navegador simulada */
+#s12 .win{position:absolute;background:#fff;border-radius:22px;box-shadow:0 40px 100px rgba(10,0,30,.35);overflow:hidden;box-sizing:border-box;border:1px solid rgba(13,19,32,.12)}
+#s12 .win.dark{background:#14091F;border-color:rgba(255,255,255,.14)}
+#s12 .win .bar{height:56px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line)}
+#s12 .win.dark .bar{background:#1E0F33;border-bottom-color:rgba(255,255,255,.1)}
+#s12 .win .bar i{display:block;width:16px;height:16px;border-radius:50%;background:#FF5F57}
+#s12 .win .bar i:nth-child(2){background:#FEBC2E} #s12 .win .bar i:nth-child(3){background:#28C840}
+#s12 .win .bar .url{margin-left:18px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;max-width:620px}
+#s12 .win.dark .bar .url{background:rgba(255,255,255,.08);color:#B9A7D6}
+/* el orbe del agente (espina del vídeo) */
+#s12 .orb{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff 0 7%,#E2CCFF 8% 24%,#9B61F6 48%,#7D29E0 66%,#FF01A2 135%);
+  box-shadow:0 0 36px rgba(125,41,224,.7),0 0 96px rgba(255,1,162,.4);z-index:50}
+#s12 .orb::before{content:"";position:absolute;inset:-16px;border-radius:50%;border:2px solid rgba(125,41,224,.4)}
+#s12 .ripple{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:4px solid var(--acc);opacity:0;z-index:49;visibility:visible}
+/* etiqueta de simulación */
+#s12 .simlabel{position:absolute;right:56px;top:44px;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:1.5px solid currentColor;opacity:.75;z-index:60}
+#s12 .simlabel.on-dark{color:#fff} #s12 .simlabel.on-light{color:var(--soft)}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+#s12 .shotwin{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 44px 110px rgba(13,19,32,.38);background:#fff;border:1px solid rgba(13,19,32,.14)}
+#s12 .shotwin.dark{box-shadow:0 44px 110px rgba(10,0,30,.6);border-color:rgba(255,255,255,.16)}
+#s12 .shotwin .sbar{position:absolute;left:0;right:0;top:0;height:54px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line);z-index:3}
+#s12 .shotwin .sbar i{display:block;width:15px;height:15px;border-radius:50%;background:#FF5F57}
+#s12 .shotwin .sbar i:nth-child(2){background:#FEBC2E} #s12 .shotwin .sbar i:nth-child(3){background:#28C840}
+#s12 .shotwin .sbar .url{margin-left:16px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;white-space:nowrap;overflow:hidden}
+#s12 .shotwin .view{position:absolute;left:0;right:0;top:54px;bottom:0;overflow:hidden;background:#fff}
+#s12 .shotwin .view img{position:absolute;left:0;top:0;display:block;transform-origin:0 0;max-width:none}
+#s12 .hlbox{position:absolute;border:5px solid var(--pink);border-radius:14px;opacity:0;z-index:4;box-shadow:0 0 0 6px rgba(255,1,162,.18),0 0 40px rgba(255,1,162,.45)}
+#s12 .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:999px;font-weight:700;font-size:24px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+#s12 .badge.week{background:var(--pink);color:#fff}
+#s12 .badge.date{background:var(--lila);color:var(--acc)}
+#s12 .badge.src{background:rgba(13,19,32,.07);color:#475467;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s12 .badge.dk{background:rgba(255,255,255,.14);color:#fff}
+#s12 .badge.srcdk{background:rgba(255,255,255,.12);color:#E2CCFF;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s12 .tag{font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:26px}
+/* tira de calendario (1 sep → 2 oct) */
+#s12 .strip{position:absolute;left:100px;right:100px;top:36px;height:84px;z-index:20}
+#s12 .strip .rail{position:absolute;left:0;right:0;top:34px;height:4px;border-radius:2px;background:var(--rail,rgba(13,19,32,.14))}
+#s12 .strip .fill{position:absolute;left:0;top:34px;height:4px;border-radius:2px;background:linear-gradient(90deg,#7D29E0,#FF01A2);width:0}
+#s12 .strip .tk{position:absolute;top:28px;width:2px;height:16px;background:var(--tick,rgba(13,19,32,.25));margin-left:-1px}
+#s12 .strip .tk.m{height:26px;top:23px}
+#s12 .strip .wk{position:absolute;top:20px;height:32px;border-radius:16px;background:rgba(255,1,162,.12);border:2px solid rgba(255,1,162,.55)}
+#s12 .strip .lb{position:absolute;top:-4px;font-weight:700;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--lbl,#475467);transform:translateX(-50%);white-space:nowrap}
+#s12 .strip .mk{position:absolute;top:21px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#C9A6FF 14%,#7D29E0 60%,#FF01A2 140%);box-shadow:0 0 0 6px rgba(125,41,224,.25),0 0 28px rgba(255,1,162,.55)}
+#s12 .strip .dt{position:absolute;top:50px;transform:translateX(-50%);font-weight:800;font-size:26px;color:var(--ink);white-space:nowrap;letter-spacing:-0.01em}
+#s12 .strip.dk{--rail:rgba(255,255,255,.2);--tick:rgba(255,255,255,.35);--lbl:#E4D8F8}
+#s12 .strip.dk .dt{color:#fff}
+
+#s12 .strip .lb.wkl{color:#C4007E}
+#s12 .strip.dk .lb.wkl{color:#FF9AD8}
+
+#s12 .world{position:absolute;inset:0}
+#s12 .dots{position:absolute;left:-60px;top:-60px;width:2040px;height:1200px;background-image:radial-gradient(rgba(255,255,255,.10) 2px,transparent 2.5px);background-size:56px 56px}
+#s12 .glow{position:absolute;border-radius:50%}
+#s12 .glow.g1{left:-300px;top:560px;width:1100px;height:1100px;background:radial-gradient(closest-side,rgba(255,1,162,.30),rgba(255,1,162,0))}
+#s12 .glow.g2{left:1000px;top:-260px;width:1200px;height:1200px;background:radial-gradient(closest-side,rgba(125,41,224,.65),rgba(125,41,224,0))}
+#s12 .lbl{position:absolute;left:100px;top:140px;height:48px;display:flex;align-items:center;gap:18px;white-space:nowrap}
+#s12 .lbl .tag{color:#FF6FC9}
+#s12 .lbl .bar{display:block;width:8px;height:34px;border-radius:4px;background:#E6008E}
+#s12 .w1{left:100px;top:232px;width:1000px;height:620px}
+#s12 .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#s12 .ra{position:absolute;left:1160px;top:232px;width:660px;height:760px}
+#s12 .ra .mask{padding:0 .04em .1em;margin:0 -.04em;position:absolute;left:0;width:660px}
+#s12 .ra .sk{top:0;font-size:84px;color:#E2CCFF}
+#s12 .ra .g1{top:104px;font-size:146px;color:#fff}
+#s12 .ra .g2{top:256px;font-size:146px;color:#fff}
+#s12 .ra .g3{top:408px;font-size:146px;color:#FF6FC9}
+#s12 .ra .y26{position:absolute;left:0;top:600px;width:330px;height:124px;border-radius:62px;background:linear-gradient(135deg,#7D29E0,#FF01A2);color:#fff;font-weight:800;font-size:100px;letter-spacing:-.03em;line-height:124px;text-align:center;display:block;box-shadow:0 20px 60px rgba(255,1,162,.35)}
+#s12 .stk{position:absolute;left:100px;top:884px;font-size:36px;white-space:nowrap}
+#s12 .stk b{color:#FF6FC9;font-weight:800;letter-spacing:.1em;margin-right:12px}
+/* gráfico de ejes */
+#s12 .chart{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#s12 .cv{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#s12 svg.ax{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:visible}
+#s12 .lx{position:absolute;left:1000px;width:780px;top:932px;text-align:right;font-weight:700;font-size:38px;letter-spacing:.14em;color:#B88BFF;white-space:nowrap}
+#s12 .ly{position:absolute;left:910px;top:236px;font-weight:700;font-size:38px;letter-spacing:.14em;color:#FF6FC9;white-space:nowrap}
+#s12 .dot{position:absolute;border-radius:50%;display:block}
+#s12 .idx{position:absolute;left:1280px;top:700px;width:500px;height:190px;padding:26px 32px;box-sizing:border-box}
+#s12 .idx .eye{color:#E2CCFF;font-size:24px}
+#s12 .idx .nm{font-weight:800;font-size:44px;line-height:1.08;letter-spacing:-.02em;margin-top:10px;color:#fff}
+#s12 .syn{position:absolute;left:1480px;top:228px;font-size:34px}
+#s12 .org{position:absolute;left:860px;top:900px;width:56px;height:56px;margin:-28px 0 0 -28px;border-radius:50%;border:5px solid #fff;display:block}
+/* globo */
+#s12 .gwrap{position:absolute;left:960px;top:220px;width:760px;height:760px}
+#s12 .gwrap canvas{position:absolute;left:0;top:0;width:760px;height:760px}
+#s12 .gwrap .halo{position:absolute;left:-60px;top:-60px;width:880px;height:880px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.28),rgba(125,41,224,.22) 55%,rgba(125,41,224,0))}
+#s12 .n98{position:absolute;left:100px;top:214px;font-size:268px;color:#fff;display:inline-block;line-height:1;letter-spacing:-.05em}
+#s12 .n98 .u{color:#FF6FC9}
+#s12 .pais{position:absolute;left:100px;top:496px;font-size:100px;color:#fff}
+#s12 .pais .r{color:#fff}
+#s12 .cidx{position:absolute;left:100px;top:640px;font-size:34px}</style>
+<div data-hf-id="hf-a13z" id="s12" data-composition-id="s12" data-width="1920" data-height="1080">
+<div data-hf-id="hf-tan6" class="stage">
+  <div data-hf-id="hf-1gg2" class="bg bg-deep clip" data-start="0" data-duration="9.44" data-track-index="0"></div>
+  <div data-hf-id="hf-n1vw" class="world">
+    <div data-hf-id="hf-n0p9" class="glow g1"></div><div data-hf-id="hf-qyta" class="glow g2"></div><div data-hf-id="hf-zx1w" class="dots"></div>
+    <div data-hf-id="hf-p8km" class="lbl"><i data-hf-id="hf-31m3" class="bar"></i><span data-hf-id="hf-fdjk" class="tag">Plataformas y contenidos</span><span data-hf-id="hf-i3v4" class="badge week">Esta semana</span><span data-hf-id="hf-p1fb" class="badge dk">28 sep 2026</span><span data-hf-id="hf-cmsn" class="badge srcdk">blog.coursera.org</span></div>
+
+    <div data-hf-id="hf-ntnc" class="chart">
+      <svg data-hf-id="hf-bglo" class="ax" viewBox="0 0 1920 1080">
+        <defs data-hf-id="hf-mh0t"><lineargradient data-hf-id="hf-epqd" id="dg_s12" x1="0" y1="1" x2="1" y2="0"><stop data-hf-id="hf-sg1m" offset="0" stop-color="#9B61F6" /><stop data-hf-id="hf-ba7j" offset="1" stop-color="#FF6FC9" /></lineargradient></defs>
+        <g data-hf-id="hf-tjk7" class="gridl" stroke="rgba(255,255,255,.14)" stroke-width="2" stroke-dasharray="4 12" fill="none">
+          <path data-hf-id="hf-0irv" d="M1090 900V300M1320 900V300M1550 900V300M1780 900V300" />
+          <path data-hf-id="hf-biv0" d="M860 745H1780M860 590H1780M860 435H1780M860 280H1780" />
+        </g>
+        <path data-hf-id="hf-goav" class="axx" d="M860 900H1750" pathLength="1" stroke="#9B61F6" stroke-width="9" stroke-linecap="round" fill="none" />
+        <path data-hf-id="hf-16sc" class="axxh" d="M1722 872L1772 900L1722 928" stroke="#9B61F6" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        <path data-hf-id="hf-iarz" class="axy" d="M860 900V310" pathLength="1" stroke="#FF6FC9" stroke-width="9" stroke-linecap="round" fill="none" />
+        <path data-hf-id="hf-bgvg" class="axyh" d="M832 338L860 288L888 338" stroke="#FF6FC9" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        <path data-hf-id="hf-o1i5" class="diagg" d="M900 862L1700 330" pathLength="1" stroke="rgba(255,1,162,.35)" stroke-width="34" stroke-linecap="round" fill="none" />
+        <path data-hf-id="hf-xc26" class="diag" d="M900 862L1700 330" pathLength="1" stroke="url(#dg_s12)" stroke-width="12" stroke-linecap="round" fill="none" />
+      </svg>
+      <div data-hf-id="hf-qjmd" class="lx">HABILIDADES DE IA</div>
+      <div data-hf-id="hf-zvvk" class="ly">HABILIDADES HUMANAS</div>
+      <div data-hf-id="hf-kf0a" class="org"></div>
+      <div data-hf-id="hf-nnaq" class="dtz"></div>
+      <div data-hf-id="hf-0ny7" class="panel dark idx"><div data-hf-id="hf-hpro" class="eye">Índice nuevo</div><div data-hf-id="hf-jbyg" class="nm">AI-Human Skills Synergy Index</div></div>
+      <div data-hf-id="hf-fdv4" class="chip dark syn">sinergia</div>
+    </div>
+
+    <div data-hf-id="hf-xt7j" class="gwrap"><div data-hf-id="hf-d1uq" class="halo"></div><canvas data-hf-id="hf-3yzg" class="gl"></canvas></div>
+    <div data-hf-id="hf-c6g1" class="h n98"><span data-hf-id="hf-i8lb" class="nv">0</span></div>
+    <div data-hf-id="hf-sdrp" class="mask pais"><div data-hf-id="hf-x18l" class="r h">PAÍSES</div></div>
+    <div data-hf-id="hf-6jvz" class="chip dark cidx">AI-Human Skills Synergy Index</div>
+
+    <div data-hf-id="hf-b3vq" class="shotwin dark w1">
+      <div data-hf-id="hf-7ma2" class="sbar"><i data-hf-id="hf-wt6k"></i><i data-hf-id="hf-zeb8"></i><i data-hf-id="hf-y7e5"></i><div data-hf-id="hf-2r81" class="url">blog.coursera.org · Global Skills Report 2026</div></div>
+      <div data-hf-id="hf-z18r" class="view"><img data-hf-id="hf-ji3r" src="assets/captures/coursera-gsr.png" alt="" data-layout-allow-overflow="">
+        <div data-hf-id="hf-2c64" class="hlbox hA"></div><div data-hf-id="hf-b01z" class="hlbox hB"></div><div data-hf-id="hf-71xy" class="hlbox hC"></div><div data-hf-id="hf-xwk6" class="flash"></div>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-tk2v" class="ra">
+      <div data-hf-id="hf-u3r6" class="mask sk"><div data-hf-id="hf-d20q" class="r h">COURSERA</div></div>
+      <div data-hf-id="hf-bcjg" class="mask g1"><div data-hf-id="hf-i8vp" class="r h">GLOBAL</div></div>
+      <div data-hf-id="hf-k0fb" class="mask g2"><div data-hf-id="hf-2ku0" class="r h">SKILLS</div></div>
+      <div data-hf-id="hf-g2ba" class="mask g3"><div data-hf-id="hf-gflc" class="r h">REPORT</div></div>
+      <div data-hf-id="hf-desb" class="y26">2026</div>
+    </div>
+    <div data-hf-id="hf-hd5j" class="chip dark stk"><b data-hf-id="hf-29a0">NUEVO</b>AI-Human Skills Synergy Index</div>
+  </div>
+  <div data-hf-id="hf-hvqp" class="strip dk"></div>
+</div>
+</div>
+<script>
+/* KIT COMPARTIDO v2 (JS) — dentro del <script> de cada escena. Disponibles: ID, DUR, CUES, BEATS, tl y los helpers. */
+const ID = "s12";
+const DUR = 9.44;
+const CUES = {"words":[{"t":"Coursera","s":0.44,"e":0.93},{"t":"publica","s":0.93,"e":1.4},{"t":"su","s":1.4,"e":1.56},{"t":"Global","s":1.56,"e":1.94},{"t":"Skills","s":1.94,"e":2.35},{"t":"Report,","s":2.35,"e":3.18},{"t":"con","s":3.18,"e":3.22},{"t":"un","s":3.22,"e":3.33},{"t":"índice","s":3.33,"e":3.79},{"t":"nuevo","s":3.79,"e":4.12},{"t":"que","s":4.12,"e":4.39},{"t":"cruza","s":4.39,"e":4.66},{"t":"habilidades","s":4.66,"e":5.2},{"t":"de","s":5.2,"e":5.4},{"t":"IA","s":5.4,"e":5.8},{"t":"y","s":5.8,"e":5.97},{"t":"habilidades","s":5.97,"e":6.75},{"t":"humanas","s":6.75,"e":7.3},{"t":"en","s":7.3,"e":7.46},{"t":"noventa","s":7.46,"e":7.757},{"t":"y","s":7.757,"e":7.8},{"t":"ocho","s":7.8,"e":7.97},{"t":"países.","s":7.97,"e":8.44}],"voiceStart":0.4};      // { words:[{t,s,e}], voiceStart } — tiempos relativos a la escena (s). Vacío si el plano no lleva voz
+const BEATS = [0.27,0.77,1.27,1.77,2.27,2.77,3.27,3.77,4.27,4.77,5.27,5.77,6.27,6.77,7.27,7.77,8.27,8.77,9.27];
+const DATES = ["2026-09-28"], PREV = "2026-09-10", BLOCK = "Plataformas", COLOR = "#E6008E", WEEK = true;   // fechas de la(s) noticia(s) de la escena, fecha anterior, bloque, color del bloque, si es de esta semana    // pulsos de la música (110 BPM) relativos a la escena (s), solo los que caen dentro
+const tl = gsap.timeline({ paused: true });
+const E = "expo.out", SPR = "back.out(1.7)", SOFTSPR = "back.out(1.2)", IO = "power3.inOut";
+const Q = (s) => "#" + ID + " " + s;
+const $q = (s) => document.querySelector(Q(s));
+const $$q = (s) => [...document.querySelectorAll(Q(s))];
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ]/g, "");
+/* tiempo de inicio de una palabra de la locución: cue("texto") | cue("el", 1) (n-ésima coincidencia por prefijo) | cue(7) por índice */
+function cue(w, nth = 0) {
+  if (typeof w === "number") return CUES.words[w].s;
+  const hits = CUES.words.filter((x) => norm(x.t).startsWith(norm(w)));
+  if (!hits[nth]) throw new Error("cue no encontrado: " + w + " #" + nth);
+  return Math.max(0, hits[nth].s - 0.05);
+}
+/* siguiente pulso de la música a partir de t (para clavar golpes al ritmo) */
+function beat(t) { const b = BEATS.find((x) => x >= t - 0.02); return b === undefined ? t : b; }
+
+/* ---- entradas de texto y elementos ---- */
+function rise(sel, at, d = 1.0) { return tl.fromTo(Q(sel), { yPercent: 110 }, { yPercent: 0, duration: d, ease: E }, at); }   // titular dentro de .mask>.r
+function up(sel, at, o = {}) { return tl.fromTo(Q(sel), { opacity: 0, y: o.y ?? 28 }, { opacity: o.to ?? 1, y: 0, duration: o.d ?? 0.8, ease: o.ease ?? E }, at); }
+function pop(sel, at, d = 0.6) { return tl.fromTo(Q(sel), { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at); }
+function fade(sel, at, d = 0.4, to = 1) { return tl.fromTo(Q(sel), { opacity: 0 }, { opacity: to, duration: d, ease: "power2.out" }, at); }
+/* golpe: escala grande + desenfoque que aterriza con sacudida */
+function slam(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 1.7, filter: "blur(26px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.42, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 14, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + 0.38);
+  tl.set(Q(sel), { x: 0 }, at + 0.74);
+}
+/* texto que se escribe carácter a carácter en el elemento sel; devuelve la duración */
+function typeText(sel, text, at, cps = 30) {
+  const el = $q(sel), o = { n: 0 };
+  el.textContent = "";
+  tl.to(o, { n: text.length, duration: text.length / cps, ease: "none", onUpdate: () => { el.textContent = text.slice(0, Math.round(o.n)); } }, at);
+  return text.length / cps;
+}
+/* contador numérico 0→valor en sel */
+function count(sel, to, at, d = 1.2, fmt = (v) => String(Math.round(v))) {
+  const el = $q(sel), o = { v: 0 };
+  tl.to(o, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(o.v); } }, at);
+}
+/* ---- el orbe del agente ---- */
+function orbSet(x, y, at = 0) { tl.set(Q(".orb"), { x, y }, at); }
+function orbTo(x, y, at, d = 0.7, ease = IO) { return tl.to(Q(".orb"), { x, y, duration: d, ease }, at); }
+function orbSquash(at) {   // estira y encoge con humor (al terminar una tarea)
+  tl.to(Q(".orb"), { scaleX: 1.35, scaleY: 0.72, duration: 0.11, ease: "power2.out" }, at);
+  tl.to(Q(".orb"), { scaleX: 0.85, scaleY: 1.2, duration: 0.14, ease: "power2.inOut" }, at + 0.11);
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.35, ease: "elastic.out(1,0.5)" }, at + 0.25);
+}
+function orbPulse(at, d = 0.5) { tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 1.3, duration: d / 2, yoyo: true, repeat: 1, ease: "sine.inOut" }, at); }
+/* clic: anillo que se expande en (x,y). Requiere <div class="ripple"> en el HTML (uno por clic: .ripple.r1, .r2…) */
+function clickAt(sel, x, y, at) {
+  tl.set(Q(sel), { x, y, opacity: 0 }, 0);
+  tl.fromTo(Q(sel), { opacity: 0.9, scale: 0.2 }, { opacity: 0, scale: 2.2, duration: 0.6, ease: "power2.out" }, at);
+  tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, at - 0.02);
+}
+/* ---- entrada / salida de escena sobre .stage ---- */
+function sceneIn(kind = "fade") {
+  if (kind === "cut") return;
+  if (kind === "whip") tl.fromTo(Q(".stage"), { x: 260, opacity: 0, filter: "blur(22px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else if (kind === "zoom") tl.fromTo(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else tl.fromTo(Q(".stage"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+}
+function sceneOut(kind = "fade") {
+  const t = DUR - 0.42;
+  if (kind === "cut") return;
+  if (kind === "whip") tl.to(Q(".stage"), { x: -260, opacity: 0, filter: "blur(22px)", duration: 0.42, ease: "power3.in" }, t);
+  else if (kind === "zoom") tl.to(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)", duration: 0.42, ease: "power3.in" }, t);
+  else tl.to(Q(".stage"), { opacity: 0, duration: 0.4, ease: "power2.inOut" }, t);
+}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+/* índice de día desde el 1-sep-2026 (0) hasta el 2-oct-2026 (31) */
+function dayIndex(iso) { const [y, m, d] = iso.split("-").map(Number); return Math.round((Date.UTC(y, m - 1, d) - Date.UTC(2026, 8, 1)) / 86400000); }
+function dayLabel(i) { const t = new Date(Date.UTC(2026, 8, 1) + Math.round(i) * 86400000); return t.getUTCDate() + " " + MES[t.getUTCMonth()]; }
+/* tira de calendario dentro de <div class="strip [dk]"></div> (vacío en el HTML).
+   dateStrip([PREV, ...DATES], at, d, gap): el marcador viaja por las fechas en orden (AAAA-MM-DD), `d` s por tramo y `gap` s entre tramos.
+   La semana del 28 sep al 2 oct queda resaltada. */
+function dateStrip(path, at = 0.2, d = 0.9, gap = 1.0) {
+  const host = $q(".strip"), W = 1720, N = 31, X = (i) => (i / N) * W;
+  let h = '<div class="rail"></div><div class="fill"></div>';
+  for (let i = 0; i <= N; i++) h += '<div class="tk' + (i === 0 || i === 30 || i === 31 || i % 7 === 0 ? " m" : "") + '" style="left:' + X(i) + 'px"></div>';
+  h += '<div class="wk" style="left:' + (X(27) - 8) + 'px;width:' + (X(31) - X(27) + 16) + 'px"></div>';
+  h += '<div class="lb" style="left:' + X(0) + 'px">1 sep</div><div class="lb" style="left:' + X(15) + 'px">sep 2026</div><div class="lb wkl" style="left:' + X(29) + 'px">Esta semana</div>';
+  h += '<div class="mk"></div><div class="dt"></div>';
+  host.innerHTML = h;
+  const mk = host.querySelector(".mk"), dt = host.querySelector(".dt"), fl = host.querySelector(".fill");
+  const idx = path.map(dayIndex), o = { v: idx[0] };
+  const draw = () => { const x = X(o.v); mk.style.left = x + "px"; dt.style.left = Math.min(Math.max(x, 60), W - 60) + "px"; dt.textContent = dayLabel(o.v); fl.style.width = x + "px"; };
+  draw();
+  for (let k = 1; k < idx.length; k++) tl.to(o, { v: idx[k], duration: d, ease: "power3.inOut", onUpdate: draw }, at + (k - 1) * (d + gap));
+  tl.fromTo(host, { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 0);
+}
+/* ventana de captura: <div class="shotwin" style="left:..;top:..;width:..;height:.."><div class="sbar"><i></i><i></i><i></i><div class="url">dominio.com</div></div><div class="view"><img src="assets/captures/x.png"></div></div>
+   shotView(sel, natW, natH, fx, fy, s): coloca la imagen (ancho natW px) con el punto (fx,fy) de la imagen en el centro de la vista a escala s */
+function shotPos(sel, natW, natH, fx, fy, s) {
+  const win = $q(sel + " .view"), W = win.clientWidth || parseFloat(getComputedStyle(win).width), H = win.clientHeight || parseFloat(getComputedStyle(win).height);
+  return { x: W / 2 - fx * s, y: H / 2 - fy * s, scale: s };
+}
+function shotSet(sel, natW, natH, fx, fy, s) { const p = shotPos(sel, natW, natH, fx, fy, s); tl.set(Q(sel + " .view img"), { width: natW, ...p }, 0); }
+function shotCam(sel, natW, natH, fx, fy, s, at, d = 1.2, ease = "power3.inOut") { const p = shotPos(sel, natW, natH, fx, fy, s); return tl.to(Q(sel + " .view img"), { ...p, duration: d, ease }, at); }
+/* caja de resaltado en coordenadas de la vista de la ventana (sel = ventana): hl(".w1", x, y, w, h, at) */
+function hl(box, x, y, w, h, at, d = 0.5) {
+  tl.set(Q(box), { left: x, top: y, width: w, height: h }, 0);
+  tl.fromTo(Q(box), { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at);
+}
+
+const CW = 1440, CH = 900;
+function hlAt(box, win, fx, fy, s, px, py, pw, ph, at, d = 0.5) {
+  const p = shotPos(win, CW, CH, fx, fy, s);
+  hl(box, p.x + px * s, p.y + py * s, pw * s, ph * s, at, d);
+}
+let sd = 23; const rnd = () => (sd = (sd * 1664525 + 1013904223) % 4294967296) / 4294967296;
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 0.3, 0.9, 0.8);
+
+/* fondo vivo */
+tl.fromTo(Q(".glow.g1"), { x: 0, y: 0 }, { x: 200, y: -90, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".glow.g2"), { x: 0, y: 0 }, { x: -240, y: 110, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".dots"), { x: 0, y: 0 }, { x: -56, y: -56, duration: DUR, ease: "none" }, 0);
+BEATS.forEach((b) => tl.fromTo(Q(".glow.g2"), { scale: 1 }, { scale: 1.07, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, b));
+up(".lbl", 0.15, { d: 0.6, y: 18 });
+
+/* ---------- ventana: captura real ---------- */
+shotSet(".w1", CW, CH, 720, 393, 0.7);
+tl.fromTo(Q(".w1"), { opacity: 0, y: 46, scale: 0.95 }, { opacity: 1, y: 0, scale: 1, duration: 0.6, ease: E }, 0.04);
+tl.fromTo(Q(".flash"), { opacity: 0.85 }, { opacity: 0, duration: 0.4, ease: "power2.out" }, 0.3);
+shotCam(".w1", CW, CH, 696, 290, 1.2, 0.75, 0.8);                    // titular completo
+shotCam(".w1", CW, CH, 940, 600, 1.55, cue("Global") - 0.1, 0.85);  // cartel «Global Skills Report 2026»
+hlAt(".hA", ".w1", 940, 600, 1.55, 720, 538, 332, 118, cue("Report") + 0.1);
+tl.to(Q(".hA"), { opacity: 0, duration: 0.25 }, 3.0);
+shotCam(".w1", CW, CH, 696, 290, 1.2, 3.05, 0.8);                    // vuelve al titular: «AI-Human Skills Synergy Index»
+hlAt(".hB", ".w1", 696, 290, 1.2, 640, 266, 432, 44, cue("índice") + 0.35);
+hlAt(".hC", ".w1", 696, 290, 1.2, 318, 316, 110, 44, cue("índice") + 0.55);
+
+/* ---------- columna A: título cinético ---------- */
+rise(".ra .sk .r", cue("Coursera"), 0.8);
+rise(".ra .g1 .r", cue("Global"), 0.8);
+rise(".ra .g2 .r", cue("Skills"), 0.8);
+rise(".ra .g3 .r", cue("Report"), 0.8);
+pop(".ra .y26", cue("Report") + 0.35, 0.6);
+pop(".stk", cue("índice") + 0.1, 0.6);
+tl.fromTo(Q(".stk"), { rotation: -4 }, { rotation: -2, duration: 0.6 }, cue("índice") + 0.1);
+// la ventana se hace miniatura; la columna A sale
+const TS = 4.15;
+tl.to(Q(".ra"), { x: 140, opacity: 0, filter: "blur(14px)", duration: 0.4, ease: "power3.in" }, TS);
+tl.to(Q(".stk"), { x: -60, opacity: 0, duration: 0.3, ease: "power3.in" }, TS);
+tl.to(Q(".w1"), { x: 0, y: 488, scale: 0.5, duration: 0.8, ease: IO, transformOrigin: "0 0" }, TS + 0.05);
+
+/* ---------- ejes: IA × humanas = índice ---------- */
+tl.set(Q(".axx"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".axy"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".diag"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.set(Q(".diagg"), { strokeDasharray: 1, strokeDashoffset: 1 }, 0);
+tl.fromTo(Q(".gridl"), { opacity: 0 }, { opacity: 1, duration: 0.6 }, TS + 0.4);
+const TX = cue("habilidades");           // 1.ª: de IA
+tl.to(Q(".axx"), { strokeDashoffset: 0, duration: 0.8, ease: "power3.inOut" }, TX);
+tl.fromTo(Q(".axxh"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, TX + 0.7);
+up(".lx", TX + 0.25, { d: 0.6, y: 18 });
+const TY = cue("habilidades", 1);        // 2.ª: humanas
+tl.to(Q(".axy"), { strokeDashoffset: 0, duration: 0.8, ease: "power3.inOut" }, TY);
+tl.fromTo(Q(".axyh"), { opacity: 0 }, { opacity: 1, duration: 0.2 }, TY + 0.7);
+up(".ly", TY + 0.25, { d: 0.6, y: 18 });
+tl.set(Q(".axxh"), { opacity: 0 }, 0); tl.set(Q(".axyh"), { opacity: 0 }, 0);
+// nube de puntos (semilla fija) a lo largo de la diagonal
+const dtz = $q(".dtz");
+const D = [];
+for (let i = 0; i < 46; i++) {
+  const t = 0.04 + 0.96 * ((i + rnd() * 0.8) / 46), r = 7 + rnd() * 9;
+  const x = 930 + 770 * t + (rnd() - 0.5) * 120, y = 850 - 520 * t + (rnd() - 0.5) * 120;
+  const c = document.createElement("i"); c.className = "dot";
+  const mix = (a, b, k) => Math.round(a + (b - a) * k);
+  c.style.cssText = "left:" + (x - r) + "px;top:" + (y - r) + "px;width:" + 2 * r + "px;height:" + 2 * r + "px;background:rgb(" + mix(155, 255, t) + "," + mix(97, 111, t) + "," + mix(246, 201, t) + ");box-shadow:0 0 18px rgba(255,111,201," + (0.25 + 0.4 * t) + ")";
+  dtz.appendChild(c); D.push({ c, t });
+}
+D.forEach((o, i) => tl.fromTo(o.c, { opacity: 0, scale: 0 }, { opacity: 0.95, scale: 1, duration: 0.45, ease: SPR }, TY + 0.55 + i * 0.022));
+const TH = cue("humanas");
+tl.fromTo(Q(".org"), { opacity: 0, scale: 0.3 }, { opacity: 1, scale: 1, duration: 0.5, ease: SPR }, TH - 0.1);
+tl.fromTo(Q(".org"), { scale: 1 }, { scale: 2.6, opacity: 0, duration: 0.7, ease: "power2.out" }, TH + 0.45);
+tl.to(Q(".diag"), { strokeDashoffset: 0, duration: 0.7, ease: "power3.inOut" }, TH);
+tl.to(Q(".diagg"), { strokeDashoffset: 0, duration: 0.7, ease: "power3.inOut" }, TH);
+const TI = Math.max(cue("índice") + 0.7, TS + 0.5);
+fade(".idx", TI, 0.5);
+tl.fromTo(Q(".idx"), { y: 30 }, { y: 0, duration: 0.6, ease: E }, TI);
+pop(".syn", TH + 0.5, 0.5);
+// el gráfico se va
+const TG = cue("noventa") - 0.1;
+tl.to(Q(".chart"), { opacity: 0, scale: 0.92, filter: "blur(10px)", duration: 0.42, ease: "power3.in", transformOrigin: "50% 50%" }, TG - 0.15);
+
+/* ---------- globo de puntos: 98 países ---------- */
+const cvs = $q(".gl"), ctx = cvs.getContext("2d");
+const SZ = 760, SC = 2; cvs.width = SZ * SC; cvs.height = SZ * SC;
+const pts = [];
+const NP = 1700;
+for (let i = 0; i < NP; i++) {
+  const lat = Math.asin(1 - 2 * (i + 0.5) / NP), lon = i * 2.399963;
+  const v = Math.sin(2.1 * lon + 1.3 * Math.sin(lat * 2)) + 1.2 * Math.sin(3.3 * lat + 0.8) + 0.8 * Math.cos(1.7 * lon - lat * 2.2);
+  pts.push({ lat, lon, land: v > 0.55, rank: -1 });
+}
+const landIdx = pts.map((p, i) => (p.land ? i : -1)).filter((i) => i >= 0);
+for (let i = landIdx.length - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); [landIdx[i], landIdx[j]] = [landIdx[j], landIdx[i]]; }
+landIdx.slice(0, 98).forEach((pi, k) => (pts[pi].rank = k));
+const G = { rot: 0.4, lit: 0 }, TILT = 0.38, ct = Math.cos(TILT), st = Math.sin(TILT), CX = SZ / 2, R = 340;
+function draw() {
+  ctx.setTransform(SC, 0, 0, SC, 0, 0);
+  ctx.clearRect(0, 0, SZ, SZ);
+  const g = ctx.createRadialGradient(CX - 90, CX - 110, 40, CX, CX, R);
+  g.addColorStop(0, "rgba(155,97,246,.32)"); g.addColorStop(1, "rgba(47,18,94,.55)");
+  ctx.beginPath(); ctx.arc(CX, CX, R, 0, 7); ctx.fillStyle = g; ctx.fill();
+  ctx.lineWidth = 3; ctx.strokeStyle = "rgba(226,204,255,.5)"; ctx.stroke();
+  const front = [];
+  for (const p of pts) {
+    const lam = p.lon + G.rot, cl = Math.cos(p.lat);
+    const x = cl * Math.sin(lam), z0 = cl * Math.cos(lam), y0 = Math.sin(p.lat);
+    const y = y0 * ct - z0 * st, z = y0 * st + z0 * ct;
+    const X = CX + R * x, Y = CX - R * y;
+    if (z < 0) {
+      if (p.land) { ctx.fillStyle = "rgba(200,170,255,.14)"; ctx.fillRect(X - 1.5, Y - 1.5, 3, 3); }
+    } else front.push({ X, Y, z, p });
+  }
+  for (const f of front) {
+    if (f.p.rank >= 0 && f.p.rank < G.lit) continue;
+    ctx.fillStyle = f.p.land ? "rgba(226,204,255," + (0.35 + 0.5 * f.z) + ")" : "rgba(226,204,255,.10)";
+    const s = f.p.land ? 2.4 + 1.6 * f.z : 1.5;
+    ctx.beginPath(); ctx.arc(f.X, f.Y, s, 0, 7); ctx.fill();
+  }
+  for (const f of front) {
+    if (!(f.p.rank >= 0 && f.p.rank < G.lit)) continue;
+    const age = G.lit - f.p.rank;                         // recién encendidos: anillo
+    if (age < 6) { ctx.strokeStyle = "rgba(255,255,255," + (0.9 - age * 0.15) + ")"; ctx.lineWidth = 3; ctx.beginPath(); ctx.arc(f.X, f.Y, 10 + age * 5, 0, 7); ctx.stroke(); }
+    ctx.fillStyle = "rgba(255,111,201,.35)"; ctx.beginPath(); ctx.arc(f.X, f.Y, 13, 0, 7); ctx.fill();
+    ctx.fillStyle = "#FF6FC9"; ctx.beginPath(); ctx.arc(f.X, f.Y, 6.5 + 2 * f.z, 0, 7); ctx.fill();
+    ctx.fillStyle = "#fff"; ctx.beginPath(); ctx.arc(f.X - 1.5, f.Y - 1.5, 2.2, 0, 7); ctx.fill();
+  }
+}
+draw();
+const TL0 = TG + 0.1;
+tl.fromTo(Q(".gwrap"), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: 0.7, ease: SPR }, TL0 - 0.1);
+tl.to(G, { rot: 0.4 + 2.6, duration: DUR - TL0, ease: "none", onUpdate: draw }, TL0 - 0.1);
+tl.to(G, { lit: 98, duration: 1.35, ease: "power2.out", onUpdate: draw }, cue("noventa"));
+pop(".n98", cue("noventa") - 0.06, 0.5);
+count(".n98 .nv", 98, cue("noventa"), 1.35);
+tl.fromTo(Q(".pais"), { opacity: 0 }, { opacity: 1, duration: 0.05 }, cue("países") - 0.1);
+rise(".pais .r", cue("países") - 0.1, 0.8);
+pop(".cidx", cue("países") + 0.15, 0.55);
+
+sceneOut("whip");
+window.__timelines["s12"] = tl;
+</script>
+</template>

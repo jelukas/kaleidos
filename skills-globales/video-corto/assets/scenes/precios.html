@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <template>
+      <style>
+        #root {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: center;
+          gap: 3vmin;
+          background: var(--vox-ink);
+          padding: 8vmin 6vmin;
+        }
+        .pkicker {
+          align-self: flex-start;
+          background: var(--vox-yellow);
+          color: var(--vox-ink);
+          font: 800 2.5vmin/1 var(--vox-font);
+          letter-spacing: 0.28vmin;
+          text-transform: uppercase;
+          padding: 1.1vmin 1.7vmin;
+        }
+        /* En 9:16 no cabe todo en una línea: el nombre ocupa fila propia y los
+           importes van debajo. En 16:9 sobra ancho y va todo seguido. */
+        .prow {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 1.4vmin 2.4vmin;
+          padding-bottom: 2.2vmin;
+          border-bottom: 0.4vmin solid #22222a;
+        }
+        .pname {
+          flex: 0 0 100%;
+          font: 900 4.8vmin/1 var(--vox-font);
+          text-transform: uppercase;
+          color: var(--vox-white);
+        }
+        @media (min-aspect-ratio: 1/1) {
+          .pname { flex: 0 0 5.4em; }
+        }
+        /* nowrap obligatorio: sin él «$2,50 / $15» se parte y el tachado, que es
+           un elemento absoluto, cruza por donde no debe. */
+        .pold {
+          position: relative;
+          font: 900 4vmin/1 var(--vox-font);
+          color: #6a6a76;
+          font-variant-numeric: tabular-nums;
+          white-space: nowrap;
+        }
+        .strike {
+          position: absolute;
+          left: -4%;
+          right: -4%;
+          top: 50%;
+          height: 0.5vmin;
+          background: #ff4d4d;
+          transform-origin: left center;
+        }
+        .parrow {
+          font: 900 3.4vmin/1 var(--vox-font);
+          color: #4a4a56;
+        }
+        .pnew {
+          font: 900 5vmin/1 var(--vox-font);
+          color: var(--vox-yellow);
+          font-variant-numeric: tabular-nums;
+          white-space: nowrap;
+        }
+        .pcut {
+          margin-left: auto;
+          font: 900 3.2vmin/1 var(--vox-font);
+          color: var(--vox-ink);
+          background: var(--vox-yellow);
+          padding: 0.8vmin 1.4vmin;
+          white-space: nowrap;
+        }
+        .pcut.flat { background: #33333d; color: #b6b6c0; }
+      </style>
+
+      <div id="root" data-composition-id="precios">
+        <div class="pkicker" id="p-kicker">Entrada / salida por millón de tokens</div>
+
+        <div class="prow" id="p-row-1">
+          <div class="pname">Sol</div>
+          <div class="pnew" id="p-new-1">$5 / $30</div>
+          <div class="pcut flat" id="p-cut-1">Sin cambio</div>
+        </div>
+
+        <div class="prow" id="p-row-2">
+          <div class="pname">Terra</div>
+          <div class="pold">$2,50 / $15<span class="strike" id="p-str-2"></span></div>
+          <div class="parrow">→</div>
+          <div class="pnew" id="p-new-2">$2 / $12</div>
+          <div class="pcut" id="p-cut-2">−20%</div>
+        </div>
+
+        <div class="prow" id="p-row-3">
+          <div class="pname">Luna</div>
+          <div class="pold">$1 / $6<span class="strike" id="p-str-3"></span></div>
+          <div class="parrow">→</div>
+          <div class="pnew" id="p-new-3">$0,20 / $1,20</div>
+          <div class="pcut" id="p-cut-3">−80%</div>
+        </div>
+      </div>
+
+      <script>
+        window.__timelines = window.__timelines || {};
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#p-kicker", { opacity: 0, x: "-2vmin" }, { opacity: 1, x: 0, duration: 0.26, ease: "power3.out" }, 0);
+
+        // Las tres filas entran escalonadas; dentro de cada una, el tachado barre
+        // y el precio nuevo golpea justo después.
+        [1, 2, 3].forEach((n, i) => {
+          const at = 0.14 + i * 0.34;
+          tl.fromTo(`#p-row-${n}`, { opacity: 0, x: "-2.4vmin" }, { opacity: 1, x: 0, duration: 0.3, ease: "power3.out" }, at);
+          if (n > 1) {
+            tl.fromTo(`#p-str-${n}`, { scaleX: 0 }, { scaleX: 1, duration: 0.26, ease: "power2.in" }, at + 0.2)
+              .fromTo(`#p-new-${n}`, { opacity: 0, scale: 0.72 }, { opacity: 1, scale: 1, duration: 0.3, ease: "back.out(2.4)" }, at + 0.42);
+          }
+          tl.fromTo(`#p-cut-${n}`, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.26, ease: "back.out(2)" }, at + 0.56);
+        });
+
+        window.__timelines["precios"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

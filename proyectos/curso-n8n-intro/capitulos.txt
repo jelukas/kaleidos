@@ -1,0 +1,6 @@
+0:00 Introducción · Introducción a n8n
+1:10 Capítulo 1 · Qué es n8n
+7:04 Capítulo 2 · Las piezas de n8n
+14:01 Capítulo 3 · Tu primer flujo
+19:24 Capítulo 4 · Casos de uso reales
+27:10 Para terminar · Cierre

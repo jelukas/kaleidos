@@ -1,0 +1,22 @@
+{
+ "_plantilla": "corto-ilustrado · pieza de 30 s – 3 min con ponente, montaje 1:1 con el original (sin cortes de silencio: `nuevo --metodo corto-ilustrado`), estilo acuarela-ilustrada. Cues = [segundo aproximado del bruto, \"frase literal de work/transcripcion.txt\"]; sustituye las frases entre <> (plantillas/herramientas/cues.py pone los segundos). Ilustración 2,5D: pon la imagen en work/ilustraciones/<nombre>.jpg y pasa `tools/kaleidos ampliar` y `tools/kaleidos profundidad` → claves <nombre>_x2 y <nombre>_profundidad. anclas: (u, v) = punto de la ilustración (0–1) al que se atan la etiqueta y el objeto 3D; lift = altura sobre la superficie.",
+ "fixes": {},
+ "cortes": [],
+ "intro": {"kicker": "<Tema>", "titulo": "<Título corto>", "subtitulo": "<La pregunta que responde>", "duracion": 3},
+ "capitulos": [],
+ "eventos": [
+  {"tipo": "panel", "kind": "tarjeta", "cue": [5, "<primera frase del tema>"], "hasta": [11, "<frase siguiente>"], "lado": "der", "kicker": "<Tema>", "titulo": "<Qué vamos a ver>", "texto": "<En una frase, como lo dice la voz>", "icono": "bombilla"},
+  {"tipo": "ilustracion", "cue": [12, "<frase donde entra la primera ilustración>"], "hasta": [24, "<frase donde vuelve el ponente>"],
+   "imagen": "ilustracion-1_x2", "profundidad": "ilustracion-1_profundidad",
+   "camara": {"desde": [-0.3, 0.05, 0], "hasta": [0.4, 0.1, -0.8]},
+   "anclas": [{"cue": [14, "<frase que señala el primer elemento del dibujo>"], "u": 0.32, "v": 0.62, "lift": 0.05, "texto": "<Elemento 1>", "objeto": "reloj"},
+              {"cue": [19, "<frase que señala el segundo elemento>"], "u": 0.74, "v": 0.3, "lift": 0.05, "texto": "<Elemento 2>"}]},
+  {"tipo": "pop", "cue": [26, "<frase clave>"], "hasta": [31, "<frase siguiente>"], "texto": "<La frase clave,>", "sub": "<su remate>", "grande": true},
+  {"tipo": "panel", "kind": "cifra", "cue": [33, "<frase donde se dice la cifra>"], "hasta": [39, "<frase siguiente>"], "lado": "der", "kicker": "<Contexto>", "titulo": "<Qué se cuenta>", "valor": 3, "valorInicial": 0, "etiqueta": "<qué mide, como lo dice la voz>"},
+  {"tipo": "ilustracion", "cue": [41, "<frase donde entra la segunda ilustración>"], "hasta": [50, "<frase donde vuelve el ponente>"],
+   "imagen": "ilustracion-2_x2", "profundidad": "ilustracion-2_profundidad",
+   "camara": {"desde": [0.3, 0.05, 0], "hasta": [-0.35, 0.12, -0.7]},
+   "anclas": [{"cue": [44, "<frase que señala el elemento del dibujo>"], "u": 0.5, "v": 0.55, "lift": 0.06, "texto": "<Elemento>", "objeto": "grafica"}]}
+ ],
+ "outro": {"kicker": "En resumen", "titulo": "<Título corto>", "puntos": ["<Idea 1>", "<Idea 2>"], "cta": "<Qué hacer ahora>", "duracion": 5}
+}

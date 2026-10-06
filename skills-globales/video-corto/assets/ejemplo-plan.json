@@ -1,0 +1,72 @@
+{
+  "_comentario": "Ejemplo con TODOS los tipos de beat. Cada beat referencia líneas del guion (nunca segundos): arranca con la primera y dura hasta que arranca el siguiente, así no quedan fotogramas negros entre cortes. Los tiempos salen de assets/voice.manifest.json.",
+
+  "slug": "mi-video",
+  "outroHold": 2.6,
+  "musicVolume": 0.13,
+
+  "beats": [
+    {
+      "_": "Cifra protagonista. countTo la hace subir desde 0; usa 'num' para texto libre («hasta 80», «×30», «menos de 2.000»).",
+      "type": "stat",
+      "lines": ["l01"],
+      "countTo": 50000,
+      "unit": "personas",
+      "label": "entraron en una sola noche"
+    },
+    {
+      "_": "Titular. 'kicker' es el chip amarillo; <em> pinta UNA palabra de amarillo.",
+      "type": "title",
+      "lines": ["l02", "l03"],
+      "kicker": "Ceuta · 30 de julio de 2026",
+      "headline": "Lo que pasó <em>de verdad</em>",
+      "deck": "Entradilla opcional, en caja baja."
+    },
+    {
+      "_": "Imagen a pantalla completa. 'source' es obligatorio: crédito si es real, «Imagen generada» si la hizo gpt-image-2. kb alterna el Ken Burns.",
+      "type": "photo",
+      "lines": ["l04", "l05"],
+      "img": "stock/ceuta_aerea",
+      "kb": "in",
+      "source": "Foto: El Faro de Ceuta",
+      "headline": "Ceuta",
+      "deck": "84.000 habitantes, en el norte de África."
+    },
+    {
+      "_": "Dos cifras enfrentadas. 'key' pinta de amarillo la que carga el peso.",
+      "type": "compare",
+      "lines": ["l06", "l07"],
+      "kicker": "Cuántas personas",
+      "items": [
+        { "countTo": 50000, "label": "Ministerio del Interior", "key": true },
+        { "countTo": 60000, "label": "Presidente de Ceuta" }
+      ]
+    },
+    {
+      "_": "Cita literal con atribución. Aquí van las declaraciones políticas: como declaración, no como titular.",
+      "type": "quote",
+      "lines": ["l08"],
+      "quote": "Una lectura interesada que corrió como la pólvora",
+      "attr": "Pedro Sánchez, presidente del Gobierno"
+    },
+    {
+      "_": "Sub-composición animada de UN SOLO USO. compositionId debe coincidir con el data-composition-id del fichero.",
+      "type": "scene",
+      "lines": ["l09", "l10"],
+      "scene": "puntos.html",
+      "compositionId": "puntos"
+    }
+  ],
+
+  "_musica": "Varias pistas, cada una con 'at' (segundos) o 'line' (id del guion). Van todas en la pista 5 y el generador recorta cada una donde entra la siguiente.",
+  "music": [
+    { "id": "bgm", "at": 0, "volume": 0.13 },
+    { "id": "final", "line": "l09", "volume": 0.2 }
+  ],
+
+  "_efectos": "offset desplaza respecto al inicio de la línea (negativo = antes del corte).",
+  "sfx": [
+    { "id": "impacto", "line": "l01", "volume": 0.34 },
+    { "id": "whoosh", "line": "l04", "offset": -0.2, "volume": 0.3 }
+  ]
+}

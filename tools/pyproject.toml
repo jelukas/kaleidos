@@ -1,0 +1,34 @@
+[project]
+name = "kaleidos-tools"
+version = "0.1.0"
+description = "Pipeline de preproceso de kaleidos: análisis, transcripción, máster, recorte, pose y línea de tiempo"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy>=1.26",
+  "scipy>=1.13",
+  "pillow>=10.4",
+  "torch>=2.5",
+  "torchvision>=0.20",
+  # 1.0.x aborta en macOS («graph_service.h: Service is unavailable» en DrishtiMetalHelper)
+  "mediapipe==0.10.35",
+  "pyobjc-framework-Vision>=10.3; sys_platform == 'darwin'",
+  "pyobjc-framework-Quartz>=10.3; sys_platform == 'darwin'",
+  "transformers>=4.45",
+  "spandrel>=0.4",
+  "huggingface-hub>=0.25",
+  "cmake>=3.28",
+  "ninja>=1.11",
+]
+
+[project.scripts]
+kaleidos = "kaleidos_tools.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kaleidos_tools"]
+
+[tool.uv]
+cache-keys = [{ file = "pyproject.toml" }, { file = "src/**/*.py" }]

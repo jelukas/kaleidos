@@ -1,0 +1,943 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 2410,
+ "fuente": {
+  "ancho": 3840,
+  "alto": 2160,
+  "fps": 25,
+  "duracion": 2042.709
+ },
+ "recorte": true,
+ "plancha": {
+  "x": 856,
+  "y": 0,
+  "ancho": 2624,
+  "alto": 2160,
+  "escala": 0.75,
+  "mascara": "fuente",
+  "curva": "metodo"
+ },
+ "escenario": true,
+ "segmentos": [
+  {
+   "dst": 0,
+   "src": 1160,
+   "dur": 2410
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 2410,
+   "tipo": "medium",
+   "forzado": true,
+   "s": 0.7276,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1941,
+    500
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  }
+ ],
+ "capitulos": [],
+ "eventos": [
+  {
+   "id": "sh-lista",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 0,
+   "hasta": 54,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "lista",
+   "kicker": "Lista",
+   "titulo": "Qué pedir al proveedor",
+   "items": [
+    {
+     "texto": "Certificaciones vigentes",
+     "icono": "escudo"
+    },
+    {
+     "texto": "Plan de continuidad",
+     "icono": "reloj",
+     "detalle": "con fecha del último simulacro"
+    },
+    {
+     "texto": "Subcontratistas",
+     "icono": "red"
+    }
+   ]
+  },
+  {
+   "id": "sh-pasos",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 60,
+   "hasta": 114,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "pasos",
+   "kicker": "Pasos",
+   "titulo": "Del riesgo a la decisión",
+   "items": [
+    {
+     "texto": "Identificar",
+     "icono": "lupa"
+    },
+    {
+     "texto": "Evaluar",
+     "icono": "balanza"
+    },
+    {
+     "texto": "Decidir",
+     "icono": "check"
+    }
+   ]
+  },
+  {
+   "id": "sh-checklist",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 120,
+   "hasta": 174,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "checklist",
+   "kicker": "Checklist",
+   "titulo": "El contrato incluye…",
+   "items": [
+    {
+     "texto": "Niveles de servicio",
+     "tono": "ok"
+    },
+    {
+     "texto": "Estrategia de salida",
+     "tono": "aviso"
+    },
+    {
+     "texto": "Ubicación de los datos",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "id": "sh-comparativa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 180,
+   "hasta": 234,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "comparativa",
+   "kicker": "Comparativa",
+   "titulo": "No es lo mismo",
+   "izq": {
+    "titulo": "Certificados",
+    "items": [
+     "Punto de partida",
+     "No cubren tu caso"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "titulo": "Cláusulas",
+    "items": [
+     "Específicas",
+     "Obligan a las dos partes"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "sh-opciones",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 240,
+   "hasta": 294,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "opciones",
+   "kicker": "Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Firmar ya"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilizar una evaluación"
+    },
+    {
+     "letra": "C",
+     "texto": "Evaluación proporcional"
+    },
+    {
+     "letra": "D",
+     "texto": "Esperar"
+    }
+   ],
+   "foco": {
+    "en": 260,
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "id": "sh-cifra",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 300,
+   "hasta": 354,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "cifra",
+   "kicker": "Cifra",
+   "titulo": "Notificación inicial",
+   "valor": 72,
+   "valorInicial": 0,
+   "unidad": "h",
+   "etiqueta": "como máximo desde la detección"
+  },
+  {
+   "id": "sh-cita",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 360,
+   "hasta": 414,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "cita",
+   "kicker": "Cita",
+   "texto": "La resiliencia no se improvisa: se ensaya antes de necesitarla",
+   "resalta": [
+    "se ensaya"
+   ]
+  },
+  {
+   "id": "sh-clave",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 420,
+   "hasta": 474,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "clave",
+   "kicker": "Clave",
+   "titulo": "Función crítica",
+   "texto": "Si se interrumpe, el servicio al cliente se detiene",
+   "resalta": [
+    "se detiene"
+   ]
+  },
+  {
+   "id": "sh-linea",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 480,
+   "hasta": 534,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "linea",
+   "kicker": "Línea",
+   "titulo": "Un incidente, paso a paso",
+   "hitos": [
+    {
+     "etiqueta": "09:15",
+     "texto": "Alerta"
+    },
+    {
+     "etiqueta": "09:40",
+     "texto": "Protocolo"
+    },
+    {
+     "etiqueta": "11:00",
+     "texto": "Aviso inicial"
+    },
+    {
+     "etiqueta": "Día 3",
+     "texto": "Informe"
+    }
+   ]
+  },
+  {
+   "id": "sh-mapa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 540,
+   "hasta": 594,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "mapa",
+   "kicker": "Mapa",
+   "titulo": "Quién toca el servicio",
+   "centro": "Servicio crítico",
+   "nodos": [
+    {
+     "texto": "Proveedor"
+    },
+    {
+     "texto": "Equipo interno"
+    },
+    {
+     "texto": "Subcontrata"
+    },
+    {
+     "texto": "Supervisor"
+    }
+   ]
+  },
+  {
+   "id": "sh-tarjeta",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 600,
+   "hasta": 654,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "tarjeta",
+   "kicker": "Tarjeta",
+   "titulo": "Documentar",
+   "texto": "Lo que no está documentado, no se puede demostrar",
+   "icono": "documento"
+  },
+  {
+   "id": "sh-caso",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 660,
+   "hasta": 714,
+   "registro": "show",
+   "disposicion": "dos-cajas",
+   "kind": "caso",
+   "kicker": "Caso",
+   "titulo": "La señal débil",
+   "texto": "Una alerta sin confirmar afecta a funciones críticas. Esperar a tener certeza deja fuera de plazo la primera notificación.",
+   "veredicto": {
+    "en": 690,
+    "texto": "Activar pronto",
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "ed-lista",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 720,
+   "hasta": 774,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "lista",
+   "kicker": "Lista",
+   "titulo": "Qué pedir al proveedor",
+   "items": [
+    {
+     "texto": "Certificaciones vigentes",
+     "icono": "escudo"
+    },
+    {
+     "texto": "Plan de continuidad",
+     "icono": "reloj",
+     "detalle": "con fecha del último simulacro"
+    },
+    {
+     "texto": "Subcontratistas",
+     "icono": "red"
+    }
+   ]
+  },
+  {
+   "id": "ed-pasos",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 780,
+   "hasta": 834,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "pasos",
+   "kicker": "Pasos",
+   "titulo": "Del riesgo a la decisión",
+   "items": [
+    {
+     "texto": "Identificar",
+     "icono": "lupa"
+    },
+    {
+     "texto": "Evaluar",
+     "icono": "balanza"
+    },
+    {
+     "texto": "Decidir",
+     "icono": "check"
+    }
+   ]
+  },
+  {
+   "id": "ed-checklist",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 840,
+   "hasta": 894,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "checklist",
+   "kicker": "Checklist",
+   "titulo": "El contrato incluye…",
+   "items": [
+    {
+     "texto": "Niveles de servicio",
+     "tono": "ok"
+    },
+    {
+     "texto": "Estrategia de salida",
+     "tono": "aviso"
+    },
+    {
+     "texto": "Ubicación de los datos",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "id": "ed-comparativa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 900,
+   "hasta": 954,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "comparativa",
+   "kicker": "Comparativa",
+   "titulo": "No es lo mismo",
+   "izq": {
+    "titulo": "Certificados",
+    "items": [
+     "Punto de partida",
+     "No cubren tu caso"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "titulo": "Cláusulas",
+    "items": [
+     "Específicas",
+     "Obligan a las dos partes"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "ed-opciones",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 960,
+   "hasta": 1014,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "opciones",
+   "kicker": "Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Firmar ya"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilizar una evaluación"
+    },
+    {
+     "letra": "C",
+     "texto": "Evaluación proporcional"
+    },
+    {
+     "letra": "D",
+     "texto": "Esperar"
+    }
+   ],
+   "foco": {
+    "en": 980,
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "id": "ed-cifra",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1020,
+   "hasta": 1074,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "cifra",
+   "kicker": "Cifra",
+   "titulo": "Notificación inicial",
+   "valor": 72,
+   "valorInicial": 0,
+   "unidad": "h",
+   "etiqueta": "como máximo desde la detección"
+  },
+  {
+   "id": "ed-cita",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1080,
+   "hasta": 1134,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "cita",
+   "kicker": "Cita",
+   "texto": "La resiliencia no se improvisa: se ensaya antes de necesitarla",
+   "resalta": [
+    "se ensaya"
+   ]
+  },
+  {
+   "id": "ed-clave",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1140,
+   "hasta": 1194,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "clave",
+   "kicker": "Clave",
+   "titulo": "Función crítica",
+   "texto": "Si se interrumpe, el servicio al cliente se detiene",
+   "resalta": [
+    "se detiene"
+   ]
+  },
+  {
+   "id": "ed-linea",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1200,
+   "hasta": 1254,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "linea",
+   "kicker": "Línea",
+   "titulo": "Un incidente, paso a paso",
+   "hitos": [
+    {
+     "etiqueta": "09:15",
+     "texto": "Alerta"
+    },
+    {
+     "etiqueta": "09:40",
+     "texto": "Protocolo"
+    },
+    {
+     "etiqueta": "11:00",
+     "texto": "Aviso inicial"
+    },
+    {
+     "etiqueta": "Día 3",
+     "texto": "Informe"
+    }
+   ]
+  },
+  {
+   "id": "ed-mapa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1260,
+   "hasta": 1314,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "mapa",
+   "kicker": "Mapa",
+   "titulo": "Quién toca el servicio",
+   "centro": "Servicio crítico",
+   "nodos": [
+    {
+     "texto": "Proveedor"
+    },
+    {
+     "texto": "Equipo interno"
+    },
+    {
+     "texto": "Subcontrata"
+    },
+    {
+     "texto": "Supervisor"
+    }
+   ]
+  },
+  {
+   "id": "ed-tarjeta",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1320,
+   "hasta": 1374,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "tarjeta",
+   "kicker": "Tarjeta",
+   "titulo": "Documentar",
+   "texto": "Lo que no está documentado, no se puede demostrar",
+   "icono": "documento"
+  },
+  {
+   "id": "ed-caso",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1380,
+   "hasta": 1434,
+   "registro": "editorial",
+   "disposicion": "dos-cajas",
+   "kind": "caso",
+   "kicker": "Caso",
+   "titulo": "La señal débil",
+   "texto": "Una alerta sin confirmar afecta a funciones críticas. Esperar a tener certeza deja fuera de plazo la primera notificación.",
+   "veredicto": {
+    "en": 1410,
+    "texto": "Activar pronto",
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "la-lista",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1440,
+   "hasta": 1494,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "lista",
+   "kicker": "Lista",
+   "titulo": "Qué pedir al proveedor",
+   "items": [
+    {
+     "texto": "Certificaciones vigentes",
+     "icono": "escudo"
+    },
+    {
+     "texto": "Plan de continuidad",
+     "icono": "reloj",
+     "detalle": "con fecha del último simulacro"
+    },
+    {
+     "texto": "Subcontratistas",
+     "icono": "red"
+    }
+   ]
+  },
+  {
+   "id": "la-pasos",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1500,
+   "hasta": 1554,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "pasos",
+   "kicker": "Pasos",
+   "titulo": "Del riesgo a la decisión",
+   "items": [
+    {
+     "texto": "Identificar",
+     "icono": "lupa"
+    },
+    {
+     "texto": "Evaluar",
+     "icono": "balanza"
+    },
+    {
+     "texto": "Decidir",
+     "icono": "check"
+    }
+   ]
+  },
+  {
+   "id": "la-checklist",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1560,
+   "hasta": 1614,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "checklist",
+   "kicker": "Checklist",
+   "titulo": "El contrato incluye…",
+   "items": [
+    {
+     "texto": "Niveles de servicio",
+     "tono": "ok"
+    },
+    {
+     "texto": "Estrategia de salida",
+     "tono": "aviso"
+    },
+    {
+     "texto": "Ubicación de los datos",
+     "tono": "bad"
+    }
+   ]
+  },
+  {
+   "id": "la-comparativa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1620,
+   "hasta": 1674,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "comparativa",
+   "kicker": "Comparativa",
+   "titulo": "No es lo mismo",
+   "izq": {
+    "titulo": "Certificados",
+    "items": [
+     "Punto de partida",
+     "No cubren tu caso"
+    ],
+    "tono": "neutro"
+   },
+   "der": {
+    "titulo": "Cláusulas",
+    "items": [
+     "Específicas",
+     "Obligan a las dos partes"
+    ],
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "la-opciones",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1680,
+   "hasta": 1734,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "opciones",
+   "kicker": "Opciones",
+   "titulo": "¿Cómo lo abordas?",
+   "opciones": [
+    {
+     "letra": "A",
+     "texto": "Firmar ya"
+    },
+    {
+     "letra": "B",
+     "texto": "Reutilizar una evaluación"
+    },
+    {
+     "letra": "C",
+     "texto": "Evaluación proporcional"
+    },
+    {
+     "letra": "D",
+     "texto": "Esperar"
+    }
+   ],
+   "foco": {
+    "en": 1700,
+    "letra": "C",
+    "veredicto": "correcta"
+   }
+  },
+  {
+   "id": "la-cifra",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1740,
+   "hasta": 1794,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "cifra",
+   "kicker": "Cifra",
+   "titulo": "Notificación inicial",
+   "valor": 72,
+   "valorInicial": 0,
+   "unidad": "h",
+   "etiqueta": "como máximo desde la detección"
+  },
+  {
+   "id": "la-cita",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1800,
+   "hasta": 1854,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "cita",
+   "kicker": "Cita",
+   "texto": "La resiliencia no se improvisa: se ensaya antes de necesitarla",
+   "resalta": [
+    "se ensaya"
+   ]
+  },
+  {
+   "id": "la-clave",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1860,
+   "hasta": 1914,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "clave",
+   "kicker": "Clave",
+   "titulo": "Función crítica",
+   "texto": "Si se interrumpe, el servicio al cliente se detiene",
+   "resalta": [
+    "se detiene"
+   ]
+  },
+  {
+   "id": "la-linea",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1920,
+   "hasta": 1974,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "linea",
+   "kicker": "Línea",
+   "titulo": "Un incidente, paso a paso",
+   "hitos": [
+    {
+     "etiqueta": "09:15",
+     "texto": "Alerta"
+    },
+    {
+     "etiqueta": "09:40",
+     "texto": "Protocolo"
+    },
+    {
+     "etiqueta": "11:00",
+     "texto": "Aviso inicial"
+    },
+    {
+     "etiqueta": "Día 3",
+     "texto": "Informe"
+    }
+   ]
+  },
+  {
+   "id": "la-mapa",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 1980,
+   "hasta": 2034,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "mapa",
+   "kicker": "Mapa",
+   "titulo": "Quién toca el servicio",
+   "centro": "Servicio crítico",
+   "nodos": [
+    {
+     "texto": "Proveedor"
+    },
+    {
+     "texto": "Equipo interno"
+    },
+    {
+     "texto": "Subcontrata"
+    },
+    {
+     "texto": "Supervisor"
+    }
+   ]
+  },
+  {
+   "id": "la-tarjeta",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 2040,
+   "hasta": 2094,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "tarjeta",
+   "kicker": "Tarjeta",
+   "titulo": "Documentar",
+   "texto": "Lo que no está documentado, no se puede demostrar",
+   "icono": "documento"
+  },
+  {
+   "id": "la-caso",
+   "tipo": "panel",
+   "lado": "der",
+   "desde": 2100,
+   "hasta": 2154,
+   "registro": "lamina",
+   "disposicion": "dos-cajas",
+   "kind": "caso",
+   "kicker": "Caso",
+   "titulo": "La señal débil",
+   "texto": "Una alerta sin confirmar afecta a funciones críticas. Esperar a tener certeza deja fuera de plazo la primera notificación.",
+   "veredicto": {
+    "en": 2130,
+    "texto": "Activar pronto",
+    "tono": "ok"
+   }
+  },
+  {
+   "id": "x-titulo",
+   "desde": 2160,
+   "hasta": 2214,
+   "disposicion": "dos-cajas",
+   "tipo": "titulo",
+   "antetitulo": "El método",
+   "texto": "Impacto",
+   "subtitulo": "Una idea, un titular"
+  },
+  {
+   "id": "x-pop",
+   "desde": 2220,
+   "hasta": 2274,
+   "disposicion": "dos-cajas",
+   "tipo": "pop",
+   "texto": "Revisar es contrastar",
+   "sub": "no releer",
+   "grande": true
+  },
+  {
+   "id": "x-sello",
+   "desde": 2280,
+   "hasta": 2334,
+   "disposicion": "dos-cajas",
+   "tipo": "sello",
+   "texto": "EUREKA",
+   "tono": "ok"
+  },
+  {
+   "id": "x-panel-cifra",
+   "desde": 2340,
+   "hasta": 2394,
+   "disposicion": "dos-cajas",
+   "tipo": "panel",
+   "kind": "cifra",
+   "kicker": "Contador de juego",
+   "valor": 87,
+   "unidad": "%",
+   "etiqueta": "el dato que cita el ponente",
+   "lado": "der"
+  }
+ ],
+ "subtitulos": [],
+ "gestos": [],
+ "intro": null,
+ "outro": null,
+ "avisos": [
+  "fixture: ventana f10300–f12320 de proyectos/dora-v2 (solo lectura) con eventos «show» de prueba"
+ ],
+ "disposiciones": [
+  {
+   "desde": 0,
+   "hasta": 2410,
+   "tipo": "dos-cajas"
+  }
+ ]
+}

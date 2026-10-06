@@ -1,0 +1,209 @@
+<!--CSS-->
+#__ID__ .rays{position:absolute;left:-240px;top:-660px;width:2400px;height:2400px;border-radius:50%;
+  background:repeating-conic-gradient(from 0deg at 50% 50%,rgba(255,255,255,.075) 0 5deg,rgba(255,255,255,0) 5deg 15deg);
+  -webkit-mask-image:radial-gradient(closest-side,#000 18%,transparent 100%);mask-image:radial-gradient(closest-side,#000 18%,transparent 100%)}
+#__ID__ .halo{position:absolute;border-radius:50%;opacity:0}
+#__ID__ .h1p{left:360px;top:90px;width:1200px;height:900px;background:radial-gradient(closest-side,rgba(125,41,224,.55),rgba(255,1,162,.16) 62%,rgba(255,1,162,0))}
+#__ID__ .h2p{left:1100px;top:520px;width:900px;height:700px;background:radial-gradient(closest-side,rgba(255,1,162,.30),rgba(125,41,224,.10) 60%,rgba(125,41,224,0))}
+#__ID__ .floorv,#__ID__ .floor{position:absolute;left:-30%;right:-30%;bottom:-6%;height:52%;transform:perspective(620px) rotateX(66deg);transform-origin:50% 100%;
+  -webkit-mask-image:linear-gradient(to top,#000 10%,transparent 92%);mask-image:linear-gradient(to top,#000 10%,transparent 92%);opacity:.5}
+#__ID__ .floor{background:repeating-linear-gradient(0deg,rgba(176,128,255,.55) 0 3px,transparent 3px 110px);background-position:0 0}
+#__ID__ .floorv{background:repeating-linear-gradient(90deg,rgba(176,128,255,.45) 0 3px,transparent 3px 140px)}
+#__ID__ .pts{position:absolute;inset:0}
+#__ID__ .pt{position:absolute;left:0;top:0;border-radius:50%}
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 540px}
+#__ID__ .cards,#__ID__ .wall{position:absolute;left:0;top:0;width:1920px;height:1080px}
+/* tarjeta de titular */
+#__ID__ .fc{position:absolute;left:0;top:0}
+#__ID__ .fc .v{position:absolute;inset:0;overflow:hidden;border-radius:22px;background:#fff;box-shadow:0 34px 90px rgba(8,0,24,.62);border:2px solid rgba(255,255,255,.35)}
+#__ID__ .fc .v img{position:absolute;left:0;top:0;display:block;max-width:none;transform-origin:0 0}
+#__ID__ .fc .tp{position:absolute;left:0;right:0;top:0;height:10px;background:var(--c);border-radius:22px 22px 0 0;z-index:3}
+#__ID__ .fc .dm{position:absolute;left:20px;bottom:-22px;z-index:4;background:#fff;color:#0D1320;font-weight:700;font-size:24px;letter-spacing:.02em;padding:8px 20px;border-radius:999px;border:3px solid var(--c);white-space:nowrap}
+#__ID__ .scrim{position:absolute;inset:0;opacity:0;background:radial-gradient(closest-side at 50% 52%,rgba(20,6,42,.94) 0%,rgba(20,6,42,.80) 58%,rgba(20,6,42,.34) 100%)}
+/* titulo */
+#__ID__ .ttl{position:absolute;left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:26px;box-sizing:border-box;transform-origin:960px 560px;z-index:11}
+#__ID__ .t1{font-weight:800;letter-spacing:-.04em;line-height:.9;font-size:222px;color:#fff;white-space:nowrap;text-shadow:0 10px 60px rgba(20,0,60,.55)}
+#__ID__ .t2{font-weight:800;letter-spacing:-.05em;line-height:.98;font-size:344px;white-space:nowrap;color:#FF4FBE;
+  background:linear-gradient(90deg,#E9D5FF 0%,#FF6FC7 55%,#FF01A2 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#__ID__ .mini{position:absolute;left:100px;top:142px;z-index:15;background:rgba(20,6,42,.92);color:#fff;font-weight:700;letter-spacing:.16em;font-size:28px;padding:10px 24px;border-radius:999px;border:2px solid rgba(255,255,255,.28);opacity:0}
+/* palabras clave */
+#__ID__ .kw{position:absolute;left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:34px;box-sizing:border-box;transform-origin:960px 560px;z-index:10}
+#__ID__ .lw{display:block}
+#__ID__ .kl{display:inline-block;background:var(--c);color:#fff;font-weight:800;letter-spacing:-.04em;line-height:1;padding:.03em .2em .11em;border-radius:.1em;white-space:nowrap;box-shadow:0 26px 70px rgba(8,0,24,.5)}
+#__ID__ .lw.b{margin-top:14px}
+#__ID__ .lw.b .kl{transform:rotate(-1.6deg)} #__ID__ .lw.a .kl{transform:rotate(1.2deg)}
+#__ID__ .k1 .kl{font-size:182px} #__ID__ .k2 .kl{font-size:310px} #__ID__ .k3 .kl{font-size:236px} #__ID__ .k4 .kl{font-size:214px}
+#__ID__ .kt{margin-top:38px;font-weight:700;letter-spacing:.2em;font-size:32px;color:#fff;border:2px solid rgba(255,255,255,.5);border-radius:999px;padding:10px 30px;background:rgba(20,6,42,.92);opacity:0;white-space:nowrap}
+#__ID__ .sw{position:absolute;left:960px;top:560px;width:300px;height:300px;margin:-150px 0 0 -150px;border-radius:50%;border:10px solid #fff;opacity:0;z-index:9}
+/* final */
+#__ID__ .fin{position:absolute;left:0;top:0;width:1920px;height:1080px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:30px;box-sizing:border-box;z-index:12}
+#__ID__ .fa{display:inline-block;font-weight:800;letter-spacing:-.045em;line-height:1;font-size:262px;color:#fff;white-space:nowrap;text-shadow:0 12px 70px rgba(40,0,90,.7)}
+#__ID__ .frow{display:flex;gap:26px;margin-top:22px;align-items:center}
+#__ID__ .fb,#__ID__ .fc2{display:inline-block;font-weight:800;letter-spacing:-.04em;line-height:1;font-size:112px;color:#fff;white-space:nowrap;padding:.04em .26em .12em;border-radius:.16em;box-shadow:0 22px 60px rgba(8,0,24,.5)}
+#__ID__ .fb{background:linear-gradient(120deg,#7D29E0,#5E3DE6)} #__ID__ .fc2{background:linear-gradient(120deg,#E6008E,#FF01A2)}
+#__ID__ .wk1{position:absolute;right:100px;top:142px;z-index:21;font-size:30px;padding:12px 28px;box-shadow:0 0 50px rgba(255,1,162,.6);opacity:0}
+/* glitch de salida */
+#__ID__ .sl{position:absolute;left:-200px;width:2320px;opacity:0;z-index:40}
+#__ID__ .flash{position:absolute;inset:0;background:#FAFBFC;opacity:0;z-index:50}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+    <div class="rays" data-layout-allow-overflow></div><div class="halo h1p"></div><div class="halo h2p"></div>
+    <div class="floorv"></div><div class="floor"></div>
+  </div>
+  <div class="pts"></div>
+  <div class="world"><div class="cards"></div><div class="wall" data-layout-allow-overlap data-layout-allow-occlusion data-layout-allow-overflow></div></div>
+  <div class="scrim"></div>
+  <div class="strip dk"></div>
+  <div class="ttl"><div class="t1">SEPTIEMBRE</div><div class="t2">2026</div></div>
+  <div class="mini">SEPTIEMBRE 2026</div>
+  <div class="sw s1" style="border-color:#B58CFF"></div><div class="sw s2" style="border-color:#FF6FC7"></div><div class="sw s3" style="border-color:#8B7BFF"></div><div class="sw s4" style="border-color:#FF4FBE"></div>
+  <div class="kw k1" style="--c:#7D29E0"><div class="lw a"><div class="kl">INTELIGENCIA</div></div><div class="lw b"><div class="kl">ARTIFICIAL</div></div><div class="kt">BLOQUE · IA</div></div>
+  <div class="kw k2" style="--c:#9B61F6"><div class="lw a"><div class="kl">COMPRAS</div></div><div class="kt">PLATAFORMAS Y MERCADO</div></div>
+  <div class="kw k3" style="--c:#5E3DE6"><div class="lw a"><div class="kl">DINERO</div></div><div class="lw b"><div class="kl">PÚBLICO</div></div><div class="kt">ESPAÑA Y UE</div></div>
+  <div class="kw k4" style="--c:#FF01A2"><div class="lw a"><div class="kl">SEMANA</div></div><div class="lw b"><div class="kl">SIN TREGUA</div></div><div class="kt">28 SEP – 2 OCT</div></div>
+  <div class="fin"><div class="fa">EL RESUMEN</div><div class="frow"><span class="fb">E-LEARNING</span><span class="fc2">CORPORATIVO</span></div></div>
+  <div class="badge week wk1">ESTA SEMANA</div>
+  <div class="slices"></div>
+  <div class="flash"></div>
+</div>
+<!--JS-->
+sceneIn("cut");
+
+/* ---------- datos de tarjetas: recortes de titulares reales (px CSS de la captura 1440x900) ---------- */
+const CARDS = {
+  A: { img: "oa-academy", W: 640, H: 250, s: 0.80, fx: 720, fy: 262, c: "#7D29E0", dm: "openai.com" },
+  B: { img: "an-frontier", W: 760, H: 250, s: 0.62, fx: 720, fy: 290, c: "#7D29E0", dm: "anthropic.com" },
+  C: { img: "pearson-workera", W: 640, H: 290, s: 0.70, fx: 720, fy: 360, c: "#9B61F6", dm: "pearson.com" },
+  D: { img: "boe-35", W: 700, H: 280, s: 0.62, fx: 720, fy: 230, c: "#5E3DE6", dm: "boe.es" },
+  E: { img: "gartner-shifts", W: 600, H: 260, s: 0.85, fx: 410, fy: 380, c: "#7D29E0", dm: "gartner.com" },
+  F: { img: "coursera-helix-blog", W: 620, H: 150, s: 0.82, fx: 700, fy: 218, c: "#E6008E", dm: "coursera.org" },
+  G: { img: "moncloa-22", W: 700, H: 190, s: 0.72, fx: 673, fy: 355, c: "#5E3DE6", dm: "lamoncloa.gob.es" },
+  H: { img: "oa-dots", W: 560, H: 330, s: 0.80, fx: 720, fy: 300, c: "#7D29E0", dm: "openai.com" }
+};
+function mkCard(parent, key, f, nodm) {
+  const d = CARDS[key], w = d.W * f, h = d.H * f, s = d.s * f;
+  const el = document.createElement("div");
+  el.className = "fc";
+  el.style.cssText = "width:" + w + "px;height:" + h + "px;margin:" + (-h / 2) + "px 0 0 " + (-w / 2) + "px;--c:" + d.c;
+  el.innerHTML = '<div class="v"><img src="assets/captures/' + d.img + '.png" style="width:1440px;transform:translate(' + (w / 2 - d.fx * s) + "px," + (h / 2 - d.fy * s) + "px) scale(" + s + ')"></div><i class="tp"></i>' + (nodm ? "" : '<b class="dm" data-layout-allow-overlap data-layout-allow-occlusion>' + d.dm + "</b>");
+  el.setAttribute("data-layout-allow-overlap", ""); el.setAttribute("data-layout-allow-overflow", ""); el.setAttribute("data-layout-allow-occlusion", "");
+  el.querySelector("img").setAttribute("data-layout-allow-overflow", "");
+  parent.appendChild(el);
+  return { el, w, h };
+}
+/* vuelo en 3D de una tarjeta de lado a lado. lane: T (arriba), B (abajo), M (fondo, grande y apagada) */
+const cardsEl = $q(".cards");
+function fly(key, t0, dur, lane, dir, f, edge) {
+  const M = lane === "M";
+  const sc = f ?? (M ? 1.25 : Math.min(1.0, 190 / CARDS[key].H));
+  const { el, w, h } = mkCard(cardsEl, key, sc);
+  const yc = lane === "T" ? (edge ?? 140) + h / 2 : lane === "B" ? 1008 - h / 2 : 540;
+  const x0 = dir > 0 ? -w / 2 - 240 : 1920 + w / 2 + 240, x1 = dir > 0 ? 1920 + w / 2 + 240 : -w / 2 - 240;
+  const base = M ? 6 : 0, op = M ? 0.36 : 1;
+  tl.set(el, { opacity: op }, 0);
+  tl.fromTo(el, { x: x0, y: yc - 26 * dir, rotationY: -34 * dir, rotationZ: -5 * dir, rotationX: 7, transformPerspective: 1500 },
+    { x: x1, y: yc + 26 * dir, rotationY: 20 * dir, rotationZ: 4 * dir, rotationX: -4, transformPerspective: 1500, duration: dur, ease: "power1.inOut" }, t0);
+  tl.fromTo(el, { filter: "blur(18px)" }, { filter: "blur(" + base + "px)", duration: 0.5, ease: "power2.out" }, t0 + 0.02);
+  tl.to(el, { filter: "blur(18px)", duration: 0.5, ease: "power2.in" }, t0 + dur - 0.52);
+}
+
+/* ---------- fondo vivo ---------- */
+tl.fromTo(Q(".rays"), { rotation: 0 }, { rotation: 55, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".floor"), { backgroundPositionY: 0 }, { backgroundPositionY: 1320, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".h1p"), { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.9, ease: "power2.out" }, 0);
+tl.fromTo(Q(".h2p"), { opacity: 0, scale: 0.7 }, { opacity: 0.85, scale: 1, duration: 1.2, ease: "power2.out" }, 0.2);
+BEATS.forEach((b) => tl.fromTo(Q(".h1p"), { scale: 1 }, { scale: 1.07, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, b));
+tl.fromTo(Q(".world"), { scale: 1.0 }, { scale: 1.05, duration: DUR, ease: "none" }, 0);
+/* partículas con semilla fija */
+let sd = 7;
+const rnd = () => { sd = (sd * 16807) % 2147483647; return (sd - 1) / 2147483646; };
+const ptsEl = $q(".pts"), PC = ["#E2CCFF", "#FF6FC7", "#9B61F6", "#FFFFFF"];
+for (let i = 0; i < 44; i++) {
+  const el = document.createElement("div"); el.className = "pt";
+  const z = 0.4 + rnd() * 0.9, sz = Math.round(4 + z * 7);
+  el.style.cssText = "width:" + sz + "px;height:" + sz + "px;background:" + PC[i % 4] + ";opacity:" + (0.25 + z * 0.4);
+  ptsEl.appendChild(el);
+  const x = Math.round(rnd() * 1920), y0 = Math.round(300 + rnd() * 900);
+  tl.fromTo(el, { x, y: y0 }, { x: x + Math.round((rnd() - 0.5) * 160), y: y0 - 380 - Math.round(z * 500), duration: DUR, ease: "none" }, 0);
+}
+
+/* ---------- tira de calendario: barre del 1 sep al 2 oct ---------- */
+dateStrip(["2026-09-01", "2026-10-02"], 0.5, 6, 0);
+
+/* ---------- TÍTULO: SEPTIEMBRE 2026 golpea ---------- */
+function hit(sel, at, d = 0.46) {
+  tl.fromTo(Q(sel), { opacity: 0.3, scale: 1.9, filter: "blur(22px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: d, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 12, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + d - 0.04);
+  tl.set(Q(sel), { x: 0 }, at + d + 0.34);
+}
+hit(".t1", 0); hit(".t2", 0.16, 0.5);
+[0.63, 1.13, 1.63, 2.13].forEach((b) => tl.fromTo(Q(".ttl"), { scale: 1 }, { scale: 1.035, duration: 0.12, yoyo: true, repeat: 1, ease: "sine.inOut" }, b));
+/* cruza una tarjeta de fondo (pequeña, arriba y abajo) mientras manda el título */
+fly("A", 0.2, 2.5, "T", 1, 0.6, 128);
+fly("F", 0.5, 2.5, "B", -1, 0.7);
+/* el título atraviesa la cámara cuando entra la IA */
+const IA = cue("inteligencia");
+tl.to(Q(".ttl"), { scale: 2.8, opacity: 0, filter: "blur(26px)", duration: 0.3, ease: "power3.in" }, IA - 0.28);
+up(".mini", IA + 0.1, { y: -14, d: 0.5 });
+
+/* ---------- PALABRAS CLAVE ---------- */
+function shock(n, at, y = 560) { tl.fromTo(Q(".s" + n), { opacity: 0.9, scale: 0.3, y: y - 560 }, { opacity: 0, scale: 7, duration: 0.8, ease: "power3.out", immediateRender: false }, at); }
+function exit(k, at) { tl.to(Q(".k" + k), { opacity: 0, scale: 0.86, filter: "blur(14px)", duration: 0.24, ease: "power2.in" }, at); }
+const T1 = cue("inteligencia"), T1b = cue("artificial"), T2 = cue("compras"), T3 = cue("dinero"), T3b = cue("público"), T4 = cue("semana"), T4b = cue("sin");
+slam(".k1 .a", T1); slam(".k1 .b", T1b); up(".k1 .kt", T1b + 0.18, { y: 20, d: 0.5 }); shock(1, T1); exit(1, T2 - 0.02);
+slam(".k2 .a", T2); up(".k2 .kt", T2 + 0.3, { y: 20, d: 0.5 }); shock(2, T2); exit(2, T3 - 0.02);
+slam(".k3 .a", T3); slam(".k3 .b", T3b); up(".k3 .kt", T3b + 0.2, { y: 20, d: 0.5 }); shock(3, T3); exit(3, T4 - 0.02);
+slam(".k4 .a", T4); slam(".k4 .b", T4b); up(".k4 .kt", T4b + 0.3, { y: 20, d: 0.5 }); shock(4, T4); exit(4, cue("esto") - 0.3);
+/* tarjetas por bloque: IA → compras → dinero público → semana */
+fly("E", 2.45, 2.3, "T", 1); fly("B", 2.65, 2.2, "B", -1);
+fly("C", 3.55, 2.3, "T", 1); fly("F", 3.95, 2.2, "B", -1);
+fly("D", 4.95, 2.3, "T", 1); fly("G", 5.3, 2.2, "B", -1);
+fly("B", 6.3, 2.3, "T", 1); fly("H", 6.55, 2.2, "B", -1);
+fly("H", 3.0, 3.2, "M", -1); fly("E", 5.7, 3.0, "M", 1);
+
+/* ---------- ESTA SEMANA se enciende ---------- */
+tl.fromTo(Q(".wk1"), { opacity: 0, scale: 2.2, filter: "blur(16px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.45, ease: "power4.out" }, T4);
+tl.to(Q(".wk1"), { boxShadow: "0 0 90px rgba(255,1,162,.95)", duration: 0.3, yoyo: true, repeat: 5, ease: "sine.inOut" }, T4 + 0.45);
+tl.to(Q(".strip .wk"), { backgroundColor: "rgba(255,1,162,.6)", duration: 0.28, yoyo: true, repeat: 5, ease: "sine.inOut" }, T4);
+
+/* ---------- FINAL: EL RESUMEN · E-LEARNING CORPORATIVO sobre un muro de titulares ---------- */
+const wallEl = $q(".wall");
+const WK = ["A", "B", "C", "D", "E", "F", "G", "H", "G", "D", "H", "B"];
+const wallCards = [];
+WK.forEach((k, i) => {
+  const d = CARDS[k], f = Math.min(410 / d.W, 210 / d.H);
+  const c = mkCard(wallEl, k, f, true);
+  c.el.style.left = (960 + ((i % 4) - 1.5) * 470) + "px"; c.el.style.top = (540 + (Math.floor(i / 4) - 1) * 270) + "px";
+  wallCards.push(c.el);
+});
+const FIN = cue("esto");
+tl.fromTo(Q(".wall"), { opacity: 0, rotationX: 54, rotationZ: -14, scale: 2.0, y: 220, x: 80, transformPerspective: 1600 },
+  { opacity: 0.62, rotationX: 54, rotationZ: -14, scale: 1.4, y: 40, x: 0, transformPerspective: 1600, duration: 1.3, ease: "expo.out" }, FIN - 0.3);
+tl.fromTo(wallCards, { scale: 0.6 }, { scale: 1, duration: 0.5, ease: SPR, stagger: 0.04 }, FIN - 0.2);
+tl.to(Q(".wall"), { x: -230, y: -30, duration: DUR - FIN - 0.4, ease: "none" }, FIN + 1.0);
+tl.fromTo(Q(".scrim"), { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power2.out" }, FIN - 0.2);
+slam(".fa", FIN);
+slam(".fb", cue("e-learning")); slam(".fc2", cue("corporativo"));
+tl.fromTo(Q(".sw.s1"), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 8, duration: 0.9, ease: "power3.out", immediateRender: false }, cue("e-learning"));
+tl.fromTo(Q(".sw.s2"), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 8, duration: 0.9, ease: "power3.out", immediateRender: false }, cue("corporativo"));
+
+/* ---------- SALIDA: glitch y destello claro hacia el logo ---------- */
+const G0 = DUR - 0.62;
+const SL = [[120, 70, "#FF01A2"], [260, 46, "#7D29E0"], [420, 90, "#FAFBFC"], [590, 54, "#9B61F6"], [740, 80, "#FF01A2"], [900, 60, "#FAFBFC"]];
+const slEl = $q(".slices");
+SL.forEach(([y, h, c], i) => {
+  const el = document.createElement("div"); el.className = "sl"; el.style.cssText = "top:" + y + "px;height:" + h + "px;background:" + c;
+  slEl.appendChild(el);
+  [0, 1, 2, 3].forEach((k) => {
+    const t = G0 + i * 0.025 + k * 0.07;
+    tl.set(el, { opacity: k % 3 === 2 ? 0 : 0.95, x: ((i + k) % 2 ? 1 : -1) * (80 + ((i * 97 + k * 53) % 380)) }, t);
+  });
+  tl.set(el, { opacity: 0 }, G0 + 0.36);
+});
+tl.to(Q(".fin"), { x: 26, duration: 0.04, yoyo: true, repeat: 9, ease: "none" }, G0);
+tl.set(Q(".fin"), { x: 0 }, G0 + 0.42);
+tl.to(Q(".fin"), { scale: 1.12, filter: "blur(10px)", duration: 0.4, ease: "power2.in" }, G0);
+tl.to(Q(".flash"), { opacity: 1, duration: 0.24, ease: "power2.in" }, DUR - 0.3);
+<!--SFX-->
+[{"k":"impact","t":0.12,"v":0.55},{"k":"riser","t":1.55,"v":0.35},{"k":"impact","t":2.74,"v":0.55},{"k":"pop","t":3.66,"v":0.45},{"k":"impact","t":4.98,"v":0.5},{"k":"stamp","t":6.68,"v":0.5},{"k":"swipe","t":8.62,"v":0.4},{"k":"ping","t":10.18,"v":0.35},{"k":"glitch","t":11.52,"v":0.5}]

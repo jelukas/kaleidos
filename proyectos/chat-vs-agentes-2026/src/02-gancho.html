@@ -1,0 +1,138 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;inset:0}
+#__ID__ .glowA{position:absolute;left:-380px;top:-420px;width:1300px;height:1300px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.5),rgba(255,1,162,0))}
+#__ID__ .glowB{position:absolute;left:1100px;top:380px;width:1200px;height:1200px;border-radius:50%;background:radial-gradient(closest-side,rgba(155,97,246,.55),rgba(155,97,246,0))}
+#__ID__ .vign{position:absolute;inset:0;background:radial-gradient(ellipse 75% 75% at 50% 50%,rgba(26,8,54,0) 55%,rgba(26,8,54,.5) 100%)}
+#__ID__ .deco{position:absolute;display:block;border:3px solid rgba(255,255,255,.16);box-sizing:border-box}
+#__ID__ .para{position:absolute;left:360px;top:0;width:1200px;height:1080px}
+#__ID__ .bar{position:absolute;left:0;height:34px;border-radius:17px;background:rgba(255,255,255,.17);transform-origin:0 50%}
+#__ID__ .w1{position:absolute;left:0;top:432px;width:1920px;text-align:center;font-size:176px;color:#fff;text-shadow:0 10px 50px rgba(26,8,54,.35)}
+#__ID__ .l1{position:absolute;left:0;top:226px;width:1920px;text-align:center;font-size:190px;color:#fff;opacity:0;text-shadow:0 12px 60px rgba(26,8,54,.4)}
+#__ID__ .l2{position:absolute;left:0;top:446px;width:1920px;text-align:center;font-size:392px;color:#fff;opacity:0;text-shadow:0 18px 80px rgba(255,1,162,.55),0 0 2px rgba(255,255,255,.4)}
+#__ID__ .l2 .dot{color:#FFB3E3}
+#__ID__ .burst{position:absolute;left:960px;top:650px;width:0;height:0;z-index:20}
+#__ID__ .pf{position:absolute;left:0;top:0;width:100px;height:124px;margin:-62px 0 0 -50px;opacity:0}
+#__ID__ .pi{display:block;width:100px;height:124px;filter:drop-shadow(0 12px 18px rgba(26,8,54,.45))}
+#__ID__ .pi svg{display:block;width:100%;height:100%}
+#__ID__ .bit{position:absolute;left:0;top:0;width:20px;height:20px;margin:-10px 0 0 -10px;opacity:0}
+#__ID__ .bit i{display:block;width:100%;height:100%}
+#__ID__ .ring{position:absolute;left:960px;top:650px;width:200px;height:200px;margin:-100px 0 0 -100px;border-radius:50%;border:8px solid #fff;opacity:0;z-index:18}
+#__ID__ .flash{position:absolute;inset:0;background:radial-gradient(closest-side at 50% 60%,rgba(255,255,255,.9),rgba(255,255,255,0));opacity:0;z-index:19}
+#__ID__ .orb{z-index:30}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-violet clip" data-start="0" data-duration="__DUR__" data-track-index="0"></div>
+  <div class="world">
+    <div class="glowA"></div><div class="glowB"></div>
+    <i class="deco d1" style="left:210px;top:170px;width:120px;height:120px;border-radius:30px"></i>
+    <i class="deco d2" style="left:1560px;top:760px;width:170px;height:170px;border-radius:50%"></i>
+    <i class="deco d3" style="left:1500px;top:130px;width:90px;height:90px;border-radius:22px"></i>
+    <i class="deco d4" style="left:150px;top:720px;width:70px;height:70px;border-radius:50%"></i>
+    <div class="para"></div>
+    <div class="w1 h"><span class="mask"><span class="r">UN TEXTO.</span></span></div>
+    <div class="l1 h">EL TRABAJO</div>
+    <div class="l2 h">HECHO<span class="dot">.</span></div>
+    <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+    <div class="burst"></div>
+    <div class="orb"></div>
+    <div class="flash"></div>
+  </div>
+  <div class="vign"></div>
+</div>
+<!--JS-->
+let seed = 11; const rnd = () => (seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296;
+const T_TEXTO = cue("pedirle");      // «UN TEXTO.» entra al pedir
+const T_EL = cue("trabajo") - 0.04;  // «EL TRABAJO» golpea con la voz
+const T_HECHO = beat(4.0);           // «HECHO.» golpea en el pulso (4,109)
+
+/* ---------- capas de fondo con parallax y pulso en los beats ---------- */
+tl.fromTo(Q(".glowA"), { x: 0, y: 0 }, { x: 160, y: 90, duration: DUR, ease: "none" }, 0);
+tl.fromTo(Q(".glowB"), { x: 0, y: 0 }, { x: -200, y: -110, duration: DUR, ease: "none" }, 0);
+BEATS.filter((b) => b < 3.7).forEach((b) => {
+  tl.fromTo(Q(".glowA"), { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: "sine.inOut" }, b);
+});
+[[".d1", -140, 70], [".d2", 90, -120], [".d3", -60, 150], [".d4", 130, -60]].forEach(([s, dx, dy], i) => {
+  tl.fromTo(Q(s), { x: 0, y: 0, rotation: 0 }, { x: dx, y: dy, rotation: i % 2 ? -50 : 60, duration: DUR, ease: "none" }, 0);
+  tl.fromTo(Q(s), { opacity: 0 }, { opacity: 1, duration: 0.6 }, 0.1 + i * 0.1);
+});
+
+/* ---------- el «texto»: un párrafo que se escribe línea a línea ---------- */
+const para = $q(".para");
+const BARS = [[1100, 0], [1180, 1], [880, 2], [1130, 3], [760, 4], [980, 5]];
+const BAR_Y = (i) => 318 + i * 74;
+BARS.forEach(([w, i]) => {
+  const b = document.createElement("div"); b.className = "bar"; b.style.top = BAR_Y(i) + "px"; b.style.width = w + "px"; b.id = ID + "b" + i;
+  para.appendChild(b);
+  tl.fromTo(b, { scaleX: 0 }, { scaleX: 1, duration: 0.75, ease: E }, 0.03 + i * 0.09);
+  tl.to(b, { scaleX: 0.02, x: 600 - 0 /*converge al orbe*/, y: 650 - BAR_Y(i) - 17, opacity: 0, duration: 0.45, ease: "power3.in" }, 3.0 + i * 0.03);
+});
+tl.fromTo(Q(".w1 .r"), { yPercent: 115 }, { yPercent: 0, duration: 0.8, ease: E }, T_TEXTO);
+tl.to(Q(".w1"), { opacity: 0, scale: 0.9, y: -36, filter: "blur(26px)", duration: 0.5, ease: "power2.in" }, 3.0);
+
+/* ---------- el orbe se carga y estalla en «EL TRABAJO» ---------- */
+orbSet(960, 650, 0);
+tl.set(Q(".orb"), { opacity: 0, scale: 0 }, 0);
+tl.to(Q(".orb"), { opacity: 1, scale: 1.1, duration: 0.4, ease: SPR }, 3.05);
+tl.to(Q(".orb"), { scale: 3.0, duration: 0.7, ease: "power2.in" }, 3.1);
+tl.to(Q(".orb"), { scale: 8, opacity: 0, duration: 0.3, ease: "power3.out" }, T_EL);
+tl.fromTo(Q(".ring.r1"), { opacity: 0.9, scale: 0.3 }, { opacity: 0, scale: 7, duration: 0.7, ease: "power3.out" , immediateRender: false }, T_EL);
+tl.fromTo(Q(".flash"), { opacity: 0 }, { opacity: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.out" }, T_EL);
+
+/* ---------- «EL TRABAJO» golpea ---------- */
+slam(".l1", T_EL);
+/* ---------- «HECHO.» golpea más fuerte y estalla en archivitos ---------- */
+tl.fromTo(Q(".l2"), { opacity: 0, scale: 2.3, filter: "blur(34px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.4, ease: "power4.out" }, T_HECHO);
+tl.fromTo(Q(".l2"), { x: 0, y: 0 }, { x: 18, y: -9, duration: 0.04, repeat: 9, yoyo: true, ease: "none" }, T_HECHO + 0.36);
+tl.set(Q(".l2"), { x: 0, y: 0 }, T_HECHO + 0.78);
+tl.fromTo(Q(".ring.r2"), { opacity: 1, scale: 0.3 }, { opacity: 0, scale: 11, duration: 0.8, ease: "power3.out" , immediateRender: false }, T_HECHO);
+tl.fromTo(Q(".ring.r3"), { opacity: 0.8, scale: 0.2 }, { opacity: 0, scale: 7, duration: 0.7, ease: "power2.out" , immediateRender: false }, T_HECHO + 0.08);
+tl.fromTo(Q(".flash"), { opacity: 0 }, { opacity: 0.9, duration: 0.06, yoyo: true, repeat: 1, ease: "power1.out" }, T_HECHO);
+
+/* cámara: empuje lento + golpes en cada slam */
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.05, duration: T_EL, ease: "power1.in" }, 0);
+tl.fromTo(Q(".world"), { scale: 1.05 }, { scale: 1.0, duration: 0.5, ease: "power4.out" }, T_EL);
+tl.fromTo(Q(".world"), { scale: 1.0 }, { scale: 1.1, duration: 0.07, ease: "power2.out" }, T_HECHO - 0.001);
+tl.to(Q(".world"), { scale: 1.0, duration: 0.6, ease: "power3.out" }, T_HECHO + 0.07);
+
+/* ---------- estallido de archivitos vectoriales ---------- */
+const ICON = {
+  doc: '<svg viewBox="0 0 100 124"><path d="M8 3h58l30 30v84a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4z" fill="#fff"/><path d="M66 3l30 30H70a4 4 0 0 1-4-4z" fill="#E2CCFF"/><rect x="20" y="56" width="58" height="8" rx="4" fill="#9B61F6"/><rect x="20" y="74" width="46" height="8" rx="4" fill="#D9C2FA"/><rect x="20" y="92" width="52" height="8" rx="4" fill="#D9C2FA"/></svg>',
+  img: '<svg viewBox="0 0 100 124"><rect x="4" y="3" width="92" height="118" rx="8" fill="#fff"/><rect x="14" y="14" width="72" height="62" rx="5" fill="#F2E7FC"/><circle cx="68" cy="34" r="8" fill="#FF01A2"/><path d="M14 76l24-28 18 20 12-12 18 20z" fill="#7D29E0"/><rect x="14" y="88" width="46" height="8" rx="4" fill="#D9C2FA"/><rect x="14" y="102" width="30" height="8" rx="4" fill="#D9C2FA"/></svg>',
+  xls: '<svg viewBox="0 0 100 124"><rect x="4" y="3" width="92" height="118" rx="8" fill="#fff"/><rect x="4" y="3" width="92" height="22" rx="8" fill="#5E3DE6"/><g fill="#E2CCFF"><rect x="14" y="36" width="20" height="14" rx="3"/><rect x="40" y="36" width="20" height="14" rx="3"/><rect x="66" y="36" width="20" height="14" rx="3"/><rect x="14" y="56" width="20" height="14" rx="3"/><rect x="40" y="56" width="20" height="14" rx="3" fill="#9B61F6"/><rect x="66" y="56" width="20" height="14" rx="3"/><rect x="14" y="76" width="20" height="14" rx="3"/><rect x="40" y="76" width="20" height="14" rx="3"/><rect x="66" y="76" width="20" height="14" rx="3" fill="#FF01A2"/><rect x="14" y="96" width="20" height="14" rx="3"/><rect x="40" y="96" width="20" height="14" rx="3"/><rect x="66" y="96" width="20" height="14" rx="3"/></g></svg>',
+  ppt: '<svg viewBox="0 0 100 124"><rect x="4" y="3" width="92" height="118" rx="8" fill="#fff"/><rect x="14" y="14" width="72" height="50" rx="5" fill="#FF01A2"/><rect x="24" y="26" width="38" height="9" rx="4.5" fill="#fff"/><rect x="24" y="42" width="26" height="7" rx="3.5" fill="#FFC2E6"/><circle cx="70" cy="46" r="9" fill="#FFC2E6"/><rect x="14" y="76" width="72" height="8" rx="4" fill="#D9C2FA"/><rect x="14" y="92" width="52" height="8" rx="4" fill="#D9C2FA"/></svg>',
+};
+const KINDS = ["doc", "img", "xls", "ppt"];
+const burst = $q(".burst");
+const N = 16;
+for (let i = 0; i < N; i++) {
+  const ang = (i / N) * Math.PI * 2 + (rnd() - 0.5) * 0.25;
+  const dist = 520 + rnd() * 520;
+  const dx = Math.cos(ang) * dist * 1.55, dy = Math.sin(ang) * dist * 0.95 - 60;
+  const sc = 0.85 + rnd() * 0.75;
+  const rot = (rnd() < 0.5 ? -1 : 1) * (200 + rnd() * 380);
+  const fall = 160 + rnd() * 200;
+  const dur = 0.95 + rnd() * 0.3;
+  const pf = document.createElement("div"); pf.className = "pf";
+  const pi = document.createElement("div"); pi.className = "pi"; pi.innerHTML = ICON[KINDS[i % 4]];
+  pf.appendChild(pi); burst.appendChild(pf);
+  tl.fromTo(pf, { x: 0, y: 0 }, { x: dx, y: dy, duration: dur, ease: "power4.out" }, T_HECHO + 0.03);
+  tl.fromTo(pf, { opacity: 0 }, { opacity: 1, duration: 0.05 }, T_HECHO + 0.03);
+  tl.fromTo(pi, { scale: 0.15 }, { scale: sc, duration: 0.4, ease: "back.out(2)" }, T_HECHO + 0.03);
+  tl.fromTo(pi, { rotation: 0 }, { rotation: rot, duration: dur, ease: "power2.out" }, T_HECHO + 0.03);
+  tl.fromTo(pi, { y: 0 }, { y: fall, duration: dur, ease: "power2.in" }, T_HECHO + 0.03);
+}
+const COL = ["#fff", "#FFB3E3", "#E2CCFF", "#FF01A2", "#9B61F6"];
+for (let i = 0; i < 26; i++) {
+  const ang = rnd() * Math.PI * 2, dist = 300 + rnd() * 800;
+  const dx = Math.cos(ang) * dist * 1.5, dy = Math.sin(ang) * dist * 0.9 - 40;
+  const b = document.createElement("div"); b.className = "bit";
+  const k = document.createElement("i"); k.style.background = COL[i % COL.length]; k.style.borderRadius = i % 3 ? "50%" : "4px";
+  b.appendChild(k); burst.appendChild(b);
+  const s = 0.5 + rnd() * 0.9, dur = 0.7 + rnd() * 0.4;
+  tl.fromTo(b, { x: 0, y: 0, opacity: 1 }, { x: dx, y: dy + 120, opacity: 0, duration: dur, ease: "power3.out" , immediateRender: false }, T_HECHO + 0.02);
+  tl.fromTo(k, { scale: 0 }, { scale: s, rotation: 300 * (rnd() - 0.5), duration: 0.3, ease: "back.out(2)" }, T_HECHO + 0.02);
+}
+
+sceneOut("whip");
+<!--SFX-->
+[{"k":"riser","t":2.9,"v":0.4},{"k":"pop","t":1.4,"v":0.35},{"k":"impact","t":3.76,"v":0.7},{"k":"impact","t":4.1,"v":0.85},{"k":"shimmer","t":4.14,"v":0.5}]

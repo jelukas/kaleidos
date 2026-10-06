@@ -1,0 +1,85 @@
+{
+ "slug": "devday-2026",
+ "titulo": "OpenAI DevDay 2026",
+ "narracion": true,
+ "metodo": "corto-ilustrado",
+ "estilo": "milikito",
+ "idioma": "es",
+ "salida": {
+  "ancho": 1920,
+  "alto": 1080,
+  "fps": 25
+ },
+ "ponente": {
+  "recorte": false
+ },
+ "whisper": {
+  "modelo": "large-v3-turbo",
+  "prompt": "OpenAI DevDay 2026: dots, GPT-6 Astra, GPT-6.1 Sol, Ultrafast, Codex, Codex Security Cloud, Agents API, Decisions API, Bedrock Managed Agents, AWS, ChatGPT Space, Pages, Slack, Microsoft Teams, Pro 500, Sign in with ChatGPT, OpenAI Marketplace, plugins, tokens, API."
+ },
+ "lambda": {
+  "region": "eu-west-1",
+  "funcion": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+  "framesPorLambda": 100,
+  "crf": 20,
+  "conservarSalida": false
+ },
+ "escenario": true,
+ "audio": {
+  "origen": "estilos/milikito/audio",
+  "musica": {
+   "sintonia": {
+    "archivo": "sintonia",
+    "volumen": 0.5,
+    "fundidoEntrada": 0,
+    "fundidoSalida": 1.5,
+    "hasta": "voz"
+   },
+   "base": {
+    "archivo": "base",
+    "lufs": -24.0,
+    "volumen": 0.15,
+    "bucle": true,
+    "fundidoEntrada": 2,
+    "fundidoSalida": 2,
+    "nota": "bajo la locución TTS: ≈ -24 LUFS medidos (linea calcula el volumen)"
+   },
+   "cierre": {
+    "archivo": "cierre",
+    "volumen": 0.5,
+    "fundidoEntrada": 1,
+    "fundidoSalida": 2
+   }
+  },
+  "sfx": {
+   "titulo": {
+    "archivo": "sfx-destello",
+    "volumen": 0.5
+   },
+   "bocadillo": {
+    "archivo": "sfx-pop",
+    "volumen": 0.45
+   },
+   "reaccion": {
+    "archivo": "sfx-pop",
+    "volumen": 0.35
+   },
+   "disposicion": {
+    "archivo": "sfx-whoosh",
+    "volumen": 0.35
+   },
+   "sello": {
+    "archivo": "sfx-golpe",
+    "volumen": 0.6
+   },
+   "capitulo": {
+    "archivo": "sfx-ficha",
+    "volumen": 0.5
+   },
+   "veredicto": {
+    "archivo": "sfx-sello",
+    "volumen": 0.5
+   }
+  }
+ }
+}

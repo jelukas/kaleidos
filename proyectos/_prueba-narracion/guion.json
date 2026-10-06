@@ -1,0 +1,14 @@
+{
+ "fixes": {},
+ "intro": {"kicker": "Noticias", "titulo": "DevDay 2026", "subtitulo": "Prueba del modo narración", "duracion": 4},
+ "capitulos": [],
+ "eventos": [
+  {"tipo": "titulo", "cue": [0.2, "bienvenidos a devday"], "hasta": [5.9, "hoy toca"], "antetitulo": "Resumen", "texto": "DevDay 2026", "registro": "show"},
+  {"tipo": "panel", "kind": "lista", "cue": [6.2, "hoy toca"], "hasta": [14.2, "en tres minutos"], "kicker": "Novedades", "titulo": "Lo que llega",
+   "items": [{"cue": [7.0, "api realtime"], "texto": "API Realtime"}, {"cue": [8.1, "agentes con mcp"], "texto": "Agentes con MCP"},
+             {"cue": [10.2, "sdk de typescript"], "texto": "SDK de TypeScript", "detalle": "con WebGPU"}]},
+  {"tipo": "bocadillo", "cue": [14.2, "en tres minutos"], "hasta": [17.1, "como empezar"], "texto": "¡Tres minutos!", "forma": "globo", "lado": "der"},
+  {"tipo": "reaccion", "cue": [17.2, "como empezar"], "icono": "idea"}
+ ],
+ "outro": {"kicker": "En resumen", "titulo": "DevDay 2026", "puntos": ["Realtime", "MCP", "TypeScript"], "duracion": 5}
+}

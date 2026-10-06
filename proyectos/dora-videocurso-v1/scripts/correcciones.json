@@ -1,0 +1,77 @@
+{
+  "_nota": "Correcciones de la transcripción para los subtítulos (terminología que Whisper oye mal). 'excluir' y 'mover' usan el instante realineado (s) de la palabra.",
+  "reemplazos": {
+    "Dora": "DORA",
+    "ORA.": "DORA.",
+    "Judge": "due",
+    "judge": "due",
+    "Allegiance": "diligence",
+    "allegiance": "diligence",
+    "finta": "fintech",
+    "SAS": "SaaS",
+    "estentadora": "tentadora",
+    "incumente": "incumbente",
+    "Incrita": "inscrita",
+    "unes": "Lunes",
+    "lentamente,": "lateralmente,",
+    "Eshado": "es shadow",
+    "eShadow": "es shadow",
+    "álgile": "ágil",
+    "cooperativo,": "corporativo,",
+    "pre-requisito": "prerrequisito",
+    "stake": "stakeholders.",
+    "prorroga": "prórroga",
+    "quiera": "quiere",
+    "Saltárselo": "Saltárselo,"
+  },
+  "excluir": [
+    [
+      30.9,
+      "Sí."
+    ],
+    [
+      52.0,
+      "que"
+    ],
+    [
+      743.2,
+      "lo"
+    ],
+    [
+      1340.0,
+      "holders."
+    ],
+    [
+      1661.4,
+      "con"
+    ],
+    [
+      1724.7,
+      "que"
+    ]
+  ],
+  "mover": [
+    [
+      735.2,
+      "Veamos",
+      736.5
+    ],
+    [
+      1115.0,
+      "tiempo.",
+      1112.95
+    ],
+    [
+      1944.0,
+      "antes.",
+      1942.9
+    ]
+  ],
+  "reemplazos_en": [
+    [
+      1724.6,
+      "por",
+      "porque"
+    ]
+  ]
+}

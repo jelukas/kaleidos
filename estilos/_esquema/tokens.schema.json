@@ -1,0 +1,589 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kaleidos.local/estilos/tokens.schema.json",
+  "title": "tokens.json de un estilo de kaleidos",
+  "description": "Esquema de docs/CONTRATO.md §5. Todas las claves del contrato son obligatorias; no se admiten claves extra. Lo valida estilos/_esquema/validar.mjs (sin dependencias).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "nombre",
+    "descripcion",
+    "modo",
+    "color",
+    "tipografia",
+    "forma",
+    "fondo",
+    "paneles",
+    "ponente",
+    "subtitulos",
+    "movimiento",
+    "tres",
+    "audio",
+    "licencias"
+  ],
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Igual que el nombre de la carpeta en estilos/."
+    },
+    "descripcion": {
+      "type": "string",
+      "minLength": 10
+    },
+    "modo": {
+      "enum": [
+        "oscuro",
+        "claro"
+      ]
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fondo",
+        "superficie",
+        "superficie2",
+        "linea",
+        "texto",
+        "textoSuave",
+        "acento",
+        "ok",
+        "aviso",
+        "error",
+        "capitulos"
+      ],
+      "properties": {
+        "fondo": {
+          "$ref": "#/$defs/hex",
+          "description": "Fondo de todo el cuadro."
+        },
+        "superficie": {
+          "$ref": "#/$defs/hex",
+          "description": "Paneles y tarjetas. `texto` y `textoSuave` deben leerse encima (AA)."
+        },
+        "superficie2": {
+          "$ref": "#/$defs/hex",
+          "description": "Segunda superficie (tarjeta destacada, subrayador). `texto` debe leerse encima."
+        },
+        "linea": {
+          "$ref": "#/$defs/hex",
+          "description": "Filetes, rejillas y bordes. Equivalente opaco sobre `fondo` si el diseño usa transparencia."
+        },
+        "texto": {
+          "$ref": "#/$defs/hex"
+        },
+        "textoSuave": {
+          "$ref": "#/$defs/hex"
+        },
+        "acento": {
+          "$ref": "#/$defs/hex",
+          "description": "Acento legible como texto grande sobre `fondo` (≥ 3:1)."
+        },
+        "ok": {
+          "$ref": "#/$defs/hex"
+        },
+        "aviso": {
+          "$ref": "#/$defs/hex"
+        },
+        "error": {
+          "$ref": "#/$defs/hex"
+        },
+        "capitulos": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 8,
+          "items": {
+            "$ref": "#/$defs/hex"
+          },
+          "description": "Acento por capítulo (índice = capitulo.acento, en módulo)."
+        },
+        "sobreAcento": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$",
+          "description": "Texto sobre el acento (opcional)"
+        },
+        "tinta": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}([0-9A-Fa-f]{2})?$",
+          "description": "Color de trazo o tinta (opcional)"
+        }
+      }
+    },
+    "tipografia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "titular",
+        "cuerpo",
+        "etiqueta",
+        "mono",
+        "archivos"
+      ],
+      "properties": {
+        "titular": {
+          "$ref": "#/$defs/rol",
+          "required": [
+            "familia",
+            "peso",
+            "tracking",
+            "interlineado"
+          ]
+        },
+        "cuerpo": {
+          "$ref": "#/$defs/rol",
+          "required": [
+            "familia",
+            "peso",
+            "interlineado"
+          ]
+        },
+        "etiqueta": {
+          "$ref": "#/$defs/rol",
+          "required": [
+            "familia",
+            "peso",
+            "tracking",
+            "mayusculas"
+          ]
+        },
+        "mono": {
+          "$ref": "#/$defs/rol",
+          "required": [
+            "familia",
+            "peso"
+          ]
+        },
+        "archivos": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Rutas relativas a la carpeta del estilo. Convención de @fontsource <familia>-<subconjunto>-<peso>-<estilo>.woff2; el subconjunto da el unicode-range (unicode-ranges.json). latin-ext va antes que latin.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "familia",
+              "peso",
+              "estilo",
+              "archivo"
+            ],
+            "properties": {
+              "familia": {
+                "type": "string",
+                "minLength": 1
+              },
+              "peso": {
+                "$ref": "#/$defs/peso"
+              },
+              "estilo": {
+                "enum": [
+                  "normal",
+                  "italic"
+                ]
+              },
+              "archivo": {
+                "type": "string",
+                "pattern": "^fonts/[a-z0-9-]+\\.woff2$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "forma": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "radio",
+        "radioPildora",
+        "borde",
+        "sombra"
+      ],
+      "properties": {
+        "radio": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Radio de paneles y tarjetas, en px a 1920×1080."
+        },
+        "radioPildora": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Radio de chips y píldoras (999 = píldora; 0 = etiqueta cuadrada)."
+        },
+        "borde": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Grosor de borde en px."
+        },
+        "sombra": {
+          "type": "string",
+          "minLength": 1,
+          "description": "box-shadow CSS, o \"none\"."
+        }
+      }
+    },
+    "fondo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "detalle"
+      ],
+      "properties": {
+        "tipo": {
+          "enum": [
+            "cristal",
+            "liso",
+            "papel",
+            "radial",
+            "rayos",
+            "rejilla"
+          ]
+        },
+        "detalle": {
+          "type": "string",
+          "minLength": 1
+        },
+        "grano": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Intensidad del grano de película 0–1 (opcional; 0 = sin grano)"
+        },
+        "rayos": {
+          "type": "object",
+          "description": "Fondo de rayos cónicos (opcional, §7.1)",
+          "properties": {
+            "colores": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "vineta": {
+              "type": "string"
+            },
+            "giro": {
+              "type": "number"
+            },
+            "destellos": {
+              "type": "number"
+            }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "paneles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "estilo"
+      ],
+      "properties": {
+        "estilo": {
+          "enum": [
+            "solido",
+            "cristal",
+            "papel",
+            "tinta"
+          ]
+        }
+      }
+    },
+    "ponente": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "marco",
+        "borde"
+      ],
+      "description": "Cómo se enmarca al ponente cuando no hay recorte.",
+      "properties": {
+        "marco": {
+          "enum": [
+            "redondeado",
+            "recto",
+            "arco",
+            "circulo",
+            "ninguno"
+          ]
+        },
+        "borde": {
+          "type": "boolean"
+        }
+      }
+    },
+    "subtitulos": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "estilo",
+        "palabraActiva"
+      ],
+      "properties": {
+        "estilo": {
+          "enum": [
+            "caja",
+            "contorno",
+            "limpio"
+          ]
+        },
+        "palabraActiva": {
+          "enum": [
+            "acento",
+            "capitulo",
+            "subrayado",
+            "ninguna"
+          ],
+          "description": "acento: la palabra dicha se pinta en color.acento · capitulo: en el color del capítulo actual · subrayado: bloque de color.superficie2 detrás, texto en color.texto · ninguna: páginas sin resaltado."
+        }
+      }
+    },
+    "movimiento": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "energia",
+        "entrada",
+        "duracionEntrada",
+        "transicion"
+      ],
+      "properties": {
+        "energia": {
+          "enum": [
+            "baja",
+            "media",
+            "alta"
+          ]
+        },
+        "entrada": {
+          "enum": [
+            "none",
+            "power1In",
+            "power2Out",
+            "power3Out",
+            "power3InOut",
+            "power4Out",
+            "expoOut",
+            "backOut",
+            "sineInOut",
+            "elasticOut"
+          ],
+          "description": "Curva de entrada por defecto (nombres de GSAP en camelCase; equivalencias Remotion en benchmark/assets/ESCENA.md)."
+        },
+        "duracionEntrada": {
+          "type": "number",
+          "minimum": 0.05,
+          "maximum": 5,
+          "description": "Segundos."
+        },
+        "transicion": {
+          "enum": [
+            "empuje",
+            "fundido",
+            "bloques",
+            "barrido",
+            "zoom"
+          ]
+        }
+      }
+    },
+    "tres": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "material",
+        "contornoTinta",
+        "rampa"
+      ],
+      "properties": {
+        "material": {
+          "enum": [
+            "estandar",
+            "toon"
+          ]
+        },
+        "contornoTinta": {
+          "type": "boolean"
+        },
+        "rampa": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 8,
+          "description": "Tonos de la rampa toon."
+        }
+      }
+    },
+    "audio": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "musica",
+        "sfx"
+      ],
+      "properties": {
+        "musica": {
+          "type": "string",
+          "minLength": 1,
+          "description": "ninguna | pad | ambiente | electronica | … (texto libre corto)."
+        },
+        "sfx": {
+          "type": "string",
+          "minLength": 1,
+          "description": "ninguno | suaves | marcados | comicos | ambiente (texto libre corto)."
+        }
+      }
+    },
+    "licencias": {
+      "type": "string",
+      "minLength": 1
+    },
+    "escenario": {
+      "type": "object",
+      "description": "Modo escenario de webinar (opcional, §7.1)",
+      "properties": {
+        "activo": {
+          "type": "boolean"
+        },
+        "lienzo": {
+          "type": "string"
+        },
+        "patron": {
+          "type": "boolean"
+        },
+        "caja": {
+          "type": "object",
+          "properties": {
+            "radio": {
+              "type": "number"
+            },
+            "sombra": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "camara": {
+          "type": "object",
+          "properties": {
+            "fondo": {
+              "type": "string"
+            },
+            "fondo2": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "hud": {
+      "type": "object",
+      "description": "Estilo del HUD (opcional, §7.1)",
+      "properties": {
+        "estilo": {
+          "type": "string",
+          "enum": [
+            "barra",
+            "fichas"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "registros": {
+      "type": "object",
+      "description": "Pieles de la caja de diapositiva (opcional, §7.1)",
+      "properties": {
+        "show": {
+          "type": "object"
+        },
+        "editorial": {
+          "type": "object"
+        },
+        "lamina": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "marca": {
+      "type": "object",
+      "description": "Paquete de marca de la intro/outro estilo «marca» (opcional, §7.3)",
+      "properties": {
+        "fondo": {
+          "$ref": "#/$defs/hex"
+        },
+        "oscuro": {
+          "$ref": "#/$defs/hex"
+        },
+        "bitono": {
+          "$ref": "#/$defs/hex"
+        },
+        "rotulo": {
+          "$ref": "#/$defs/hex"
+        },
+        "cargo": {
+          "$ref": "#/$defs/hex"
+        },
+        "familia": {
+          "type": "string",
+          "minLength": 1
+        },
+        "texto": {
+          "$ref": "#/$defs/hex"
+        },
+        "palabra": {
+          "$ref": "#/$defs/hex"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "hex": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "peso": {
+      "type": "integer",
+      "minimum": 100,
+      "maximum": 900
+    },
+    "rol": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "familia": {
+          "type": "string",
+          "minLength": 1
+        },
+        "peso": {
+          "$ref": "#/$defs/peso"
+        },
+        "tracking": {
+          "type": "string",
+          "pattern": "^-?[0-9]*\\.?[0-9]+em$"
+        },
+        "interlineado": {
+          "type": "number",
+          "minimum": 0.6,
+          "maximum": 2.5
+        },
+        "mayusculas": {
+          "type": "boolean"
+        },
+        "tratamiento": {
+          "type": "string",
+          "enum": [
+            "plano",
+            "juego"
+          ],
+          "description": "Tratamiento del titular (opcional, §7.1)"
+        }
+      }
+    }
+  }
+}

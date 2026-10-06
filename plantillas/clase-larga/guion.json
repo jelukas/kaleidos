@@ -1,0 +1,47 @@
+{
+ "_plantilla": "clase-larga · esqueleto del contrato §2 (válido para cualquier estilo; con milikito añade registro, disposicion, titulo, lamina, bocadillo, reaccion y sello del §7, como en proyectos/dora-milikito). Cada cue es [segundo aproximado del bruto, \"frase literal de work/transcripcion.txt\"]: sustituye las frases entre <> tras LEER LA TRANSCRIPCIÓN ENTERA (plantillas/herramientas/cues.py pone los segundos). Densidad: un gráfico cada ~40 s; cada panel dura lo que dura la explicación y sus elementos entran con su propia frase. Un evento de cada tipo, a modo de muestra: bórralos o repítelos. fixes: {\"como lo dice whisper\": \"grafía correcta\"} (p. ej. {\"AIAC\": \"AI Act\"}).",
+ "fixes": {},
+ "cortes": [
+  {"desde": 0, "hasta": 5.0},
+  {"desdeCue": [900, "<frase donde empieza la toma falsa>"], "hastaCue": [960, "<primera frase de la toma buena>"]}
+ ],
+ "intro": {"kicker": "<Curso o módulo>", "titulo": "<Título de la clase>", "subtitulo": "<Qué vas a saber hacer al terminar>", "objeto3d": "escudo", "duracion": 6},
+ "capitulos": [
+  {"cue": [60, "<frase con la que empieza el capítulo 1>"], "n": 1, "titulo": "<Capítulo 1>", "kicker": "Parte 1", "subtitulo": "<En una línea>", "acento": 0, "objeto3d": null},
+  {"cue": [420, "<frase con la que empieza el capítulo 2>"], "n": 2, "titulo": "<Capítulo 2>", "kicker": "Parte 2", "subtitulo": "<En una línea>", "acento": 1, "objeto3d": null},
+  {"cue": [800, "<frase con la que empieza el capítulo 3>"], "n": 3, "titulo": "<Capítulo 3>", "kicker": "Parte 3", "subtitulo": "<En una línea>", "acento": 2, "objeto3d": null}
+ ],
+ "eventos": [
+  {"tipo": "panel", "kind": "lista", "cue": [90, "<frase que abre la enumeración>"], "hasta": [130, "<frase que la cierra>"], "lado": "der", "kicker": "<Tema>", "titulo": "<Qué se enumera>",
+   "items": [{"cue": [95, "<frase del primer elemento>"], "texto": "<Elemento 1>", "detalle": "<detalle corto>", "icono": "edificio"},
+             {"cue": [105, "<frase del segundo elemento>"], "texto": "<Elemento 2>", "icono": "personas"},
+             {"cue": [118, "<frase del tercer elemento>"], "texto": "<Elemento 3>", "icono": "documento"}]},
+  {"tipo": "pop", "cue": [150, "<frase clave que se dice con énfasis>"], "hasta": [157, "<frase siguiente>"], "texto": "<La frase clave,>", "sub": "<su remate>", "grande": true},
+  {"tipo": "panel", "kind": "comparativa", "cue": [190, "<frase que plantea la comparación>"], "hasta": [230, "<frase que la cierra>"], "lado": "izq", "kicker": "<Tema>", "titulo": "<A frente a B>",
+   "izq": {"cue": [195, "<frase de la primera opción>"], "titulo": "<Opción A>", "items": ["<rasgo 1>", "<rasgo 2>"], "tono": "bad"},
+   "der": {"cue": [212, "<frase de la segunda opción>"], "titulo": "<Opción B>", "items": ["<rasgo 1>", "<rasgo 2>"], "tono": "ok"}},
+  {"tipo": "panel", "kind": "cifra", "cue": [270, "<frase donde se dice la cifra>"], "hasta": [285, "<frase siguiente>"], "lado": "der", "kicker": "<Contexto>", "titulo": "<Qué se cuenta>", "valor": 3, "valorInicial": 0, "etiqueta": "<qué mide, tal como lo dice la voz>"},
+  {"tipo": "gesto3d", "objeto": "orbe", "cue": [330, "<frase dicha con las manos abiertas (work/gestos.json)>"], "texto": "<Idea en tres palabras>"},
+  {"tipo": "panel", "kind": "pasos", "cue": [440, "<frase que abre el procedimiento>"], "hasta": [490, "<frase que lo cierra>"], "lado": "der", "kicker": "<Tema>", "titulo": "<Cómo se hace>",
+   "items": [{"cue": [445, "<frase del paso 1>"], "texto": "<Paso 1>"}, {"cue": [460, "<frase del paso 2>"], "texto": "<Paso 2>"}, {"cue": [475, "<frase del paso 3>"], "texto": "<Paso 3>"}]},
+  {"tipo": "panel", "kind": "cita", "cue": [520, "<inicio de la frase que se cita>"], "hasta": [535, "<frase siguiente>"], "lado": "izq", "kicker": "Idea clave", "titulo": "Idea clave", "texto": "<La frase tal como la dice la voz.>", "resalta": ["<palabra>", "<otra>"]},
+  {"tipo": "escena3d", "objeto": "balanza", "cue": [580, "<frase que plantea el equilibrio>"], "hasta": [620, "<frase que lo cierra>"], "lado": "izq", "kicker": "<Tema>", "titulo": "<Qué se pesa>",
+   "etiquetas": [{"cue": [585, "<frase del primer platillo>"], "texto": "<Lado 1>"}, {"cue": [600, "<frase del segundo platillo>"], "texto": "<Lado 2>"}]},
+  {"tipo": "panel", "kind": "opciones", "cue": [660, "<frase que presenta las opciones>"], "hasta": [720, "<frase tras el veredicto>"], "lado": "der", "kicker": "<Caso> · Opciones", "titulo": "<¿Qué harías?>",
+   "opciones": [{"letra": "A", "texto": "<Opción A>"}, {"letra": "B", "texto": "<Opción B>"}, {"letra": "C", "texto": "<Opción C>"}, {"letra": "D", "texto": "<Opción D>"}],
+   "foco": {"cue": [705, "<frase donde se da el veredicto>"], "letra": "C", "veredicto": "correcta"}},
+  {"tipo": "panel", "kind": "linea", "cue": [840, "<frase que abre la secuencia temporal>"], "hasta": [880, "<frase que la cierra>"], "lado": "izq", "kicker": "<Tema>", "titulo": "<Qué pasa y cuándo>",
+   "hitos": [{"cue": [845, "<frase del primer hito>"], "etiqueta": "<Momento 1>", "texto": "<Qué pasa>"},
+             {"cue": [858, "<frase del segundo hito>"], "etiqueta": "<Momento 2>", "texto": "<Qué pasa>", "tono": "aviso"},
+             {"cue": [870, "<frase del tercer hito>"], "etiqueta": "<Momento 3>", "texto": "<Qué pasa>", "tono": "bad"}]},
+  {"tipo": "panel", "kind": "mapa", "cue": [1000, "<frase que presenta el concepto central>"], "hasta": [1040, "<frase que lo cierra>"], "lado": "der", "kicker": "<Tema>", "titulo": "<Qué rodea al concepto>", "centro": "<Concepto>",
+   "nodos": [{"cue": [1005, "<frase del nodo 1>"], "texto": "<Nodo 1>"}, {"cue": [1018, "<frase del nodo 2>"], "texto": "<Nodo 2>"}, {"cue": [1030, "<frase del nodo 3>"], "texto": "<Nodo 3>"}]},
+  {"tipo": "panel", "kind": "caso", "cue": [1080, "<frase que plantea el caso>"], "hasta": [1120, "<frase que lo cierra>"], "lado": "izq", "kicker": "<Caso>", "titulo": "<El caso en una línea>", "texto": "<Qué ocurre, sin nombres reales>",
+   "veredicto": {"cue": [1110, "<frase del veredicto>"], "texto": "<Veredicto tal como lo da la voz>", "tono": "bad"}},
+  {"tipo": "panel", "kind": "checklist", "cue": [1160, "<frase que abre la lista de comprobación>"], "hasta": [1200, "<frase que la cierra>"], "lado": "der", "kicker": "<Tema>", "titulo": "<Qué comprobar>",
+   "items": [{"cue": [1165, "<frase del punto 1>"], "texto": "<Punto 1>"}, {"cue": [1178, "<frase del punto 2>"], "texto": "<Punto 2>"}, {"cue": [1190, "<frase del punto 3>"], "texto": "<Punto 3>"}]},
+  {"tipo": "panel", "kind": "tarjeta", "cue": [1240, "<frase que define el término>"], "hasta": [1260, "<frase siguiente>"], "lado": "izq", "kicker": "Definición", "titulo": "<Término>", "texto": "<Definición tal como la da la voz>", "icono": "bombilla"},
+  {"tipo": "panel", "kind": "clave", "cue": [1300, "<frase que resume la parte>"], "hasta": [1330, "<frase siguiente>"], "lado": "der", "kicker": "En corto", "titulo": "<Lo esencial>", "texto": "<La idea en una frase>", "resalta": ["<palabra>"]}
+ ],
+ "outro": {"kicker": "En resumen", "titulo": "<Título de la clase>", "puntos": ["<Idea 1>", "<Idea 2>", "<Idea 3>"], "cta": "<Siguiente clase o actividad>", "objeto3d": "escudo"}
+}

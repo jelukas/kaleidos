@@ -1,0 +1,167 @@
+<!--CSS-->
+#__ID__ .world{position:absolute;inset:0}
+#__ID__ .strip .lb{color:#344054}
+#__ID__ .strip .lb[style*="color"]{color:#B0006F !important}
+#__ID__ .meta{position:absolute;left:100px;top:136px;display:flex;gap:14px;align-items:center;z-index:30}
+#__ID__ .blk{display:inline-flex;padding:10px 24px;border-radius:999px;color:#fff;font-size:24px;letter-spacing:.16em}
+#__ID__ .field{position:absolute;border-radius:50%;filter:blur(70px)}
+#__ID__ .wA{left:80px;top:205px;width:900px;height:550px;z-index:3}
+#__ID__ .wB{left:330px;top:586px;width:800px;height:450px;z-index:4}
+#__ID__ .vfade{position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);z-index:2}
+#__ID__ .hlbox{z-index:6}
+#__ID__ .stamp{position:absolute;left:880px;top:168px;width:196px;height:196px;border-radius:50%;border:7px double #7D29E0;color:#7D29E0;background:rgba(255,255,255,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:12;box-shadow:0 12px 30px rgba(125,41,224,.25)}
+#__ID__ .stamp b{font-size:68px;font-weight:800;letter-spacing:-0.03em;line-height:1}
+#__ID__ .stamp span{font-size:24px;font-weight:700;letter-spacing:.12em;margin-top:6px;color:#5E3DE6}
+#__ID__ .rcol{position:absolute;left:1180px;top:0;width:680px;height:1080px}
+#__ID__ .ph1{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .hBOE{position:absolute;left:1180px;top:196px;font-size:230px;color:#0D1320}
+#__ID__ .hdate{position:absolute;left:1186px;top:452px;font-size:42px;font-weight:600;color:#475467;white-space:nowrap}
+#__ID__ .h2{position:absolute;left:1180px;top:520px;display:flex;align-items:baseline;gap:22px;white-space:nowrap}
+#__ID__ .h2 .n{font-size:300px;font-weight:800;letter-spacing:-0.05em;color:#7D29E0;line-height:1}
+#__ID__ .h2 .t{font-size:64px;font-weight:800;letter-spacing:-0.03em;color:#0D1320}
+#__ID__ .chips1{position:absolute;left:1186px;top:850px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+#__ID__ .mychip{font-size:36px}
+#__ID__ .tile{position:absolute;left:1180px;white-space:nowrap}
+#__ID__ .tile .n{font-size:228px;font-weight:800;letter-spacing:-0.05em;color:#0D1320;line-height:1;font-feature-settings:"tnum"}
+#__ID__ .tile .u{font-size:92px;font-weight:800;color:#7D29E0;letter-spacing:-0.03em;margin-left:12px}
+#__ID__ .tile .row{display:flex;align-items:baseline}
+#__ID__ .tile .lab{font-size:36px;font-weight:600;color:#475467;margin-top:34px;margin-left:8px}
+#__ID__ .t1{top:190px} #__ID__ .t2{top:548px}
+#__ID__ .sum{position:absolute;left:1180px;top:292px;white-space:nowrap}
+#__ID__ .sum .n{font-size:250px;font-weight:800;letter-spacing:-0.05em;color:#7D29E0;line-height:1;font-feature-settings:"tnum"}
+#__ID__ .sum .u{font-size:96px;font-weight:800;color:#0D1320;letter-spacing:-0.03em;margin-left:12px}
+#__ID__ .sum .row{display:flex;align-items:baseline}
+#__ID__ .sumchip{position:absolute;left:1186px;top:210px;background:#FF01A2;color:#fff;font-size:34px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:8px 26px;border-radius:999px}
+#__ID__ .sumsub{position:absolute;left:1190px;top:570px;font-size:36px;font-weight:600;color:#475467;white-space:nowrap}
+#__ID__ .chrono{position:absolute;left:1180px;top:700px;width:680px;height:320px}
+#__ID__ .chrono svg{position:absolute;left:0;top:30px}
+#__ID__ .chrono .cn{position:absolute;left:0;top:30px;width:240px;height:240px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:#0D1320;letter-spacing:-0.04em;font-feature-settings:"tnum"}
+#__ID__ .chrono .ct{position:absolute;left:272px;top:48px;width:420px}
+#__ID__ .chrono .ct .a{font-size:46px;font-weight:800;letter-spacing:-0.02em;color:#0D1320;line-height:1.1}
+#__ID__ .chrono .ct .b{font-size:32px;font-weight:600;color:#475467;line-height:1.25;margin-top:12px}
+<!--HTML-->
+<div class="stage">
+  <div class="field" style="left:1080px;top:-160px;width:900px;height:700px;background:rgba(125,41,224,.14)"></div>
+  <div class="field" style="left:-200px;top:600px;width:800px;height:600px;background:rgba(255,1,162,.08)"></div>
+  <div class="strip"></div>
+  <div class="meta">
+    <span class="tag blk"></span>
+    <span class="badge week">Esta semana</span>
+    <span class="badge date">30 sep 2026</span>
+    <span class="badge src">boe.es</span>
+  </div>
+
+  <div class="world">
+    <div class="shotwin wA">
+      <div class="sbar"><i></i><i></i><i></i><div class="url">boe.es · BOE-B-2026-31649</div></div>
+      <div class="view"><img data-layout-allow-overflow src="assets/captures/boe-35.png"></div>
+      <div class="vfade"></div>
+      <div class="hlbox hA"></div>
+    </div>
+    <div class="shotwin wB">
+      <div class="sbar"><i></i><i></i><i></i><div class="url">boe.es · BOE-B-2026-31652</div></div>
+      <div class="view"><img data-layout-allow-overflow src="assets/captures/boe-467.png"></div>
+      <div class="vfade"></div>
+      <div class="hlbox hB"></div>
+      <div class="hlbox hB2"></div>
+    </div>
+    <div class="stamp"><b>BOE</b><span>30·09·2026</span></div>
+
+    <div class="ph1">
+      <div class="hBOE"><div class="mask"><div class="r h">BOE</div></div></div>
+      <div class="hdate">núm. 241 · 30 sep 2026</div>
+      <div class="h2"><span class="n">0</span><span class="t">convocatorias</span></div>
+      <div class="chips1">
+        <span class="chip acc mychip p1">Formación Profesional</span>
+        <span class="chip mychip p2">A entidades de formación</span>
+      </div>
+    </div>
+
+    <div class="tile t1"><div class="row"><span class="n">0</span><span class="u">M€</span></div><div class="lab">Oficios y desempeños estratégicos</div></div>
+    <div class="tile t2"><div class="row"><span class="n">0</span><span class="u">M€</span></div><div class="lab">Sectores de alta demanda</div></div>
+
+    <div class="sumchip sc">Suma</div>
+    <div class="sum sm"><div class="row"><span class="n">0</span><span class="u">M€</span></div></div>
+    <div class="sumsub ss">35 + 46,7 · dos convocatorias</div>
+
+    <div class="chrono ch">
+      <svg width="240" height="240" viewBox="0 0 240 240">
+        <circle cx="120" cy="120" r="102" fill="#fff" stroke="#E4E7EC" stroke-width="16"/>
+        <circle class="arc" cx="120" cy="120" r="102" fill="none" stroke="#7D29E0" stroke-width="16" stroke-linecap="round" transform="rotate(-90 120 120)" stroke-dasharray="641 641" stroke-dashoffset="0"/>
+      </svg>
+      <div class="cn"><span class="cv">10</span></div>
+      <div class="ct"><div class="a">días naturales</div><div class="b">de plazo desde el día siguiente a la publicación del extracto</div></div>
+    </div>
+  </div>
+</div>
+<!--JS-->
+$q(".blk").style.background = COLOR; $q(".blk").textContent = BLOCK;
+function hlAt(box, win, fx, fy, fw, fh, cx, cy, s, at, d) {
+  const v = $q(win + " .view"); const W = v.clientWidth, H = v.clientHeight;
+  hl(box, W / 2 - cx * s + fx * s, 54 + H / 2 - cy * s + fy * s, fw * s, fh * s, at, d);
+}
+const comma = (dec) => (v) => v.toFixed(dec).replace(".", ",");
+
+sceneIn("whip");
+dateStrip([PREV, "2026-09-30"], 0.5, 1.0, 0);
+tl.fromTo(Q(".meta"), { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, 0.35);
+tl.fromTo(Q(".field"), { scale: 0.9 }, { scale: 1.12, duration: DUR, ease: "sine.inOut" }, 0);
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.03, duration: DUR - 0.4, ease: "none" }, 0.2);
+
+/* ---- hoja A (35 M€) ---- */
+tl.fromTo(Q(".wA"), { x: -240, y: 40, opacity: 0, rotation: -9, scale: 0.92 }, { x: 0, y: 0, opacity: 1, rotation: -2.5, scale: 1, duration: 0.85, ease: E }, 0.05);
+shotSet(".wA", 1440, 900, 717, 300, 0.9);
+/* sello BOE */
+tl.fromTo(Q(".stamp"), { opacity: 0, scale: 2.4, rotation: -30 }, { opacity: 1, scale: 1, rotation: -13, duration: 0.35, ease: "power4.in" }, cue("treinta") - 0.05);
+tl.fromTo(Q(".stamp"), { y: 0 }, { y: 7, duration: 0.05, repeat: 5, yoyo: true, ease: "none" }, cue("treinta") + 0.3);
+tl.set(Q(".stamp"), { y: 0 }, cue("treinta") + 0.62);
+shotCam(".wA", 1440, 900, 780, 292, 1.45, 1.3, 0.9);
+tl.to(Q(".wA"), { scale: 0.88, x: -20, y: -8, rotation: -3.5, duration: 0.8, ease: "power3.inOut" }, cue("dos") - 0.1);
+hlAt(".hA", ".wA", 563, 277, 392, 30, 780, 292, 1.45, 2.2, 0.45);
+
+/* ---- hoja B (46,7 M€) ---- */
+tl.fromTo(Q(".wB"), { x: 340, y: 120, opacity: 0, rotation: 10, scale: 0.92 }, { x: 0, y: 0, opacity: 1, rotation: 2.2, scale: 1, duration: 0.85, ease: E }, cue("dos") + 0.1);
+shotSet(".wB", 1440, 900, 717, 300, 0.9);
+shotCam(".wB", 1440, 900, 580, 300, 1.3, cue("de", 1), 0.9);
+hlAt(".hB", ".wB", 563, 277, 312, 30, 580, 300, 1.3, cue("formaci") + 0.55, 0.45);
+hlAt(".hB2", ".wB", 268, 304, 520, 28, 580, 300, 1.3, cue("formaci") + 0.95, 0.45);
+
+/* ---- fase 1: BOE · 2 convocatorias ---- */
+tl.fromTo(Q(".hBOE .r"), { yPercent: 110 }, { yPercent: 0, duration: 0.9, ease: E }, 0.15);
+tl.fromTo(Q(".hBOE"), { scale: 1.12 }, { scale: 1, duration: 0.45, ease: "power4.out" }, cue("BOE") - 0.1);
+up(".hdate", 0.55, { d: 0.6 });
+tl.fromTo(Q(".h2"), { opacity: 0, scale: 0.6, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR }, cue("dos"));
+count(".h2 .n", 2, cue("dos"), 0.35);
+pop(".p1", cue("formaci"), 0.5); pop(".p2", cue("formaci") + 0.35, 0.5);
+tl.to(Q(".ph1"), { y: -60, opacity: 0, duration: 0.35, ease: "power3.in" }, 4.3);
+
+/* ---- fase 2: cifras ---- */
+const T35 = cue("treinta", 1), T467 = cue("cuarenta");
+tl.fromTo(Q(".t1"), { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, T35 - 0.1);
+count(".t1 .n", 35, T35, 0.9);
+tl.fromTo(Q(".t2"), { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, T467 - 0.1);
+count(".t2 .n", 46.7, T467, 1.0, comma(1));
+tl.fromTo(Q(".hA"), { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, T35 + 0.1);
+tl.fromTo(Q(".hB"), { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, T467 + 0.1);
+
+/* fusión en 81,7 */
+const TS = cue("millones");
+tl.to(Q(".t1"), { y: 130, scale: 0.7, opacity: 0, duration: 0.45, ease: "power3.in" }, TS - 0.1);
+tl.to(Q(".t2"), { y: -150, scale: 0.7, opacity: 0, duration: 0.45, ease: "power3.in" }, TS - 0.1);
+tl.to(Q(".wA"), { opacity: 0.35, duration: 0.5 }, TS); tl.to(Q(".wB"), { opacity: 0.35, duration: 0.5 }, TS);
+tl.to(Q(".stamp"), { opacity: 0.35, duration: 0.5 }, TS);
+tl.fromTo(Q(".sm"), { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.55, ease: SPR }, TS + 0.2);
+count(".sm .n", 81.7, TS + 0.2, 0.8, comma(1));
+tl.fromTo(Q(".sc"), { opacity: 0, y: -20, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: SPR }, TS + 0.35);
+up(".ss", TS + 0.6, { d: 0.5 });
+
+/* cronómetro: 10 días naturales */
+const TC = TS + 0.5;
+tl.fromTo(Q(".ch"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, TC);
+const cd = { v: 0 }, cvEl = $q(".cv"), arc = $q(".arc");
+cvEl.textContent = "0"; arc.style.strokeDashoffset = "641";
+tl.to(cd, { v: 10, duration: 1.2, ease: "none", onUpdate: () => { cvEl.textContent = String(Math.round(cd.v)); arc.style.strokeDashoffset = String(641 * (1 - cd.v / 10)); } }, TC + 0.25);
+tl.fromTo(Q(".cn"), { scale: 1 }, { scale: 1.08, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out" }, TC + 1.5);
+sceneOut("whip");
+<!--SFX-->
+[{"k":"impact","t":0.55,"v":0.45},{"k":"stamp","t":0.95,"v":0.5},{"k":"swipe","t":2.0,"v":0.4},{"k":"pop","t":3.2,"v":0.35},{"k":"counter","t":4.75,"v":0.35},{"k":"counter","t":5.55,"v":0.35},{"k":"ding","t":7.2,"v":0.45},{"k":"tick","t":7.9,"v":0.35},{"k":"tick","t":8.4,"v":0.35}]

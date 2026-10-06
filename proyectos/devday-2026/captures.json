@@ -1,0 +1,5 @@
+[
+  { "id": "captura-recap", "url": "https://openai.com/index/devday-2026-recap/", "width": 1440, "height": 810, "fullPage": false, "scrollY": 0 },
+  { "id": "captura-dots", "url": "https://openai.com/index/introducing-dots/", "width": 1440, "height": 810, "fullPage": false, "scrollY": 0 },
+  { "id": "captura-sol", "url": "https://openai.com/index/introducing-gpt-6-1-sol/", "width": 1440, "height": 810, "fullPage": false, "scrollY": 0 }
+]

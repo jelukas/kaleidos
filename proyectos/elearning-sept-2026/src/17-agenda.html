@@ -1,0 +1,256 @@
+<!--CSS-->
+#__ID__ .meta{position:absolute;left:100px;top:60px;display:flex;gap:14px;align-items:center;z-index:30}
+#__ID__ .tagp{display:inline-flex;align-items:center;padding:10px 24px;border-radius:999px;font-weight:800;font-size:24px;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:#7D29E0;white-space:nowrap}
+#__ID__ .blobA{position:absolute;left:30px;top:150px;width:820px;height:760px;border-radius:64px;background:linear-gradient(150deg,#F2E7FC,rgba(242,231,252,.2));transform-origin:50% 50%}
+#__ID__ .blobB{position:absolute;left:1060px;top:90px;width:900px;height:900px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,1,162,.12),rgba(125,41,224,.1) 60%,transparent)}
+/* cartel */
+#__ID__ .poster{position:absolute;inset:0;z-index:40;background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%);overflow:hidden}
+#__ID__ .poster .p1,#__ID__ .poster .p2{position:absolute;left:130px;color:#fff;font-size:250px;letter-spacing:-.05em}
+#__ID__ .poster .p1{top:250px}
+#__ID__ .poster .p2{top:500px}
+#__ID__ .poster .p2 .r{color:#FFD6F0}
+#__ID__ .poster .eyeb{position:absolute;left:138px;top:178px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:30px;color:#fff;opacity:.85}
+#__ID__ .poster .ring{position:absolute;border-radius:50%;border:3px solid rgba(255,255,255,.25)}
+#__ID__ .poster .tl{position:absolute;width:150px;height:150px;border-radius:34px;background:rgba(255,255,255,.16);border:2px solid rgba(255,255,255,.4);color:#fff;font-weight:800;font-size:84px;letter-spacing:-.04em;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px)}
+/* calendario */
+#__ID__ .calw{position:absolute;left:100px;top:190px;width:700px;height:664px}
+#__ID__ .cal{position:absolute;left:0;top:0;width:700px;height:664px;border-radius:36px;background:#fff;box-shadow:0 36px 90px rgba(47,18,94,.22);border:1px solid rgba(13,19,32,.08);overflow:hidden;backface-visibility:hidden}
+#__ID__ .cal .mh{position:absolute;left:0;right:0;top:0;height:84px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;color:#fff;font-weight:800;font-size:46px;letter-spacing:.08em;text-transform:uppercase}
+#__ID__ .cal.oct .mh{background:linear-gradient(90deg,#7D29E0,#FF01A2)}
+#__ID__ .cal.nov .mh{background:linear-gradient(90deg,#5E3DE6,#9B61F6)}
+#__ID__ .cal .mh small{font-weight:600;font-size:34px;letter-spacing:.1em;opacity:.9}
+#__ID__ .cal .wd{position:absolute;left:0;top:84px;width:700px;height:44px;display:flex}
+#__ID__ .cal .wd b{flex:1;text-align:center;font-weight:700;font-size:24px;line-height:44px;color:#667085;letter-spacing:.06em}
+#__ID__ .cal .d{position:absolute;width:100px;height:88px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:32px;color:#0D1320}
+#__ID__ .cal .d.we{color:#98A2B3}
+#__ID__ .cal .gl{position:absolute;left:0;top:128px;width:700px;height:1px;background:#E4E7EC}
+#__ID__ .tile{position:absolute;border-radius:18px;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:-.02em;box-shadow:0 14px 28px rgba(47,18,94,.3);z-index:6;white-space:nowrap}
+#__ID__ .rg{position:absolute;width:90px;height:90px;margin:-45px 0 0 -45px;border-radius:50%;border:4px solid #FF01A2;opacity:0;z-index:7}
+/* tarjetas de evento */
+#__ID__ .card{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .evw{position:absolute;left:880px;top:230px;width:940px;height:500px;z-index:5}
+#__ID__ .evw .view{background:#0D1320}
+#__ID__ .pan{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0}
+#__ID__ .pan img{position:absolute;left:0;top:0;width:1440px;display:block;max-width:none}
+#__ID__ .frost{position:absolute;overflow:hidden}
+#__ID__ .frost .fb{position:absolute;left:-30px;top:-30px;right:-30px;bottom:-30px;background-size:1440px 900px;background-repeat:no-repeat;filter:blur(20px)}
+#__ID__ .frost::after{content:"";position:absolute;inset:0;background:rgba(125,41,224,.28)}
+#__ID__ .cap{position:absolute;left:880px;top:748px;width:940px}
+#__ID__ .cap .cn{font-size:88px;color:#0D1320;letter-spacing:-.045em}
+#__ID__ .cap .cl{font-weight:600;font-size:36px;color:#667085;margin-top:4px;white-space:nowrap}
+#__ID__ .cap .cc{display:flex;gap:14px;margin-top:16px}
+#__ID__ .cap .chip{font-size:32px;position:static}
+#__ID__ .stk{position:absolute;left:1650px;top:190px;width:200px;height:200px;border-radius:38px;color:#fff;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;box-shadow:0 26px 60px rgba(47,18,94,.4);z-index:9;opacity:0}
+#__ID__ .stk .m{font-weight:800;font-size:30px;line-height:36px;letter-spacing:.24em;text-transform:uppercase;padding-left:.24em}
+#__ID__ .stk .n{font-weight:800;font-size:112px;line-height:120px;letter-spacing:-.05em;white-space:nowrap}
+#__ID__ .stk .n.sm{font-size:78px;line-height:96px}
+#__ID__ .vframe{position:absolute;left:880px;top:230px;width:880px;height:495px;border-radius:26px;overflow:hidden;box-shadow:0 44px 110px rgba(47,18,94,.42);border:1px solid rgba(13,19,32,.14);background:#1A0836;z-index:5}
+#__ID__ .vframe video{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover}
+#__ID__ .vframe .vtint{position:absolute;inset:0;background:linear-gradient(180deg,rgba(47,18,94,.0) 55%,rgba(47,18,94,.75));z-index:2}
+#__ID__ .vframe .vlab{position:absolute;left:24px;bottom:22px;z-index:3;padding:10px 24px;border-radius:999px;background:rgba(47,18,94,.82);border:2px solid rgba(255,255,255,.5);color:#fff;font-weight:700;font-size:28px;letter-spacing:.06em;white-space:nowrap}
+#__ID__ .vframe .vrec{position:absolute;left:26px;top:24px;z-index:3;display:flex;align-items:center;gap:10px;padding:8px 18px 8px 14px;border-radius:999px;background:rgba(47,18,94,.82);color:#fff;font-weight:800;font-size:24px;letter-spacing:.2em}
+#__ID__ .vframe .vrec i{display:block;width:16px;height:16px;border-radius:50%;background:#FF01A2;box-shadow:0 0 0 6px rgba(255,1,162,.3)}
+#__ID__ .dvc{position:absolute;left:1500px;top:556px;width:380px;height:250px;z-index:8}
+
+<!--HTML-->
+<div class="stage">
+  <div class="blobA"></div><div class="blobB"></div>
+  <div class="meta"><span class="tagp">Agenda</span><span class="badge src">webs oficiales</span></div>
+
+  <div class="calw">
+    <div class="cal nov" data-layout-allow-occlusion><div class="mh">Noviembre<small>2026</small></div><div class="wd"><b>L</b><b>M</b><b>X</b><b>J</b><b>V</b><b>S</b><b>D</b></div><div class="gl"></div></div>
+    <div class="cal oct" data-layout-allow-occlusion><div class="mh">Octubre<small>2026</small></div><div class="wd"><b>L</b><b>M</b><b>X</b><b>J</b><b>V</b><b>S</b><b>D</b></div><div class="gl"></div></div>
+  </div>
+
+  <!-- 1 Talent Day -->
+  <div class="card c1">
+    <div class="shotwin evw w1"><div class="sbar"><i></i><i></i><i></i><div class="url">talentday.equiposytalento.com</div></div><div class="view"><div class="pan"><img src="assets/captures/ev-talentday.png"></div><div class="hlbox hA"></div></div></div>
+    <div class="stk k1" style="background:linear-gradient(135deg,#7D29E0,#5E3DE6)"><div class="m">oct</div><div class="n">6</div></div>
+    <div class="cap cg1"><div class="cn"><span class="mask"><span class="r h">Talent Day</span></span></div><div class="cl">Barcelona</div><div class="cc"><span class="chip acc">Palau de Congressos de Catalunya</span></div></div>
+  </div>
+  <!-- 2 World of Learning -->
+  <div class="card c2">
+    <div class="shotwin evw w2"><div class="sbar"><i></i><i></i><i></i><div class="url">necgroup.co.uk</div></div><div class="view"><div class="pan"><img src="assets/captures/ev-wol.png"><div class="frost" style="left:120px;top:189px;width:792px;height:452px"><div class="fb" style="background-image:url(assets/captures/ev-wol.png);background-position:-90px -159px"></div></div></div><div class="hlbox hA"></div></div></div>
+    <div class="stk k2" style="background:linear-gradient(135deg,#E6008E,#FF01A2)"><div class="m">oct</div><div class="n sm">6–7</div></div>
+    <div class="cap cg2"><div class="cn"><span class="mask"><span class="r h">World of Learning</span></span></div><div class="cl">NEC Birmingham</div><div class="cc"><span class="chip acc">150+ proveedores</span><span class="chip acc">70+ seminarios gratuitos</span></div></div>
+  </div>
+  <!-- 3 Workday Rising -->
+  <div class="card c3">
+    <div class="shotwin evw w3"><div class="sbar"><i></i><i></i><i></i><div class="url">newsroom.workday.com</div></div><div class="view"><div class="pan"><img src="assets/captures/ev-rising.png"><div class="frost" style="left:100px;top:466px;width:1240px;height:400px"><div class="fb" style="background-image:url(assets/captures/ev-rising.png);background-position:-70px -436px"></div></div></div><div class="hlbox hA"></div></div></div>
+    <div class="stk k3" style="background:linear-gradient(135deg,#9B61F6,#7D29E0)"><div class="m">oct</div><div class="n sm">12–15</div></div>
+    <div class="cap cg3"><div class="cn"><span class="mask"><span class="r h">Workday Rising</span></span></div><div class="cl">Las Vegas</div><div class="cc"><span class="chip acc">400+ sesiones</span></div></div>
+  </div>
+  <!-- 4 DevLearn (con vídeo oficial) -->
+  <div class="card c4">
+    <div class="vframe vf">
+      <video id="__ID__-dlv" class="clip dlv" src="assets/video/devlearn-header.mp4" muted playsinline data-start="8.2" data-duration="2.2" data-media-start="0" data-track-index="3"></video>
+      <video id="__ID__-dlv2" class="clip dlv" src="assets/video/devlearn-header.mp4" muted playsinline data-start="10.4" data-duration="1.2" data-media-start="3.3" data-track-index="4"></video>
+      <div class="vtint"></div>
+      <div class="vrec"><i></i>VÍDEO OFICIAL</div>
+      <div class="vlab">Vídeo oficial · DevLearn</div>
+    </div>
+    <div class="shotwin evw dvc w4"><div class="sbar" style="height:40px"><i></i><i></i><i></i><div class="url" style="height:24px;font-size:16px">devlearn.com</div></div><div class="view" style="top:40px"><div class="pan"><img src="assets/captures/ev-devlearn.png"></div></div></div>
+    <div class="stk k4" style="background:linear-gradient(135deg,#5E3DE6,#7D29E0)"><div class="m">nov</div><div class="n sm">4–6</div></div>
+    <div class="cap cg4"><div class="cn"><span class="mask"><span class="r h">DevLearn</span></span></div><div class="cl">MGM Grand · Las Vegas</div><div class="cc"><span class="chip acc">160+ sesiones nuevas</span></div></div>
+  </div>
+
+  <!-- cartel de apertura -->
+  <div class="poster">
+    <div class="ring" style="left:1000px;top:-160px;width:1100px;height:1100px"></div>
+    <div class="ring" style="left:1180px;top:20px;width:740px;height:740px"></div>
+    <div class="tl t1" data-layout-allow-occlusion style="left:1480px;top:560px">6</div>
+    <div class="tl t2" data-layout-allow-occlusion style="left:1660px;top:300px">12</div>
+    <div class="tl t3" data-layout-allow-occlusion style="left:1700px;top:780px">4</div>
+    <div class="eyeb">Agenda · próximos eventos</div>
+    <div class="p1"><span class="mask"><span class="r h">LA SEMANA</span></span></div>
+    <div class="p2"><span class="mask"><span class="r h">QUE VIENE</span></span></div>
+  </div>
+</div>
+
+<!--JS-->
+sceneIn("whip");
+$q(".tagp").textContent = BLOCK;
+const rng = (seed) => function () { seed |= 0; seed = (seed + 0x6D2B79F5) | 0; let t = Math.imul(seed ^ (seed >>> 15), 1 | seed); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
+
+/* ---------- ayudantes de ventana ---------- */
+const vbox = (W, H, fx, fy, s, x, y, w, h) => [W / 2 + (x - fx) * s, H / 2 + (y - fy) * s, w * s, h * s];
+const panXY = (W, H, fx, fy, s) => ({ x: W / 2 - fx * s, y: H / 2 - fy * s, scale: s });
+const panSet = (sel, W, H, fx, fy, s) => tl.set(Q(sel + " .pan"), panXY(W, H, fx, fy, s), 0);
+const panCam = (sel, W, H, fx, fy, s, at, d = 1.2, ease = "power3.inOut") => tl.to(Q(sel + " .pan"), { ...panXY(W, H, fx, fy, s), duration: d, ease }, at);
+const tilt = (sel, ry, rx = 2) => tl.set(Q(sel), { transformPerspective: 1800, rotationY: ry, rotationX: rx, transformOrigin: "50% 50%" }, 0);
+
+/* ---------- calendarios (semilla fija no necesaria: datos exactos de 2026) ---------- */
+function buildCal(sel, startCol, ndays) {
+  const host = $q(sel);
+  for (let i = 0; i < ndays; i++) {
+    const idx = startCol + i, col = idx % 7, row = Math.floor(idx / 7);
+    const d = document.createElement("div");
+    d.className = "d" + (col >= 5 ? " we" : ""); d.textContent = i + 1;
+    d.style.left = col * 100 + "px"; d.style.top = 130 + row * 88 + "px"; d.dataset.day = i + 1;
+    host.appendChild(d);
+  }
+}
+buildCal(".cal.oct", 3, 31);   // 1 oct 2026 = jueves
+buildCal(".cal.nov", 6, 30);   // 1 nov 2026 = domingo
+const cellPos = (startCol, day) => { const idx = startCol + day - 1; return { col: idx % 7, row: Math.floor(idx / 7) }; };
+const cellEl = (cal, day) => $q(cal + ' .d[data-day="' + day + '"]');
+function addTile(cal, startCol, day0, day1, color, text, opts = {}) {
+  const a = cellPos(startCol, day0), b = cellPos(startCol, day1);
+  const t = document.createElement("div"); t.className = "tile";
+  const x = a.col * 100 + 6 + (opts.dx || 0), y = 130 + a.row * 88 + 6 + (opts.dy || 0);
+  const w = (b.col - a.col + 1) * 100 - 12 + (opts.dw || 0), h = opts.h || 76;
+  t.style.cssText = "left:" + x + "px;top:" + y + "px;width:" + w + "px;height:" + h + "px;background:" + color + ";font-size:" + (opts.fs || 40) + "px;opacity:0";
+  t.textContent = text; $q(cal).appendChild(t);
+  const rg = document.createElement("i"); rg.className = "rg"; rg.style.left = x + w / 2 + "px"; rg.style.top = y + h / 2 + "px"; rg.style.borderColor = color; $q(cal).appendChild(rg);
+  return { t, rg };
+}
+function dropTile(o, cal, days, at) {
+  tl.fromTo(o.t, { y: -460, rotation: -10, opacity: 0 }, { y: 0, rotation: 0, duration: 0.85, ease: "bounce.out" }, at);
+  tl.fromTo(o.t, { opacity: 0 }, { opacity: 1, duration: 0.08 }, at);
+  tl.fromTo(o.rg, { opacity: 0.9, scale: 0.5 }, { opacity: 0, scale: 2.6, duration: 0.7, ease: "power2.out", immediateRender: false }, at + 0.36);
+  days.forEach((dd) => tl.set(cellEl(cal, dd), { opacity: 0 }, at + 0.3));
+}
+const T1 = addTile(".cal.oct", 3, 6, 6, "linear-gradient(135deg,#7D29E0,#5E3DE6)", "6", { h: 36, fs: 26, dy: 0 });
+const T2 = addTile(".cal.oct", 3, 6, 7, "linear-gradient(135deg,#E6008E,#FF01A2)", "6–7", { h: 36, fs: 26, dy: 40 });
+const T3 = addTile(".cal.oct", 3, 12, 15, "linear-gradient(135deg,#9B61F6,#7D29E0)", "12–15", { h: 76, fs: 44 });
+const T4 = addTile(".cal.nov", 6, 4, 6, "linear-gradient(135deg,#5E3DE6,#7D29E0)", "4–6", { h: 76, fs: 44 });
+
+/* ================= cartel de apertura ================= */
+rise(".poster .p1 .r", 0.25, 0.9);
+rise(".poster .p2 .r", 0.45, 0.9);
+tl.fromTo(Q(".poster .eyeb"), { opacity: 0, x: -30 }, { opacity: 0.85, x: 0, duration: 0.6, ease: E }, 0.2);
+tl.fromTo(Q(".poster .p1"), { scale: 1.1 }, { scale: 1, duration: 1.1, ease: E, transformOrigin: "0% 50%" }, 0.25);
+[".t1", ".t2", ".t3"].forEach((s, i) => {
+  tl.fromTo(Q(".poster " + s), { opacity: 0, scale: 0.3, rotation: -25 + i * 14 }, { opacity: 1, scale: 1, rotation: -8 + i * 8, duration: 0.6, ease: SPR }, 0.25 + i * 0.15);
+  tl.to(Q(".poster " + s), { y: i % 2 ? 16 : -16, duration: 0.9, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0.9);
+});
+tl.to(Q(".poster .ring"), { rotation: 60, duration: 2, ease: "none" }, 0);
+tl.to(Q(".poster"), { yPercent: -100, duration: 0.7, ease: "expo.inOut" }, 1.05);
+tl.fromTo(Q(".meta"), { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 1.5);
+tl.fromTo(Q(".blobA"), { opacity: 0, scale: 0.92 }, { opacity: 1, scale: 1, duration: 0.9, ease: E }, 1.2);
+tl.fromTo(Q(".blobB"), { opacity: 0 }, { opacity: 1, duration: 1.0 }, 1.3);
+tl.set(Q(".calw"), { transformPerspective: 1600 }, 0);
+tl.fromTo(Q(".calw"), { opacity: 0, y: 60, rotationX: 14 }, { opacity: 1, y: 0, rotationX: 0, duration: 0.9, ease: E }, 1.2);
+tl.set(Q(".cal.nov"), { scale: 0.97, y: 8 }, 0);
+tl.set(Q(".cal.oct"), { transformPerspective: 1600, transformOrigin: "50% 0%" }, 0);
+
+/* ================= tarjetas de evento ================= */
+const SLOT = (n, inAt, outAt, ry = -10) => {
+  tl.fromTo(Q(".c" + n), { x: 460, opacity: 0 }, { x: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, inAt);
+  tl.fromTo(Q(".c" + n), { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "none", immediateRender: false }, inAt);
+  if (outAt) { tl.to(Q(".c" + n), { x: -420, filter: "blur(18px)", duration: 0.4, ease: "power3.in" }, outAt); tl.to(Q(".c" + n), { opacity: 0, duration: 0.15, ease: "none" }, outAt + 0.2); }
+};
+const stk = (n, at) => {
+  tl.fromTo(Q(".k" + n), { opacity: 0, scale: 2.2, rotation: 18 }, { opacity: 1, scale: 1, rotation: -6, duration: 0.5, ease: "back.out(2)" }, at);
+};
+const capIn = (n, at) => {
+  rise(".cg" + n + " .r", at, 0.85);
+  tl.fromTo(Q(".cg" + n + " .cl"), { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.55, ease: E }, at + 0.2);
+  tl.fromTo(Q(".cg" + n + " .chip"), { opacity: 0, y: 22, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR, stagger: 0.14 }, at + 0.4);
+};
+
+/* 1 · Talent Day */
+tilt(".w1", -10, 2); panSet(".w1", 940, 446, 720, 380, 1.0);
+tl.fromTo(Q(".w1"), { rotationY: -48, y: 30 }, { rotationY: -10, y: 0, duration: 0.9, ease: "back.out(1.1)" }, 1.55);
+panCam(".w1", 940, 446, 760, 400, 1.16, 2.0, 2.0, "sine.inOut");
+SLOT(1, 1.55, 3.95);
+stk(1, cue("seis"));
+capIn(1, cue("seis") + 0.1);
+{ const b = vbox(940, 446, 740, 395, 1.1, 623, 462, 222, 40); hl(".w1 .hA", b[0], b[1], b[2], b[3], cue("Talent") + 0.3); }
+dropTile(T1, ".cal.oct", [6], cue("seis") + 0.05);
+tl.to(Q(".w1"), { y: -10, duration: 1.1, ease: "sine.inOut", yoyo: true, repeat: 1 }, 2.4);
+
+/* 2 · World of Learning */
+tilt(".w2", -10, 2); panSet(".w2", 940, 446, 800, 400, 0.95);
+tl.fromTo(Q(".w2"), { rotationY: -48, y: 30 }, { rotationY: -10, y: 0, duration: 0.9, ease: "back.out(1.1)" }, 3.95);
+SLOT(2, 3.95, 6.05);
+stk(2, cue("World"));
+capIn(2, cue("World") + 0.05);
+{ const b = vbox(940, 446, 800, 400, 0.95, 950, 348, 142, 44); hl(".w2 .hA", b[0], b[1], b[2], b[3], 4.9); }
+tl.to(Q(".w2 .hA"), { opacity: 0, duration: 0.25 }, 5.35);
+panCam(".w2", 940, 446, 1000, 690, 1.0, 5.35, 0.8);
+dropTile(T2, ".cal.oct", [6, 7], cue("World") + 0.05);
+
+/* 3 · Workday Rising */
+tilt(".w3", -10, 2); panSet(".w3", 940, 446, 720, 280, 1.0);
+tl.fromTo(Q(".w3"), { rotationY: -48, y: 30 }, { rotationY: -10, y: 0, duration: 0.9, ease: "back.out(1.1)" }, 6.05);
+panCam(".w3", 940, 446, 720, 280, 1.1, 6.5, 1.6, "sine.inOut");
+SLOT(3, 6.05, 7.85);
+stk(3, cue("doce"));
+capIn(3, cue("doce") + 0.1);
+{ const b = vbox(940, 446, 720, 280, 1.1, 512, 308, 418, 46); hl(".w3 .hA", b[0], b[1], b[2], b[3], cue("Workday") + 0.2); }
+dropTile(T3, ".cal.oct", [12, 13, 14, 15], cue("doce") + 0.05);
+
+/* 4 · DevLearn: el calendario pasa de página (octubre → noviembre) */
+tl.to(Q(".cal.oct"), { rotationX: -96, duration: 0.7, ease: "power2.in" }, 8.0);
+tl.to(Q(".cal.oct"), { opacity: 0, duration: 0.05 }, 8.62);
+tl.to(Q(".cal.nov"), { scale: 1, y: 0, duration: 0.6, ease: E }, 8.4);
+tl.fromTo(Q(".c4"), { x: 460, opacity: 0 }, { x: 0, opacity: 1, duration: 0.7, ease: "power3.out" }, 8.2);
+tl.fromTo(Q(".c4"), { opacity: 0 }, { opacity: 1, duration: 0.18, ease: "none", immediateRender: false }, 8.2);
+tl.fromTo(Q(".vf"), { rotation: 5, scale: 0.9 }, { rotation: -1.5, scale: 1, duration: 0.8, ease: "back.out(1.2)" }, 8.1);
+tl.to(Q(".vf"), { scale: 1.03, duration: 2.8, ease: "sine.inOut" }, 8.9);
+tilt(".w4", 8, 2); panSet(".w4", 380, 196, 170, 82, 1.2);
+tl.fromTo(Q(".w4"), { opacity: 0, scale: 0.6, y: 60 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR }, cue("noviembre") + 0.05);
+stk(4, cue("cuatro"));
+capIn(4, cue("cuatro") + 0.15);
+dropTile(T4, ".cal.nov", [4, 5, 6], cue("noviembre") + 0.05);
+tl.fromTo(Q(".vf .vrec i"), { scale: 1 }, { scale: 1.35, duration: 0.5, yoyo: true, repeat: 5, ease: "sine.inOut" }, 8.5);
+
+/* polvo / confeti suave al aterrizar DevLearn */
+const R = rng(171717), cols = ["#7D29E0", "#FF01A2", "#9B61F6", "#5E3DE6"];
+for (let i = 0; i < 18; i++) {
+  const p = document.createElement("i");
+  p.style.cssText = "position:absolute;display:block;width:12px;height:18px;border-radius:3px;opacity:0;left:" + (300 + R() * 200) + "px;top:260px;background:" + cols[i % 4] + ";z-index:12";
+  $q(".stage").appendChild(p);
+  const at = cue("noviembre") + 0.4;
+  tl.fromTo(p, { x: 0, y: 0, opacity: 1, rotation: 0 }, { x: (R() - 0.3) * 480, y: -90 - R() * 120, rotation: (R() - 0.5) * 540, duration: 0.7, ease: "power3.out", immediateRender: false }, at);
+  tl.to(p, { y: "+=260", opacity: 0, duration: 0.8, ease: "power1.in" }, at + 0.65);
+}
+
+$$q(".cal *, .poster .tl, .poster .p1 .r").forEach((e) => e.setAttribute("data-layout-allow-occlusion", ""));
+tl.set(Q(".cal.nov"), { opacity: 0 }, 0);
+tl.set(Q(".cal.nov"), { opacity: 1 }, 7.98);
+sceneOut("whip");
+
+<!--SFX-->
+[{"k":"impact","t":0.35,"v":0.5},{"k":"swipe","t":1.1,"v":0.4},{"k":"pop","t":1.85,"v":0.4},{"k":"swipe","t":3.95,"v":0.35},{"k":"pop","t":4.2,"v":0.4},{"k":"swipe","t":6.05,"v":0.35},{"k":"pop","t":6.4,"v":0.4},{"k":"whoosh","t":8.05,"v":0.4},{"k":"pop","t":8.8,"v":0.4},{"k":"ding","t":9.95,"v":0.4}]

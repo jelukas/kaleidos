@@ -1,0 +1,289 @@
+<!--CSS-->
+#__ID__ .bgdots{position:absolute;inset:-56px;background-image:radial-gradient(circle,rgba(201,166,247,.30) 2px,transparent 2.6px);background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse 72% 66% at 50% 52%,#000 0,rgba(0,0,0,.2) 72%,transparent 100%);mask-image:radial-gradient(ellipse 72% 66% at 50% 52%,#000 0,rgba(0,0,0,.2) 72%,transparent 100%)}
+#__ID__ .gl{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+#__ID__ .gl.g1{left:1200px;top:100px;width:640px;height:640px;background:#7D29E0}
+#__ID__ .gl.g2{left:-160px;top:640px;width:560px;height:560px;background:#FF01A2;opacity:.28}
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 560px}
+#__ID__ .meta{position:absolute;left:100px;top:138px;display:flex;gap:14px;align-items:center;z-index:30}
+#__ID__ .btag{padding:10px 26px;border-radius:999px;color:#fff;font-weight:800;font-size:24px;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 0 0 4px rgba(255,255,255,.14)}
+#__ID__ .grpA{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .w1{left:90px;top:215px;width:1000px;height:700px}
+#__ID__ .pan{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0}
+#__ID__ .pan img{position:absolute;left:0;top:0;width:1440px;height:900px;max-width:none}
+#__ID__ .pan .hlbox{border-width:4px;border-radius:10px}
+#__ID__ .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#__ID__ .cor{position:absolute;width:56px;height:56px;border:6px solid #FF01A2;z-index:12;opacity:0}
+#__ID__ .cor.c1{left:70px;top:195px;border-right:0;border-bottom:0;border-top-left-radius:18px}
+#__ID__ .cor.c2{left:1074px;top:195px;border-left:0;border-bottom:0;border-top-right-radius:18px}
+#__ID__ .cor.c3{left:70px;top:879px;border-right:0;border-top:0;border-bottom-left-radius:18px}
+#__ID__ .cor.c4{left:1074px;top:879px;border-left:0;border-top:0;border-bottom-right-radius:18px}
+/* cluster de dots */
+#__ID__ .cl{position:absolute;left:1130px;top:215px;width:700px;height:440px}
+#__ID__ .cl svg.lines{position:absolute;left:0;top:0;width:700px;height:440px;overflow:visible}
+#__ID__ .cl .orbp{fill:none;stroke:rgba(226,204,255,.28);stroke-width:2.5;stroke-dasharray:3 12;stroke-linecap:round}
+#__ID__ .cl .lk{fill:none;stroke:#C9A6F7;stroke-width:4;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;opacity:0}
+#__ID__ .mdw{position:absolute;left:240px;top:110px;width:220px;height:220px}
+#__ID__ .mdw .halo{position:absolute;left:-60px;top:-60px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(255,1,162,.55) 0,rgba(125,41,224,.35) 42%,transparent 70%);filter:blur(12px)}
+#__ID__ .mdw svg{position:absolute;inset:0;width:220px;height:220px;overflow:visible}
+#__ID__ .ripc{position:absolute;left:240px;top:110px;width:220px;height:220px;border-radius:50%;border:5px solid #E2CCFF;opacity:0;box-sizing:border-box}
+#__ID__ .od{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px}
+#__ID__ .od .odi{position:absolute;inset:0;opacity:0}
+#__ID__ .od svg{width:64px;height:64px;display:block;filter:drop-shadow(0 0 14px rgba(255,1,162,.6))}
+#__ID__ .nd{position:absolute;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:20px;display:flex;align-items:center;justify-content:center;opacity:0;box-shadow:0 12px 28px rgba(0,0,0,.4);z-index:3}
+#__ID__ .nd svg{width:38px;height:38px;fill:none;stroke:#fff;stroke-width:3.2;stroke-linecap:round;stroke-linejoin:round}
+#__ID__ .live{position:absolute;left:0;top:-4px;opacity:0;font-size:34px;display:flex;align-items:center;gap:14px;z-index:4}
+#__ID__ .live i{display:block;width:20px;height:20px;border-radius:50%;background:#12B76A;position:relative;flex:none}
+#__ID__ .live i::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:3px solid rgba(18,183,106,.55)}
+#__ID__ .dw{position:absolute;left:1130px;top:672px;width:700px;height:260px}
+#__ID__ .dw .h{font-size:230px;line-height:1}
+#__ID__ .cnt{position:absolute;left:1130px;top:676px;width:700px;opacity:0}
+#__ID__ .cnt .n{font-weight:800;font-size:178px;letter-spacing:-.05em;line-height:1.1;color:#fff}
+#__ID__ .cnt .n small{font-size:178px;color:#FF7CCB}
+#__ID__ .cnt .l{font-weight:600;font-size:38px;color:#D9C8F3;margin-top:16px;letter-spacing:-.01em}
+#__ID__ .apps{position:absolute;left:1130px;top:928px;width:700px;display:flex;gap:16px}
+#__ID__ .apps .chip{font-size:36px;opacity:0}
+/* tarjeta de aprobación */
+#__ID__ .ap{position:absolute;left:1130px;top:215px;width:700px;height:420px;border-radius:32px;padding:34px 40px;box-sizing:border-box;opacity:0}
+#__ID__ .ap .e{font-weight:800;font-size:23px;letter-spacing:.08em;white-space:nowrap;text-transform:uppercase;color:#E2CCFF;display:flex;align-items:center;gap:14px}
+#__ID__ .ap .e i{display:block;width:26px;height:26px;border-radius:50%;border:6px solid #FF7CCB;box-sizing:border-box}
+#__ID__ .ap .t{font-weight:800;font-size:50px;letter-spacing:-.03em;line-height:1.08;margin-top:22px}
+#__ID__ .ap .s{font-weight:600;font-size:34px;color:#C9B8E8;margin-top:10px}
+#__ID__ .ap .bt{position:absolute;left:40px;bottom:36px;display:flex;gap:20px}
+#__ID__ .ap .b{height:92px;border-radius:46px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:40px;padding:0 44px;box-sizing:border-box}
+#__ID__ .ap .b.no{background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.3);color:#fff}
+#__ID__ .ap .b.ok{background:linear-gradient(135deg,#7D29E0,#FF01A2);color:#fff;box-shadow:0 12px 34px rgba(255,1,162,.45)}
+#__ID__ .ap .ok2{position:absolute;inset:0;border-radius:32px;background:#067647;display:flex;align-items:center;justify-content:center;gap:22px;font-weight:800;font-size:64px;opacity:0}
+#__ID__ .ap .ok2 svg{width:84px;height:84px;fill:none;stroke:#fff;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+#__ID__ .plan{position:absolute;left:1130px;top:672px;width:700px;opacity:0}
+#__ID__ .plan .e{font-weight:800;font-size:27px;letter-spacing:.14em;text-transform:uppercase;color:#E2CCFF}
+#__ID__ .plan .cs{display:flex;flex-wrap:wrap;gap:14px;margin-top:16px}
+#__ID__ .plan .chip{font-size:42px}
+#__ID__ .plan .fn{font-weight:600;font-size:34px;color:#C9B8E8;margin-top:18px}
+/* pregunta final */
+#__ID__ .q{position:absolute;left:150px;top:228px;width:1620px;height:690px;border-radius:44px;box-sizing:border-box;opacity:0;overflow:hidden;
+  background:linear-gradient(135deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:2px solid rgba(255,255,255,.28);box-shadow:0 40px 120px rgba(10,0,30,.6),0 0 0 10px rgba(125,41,224,.14)}
+#__ID__ .q::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(180deg,#7D29E0,#FF01A2)}
+#__ID__ .q .qe{position:absolute;left:84px;top:64px;font-weight:800;font-size:30px;letter-spacing:.2em;text-transform:uppercase;color:#FF7CCB}
+#__ID__ .q .qt{position:absolute;left:84px;top:150px}
+#__ID__ .q .qt .h{font-size:132px;line-height:1.02}
+#__ID__ .q .dv{position:absolute;left:830px;top:70px;bottom:70px;width:2px;background:rgba(255,255,255,.2)}
+#__ID__ .vr{position:absolute;left:890px;width:660px;height:150px;display:flex;align-items:center;gap:30px;opacity:0}
+#__ID__ .vr .ib{width:104px;height:104px;border-radius:36px;display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 14px 34px rgba(0,0,0,.35)}
+#__ID__ .vr .ib svg{width:64px;height:64px;fill:none;stroke:#fff;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+#__ID__ .vr .vw{font-weight:800;font-size:96px;letter-spacing:-.045em;line-height:1;color:#fff;white-space:nowrap}
+#__ID__ .qdot{position:absolute;right:56px;top:46px;width:96px;height:96px}
+#__ID__ .qdot svg{width:96px;height:96px;overflow:visible}
+#__ID__ .boom{position:absolute;left:960px;top:560px;width:300px;height:300px;margin:-150px 0 0 -150px;border-radius:50%;border:10px solid #FF01A2;opacity:0;z-index:5}
+<!--HTML-->
+<div class="stage">
+  <div class="bg bg-deep clip" data-start="0" data-duration="__DUR__" data-track-index="0">
+    <div class="bgdots"></div><div class="gl g1" data-layout-allow-overflow></div><div class="gl g2" data-layout-allow-overflow></div>
+  </div>
+  <div class="strip dk"></div>
+  <div class="meta">
+    <span class="btag">IA</span>
+    <span class="badge srcdk">openai.com</span>
+    <span class="badge dk">29 sep 2026</span>
+    <span class="badge week bweek">Esta semana</span>
+  </div>
+
+  <div class="world">
+    <div class="grpA">
+      <div class="wg"><div class="cor c1"></div><div class="cor c2"></div><div class="cor c3"></div><div class="cor c4"></div>
+      <div class="shotwin dark w1">
+        <div class="sbar"><i></i><i></i><i></i><div class="url">openai.com</div></div>
+        <div class="view"><div class="pan" data-layout-allow-overflow>
+          <img src="assets/captures/oa-dots.png">
+          <div class="hlbox hb1"></div>
+          <div class="hlbox hw"></div>
+        </div></div>
+        <div class="flash" data-layout-allow-occlusion></div>
+      </div></div>
+
+      <div class="cl">
+        <svg class="lines" viewBox="0 0 700 440"><defs><linearGradient id="dg___ID__" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9A6F7"/><stop offset="0.55" stop-color="#9B61F6"/><stop offset="1" stop-color="#FF01A2"/></linearGradient></defs>
+          <ellipse class="orbp op1" cx="350" cy="220" rx="300" ry="120"/><ellipse class="orbp op2" cx="350" cy="220" rx="200" ry="80"/>
+        </svg>
+        <svg class="lines lk-svg" viewBox="0 0 700 440"></svg>
+        <div class="mdw"><div class="halo"></div><svg viewBox="0 0 220 220"><circle cx="110" cy="110" r="74" fill="none" stroke="url(#dg___ID__)" stroke-width="56"/></svg></div>
+        <div class="ripc rc1"></div><div class="ripc rc2"></div>
+        <div class="live chip dark"><i></i>Siempre activos</div>
+      </div>
+
+      <div class="dw"><div class="mask"><div class="h grad r" style="background:linear-gradient(90deg,#E2CCFF 0%,#FF7CCB 70%,#FF01A2 130%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent">dots</div></div></div>
+      <div class="cnt"><div class="n"><span class="nv">0</span><small>+</small></div><div class="l">apps conectadas por plugins</div></div>
+      <div class="apps"><span class="chip dark a1">ChatGPT</span><span class="chip dark a2">Slack</span><span class="chip dark a3">Teams</span></div>
+
+      <div class="ap panel dark">
+        <div class="e"><i></i>Revisión y aprobación de acciones</div>
+        <div class="t">El dot propone una acción</div>
+        <div class="s">Tú decides si sigue adelante</div>
+        <div class="bt"><div class="b no">Rechazar</div><div class="b ok">Aprobar</div></div>
+        <div class="ok2" data-layout-allow-overlap><svg viewBox="0 0 44 44"><path d="M9 23 L19 33 L36 13"/></svg>Aprobada</div>
+      </div>
+      <div class="plan"><div class="e">Disponible en los planes</div><div class="cs"><span class="chip dark">Pro</span><span class="chip dark">Business Premium</span><span class="chip dark">Enterprise</span></div><div class="fn">en los mercados elegibles</div></div>
+    </div>
+
+    <div class="q">
+      <div class="qe">La pregunta nueva</div>
+      <div class="qt"><div class="mask"><div class="h white r">¿Cómo se</div></div><div class="mask"><div class="h white r">enseña a…?</div></div></div>
+      <div class="dv"></div>
+      <div class="qdot"><svg viewBox="0 0 96 96"><circle cx="48" cy="48" r="30" fill="none" stroke="url(#dg___ID__)" stroke-width="24"/></svg></div>
+      <div class="vr v1" style="top:78px"><div class="ib" style="background:#7D29E0"><svg viewBox="0 0 44 44"><path d="M6 24 H28 M20 14 L30 24 L20 34 M38 10 V38"/></svg></div><div class="vw">delegar</div></div>
+      <div class="vr v2" style="top:270px"><div class="ib" style="background:#E6008E"><svg viewBox="0 0 44 44"><path d="M3 22 C10 10 34 10 41 22 C34 34 10 34 3 22 Z"/><circle cx="22" cy="22" r="6"/></svg></div><div class="vw">supervisar</div></div>
+      <div class="vr v3" style="top:462px"><div class="ib" style="background:#5E3DE6"><svg viewBox="0 0 44 44"><path d="M11 8 H33 V38 H11 Z M17 8 V5 H27 V8 M17 25 L21 29 L28 19"/></svg></div><div class="vw">revisar</div></div>
+    </div>
+    <div class="boom"></div>
+    <div class="orb" style="opacity:0"></div><div class="ripple r1"></div>
+  </div>
+</div>
+<!--JS-->
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 0.3, 0.9, 0.8);
+$q(".btag").textContent = BLOCK; $q(".btag").style.background = COLOR;
+if (!WEEK) $q(".bweek").style.display = "none";
+up(".meta", 0.3, { y: -14, d: 0.6 });
+
+function panPos(fx, fy, s) { const v = $q(".w1 .view"); return { x: v.clientWidth / 2 - fx * s, y: v.clientHeight / 2 - fy * s, scale: s }; }
+function panSet(fx, fy, s) { tl.set(Q(".w1 .pan"), panPos(fx, fy, s), 0); }
+function panCam(fx, fy, s, at, d = 1.0, ease = "power3.inOut") { return tl.to(Q(".w1 .pan"), { ...panPos(fx, fy, s), duration: d, ease }, at); }
+
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.03, duration: 9.2, ease: "none" }, 0);
+tl.to(Q(".gl.g1"), { x: -90, y: 60, duration: 6.5, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+/* ---------- A · la captura de «Introducing dots» y el dot que late ---------- */
+panSet(720, 330, 1.2);
+tl.fromTo(Q(".w1"), { y: 50, rotationY: 14, transformPerspective: 1700, scale: 0.96 }, { y: 0, rotationY: 0, scale: 1, duration: 1.1, ease: E }, 0);
+[".c1", ".c2", ".c3", ".c4"].forEach((s, i) => {
+  const dx = i % 2 ? 36 : -36, dy = i < 2 ? -36 : 36;
+  tl.fromTo(Q(".wg " + s), { opacity: 0, x: dx, y: dy }, { opacity: 1, x: 0, y: 0, duration: 0.5, ease: E }, 0.35 + i * 0.05);
+  tl.to(Q(".wg " + s), { opacity: 0, duration: 0.5, ease: "power2.in" }, 1.7);
+});
+tl.fromTo(Q(".w1 .flash"), { opacity: 0 }, { opacity: 0.85, duration: 0.07, ease: "none" }, 0.78);
+tl.to(Q(".w1 .flash"), { opacity: 0, duration: 0.45, ease: "power2.out" }, 0.85);
+
+/* dot central: entra con rebote y late */
+tl.fromTo(Q(".mdw"), { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.9, ease: "back.out(2)" }, 0.15);
+tl.fromTo(Q(".mdw"), { scale: 1 }, { scale: 1.1, duration: 0.5, yoyo: true, repeat: 17, ease: "sine.inOut", immediateRender: false }, 1.05);
+tl.fromTo(Q(".mdw svg"), { rotation: 0 }, { rotation: 360, duration: 9, ease: "none" }, 0);
+tl.fromTo(Q(".op1"), { opacity: 0 }, { opacity: 1, duration: 0.8 }, 1.2);
+tl.fromTo(Q(".op2"), { opacity: 0 }, { opacity: 1, duration: 0.8 }, 1.5);
+[0.35, 0.95, 1.55].forEach((t, i) => {
+  tl.fromTo(Q(i % 2 ? ".rc2" : ".rc1"), { opacity: 0.8, scale: 0.8 }, { opacity: 0, scale: 2.6, duration: 1.2, ease: "power2.out", immediateRender: false }, t);
+});
+tl.set(Q(".rc1, .rc2"), { opacity: 0 }, 0);
+
+/* dots orbitando: posiciones calculadas de forma determinista */
+const ORB = [
+  { rx: 300, ry: 120, a0: 0.0, sp: 1.0, at: cue("openai") },
+  { rx: 300, ry: 120, a0: 2.1, sp: 1.0, at: cue("openai") + 0.12 },
+  { rx: 200, ry: 80, a0: 1.0, sp: -1.3, at: cue("presenta") },
+  { rx: 300, ry: 120, a0: 4.2, sp: 1.0, at: cue("agentes") },
+  { rx: 200, ry: 80, a0: 3.4, sp: -1.3, at: cue("agentes") + 0.12 },
+  { rx: 250, ry: 100, a0: 5.2, sp: 0.8, at: cue("agentes") + 0.24 },
+];
+const CL = $q(".cl"), ODS = [];
+ORB.forEach((o, i) => {
+  const d = document.createElement("div"); d.className = "od";
+  d.innerHTML = '<div class="odi"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="18" fill="none" stroke="url(#dg___ID__)" stroke-width="15"/></svg></div>';
+  CL.appendChild(d); ODS.push(d);
+  tl.fromTo(d.firstChild, { opacity: 0, scale: 0.1 }, { opacity: 1, scale: 1, duration: 0.6, ease: "back.out(2.4)" }, o.at);
+});
+const ph = { a: 0 };
+function place() {
+  for (let i = 0; i < ODS.length; i++) {
+    const o = ORB[i], ang = o.a0 + o.sp * ph.a * Math.PI * 2 * 1.3;
+    const k = 0.7 + 0.35 * (Math.sin(ang) + 1) / 2;
+    ODS[i].style.transform = "translate(" + Math.round((350 + Math.cos(ang) * o.rx) * 100) / 100 + "px," + Math.round((220 + Math.sin(ang) * o.ry) * 100) / 100 + "px) scale(" + Math.round(k * 1000) / 1000 + ")";
+  }
+}
+place();
+tl.to(ph, { a: 1, duration: DUR, ease: "none", onUpdate: place }, 0);
+
+/* título «dots» */
+const TD = cue("dots");
+slam(".dw .h", TD);
+hl(".w1 .hb1", 490, 358, 462, 74, TD);
+tl.to(Q(".hb1"), { opacity: 0, duration: 0.3 }, cue("agentes") - 0.2);
+
+/* «agentes siempre activos» */
+panCam(712, 668, 1.4, cue("agentes") - 0.45, 1.0);
+const TV = cue("siempre");
+tl.fromTo(Q(".live"), { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.55, ease: E }, TV);
+tl.fromTo(Q(".live i"), { scale: 1 }, { scale: 1.35, duration: 0.45, yoyo: true, repeat: 9, ease: "sine.inOut", immediateRender: false }, TV + 0.4);
+tl.set(Q(".hw"), { left: 0, top: 0, x: 610, y: 689, width: 150, height: 34 }, 0);
+tl.fromTo(Q(".hw"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.45, ease: SPR }, cue("activos") - 0.3);
+tl.to(Q(".hw"), { x: 755, y: 689, width: 214, duration: 0.35, ease: "power3.out" }, cue("trabajan"));
+
+/* ---------- B · se conecta con más de 4.000 apps ---------- */
+const TB = cue("trabajan");
+tl.to(Q(".dw"), { opacity: 0, y: -40, filter: "blur(14px)", duration: 0.4, ease: "power3.in" }, TB - 0.1);
+const NODES = [
+  ["#7D29E0", '<rect x="6" y="11" width="32" height="22" rx="4"/><path d="M8 14 L22 25 L36 14"/>'],
+  ["#E6008E", '<rect x="7" y="9" width="30" height="28" rx="5"/><path d="M7 18 H37 M15 5 V12 M29 5 V12"/>'],
+  ["#5E3DE6", '<path d="M8 10 H36 V28 H20 L12 36 V28 H8 Z"/>'],
+  ["#9B61F6", '<path d="M12 6 H28 L34 12 V38 H12 Z M28 6 V12 H34 M17 22 H29 M17 29 H29"/>'],
+  ["#FF01A2", '<path d="M8 36 V22 M18 36 V12 M28 36 V18 M38 36 V8"/>'],
+  ["#7D29E0", '<path d="M13 32 C5 32 4 21 12 20 C13 12 25 10 28 18 C37 17 40 30 31 32 Z"/>'],
+  ["#E6008E", '<path d="M14 12 L5 22 L14 32 M30 12 L39 22 L30 32"/>'],
+  ["#5E3DE6", '<circle cx="22" cy="22" r="7"/><path d="M22 6 V12 M22 32 V38 M6 22 H12 M32 22 H38 M11 11 L15 15 M29 29 L33 33 M33 11 L29 15 M15 29 L11 33"/>'],
+];
+const LK = $q(".lk-svg");
+NODES.forEach((n, i) => {
+  const ang = -Math.PI / 2 + (i + 0.5) * (Math.PI * 2 / 8), x = 350 + Math.cos(ang) * 305, y = 220 + Math.sin(ang) * 175;
+  const d = document.createElement("div"); d.className = "nd nd" + i; d.style.left = x + "px"; d.style.top = y + "px"; d.style.background = n[0];
+  d.innerHTML = '<svg viewBox="0 0 44 44">' + n[1] + "</svg>"; CL.appendChild(d);
+  const p = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  p.setAttribute("class", "lk lk" + i); p.setAttribute("pathLength", "1"); p.setAttribute("d", "M350 220 L" + x + " " + y); LK.appendChild(p);
+  const t = TB + i * 0.07;
+  tl.fromTo(p, { strokeDashoffset: 1, opacity: 0 }, { strokeDashoffset: 0, opacity: 0.9, duration: 0.5, ease: "power2.out" }, t);
+  tl.fromTo(d, { scale: 0.2, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(2.4)" }, t + 0.2);
+});
+const cnt = { v: 0 }, nvEl = $q(".cnt .nv");
+const fmtN = (v) => { const n = Math.round(v); return n >= 1000 ? Math.floor(n / 1000) + "." + String(n % 1000).padStart(3, "0") : String(n); };
+tl.fromTo(Q(".cnt"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, TB);
+tl.to(cnt, { v: 4000, duration: 1.5, ease: "power3.out", onUpdate: () => { nvEl.textContent = fmtN(cnt.v); } }, TB + 0.05);
+tl.fromTo(Q(".mdw"), { scaleX: 1 }, { scaleX: 1.18, duration: 0.12, yoyo: true, repeat: 1, ease: "power2.out", immediateRender: false }, TB + 0.5);
+const TW = cue("nombre");
+tl.fromTo(Q(".apps .a1"), { opacity: 0, y: 30, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR }, TW - 0.2);
+tl.fromTo(Q(".apps .a2"), { opacity: 0, y: 30, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR }, TW - 0.05);
+tl.fromTo(Q(".apps .a3"), { opacity: 0, y: 30, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.5, ease: SPR }, TW + 0.1);
+
+/* ---------- C · revisión y aprobación de acciones ---------- */
+const TC = cue("para") + 0.0;   // ≈6.9 s
+tl.to(Q(".hw"), { x: 378, y: 752, width: 188, height: 34, duration: 0.4, ease: "power3.out" }, TC + 0.25);
+tl.to(Q(".cl, .cnt, .apps"), { opacity: 0, scale: 0.92, y: 20, filter: "blur(14px)", duration: 0.5, ease: "power3.in" }, TC - 0.1);
+tl.fromTo(Q(".ap"), { opacity: 0, y: 60, rotationX: -30, transformPerspective: 1400 }, { opacity: 1, y: 0, rotationX: 0, duration: 0.75, ease: SPR }, TC + 0.15);
+tl.fromTo(Q(".plan"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, cue("pregunta"));
+tl.fromTo(Q(".plan .chip"), { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.45, ease: SPR, stagger: 0.15 }, cue("pregunta") + 0.2);
+/* cursor que aprueba */
+const TK = cue("nueva") - 0.25;
+tl.set(Q(".orb"), { x: 1500, y: 800, opacity: 0 }, 0);
+tl.to(Q(".orb"), { opacity: 1, duration: 0.3 }, TK - 0.6);
+orbTo(1600, 548, TK - 0.5, 0.55, "power3.out");
+clickAt(".r1", 1600, 548, TK + 0.1);
+tl.fromTo(Q(".ap .ok2"), { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power2.out" }, TK + 0.18);
+tl.fromTo(Q(".ap .ok2 svg path"), { strokeDasharray: 80, strokeDashoffset: 80 }, { strokeDashoffset: 0, duration: 0.45, ease: "power2.out" }, TK + 0.25);
+tl.to(Q(".orb"), { opacity: 0, duration: 0.3 }, TK + 0.6);
+
+/* ---------- D · la pregunta para quien forma ---------- */
+const XO = cue("como") - 0.55;
+tl.to(Q(".world"), { scale: 1, duration: 0.5, ease: "power2.inOut" }, XO);
+tl.to(Q(".grpA"), { opacity: 0, scale: 0.88, filter: "blur(16px)", duration: 0.5, ease: "power3.in" }, XO);
+const TQ = cue("como");
+tl.fromTo(Q(".q"), { opacity: 0, scale: 0.86, y: 50 }, { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: SOFTSPR }, TQ - 0.15);
+tl.fromTo(Q(".qe"), { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, TQ + 0.1);
+tl.fromTo(Q(".qt .r"), { yPercent: 110 }, { yPercent: 0, duration: 0.9, ease: E, stagger: 0.12 }, TQ + 0.15);
+tl.fromTo(Q(".qdot svg"), { rotation: -180, scale: 0.2, opacity: 0 }, { rotation: 0, scale: 1, opacity: 1, duration: 0.8, ease: "back.out(2)" }, TQ + 0.3);
+tl.fromTo(Q(".qdot"), { scale: 1 }, { scale: 1.12, duration: 0.5, yoyo: true, repeat: 7, ease: "sine.inOut", immediateRender: false }, TQ + 1.2);
+[["delegar", ".v1"], ["supervisar", ".v2"], ["revisar", ".v3"]].forEach(([w, s]) => {
+  const T = cue(w);
+  tl.set(Q(s), { opacity: 1 }, T);
+  slam(s + " .vw", T);
+  tl.fromTo(Q(s + " .ib"), { scale: 0.2, rotation: -120 }, { scale: 1, rotation: 0, duration: 0.65, ease: "back.out(2.2)" }, T);
+});
+tl.fromTo(Q(".boom"), { opacity: 0.8, scale: 0.4 }, { opacity: 0, scale: 6, duration: 1.0, ease: "power3.out", immediateRender: false }, cue("revisar") + 0.1);
+sceneOut("whip");
+<!--SFX-->
+[{"k":"shutter","t":0.78,"v":0.45},{"k":"impact","t":2.95,"v":0.45},{"k":"ping","t":3.72,"v":0.4},{"k":"counter","t":5.35,"v":0.4},{"k":"swipe","t":6.95,"v":0.35},{"k":"click","t":8.2,"v":0.5},{"k":"stamp","t":8.35,"v":0.4},{"k":"pop","t":10.0,"v":0.45},{"k":"pop","t":10.75,"v":0.45},{"k":"impact","t":11.64,"v":0.5}]

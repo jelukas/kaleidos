@@ -1,0 +1,6 @@
+# Entorno, modelos y dependencias compiladas (se regeneran con `kaleidos instalar`)
+.venv/
+modelos/
+vendor/
+__pycache__/
+*.pyc

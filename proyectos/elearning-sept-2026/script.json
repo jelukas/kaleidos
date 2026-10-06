@@ -1,0 +1,91 @@
+{
+  "modelId": "eleven_v4",
+  "defaultGap": 0.0,
+  "lines": [
+    {
+      "id": "c01",
+      "text": "Septiembre de dos mil veintiséis: inteligencia artificial, compras, dinero público para formar y una semana sin tregua. Esto es lo que ha pasado en el e-learning corporativo.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c02",
+      "text": "Casi veinte noticias, cuatro bloques y poco más de tres minutos. Empezamos por donde más ruido hay: la inteligencia artificial.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c03",
+      "text": "OpenAI amplía su Academy con rutas por rol, para empleados, desarrolladores, líderes, educadores y estudiantes, y una forma de demostrar lo aprendido. El proveedor de IA, también como proveedor de formación.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c04",
+      "text": "Microsoft reorganiza Copilot en tres piezas, Home, Code y Autopilot, y lo acompaña con una lista de formación en AI Skills Navigator.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c05",
+      "text": "El veintinueve, OpenAI presenta dots: agentes siempre activos que trabajan en tu nombre. Para quien forma, la pregunta es nueva: cómo se enseña a delegar, supervisar y revisar.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c06",
+      "text": "Y este viernes, Anthropic anuncia cien millones de dólares para formar a diez mil ingenieros: bootcamp, doce semanas de residencia en su empresa, evaluación y credencial.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c07",
+      "text": "Gartner firma tres predicciones: recontratar en dos mil veintinueve al treinta por ciento de los despedidos por sustitución con IA, rediseñar los puestos de entrada en marketing, y que en dos mil veintiocho el setenta por ciento abandone la IA agéntica construida por el proveedor.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c08",
+      "text": "Plataformas y contenidos. Coursera y Udemy, ya una sola empresa, adelantan Project Helix: rutas de aprendizaje a partir de un objetivo de negocio en lenguaje natural, habilidades verificadas y registro portable. Primer semestre de dos mil veintisiete.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c09",
+      "text": "Articulate presenta Articulate 360 AI, un agente llamado Nova y Frontline, para equipos que crean formación fuera del departamento de formación.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c10",
+      "text": "Skillsoft estrena LX Design Studio: contenido a medida con IA que, según la empresa, reduce hasta un ochenta y cinco por ciento el tiempo de desarrollo.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c11",
+      "text": "Coursera publica su Global Skills Report, con un índice nuevo que cruza habilidades de IA y habilidades humanas en noventa y ocho países.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c12",
+      "text": "Mercado. Pearson compra Workera, evaluación de competencias con IA, el veintinueve de septiembre. Once días antes, ITS, evaluación y certificación a distancia. Dos compras: medir lo que la gente sabe hacer.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c13",
+      "text": "España. El veintidós, doscientos cincuenta millones para formar a personas trabajadoras, sobre todo ocupadas. El veintinueve, autorización de gasto para formación en el trabajo: trescientos cincuenta y dos millones en dos mil veintisiete y trescientos doce en dos mil veintiocho.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c14",
+      "text": "Y el BOE del treinta publica dos convocatorias de Formación Profesional: treinta y cinco y cuarenta y seis coma siete millones de euros.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c15",
+      "text": "En Bruselas, la Comisión propone el Skills Portability Act, con cualificaciones digitales y comparables. Y Eurostat: el trece coma siete por ciento de los adultos europeos se formó en las últimas cuatro semanas, frente al diez coma uno de dos mil quince.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c16",
+      "text": "La semana que viene: el seis de octubre, Talent Day en Barcelona y World of Learning en Birmingham. El doce, Workday Rising. Y el cuatro de noviembre arranca DevLearn.",
+      "gapBefore": 0.0
+    },
+    {
+      "id": "c17",
+      "text": "Para llevarse a casa: la IA ya es parte del catálogo, medir competencias es el nuevo campo de batalla y el dinero público para formar sigue en marcha. Nos vemos el lunes.",
+      "gapBefore": 0.0
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html><html><head><meta charset="utf-8"><style>@font-face{font-family:"Fredoka";font-style:normal;font-weight:600;font-display:block;src:url("../fonts/fredoka-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Fredoka";font-style:normal;font-weight:600;font-display:block;src:url("../fonts/fredoka-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Fredoka";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/fredoka-latin-ext-700-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Fredoka";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/fredoka-latin-700-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/nunito-latin-ext-700-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/nunito-latin-700-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:800;font-display:block;src:url("../fonts/nunito-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:800;font-display:block;src:url("../fonts/nunito-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:900;font-display:block;src:url("../fonts/nunito-latin-ext-900-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Nunito";font-style:normal;font-weight:900;font-display:block;src:url("../fonts/nunito-latin-900-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:block;src:url("../fonts/barlow-condensed-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:600;font-display:block;src:url("../fonts/barlow-condensed-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/barlow-condensed-latin-ext-700-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/barlow-condensed-latin-700-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:800;font-display:block;src:url("../fonts/barlow-condensed-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-style:normal;font-weight:800;font-display:block;src:url("../fonts/barlow-condensed-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Barlow Semi Condensed";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/barlow-semi-condensed-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Semi Condensed";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/barlow-semi-condensed-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Barlow Semi Condensed";font-style:normal;font-weight:500;font-display:block;src:url("../fonts/barlow-semi-condensed-latin-ext-500-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Barlow Semi Condensed";font-style:normal;font-weight:500;font-display:block;src:url("../fonts/barlow-semi-condensed-latin-500-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:block;src:url("../fonts/inter-latin-ext-300-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:300;font-display:block;src:url("../fonts/inter-latin-300-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:italic;font-weight:700;font-display:block;src:url("../fonts/inter-latin-ext-700-italic.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:italic;font-weight:700;font-display:block;src:url("../fonts/inter-latin-700-italic.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/inter-latin-ext-700-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/inter-latin-700-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Comic Neue";font-style:normal;font-weight:700;font-display:block;src:url("../fonts/comic-neue-latin-700-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("../fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1920px;height:1080px;overflow:hidden;background:#102424;font-family:"Nunito",sans-serif;color:#F2F3F8;position:relative}
+.patron{position:absolute;width:640px;height:520px;background-image:linear-gradient(45deg,#142928 25%,transparent 25%,transparent 75%,#142928 75%),linear-gradient(45deg,#142928 25%,transparent 25%,transparent 75%,#142928 75%);background-size:56px 56px;background-position:0 0,28px 28px;opacity:.9}
+.patron.si{left:-80px;bottom:-60px;-webkit-mask:radial-gradient(circle at 0% 100%,#000 0,transparent 70%)}
+.patron.sd{right:-80px;top:-60px;-webkit-mask:radial-gradient(circle at 100% 0%,#000 0,transparent 70%)}
+.caja{position:absolute;border-radius:20px;overflow:hidden;box-shadow:0 18px 48px rgba(0,0,0,.45)}
+.show{background:radial-gradient(ellipse at 50% 50%,transparent 30%,rgba(4,14,144,.85) 100%),repeating-conic-gradient(from 3deg at 50% 50%,#2940DD 0deg 7deg,#080CDC 7deg 14deg)}
+.navy{background:#041839}
+.menta{background:linear-gradient(180deg,#A6ECE6 0%,#9CE5DF 55%,#7FDCD6 100%)}
+.destello{position:absolute;width:var(--t,60px);height:var(--t,60px);background:radial-gradient(circle,#FFF6C4 0 12%,#F5C121 13% 30%,transparent 31%);clip-path:polygon(50% 0,58% 42%,100% 50%,58% 58%,50% 100%,42% 58%,0 50%,42% 42%);filter:drop-shadow(0 0 12px rgba(255,214,74,.9))}
+.punto{position:absolute;width:6px;height:6px;border-radius:50%;background:#FFD84A;box-shadow:0 0 8px #FFD84A}
+.juego{position:relative;font-family:"Fredoka";font-weight:700;letter-spacing:-.01em;line-height:1;white-space:nowrap}
+.juego span{position:absolute;left:0;top:0}
+.juego .blanco{position:relative;color:#fff;-webkit-text-stroke:calc(var(--c,26px)) #fff;text-shadow:0 12px 0 rgba(0,0,0,.35)}
+.juego .tinta{color:#06103E;-webkit-text-stroke:calc(var(--c,26px) * .5) #06103E}
+.juego .oro{background:linear-gradient(180deg,#FFE14A 0%,#F5C121 45%,#EE6D06 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.juego .brillo{background:linear-gradient(180deg,rgba(255,255,255,.55) 0%,rgba(255,255,255,0) 32%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sombra{text-shadow:0 5px 0 #06103E,0 0 18px rgba(6,16,62,.5)}
+.subrayado{height:10px;border-radius:999px;background:linear-gradient(90deg,#F5C121,#FFE14A,#F5C121);box-shadow:0 4px 0 #06103E}
+.etq{font-family:"Barlow Condensed";font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.celda{position:absolute;width:600px;height:380px}
+.nom{position:absolute;left:0;right:0;bottom:-58px;text-align:center;font-family:"Barlow Condensed";font-weight:700;font-size:26px;letter-spacing:.06em;text-transform:uppercase;color:#F5C121}
+.nom small{display:block;font-family:"Barlow Semi Condensed";font-weight:400;font-size:20px;letter-spacing:0;text-transform:none;color:#B4C8C6;margin-top:2px}
+.ficha{width:84px;height:84px;border-radius:18px;display:grid;place-items:center;font-family:"Fredoka";font-weight:700;font-size:52px}
+.vista{background:#3A3410;color:#C9A83A;border:3px solid #6B5A18}.actual{background:linear-gradient(180deg,#FFE14A,#F5C121 50%,#EE6D06);color:#1A1206;box-shadow:0 0 28px rgba(245,193,33,.7),0 6px 0 #06103E;transform:scale(1.14)}.pend{border:3px dashed #2B4A4A;color:#4E6E6C}
+.bocadillo{position:absolute;background:#fff;border:5px solid #111;border-radius:48% 52% 50% 50%/60% 55% 45% 40%;font-family:"Comic Neue";font-weight:700;color:#1E1E1E;display:grid;place-items:center;text-align:center}
+.sello{position:absolute;border:10px solid #F5C121;border-radius:28px;padding:18px 40px;transform:rotate(-12deg);box-shadow:0 0 0 6px #06103E,0 14px 0 6px rgba(0,0,0,.3)}
+</style></head><body>
+<div class="patron si"></div><div class="patron sd"></div>
+<!-- 1 titular de juego -->
+<div class="celda caja show" style="left:60px;top:30px">
+ <div class="destello" style="left:60px;top:40px;--t:80px"></div><div class="destello" style="left:480px;top:50px;--t:64px"></div><div class="destello" style="left:500px;top:280px;--t:90px"></div><div class="destello" style="left:40px;top:290px;--t:56px"></div><div class="destello" style="left:250px;top:24px;--t:40px"></div>
+ <div style="position:absolute;left:0;right:0;top:120px;display:flex;justify-content:center"><div class="juego" style="font-size:130px;--c:22px"><span class="blanco">Clave</span><span class="tinta">Clave</span><span class="oro">Clave</span><span class="brillo">Clave</span></div></div>
+</div><div class="nom" style="position:absolute;left:60px;width:600px;top:420px">Titular de juego + destellos<small>escala 0 → 1,12 → 1 · destello diagonal · estallido de estrellas</small></div>
+<!-- 2 barra del método -->
+<div class="celda caja" style="left:660px;top:30px;background:#0B1C1C">
+ <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:16px"><div class="ficha vista">P</div><div class="ficha vista">A</div><div class="ficha actual">S</div><div class="ficha pend">O</div><div class="ficha pend">S</div></div>
+ <div class="etq" style="position:absolute;left:0;right:0;top:250px;text-align:center;font-size:30px;color:#F5C121">Paso 3 · Solución</div>
+</div><div class="nom" style="position:absolute;left:660px;width:600px;top:420px">Barra del método (acrónimo)<small>vistos en oro apagado · actual encendido · pendientes en contorno</small></div>
+<!-- 3 bocadillo -->
+<div class="celda caja" style="left:1260px;top:30px;background:linear-gradient(180deg,#9CCBE6,#E7C268 70%,#B98E3C)">
+ <div class="bocadillo" style="left:70px;top:50px;width:420px;height:190px;font-size:40px">¡Esto lo cambia<br>todo!</div>
+ <div style="position:absolute;left:150px;top:236px;width:44px;height:44px;background:#fff;border:5px solid #111;border-radius:50%"></div>
+ <div style="position:absolute;left:120px;top:290px;width:26px;height:26px;background:#fff;border:5px solid #111;border-radius:50%"></div>
+</div><div class="nom" style="position:absolute;left:1260px;width:600px;top:420px">Bocadillo de cómic<small>brota con rebote desde el personaje · texto letra a letra</small></div>
+<!-- 4 sello -->
+<div class="celda caja navy" style="left:60px;top:560px">
+ <div class="sello" style="left:120px;top:120px"><div class="juego" style="font-size:96px;--c:16px"><span class="blanco">EUREKA</span><span class="tinta">EUREKA</span><span class="oro">EUREKA</span><span class="brillo">EUREKA</span></div></div>
+</div>
+<!-- 5 contador -->
+<div class="celda caja show" style="left:660px;top:560px">
+ <div class="destello" style="left:450px;top:60px;--t:70px"></div><div class="destello" style="left:70px;top:250px;--t:60px"></div>
+ <div style="position:absolute;left:0;right:0;top:70px;display:flex;justify-content:center"><div class="juego" style="font-size:170px;--c:24px"><span class="blanco">87%</span><span class="tinta">87%</span><span class="oro">87%</span><span class="brillo">87%</span></div></div>
+ <div class="sombra" style="position:absolute;left:0;right:0;top:285px;text-align:center;font-weight:900;font-size:40px">el dato que cita el ponente</div>
+</div>
+<!-- 6 editorial -->
+<div class="celda caja navy" style="left:1260px;top:560px">
+ <div class="etq" style="position:absolute;left:40px;top:28px;font-size:18px;color:#F2F3F8">MÉTODO · <span style="font-weight:600;color:#B4C8C6">EJEMPLO DE CABECERA</span></div>
+ <div style="position:absolute;left:40px;right:40px;top:58px;height:2px;background:#33405A"></div>
+ <div style="position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:50%;box-shadow:0 0 0 18px #0C2A5C,0 0 0 50px #041839,0 0 0 68px #0C2A5C"></div>
+ <div style="position:absolute;left:40px;top:92px;width:84px;height:84px;border:3px solid #D1A54B;border-radius:50%;display:grid;place-items:center"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#D1A54B" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></div>
+ <div style="position:absolute;left:40px;top:200px;font-family:'Barlow Condensed';font-weight:800;font-size:58px;line-height:1.02;text-transform:uppercase">Una sala,<br>una <span style="color:#D1A54B">decisión</span></div>
+ <div style="position:absolute;left:176px;top:320px;width:168px;height:6px;border-radius:3px;background:#D1A54B"></div>
+</div>
+
+<div class="nom" style="position:absolute;left:60px;width:600px;top:950px">Sello «EUREKA»<small>golpe con giro −12° · sacudida de 3 fotogramas · polvo dorado</small></div>
+<div class="nom" style="position:absolute;left:660px;width:600px;top:950px">Contador de juego<small>sube con power3.out y remata con un destello</small></div>
+<div class="nom" style="position:absolute;left:1260px;width:600px;top:950px">Editorial: palabra que se enciende<small>blanco → oro al decirla · subrayado que se barre · icono que se dibuja</small></div>
+</body></html>

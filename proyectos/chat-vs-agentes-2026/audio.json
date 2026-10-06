@@ -1,0 +1,11 @@
+{
+  "musicModelId": "music_v2",
+  "music": [
+    {
+      "id": "musica",
+      "lengthMs": 128000,
+      "instrumental": true,
+      "prompt": "Upbeat modern electronic product-launch track, instrumental, around 110 BPM. Punchy plucks, tight bass, crisp percussion and clean synth stabs. Builds over the first 12 seconds, then a steady driving groove with small fills every 8 bars, a short breakdown near the middle, and a bright confident resolution at the end with a clean final hit. Leaves space in the mids for a narrator. No vocals, no spoken words."
+    }
+  ]
+}

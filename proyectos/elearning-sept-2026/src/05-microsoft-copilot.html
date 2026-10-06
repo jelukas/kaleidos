@@ -1,0 +1,194 @@
+<!--CSS-->
+#__ID__ .dotsbg{position:absolute;inset:-56px;background-image:radial-gradient(circle,rgba(125,41,224,.22) 2px,transparent 2.6px);background-size:56px 56px;
+  -webkit-mask-image:radial-gradient(ellipse 70% 62% at 50% 54%,#000 0,rgba(0,0,0,.2) 70%,transparent 100%);mask-image:radial-gradient(ellipse 70% 62% at 50% 54%,#000 0,rgba(0,0,0,.2) 70%,transparent 100%)}
+#__ID__ .blob{position:absolute;border-radius:50%;filter:blur(70px)}
+#__ID__ .blob.b1{left:1260px;top:300px;width:520px;height:520px;background:#F2E7FC}
+#__ID__ .blob.b2{left:-120px;top:640px;width:440px;height:440px;background:#FFD6EF;opacity:.7}
+#__ID__ .world{position:absolute;left:0;top:0;width:1920px;height:1080px;transform-origin:960px 560px}
+#__ID__ .grp{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .wg1,#__ID__ .wg2{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#__ID__ .meta{position:absolute;left:100px;top:138px;display:flex;gap:14px;align-items:center;z-index:30}
+#__ID__ .btag{padding:10px 26px;border-radius:999px;color:#fff;font-weight:800;font-size:24px;letter-spacing:.18em;text-transform:uppercase;box-shadow:0 8px 22px rgba(125,41,224,.3)}
+#__ID__ .win1,#__ID__ .win2{left:90px;top:215px;width:980px;height:740px}
+#__ID__ .pan{position:absolute;left:0;top:0;width:1440px;height:900px;transform-origin:0 0}
+#__ID__ .pan img{position:absolute;left:0;top:0;width:1440px;height:900px;max-width:none}
+#__ID__ .pan .hlbox{border-width:4px;border-radius:10px}
+#__ID__ .redact{position:absolute;background:#E4E7EC;border-radius:8px;z-index:3}
+#__ID__ .flash{position:absolute;inset:0;background:#fff;opacity:0;z-index:6}
+#__ID__ .cor{position:absolute;width:56px;height:56px;border:6px solid #FF01A2;z-index:12;opacity:0}
+#__ID__ .cor.c1{left:70px;top:195px;border-right:0;border-bottom:0;border-top-left-radius:18px}
+#__ID__ .cor.c2{left:1054px;top:195px;border-left:0;border-bottom:0;border-top-right-radius:18px}
+#__ID__ .cor.c3{left:70px;top:935px;border-right:0;border-top:0;border-bottom-left-radius:18px}
+#__ID__ .cor.c4{left:1054px;top:935px;border-left:0;border-top:0;border-bottom-right-radius:18px}
+#__ID__ .mc{position:absolute;left:1110px;width:720px;height:230px;box-sizing:border-box;border-radius:32px;background:#fff;border:1px solid var(--line);box-shadow:0 30px 70px rgba(13,19,32,.16);display:flex;align-items:center;gap:28px;padding:0 34px;overflow:hidden;opacity:0}
+#__ID__ .mc::after{content:"";position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--cc)}
+#__ID__ .mi{width:112px;height:112px;border-radius:34px;background:var(--cc);display:flex;align-items:center;justify-content:center;flex:none;box-shadow:0 14px 30px rgba(13,19,32,.2)}
+#__ID__ .mi svg{width:64px;height:64px;fill:none;stroke:#fff;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round}
+#__ID__ .mn{font-weight:800;font-size:68px;letter-spacing:-.04em;line-height:1;color:#0D1320}
+#__ID__ .md{font-weight:600;font-size:36px;line-height:1.2;color:#475467;margin-top:8px;max-width:500px}
+#__ID__ .mp{display:inline-block;margin-top:10px;font-weight:800;font-size:25px;letter-spacing:.12em;text-transform:uppercase;color:#C2007E;background:#FFE3F4;border-radius:999px;padding:6px 18px}
+#__ID__ .pl{position:absolute;left:1110px;top:215px;width:720px;height:590px;box-sizing:border-box;border-radius:36px;padding:34px 40px;opacity:0;overflow:hidden}
+#__ID__ .pl .pe{display:flex;align-items:center;gap:16px;font-weight:800;font-size:28px;letter-spacing:.16em;text-transform:uppercase;color:#7D29E0}
+#__ID__ .pl .pe i{display:flex;width:46px;height:46px;border-radius:50%;background:#7D29E0;align-items:center;justify-content:center}
+#__ID__ .pl .pe i svg{width:22px;height:22px;fill:#fff;margin-left:3px}
+#__ID__ .pl .tt{position:relative;height:124px;margin-top:10px}
+#__ID__ .pl .tt .h{font-size:108px;position:absolute;left:0;top:6px}
+#__ID__ .pl .sk{position:absolute;left:0;top:34px;width:440px;height:46px;border-radius:23px;background:linear-gradient(90deg,#EDEFF3,#F7F8FA,#EDEFF3)}
+#__ID__ .pl .rw{display:flex;align-items:center;gap:20px;height:88px;border-top:1px solid var(--line);opacity:0}
+#__ID__ .pl .rw .pc{width:54px;height:54px;border-radius:50%;background:var(--cc);display:flex;align-items:center;justify-content:center;flex:none}
+#__ID__ .pl .rw .pc svg{width:24px;height:24px;fill:#fff;margin-left:4px}
+#__ID__ .pl .rw .nm{font-weight:800;font-size:44px;letter-spacing:-.03em;width:230px}
+#__ID__ .pl .rw .bar{flex:1;height:14px;border-radius:7px;background:#EDEFF3;position:relative;overflow:hidden}
+#__ID__ .pl .rw .bar b{position:absolute;left:0;top:0;bottom:0;width:100%;background:var(--cc);transform-origin:0 50%;transform:scaleX(0);border-radius:7px}
+#__ID__ .pl .nv{position:absolute;left:40px;bottom:30px;font-weight:600;font-size:36px;color:#7D29E0;background:#F2E7FC;border:2px solid #7D29E0;border-radius:999px;padding:8px 26px;opacity:0;white-space:nowrap}
+#__ID__ .same{position:absolute;left:1110px;top:826px;width:720px;height:140px;display:flex;align-items:center;justify-content:space-between}
+#__ID__ .st{width:310px;height:132px;border-radius:30px;display:flex;flex-direction:column;justify-content:center;padding-left:32px;box-sizing:border-box;color:#fff;box-shadow:0 22px 50px rgba(13,19,32,.22);opacity:0}
+#__ID__ .st .k{font-weight:800;font-size:27px;letter-spacing:.16em;text-transform:uppercase;opacity:.92}
+#__ID__ .st .v{font-weight:800;font-size:60px;letter-spacing:-.04em;line-height:1.05}
+#__ID__ .eq{width:76px;height:76px;border-radius:50%;background:#0D1320;color:#fff;font-weight:800;font-size:54px;line-height:72px;text-align:center;opacity:0}
+#__ID__ .samelab{position:absolute;left:1110px;top:978px;width:720px;text-align:center;font-weight:800;font-size:34px;letter-spacing:.2em;text-transform:uppercase;color:#7D29E0;opacity:0}
+<!--HTML-->
+<div class="stage">
+  <div class="dotsbg"></div><div class="blob b1" data-layout-allow-overflow></div><div class="blob b2" data-layout-allow-overflow></div>
+  <div class="strip"></div>
+  <div class="meta">
+    <span class="btag">IA</span>
+    <span class="badge src">blogs.microsoft.com</span>
+    <span class="badge date">25 sep 2026</span>
+    <span class="badge week bweek">Esta semana</span>
+  </div>
+
+  <div class="world">
+    <!-- A · Copilot en tres piezas -->
+    <div class="grp ga">
+      <div class="wg1"><div class="cor c1"></div><div class="cor c2"></div><div class="cor c3"></div><div class="cor c4"></div>
+      <div class="shotwin win1">
+        <div class="sbar"><i></i><i></i><i></i><div class="url">blogs.microsoft.com</div></div>
+        <div class="view"><div class="pan" data-layout-allow-overflow>
+          <img src="assets/captures/ms-copilot.png">
+          <div class="redact" style="left:262px;top:300px;width:352px;height:30px"></div>
+          <div class="redact" style="left:928px;top:140px;width:520px;height:780px;background:#F3F3F3;border-radius:0"></div>
+          <div class="hlbox hb1"></div>
+          <div class="hlbox hw"></div>
+        </div></div>
+        <div class="flash" data-layout-allow-occlusion></div>
+      </div></div>
+      <div class="mc mc1" style="top:215px;--cc:#7D29E0"><div class="mi"><svg viewBox="0 0 44 44"><path d="M6 22 L22 8 L38 22 M10 19 V37 H18 V27 H26 V37 H34 V19"/></svg></div><div><div class="mn">Home</div><div class="md">Chat y Cowork, juntos</div></div></div>
+      <div class="mc mc2" style="top:467px;--cc:#5E3DE6"><div class="mi"><svg viewBox="0 0 44 44"><path d="M14 12 L5 22 L14 32 M30 12 L39 22 L30 32 M26 8 L18 36"/></svg></div><div><div class="mn">Code</div><div class="md">Construir soluciones, para cualquier trabajador</div></div></div>
+      <div class="mc mc3" style="top:719px;--cc:#E6008E"><div class="mi"><svg viewBox="0 0 44 44"><path d="M37 16 A15 15 0 1 0 38 27 M37 6 V16 H27"/><circle cx="22" cy="22" r="4" fill="#fff"/></svg></div><div><div class="mn">Autopilot</div><div class="md">Agente proactivo que sigue sin ti</div><span class="mp">Vista previa privada</span></div></div>
+    </div>
+
+    <!-- B · formación en AI Skills Navigator -->
+    <div class="grp gb">
+      <div class="wg2"><div class="cor c1 d1"></div><div class="cor c2 d2"></div><div class="cor c3 d3"></div><div class="cor c4 d4"></div>
+      <div class="shotwin win2">
+        <div class="sbar"><i></i><i></i><i></i><div class="url">techcommunity.microsoft.com</div></div>
+        <div class="view"><div class="pan" data-layout-allow-overflow>
+          <img src="assets/captures/ms-skills.png">
+          <div class="hlbox hb2"></div>
+        </div></div>
+      </div></div>
+      <div class="pl panel">
+        <div class="pe"><i><svg viewBox="0 0 24 24"><path d="M4 2 L22 12 L4 22 Z"/></svg></i>Lista de formación</div>
+        <div class="tt"><div class="sk"></div><div class="mask"><div class="h r">AI at <span class="acc">Work</span></div></div></div>
+        <div class="rw r1" style="--cc:#7D29E0"><div class="pc"><svg viewBox="0 0 24 24"><path d="M4 2 L22 12 L4 22 Z"/></svg></div><div class="nm">Home</div><div class="bar"><b></b></div></div>
+        <div class="rw r2" style="--cc:#5E3DE6"><div class="pc"><svg viewBox="0 0 24 24"><path d="M4 2 L22 12 L4 22 Z"/></svg></div><div class="nm">Code</div><div class="bar"><b></b></div></div>
+        <div class="rw r3" style="--cc:#E6008E"><div class="pc"><svg viewBox="0 0 24 24"><path d="M4 2 L22 12 L4 22 Z"/></svg></div><div class="nm">Autopilot</div><div class="bar"><b></b></div></div>
+        <div class="nv">en AI Skills Navigator</div>
+      </div>
+      <div class="same">
+        <div class="st s1" style="background:#7D29E0"><div class="k">Producto</div><div class="v">25 sep</div></div>
+        <div class="eq">=</div>
+        <div class="st s2" style="background:#E6008E"><div class="k">Formación</div><div class="v">25 sep</div></div>
+      </div>
+      <div class="samelab">El mismo día</div>
+    </div>
+  </div>
+</div>
+<!--JS-->
+sceneIn("whip");
+dateStrip([PREV, ...DATES], 0.3, 0.9, 0.8);
+$q(".btag").textContent = BLOCK; $q(".btag").style.background = COLOR;
+if (!WEEK) $q(".bweek").style.display = "none";
+up(".meta", 0.3, { y: -14, d: 0.6 });
+
+function panPos(w, fx, fy, s) { const v = $q(w + " .view"); return { x: v.clientWidth / 2 - fx * s, y: v.clientHeight / 2 - fy * s, scale: s }; }
+function panSet(w, fx, fy, s) { tl.set(Q(w + " .pan"), panPos(w, fx, fy, s), 0); }
+function panCam(w, fx, fy, s, at, d = 1.0, ease = "power3.inOut") { return tl.to(Q(w + " .pan"), { ...panPos(w, fx, fy, s), duration: d, ease }, at); }
+
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.03, duration: 9.8, ease: "none" }, 0);
+tl.to(Q(".blob.b1"), { x: -90, y: 50, duration: 8, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+/* ---- A · el titular y las tres piezas ---- */
+panSet(".win1", 470, 372, 1.2);
+tl.fromTo(Q(".win1"), { y: 50, rotationY: -12, transformPerspective: 1700, scale: 0.96 }, { y: 0, rotationY: 0, scale: 1, duration: 1.1, ease: E }, 0);
+[".c1", ".c2", ".c3", ".c4"].forEach((s, i) => {
+  const dx = i % 2 ? 36 : -36, dy = i < 2 ? -36 : 36;
+  tl.fromTo(Q(".wg1 " + s), { opacity: 0, x: dx, y: dy }, { opacity: 1, x: 0, y: 0, duration: 0.5, ease: E }, 0.35 + i * 0.05);
+  tl.to(Q(".wg1 " + s), { opacity: 0, duration: 0.5, ease: "power2.in" }, 1.7);
+});
+tl.fromTo(Q(".win1 .flash"), { opacity: 0 }, { opacity: 0.85, duration: 0.07, ease: "none" }, 0.78);
+tl.to(Q(".win1 .flash"), { opacity: 0, duration: 0.45, ease: "power2.out" }, 0.85);
+hl(".win1 .hb1", 146, 204, 742, 100, cue("tres"));
+tl.to(Q(".hb1"), { opacity: 0, duration: 0.3 }, cue("home") - 0.35);
+
+tl.fromTo(Q(".wg1"), { x: 330 }, { x: 0, duration: 0.95, ease: IO }, cue("home") - 0.55);
+panCam(".win1", 752, 650, 2.1, cue("home") - 0.4, 0.9);
+const TABS = [["home", [601, 620, 96, 44]], ["code", [697, 620, 98, 44]], ["autopilot", [795, 620, 114, 44]]];
+TABS.forEach(([w, r], i) => {
+  const T = cue(w);
+  if (i === 0) {
+    tl.set(Q(".hw"), { left: 0, top: 0, x: r[0], y: r[1], width: r[2], height: r[3] }, 0);
+    tl.fromTo(Q(".hw"), { opacity: 0, scale: 1.4 }, { opacity: 1, scale: 1, duration: 0.45, ease: SPR }, T);
+  } else {
+    tl.to(Q(".hw"), { x: r[0], y: r[1], width: r[2], height: r[3], duration: 0.3, ease: "power3.out" }, T);
+  }
+});
+tl.to(Q(".hw"), { opacity: 0, duration: 0.3 }, cue("autopilot") + 0.9);
+
+[["home", ".mc1"], ["code", ".mc2"], ["autopilot", ".mc3"]].forEach(([w, s]) => {
+  const T = cue(w);
+  tl.fromTo(Q(s), { x: 300, rotationY: -40, transformPerspective: 1500, opacity: 0 }, { x: 0, rotationY: 0, opacity: 1, duration: 0.75, ease: SPR }, T);
+  tl.fromTo(Q(s + " .mi"), { scale: 0.4, rotation: -30 }, { scale: 1, rotation: 0, duration: 0.65, ease: "back.out(2.6)" }, T + 0.15);
+  tl.fromTo(Q(s + " .mn"), { x: -26, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5, ease: E }, T + 0.2);
+  tl.fromTo(Q(s + " .md"), { y: 16, opacity: 0 }, { y: 0, opacity: 1, duration: 0.5, ease: E }, T + 0.32);
+});
+tl.fromTo(Q(".mp"), { scale: 0.5, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5, ease: SPR }, cue("autopilot") + 0.55);
+
+/* ---- transición: whip hacia la segunda captura ---- */
+const XO = cue("lo") - 0.34;   // ≈5.8 s
+tl.to(Q(".ga"), { x: -2000, rotationY: 14, filter: "blur(22px)", duration: 0.62, ease: "power3.in" }, XO);
+tl.fromTo(Q(".gb"), { x: 2000, filter: "blur(22px)" }, { x: 0, filter: "blur(0px)", duration: 0.8, ease: "power3.out" }, XO + 0.22);
+tl.set(Q(".gb"), { x: 2000 }, 0);
+
+/* ---- B · la lista «AI at Work» ---- */
+panSet(".win2", 430, 470, 1.3);
+[".d1", ".d2", ".d3", ".d4"].forEach((s, i) => {
+  tl.fromTo(Q(".wg2 " + s), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, XO + 0.6 + i * 0.04);
+  tl.to(Q(".wg2 " + s), { opacity: 0, duration: 0.4 }, XO + 1.5);
+});
+panCam(".win2", 490, 680, 1.6, cue("lista") - 0.55, 1.0);
+hl(".win2 .hb2", 280, 732, 500, 138, cue("lista"));
+const TL = cue("lista");
+tl.fromTo(Q(".pl"), { x: 320, rotationY: -30, transformPerspective: 1500, opacity: 0 }, { x: 0, rotationY: 0, opacity: 1, duration: 0.75, ease: SPR }, TL);
+tl.fromTo(Q(".pl .sk"), { opacity: 0.2 }, { opacity: 1, duration: 0.45, yoyo: true, repeat: 3, ease: "sine.inOut" }, TL + 0.2);
+const TF = cue("formacion");
+[".r1", ".r2", ".r3"].forEach((s, i) => {
+  tl.fromTo(Q(".pl " + s), { opacity: 0, x: 40 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, TF + i * 0.22);
+  tl.to(Q(".pl " + s + " .bar b"), { scaleX: [0.78, 0.55, 0.34][i], duration: 1.1, ease: "power3.out" }, TF + 0.3 + i * 0.22);
+});
+const TA = cue("ai");
+tl.to(Q(".pl .sk"), { opacity: 0, duration: 0.2 }, TA);
+slam(".pl .tt .h", TA);
+const TN = cue("navigator");
+tl.fromTo(Q(".pl .nv"), { opacity: 0, y: 24, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.55, ease: SPR }, TN);
+
+/* producto = formación, el mismo día */
+const TS = TN - 0.1;
+tl.fromTo(Q(".st.s1"), { x: -150, opacity: 0, rotation: -8 }, { x: 0, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(1.4)" }, TS);
+tl.fromTo(Q(".st.s2"), { x: 150, opacity: 0, rotation: 8 }, { x: 0, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(1.4)" }, TS + 0.08);
+tl.fromTo(Q(".eq"), { scale: 0, opacity: 0, rotation: -120 }, { scale: 1, opacity: 1, rotation: 0, duration: 0.55, ease: "back.out(2.4)" }, TS + 0.36);
+tl.fromTo(Q(".samelab"), { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, TS + 0.55);
+sceneOut("whip");
+<!--SFX-->
+[{"k":"shutter","t":0.78,"v":0.45},{"k":"pop","t":3.63,"v":0.4},{"k":"pop","t":4.27,"v":0.4},{"k":"pop","t":4.84,"v":0.4},{"k":"whoosh-long","t":5.7,"v":0.35},{"k":"pop","t":7.03,"v":0.4},{"k":"tick","t":7.65,"v":0.35},{"k":"impact","t":8.5,"v":0.4},{"k":"stamp","t":9.4,"v":0.5}]

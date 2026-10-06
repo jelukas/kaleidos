@@ -1,0 +1,362 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+/* KIT COMPARTIDO v2 — se inyecta en cada escena (build2.mjs). Prefijo: #s15 */
+#s15{position:absolute;inset:0;font-family:Inter,sans-serif;color:#0D1320;overflow:hidden;
+  --ink:#0D1320;--soft:#667085;--acc:#7D29E0;--pink:#FF01A2;--deep:#2F125E;--indigo:#5E3DE6;--lav:#9B61F6;
+  --bg:#FAFBFC;--lila:#F2E7FC;--line:#E4E7EC;--warn:#B54708}
+#s15 .stage{position:absolute;inset:0}
+#s15 .bg{position:absolute;inset:0}
+#s15 .bg-violet{background:linear-gradient(135deg,#7D29E0 0%,#5E3DE6 55%,#FF01A2 140%)}
+#s15 .bg-deep{background:radial-gradient(1200px 800px at 70% 20%,#4A1D96 0%,#2F125E 55%,#1A0836 100%)}
+#s15 .bg-light{background:#FAFBFC}
+#s15 .h{font-weight:800;letter-spacing:-0.04em;line-height:1.02;white-space:nowrap}
+#s15 .mask{display:block;overflow:hidden;padding:0.08em 0.04em 0.16em;margin:-0.08em -0.04em -0.16em}
+#s15 .mask>.r{display:block}
+#s15 .eye{font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:28px;color:var(--soft)}
+#s15 .acc{color:var(--acc)} #s15 .pink{color:var(--pink)} #s15 .soft{color:var(--soft)} #s15 .white{color:#fff}
+#s15 .panel{background:#fff;border:1px solid var(--line);box-shadow:0 24px 60px rgba(13,19,32,.12);border-radius:32px;box-sizing:border-box}
+#s15 .panel.dark{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);box-shadow:0 30px 80px rgba(10,0,30,.45);color:#fff;backdrop-filter:blur(8px)}
+#s15 .chip{display:inline-block;border:2px solid var(--line);border-radius:999px;padding:.32em .85em;font-weight:600;font-size:40px;line-height:1.1;background:#fff;white-space:nowrap}
+#s15 .chip.dark{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.25);color:#fff}
+#s15 .chip.acc{background:var(--lila);border-color:var(--acc);color:var(--acc)}
+/* ventana de app / navegador simulada */
+#s15 .win{position:absolute;background:#fff;border-radius:22px;box-shadow:0 40px 100px rgba(10,0,30,.35);overflow:hidden;box-sizing:border-box;border:1px solid rgba(13,19,32,.12)}
+#s15 .win.dark{background:#14091F;border-color:rgba(255,255,255,.14)}
+#s15 .win .bar{height:56px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line)}
+#s15 .win.dark .bar{background:#1E0F33;border-bottom-color:rgba(255,255,255,.1)}
+#s15 .win .bar i{display:block;width:16px;height:16px;border-radius:50%;background:#FF5F57}
+#s15 .win .bar i:nth-child(2){background:#FEBC2E} #s15 .win .bar i:nth-child(3){background:#28C840}
+#s15 .win .bar .url{margin-left:18px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;max-width:620px}
+#s15 .win.dark .bar .url{background:rgba(255,255,255,.08);color:#B9A7D6}
+/* el orbe del agente (espina del vídeo) */
+#s15 .orb{position:absolute;left:0;top:0;width:64px;height:64px;margin:-32px 0 0 -32px;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#fff 0 7%,#E2CCFF 8% 24%,#9B61F6 48%,#7D29E0 66%,#FF01A2 135%);
+  box-shadow:0 0 36px rgba(125,41,224,.7),0 0 96px rgba(255,1,162,.4);z-index:50}
+#s15 .orb::before{content:"";position:absolute;inset:-16px;border-radius:50%;border:2px solid rgba(125,41,224,.4)}
+#s15 .ripple{position:absolute;width:120px;height:120px;margin:-60px 0 0 -60px;border-radius:50%;border:4px solid var(--acc);opacity:0;z-index:49;visibility:visible}
+/* etiqueta de simulación */
+#s15 .simlabel{position:absolute;right:56px;top:44px;font-size:22px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:10px 20px;border-radius:999px;border:1.5px solid currentColor;opacity:.75;z-index:60}
+#s15 .simlabel.on-dark{color:#fff} #s15 .simlabel.on-light{color:var(--soft)}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+#s15 .shotwin{position:absolute;border-radius:22px;overflow:hidden;box-shadow:0 44px 110px rgba(13,19,32,.38);background:#fff;border:1px solid rgba(13,19,32,.14)}
+#s15 .shotwin.dark{box-shadow:0 44px 110px rgba(10,0,30,.6);border-color:rgba(255,255,255,.16)}
+#s15 .shotwin .sbar{position:absolute;left:0;right:0;top:0;height:54px;background:#F2F4F7;display:flex;align-items:center;gap:10px;padding:0 22px;border-bottom:1px solid var(--line);z-index:3}
+#s15 .shotwin .sbar i{display:block;width:15px;height:15px;border-radius:50%;background:#FF5F57}
+#s15 .shotwin .sbar i:nth-child(2){background:#FEBC2E} #s15 .shotwin .sbar i:nth-child(3){background:#28C840}
+#s15 .shotwin .sbar .url{margin-left:16px;flex:1;height:30px;border-radius:15px;background:#fff;font-size:20px;color:var(--soft);display:flex;align-items:center;padding:0 16px;white-space:nowrap;overflow:hidden}
+#s15 .shotwin .view{position:absolute;left:0;right:0;top:54px;bottom:0;overflow:hidden;background:#fff}
+#s15 .shotwin .view img{position:absolute;left:0;top:0;display:block;transform-origin:0 0;max-width:none}
+#s15 .hlbox{position:absolute;border:5px solid var(--pink);border-radius:14px;opacity:0;z-index:4;box-shadow:0 0 0 6px rgba(255,1,162,.18),0 0 40px rgba(255,1,162,.45)}
+#s15 .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 22px;border-radius:999px;font-weight:700;font-size:24px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap}
+#s15 .badge.week{background:var(--pink);color:#fff}
+#s15 .badge.date{background:var(--lila);color:var(--acc)}
+#s15 .badge.src{background:rgba(13,19,32,.07);color:#475467;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s15 .badge.dk{background:rgba(255,255,255,.14);color:#fff}
+#s15 .badge.srcdk{background:rgba(255,255,255,.12);color:#E2CCFF;letter-spacing:.04em;text-transform:none;font-weight:600;font-size:22px}
+#s15 .tag{font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:26px}
+/* tira de calendario (1 sep → 2 oct) */
+#s15 .strip{position:absolute;left:100px;right:100px;top:36px;height:84px;z-index:20}
+#s15 .strip .rail{position:absolute;left:0;right:0;top:34px;height:4px;border-radius:2px;background:var(--rail,rgba(13,19,32,.14))}
+#s15 .strip .fill{position:absolute;left:0;top:34px;height:4px;border-radius:2px;background:linear-gradient(90deg,#7D29E0,#FF01A2);width:0}
+#s15 .strip .tk{position:absolute;top:28px;width:2px;height:16px;background:var(--tick,rgba(13,19,32,.25));margin-left:-1px}
+#s15 .strip .tk.m{height:26px;top:23px}
+#s15 .strip .wk{position:absolute;top:20px;height:32px;border-radius:16px;background:rgba(255,1,162,.12);border:2px solid rgba(255,1,162,.55)}
+#s15 .strip .lb{position:absolute;top:-4px;font-weight:700;font-size:18px;letter-spacing:.16em;text-transform:uppercase;color:var(--lbl,#475467);transform:translateX(-50%);white-space:nowrap}
+#s15 .strip .mk{position:absolute;top:21px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0 12%,#C9A6FF 14%,#7D29E0 60%,#FF01A2 140%);box-shadow:0 0 0 6px rgba(125,41,224,.25),0 0 28px rgba(255,1,162,.55)}
+#s15 .strip .dt{position:absolute;top:50px;transform:translateX(-50%);font-weight:800;font-size:26px;color:var(--ink);white-space:nowrap;letter-spacing:-0.01em}
+#s15 .strip.dk{--rail:rgba(255,255,255,.2);--tick:rgba(255,255,255,.35);--lbl:#E4D8F8}
+#s15 .strip.dk .dt{color:#fff}
+
+#s15 .strip .lb.wkl{color:#C4007E}
+#s15 .strip.dk .lb.wkl{color:#FF9AD8}
+
+#s15 .world{position:absolute;inset:0}
+#s15 .strip .lb{color:#344054}
+#s15 .strip .lb[style*="color"]{color:#B0006F !important}
+#s15 .meta{position:absolute;left:100px;top:136px;display:flex;gap:14px;align-items:center;z-index:30}
+#s15 .blk{display:inline-flex;padding:10px 24px;border-radius:999px;color:#fff;font-size:24px;letter-spacing:.16em}
+#s15 .field{position:absolute;border-radius:50%;filter:blur(70px)}
+#s15 .wA{left:80px;top:205px;width:900px;height:550px;z-index:3}
+#s15 .wB{left:330px;top:586px;width:800px;height:450px;z-index:4}
+#s15 .vfade{position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(180deg,rgba(255,255,255,0),#fff);z-index:2}
+#s15 .hlbox{z-index:6}
+#s15 .stamp{position:absolute;left:880px;top:168px;width:196px;height:196px;border-radius:50%;border:7px double #7D29E0;color:#7D29E0;background:rgba(255,255,255,.88);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:12;box-shadow:0 12px 30px rgba(125,41,224,.25)}
+#s15 .stamp b{font-size:68px;font-weight:800;letter-spacing:-0.03em;line-height:1}
+#s15 .stamp span{font-size:24px;font-weight:700;letter-spacing:.12em;margin-top:6px;color:#5E3DE6}
+#s15 .rcol{position:absolute;left:1180px;top:0;width:680px;height:1080px}
+#s15 .ph1{position:absolute;left:0;top:0;width:1920px;height:1080px}
+#s15 .hBOE{position:absolute;left:1180px;top:196px;font-size:230px;color:#0D1320}
+#s15 .hdate{position:absolute;left:1186px;top:452px;font-size:42px;font-weight:600;color:#475467;white-space:nowrap}
+#s15 .h2{position:absolute;left:1180px;top:520px;display:flex;align-items:baseline;gap:22px;white-space:nowrap}
+#s15 .h2 .n{font-size:300px;font-weight:800;letter-spacing:-0.05em;color:#7D29E0;line-height:1}
+#s15 .h2 .t{font-size:64px;font-weight:800;letter-spacing:-0.03em;color:#0D1320}
+#s15 .chips1{position:absolute;left:1186px;top:850px;display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+#s15 .mychip{font-size:36px}
+#s15 .tile{position:absolute;left:1180px;white-space:nowrap}
+#s15 .tile .n{font-size:228px;font-weight:800;letter-spacing:-0.05em;color:#0D1320;line-height:1;font-feature-settings:"tnum"}
+#s15 .tile .u{font-size:92px;font-weight:800;color:#7D29E0;letter-spacing:-0.03em;margin-left:12px}
+#s15 .tile .row{display:flex;align-items:baseline}
+#s15 .tile .lab{font-size:36px;font-weight:600;color:#475467;margin-top:34px;margin-left:8px}
+#s15 .t1{top:190px} #s15 .t2{top:548px}
+#s15 .sum{position:absolute;left:1180px;top:292px;white-space:nowrap}
+#s15 .sum .n{font-size:250px;font-weight:800;letter-spacing:-0.05em;color:#7D29E0;line-height:1;font-feature-settings:"tnum"}
+#s15 .sum .u{font-size:96px;font-weight:800;color:#0D1320;letter-spacing:-0.03em;margin-left:12px}
+#s15 .sum .row{display:flex;align-items:baseline}
+#s15 .sumchip{position:absolute;left:1186px;top:210px;background:#FF01A2;color:#fff;font-size:34px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;padding:8px 26px;border-radius:999px}
+#s15 .sumsub{position:absolute;left:1190px;top:570px;font-size:36px;font-weight:600;color:#475467;white-space:nowrap}
+#s15 .chrono{position:absolute;left:1180px;top:700px;width:680px;height:320px}
+#s15 .chrono svg{position:absolute;left:0;top:30px}
+#s15 .chrono .cn{position:absolute;left:0;top:30px;width:240px;height:240px;display:flex;align-items:center;justify-content:center;font-size:130px;font-weight:800;color:#0D1320;letter-spacing:-0.04em;font-feature-settings:"tnum"}
+#s15 .chrono .ct{position:absolute;left:272px;top:48px;width:420px}
+#s15 .chrono .ct .a{font-size:46px;font-weight:800;letter-spacing:-0.02em;color:#0D1320;line-height:1.1}
+#s15 .chrono .ct .b{font-size:32px;font-weight:600;color:#475467;line-height:1.25;margin-top:12px}</style>
+<div data-hf-id="hf-q05j" id="s15" data-composition-id="s15" data-width="1920" data-height="1080">
+<div data-hf-id="hf-tan6" class="stage">
+  <div data-hf-id="hf-qf5x" class="field" style="left:1080px;top:-160px;width:900px;height:700px;background:rgba(125,41,224,.14)"></div>
+  <div data-hf-id="hf-pycv" class="field" style="left:-200px;top:600px;width:800px;height:600px;background:rgba(255,1,162,.08)"></div>
+  <div data-hf-id="hf-0u8q" class="strip"></div>
+  <div data-hf-id="hf-puvz" class="meta">
+    <span data-hf-id="hf-ubyq" class="tag blk"></span>
+    <span data-hf-id="hf-i3v4" class="badge week">Esta semana</span>
+    <span data-hf-id="hf-httl" class="badge date">30 sep 2026</span>
+    <span data-hf-id="hf-0fr4" class="badge src">boe.es</span>
+  </div>
+
+  <div data-hf-id="hf-n1vw" class="world">
+    <div data-hf-id="hf-nvce" class="shotwin wA">
+      <div data-hf-id="hf-7ma2" class="sbar"><i data-hf-id="hf-wt6k"></i><i data-hf-id="hf-zeb8"></i><i data-hf-id="hf-y7e5"></i><div data-hf-id="hf-mjr4" class="url">boe.es · BOE-B-2026-31649</div></div>
+      <div data-hf-id="hf-z18r" class="view"><img data-hf-id="hf-heu7" data-layout-allow-overflow="" src="assets/captures/boe-35.png"></div>
+      <div data-hf-id="hf-c2b0" class="vfade"></div>
+      <div data-hf-id="hf-2c64" class="hlbox hA"></div>
+    </div>
+    <div data-hf-id="hf-jx8d" class="shotwin wB">
+      <div data-hf-id="hf-6oge" class="sbar"><i data-hf-id="hf-ylp6"></i><i data-hf-id="hf-0l8b"></i><i data-hf-id="hf-0zjc"></i><div data-hf-id="hf-izy4" class="url">boe.es · BOE-B-2026-31652</div></div>
+      <div data-hf-id="hf-2kx7" class="view"><img data-hf-id="hf-jqi2" data-layout-allow-overflow="" src="assets/captures/boe-467.png"></div>
+      <div data-hf-id="hf-ge9w" class="vfade"></div>
+      <div data-hf-id="hf-b01z" class="hlbox hB"></div>
+      <div data-hf-id="hf-18of" class="hlbox hB2"></div>
+    </div>
+    <div data-hf-id="hf-ivv9" class="stamp"><b data-hf-id="hf-dosh">BOE</b><span data-hf-id="hf-2j1j">30·09·2026</span></div>
+
+    <div data-hf-id="hf-p0jd" class="ph1">
+      <div data-hf-id="hf-h2k6" class="hBOE"><div data-hf-id="hf-dolc" class="mask"><div data-hf-id="hf-s6ls" class="r h">BOE</div></div></div>
+      <div data-hf-id="hf-lm3k" class="hdate">núm. 241 · 30 sep 2026</div>
+      <div data-hf-id="hf-x836" class="h2"><span data-hf-id="hf-dpmz" class="n">0</span><span data-hf-id="hf-wepi" class="t">convocatorias</span></div>
+      <div data-hf-id="hf-c7zm" class="chips1">
+        <span data-hf-id="hf-kbsp" class="chip acc mychip p1">Formación Profesional</span>
+        <span data-hf-id="hf-lpus" class="chip mychip p2">A entidades de formación</span>
+      </div>
+    </div>
+
+    <div data-hf-id="hf-xjeh" class="tile t1"><div data-hf-id="hf-thy4" class="row"><span data-hf-id="hf-ztyj" class="n">0</span><span data-hf-id="hf-bhhv" class="u">M€</span></div><div data-hf-id="hf-ieft" class="lab">Oficios y desempeños estratégicos</div></div>
+    <div data-hf-id="hf-1hii" class="tile t2"><div data-hf-id="hf-lt04" class="row"><span data-hf-id="hf-zfni" class="n">0</span><span data-hf-id="hf-5gab" class="u">M€</span></div><div data-hf-id="hf-kwyy" class="lab">Sectores de alta demanda</div></div>
+
+    <div data-hf-id="hf-e9xp" class="sumchip sc">Suma</div>
+    <div data-hf-id="hf-dryj" class="sum sm"><div data-hf-id="hf-km31" class="row"><span data-hf-id="hf-z1ch" class="n">0</span><span data-hf-id="hf-51za" class="u">M€</span></div></div>
+    <div data-hf-id="hf-ip6j" class="sumsub ss">35 + 46,7 · dos convocatorias</div>
+
+    <div data-hf-id="hf-6nl2" class="chrono ch">
+      <svg data-hf-id="hf-be6q" width="240" height="240" viewBox="0 0 240 240">
+        <circle data-hf-id="hf-wqie" cx="120" cy="120" r="102" fill="#fff" stroke="#E4E7EC" stroke-width="16" />
+        <circle data-hf-id="hf-rp03" class="arc" cx="120" cy="120" r="102" fill="none" stroke="#7D29E0" stroke-width="16" stroke-linecap="round" transform="rotate(-90 120 120)" stroke-dasharray="641 641" stroke-dashoffset="0" />
+      </svg>
+      <div data-hf-id="hf-6zkf" class="cn"><span data-hf-id="hf-ylp7" class="cv">10</span></div>
+      <div data-hf-id="hf-7nqt" class="ct"><div data-hf-id="hf-rair" class="a">días naturales</div><div data-hf-id="hf-msg6" class="b">de plazo desde el día siguiente a la publicación del extracto</div></div>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+/* KIT COMPARTIDO v2 (JS) — dentro del <script> de cada escena. Disponibles: ID, DUR, CUES, BEATS, tl y los helpers. */
+const ID = "s15";
+const DUR = 9.2;
+const CUES = {"words":[{"t":"Y","s":0.43,"e":0.47},{"t":"el","s":0.47,"e":0.6},{"t":"BOE","s":0.6,"e":0.79},{"t":"del","s":0.79,"e":0.99},{"t":"treinta","s":0.99,"e":1.41},{"t":"publica","s":1.41,"e":1.9},{"t":"dos","s":1.9,"e":2.06},{"t":"convocatorias","s":2.06,"e":3.04},{"t":"de","s":3.04,"e":3.14},{"t":"Formación","s":3.14,"e":3.59},{"t":"Profesional:","s":3.59,"e":4.8},{"t":"treinta","s":4.8,"e":5.24},{"t":"y","s":5.24,"e":5.31},{"t":"cinco","s":5.31,"e":5.56},{"t":"y","s":5.56,"e":5.61},{"t":"cuarenta","s":5.61,"e":6.01},{"t":"y","s":6.01,"e":6.06},{"t":"seis","s":6.06,"e":6.26},{"t":"coma","s":6.26,"e":6.46},{"t":"siete","s":6.46,"e":6.71},{"t":"millones","s":6.71,"e":7.74},{"t":"de","s":7.74,"e":7.86},{"t":"euros.","s":7.86,"e":8.28}],"voiceStart":0.4};      // { words:[{t,s,e}], voiceStart } — tiempos relativos a la escena (s). Vacío si el plano no lleva voz
+const BEATS = [0.11,0.61,1.11,1.61,2.11,2.61,3.11,3.61,4.11,4.61,5.11,5.61,6.11,6.61,7.11,7.61,8.11,8.61,9.11];
+const DATES = ["2026-09-30"], PREV = "2026-09-29", BLOCK = "España y UE", COLOR = "#5E3DE6", WEEK = true;   // fechas de la(s) noticia(s) de la escena, fecha anterior, bloque, color del bloque, si es de esta semana    // pulsos de la música (110 BPM) relativos a la escena (s), solo los que caen dentro
+const tl = gsap.timeline({ paused: true });
+const E = "expo.out", SPR = "back.out(1.7)", SOFTSPR = "back.out(1.2)", IO = "power3.inOut";
+const Q = (s) => "#" + ID + " " + s;
+const $q = (s) => document.querySelector(Q(s));
+const $$q = (s) => [...document.querySelectorAll(Q(s))];
+const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9ñ]/g, "");
+/* tiempo de inicio de una palabra de la locución: cue("texto") | cue("el", 1) (n-ésima coincidencia por prefijo) | cue(7) por índice */
+function cue(w, nth = 0) {
+  if (typeof w === "number") return CUES.words[w].s;
+  const hits = CUES.words.filter((x) => norm(x.t).startsWith(norm(w)));
+  if (!hits[nth]) throw new Error("cue no encontrado: " + w + " #" + nth);
+  return Math.max(0, hits[nth].s - 0.05);
+}
+/* siguiente pulso de la música a partir de t (para clavar golpes al ritmo) */
+function beat(t) { const b = BEATS.find((x) => x >= t - 0.02); return b === undefined ? t : b; }
+
+/* ---- entradas de texto y elementos ---- */
+function rise(sel, at, d = 1.0) { return tl.fromTo(Q(sel), { yPercent: 110 }, { yPercent: 0, duration: d, ease: E }, at); }   // titular dentro de .mask>.r
+function up(sel, at, o = {}) { return tl.fromTo(Q(sel), { opacity: 0, y: o.y ?? 28 }, { opacity: o.to ?? 1, y: 0, duration: o.d ?? 0.8, ease: o.ease ?? E }, at); }
+function pop(sel, at, d = 0.6) { return tl.fromTo(Q(sel), { opacity: 0, scale: 0.55 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at); }
+function fade(sel, at, d = 0.4, to = 1) { return tl.fromTo(Q(sel), { opacity: 0 }, { opacity: to, duration: d, ease: "power2.out" }, at); }
+/* golpe: escala grande + desenfoque que aterriza con sacudida */
+function slam(sel, at) {
+  tl.fromTo(Q(sel), { opacity: 0, scale: 1.7, filter: "blur(26px)" }, { opacity: 1, scale: 1, filter: "blur(0px)", duration: 0.42, ease: "power4.out" }, at);
+  tl.fromTo(Q(sel), { x: 0 }, { x: 14, duration: 0.045, repeat: 7, yoyo: true, ease: "none" }, at + 0.38);
+  tl.set(Q(sel), { x: 0 }, at + 0.74);
+}
+/* texto que se escribe carácter a carácter en el elemento sel; devuelve la duración */
+function typeText(sel, text, at, cps = 30) {
+  const el = $q(sel), o = { n: 0 };
+  el.textContent = "";
+  tl.to(o, { n: text.length, duration: text.length / cps, ease: "none", onUpdate: () => { el.textContent = text.slice(0, Math.round(o.n)); } }, at);
+  return text.length / cps;
+}
+/* contador numérico 0→valor en sel */
+function count(sel, to, at, d = 1.2, fmt = (v) => String(Math.round(v))) {
+  const el = $q(sel), o = { v: 0 };
+  tl.to(o, { v: to, duration: d, ease: "power3.out", onUpdate: () => { el.textContent = fmt(o.v); } }, at);
+}
+/* ---- el orbe del agente ---- */
+function orbSet(x, y, at = 0) { tl.set(Q(".orb"), { x, y }, at); }
+function orbTo(x, y, at, d = 0.7, ease = IO) { return tl.to(Q(".orb"), { x, y, duration: d, ease }, at); }
+function orbSquash(at) {   // estira y encoge con humor (al terminar una tarea)
+  tl.to(Q(".orb"), { scaleX: 1.35, scaleY: 0.72, duration: 0.11, ease: "power2.out" }, at);
+  tl.to(Q(".orb"), { scaleX: 0.85, scaleY: 1.2, duration: 0.14, ease: "power2.inOut" }, at + 0.11);
+  tl.to(Q(".orb"), { scaleX: 1, scaleY: 1, duration: 0.35, ease: "elastic.out(1,0.5)" }, at + 0.25);
+}
+function orbPulse(at, d = 0.5) { tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 1.3, duration: d / 2, yoyo: true, repeat: 1, ease: "sine.inOut" }, at); }
+/* clic: anillo que se expande en (x,y). Requiere <div class="ripple"> en el HTML (uno por clic: .ripple.r1, .r2…) */
+function clickAt(sel, x, y, at) {
+  tl.set(Q(sel), { x, y, opacity: 0 }, 0);
+  tl.fromTo(Q(sel), { opacity: 0.9, scale: 0.2 }, { opacity: 0, scale: 2.2, duration: 0.6, ease: "power2.out" }, at);
+  tl.fromTo(Q(".orb"), { scale: 1 }, { scale: 0.8, duration: 0.07, yoyo: true, repeat: 1, ease: "power1.inOut" }, at - 0.02);
+}
+/* ---- entrada / salida de escena sobre .stage ---- */
+function sceneIn(kind = "fade") {
+  if (kind === "cut") return;
+  if (kind === "whip") tl.fromTo(Q(".stage"), { x: 260, opacity: 0, filter: "blur(22px)" }, { x: 0, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else if (kind === "zoom") tl.fromTo(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)" }, { scale: 1, opacity: 1, filter: "blur(0px)", duration: 0.5, ease: "power3.out" }, 0);
+  else tl.fromTo(Q(".stage"), { opacity: 0 }, { opacity: 1, duration: 0.4, ease: "power2.out" }, 0);
+}
+function sceneOut(kind = "fade") {
+  const t = DUR - 0.42;
+  if (kind === "cut") return;
+  if (kind === "whip") tl.to(Q(".stage"), { x: -260, opacity: 0, filter: "blur(22px)", duration: 0.42, ease: "power3.in" }, t);
+  else if (kind === "zoom") tl.to(Q(".stage"), { scale: 1.12, opacity: 0, filter: "blur(16px)", duration: 0.42, ease: "power3.in" }, t);
+  else tl.to(Q(".stage"), { opacity: 0, duration: 0.4, ease: "power2.inOut" }, t);
+}
+
+/* ---------- NOTICIAS (kit v3) ---------- */
+const MES = ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"];
+/* índice de día desde el 1-sep-2026 (0) hasta el 2-oct-2026 (31) */
+function dayIndex(iso) { const [y, m, d] = iso.split("-").map(Number); return Math.round((Date.UTC(y, m - 1, d) - Date.UTC(2026, 8, 1)) / 86400000); }
+function dayLabel(i) { const t = new Date(Date.UTC(2026, 8, 1) + Math.round(i) * 86400000); return t.getUTCDate() + " " + MES[t.getUTCMonth()]; }
+/* tira de calendario dentro de <div class="strip [dk]"></div> (vacío en el HTML).
+   dateStrip([PREV, ...DATES], at, d, gap): el marcador viaja por las fechas en orden (AAAA-MM-DD), `d` s por tramo y `gap` s entre tramos.
+   La semana del 28 sep al 2 oct queda resaltada. */
+function dateStrip(path, at = 0.2, d = 0.9, gap = 1.0) {
+  const host = $q(".strip"), W = 1720, N = 31, X = (i) => (i / N) * W;
+  let h = '<div class="rail"></div><div class="fill"></div>';
+  for (let i = 0; i <= N; i++) h += '<div class="tk' + (i === 0 || i === 30 || i === 31 || i % 7 === 0 ? " m" : "") + '" style="left:' + X(i) + 'px"></div>';
+  h += '<div class="wk" style="left:' + (X(27) - 8) + 'px;width:' + (X(31) - X(27) + 16) + 'px"></div>';
+  h += '<div class="lb" style="left:' + X(0) + 'px">1 sep</div><div class="lb" style="left:' + X(15) + 'px">sep 2026</div><div class="lb wkl" style="left:' + X(29) + 'px">Esta semana</div>';
+  h += '<div class="mk"></div><div class="dt"></div>';
+  host.innerHTML = h;
+  const mk = host.querySelector(".mk"), dt = host.querySelector(".dt"), fl = host.querySelector(".fill");
+  const idx = path.map(dayIndex), o = { v: idx[0] };
+  const draw = () => { const x = X(o.v); mk.style.left = x + "px"; dt.style.left = Math.min(Math.max(x, 60), W - 60) + "px"; dt.textContent = dayLabel(o.v); fl.style.width = x + "px"; };
+  draw();
+  for (let k = 1; k < idx.length; k++) tl.to(o, { v: idx[k], duration: d, ease: "power3.inOut", onUpdate: draw }, at + (k - 1) * (d + gap));
+  tl.fromTo(host, { opacity: 0, y: -16 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, 0);
+}
+/* ventana de captura: <div class="shotwin" style="left:..;top:..;width:..;height:.."><div class="sbar"><i></i><i></i><i></i><div class="url">dominio.com</div></div><div class="view"><img src="assets/captures/x.png"></div></div>
+   shotView(sel, natW, natH, fx, fy, s): coloca la imagen (ancho natW px) con el punto (fx,fy) de la imagen en el centro de la vista a escala s */
+function shotPos(sel, natW, natH, fx, fy, s) {
+  const win = $q(sel + " .view"), W = win.clientWidth || parseFloat(getComputedStyle(win).width), H = win.clientHeight || parseFloat(getComputedStyle(win).height);
+  return { x: W / 2 - fx * s, y: H / 2 - fy * s, scale: s };
+}
+function shotSet(sel, natW, natH, fx, fy, s) { const p = shotPos(sel, natW, natH, fx, fy, s); tl.set(Q(sel + " .view img"), { width: natW, ...p }, 0); }
+function shotCam(sel, natW, natH, fx, fy, s, at, d = 1.2, ease = "power3.inOut") { const p = shotPos(sel, natW, natH, fx, fy, s); return tl.to(Q(sel + " .view img"), { ...p, duration: d, ease }, at); }
+/* caja de resaltado en coordenadas de la vista de la ventana (sel = ventana): hl(".w1", x, y, w, h, at) */
+function hl(box, x, y, w, h, at, d = 0.5) {
+  tl.set(Q(box), { left: x, top: y, width: w, height: h }, 0);
+  tl.fromTo(Q(box), { opacity: 0, scale: 1.25 }, { opacity: 1, scale: 1, duration: d, ease: SPR }, at);
+}
+
+$q(".blk").style.background = COLOR; $q(".blk").textContent = BLOCK;
+function hlAt(box, win, fx, fy, fw, fh, cx, cy, s, at, d) {
+  const v = $q(win + " .view"); const W = v.clientWidth, H = v.clientHeight;
+  hl(box, W / 2 - cx * s + fx * s, 54 + H / 2 - cy * s + fy * s, fw * s, fh * s, at, d);
+}
+const comma = (dec) => (v) => v.toFixed(dec).replace(".", ",");
+
+sceneIn("whip");
+dateStrip([PREV, "2026-09-30"], 0.5, 1.0, 0);
+tl.fromTo(Q(".meta"), { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, 0.35);
+tl.fromTo(Q(".field"), { scale: 0.9 }, { scale: 1.12, duration: DUR, ease: "sine.inOut" }, 0);
+tl.fromTo(Q(".world"), { scale: 1 }, { scale: 1.03, duration: DUR - 0.4, ease: "none" }, 0.2);
+
+/* ---- hoja A (35 M€) ---- */
+tl.fromTo(Q(".wA"), { x: -240, y: 40, opacity: 0, rotation: -9, scale: 0.92 }, { x: 0, y: 0, opacity: 1, rotation: -2.5, scale: 1, duration: 0.85, ease: E }, 0.05);
+shotSet(".wA", 1440, 900, 717, 300, 0.9);
+/* sello BOE */
+tl.fromTo(Q(".stamp"), { opacity: 0, scale: 2.4, rotation: -30 }, { opacity: 1, scale: 1, rotation: -13, duration: 0.35, ease: "power4.in" }, cue("treinta") - 0.05);
+tl.fromTo(Q(".stamp"), { y: 0 }, { y: 7, duration: 0.05, repeat: 5, yoyo: true, ease: "none" }, cue("treinta") + 0.3);
+tl.set(Q(".stamp"), { y: 0 }, cue("treinta") + 0.62);
+shotCam(".wA", 1440, 900, 780, 292, 1.45, 1.3, 0.9);
+tl.to(Q(".wA"), { scale: 0.88, x: -20, y: -8, rotation: -3.5, duration: 0.8, ease: "power3.inOut" }, cue("dos") - 0.1);
+hlAt(".hA", ".wA", 563, 277, 392, 30, 780, 292, 1.45, 2.2, 0.45);
+
+/* ---- hoja B (46,7 M€) ---- */
+tl.fromTo(Q(".wB"), { x: 340, y: 120, opacity: 0, rotation: 10, scale: 0.92 }, { x: 0, y: 0, opacity: 1, rotation: 2.2, scale: 1, duration: 0.85, ease: E }, cue("dos") + 0.1);
+shotSet(".wB", 1440, 900, 717, 300, 0.9);
+shotCam(".wB", 1440, 900, 580, 300, 1.3, cue("de", 1), 0.9);
+hlAt(".hB", ".wB", 563, 277, 312, 30, 580, 300, 1.3, cue("formaci") + 0.55, 0.45);
+hlAt(".hB2", ".wB", 268, 304, 520, 28, 580, 300, 1.3, cue("formaci") + 0.95, 0.45);
+
+/* ---- fase 1: BOE · 2 convocatorias ---- */
+tl.fromTo(Q(".hBOE .r"), { yPercent: 110 }, { yPercent: 0, duration: 0.9, ease: E }, 0.15);
+tl.fromTo(Q(".hBOE"), { scale: 1.12 }, { scale: 1, duration: 0.45, ease: "power4.out" }, cue("BOE") - 0.1);
+up(".hdate", 0.55, { d: 0.6 });
+tl.fromTo(Q(".h2"), { opacity: 0, scale: 0.6, y: 40 }, { opacity: 1, scale: 1, y: 0, duration: 0.6, ease: SPR }, cue("dos"));
+count(".h2 .n", 2, cue("dos"), 0.35);
+pop(".p1", cue("formaci"), 0.5); pop(".p2", cue("formaci") + 0.35, 0.5);
+tl.to(Q(".ph1"), { y: -60, opacity: 0, duration: 0.35, ease: "power3.in" }, 4.3);
+
+/* ---- fase 2: cifras ---- */
+const T35 = cue("treinta", 1), T467 = cue("cuarenta");
+tl.fromTo(Q(".t1"), { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, T35 - 0.1);
+count(".t1 .n", 35, T35, 0.9);
+tl.fromTo(Q(".t2"), { opacity: 0, x: 120 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, T467 - 0.1);
+count(".t2 .n", 46.7, T467, 1.0, comma(1));
+tl.fromTo(Q(".hA"), { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, T35 + 0.1);
+tl.fromTo(Q(".hB"), { scale: 1 }, { scale: 1.12, duration: 0.25, yoyo: true, repeat: 1, ease: "power2.out" }, T467 + 0.1);
+
+/* fusión en 81,7 */
+const TS = cue("millones");
+tl.to(Q(".t1"), { y: 130, scale: 0.7, opacity: 0, duration: 0.45, ease: "power3.in" }, TS - 0.1);
+tl.to(Q(".t2"), { y: -150, scale: 0.7, opacity: 0, duration: 0.45, ease: "power3.in" }, TS - 0.1);
+tl.to(Q(".wA"), { opacity: 0.35, duration: 0.5 }, TS); tl.to(Q(".wB"), { opacity: 0.35, duration: 0.5 }, TS);
+tl.to(Q(".stamp"), { opacity: 0.35, duration: 0.5 }, TS);
+tl.fromTo(Q(".sm"), { opacity: 0, scale: 0.5 }, { opacity: 1, scale: 1, duration: 0.55, ease: SPR }, TS + 0.2);
+count(".sm .n", 81.7, TS + 0.2, 0.8, comma(1));
+tl.fromTo(Q(".sc"), { opacity: 0, y: -20, scale: 0.7 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: SPR }, TS + 0.35);
+up(".ss", TS + 0.6, { d: 0.5 });
+
+/* cronómetro: 10 días naturales */
+const TC = TS + 0.5;
+tl.fromTo(Q(".ch"), { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, TC);
+const cd = { v: 0 }, cvEl = $q(".cv"), arc = $q(".arc");
+cvEl.textContent = "0"; arc.style.strokeDashoffset = "641";
+tl.to(cd, { v: 10, duration: 1.2, ease: "none", onUpdate: () => { cvEl.textContent = String(Math.round(cd.v)); arc.style.strokeDashoffset = String(641 * (1 - cd.v / 10)); } }, TC + 0.25);
+tl.fromTo(Q(".cn"), { scale: 1 }, { scale: 1.08, duration: 0.18, yoyo: true, repeat: 1, ease: "power2.out" }, TC + 1.5);
+sceneOut("whip");
+window.__timelines["s15"] = tl;
+</script>
+</template>

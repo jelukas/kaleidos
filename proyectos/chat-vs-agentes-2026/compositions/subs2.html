@@ -1,0 +1,165 @@
+<template>
+<style>/* fuentes:inicio · generado con _esquema/fontface.mjs */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-ext-600-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-ext-800-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:800;font-display:block;src:url("assets/fonts/inter-latin-800-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-ext-400-normal.woff2")format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:block;src:url("assets/fonts/jetbrains-mono-latin-400-normal.woff2")format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+/* fuentes:fin */
+#subs2{position:absolute;inset:0;font-family:Inter,sans-serif}
+#subs2 .cap{position:absolute;left:200px;right:200px;bottom:58px;text-align:center;font-size:46px;font-weight:600;line-height:1.25;letter-spacing:-0.01em;opacity:0}
+#subs2 .w{display:inline-block;color:#0D1320;opacity:.5}
+#subs2 .cap.dk .w{color:#fff;opacity:.55;text-shadow:0 2px 18px rgba(20,0,50,.6)}</style>
+<div id="subs2" data-composition-id="subs2" data-width="1920" data-height="1080">
+<div class="cap" id="subs2c12"><span id="subs2w12_0" class="w">mientras</span> <span id="subs2w12_1" class="w">tú</span> <span id="subs2w12_2" class="w">haces</span> <span id="subs2w12_3" class="w">otra</span> <span id="subs2w12_4" class="w">cosa.</span></div>
+<div class="cap dk" id="subs2c13"><span id="subs2w13_0" class="w">Y</span> <span id="subs2w13_1" class="w">no</span> <span id="subs2w13_2" class="w">solo</span> <span id="subs2w13_3" class="w">escribe.</span></div>
+<div class="cap dk" id="subs2c14"><span id="subs2w14_0" class="w">Produce.</span></div>
+<div class="cap dk" id="subs2c15"><span id="subs2w15_0" class="w">Puede</span> <span id="subs2w15_1" class="w">escribir</span> <span id="subs2w15_2" class="w">el</span> <span id="subs2w15_3" class="w">código</span> <span id="subs2w15_4" class="w">de</span> <span id="subs2w15_5" class="w">un</span> <span id="subs2w15_6" class="w">vídeo,</span></div>
+<div class="cap dk" id="subs2c16"><span id="subs2w16_0" class="w">con</span> <span id="subs2w16_1" class="w">herramientas</span> <span id="subs2w16_2" class="w">como</span> <span id="subs2w16_3" class="w">Remotion</span> <span id="subs2w16_4" class="w">o</span> <span id="subs2w16_5" class="w">HyperFrames,</span></div>
+<div class="cap dk" id="subs2c17"><span id="subs2w17_0" class="w">y</span> <span id="subs2w17_1" class="w">renderizarlo.</span></div>
+<div class="cap dk" id="subs2c18"><span id="subs2w18_0" class="w">Generar</span> <span id="subs2w18_1" class="w">imágenes,</span> <span id="subs2w18_2" class="w">revisarlas,</span></div>
+<div class="cap dk" id="subs2c19"><span id="subs2w19_0" class="w">detectar</span> <span id="subs2w19_1" class="w">lo</span> <span id="subs2w19_2" class="w">que</span> <span id="subs2w19_3" class="w">falla</span> <span id="subs2w19_4" class="w">y</span> <span id="subs2w19_5" class="w">corregirlo.</span></div>
+<div class="cap dk" id="subs2c20"><span id="subs2w20_0" class="w">Montar</span> <span id="subs2w20_1" class="w">una</span> <span id="subs2w20_2" class="w">landing,</span> <span id="subs2w20_3" class="w">cortarla</span> <span id="subs2w20_4" class="w">en</span> <span id="subs2w20_5" class="w">secciones</span></div>
+<div class="cap dk" id="subs2c21"><span id="subs2w21_0" class="w">y</span> <span id="subs2w21_1" class="w">dejarla</span> <span id="subs2w21_2" class="w">lista</span> <span id="subs2w21_3" class="w">para</span> <span id="subs2w21_4" class="w">publicar.</span></div>
+<div class="cap dk" id="subs2c22"><span id="subs2w22_0" class="w">Y</span> <span id="subs2w22_1" class="w">preparar</span> <span id="subs2w22_2" class="w">presentaciones</span> <span id="subs2w22_3" class="w">que</span> <span id="subs2w22_4" class="w">entran</span> <span id="subs2w22_5" class="w">por</span></div>
+<div class="cap dk" id="subs2c23"><span id="subs2w23_0" class="w">los</span> <span id="subs2w23_1" class="w">ojos.</span></div>
+</div>
+<script>
+const tl = gsap.timeline({ paused: true });
+tl.fromTo("#subs2c12", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 29.97);
+tl.to("#subs2c12", { opacity: 0, duration: 0.16, ease: "power1.in" }, 32.07);
+tl.set("#subs2w12_0", { color: "#7D29E0", opacity: 1 }, 30.05);
+tl.set("#subs2w12_0", { color: "#0D1320" }, 30.64);
+tl.set("#subs2w12_1", { color: "#7D29E0", opacity: 1 }, 30.64);
+tl.set("#subs2w12_1", { color: "#0D1320" }, 30.75);
+tl.set("#subs2w12_2", { color: "#7D29E0", opacity: 1 }, 30.75);
+tl.set("#subs2w12_2", { color: "#0D1320" }, 31.1);
+tl.set("#subs2w12_3", { color: "#7D29E0", opacity: 1 }, 31.1);
+tl.set("#subs2w12_3", { color: "#0D1320" }, 31.42);
+tl.set("#subs2w12_4", { color: "#7D29E0", opacity: 1 }, 31.42);
+tl.set("#subs2w12_4", { color: "#0D1320" }, 31.88);
+tl.fromTo("#subs2c13", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 33.15);
+tl.to("#subs2c13", { opacity: 0, duration: 0.16, ease: "power1.in" }, 34.45);
+tl.set("#subs2w13_0", { color: "#FF8AD3", opacity: 1 }, 33.23);
+tl.set("#subs2w13_0", { color: "#FFFFFF" }, 33.28);
+tl.set("#subs2w13_1", { color: "#FF8AD3", opacity: 1 }, 33.28);
+tl.set("#subs2w13_1", { color: "#FFFFFF" }, 33.44);
+tl.set("#subs2w13_2", { color: "#FF8AD3", opacity: 1 }, 33.44);
+tl.set("#subs2w13_2", { color: "#FFFFFF" }, 33.76);
+tl.set("#subs2w13_3", { color: "#FF8AD3", opacity: 1 }, 33.76);
+tl.set("#subs2w13_3", { color: "#FFFFFF" }, 34.66);
+tl.fromTo("#subs2c14", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 34.58);
+tl.to("#subs2c14", { opacity: 0, duration: 0.16, ease: "power1.in" }, 35.25);
+tl.set("#subs2w14_0", { color: "#FF8AD3", opacity: 1 }, 34.66);
+tl.set("#subs2w14_0", { color: "#FFFFFF" }, 35.06);
+tl.fromTo("#subs2c15", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 36.57);
+tl.to("#subs2c15", { opacity: 0, duration: 0.16, ease: "power1.in" }, 38.36);
+tl.set("#subs2w15_0", { color: "#FF8AD3", opacity: 1 }, 36.65);
+tl.set("#subs2w15_0", { color: "#FFFFFF" }, 36.96);
+tl.set("#subs2w15_1", { color: "#FF8AD3", opacity: 1 }, 36.96);
+tl.set("#subs2w15_1", { color: "#FFFFFF" }, 37.42);
+tl.set("#subs2w15_2", { color: "#FF8AD3", opacity: 1 }, 37.42);
+tl.set("#subs2w15_2", { color: "#FFFFFF" }, 37.51);
+tl.set("#subs2w15_3", { color: "#FF8AD3", opacity: 1 }, 37.51);
+tl.set("#subs2w15_3", { color: "#FFFFFF" }, 37.87);
+tl.set("#subs2w15_4", { color: "#FF8AD3", opacity: 1 }, 37.87);
+tl.set("#subs2w15_4", { color: "#FFFFFF" }, 38);
+tl.set("#subs2w15_5", { color: "#FF8AD3", opacity: 1 }, 38);
+tl.set("#subs2w15_5", { color: "#FFFFFF" }, 38.12);
+tl.set("#subs2w15_6", { color: "#FF8AD3", opacity: 1 }, 38.12);
+tl.set("#subs2w15_6", { color: "#FFFFFF" }, 38.57);
+tl.fromTo("#subs2c16", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 38.49);
+tl.to("#subs2c16", { opacity: 0, duration: 0.16, ease: "power1.in" }, 41.22);
+tl.set("#subs2w16_0", { color: "#FF8AD3", opacity: 1 }, 38.57);
+tl.set("#subs2w16_0", { color: "#FFFFFF" }, 38.65);
+tl.set("#subs2w16_1", { color: "#FF8AD3", opacity: 1 }, 38.65);
+tl.set("#subs2w16_1", { color: "#FFFFFF" }, 39.3);
+tl.set("#subs2w16_2", { color: "#FF8AD3", opacity: 1 }, 39.3);
+tl.set("#subs2w16_2", { color: "#FFFFFF" }, 39.56);
+tl.set("#subs2w16_3", { color: "#FF8AD3", opacity: 1 }, 39.56);
+tl.set("#subs2w16_3", { color: "#FFFFFF" }, 40.2);
+tl.set("#subs2w16_4", { color: "#FF8AD3", opacity: 1 }, 40.2);
+tl.set("#subs2w16_4", { color: "#FFFFFF" }, 40.44);
+tl.set("#subs2w16_5", { color: "#FF8AD3", opacity: 1 }, 40.44);
+tl.set("#subs2w16_5", { color: "#FFFFFF" }, 41.43);
+tl.fromTo("#subs2c17", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 41.35);
+tl.to("#subs2c17", { opacity: 0, duration: 0.16, ease: "power1.in" }, 42.63);
+tl.set("#subs2w17_0", { color: "#FF8AD3", opacity: 1 }, 41.43);
+tl.set("#subs2w17_0", { color: "#FFFFFF" }, 41.54);
+tl.set("#subs2w17_1", { color: "#FF8AD3", opacity: 1 }, 41.54);
+tl.set("#subs2w17_1", { color: "#FFFFFF" }, 42.44);
+tl.fromTo("#subs2c18", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 45.15);
+tl.to("#subs2c18", { opacity: 0, duration: 0.16, ease: "power1.in" }, 47.36);
+tl.set("#subs2w18_0", { color: "#FF8AD3", opacity: 1 }, 45.23);
+tl.set("#subs2w18_0", { color: "#FFFFFF" }, 45.7);
+tl.set("#subs2w18_1", { color: "#FF8AD3", opacity: 1 }, 45.7);
+tl.set("#subs2w18_1", { color: "#FFFFFF" }, 46.57);
+tl.set("#subs2w18_2", { color: "#FF8AD3", opacity: 1 }, 46.57);
+tl.set("#subs2w18_2", { color: "#FFFFFF" }, 47.57);
+tl.fromTo("#subs2c19", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 47.49);
+tl.to("#subs2c19", { opacity: 0, duration: 0.16, ease: "power1.in" }, 49.85);
+tl.set("#subs2w19_0", { color: "#FF8AD3", opacity: 1 }, 47.57);
+tl.set("#subs2w19_0", { color: "#FFFFFF" }, 48.03);
+tl.set("#subs2w19_1", { color: "#FF8AD3", opacity: 1 }, 48.03);
+tl.set("#subs2w19_1", { color: "#FFFFFF" }, 48.16);
+tl.set("#subs2w19_2", { color: "#FF8AD3", opacity: 1 }, 48.16);
+tl.set("#subs2w19_2", { color: "#FFFFFF" }, 48.33);
+tl.set("#subs2w19_3", { color: "#FF8AD3", opacity: 1 }, 48.33);
+tl.set("#subs2w19_3", { color: "#FFFFFF" }, 48.73);
+tl.set("#subs2w19_4", { color: "#FF8AD3", opacity: 1 }, 48.73);
+tl.set("#subs2w19_4", { color: "#FFFFFF" }, 48.74);
+tl.set("#subs2w19_5", { color: "#FF8AD3", opacity: 1 }, 48.74);
+tl.set("#subs2w19_5", { color: "#FFFFFF" }, 49.66);
+tl.fromTo("#subs2c20", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 53.25);
+tl.to("#subs2c20", { opacity: 0, duration: 0.16, ease: "power1.in" }, 55.82);
+tl.set("#subs2w20_0", { color: "#FF8AD3", opacity: 1 }, 53.33);
+tl.set("#subs2w20_0", { color: "#FFFFFF" }, 53.78);
+tl.set("#subs2w20_1", { color: "#FF8AD3", opacity: 1 }, 53.78);
+tl.set("#subs2w20_1", { color: "#FFFFFF" }, 54.02);
+tl.set("#subs2w20_2", { color: "#FF8AD3", opacity: 1 }, 54.02);
+tl.set("#subs2w20_2", { color: "#FFFFFF" }, 54.71);
+tl.set("#subs2w20_3", { color: "#FF8AD3", opacity: 1 }, 54.71);
+tl.set("#subs2w20_3", { color: "#FFFFFF" }, 55.18);
+tl.set("#subs2w20_4", { color: "#FF8AD3", opacity: 1 }, 55.18);
+tl.set("#subs2w20_4", { color: "#FFFFFF" }, 55.32);
+tl.set("#subs2w20_5", { color: "#FF8AD3", opacity: 1 }, 55.32);
+tl.set("#subs2w20_5", { color: "#FFFFFF" }, 56.03);
+tl.fromTo("#subs2c21", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 55.95);
+tl.to("#subs2c21", { opacity: 0, duration: 0.16, ease: "power1.in" }, 58.13);
+tl.set("#subs2w21_0", { color: "#FF8AD3", opacity: 1 }, 56.03);
+tl.set("#subs2w21_0", { color: "#FFFFFF" }, 56.04);
+tl.set("#subs2w21_1", { color: "#FF8AD3", opacity: 1 }, 56.04);
+tl.set("#subs2w21_1", { color: "#FFFFFF" }, 56.57);
+tl.set("#subs2w21_2", { color: "#FF8AD3", opacity: 1 }, 56.57);
+tl.set("#subs2w21_2", { color: "#FFFFFF" }, 56.96);
+tl.set("#subs2w21_3", { color: "#FF8AD3", opacity: 1 }, 56.96);
+tl.set("#subs2w21_3", { color: "#FFFFFF" }, 57.26);
+tl.set("#subs2w21_4", { color: "#FF8AD3", opacity: 1 }, 57.26);
+tl.set("#subs2w21_4", { color: "#FFFFFF" }, 57.94);
+tl.fromTo("#subs2c22", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 61.46);
+tl.to("#subs2c22", { opacity: 0, duration: 0.16, ease: "power1.in" }, 63.39);
+tl.set("#subs2w22_0", { color: "#FF8AD3", opacity: 1 }, 61.54);
+tl.set("#subs2w22_0", { color: "#FFFFFF" }, 61.56);
+tl.set("#subs2w22_1", { color: "#FF8AD3", opacity: 1 }, 61.56);
+tl.set("#subs2w22_1", { color: "#FFFFFF" }, 62.04);
+tl.set("#subs2w22_2", { color: "#FF8AD3", opacity: 1 }, 62.04);
+tl.set("#subs2w22_2", { color: "#FFFFFF" }, 62.87);
+tl.set("#subs2w22_3", { color: "#FF8AD3", opacity: 1 }, 62.87);
+tl.set("#subs2w22_3", { color: "#FFFFFF" }, 63.06);
+tl.set("#subs2w22_4", { color: "#FF8AD3", opacity: 1 }, 63.06);
+tl.set("#subs2w22_4", { color: "#FFFFFF" }, 63.43);
+tl.set("#subs2w22_5", { color: "#FF8AD3", opacity: 1 }, 63.43);
+tl.set("#subs2w22_5", { color: "#FFFFFF" }, 63.6);
+tl.fromTo("#subs2c23", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.18, ease: "power2.out" }, 63.52);
+tl.to("#subs2c23", { opacity: 0, duration: 0.16, ease: "power1.in" }, 64.45);
+tl.set("#subs2w23_0", { color: "#FF8AD3", opacity: 1 }, 63.6);
+tl.set("#subs2w23_0", { color: "#FFFFFF" }, 63.78);
+tl.set("#subs2w23_1", { color: "#FF8AD3", opacity: 1 }, 63.78);
+tl.set("#subs2w23_1", { color: "#FFFFFF" }, 64.26);
+
+window.__timelines["subs2"] = tl;
+</script>
+</template>

@@ -1,0 +1,2614 @@
+{
+ "version": 1,
+ "fps": 25,
+ "ancho": 1920,
+ "alto": 1080,
+ "duracion": 2220,
+ "fuente": {
+  "ancho": 3840,
+  "alto": 2160,
+  "fps": 25,
+  "duracion": 2042.709
+ },
+ "recorte": true,
+ "plancha": {
+  "x": 856,
+  "y": 0,
+  "ancho": 2624,
+  "alto": 2160,
+  "escala": 0.75,
+  "mascara": "fuente",
+  "curva": "metodo"
+ },
+ "escenario": true,
+ "segmentos": [
+  {
+   "dst": 0,
+   "src": 1163.16,
+   "dur": 110
+  },
+  {
+   "dst": 110,
+   "src": 1169.04,
+   "dur": 318
+  },
+  {
+   "dst": 428,
+   "src": 1309.2,
+   "dur": 188
+  },
+  {
+   "dst": 616,
+   "src": 1319,
+   "dur": 72
+  },
+  {
+   "dst": 688,
+   "src": 1333.12,
+   "dur": 181
+  },
+  {
+   "dst": 869,
+   "src": 1342,
+   "dur": 93
+  },
+  {
+   "dst": 962,
+   "src": 1355.28,
+   "dur": 212
+  },
+  {
+   "dst": 1174,
+   "src": 1364.56,
+   "dur": 94
+  },
+  {
+   "dst": 1268,
+   "src": 1371.4,
+   "dur": 276
+  },
+  {
+   "dst": 1544,
+   "src": 1383.76,
+   "dur": 277
+  },
+  {
+   "dst": 1821,
+   "src": 1395.64,
+   "dur": 184
+  },
+  {
+   "dst": 2005,
+   "src": 1438.8,
+   "dur": 15
+  }
+ ],
+ "planos": [
+  {
+   "desde": 0,
+   "hasta": 110,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.7276,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1941,
+    500
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 110,
+   "hasta": 258,
+   "tipo": "medium",
+   "forzado": false,
+   "s": 0.76,
+   "tx": 960,
+   "ty": 372,
+   "nariz": [
+    1904,
+    499
+   ],
+   "zoom": [
+    1,
+    1.028
+   ]
+  },
+  {
+   "desde": 258,
+   "hasta": 330,
+   "tipo": "wide",
+   "forzado": true,
+   "s": 0.52,
+   "tx": 960,
+   "ty": 250,
+   "nariz": [
+    1912,
+    535
+   ],
+   "zoom": [
+    1,
+    1.019
+   ]
+  },
+  {
+   "desde": 330,
+   "hasta": 428,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1864,
+    512
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 428,
+   "hasta": 616,
+   "tipo": "popL",
+   "forzado": true,
+   "s": 0.74,
+   "tx": 640,
+   "ty": 368,
+   "nariz": [
+    2025,
+    500
+   ],
+   "zoom": [
+    1,
+    1.033
+   ]
+  },
+  {
+   "desde": 616,
+   "hasta": 688,
+   "tipo": "card",
+   "forzado": true,
+   "s": 0.54,
+   "tx": 1440,
+   "ty": 262,
+   "nariz": [
+    1962,
+    518
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 688,
+   "hasta": 869,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1960,
+    501
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 869,
+   "hasta": 962,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.7276,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    2000,
+    491
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 962,
+   "hasta": 1174,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1963,
+    498
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 1174,
+   "hasta": 1268,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.7276,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1969,
+    504
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 1268,
+   "hasta": 1544,
+   "tipo": "sideL",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 560,
+   "ty": 345,
+   "nariz": [
+    1982,
+    502
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 1544,
+   "hasta": 1821,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.68,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1957,
+    505
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 1821,
+   "hasta": 2005,
+   "tipo": "sideR",
+   "forzado": true,
+   "s": 0.7276,
+   "tx": 1360,
+   "ty": 345,
+   "nariz": [
+    1944,
+    513
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  },
+  {
+   "desde": 2005,
+   "hasta": 2220,
+   "tipo": "card",
+   "forzado": true,
+   "s": 0.54,
+   "tx": 1440,
+   "ty": 262,
+   "nariz": [
+    1996,
+    512
+   ],
+   "zoom": [
+    1,
+    1.01
+   ]
+  }
+ ],
+ "capitulos": [
+  {
+   "desde": 175,
+   "hasta": 624,
+   "rotuloHasta": 250,
+   "n": 1,
+   "sigla": "P",
+   "titulo": "Contener con protocolo",
+   "kicker": "Paso 1",
+   "subtitulo": "La contención forma parte del protocolo",
+   "acento": 0
+  },
+  {
+   "desde": 624,
+   "hasta": 1540,
+   "rotuloHasta": 700,
+   "n": 2,
+   "sigla": "T",
+   "titulo": "La trampa",
+   "kicker": "Paso 2",
+   "subtitulo": "Decisión de las áreas afectadas",
+   "acento": 1
+  },
+  {
+   "desde": 1540,
+   "hasta": 2020,
+   "rotuloHasta": 1625,
+   "n": 3,
+   "sigla": "L",
+   "titulo": "Latencia humana",
+   "kicker": "Paso 3",
+   "subtitulo": "Esperar permiso cuesta minutos",
+   "acento": 2
+  }
+ ],
+ "eventos": [
+  {
+   "id": "e01",
+   "tipo": "gesto3d",
+   "objeto": "trofeo",
+   "desde": 256,
+   "hasta": 340,
+   "texto": "Parte del protocolo"
+  },
+  {
+   "id": "e02",
+   "tipo": "escena3d",
+   "objeto": "escalera",
+   "desde": 346,
+   "hasta": 530,
+   "lado": "der",
+   "kicker": "El protocolo",
+   "titulo": "Cuatro peldaños",
+   "etiquetas": [
+    {
+     "en": 354,
+     "texto": "Registro"
+    },
+    {
+     "en": 370,
+     "texto": "Evaluación de impacto"
+    },
+    {
+     "en": 399,
+     "texto": "Escalado"
+    },
+    {
+     "en": 420,
+     "texto": "Comunicación"
+    }
+   ]
+  },
+  {
+   "id": "r01",
+   "tipo": "reaccion",
+   "desde": 440,
+   "hasta": 475,
+   "icono": "alerta"
+  },
+  {
+   "id": "r02",
+   "tipo": "reaccion",
+   "desde": 452,
+   "hasta": 487,
+   "icono": "idea"
+  },
+  {
+   "id": "e03",
+   "tipo": "panel",
+   "kind": "clave",
+   "desde": 536,
+   "hasta": 618,
+   "lado": "der",
+   "registro": "editorial",
+   "kicker": "Opción C",
+   "titulo": "Madurez sin disciplina",
+   "texto": "Técnicamente maduras, pero sin la disciplina regulatoria",
+   "resalta": [
+    "disciplina regulatoria"
+   ]
+  },
+  {
+   "id": "e04",
+   "tipo": "sello",
+   "desde": 706,
+   "hasta": 790,
+   "texto": "TRAMPA",
+   "tono": "bad"
+  },
+  {
+   "id": "e05",
+   "tipo": "lamina",
+   "desde": 796,
+   "hasta": 960,
+   "imagen": "lamina-reunion",
+   "pie": "Ilustración de prueba",
+   "bocadillos": [
+    {
+     "en": 812,
+     "texto": "¿Lo consultamos con negocio?",
+     "x": 0.27,
+     "y": 0.2,
+     "forma": "globo",
+     "cola": "abajo",
+     "ancho": 0.34
+    },
+    {
+     "en": 880,
+     "texto": "Mejor esperamos…",
+     "x": 0.74,
+     "y": 0.2,
+     "forma": "nube",
+     "cola": "abajo",
+     "ancho": 0.28
+    }
+   ]
+  },
+  {
+   "id": "e06",
+   "tipo": "pop",
+   "desde": 966,
+   "hasta": 1070,
+   "texto": "No es una decisión",
+   "sub": "de negocio",
+   "grande": true
+  },
+  {
+   "id": "e07",
+   "tipo": "titulo",
+   "desde": 1076,
+   "hasta": 1180,
+   "antetitulo": "Es una",
+   "texto": "Obligación",
+   "subtitulo": "operativa del equipo de seguridad TIC"
+  },
+  {
+   "id": "e08",
+   "tipo": "panel",
+   "kind": "clave",
+   "desde": 1186,
+   "hasta": 1266,
+   "lado": "der",
+   "kicker": "Sin condiciones",
+   "texto": "No puede condicionarse a la aprobación previa de las áreas usuarias",
+   "resalta": [
+    "aprobación previa"
+   ]
+  },
+  {
+   "id": "e09",
+   "tipo": "panel",
+   "kind": "lista",
+   "desde": 1272,
+   "hasta": 1534,
+   "lado": "der",
+   "kicker": "El negocio decide",
+   "titulo": "Con el protocolo ya activo",
+   "items": [
+    {
+     "en": 1335,
+     "texto": "Prioridades de servicio",
+     "icono": "objetivo"
+    },
+    {
+     "en": 1369,
+     "texto": "Comunicación a clientes",
+     "icono": "mensaje"
+    },
+    {
+     "en": 1401,
+     "texto": "Aceptación del impacto",
+     "icono": "balanza"
+    }
+   ]
+  },
+  {
+   "id": "e10",
+   "tipo": "panel",
+   "kind": "cifra",
+   "desde": 1631,
+   "hasta": 1745,
+   "lado": "der",
+   "kicker": "Latencia humana",
+   "valor": 15,
+   "valorInicial": 0,
+   "unidad": "min",
+   "etiqueta": "cada vez que esperas un permiso"
+  },
+  {
+   "id": "e11",
+   "tipo": "escena3d",
+   "objeto": "letras",
+   "texto": "DORA",
+   "desde": 1751,
+   "hasta": 1826,
+   "lado": "der",
+   "kicker": "Automático y rápido",
+   "disposicion": "grande"
+  },
+  {
+   "id": "e12",
+   "tipo": "bocadillo",
+   "desde": 1834,
+   "hasta": 1920,
+   "texto": "¿Y mi defensa ante el supervisor?",
+   "forma": "grito",
+   "lado": "der"
+  },
+  {
+   "id": "e13",
+   "tipo": "panel",
+   "kind": "caso",
+   "desde": 1926,
+   "hasta": 2014,
+   "lado": "der",
+   "kicker": "Ante el supervisor",
+   "titulo": "«Esperábamos a negocio»",
+   "texto": "Si el incidente resulta grave, esperar la decisión de las áreas afectadas no es una defensa.",
+   "veredicto": {
+    "en": 2001,
+    "texto": "No se sostiene",
+    "tono": "bad"
+   }
+  }
+ ],
+ "subtitulos": [
+  {
+   "desde": 7,
+   "hasta": 25,
+   "palabras": [
+    {
+     "t": "clientes,",
+     "desde": 7,
+     "hasta": 14
+    }
+   ]
+  },
+  {
+   "desde": 28,
+   "hasta": 63,
+   "palabras": [
+    {
+     "t": "¿quién",
+     "desde": 28,
+     "hasta": 37
+    },
+    {
+     "t": "está",
+     "desde": 37,
+     "hasta": 45
+    },
+    {
+     "t": "gestionando",
+     "desde": 45,
+     "hasta": 59
+    },
+    {
+     "t": "esa",
+     "desde": 59,
+     "hasta": 64
+    }
+   ]
+  },
+  {
+   "desde": 63,
+   "hasta": 81,
+   "palabras": [
+    {
+     "t": "indisponibilidad",
+     "desde": 63,
+     "hasta": 69
+    }
+   ]
+  },
+  {
+   "desde": 83,
+   "hasta": 111,
+   "palabras": [
+    {
+     "t": "como",
+     "desde": 83,
+     "hasta": 91
+    },
+    {
+     "t": "segundo",
+     "desde": 91,
+     "hasta": 99
+    },
+    {
+     "t": "incidente?",
+     "desde": 99,
+     "hasta": 104
+    }
+   ]
+  },
+  {
+   "desde": 120,
+   "hasta": 172,
+   "palabras": [
+    {
+     "t": "La",
+     "desde": 120,
+     "hasta": 130
+    },
+    {
+     "t": "contención",
+     "desde": 130,
+     "hasta": 144
+    },
+    {
+     "t": "sin",
+     "desde": 144,
+     "hasta": 154
+    },
+    {
+     "t": "protocolo",
+     "desde": 154,
+     "hasta": 164
+    },
+    {
+     "t": "es",
+     "desde": 164,
+     "hasta": 167
+    },
+    {
+     "t": "un",
+     "desde": 167,
+     "hasta": 172
+    }
+   ]
+  },
+  {
+   "desde": 172,
+   "hasta": 210,
+   "palabras": [
+    {
+     "t": "acto",
+     "desde": 172,
+     "hasta": 184
+    },
+    {
+     "t": "técnico",
+     "desde": 184,
+     "hasta": 194
+    },
+    {
+     "t": "aislado.",
+     "desde": 194,
+     "hasta": 202
+    }
+   ]
+  },
+  {
+   "desde": 224,
+   "hasta": 273,
+   "palabras": [
+    {
+     "t": "DORA",
+     "desde": 224,
+     "hasta": 237
+    },
+    {
+     "t": "quiere",
+     "desde": 237,
+     "hasta": 240
+    },
+    {
+     "t": "que",
+     "desde": 240,
+     "hasta": 243
+    },
+    {
+     "t": "la",
+     "desde": 243,
+     "hasta": 250
+    },
+    {
+     "t": "contención",
+     "desde": 250,
+     "hasta": 262
+    },
+    {
+     "t": "sea",
+     "desde": 262,
+     "hasta": 267
+    }
+   ]
+  },
+  {
+   "desde": 275,
+   "hasta": 322,
+   "palabras": [
+    {
+     "t": "parte",
+     "desde": 275,
+     "hasta": 285
+    },
+    {
+     "t": "de",
+     "desde": 285,
+     "hasta": 288
+    },
+    {
+     "t": "un",
+     "desde": 288,
+     "hasta": 294
+    },
+    {
+     "t": "protocolo,",
+     "desde": 294,
+     "hasta": 312
+    },
+    {
+     "t": "con",
+     "desde": 312,
+     "hasta": 317
+    },
+    {
+     "t": "todo",
+     "desde": 317,
+     "hasta": 320
+    },
+    {
+     "t": "lo",
+     "desde": 320,
+     "hasta": 325
+    }
+   ]
+  },
+  {
+   "desde": 322,
+   "hasta": 344,
+   "palabras": [
+    {
+     "t": "que",
+     "desde": 322,
+     "hasta": 326
+    },
+    {
+     "t": "eso",
+     "desde": 326,
+     "hasta": 330
+    },
+    {
+     "t": "implica.",
+     "desde": 330,
+     "hasta": 336
+    }
+   ]
+  },
+  {
+   "desde": 354,
+   "hasta": 370,
+   "palabras": [
+    {
+     "t": "Registro,",
+     "desde": 354,
+     "hasta": 359
+    }
+   ]
+  },
+  {
+   "desde": 370,
+   "hasta": 420,
+   "palabras": [
+    {
+     "t": "evaluación",
+     "desde": 370,
+     "hasta": 378
+    },
+    {
+     "t": "de",
+     "desde": 378,
+     "hasta": 387
+    },
+    {
+     "t": "impacto,",
+     "desde": 387,
+     "hasta": 399
+    },
+    {
+     "t": "escalado",
+     "desde": 399,
+     "hasta": 413
+    },
+    {
+     "t": "y",
+     "desde": 413,
+     "hasta": 418
+    }
+   ]
+  },
+  {
+   "desde": 420,
+   "hasta": 436,
+   "palabras": [
+    {
+     "t": "comunicación.",
+     "desde": 420,
+     "hasta": 428
+    }
+   ]
+  },
+  {
+   "desde": 436,
+   "hasta": 489,
+   "palabras": [
+    {
+     "t": "Aislar",
+     "desde": 436,
+     "hasta": 450
+    },
+    {
+     "t": "y",
+     "desde": 450,
+     "hasta": 456
+    },
+    {
+     "t": "comunicar",
+     "desde": 456,
+     "hasta": 472
+    },
+    {
+     "t": "después",
+     "desde": 472,
+     "hasta": 484
+    },
+    {
+     "t": "es",
+     "desde": 484,
+     "hasta": 489
+    }
+   ]
+  },
+  {
+   "desde": 489,
+   "hasta": 525,
+   "palabras": [
+    {
+     "t": "típico",
+     "desde": 489,
+     "hasta": 498
+    },
+    {
+     "t": "de",
+     "desde": 498,
+     "hasta": 504
+    },
+    {
+     "t": "organizaciones",
+     "desde": 504,
+     "hasta": 518
+    }
+   ]
+  },
+  {
+   "desde": 525,
+   "hasta": 570,
+   "palabras": [
+    {
+     "t": "técnicamente",
+     "desde": 525,
+     "hasta": 542
+    },
+    {
+     "t": "maduras,",
+     "desde": 542,
+     "hasta": 557
+    },
+    {
+     "t": "pero",
+     "desde": 557,
+     "hasta": 561
+    },
+    {
+     "t": "que",
+     "desde": 561,
+     "hasta": 566
+    },
+    {
+     "t": "aún",
+     "desde": 566,
+     "hasta": 571
+    }
+   ]
+  },
+  {
+   "desde": 570,
+   "hasta": 607,
+   "palabras": [
+    {
+     "t": "no",
+     "desde": 570,
+     "hasta": 573
+    },
+    {
+     "t": "han",
+     "desde": 573,
+     "hasta": 580
+    },
+    {
+     "t": "integrado",
+     "desde": 580,
+     "hasta": 588
+    },
+    {
+     "t": "la",
+     "desde": 588,
+     "hasta": 594
+    },
+    {
+     "t": "disciplina",
+     "desde": 594,
+     "hasta": 600
+    }
+   ]
+  },
+  {
+   "desde": 607,
+   "hasta": 624,
+   "palabras": [
+    {
+     "t": "regulatoria.",
+     "desde": 607,
+     "hasta": 615
+    }
+   ]
+  },
+  {
+   "desde": 624,
+   "hasta": 644,
+   "palabras": [
+    {
+     "t": "Opción",
+     "desde": 624,
+     "hasta": 632
+    },
+    {
+     "t": "D.",
+     "desde": 632,
+     "hasta": 637
+    }
+   ]
+  },
+  {
+   "desde": 648,
+   "hasta": 694,
+   "palabras": [
+    {
+     "t": "Decisión",
+     "desde": 648,
+     "hasta": 660
+    },
+    {
+     "t": "de",
+     "desde": 660,
+     "hasta": 664
+    },
+    {
+     "t": "las",
+     "desde": 664,
+     "hasta": 670
+    },
+    {
+     "t": "áreas",
+     "desde": 670,
+     "hasta": 678
+    },
+    {
+     "t": "afectadas.",
+     "desde": 678,
+     "hasta": 688
+    }
+   ]
+  },
+  {
+   "desde": 694,
+   "hasta": 712,
+   "palabras": [
+    {
+     "t": "Esta",
+     "desde": 694,
+     "hasta": 696
+    },
+    {
+     "t": "es",
+     "desde": 696,
+     "hasta": 698
+    },
+    {
+     "t": "la",
+     "desde": 698,
+     "hasta": 702
+    },
+    {
+     "t": "trampa.",
+     "desde": 702,
+     "hasta": 707
+    }
+   ]
+  },
+  {
+   "desde": 714,
+   "hasta": 750,
+   "palabras": [
+    {
+     "t": "Buen",
+     "desde": 714,
+     "hasta": 724
+    },
+    {
+     "t": "gobierno,",
+     "desde": 724,
+     "hasta": 732
+    },
+    {
+     "t": "malentendido.",
+     "desde": 732,
+     "hasta": 742
+    }
+   ]
+  },
+  {
+   "desde": 750,
+   "hasta": 790,
+   "palabras": [
+    {
+     "t": "y",
+     "desde": 750,
+     "hasta": 758
+    },
+    {
+     "t": "aparece",
+     "desde": 758,
+     "hasta": 763
+    },
+    {
+     "t": "más",
+     "desde": 763,
+     "hasta": 766
+    },
+    {
+     "t": "de",
+     "desde": 766,
+     "hasta": 768
+    },
+    {
+     "t": "lo",
+     "desde": 768,
+     "hasta": 770
+    },
+    {
+     "t": "que",
+     "desde": 770,
+     "hasta": 780
+    },
+    {
+     "t": "parece",
+     "desde": 780,
+     "hasta": 785
+    }
+   ]
+  },
+  {
+   "desde": 803,
+   "hasta": 822,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 803,
+     "hasta": 810
+    },
+    {
+     "t": "organizaciones",
+     "desde": 810,
+     "hasta": 815
+    }
+   ]
+  },
+  {
+   "desde": 828,
+   "hasta": 862,
+   "palabras": [
+    {
+     "t": "grandes",
+     "desde": 828,
+     "hasta": 834
+    },
+    {
+     "t": "con",
+     "desde": 834,
+     "hasta": 840
+    },
+    {
+     "t": "culturas",
+     "desde": 840,
+     "hasta": 848
+    },
+    {
+     "t": "muy",
+     "desde": 848,
+     "hasta": 851
+    },
+    {
+     "t": "de",
+     "desde": 851,
+     "hasta": 856
+    }
+   ]
+  },
+  {
+   "desde": 863,
+   "hasta": 874,
+   "palabras": [
+    {
+     "t": "stakeholders.",
+     "desde": 863,
+     "hasta": 868
+    }
+   ]
+  },
+  {
+   "desde": 874,
+   "hasta": 911,
+   "palabras": [
+    {
+     "t": "Es",
+     "desde": 874,
+     "hasta": 881
+    },
+    {
+     "t": "verdad",
+     "desde": 881,
+     "hasta": 889
+    },
+    {
+     "t": "que",
+     "desde": 889,
+     "hasta": 892
+    },
+    {
+     "t": "las",
+     "desde": 892,
+     "hasta": 900
+    },
+    {
+     "t": "decisiones",
+     "desde": 900,
+     "hasta": 907
+    },
+    {
+     "t": "que",
+     "desde": 907,
+     "hasta": 912
+    }
+   ]
+  },
+  {
+   "desde": 911,
+   "hasta": 950,
+   "palabras": [
+    {
+     "t": "afectan",
+     "desde": 911,
+     "hasta": 918
+    },
+    {
+     "t": "a",
+     "desde": 918,
+     "hasta": 923
+    },
+    {
+     "t": "negocios",
+     "desde": 923,
+     "hasta": 935
+    },
+    {
+     "t": "se",
+     "desde": 935,
+     "hasta": 943
+    },
+    {
+     "t": "consultan",
+     "desde": 943,
+     "hasta": 948
+    }
+   ]
+  },
+  {
+   "desde": 950,
+   "hasta": 966,
+   "palabras": [
+    {
+     "t": "con",
+     "desde": 950,
+     "hasta": 955
+    },
+    {
+     "t": "negocios,",
+     "desde": 955,
+     "hasta": 961
+    }
+   ]
+  },
+  {
+   "desde": 966,
+   "hasta": 1002,
+   "palabras": [
+    {
+     "t": "pero",
+     "desde": 966,
+     "hasta": 970
+    },
+    {
+     "t": "la",
+     "desde": 970,
+     "hasta": 975
+    },
+    {
+     "t": "activación",
+     "desde": 975,
+     "hasta": 988
+    },
+    {
+     "t": "del",
+     "desde": 988,
+     "hasta": 996
+    },
+    {
+     "t": "protocolo",
+     "desde": 996,
+     "hasta": 1001
+    }
+   ]
+  },
+  {
+   "desde": 1002,
+   "hasta": 1048,
+   "palabras": [
+    {
+     "t": "de",
+     "desde": 1002,
+     "hasta": 1010
+    },
+    {
+     "t": "incidentes",
+     "desde": 1010,
+     "hasta": 1020
+    },
+    {
+     "t": "TIC",
+     "desde": 1020,
+     "hasta": 1022
+    },
+    {
+     "t": "no",
+     "desde": 1034,
+     "hasta": 1038
+    },
+    {
+     "t": "es",
+     "desde": 1038,
+     "hasta": 1042
+    },
+    {
+     "t": "una",
+     "desde": 1042,
+     "hasta": 1047
+    }
+   ]
+  },
+  {
+   "desde": 1048,
+   "hasta": 1070,
+   "palabras": [
+    {
+     "t": "decisión",
+     "desde": 1048,
+     "hasta": 1056
+    },
+    {
+     "t": "de",
+     "desde": 1056,
+     "hasta": 1060
+    },
+    {
+     "t": "negocio,",
+     "desde": 1060,
+     "hasta": 1065
+    }
+   ]
+  },
+  {
+   "desde": 1081,
+   "hasta": 1105,
+   "palabras": [
+    {
+     "t": "es",
+     "desde": 1081,
+     "hasta": 1086
+    },
+    {
+     "t": "una",
+     "desde": 1086,
+     "hasta": 1092
+    },
+    {
+     "t": "obligación",
+     "desde": 1092,
+     "hasta": 1097
+    }
+   ]
+  },
+  {
+   "desde": 1112,
+   "hasta": 1160,
+   "palabras": [
+    {
+     "t": "operativa",
+     "desde": 1112,
+     "hasta": 1126
+    },
+    {
+     "t": "del",
+     "desde": 1126,
+     "hasta": 1134
+    },
+    {
+     "t": "equipo",
+     "desde": 1134,
+     "hasta": 1138
+    },
+    {
+     "t": "de",
+     "desde": 1138,
+     "hasta": 1148
+    },
+    {
+     "t": "seguridad",
+     "desde": 1148,
+     "hasta": 1153
+    }
+   ]
+  },
+  {
+   "desde": 1162,
+   "hasta": 1180,
+   "palabras": [
+    {
+     "t": "TIC,",
+     "desde": 1162,
+     "hasta": 1167
+    }
+   ]
+  },
+  {
+   "desde": 1183,
+   "hasta": 1225,
+   "palabras": [
+    {
+     "t": "que",
+     "desde": 1183,
+     "hasta": 1186
+    },
+    {
+     "t": "no",
+     "desde": 1186,
+     "hasta": 1192
+    },
+    {
+     "t": "puede",
+     "desde": 1192,
+     "hasta": 1200
+    },
+    {
+     "t": "condicionarse",
+     "desde": 1200,
+     "hasta": 1217
+    },
+    {
+     "t": "a",
+     "desde": 1217,
+     "hasta": 1220
+    },
+    {
+     "t": "la",
+     "desde": 1220,
+     "hasta": 1225
+    }
+   ]
+  },
+  {
+   "desde": 1225,
+   "hasta": 1262,
+   "palabras": [
+    {
+     "t": "aprobación",
+     "desde": 1225,
+     "hasta": 1238
+    },
+    {
+     "t": "previa",
+     "desde": 1238,
+     "hasta": 1247
+    },
+    {
+     "t": "de",
+     "desde": 1247,
+     "hasta": 1250
+    },
+    {
+     "t": "las",
+     "desde": 1250,
+     "hasta": 1255
+    },
+    {
+     "t": "áreas",
+     "desde": 1255,
+     "hasta": 1260
+    }
+   ]
+  },
+  {
+   "desde": 1262,
+   "hasta": 1272,
+   "palabras": [
+    {
+     "t": "usuarias.",
+     "desde": 1262,
+     "hasta": 1268
+    }
+   ]
+  },
+  {
+   "desde": 1272,
+   "hasta": 1290,
+   "palabras": [
+    {
+     "t": "El",
+     "desde": 1272,
+     "hasta": 1277
+    },
+    {
+     "t": "negocio",
+     "desde": 1277,
+     "hasta": 1282
+    }
+   ]
+  },
+  {
+   "desde": 1293,
+   "hasta": 1335,
+   "palabras": [
+    {
+     "t": "entra",
+     "desde": 1293,
+     "hasta": 1297
+    },
+    {
+     "t": "en",
+     "desde": 1297,
+     "hasta": 1302
+    },
+    {
+     "t": "escena",
+     "desde": 1302,
+     "hasta": 1310
+    },
+    {
+     "t": "para",
+     "desde": 1310,
+     "hasta": 1318
+    },
+    {
+     "t": "decidir",
+     "desde": 1318,
+     "hasta": 1328
+    },
+    {
+     "t": "sobre",
+     "desde": 1328,
+     "hasta": 1333
+    }
+   ]
+  },
+  {
+   "desde": 1335,
+   "hasta": 1368,
+   "palabras": [
+    {
+     "t": "prioridades",
+     "desde": 1335,
+     "hasta": 1346
+    },
+    {
+     "t": "de",
+     "desde": 1346,
+     "hasta": 1357
+    },
+    {
+     "t": "servicio,",
+     "desde": 1357,
+     "hasta": 1362
+    }
+   ]
+  },
+  {
+   "desde": 1369,
+   "hasta": 1398,
+   "palabras": [
+    {
+     "t": "comunicación",
+     "desde": 1369,
+     "hasta": 1377
+    },
+    {
+     "t": "a",
+     "desde": 1377,
+     "hasta": 1382
+    },
+    {
+     "t": "clientes,",
+     "desde": 1382,
+     "hasta": 1390
+    }
+   ]
+  },
+  {
+   "desde": 1401,
+   "hasta": 1441,
+   "palabras": [
+    {
+     "t": "aceptación",
+     "desde": 1401,
+     "hasta": 1410
+    },
+    {
+     "t": "de",
+     "desde": 1410,
+     "hasta": 1420
+    },
+    {
+     "t": "impacto",
+     "desde": 1420,
+     "hasta": 1426
+    },
+    {
+     "t": "operativo,",
+     "desde": 1426,
+     "hasta": 1433
+    }
+   ]
+  },
+  {
+   "desde": 1454,
+   "hasta": 1510,
+   "palabras": [
+    {
+     "t": "pero",
+     "desde": 1454,
+     "hasta": 1460
+    },
+    {
+     "t": "todo",
+     "desde": 1460,
+     "hasta": 1468
+    },
+    {
+     "t": "eso",
+     "desde": 1468,
+     "hasta": 1482
+    },
+    {
+     "t": "una",
+     "desde": 1482,
+     "hasta": 1486
+    },
+    {
+     "t": "vez",
+     "desde": 1486,
+     "hasta": 1494
+    },
+    {
+     "t": "activado",
+     "desde": 1494,
+     "hasta": 1502
+    },
+    {
+     "t": "el",
+     "desde": 1502,
+     "hasta": 1507
+    }
+   ]
+  },
+  {
+   "desde": 1510,
+   "hasta": 1526,
+   "palabras": [
+    {
+     "t": "protocolo,",
+     "desde": 1510,
+     "hasta": 1515
+    }
+   ]
+  },
+  {
+   "desde": 1526,
+   "hasta": 1545,
+   "palabras": [
+    {
+     "t": "no",
+     "desde": 1526,
+     "hasta": 1534
+    },
+    {
+     "t": "antes.",
+     "desde": 1534,
+     "hasta": 1539
+    }
+   ]
+  },
+  {
+   "desde": 1553,
+   "hasta": 1592,
+   "palabras": [
+    {
+     "t": "Si",
+     "desde": 1553,
+     "hasta": 1560
+    },
+    {
+     "t": "esperas",
+     "desde": 1560,
+     "hasta": 1565
+    },
+    {
+     "t": "a",
+     "desde": 1565,
+     "hasta": 1567
+    },
+    {
+     "t": "que",
+     "desde": 1567,
+     "hasta": 1570
+    },
+    {
+     "t": "el",
+     "desde": 1570,
+     "hasta": 1576
+    },
+    {
+     "t": "negocio",
+     "desde": 1576,
+     "hasta": 1584
+    },
+    {
+     "t": "te",
+     "desde": 1584,
+     "hasta": 1586
+    },
+    {
+     "t": "dé",
+     "desde": 1586,
+     "hasta": 1591
+    }
+   ]
+  },
+  {
+   "desde": 1592,
+   "hasta": 1618,
+   "palabras": [
+    {
+     "t": "permiso",
+     "desde": 1592,
+     "hasta": 1600
+    },
+    {
+     "t": "para",
+     "desde": 1600,
+     "hasta": 1605
+    },
+    {
+     "t": "activar,",
+     "desde": 1605,
+     "hasta": 1610
+    }
+   ]
+  },
+  {
+   "desde": 1630,
+   "hasta": 1665,
+   "palabras": [
+    {
+     "t": "estás",
+     "desde": 1630,
+     "hasta": 1638
+    },
+    {
+     "t": "metiendo",
+     "desde": 1638,
+     "hasta": 1648
+    },
+    {
+     "t": "una",
+     "desde": 1648,
+     "hasta": 1654
+    },
+    {
+     "t": "latencia",
+     "desde": 1654,
+     "hasta": 1659
+    }
+   ]
+  },
+  {
+   "desde": 1666,
+   "hasta": 1725,
+   "palabras": [
+    {
+     "t": "humana,",
+     "desde": 1666,
+     "hasta": 1682
+    },
+    {
+     "t": "15",
+     "desde": 1682,
+     "hasta": 1690
+    },
+    {
+     "t": "minutos,",
+     "desde": 1690,
+     "hasta": 1702
+    },
+    {
+     "t": "una",
+     "desde": 1702,
+     "hasta": 1708
+    },
+    {
+     "t": "hora,",
+     "desde": 1708,
+     "hasta": 1717
+    },
+    {
+     "t": "una",
+     "desde": 1717,
+     "hasta": 1722
+    }
+   ]
+  },
+  {
+   "desde": 1725,
+   "hasta": 1743,
+   "palabras": [
+    {
+     "t": "mañana",
+     "desde": 1725,
+     "hasta": 1730
+    },
+    {
+     "t": "entera,",
+     "desde": 1730,
+     "hasta": 1735
+    }
+   ]
+  },
+  {
+   "desde": 1752,
+   "hasta": 1791,
+   "palabras": [
+    {
+     "t": "en",
+     "desde": 1752,
+     "hasta": 1754
+    },
+    {
+     "t": "un",
+     "desde": 1754,
+     "hasta": 1764
+    },
+    {
+     "t": "proceso",
+     "desde": 1764,
+     "hasta": 1770
+    },
+    {
+     "t": "que",
+     "desde": 1770,
+     "hasta": 1772
+    },
+    {
+     "t": "DORA",
+     "desde": 1772,
+     "hasta": 1782
+    },
+    {
+     "t": "quiere",
+     "desde": 1782,
+     "hasta": 1787
+    }
+   ]
+  },
+  {
+   "desde": 1791,
+   "hasta": 1823,
+   "palabras": [
+    {
+     "t": "automático",
+     "desde": 1791,
+     "hasta": 1804
+    },
+    {
+     "t": "y",
+     "desde": 1804,
+     "hasta": 1812
+    },
+    {
+     "t": "rápido.",
+     "desde": 1812,
+     "hasta": 1817
+    }
+   ]
+  },
+  {
+   "desde": 1830,
+   "hasta": 1875,
+   "palabras": [
+    {
+     "t": "Y",
+     "desde": 1830,
+     "hasta": 1833
+    },
+    {
+     "t": "si",
+     "desde": 1833,
+     "hasta": 1835
+    },
+    {
+     "t": "el",
+     "desde": 1835,
+     "hasta": 1843
+    },
+    {
+     "t": "incidente",
+     "desde": 1843,
+     "hasta": 1853
+    },
+    {
+     "t": "resulta",
+     "desde": 1853,
+     "hasta": 1864
+    },
+    {
+     "t": "grave,",
+     "desde": 1864,
+     "hasta": 1869
+    }
+   ]
+  },
+  {
+   "desde": 1877,
+   "hasta": 1917,
+   "palabras": [
+    {
+     "t": "tu",
+     "desde": 1877,
+     "hasta": 1881
+    },
+    {
+     "t": "defensa",
+     "desde": 1881,
+     "hasta": 1891
+    },
+    {
+     "t": "ante",
+     "desde": 1891,
+     "hasta": 1894
+    },
+    {
+     "t": "el",
+     "desde": 1894,
+     "hasta": 1905
+    },
+    {
+     "t": "supervisor,",
+     "desde": 1905,
+     "hasta": 1910
+    }
+   ]
+  },
+  {
+   "desde": 1928,
+   "hasta": 1963,
+   "palabras": [
+    {
+     "t": "se",
+     "desde": 1928,
+     "hasta": 1938
+    },
+    {
+     "t": "esperaba",
+     "desde": 1938,
+     "hasta": 1944
+    },
+    {
+     "t": "la",
+     "desde": 1944,
+     "hasta": 1949
+    },
+    {
+     "t": "decisión",
+     "desde": 1949,
+     "hasta": 1957
+    },
+    {
+     "t": "de",
+     "desde": 1957,
+     "hasta": 1959
+    },
+    {
+     "t": "las",
+     "desde": 1959,
+     "hasta": 1964
+    }
+   ]
+  },
+  {
+   "desde": 1963,
+   "hasta": 1985,
+   "palabras": [
+    {
+     "t": "áreas",
+     "desde": 1963,
+     "hasta": 1971
+    },
+    {
+     "t": "afectadas,",
+     "desde": 1971,
+     "hasta": 1977
+    }
+   ]
+  },
+  {
+   "desde": 1991,
+   "hasta": 2013,
+   "palabras": [
+    {
+     "t": "no",
+     "desde": 1991,
+     "hasta": 1995
+    },
+    {
+     "t": "se",
+     "desde": 1995,
+     "hasta": 2001
+    },
+    {
+     "t": "sostiene.",
+     "desde": 2001,
+     "hasta": 2006
+    }
+   ]
+  }
+ ],
+ "gestos": [
+  {
+   "desde": 258,
+   "pico": 285,
+   "hasta": 307,
+   "munecas": [
+    [
+     1471,
+     1218
+    ],
+    [
+     2362,
+     1187
+    ]
+   ],
+   "pista": [
+    {
+     "f": 258,
+     "munecas": [
+      [
+       1576,
+       1453
+      ],
+      [
+       2257,
+       1452
+      ]
+     ]
+    },
+    {
+     "f": 259,
+     "munecas": [
+      [
+       1546,
+       1411
+      ],
+      [
+       2272,
+       1408
+      ]
+     ]
+    },
+    {
+     "f": 260,
+     "munecas": [
+      [
+       1517,
+       1372
+      ],
+      [
+       2285,
+       1358
+      ]
+     ]
+    },
+    {
+     "f": 261,
+     "munecas": [
+      [
+       1491,
+       1337
+      ],
+      [
+       2295,
+       1310
+      ]
+     ]
+    },
+    {
+     "f": 262,
+     "munecas": [
+      [
+       1472,
+       1301
+      ],
+      [
+       2304,
+       1267
+      ]
+     ]
+    },
+    {
+     "f": 263,
+     "munecas": [
+      [
+       1457,
+       1261
+      ],
+      [
+       2308,
+       1227
+      ]
+     ]
+    },
+    {
+     "f": 264,
+     "munecas": [
+      [
+       1446,
+       1218
+      ],
+      [
+       2309,
+       1195
+      ]
+     ]
+    },
+    {
+     "f": 265,
+     "munecas": [
+      [
+       1437,
+       1176
+      ],
+      [
+       2307,
+       1173
+      ]
+     ]
+    },
+    {
+     "f": 266,
+     "munecas": [
+      [
+       1431,
+       1145
+      ],
+      [
+       2300,
+       1155
+      ]
+     ]
+    },
+    {
+     "f": 267,
+     "munecas": [
+      [
+       1425,
+       1123
+      ],
+      [
+       2290,
+       1148
+      ]
+     ]
+    },
+    {
+     "f": 268,
+     "munecas": [
+      [
+       1420,
+       1121
+      ],
+      [
+       2280,
+       1162
+      ]
+     ]
+    },
+    {
+     "f": 269,
+     "munecas": [
+      [
+       1417,
+       1159
+      ],
+      [
+       2268,
+       1198
+      ]
+     ]
+    },
+    {
+     "f": 270,
+     "munecas": [
+      [
+       1417,
+       1219
+      ],
+      [
+       2257,
+       1250
+      ]
+     ]
+    },
+    {
+     "f": 271,
+     "munecas": [
+      [
+       1422,
+       1294
+      ],
+      [
+       2246,
+       1303
+      ]
+     ]
+    },
+    {
+     "f": 272,
+     "munecas": [
+      [
+       1430,
+       1365
+      ],
+      [
+       2237,
+       1347
+      ]
+     ]
+    },
+    {
+     "f": 273,
+     "munecas": [
+      [
+       1439,
+       1420
+      ],
+      [
+       2233,
+       1378
+      ]
+     ]
+    },
+    {
+     "f": 274,
+     "munecas": [
+      [
+       1447,
+       1451
+      ],
+      [
+       2231,
+       1387
+      ]
+     ]
+    },
+    {
+     "f": 275,
+     "munecas": [
+      [
+       1451,
+       1457
+      ],
+      [
+       2230,
+       1384
+      ]
+     ]
+    },
+    {
+     "f": 276,
+     "munecas": [
+      [
+       1453,
+       1452
+      ],
+      [
+       2234,
+       1377
+      ]
+     ]
+    },
+    {
+     "f": 277,
+     "munecas": [
+      [
+       1451,
+       1443
+      ],
+      [
+       2237,
+       1364
+      ]
+     ]
+    },
+    {
+     "f": 278,
+     "munecas": [
+      [
+       1450,
+       1417
+      ],
+      [
+       2244,
+       1343
+      ]
+     ]
+    },
+    {
+     "f": 279,
+     "munecas": [
+      [
+       1448,
+       1386
+      ],
+      [
+       2257,
+       1314
+      ]
+     ]
+    },
+    {
+     "f": 280,
+     "munecas": [
+      [
+       1448,
+       1345
+      ],
+      [
+       2275,
+       1279
+      ]
+     ]
+    },
+    {
+     "f": 281,
+     "munecas": [
+      [
+       1449,
+       1305
+      ],
+      [
+       2296,
+       1244
+      ]
+     ]
+    },
+    {
+     "f": 282,
+     "munecas": [
+      [
+       1450,
+       1270
+      ],
+      [
+       2316,
+       1215
+      ]
+     ]
+    },
+    {
+     "f": 283,
+     "munecas": [
+      [
+       1454,
+       1245
+      ],
+      [
+       2333,
+       1195
+      ]
+     ]
+    },
+    {
+     "f": 284,
+     "munecas": [
+      [
+       1460,
+       1234
+      ],
+      [
+       2349,
+       1185
+      ]
+     ]
+    },
+    {
+     "f": 285,
+     "munecas": [
+      [
+       1471,
+       1218
+      ],
+      [
+       2362,
+       1187
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "intro": {
+  "desde": 0,
+  "hasta": 175,
+  "estilo": "marca",
+  "kicker": "Resiliencia operativa digital",
+  "titulo": "DORA en la práctica",
+  "subtitulo": "Tres casos para decidir como exige el reglamento",
+  "palabras": [
+   "MASTER",
+   "CLASS"
+  ],
+  "etiquetas": [
+   "En directo",
+   "Nº 1",
+   "Resiliencia & regulación"
+  ],
+  "lema": "Fórmate con nuestros expertos",
+  "rotulo": {
+   "nombre": "Docente del curso",
+   "cargo": "Especialista en resiliencia digital"
+  },
+  "franja": {
+   "titulo": "DORA en la práctica",
+   "subtitulo": "Tres casos para decidir como exige el reglamento",
+   "firma": "Una formación de OpenWebinars"
+  }
+ },
+ "outro": {
+  "desde": 2020,
+  "hasta": 2220,
+  "estilo": "marca",
+  "kicker": "En resumen",
+  "titulo": "Activar primero, decidir después",
+  "puntos": [
+   "La contención es parte del protocolo",
+   "El negocio decide prioridades, no la activación",
+   "Cada permiso añade latencia"
+  ],
+  "cta": "Siguiente caso: viernes por la tarde",
+  "palabras": [
+   "MASTER",
+   "CLASS"
+  ],
+  "etiquetas": [
+   "Hasta la próxima",
+   "Nº 1",
+   "Resiliencia & regulación"
+  ],
+  "lema": "Fórmate con nuestros expertos",
+  "franja": {
+   "firma": "Una formación de OpenWebinars"
+  }
+ },
+ "audio": {
+  "musica": [
+   {
+    "archivo": "sintonia",
+    "desde": 0,
+    "hasta": 200,
+    "volumen": 0.4,
+    "fundidoSalida": 30
+   },
+   {
+    "archivo": "base",
+    "desde": 170,
+    "hasta": 2030,
+    "volumen": 0.12,
+    "fundidoEntrada": 25,
+    "fundidoSalida": 20,
+    "bucle": true
+   },
+   {
+    "archivo": "cierre",
+    "desde": 2010,
+    "hasta": 2220,
+    "volumen": 0.5,
+    "fundidoEntrada": 10,
+    "fundidoSalida": 20
+   }
+  ],
+  "sfx": [
+   {
+    "archivo": "sfx-ficha",
+    "en": 175,
+    "volumen": 0.45
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 179,
+    "volumen": 0.4
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 624,
+    "volumen": 0.45
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 628,
+    "volumen": 0.4
+   },
+   {
+    "archivo": "sfx-ficha",
+    "en": 1540,
+    "volumen": 0.45
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 1544,
+    "volumen": 0.4
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 1080,
+    "volumen": 0.45
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 246,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 336,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 614,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 696,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 786,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 956,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1066,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1176,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1621,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1741,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1822,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-whoosh",
+    "en": 1916,
+    "volumen": 0.3
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 440,
+    "volumen": 0.5
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 452,
+    "volumen": 0.5
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 812,
+    "volumen": 0.5
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 880,
+    "volumen": 0.5
+   },
+   {
+    "archivo": "sfx-pop",
+    "en": 1834,
+    "volumen": 0.5
+   },
+   {
+    "archivo": "sfx-sello",
+    "en": 714,
+    "volumen": 0.6
+   },
+   {
+    "archivo": "sfx-golpe",
+    "en": 714,
+    "volumen": 0.45
+   },
+   {
+    "archivo": "sfx-destello",
+    "en": 1672,
+    "volumen": 0.35
+   }
+  ]
+ },
+ "avisos": [
+  "fixture: ventana f10300–f12320 de proyectos/dora-v2 (solo lectura) con eventos «show» de prueba"
+ ]
+}

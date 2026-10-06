@@ -1,0 +1,68 @@
+{
+  "region": "eu-west-1",
+  "remotion": {
+    "bucket": "remotionlambda-euwest1-s50lbcdf7r",
+    "bucketPublico": true,
+    "rol": "remotion-lambda-role",
+    "funciones": [
+      "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+      "remotion-render-4-0-529-mem3008mb-disk2048mb-120sec"
+    ],
+    "funcionPorDefecto": "remotion-render-4-0-529-mem3008mb-disk10240mb-900sec",
+    "sites": [
+      "motor-d7c0195e16b9"
+    ]
+  },
+  "privado": {
+    "bucket": "kaleidos-privado-euwest1-d415b1af",
+    "prefijo": "kaleidos-privado-euwest1-",
+    "caducidadDias": 3,
+    "nota": "Creado el 2026-09-30 con la política IAM v1: SSE-S3 y caducidad de 3 días aplicados; el bloqueo de acceso público es el que S3 pone por defecto a los buckets nuevos (PutBucketPublicAccessBlock denegado con v1, no se pudo leer). Verificado: sin firma 403 (listado y objeto), con URL firmada 200. Sin CORS: el render usa --disable-web-security. Al aplicar la v2, fijar el bloqueo explícito. 2026-09-30: política v3 aplicada; GetPublicAccessBlock confirma los 4 bloqueos activos.",
+    "creado": "2026-09-30T18:47:48+00:00",
+    "verificado": true
+  },
+  "hyperframes": {
+    "stack": "hyperframes-kaleidos",
+    "estado": "desplegado 2026-09-30 (4 min 53 s)",
+    "region": "eu-west-1",
+    "funcion": "hyperframes-render",
+    "stateMachine": "hyperframes-render",
+    "bucket": "hyperframes-kaleidos-renderbucket-qjv9f1enbbu5",
+    "bucketPrivado": true,
+    "bucketNota": "bloqueo de acceso público x4 verificado (403 sin firma); caducidad de intermedios 7 días; el bucket es Retain (sobrevive a lambda destroy)",
+    "pilaSam": "aws-sam-cli-managed-default (bucket de artefactos con el handler.zip)",
+    "memoriaMb": 10240,
+    "concurrenciaReservada": 50,
+    "version": "hyperframes 0.8.86 (handler construido desde vendor/hyperframes-repo; renderizar con la misma versión o redesplegar)",
+    "estadoLocal": "benchmark/hyperframes-test/.hyperframes/lambda-stack-hyperframes-kaleidos.json (desde otra carpeta el CLI usa describe-stacks)",
+    "costeFijoMes": "≈ 0,30–0,40 $ (3 alarmas de CloudWatch)",
+    "pruebas": [
+      {
+        "fecha": "2026-09-30",
+        "video": "benchmark/hyperframes-test (30 s, 1080p, 30 fps, 900 f, 10 trozos)",
+        "reloj": "6 min (5 min 16 s subiendo 286,5 MiB: node_modules dentro del proyecto)",
+        "ejecucion": "41,7 s (Plan 19,6 s en frío)",
+        "coste": "0,0264 $"
+      },
+      {
+        "fecha": "2026-09-30",
+        "video": "la misma, copia limpia sin node_modules (2 MB)",
+        "reloj": "23 s",
+        "coste": "0,0203 $"
+      }
+    ],
+    "regla": "el CLI empaqueta TODA la carpeta del proyecto: renderiza siempre desde una copia sin node_modules"
+  },
+  "pendienteDeBorrar": [],
+  "limpiezas": [
+    {
+      "fecha": "2026-10-01",
+      "borrado": [
+        "remotionlambda: renders/atayt6h7dd (DORA v1, 266 MB, lectura pública), renders/449g1rt8tq y renders/viaxiub6d7 (benchmark)",
+        "remotionlambda: sites intro-curso, videocurso-dora, motor-eac57f0d2ebb",
+        "hyperframes renderbucket: 2 renders de prueba y 2 tarballs de sites (≈ 340 MB)"
+      ],
+      "queda": "site motor-d7c0195e16b9 (el actual); bucket privado vacío; bucket de HyperFrames vacío"
+    }
+  ]
+}
