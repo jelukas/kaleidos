@@ -12,6 +12,7 @@
 | Arreglar algo que falla | [`SOLUCION_PROBLEMAS.md`](SOLUCION_PROBLEMAS.md) |
 | Cambiar el motor o el pipeline | [`CONTRATO.md`](CONTRATO.md) → [`METODO_EDICION_IA.md`](METODO_EDICION_IA.md) → `motor/PROGRESO.md` · `tools/PROGRESO.md` |
 | Trabajar con Codex u otro agente que no es Claude Code | [`../AGENTS.md`](../AGENTS.md) |
+| Pasar kaleidos y sus skills al equipo audiovisual | [`../equipo-audiovisual/README.md`](../equipo-audiovisual/README.md) (guía + `kaleidos-skills.zip`) |
 
 ## Raíz
 
